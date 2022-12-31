@@ -1,0 +1,10 @@
+*.exe
+obj
+bin
+.ionide
+.fake
+.vs
+*.suo
+day*.txt
+!/AdventOfCode_BASE/day*/**
+!/AoC_Debugger/day*.txt
