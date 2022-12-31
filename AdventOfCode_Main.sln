@@ -15,9 +15,9 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AdventOfCode_2021", "Advent
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AdventOfCode_2022", "AdventOfCode_2022\AdventOfCode_2022.fsproj", "{B04FAB4B-552C-4A62-ACCF-71F71FE0BE4E}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AdventOfCode_2015_Go(1)", "AdventOfCode_2015_Go\", "{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AdventOfCode_2015_Go", "AdventOfCode_2015_Go\", "{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49704"
 		Debug.AspNetCompiler.PhysicalPath = "AdventOfCode_2015_Go\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49704\"
@@ -38,7 +38,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AdventOfCode_2015_Go(1)", "
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AdventOfCode_2018_TypeScript", "AdventOfCode_2018_TypeScript\", "{65C690BB-293F-4B0E-9B4E-7B3416C7F9E0}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49727"
 		Debug.AspNetCompiler.PhysicalPath = "AdventOfCode_2018_TypeScript\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49727\"
