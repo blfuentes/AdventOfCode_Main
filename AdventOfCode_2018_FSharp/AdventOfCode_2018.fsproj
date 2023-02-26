@@ -34,11 +34,19 @@
     <Content Include="day06\day06_input2.txt" />
     <None Include="day06\day06_part1.fsx" />
     <None Include="day06\day06_part2.fsx" />
+    <None Include="day07\part02\day07_part02.fsx" />
+    <Compile Include="day07\part02\day07_part02.fs" />
+    <Content Include="day07\test_input.txt" />
+    <Content Include="day07\day07_input.txt" />
+    <Compile Include="day07\part01\day07_part01.fs" />
+    <None Include="day07\part01\day07_part01.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="day02\day02_input.txt" />
   </ItemGroup>
+
+  <ItemGroup />
 
 </Project>
