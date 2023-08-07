@@ -25,7 +25,7 @@ export class Day01Part02 {
                 if (calculatedFrecuencies.indexOf(newValue) > -1) {
                     duplicatedFound = true;
                 }
-                console.log(`Current frecuency ${result}, change of ${value}; resulting frecuency ${newValue}`);
+                //console.log(`Current frecuency ${result}, change of ${value}; resulting frecuency ${newValue}`);
                 result = newValue;
                 calculatedFrecuencies.push(newValue);
                 if (duplicatedFound) {
@@ -34,6 +34,7 @@ export class Day01Part02 {
             }
             numberofloops++;
         } while (!duplicatedFound);
-        console.log(`Final value: ${result}. Duplicated frecuency: ${newValue}. Loops: ${numberofloops}.`);
+        //console.log(`Final value: ${result}. Duplicated frecuency: ${newValue}. Loops: ${numberofloops}.`);
+        return result;
     }
 }

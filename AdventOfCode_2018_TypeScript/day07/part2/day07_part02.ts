@@ -1,6 +1,6 @@
 import { Node } from "../Node";
 
-export class Day07Part2 {
+export class Day07Part02 {
     execute() {
         let fs = require("fs");
         let path = require('path');

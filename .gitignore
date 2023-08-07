@@ -6,6 +6,7 @@ bin
 .vs
 *.suo
 day*.txt
+day*.js
 !/AdventOfCode_BASE/day*/**
 !/AoC_Debugger/day*.txt
 node_modules

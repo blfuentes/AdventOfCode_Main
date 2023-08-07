@@ -79,7 +79,7 @@ export class Day02Part02 {
             }
         }
 
-        console.log(`Checksum: ${numberOfTwo * numberOfThree}.`);
+        //console.log(`Checksum: ${numberOfTwo * numberOfThree}.`);
 
         for (var idx = 0; idx < entries.length; idx++) {
             var tmpEntry = entries[idx];
@@ -100,7 +100,8 @@ export class Day02Part02 {
                     }
                 }
                 if (issimilar) {
-                    console.log(`Similar found ${result.toString()}.\n`)
+                    //console.log(`Similar found ${result.toString()}.\n`)
+                    return result;
                 }
             }
         }

@@ -15,10 +15,11 @@ export class Day01Part01 {
 
         for (let value of changes) {
             newValue = result + parseInt(value);
-            console.log(`Current frecuency ${result}, change of ${value}; resulting frecuency ${newValue}`);
+            //console.log(`Current frecuency ${result}, change of ${value}; resulting frecuency ${newValue}`);
             result = newValue;
         }
 
-        console.log(`Final value: ${result}.`);
+        return result;
+        //console.log(`Final value: ${result}.`);
     }
 }

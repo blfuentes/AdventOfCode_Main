@@ -45,6 +45,7 @@ export class Day03Part01 {
             }
         }
 
-        console.log(`Overlaped: ${squareInches}`);
+        //console.log(`Overlaped: ${squareInches}`);
+        return squareInches;
     }
 }

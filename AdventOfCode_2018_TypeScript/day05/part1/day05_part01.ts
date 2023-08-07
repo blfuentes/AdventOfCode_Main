@@ -1,4 +1,4 @@
-export class Day05Part1 {
+export class Day05Part01 {
     execute() {
         let fs = require("fs");
         let path = require('path');

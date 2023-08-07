@@ -1,6 +1,6 @@
 import { Coordinate } from "../Coordinate";
 
-export class Day06Part1 {
+export class Day06Part01 {
     calculateManhattanDistance(origin: Array<number>, end: Array<number>) {
         let distance: number;
         distance = Math.abs(origin[0] - end[0]) + Math.abs(origin[1] - end[1]);

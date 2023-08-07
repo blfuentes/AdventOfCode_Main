@@ -103,6 +103,7 @@ export class Day04Part01 {
         }
 
         let finalResultPart1 = getMostSleepGuardValue(guardIds, guardInfo);
-        console.log(`Result part1: ${finalResultPart1}.`);
+        //console.log(`Result part1: ${finalResultPart1}.`);
+        return finalResultPart1;
     }
 }

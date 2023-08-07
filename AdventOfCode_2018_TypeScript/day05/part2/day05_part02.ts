@@ -1,6 +1,6 @@
 import { PolymerResult } from "./PolymerResult";
 
-export class Day05Part2 {
+export class Day05Part02 {
     execute() {
         let fs = require("fs");
         let path = require('path');

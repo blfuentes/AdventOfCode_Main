@@ -6,7 +6,7 @@ import { ElementType, Element, Player, Elf, Goblin, Field, Wall } from "../Eleme
 import { MazeResult, MazePoint } from "../MazeResult";
 
 export class Day15Part02 {
-    displayCaveMap(caveMap: Array<Array<string>>) {
+    displayCaveMap(lines, caveMap: Array<Array<string>>) {
         let rowIdx = 0;
         while (rowIdx < lines.length) {
             let rowDisplay = "";
@@ -127,7 +127,7 @@ export class Day15Part02 {
         return enemyPositions;
     }
 
-    isValid(mapPositions, visited: Array<Coord>, position: Coord) {
+    isValid(lines, mapPositions, visited: Array<Coord>, position: Coord) {
         let checkPosition = mapPositions.find(_p => _p.isEqual(position));
         if ((position.coordY >= 0) &&
             (position.coordY < lines.length) &&
@@ -144,14 +144,14 @@ export class Day15Part02 {
         return false;
     }
 
-    move(mapPositions, player: Player) {
+    move(lines, mapPositions, player: Player) {
         let coordToMove: Coord = new Coord(0, 0);
         let minDistance = 0;
         let doMove = false;
         player.EnemiesPositions = player.EnemiesPositions.sort(this.sortByPosition);
         for (let idx = 0; idx < player.EnemiesPositions.length; idx++) {
             let positionToCheck = player.EnemiesPositions[idx];
-            let foundPath = this.findBFSPath(mapPositions, player.position, positionToCheck);
+            let foundPath = this.findBFSPath(lines, mapPositions, player.position, positionToCheck);
             let tmpDistance = 0;
             if (foundPath) {
                 tmpDistance = this.getLengthMazePointResult(foundPath);
@@ -203,7 +203,7 @@ export class Day15Part02 {
 
 
 
-    findBFSPath(mapPositions, origin: Coord, target: Coord) {
+    findBFSPath(lines, mapPositions, origin: Coord, target: Coord) {
         let resultPath = new Array<MazePoint>();
         let visistedMazePoints = new Array<Coord>();
         let tmpMazePoint = new MazePoint(origin, null);
@@ -223,7 +223,7 @@ export class Day15Part02 {
                 yCord = [-1, 0, 0, 1];
                 for (let idx = 0; idx < 4; idx++) {
                     neighbourMazePoint = new MazePoint(new Coord(currentPoint.position.coordX + xCord[idx], currentPoint.position.coordY + yCord[idx]), currentPoint);
-                    if (this.isValid(mapPositions, visistedMazePoints, neighbourMazePoint.position)) {
+                    if (this.isValid(lines, mapPositions, visistedMazePoints, neighbourMazePoint.position)) {
                         if (visistedMazePoints.find(_v => _v.isEqual(currentPoint.position)) == undefined) {
                             visistedMazePoints.push(currentPoint.position);
                         }
@@ -257,12 +257,12 @@ export class Day15Part02 {
         }
     }
 
-    round(mapPositions, caveMap, player: Player) {
+    round(lines, mapPositions, caveMap, player: Player) {
         let target = this.getTarget(mapPositions, player);
         if (target != undefined) {
             this.attack(mapPositions, caveMap, player, target);
         } else {
-            this.move(mapPositions, player);
+            this.move(lines, mapPositions, player);
             this.takeNewPlace(mapPositions, caveMap, player);
             target = this.getTarget(mapPositions, player);
             if (target != undefined) {
@@ -291,7 +291,7 @@ export class Day15Part02 {
 
 
 
-    initGame(playerCollection, elfCollection, goblinCollection, mapPositions, AP: number) {
+    initGame(lines, playerCollection, elfCollection, goblinCollection, mapPositions, AP: number) {
         let caveMap = Array(lines[0].length).fill(null).map(item => (new Array(lines.length).fill(" ")));
 
         playerCollection = [];
@@ -372,10 +372,10 @@ export class Day15Part02 {
         let initAP = 2;
         let elfWasDead: Elf | undefined;
         do {
-            this.initGame(playerCollection, elfCollection, goblinCollection, mapPositions, ++initAP);
+            this.initGame(lines, playerCollection, elfCollection, goblinCollection, mapPositions, ++initAP);
             console.log(`Combat with ${initAP} AP.`);
 
-            this.displayCaveMap(caveMap);
+            this.displayCaveMap(lines, caveMap);
             let roundNumber = 0;
             do {
                 roundNumber++;
@@ -383,7 +383,7 @@ export class Day15Part02 {
                 for (let player of playerCollection) {
                     if (player.isAlive && this.AreEnemiesLeft(playerCollection, player)) {
                         player.EnemiesPositions = this.findAvailableEnemyPositions(playerCollection, mapPositions, player).sort(this.sortByPosition);
-                        this.round(mapPositions, caveMap, player);
+                        this.round(lines, mapPositions, caveMap, player);
                     }
                 }
                 // displayCaveMap(caveMap);    

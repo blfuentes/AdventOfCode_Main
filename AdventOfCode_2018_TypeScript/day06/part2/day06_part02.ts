@@ -1,4 +1,4 @@
-export class Day06Part2 {
+export class Day06Part02 {
     execute() {
 
     }

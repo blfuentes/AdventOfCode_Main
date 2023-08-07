@@ -1,7 +1,7 @@
 import { CarPosition } from "../CarPosition";
 
 export class Day13Part02 {
-    displayRoadMap(roadmap: Array<Array<string>>) {
+    displayRoadMap(lines, roadmap: Array<Array<string>>) {
         let rowIdx = 0;
         while (rowIdx < lines.length) {
             let rowDisplay = "";

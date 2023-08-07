@@ -1,6 +1,6 @@
 import { Claim } from "../Claim";
 
-export class Day03Part2 {
+export class Day03Part02 {
     execute() {
         let fs = require("fs");
         let path = require('path');
@@ -66,6 +66,7 @@ export class Day03Part2 {
             }
         }
 
-        console.log(`Overlaped: ${squareInches}. UniqueClaim: ${uniqueClaimId}.`);
+        //console.log(`Overlaped: ${squareInches}. UniqueClaim: ${uniqueClaimId}.`);
+        return uniqueClaimId;
     }
 }

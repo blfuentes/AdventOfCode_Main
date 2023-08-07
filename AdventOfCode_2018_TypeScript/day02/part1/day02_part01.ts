@@ -76,7 +76,8 @@ export class Day02Part01 {
             }
         }
 
-        console.log(`Checksum: ${numberOfTwo * numberOfThree}.`);
+        //console.log(`Checksum: ${numberOfTwo * numberOfThree}.`);
+        return numberOfTwo * numberOfThree;
     }
 }
 

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Day03Part2 = void 0;
+exports.Day03Part02 = void 0;
 const Claim_1 = require("../Claim");
-class Day03Part2 {
+class Day03Part02 {
     execute() {
         let fs = require("fs");
         let path = require('path');
@@ -59,7 +59,8 @@ class Day03Part2 {
                 uniqueClaimId = claim.id;
             }
         }
-        console.log(`Overlaped: ${squareInches}. UniqueClaim: ${uniqueClaimId}.`);
+        //console.log(`Overlaped: ${squareInches}. UniqueClaim: ${uniqueClaimId}.`);
+        return uniqueClaimId;
     }
 }
-exports.Day03Part2 = Day03Part2;
+exports.Day03Part02 = Day03Part02;

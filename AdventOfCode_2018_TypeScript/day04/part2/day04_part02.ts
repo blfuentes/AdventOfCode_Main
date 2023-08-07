@@ -121,7 +121,8 @@ export class Day04Part02 {
 
         let finalResultPart1 = getMostSleepGuardValue(guardIds, guardInfo);
         let finalResultPart2 = getMostRepeatedSleepGuardValue(guardIds, guardInfo);
-        console.log(`Result part1: ${finalResultPart1}. Result part2: ${finalResultPart2}.`);
+        //console.log(`Result part1: ${finalResultPart1}. Result part2: ${finalResultPart2}.`);
+        return finalResultPart2;
     }
 }
 
