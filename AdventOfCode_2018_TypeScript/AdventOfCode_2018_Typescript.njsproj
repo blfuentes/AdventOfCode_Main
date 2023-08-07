@@ -130,12 +130,12 @@
     <Content Include="day20\part2\tsconfig.json" />
     <Content Include="day20\test_input.txt" />
     <Content Include="day21\day21_input.txt" />
-    <Content Include="day23\data\day23_input2.txt" />
     <Content Include="day23\day23_input.txt" />
     <Content Include="day23\day23_input2.txt" />
     <Content Include="day23\part1\tsconfig.json" />
-    <Content Include="day23\rcheck.R" />
     <Content Include="day24\day24_input.txt" />
+    <Content Include="day24\part1\tsconfig.json" />
+    <Content Include="day25\part1\tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
@@ -202,10 +202,19 @@
     <Folder Include="day20\part1\" />
     <Folder Include="day20\part2\" />
     <Folder Include="day21\" />
+    <Folder Include="day21\part2\" />
+    <Folder Include="day21\part1\" />
+    <Folder Include="day22\part1\" />
+    <Folder Include="day22\part2\" />
     <Folder Include="day23\" />
-    <Folder Include="day23\data\" />
+    <Folder Include="day23\part2\" />
     <Folder Include="day23\part1\" />
     <Folder Include="day24\" />
+    <Folder Include="day24\part1\" />
+    <Folder Include="day24\part2\" />
+    <Folder Include="day25\" />
+    <Folder Include="day25\part1\" />
+    <Folder Include="day22\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="day01\part1\day01_part01.ts" />
@@ -257,15 +266,23 @@
     <TypeScriptCompile Include="day16\part2\day16_part02.ts" />
     <TypeScriptCompile Include="day17\Coord.ts" />
     <TypeScriptCompile Include="day17\Element.ts" />
-    <TypeScriptCompile Include="day17\part1\day17.ts" />
-    <TypeScriptCompile Include="day17\part2\day17.ts" />
-    <TypeScriptCompile Include="day18\part1\day18.ts" />
-    <TypeScriptCompile Include="day18\part2\day18.ts" />
-    <TypeScriptCompile Include="day19\part1\day19.ts" />
-    <TypeScriptCompile Include="day19\part2\day19.ts" />
-    <TypeScriptCompile Include="day20\part1\day20.ts" />
-    <TypeScriptCompile Include="day20\part2\day20.ts" />
-    <TypeScriptCompile Include="day23\part1\day23.ts" />
+    <TypeScriptCompile Include="day17\part1\day17_part01.ts" />
+    <TypeScriptCompile Include="day17\part2\day17_part02.ts" />
+    <TypeScriptCompile Include="day18\part1\day18_part01.ts" />
+    <TypeScriptCompile Include="day18\part2\day18_part02.ts" />
+    <TypeScriptCompile Include="day19\part1\day19_part01.ts" />
+    <TypeScriptCompile Include="day19\part2\day19_part02.ts" />
+    <TypeScriptCompile Include="day20\part1\day20_part01.ts" />
+    <TypeScriptCompile Include="day20\part2\day20_part02.ts" />
+    <TypeScriptCompile Include="day21\part1\day21_part01.ts" />
+    <TypeScriptCompile Include="day21\part2\day21_part02.ts" />
+    <TypeScriptCompile Include="day22\part1\day22_part01.ts" />
+    <TypeScriptCompile Include="day22\part2\day22_part02.ts" />
+    <TypeScriptCompile Include="day23\part1\day23_part01.ts" />
+    <TypeScriptCompile Include="day23\part2\day23_part02.ts" />
+    <TypeScriptCompile Include="day24\part1\day24_part01.ts" />
+    <TypeScriptCompile Include="day24\part2\day24_part02.ts" />
+    <TypeScriptCompile Include="day25\part1\day25_part01.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
