@@ -1,16 +1,11 @@
 {
-    "compileOnSave": true,
-    "compilerOptions": {
-        "noImplicitAny" : true,
-        "strictNullChecks": false,
-        "types": ["node"], 
-        "lib":[
-            "es2018"
-        ],
-        "target": "es2018",
-        "module": "commonjs"
-    },
-    "files":[
-        
-    ]
-  }
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es6"],
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

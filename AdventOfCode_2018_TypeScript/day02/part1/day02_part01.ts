@@ -12,14 +12,11 @@ class Entry {
     description: Array<Counter>;
     candidatesTwo: Array<Counter>;
     candidatesThree: Array<Counter>;
-    possibleEquals: Array<Entry>;
-
     constructor(value: string) {
         this.entryValue = value;
         this.description = [];
         this.candidatesTwo = [];
         this.candidatesThree = [];
-        this.possibleEquals = [];
     }
 
     analyze() {
@@ -47,16 +44,16 @@ class Entry {
     }
 }
 
-export class Day02Part02 {
+export class Day02Part01 {
     execute() {
-        var fs = require("fs");
-        var path = require('path');
+        let fs = require("fs");
+        let path = require('path');
 
         let entryElements = [];
         let filepath = path.join(__dirname, "../day02_input.txt");
-        // let filepath = path.join(__dirname, "./test_02.txt");
+        // let filepath = path.join(__dirname, "./test_01.txt");
         let text = fs.readFileSync(filepath, "utf-8");
-        entryElements = text.split("\r\n");
+        entryElements = text.split("\r\n");        
 
         let entries: Array<Entry> = [];
         let numberOfTwo: number = 0;
@@ -80,29 +77,6 @@ export class Day02Part02 {
         }
 
         console.log(`Checksum: ${numberOfTwo * numberOfThree}.`);
-
-        for (var idx = 0; idx < entries.length; idx++) {
-            var tmpEntry = entries[idx];
-            for (var jdx = idx + 1; jdx < entries.length; jdx++) {
-                var entryToCompare = entries[jdx];
-                var cdifferences = 0;
-                var issimilar = true;
-                let result: string = "";
-                for (var kdx = 0; kdx < tmpEntry.entryValue.length; kdx++) {
-                    if (tmpEntry.entryValue[kdx] !== entryToCompare.entryValue[kdx]) {
-                        cdifferences++;
-                    } else {
-                        result = result + tmpEntry.entryValue[kdx];
-                    }
-                    if (cdifferences > 1) {
-                        issimilar = false;
-                        break;
-                    }
-                }
-                if (issimilar) {
-                    console.log(`Similar found ${result.toString()}.\n`)
-                }
-            }
-        }
     }
 }
+

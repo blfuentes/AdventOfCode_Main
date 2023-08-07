@@ -2,22 +2,17 @@ export class Day01Part02 {
     execute() {
         let fs = require("fs");
         let path = require('path');
-
         let changes = [];
-        let result: number = 0;
-
+        let result = 0;
         let filepath = path.join(__dirname, "../day01_part01_input.txt");
         // var filepath = path.join(__dirname, "../test02.txt");
         // var filepath = path.join(__dirname, "./test03.txt");
         // var filepath = path.join(__dirname, "./test04.txt");
-
         let text = fs.readFileSync(filepath, "utf-8");
         changes = text.split("\r\n");
-
-        let newValue: number = 0;
-        let calculatedFrecuencies: number[] = [];
-
-        let duplicatedFound: boolean = false;
+        let newValue = 0;
+        let calculatedFrecuencies = [];
+        let duplicatedFound = false;
         let numberofloops = 0;
         do {
             for (let value of changes) {

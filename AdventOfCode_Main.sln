@@ -25,47 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AdventOfCode_2015_Go", "AdventOfCode_2015_Go\", "{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_49704"
-		Debug.AspNetCompiler.PhysicalPath = "AdventOfCode_2015_Go\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49704\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_49704"
-		Release.AspNetCompiler.PhysicalPath = "AdventOfCode_2015_Go\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49704\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49704"
-		SlnRelativePath = "AdventOfCode_2015_Go\"
-	EndProjectSection
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AdventOfCode_2018_TypeScript", "AdventOfCode_2018_TypeScript\", "{65C690BB-293F-4B0E-9B4E-7B3416C7F9E0}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_49727"
-		Debug.AspNetCompiler.PhysicalPath = "AdventOfCode_2018_TypeScript\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49727\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_49727"
-		Release.AspNetCompiler.PhysicalPath = "AdventOfCode_2018_TypeScript\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49727\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49727"
-		SlnRelativePath = "AdventOfCode_2018_TypeScript\"
-	EndProjectSection
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AdventOfCode_2018_Typescript", "AdventOfCode_2018_Typescript\AdventOfCode_2018_Typescript.njsproj", "{7975E305-5013-4F7F-A76B-DF113FBFC306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,14 +65,10 @@ Global
 		{8FA793B8-B3C0-4203-AFE3-33E34A98CF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FA793B8-B3C0-4203-AFE3-33E34A98CF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FA793B8-B3C0-4203-AFE3-33E34A98CF2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E2678BB-668F-4787-8B0B-BEAB9695D9CC}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{65C690BB-293F-4B0E-9B4E-7B3416C7F9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65C690BB-293F-4B0E-9B4E-7B3416C7F9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65C690BB-293F-4B0E-9B4E-7B3416C7F9E0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{65C690BB-293F-4B0E-9B4E-7B3416C7F9E0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7975E305-5013-4F7F-A76B-DF113FBFC306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7975E305-5013-4F7F-A76B-DF113FBFC306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7975E305-5013-4F7F-A76B-DF113FBFC306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7975E305-5013-4F7F-A76B-DF113FBFC306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,23 +1,21 @@
-import { Claim } from "../Claim";
-
-export class Day03Part2 {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Day03Part2 = void 0;
+const Claim_1 = require("../Claim");
+class Day03Part2 {
     execute() {
         let fs = require("fs");
         let path = require('path');
-
         let entryElements = [];
         let filepath = path.join(__dirname, "../day03_input.txt");
         // let filepath = path.join(__dirname, "../test01_input.txt");
         let text = fs.readFileSync(filepath, "utf-8");
         entryElements = text.split("\r\n");
-
-        let claimsList: Claim[] = [];
-
+        let claimsList = [];
         for (let entry of entryElements) {
-            claimsList.push(new Claim(entry));
+            claimsList.push(new Claim_1.Claim(entry));
         }
-
-        let baseSquare: Array<Array<string>>;
+        let baseSquare;
         baseSquare = Array(1000).fill(null).map(item => (new Array(1000).fill(".")));
         // baseSquare = new Array(1000);
         // for (var idx = 0; idx < baseSquare.length; idx++) {
@@ -26,17 +24,15 @@ export class Day03Part2 {
         //         baseSquare[idx][jdx] = ".";
         //     }
         // }
-
-        let squareInches: number = 0;
-
-        let uniqueClaimId: number = 0;
-
+        let squareInches = 0;
+        let uniqueClaimId = 0;
         for (let claim of claimsList) {
             for (var cidx = claim.initTop; cidx < (claim.initTop + claim.height); cidx++) {
                 for (var cjdx = claim.initLeft; cjdx < (claim.initLeft + claim.width); cjdx++) {
                     if (baseSquare[cidx][cjdx] === ".") {
                         baseSquare[cidx][cjdx] = claim.id.toString();
-                    } else {
+                    }
+                    else {
                         if (baseSquare[cidx][cjdx] !== "X") {
                             squareInches++;
                         }
@@ -45,9 +41,7 @@ export class Day03Part2 {
                 }
             }
         }
-
-        let isUniqueClaim: boolean = true;
-
+        let isUniqueClaim = true;
         for (let claim of claimsList) {
             isUniqueClaim = true;
             for (var cidx = claim.initTop; cidx < (claim.initTop + claim.height); cidx++) {
@@ -65,7 +59,7 @@ export class Day03Part2 {
                 uniqueClaimId = claim.id;
             }
         }
-
         console.log(`Overlaped: ${squareInches}. UniqueClaim: ${uniqueClaimId}.`);
     }
 }
+exports.Day03Part2 = Day03Part2;
