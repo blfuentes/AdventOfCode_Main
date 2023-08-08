@@ -1,9 +1,4 @@
 *.exe
-obj
-bin
-.ionide
-.fake
-.vs
 *.suo
 *.js
 day*.txt
@@ -11,5 +6,9 @@ day*.txt
 !/AdventOfCode_BASE/day*/**
 !/AoC_Debugger/day*.txt
 node_modules
-/AdventOfCode_2018_TypeScript/day*/part*/day*.js
+obj
+bin
+.ionide
+.fake
+.vs
 *.js
