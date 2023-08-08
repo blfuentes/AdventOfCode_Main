@@ -117,7 +117,8 @@ export class Day16Part01 {
 
         let resultPart1 = this.calculateCase(checkCasesCollection, checkOperator);
 
-        console.log(`Part 1: ${resultPart1}`);
+        //console.log(`Part 1: ${resultPart1}`);
+        return resultPart1;
     }
 }
 

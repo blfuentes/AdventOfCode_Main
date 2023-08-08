@@ -82,9 +82,10 @@ export class Day07Part01 {
         }
         let result: string;
         if (firstNode != undefined && lastNode != undefined) {
-            console.log(`First node: ${firstNode.element}`);
-            console.log(`Last node: ${lastNode.element}`);
-            console.log(`Solution part 1: ${currentSolution.toString().replace(RegExp(",", "g"), "")}`);
+            //console.log(`First node: ${firstNode.element}`);
+            //console.log(`Last node: ${lastNode.element}`);
+            //console.log(`Solution part 1: ${currentSolution.toString().replace(RegExp(",", "g"), "")}`);
+            return currentSolution.toString().replace(RegExp(",", "g"), "");
         }
     }
 }

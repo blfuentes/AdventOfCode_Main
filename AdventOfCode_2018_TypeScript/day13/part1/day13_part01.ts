@@ -89,7 +89,8 @@ export class Day13Part01 {
             }
         } while (!crashed);
 
-        console.log(`Part 1 crashed: ${coordCrashed.toString()}!`);
+        //console.log(`Part 1 crashed: ${coordCrashed.toString()}!`);
+        return coordCrashed.toString();
     }
 }
 

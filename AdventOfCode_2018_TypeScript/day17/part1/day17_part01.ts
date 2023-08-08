@@ -22,7 +22,8 @@ export class Day17Part01 {
         this.readGroundComposition();
 
         //
-        console.log(`finished!`);
+        //console.log(`finished!`);
+        return 0;
     }
 }
 

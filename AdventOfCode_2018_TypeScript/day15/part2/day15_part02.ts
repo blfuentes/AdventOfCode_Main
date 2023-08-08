@@ -13,7 +13,7 @@ export class Day15Part02 {
             for (let colIdx = 0; colIdx < caveMap.length; colIdx++) {
                 rowDisplay += caveMap[colIdx][rowIdx];
             }
-            console.log(`${rowDisplay}`);
+            //console.log(`${rowDisplay}`);
             rowIdx++;
         }
     }
@@ -373,13 +373,13 @@ export class Day15Part02 {
         let elfWasDead: Elf | undefined;
         do {
             this.initGame(lines, playerCollection, elfCollection, goblinCollection, mapPositions, ++initAP);
-            console.log(`Combat with ${initAP} AP.`);
+            //console.log(`Combat with ${initAP} AP.`);
 
             this.displayCaveMap(lines, caveMap);
             let roundNumber = 0;
             do {
                 roundNumber++;
-                console.log(`Start of round ${roundNumber}.`);
+                //console.log(`Start of round ${roundNumber}.`);
                 for (let player of playerCollection) {
                     if (player.isAlive && this.AreEnemiesLeft(playerCollection, player)) {
                         player.EnemiesPositions = this.findAvailableEnemyPositions(playerCollection, mapPositions, player).sort(this.sortByPosition);
@@ -387,7 +387,7 @@ export class Day15Part02 {
                     }
                 }
                 // displayCaveMap(caveMap);    
-                console.log(`End of round ${roundNumber}.`);
+                //console.log(`End of round ${roundNumber}.`);
                 playerCollection = playerCollection.filter(_p => _p.isAlive).sort(this.sortPlayerByPosition);
 
             } while (elfCollection.find(_e => _e.isAlive) && goblinCollection.find(_g => _g.isAlive))

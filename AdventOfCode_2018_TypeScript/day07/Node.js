@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Node = void 0;
-var Node = /** @class */ (function () {
-    function Node(value, parent) {
+class Node {
+    constructor(value, parent) {
         this.element = value;
         this.parentNodes = [];
         if (parent != undefined) {
@@ -11,6 +11,6 @@ var Node = /** @class */ (function () {
         this.childNodes = [];
         this.duration = this.element.charCodeAt(0) - 64;
     }
-    return Node;
-}());
+}
 exports.Node = Node;
+//# sourceMappingURL=Node.js.map

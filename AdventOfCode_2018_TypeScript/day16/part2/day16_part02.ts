@@ -287,7 +287,8 @@ export class Day16Part02 {
             }
         }
 
-        console.log(`Part 1: ${resultPart1}`);
-        console.log(`Part 2: ${result[0]}`);
+        //console.log(`Part 1: ${resultPart1}`);
+        //console.log(`Part 2: ${result[0]}`);
+        return result[0];
     }
 }

@@ -62,10 +62,10 @@ export class Day10Part01 {
 
             if (minY >= 0 && maxY >= 0 && maxY - minY == 9) {
                 go = false;
-                console.log(`Second ${counter} printed. `);
+                //console.log(`Second ${counter} printed. `);
             } else {
                 counter++;
-                console.log(`Second ${counter} skipped.`);
+                //console.log(`Second ${counter} skipped.`);
                 continue;
             }
 
@@ -101,7 +101,7 @@ export class Day10Part01 {
             // console.log(`Second ${counter + 1} finished.`);
             counter++;
         } while (go);
-        console.log(`Finished in second: ${counter}`);
+        //console.log(`Finished in second: ${counter}`);
     }
 }
 

@@ -73,7 +73,8 @@ export class Day09Part01 {
                     maxValue = player;
                 }
             }
-            console.log(`Winner: ${maxValue}`)
+            //console.log(`Winner: ${maxValue}`)
+            return maxValue;
         }
     }
 }

@@ -104,7 +104,8 @@ export class Day12Part02 {
         for (var idx = 0; idx < filtered.length; idx++) {
             numberOfPlants += filtered[idx].id;
         }
-        console.log(`Number of plants: ${numberOfPlants + (iterations - counter) * sumDiff}`);
+        //console.log(`Number of plants: ${numberOfPlants + (iterations - counter) * sumDiff}`);
+        return numberOfPlants + (iterations - counter) * sumDiff;
     }
 }
 

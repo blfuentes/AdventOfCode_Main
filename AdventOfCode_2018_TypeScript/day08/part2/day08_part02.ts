@@ -42,6 +42,7 @@ export class Day08Part02 {
 
         sumatory = this.calculateSum(inputArray, initIdxRead, metadataValue);
 
-        console.log(`Result part 2: ${sumatory}.`);
+        //console.log(`Result part 2: ${sumatory}.`);
+        return sumatory;
     }
 }

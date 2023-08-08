@@ -38,7 +38,8 @@ export class Day08Part01 {
 
         this.calculateSum(inputArray, initIdxRead, metadataValue);
 
-        console.log(`Result part 1: ${metadataValue}.`);
+        //console.log(`Result part 1: ${metadataValue}.`);
+        return metadataValue;
     }
 }
 

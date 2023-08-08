@@ -2,7 +2,7 @@ export class Day11Part02 {
     execute() {
         // let puzzleInput: number = 18;
         // let puzzleInput: number = 42;
-        let puzzleInput: number = 1723;
+        let puzzleInput: number = 2866;
 
         let fuelGrid: Array<Array<number>>;
         let fuelGridSquareValues: Array<Array<number>>;

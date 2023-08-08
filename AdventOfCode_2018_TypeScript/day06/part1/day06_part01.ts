@@ -124,7 +124,8 @@ export class Day06Part01 {
         //     console.log(``);
         // }
 
-        console.log(`Final result part 1: ${maxArea}`);
+        //console.log(`Final result part 1: ${maxArea}`);
+        return maxArea;
     }
 }
 

@@ -15,11 +15,11 @@ export class Day14Part02 {
             }
             tableState += element;
         }
-        console.log(tableState);
+        //console.log(tableState);
     }
     execute() {
         const fs = require('fs');
-        let input = 919901;
+        let input = parseInt("074501");
         let cookTable: Array<number> = [];
 
         let currentRecipes: Array<number> = [];
@@ -67,8 +67,9 @@ export class Day14Part02 {
 
         magicFormulaStatus = magicFormula.toString().replace(new RegExp(",", "g"), "");
         let cookTableStatus = cookTable.toString().replace(new RegExp(",", "g"), "");
-        console.log(`Magic formula part 1: ${magicFormulaStatus}.`)
-        console.log(`Number of recipes to the left part 2 ${cookTableStatus.indexOf(input.toString())}`)
+        //console.log(`Magic formula part 1: ${magicFormulaStatus}.`)
+        //console.log(`Number of recipes to the left part 2 ${cookTableStatus.indexOf(input.toString())}`)
+        return cookTableStatus.indexOf(input.toString());
     }
 }
 

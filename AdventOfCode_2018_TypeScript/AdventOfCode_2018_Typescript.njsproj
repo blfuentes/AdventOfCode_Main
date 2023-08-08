@@ -130,11 +130,13 @@
     <Content Include="day20\part2\tsconfig.json" />
     <Content Include="day20\test_input.txt" />
     <Content Include="day21\day21_input.txt" />
+    <Content Include="day22\day22_input.txt" />
     <Content Include="day23\day23_input.txt" />
     <Content Include="day23\day23_input2.txt" />
     <Content Include="day23\part1\tsconfig.json" />
     <Content Include="day24\day24_input.txt" />
     <Content Include="day24\part1\tsconfig.json" />
+    <Content Include="day25\day25_input.txt" />
     <Content Include="day25\part1\tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -283,6 +285,7 @@
     <TypeScriptCompile Include="day24\part1\day24_part01.ts" />
     <TypeScriptCompile Include="day24\part2\day24_part02.ts" />
     <TypeScriptCompile Include="day25\part1\day25_part01.ts" />
+    <TypeScriptCompile Include="dayimports.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

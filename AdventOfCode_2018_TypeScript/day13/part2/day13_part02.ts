@@ -105,8 +105,9 @@ export class Day13Part02 {
         let carSurvivor = carsPositions.find(_c => _c.isAlive);
 
         if (carSurvivor != undefined) {
-            console.log(`Part 1 crashed: ${coordCrashed.toString()}!`);
-            console.log(`Part 2 survivor: ${carSurvivor.coordX},${carSurvivor.coordY}!`);
+            //console.log(`Part 1 crashed: ${coordCrashed.toString()}!`);
+            //console.log(`Part 2 survivor: ${carSurvivor.coordX},${carSurvivor.coordY}!`);
+            return `${carSurvivor.coordX},${carSurvivor.coordY}`;
         }
     }
 }

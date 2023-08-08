@@ -85,7 +85,7 @@ export class Day07Part02 {
         }
         let result: string;
         result = currentSolution.toString().replace(RegExp(",", "g"), "");
-        console.log(`Solution part 1: ${result}`);
+        //console.log(`Solution part 1: ${result}`);
 
         let elementWeights: { [key: string]: number } = {};
 
@@ -111,6 +111,8 @@ export class Day07Part02 {
             }
             secondCounter++;
         }
+
+        return 0;
     }
 }
 

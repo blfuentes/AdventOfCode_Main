@@ -29,7 +29,8 @@ export class Day05Part01 {
         var timeElapsed = endTime.valueOf() - startTime.valueOf();
 
         // console.log(`Remaining units for ${text} :: ${text.length}`);
-        console.log(`Time elapsed: ${timeElapsed}`)
-        console.log(`Remaining units: ${text.length}.`)
+        //console.log(`Time elapsed: ${timeElapsed}`)
+        //console.log(`Remaining units: ${text.length}.`)
+        return text.length;
     }
 }

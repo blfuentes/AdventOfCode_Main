@@ -75,8 +75,10 @@ export class Day09Part02 {
             }
             var endTime = new Date();
             var timeElapsed = endTime.valueOf() - startTime.valueOf();
-            console.log(`Time elapsed: ${timeElapsed}`)
-            console.log(`Winner: ${maxValue}`)
+            //console.log(`Time elapsed: ${timeElapsed}`)
+            //console.log(`Winner: ${maxValue}`)
+
+            return maxValue;
         }
 
     }

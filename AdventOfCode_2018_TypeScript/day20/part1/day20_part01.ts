@@ -7,5 +7,7 @@ export class Day20Part01 {
         // let filepath = path.join(__dirname, "../test_input.txt");
         let filepath = path.join(__dirname, "../day20_input.txt");
         let lines = fs.readFileSync(filepath, "utf-8").split("\r\n");
+
+        return 0;
     }
 }

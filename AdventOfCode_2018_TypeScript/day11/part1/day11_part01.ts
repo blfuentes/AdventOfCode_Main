@@ -1,7 +1,7 @@
 export class Day11Part01 {
     execute() {
         // let puzzleInput: number = 42;
-        let puzzleInput: number = 1723;
+        let puzzleInput: number = 2866;
 
         let fuelGrid: Array<Array<number>>;
         let fuelGridSquareValues: Array<Array<number>>;
@@ -72,6 +72,7 @@ export class Day11Part01 {
 
         coordMax[0] -= 1;
         coordMax[1] -= 1;
-        console.log(`Part 1--> Highest coordinate ${coordMax.toString()} with ${maxValue}.`);
+        //console.log(`Part 1--> Highest coordinate ${coordMax.toString()} with ${maxValue}.`);
+        return coordMax.toString();
     }
 }

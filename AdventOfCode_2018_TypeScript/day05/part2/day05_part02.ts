@@ -28,8 +28,9 @@ export class Day05Part02 {
 
 
         // console.log(`Remaining units for ${text} :: ${text.length}`);
-        console.log(`Time elapsed: ${timeElapsed}`)
-        console.log(`Shortest polymer: ${shortestPolymer}`)
+        //console.log(`Time elapsed: ${timeElapsed}`)
+        //console.log(`Shortest polymer: ${shortestPolymer}`)
+        return shortestPolymer;
     }
 }
 

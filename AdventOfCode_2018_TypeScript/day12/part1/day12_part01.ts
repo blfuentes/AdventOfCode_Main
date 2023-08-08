@@ -80,7 +80,8 @@ export class Day12Part01 {
         for (var idx = 0; idx < filtered.length; idx++) {
             numberOfPlants += filtered[idx].id;
         }
-        console.log(`Number of plants: ${numberOfPlants}`);
+        //console.log(`Number of plants: ${numberOfPlants}`);
+        return numberOfPlants;
     }
 }
 

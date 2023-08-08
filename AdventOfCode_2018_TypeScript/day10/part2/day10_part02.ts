@@ -62,9 +62,9 @@ export class Day10Part02 {
 
             if (minY >= 0 && maxY >= 0 && maxY - minY == 9) {
                 go = false;
-                console.log(`Second ${counter} printed.`);
+                //console.log(`Second ${counter} printed.`);
             } else {
-                console.log(`Second ${counter} skipped.`);
+                //console.log(`Second ${counter} skipped.`);
                 continue;
             }
 
@@ -81,22 +81,23 @@ export class Day10Part02 {
             var file = fs.createWriteStream(newFileName);
             file.on('error', function (err: string) {
                 /* error handling */
-                console.log(`error: ${err}`);
+                //console.log(`error: ${err}`);
             });
-            // 
-            for (var idx = 0; idx < maxY + 1; idx++) {
-                var newline: string = "";
-                for (var jdx = 0; jdx < maxX + 1; jdx++) {
-                    newline += ouputMessage[jdx][idx];
-                }
-                file.write(newline + "\n");
-                console.log(newline);
-            }
-            file.end();
+            // PART 1
+            //for (var idx = 0; idx < maxY + 1; idx++) {
+            //    var newline: string = "";
+            //    for (var jdx = 0; jdx < maxX + 1; jdx++) {
+            //        newline += ouputMessage[jdx][idx];
+            //    }
+            //    file.write(newline + "\n");
+            //    console.log(newline);
+            //}
+            //file.end();
 
-            console.log(`Second ${counter} finished.`);
+            //console.log(`Second ${counter} finished.`);
         } while (go);
-        console.log(`Finished in second: ${counter}`);
+        //console.log(`Finished in second: ${counter}`);
+        return counter;
     }
 }
 
