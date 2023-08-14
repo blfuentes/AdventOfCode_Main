@@ -1,22 +1,24 @@
 export class Day08Part01 {
-    calculateSum(inputArray: number[], initIdxRead: number, metadataValue: number) {
-        const children = inputArray[initIdxRead++];
-        const metadata = inputArray[initIdxRead++];
+    metadataValue: number = 0;
+    initIdxRead: number = 0;
+
+    calculateSum(inputArray: number[]) {
+        const children = inputArray[this.initIdxRead++];
+        const metadata = inputArray[this.initIdxRead++];
         let sum = 0;
         if (children == 0) {
             for (let idxMetadata = 0; idxMetadata < metadata; idxMetadata++) {
-                const value = inputArray[initIdxRead++];
-                metadataValue += value;
+                const value = inputArray[this.initIdxRead++];
+                this.metadataValue += value;
                 sum += value;
             }
         } else {
-            // const metadataValues: Array<number> = [];
             for (let counterChild = 0; counterChild < children; counterChild++) {
-                this.calculateSum(inputArray, initIdxRead, metadataValue);
+                this.calculateSum(inputArray);
             }
             for (let counterMetadata = 0; counterMetadata < metadata; counterMetadata++) {
-                const value = inputArray[initIdxRead++];
-                metadataValue += value;
+                const value = inputArray[this.initIdxRead++];
+                this.metadataValue += value;
             }
         }
 
@@ -27,19 +29,14 @@ export class Day08Part01 {
         let fs = require("fs");
         let path = require('path');
 
-        // let filepath = path.join(__dirname, "../test01_input.txt");
+        //let filepath = path.join(__dirname, "../test01_input.txt");
         let filepath = path.join(__dirname, "../day08_input.txt");
         let text: string = fs.readFileSync(filepath, "utf-8");
-        let inputArray = text.split(" ").map(_e => parseInt(_e));
+        let inputArray = text.split(" ").map(e => parseInt(e));
 
-        let metadataValue: number = 0;
-        let initIdxRead: number = 0;
+        this.calculateSum(inputArray);
 
-
-        this.calculateSum(inputArray, initIdxRead, metadataValue);
-
-        //console.log(`Result part 1: ${metadataValue}.`);
-        return metadataValue;
+        return this.metadataValue;
     }
 }
 
