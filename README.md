@@ -30,7 +30,6 @@ https://adventofcode.com/2018
 - 11.2
 - 13
 - 14.2
-- 15 (review)
 - 17 al 25
 
 

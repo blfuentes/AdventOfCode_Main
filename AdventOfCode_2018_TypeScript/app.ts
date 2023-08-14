@@ -36,10 +36,10 @@ console.log(`Result of day 07 part 01 is ${resultday07Part01}`);
 let day07Part02 = new dayimports.Day07Part02(); let resultday07Part02 = day07Part02.execute();
 console.log(`Result of day 07 part 02 is ${resultday07Part02}`);
 // Executing day 08
-//let day08Part01 = new dayimports.Day08Part01(); let resultday08Part01 = day08Part01.execute();
-//console.log(`Result of day 08 part 01 is ${resultday08Part01}`);
-//let day08Part02 = new dayimports.Day08Part02(); let resultday08Part02 = day08Part02.execute();
-//console.log(`Result of day 08 part 02 is ${resultday08Part02}`);
+let day08Part01 = new dayimports.Day08Part01(); let resultday08Part01 = day08Part01.execute();
+console.log(`Result of day 08 part 01 is ${resultday08Part01}`);
+let day08Part02 = new dayimports.Day08Part02(); let resultday08Part02 = day08Part02.execute();
+console.log(`Result of day 08 part 02 is ${resultday08Part02}`);
 // Executing day 09
 let day09Part01 = new dayimports.Day09Part01(); let resultday09Part01 = day09Part01.execute();
 console.log(`Result of day 09 part 01 is ${resultday09Part01}`);
@@ -71,10 +71,10 @@ console.log(`Result of day 14 part 01 is ${resultday14Part01}`);
 //let day14Part02 = new dayimports.Day14Part02(); let resultday14Part02 = day14Part02.execute();
 //console.log(`Result of day 14 part 02 is ${resultday14Part02}`);
 // Executing day 15
-//let day15Part01 = new dayimports.Day15Part01(); let resultday15Part01 = day15Part01.execute();
-//console.log(`Result of day 15 part 01 is ${resultday15Part01}`);
-//let day15Part02 = new dayimports.Day15Part02(); let resultday15Part02 = day15Part02.execute();
-//console.log(`Result of day 15 part 02 is ${resultday15Part02}`);
+let day15Part01 = new dayimports.Day15Part01(); let resultday15Part01 = day15Part01.Execute();
+console.log(`Result of day 15 part 01 is ${resultday15Part01}`);
+let day15Part02 = new dayimports.Day15Part02(); let resultday15Part02 = day15Part02.execute();
+console.log(`Result of day 15 part 02 is ${resultday15Part02}`);
 // Executing day 16
 let day16Part01 = new dayimports.Day16Part01(); let resultday16Part01 = day16Part01.execute();
 console.log(`Result of day 16 part 01 is ${resultday16Part01}`);
