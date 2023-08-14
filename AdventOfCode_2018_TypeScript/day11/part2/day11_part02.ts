@@ -1,14 +1,13 @@
 export class Day11Part02 {
+    PuzzleInput: number = 18;
+     //PuzzleInput: number = 42;
+    //PuzzleInput: number = 2866;
+
+    FuelGrid: Array<Array<number>>;
+    FuelGridSquareValues: Array<Array<number>>;
     execute() {
-        // let puzzleInput: number = 18;
-        // let puzzleInput: number = 42;
-        let puzzleInput: number = 2866;
-
-        let fuelGrid: Array<Array<number>>;
-        let fuelGridSquareValues: Array<Array<number>>;
-
-        fuelGrid = Array(300).fill(null).map(item => (new Array(300).fill(0)));
-        fuelGridSquareValues = Array(300).fill(null).map(item => (new Array(300).fill(0)));
+        this.FuelGrid = Array(300).fill(null).map(() => (new Array(300).fill(0)));
+        this.FuelGridSquareValues = Array(300).fill(null).map(() => (new Array(300).fill(0)));
 
         function getFuel(input: number, coord: Array<number>) {
             let fuelResult = 0;
@@ -27,7 +26,7 @@ export class Day11Part02 {
 
         for (let column = 0; column < 300; column++) {
             for (let row = 0; row < 300; row++) {
-                fuelGrid[column][row] = getFuel(puzzleInput, [column, row]);
+                this.FuelGrid[column][row] = getFuel(this.PuzzleInput, [column, row]);
             }
         }
 
@@ -35,13 +34,13 @@ export class Day11Part02 {
         let maxValue = 0;
         let coordMax = [0, 0];
         for (let squareSize = 1; squareSize <= 300; squareSize++) {
-            fuelGridSquareValues = Array(300).fill(null).map(item => (new Array(300).fill(0)));
+            this.FuelGridSquareValues = Array(300).fill(null).map(item => (new Array(300).fill(0)));
             for (let column = 0; column < 300; column++) {
                 for (let row = 0; row < 300; row++) {
                     for (let subcolumn = column; (subcolumn < 300 && subcolumn <= column + squareSize - 1); subcolumn++) {
                         for (let subrow = row; (subrow < 300 && subrow <= row + squareSize - 1); subrow++) {
                             if (subcolumn >= 0 && subrow >= 0) {
-                                fuelGridSquareValues[subcolumn][subrow] += fuelGrid[column][row];
+                                this.FuelGridSquareValues[subcolumn][subrow] += this.FuelGrid[column][row];
                             }
                         }
                     }
@@ -51,8 +50,8 @@ export class Day11Part02 {
             let currentMaxValue = 0;
             for (let column2 = 0; column2 < 300; column2++) {
                 for (let row2 = 0; row2 < 300; row2++) {
-                    if (fuelGridSquareValues[column2][row2] > currentMaxValue) {
-                        currentMaxValue = fuelGridSquareValues[column2][row2];
+                    if (this.FuelGridSquareValues[column2][row2] > currentMaxValue) {
+                        currentMaxValue = this.FuelGridSquareValues[column2][row2];
                         currentcoordMax = [column2, row2];
                     }
                 }
@@ -67,8 +66,6 @@ export class Day11Part02 {
             }
             console.log(`Current highest coordinate ${currentcoordMax.toString()} with square size ${squareSize} and power ${currentMaxValue}. Highest coordinate ${coordMax.toString()} with MaxSquareSize ${maxSquareSize} and Maxpower ${maxValue}.`);
         }
-
-
 
         // console.log(`Cell [3, 5], grid serial number 8: power level ${getFuel(8, [3, 5])}.`);
         // console.log(`Cell [122, 79], grid serial number 57: power level ${getFuel(57, [122, 79])}.`);
