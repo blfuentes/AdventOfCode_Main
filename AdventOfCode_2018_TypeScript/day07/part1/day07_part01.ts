@@ -18,11 +18,11 @@ export class Day07Part01 {
             let lineParts = line.split(" ");
             let tmpNode = nodeList.find(_n => _n.element == lineParts[7]);
             if (tmpNode == undefined) {
-                tmpNode = new Node(lineParts[7], undefined);
+                tmpNode = new Node(lineParts[7], undefined, 0);
             }
             let tmpParent = nodeList.find(_n => _n.element == lineParts[1]);
             if (tmpParent == undefined) {
-                tmpParent = new Node(lineParts[1], undefined);
+                tmpParent = new Node(lineParts[1], undefined, 0);
                 nodeTree = tmpParent;
                 nodeList.push(tmpParent);
             }
@@ -47,7 +47,6 @@ export class Day07Part01 {
         let currentSolution: Array<string> = [];
         let availableElements: Array<string> = [];
         parentNodes = nodeList.filter(_n => _n.parentNodes.length == 0);
-        let endNodes = nodeList.filter(_n => _n.childNodes.length == 0);
         if (parentNodes.length > 0) {
             for (let parent of parentNodes) {
                 availableElements.push(parent.element);
