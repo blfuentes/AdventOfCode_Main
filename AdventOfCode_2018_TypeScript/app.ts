@@ -53,8 +53,8 @@ console.log(`Result of day 10 part 02 is ${resultday10Part02}`);
 // Executing day 11
 let day11Part01 = new dayimports.Day11Part01(); let resultday11Part01 = day11Part01.execute();
 console.log(`Result of day 11 part 01 is ${resultday11Part01}`);
-//let day11Part02 = new dayimports.Day11Part02(); let resultday11Part02 = day11Part02.execute();
-//console.log(`Result of day 11 part 02 is ${resultday11Part02}`);
+let day11Part02 = new dayimports.Day11Part02(); let resultday11Part02 = day11Part02.execute();
+console.log(`Result of day 11 part 02 is ${resultday11Part02}`);
 // Executing day 12
 let day12Part01 = new dayimports.Day12Part01(); let resultday12Part01 = day12Part01.execute();
 console.log(`Result of day 12 part 01 is ${resultday12Part01}`);

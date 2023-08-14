@@ -1,7 +1,7 @@
 export class Day11Part02 {
-    PuzzleInput: number = 18;
+    //PuzzleInput: number = 18;
      //PuzzleInput: number = 42;
-    //PuzzleInput: number = 2866;
+    PuzzleInput: number = 2866;
 
     FuelGrid: Array<Array<number>>;
     FuelGridSquareValues: Array<Array<number>>;
@@ -33,6 +33,8 @@ export class Day11Part02 {
         let maxSquareSize = 0;
         let maxValue = 0;
         let coordMax = [0, 0];
+        let lastCoords = [0, 0];
+        let lastPower = 0;
         for (let squareSize = 1; squareSize <= 300; squareSize++) {
             this.FuelGridSquareValues = Array(300).fill(null).map(item => (new Array(300).fill(0)));
             for (let column = 0; column < 300; column++) {
@@ -64,9 +66,16 @@ export class Day11Part02 {
                 maxValue = currentMaxValue;
                 maxSquareSize = squareSize;
             }
-            console.log(`Current highest coordinate ${currentcoordMax.toString()} with square size ${squareSize} and power ${currentMaxValue}. Highest coordinate ${coordMax.toString()} with MaxSquareSize ${maxSquareSize} and Maxpower ${maxValue}.`);
+            //console.log(`Current highest coordinate ${currentcoordMax.toString()} with square size ${squareSize} and power ${currentMaxValue}. Highest coordinate ${coordMax.toString()} with MaxSquareSize ${maxSquareSize} and Maxpower ${maxValue}.`);
+            if (lastCoords[0] == currentcoordMax[0] && lastCoords[1] == currentcoordMax[1] && lastPower == currentMaxValue) {
+                break;
+            } else {
+                lastCoords[0] = currentcoordMax[0];
+                lastCoords[1] = currentcoordMax[1];
+                lastPower = currentMaxValue;
+            }
         }
-
+        return `${coordMax[0]},${coordMax[1]},${maxSquareSize}`;
         // console.log(`Cell [3, 5], grid serial number 8: power level ${getFuel(8, [3, 5])}.`);
         // console.log(`Cell [122, 79], grid serial number 57: power level ${getFuel(57, [122, 79])}.`);
         // console.log(`Cell [217, 196], grid serial number 39: power level ${getFuel(39, [217, 196])}.`);
