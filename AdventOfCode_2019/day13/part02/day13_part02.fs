@@ -26,7 +26,8 @@ let getBlocksSeq(blocksoutput: List<bigint>) =
     result
 
 let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint, alloutputs: List<bigint>) =
-    let (output, (idx, notfinished), relativeBase)  =  executeBigDataWithMemory(values, relativeBase,idx, input, numberOfInputs)
+    let (output, (idx, notfinished), relativeBase) = IntcodeComputerModule.getOutputBigData(values, relativeBase, idx, input, numberOfInputs, 0I)
+    //=  executeBigDataWithMemory(values, relativeBase,idx, input, numberOfInputs)
     alloutputs.Add(output)
     match notfinished with
     | false -> (output, (idx, notfinished), relativeBase)
@@ -63,13 +64,23 @@ let round(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint
     let (paddle, paddleCoordinates, numberOfPaddles) = blocktypes |> List.find (fun x -> 
         let (block, _, size) = x
         block = BlockType.PADDLE)
-    let coords = paddleCoordinates.[0] |> List.toArray
-    let nextInput = 
-        match coords.[0] with
-        | direction when direction = 22 -> 0I
-        | direction when direction < 22 -> -1I
-        | direction when direction > 22 -> 1I
+    let (ball, ballCoordinates, numberOfBalls) = blocktypes |> List.find (fun x -> 
+        let (block, _, size) = x
+        block = BlockType.BALL)
+    //let coords = paddleCoordinates.[0] |> List.toArray
+    //let nextInput = 
+    //    match coords.[0]  with
+    //    | direction when direction = 23 -> 0I
+    //    | direction when direction < 23 -> -1I
+    //    | direction when direction > 23 -> 1I
+    //    | _ -> 0I
+    let nextInput =
+        match paddleCoordinates.Head.[0] - (ballCoordinates |> List.rev).Head.[0] with
+        | direction when direction = 0 -> 0I
+        | direction when direction < 0 -> 1I
+        | direction when direction > 0 -> -1I
         | _ -> 0I
+
 
     (score.[2], nextInput, numberOfBlocks <> 0)
 
