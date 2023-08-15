@@ -11,15 +11,20 @@ export class Day14Part02 {
             } else if (idx == positions[1]) {
                 element = `[${table[idx]}]`;
             } else {
-                element = table[idx].toString();
+                element = ` ${table[idx]} `;
             }
             tableState += element;
         }
-        //console.log(tableState);
+        console.log(tableState);
     }
     execute() {
-        const fs = require('fs');
-        let input = parseInt("074501");
+        //let stringInput = "51589";
+        //let stringInput = "01245";
+        //let stringInput = "92510";
+        //let stringInput = "59414";
+        let stringInput = "074501";
+        let input = parseInt(stringInput);
+        //let input = 59414;
         let cookTable: Array<number> = [];
 
         let currentRecipes: Array<number> = [];
@@ -40,8 +45,9 @@ export class Day14Part02 {
         let magicFormulaStatus = "";
         let secondFormula: Array<number> = [];
         let initIndex = 0;
-        this.printCookTable(currentRecipePosition, cookTable);
-        let maxIndex = 50000000;
+        let cookTableStatus = "";
+        //this.printCookTable(currentRecipePosition, cookTable);
+        let maxIndex = 15600000;
         do {
             // initialize the cooktable
             let nextRecipeNumber = currentRecipes[0] + currentRecipes[1];
@@ -52,7 +58,6 @@ export class Day14Part02 {
                 if (numberOfNewRecipes > input && counter < 10) {
                     magicFormula.push(tmpRecipe);
                     counter++;
-
                 }
                 cookTable.push(tmpRecipe);
             }
@@ -62,14 +67,10 @@ export class Day14Part02 {
             newPosition = this.getNextRecipePosition(currentRecipes[1] + 1, cookTable, currentRecipePosition[1]);
             currentRecipes[1] = cookTable[newPosition]
             currentRecipePosition[1] = newPosition;
-            initIndex++;
+            initIndex++;           
         } while (initIndex < maxIndex);
-
-        magicFormulaStatus = magicFormula.toString().replace(new RegExp(",", "g"), "");
-        let cookTableStatus = cookTable.toString().replace(new RegExp(",", "g"), "");
-        //console.log(`Magic formula part 1: ${magicFormulaStatus}.`)
-        //console.log(`Number of recipes to the left part 2 ${cookTableStatus.indexOf(input.toString())}`)
-        return cookTableStatus.indexOf(input.toString());
+        cookTableStatus = cookTable.toString().replace(new RegExp(",", "g"), "");
+        return cookTableStatus.indexOf(stringInput);
     }
 }
 
