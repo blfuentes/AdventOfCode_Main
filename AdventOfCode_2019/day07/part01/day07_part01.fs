@@ -19,14 +19,15 @@ let rec perms = function
 | h::t -> Seq.collect (distrib h) (perms t)
 
 let permutation = 
+    //let values = IntCodeModule.getInput filepath
     let results = 
         perms [0I .. 4I] |> Seq.map
             (fun perm -> 
-                let result1 =  IntcodeComputerModule.executeWithPhase(filepath, (perm |> List.toArray).[0], 0I) 
-                let result2 = IntcodeComputerModule.executeWithPhase(filepath, (perm |> List.toArray).[1], result1)
-                let result3 = IntcodeComputerModule.executeWithPhase(filepath, (perm |> List.toArray).[2], result2)
-                let result4 = IntcodeComputerModule.executeWithPhase(filepath, (perm |> List.toArray).[3], result3)
-                let result5 = IntcodeComputerModule.executeWithPhase(filepath, (perm |> List.toArray).[4], result4)
+                let result1 =  IntCodeModule.getOutput (IntCodeModule.getInput filepath)  0I 0I(perm |> List.toArray).[0] 0I 2I true false 0I
+                let result2 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[1] result1 2I true false 0I
+                let result3 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[2] result2 2I true false 0I
+                let result4 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[3] result3 2I true false 0I
+                let result5 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[4] result4 2I true false 0I
                 (perm, result5)
             ) |>Seq.maxBy snd
     results
