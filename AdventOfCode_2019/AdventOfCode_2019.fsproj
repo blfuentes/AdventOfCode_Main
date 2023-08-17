@@ -106,11 +106,11 @@
     <Content Include="day12\day12_input.txt" />
     <Content Include="day12\test_input_01.txt" />
     <Content Include="day12\test_input_02.txt" />
+    <Content Include="day13\day13_input.txt" />
     <Compile Include="day13\part01\day13_part01.fs" />
     <Compile Include="day13\part02\day13_part02.fs" />
     <None Include="day13\part01\day13_part01.fsx" />
     <None Include="day13\part02\day13_part02.fsx" />
-    <Content Include="day13\day13_input.txt" />
     <Content Include="day13\test_input.txt" />
     <None Include="day14\part01\day14_part00.fsx" />
     <Compile Include="day14\part01\day14_part01.fs" />
