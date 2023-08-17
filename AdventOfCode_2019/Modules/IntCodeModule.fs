@@ -86,8 +86,8 @@ module IntCodeModule =
                 { Idx = idx; Pause = true; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 4 -> // OUTPUT
-            let output = getOperatorValue values relativeBase (idx + 1I) param1Mode
-            { Idx = idx + 2I; Pause = loopMode; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
+            let newOutput = getOperatorValue values relativeBase (idx + 1I) param1Mode
+            { Idx = idx + 2I; Pause = loopMode; Continue = true; LoopMode = loopMode; Output = newOutput; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 5 -> // JUMP IF TRUE
             let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode
@@ -131,16 +131,16 @@ module IntCodeModule =
             { Idx = idx; Pause = false; Continue = false; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | _ -> 
-            { Idx = idx; Pause = false; Continue = false; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
+            { Idx = idx; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
     let rec getOutput 
         (values: Dictionary<bigint, bigint>) (idx: bigint) 
         (relativeBase: bigint) (phase:bigint) (input:bigint) (availableInputs:bigint) (fixAvInput: bool)
-        (loopMode: bool) (currentOutput:bigint) =
-        let opDefinition = values.[idx].ToString().PadLeft(5, '0') |> Seq.toArray |> Array.map string 
-        let resultOp = performOperation values opDefinition idx relativeBase phase input availableInputs loopMode currentOutput
+        (loopMode: bool) (output:bigint) =
+        let opDef = values.[idx].ToString().PadLeft(5, '0') |> Seq.toArray |> Array.map string 
+        let resultOp = performOperation values opDef idx relativeBase phase input availableInputs loopMode output
         match resultOp.Continue with
         | true -> 
-            getOutput values resultOp.Idx resultOp.RelativeBase phase input (if fixAvInput then 2I else resultOp.AvailableInputs) fixAvInput resultOp.LoopMode resultOp.Output
+            getOutput values resultOp.Idx resultOp.RelativeBase resultOp.Input input (if fixAvInput then 2I else resultOp.AvailableInputs) fixAvInput resultOp.LoopMode resultOp.Output
         | false -> 
             resultOp.Output
