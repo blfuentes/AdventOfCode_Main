@@ -26,8 +26,7 @@ let getBlocksSeq(blocksoutput: List<bigint>) =
     result
 
 let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint, alloutputs: List<bigint>) =
-    let (output, (idx, notfinished), relativeBase) = IntcodeComputerModule.getOutputBigData(values, relativeBase, idx, input, numberOfInputs, 0I)
-    //=  executeBigDataWithMemory(values, relativeBase,idx, input, numberOfInputs)
+    let (output, (idx, notfinished), relativeBase)  =  executeBigDataWithMemory(values, relativeBase,idx, input, numberOfInputs)
     alloutputs.Add(output)
     match notfinished with
     | false -> (output, (idx, notfinished), relativeBase)

@@ -43,4 +43,5 @@ let execute =
         pointsDictionary
         |> Seq.map (fun (KeyValue(k,v)) -> (k, v))
     //converted |> Seq.iter (fun elem -> printfn "%A - %d" (fst elem) (snd elem))
-    converted |> Seq.maxBy (fun x -> snd x)
+    let result = converted |> Seq.maxBy (fun x -> snd x)
+    snd result
