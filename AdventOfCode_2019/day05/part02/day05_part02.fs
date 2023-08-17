@@ -9,4 +9,4 @@ let filepath = __SOURCE_DIRECTORY__ + @"../../day05_input.txt"
 
 let execute(input:bigint) =
     let values = IntCodeModule.getInput filepath
-    IntCodeModule.getOutput values 0I 0I input input 2I true false 0I
+    (IntCodeModule.getOutput values 0I 0I input input 2I true false false 0I).Output
