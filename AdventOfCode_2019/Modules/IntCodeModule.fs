@@ -64,34 +64,40 @@ module IntCodeModule =
     
         match op with
         | 1 -> // ADD
-            let parameters = 
-                (getOperatorValue values relativeBase (idx + 1I) param1Mode, getOperatorValue values relativeBase (idx + 2I) param2Mode)
+            let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode
+            let operator2 = getOperatorValue values relativeBase (idx + 2I) param2Mode
             let writeAddress = getOperatorAddress values relativeBase (idx + 3I) param3Mode
-            setValue values writeAddress (fst parameters + snd parameters)           
+            setValue values writeAddress (operator1 + operator2)           
+            //printfn "opcode= %d op1= %A op2= %A op3= %A idx= %A" op operator1 operator2 writeAddress idx
             { Idx = idx + 4I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 2 -> // MULTIPLY
-            let parameters = 
-                (getOperatorValue values relativeBase (idx + 1I) param1Mode, getOperatorValue values relativeBase (idx + 2I) param2Mode)
+            let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode 
+            let operator2 = getOperatorValue values relativeBase (idx + 2I) param2Mode
             let writeAddress = getOperatorAddress values relativeBase (idx + 3I) param3Mode
-            setValue values writeAddress (fst parameters * snd parameters)  
+            setValue values writeAddress (operator1 * operator2)  
+            //printfn "opcode= %d op1= %A op2= %A op3= %A idx= %A" op operator1 operator2 writeAddress idx
             { Idx = idx + 4I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 3 -> // WRITE INPUT
             let writeAddress = getOperatorAddress values relativeBase (idx + 1I) param1Mode
             if availableInputs > 0I then
                 setValue values writeAddress phase
+                //printfn "VM index %A - Opcode %A used input %A available %A" idx 3 phase availableInputs
                 { Idx = idx + 2I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = (availableInputs - 1I) }
             else
+                //printfn "VM index %A - Opcode %A used input %A available %A" idx 3 phase availableInputs
                 { Idx = idx; Pause = true; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 4 -> // OUTPUT
-            let output = getOperatorValue values relativeBase (idx + 1I) param1Mode
-            { Idx = idx + 2I; Pause = loopMode; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
+            let newOutput = getOperatorValue values relativeBase (idx + 1I) param1Mode
+            //printfn "OUTPUT-->opcode= %A op1= %A idx= %A" op output idx
+            { Idx = idx + 2I; Pause = loopMode; Continue = true; LoopMode = loopMode; Output = newOutput; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 5 -> // JUMP IF TRUE
             let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode
             let operator2 = getOperatorValue values relativeBase (idx + 2I) param2Mode
+            //printfn "opcode= %A op1= %A op2= %A idx= %A" op operator1 operator2 idx
             match int(operator1) with
             | 0 -> 
                 { Idx = idx + 3I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
@@ -101,6 +107,7 @@ module IntCodeModule =
         | 6 -> // JUMP IF FALSE
             let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode
             let operator2 = getOperatorValue values relativeBase (idx + 2I) param2Mode
+            //printfn "opcode= %A op1= %A op2= %A idx= %A" op operator1 operator2 idx
             match int(operator1) with
             | 0 -> 
                 { Idx = operator2; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
@@ -113,6 +120,7 @@ module IntCodeModule =
             let writeAddress = getOperatorAddress values relativeBase (idx + 3I) param3Mode
             if (operator1 < operator2) then setValue values writeAddress 1I
             else setValue values writeAddress 0I
+            //printfn "opcode= %A op1= %A op2= %A op3= %A idx= %A" op operator1 operator2 writeAddress idx
             { Idx = idx + 4I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | 8 -> // EQUALS
@@ -121,26 +129,34 @@ module IntCodeModule =
             let writeAddress = getOperatorAddress values relativeBase (idx + 3I) param3Mode
             if (operator1 = operator2) then setValue values writeAddress 1I
             else setValue values writeAddress 0I
+            //printfn "opcode= %A op1= %A op2= %A op3= %A idx= %A" op operator1 operator2 writeAddress idx
             { Idx = idx + 4I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
         
         | 9 -> // ADJUST RELATIVE BASE
             let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode
+            //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op relativeBase idx
+            //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op (relativeBase + operator1) idx
             { Idx = idx + 2I; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase + operator1; AvailableInputs = availableInputs }
 
         | 99 -> // EXIT
+            //printfn "HALT opcode= %A idx= %A" op idx
             { Idx = idx; Pause = false; Continue = false; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
         | _ -> 
-            { Idx = idx; Pause = false; Continue = false; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
+            //printfn "UNDEFINED opcode= %A idx= %A" op idx
+            { Idx = idx; Pause = false; Continue = true; LoopMode = loopMode; Output = output; Input = input; RelativeBase = relativeBase; AvailableInputs = availableInputs }
 
     let rec getOutput 
         (values: Dictionary<bigint, bigint>) (idx: bigint) 
-        (relativeBase: bigint) (phase:bigint) (input:bigint) (availableInputs:bigint) (fixAvInput: bool)
-        (loopMode: bool) (currentOutput:bigint) =
-        let opDefinition = values.[idx].ToString().PadLeft(5, '0') |> Seq.toArray |> Array.map string 
-        let resultOp = performOperation values opDefinition idx relativeBase phase input availableInputs loopMode currentOutput
-        match resultOp.Continue with
-        | true -> 
-            getOutput values resultOp.Idx resultOp.RelativeBase phase input (if fixAvInput then 2I else resultOp.AvailableInputs) fixAvInput resultOp.LoopMode resultOp.Output
+        (relativeBase: bigint) (phase:bigint) (input:bigint) (availableInputs:bigint) 
+        (fixAvInput: bool) (loopMode: bool) (usePhase: bool)
+        (output:bigint) =
+        let opDef = values.[idx].ToString().PadLeft(5, '0') |> Seq.toArray |> Array.map string 
+        //let currentPhase = if usePhase then phase else input
+        let resultOp = performOperation values opDef idx relativeBase phase input availableInputs loopMode output
+        match (resultOp.Continue && not resultOp.Pause) with
+        | true ->             
+            let currentPhase = if usePhase then phase else input
+            getOutput values resultOp.Idx resultOp.RelativeBase currentPhase input (if fixAvInput then availableInputs else resultOp.AvailableInputs) fixAvInput resultOp.LoopMode false resultOp.Output
         | false -> 
-            resultOp.Output
+            resultOp

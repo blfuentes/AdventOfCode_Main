@@ -22,37 +22,41 @@ let permutation =
     let results = 
         perms [5I .. 9I] |> Seq.map 
             (fun perm -> 
-                let values1 = IntcodeComputerModule.getInputBigData filepath
-                let values2 = IntcodeComputerModule.getInputBigData filepath
-                let values3 = IntcodeComputerModule.getInputBigData filepath
-                let values4 = IntcodeComputerModule.getInputBigData filepath
-                let values5 = IntcodeComputerModule.getInputBigData filepath
+                let values1 = IntCodeModule.getInput filepath
+                let values2 = IntCodeModule.getInput filepath
+                let values3 = IntCodeModule.getInput filepath
+                let values4 = IntCodeModule.getInput filepath
+                let values5 = IntCodeModule.getInput filepath
 
                 let outputs= [|0I; 0I; 0I; 0I; 0I|]
                 let indexes = [|0I; 0I; 0I; 0I; 0I|]
                 let phases = (perm |> List.toArray)
                 let runningAmp = [|true; true; true; true; true; |]
 
-                let (output1, (index1, continue1), relBase1) =  IntcodeComputerModule.executeWithPhaseLoopMode(values1, phases.[0], indexes.[0], outputs.[0], 2I) 
-                Array.set outputs 1 output1
-                Array.set indexes 0 index1
+                let result1 =  IntCodeModule.getOutput values1  indexes.[0] 0I phases.[0] outputs.[0] 2I false false true 0I                
+                Array.set outputs 1 result1.Output
+                Array.set indexes 0 result1.Idx
 
-                let (output2, (index2, continue2), relBase2) =  IntcodeComputerModule.executeWithPhaseLoopMode(values2, phases.[1], indexes.[1], outputs.[1], 2I) 
-                Array.set outputs 2 output2
-                Array.set indexes 1 index2
+                let result2 =  IntCodeModule.getOutput values2  indexes.[1] 0I phases.[1] outputs.[1] 2I false false true 0I
+                // IntcodeComputerModule.executeWithPhaseLoopMode(values2, phases.[1], indexes.[1], outputs.[1], 2I) 
+                Array.set outputs 2 result2.Output
+                Array.set indexes 1 result2.Idx
 
-                let (output3, (index3, continue3), relBase3) =  IntcodeComputerModule.executeWithPhaseLoopMode(values3, phases.[2], indexes.[2], outputs.[2], 2I) 
-                Array.set outputs 3 output3
-                Array.set indexes 2 index3
+                let result3 =  IntCodeModule.getOutput values3  indexes.[2] 0I phases.[2] outputs.[2] 2I false false true 0I
+                // IntcodeComputerModule.executeWithPhaseLoopMode(values3, phases.[2], indexes.[2], outputs.[2], 2I) 
+                Array.set outputs 3 result3.Output
+                Array.set indexes 2 result3.Idx
 
-                let (output4, (index4, continue4), relBase4) =  IntcodeComputerModule.executeWithPhaseLoopMode(values4, phases.[3], indexes.[3], outputs.[3], 2I) 
-                Array.set outputs 4 output4
-                Array.set indexes 3 index4
+                let result4 =  IntCodeModule.getOutput values4  indexes.[3] 0I phases.[3] outputs.[3] 2I false false true 0I
+                // IntcodeComputerModule.executeWithPhaseLoopMode(values4, phases.[3], indexes.[3], outputs.[3], 2I) 
+                Array.set outputs 4 result4.Output
+                Array.set indexes 3 result4.Idx
 
-                let (output5, (index5, continue5), relBase5) =  IntcodeComputerModule.executeWithPhaseLoopMode(values5, phases.[4], indexes.[4], outputs.[4], 2I) 
-                Array.set outputs 0 output5
-                Array.set indexes 4 index5
-                Array.set runningAmp 4 continue5
+                let result5 =  IntCodeModule.getOutput values5  indexes.[4] 0I phases.[4] outputs.[4] 2I false false true 0I
+                // IntcodeComputerModule.executeWithPhaseLoopMode(values5, phases.[4], indexes.[4], outputs.[4], 2I) 
+                Array.set outputs 0 result5.Output
+                Array.set indexes 4 result5.Idx
+                Array.set runningAmp 4 (result5.Pause || result5.Continue)
 
                 Array.set phases 0 outputs.[0]
                 Array.set phases 1 outputs.[1]
@@ -60,33 +64,36 @@ let permutation =
                 Array.set phases 3 outputs.[3]
                 Array.set phases 4 outputs.[4]
 
-                let mutable result = 0
-
                 while runningAmp.[4] do
-                    let (output11, (index11, continue11), relBase11) =  IntcodeComputerModule.executeWithPhaseLoopMode(values1, outputs.[0], indexes.[0], outputs.[0], 1I) 
-                    Array.set outputs 1 output11
-                    Array.set indexes 0 index11
-                    Array.set runningAmp 0 continue11
+                    let result11= IntCodeModule.getOutput values1  indexes.[0] 0I outputs.[0] outputs.[0] 1I false false true 0I 
+                    // IntcodeComputerModule.executeWithPhaseLoopMode(values1, outputs.[0], indexes.[0], outputs.[0], 1I) 
+                    Array.set outputs 1 result11.Output
+                    Array.set indexes 0 result11.Idx
+                    Array.set runningAmp 0 (result11.Pause || result11.Continue)
 
-                    let (output22, (index22, continue22), relBase22) =  IntcodeComputerModule.executeWithPhaseLoopMode(values2, outputs.[1], indexes.[1], outputs.[1], 1I) 
-                    Array.set outputs 2 output22
-                    Array.set indexes 1 index22
-                    Array.set runningAmp 1 continue22
+                    let result22 =  IntCodeModule.getOutput values2  indexes.[1] 0I outputs.[1] outputs.[1] 1I false false true 0I
+                    // IntcodeComputerModule.executeWithPhaseLoopMode(values2, outputs.[1], indexes.[1], outputs.[1], 1I) 
+                    Array.set outputs 2 result22.Output
+                    Array.set indexes 1 result22.Idx
+                    Array.set runningAmp 1 (result22.Pause || result22.Continue)
 
-                    let (output33, (index33, continue33), relBase33) =  IntcodeComputerModule.executeWithPhaseLoopMode(values3, outputs.[2], indexes.[2], outputs.[2], 1I) 
-                    Array.set outputs 3 output33
-                    Array.set indexes 2 index33
-                    Array.set runningAmp 2 continue33
+                    let result33 = IntCodeModule.getOutput values3  indexes.[2] 0I outputs.[2] outputs.[2] 1I false false true 0I
+                    // IntcodeComputerModule.executeWithPhaseLoopMode(values3, outputs.[2], indexes.[2], outputs.[2], 1I) 
+                    Array.set outputs 3 result33.Output
+                    Array.set indexes 2 result33.Idx
+                    Array.set runningAmp 2 (result33.Pause || result33.Continue)
 
-                    let (output44, (index44, continue44), relBase44) =  IntcodeComputerModule.executeWithPhaseLoopMode(values4, outputs.[3], indexes.[3], outputs.[3], 1I) 
-                    Array.set outputs 4 output44
-                    Array.set indexes 3 index44
-                    Array.set runningAmp 3 continue44
+                    let result44 = IntCodeModule.getOutput values4  indexes.[3] 0I outputs.[3] outputs.[3] 1I false false true 0I
+                    // IntcodeComputerModule.executeWithPhaseLoopMode(values4, outputs.[3], indexes.[3], outputs.[3], 1I) 
+                    Array.set outputs 4 result44.Output
+                    Array.set indexes 3 result44.Idx
+                    Array.set runningAmp 3 (result44.Pause || result44.Continue)
 
-                    let (output55, (index55, continue55), relBase55) =  IntcodeComputerModule.executeWithPhaseLoopMode(values5, outputs.[4], indexes.[4], outputs.[4], 1I) 
-                    Array.set outputs 0 output55
-                    Array.set indexes 4 index55
-                    Array.set runningAmp 4 continue55                 
+                    let result55 = IntCodeModule.getOutput values5  indexes.[4] 0I outputs.[4] outputs.[4] 1I false false true 0I
+                    //IntcodeComputerModule.executeWithPhaseLoopMode(values5, outputs.[4], indexes.[4], outputs.[4], 1I) 
+                    Array.set outputs 0 result55.Output
+                    Array.set indexes 4 result55.Idx
+                    Array.set runningAmp 4 (result55.Pause || result55.Continue)                
                 (perm, outputs.[0])
             )
     let results2 = results |>Seq.maxBy snd

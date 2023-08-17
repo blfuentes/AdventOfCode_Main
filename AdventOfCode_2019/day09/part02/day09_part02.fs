@@ -5,4 +5,4 @@ open AoC_2019.Modules
 let filepath = __SOURCE_DIRECTORY__ + @"../../day09_input.txt"
 
 let execute =
-    IntcodeComputerModule.executeBigData(filepath, 2I)
+    (IntCodeModule.getOutput (IntCodeModule.getInput filepath)  0I 0I 0I 2I 2I true false false 0I).Output

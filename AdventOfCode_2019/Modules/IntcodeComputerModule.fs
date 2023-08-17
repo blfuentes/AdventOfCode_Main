@@ -121,8 +121,12 @@ module IntcodeComputerModule =
             //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op relativeBase idx
             //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op (relativeBase + operator1) idx
             ((false, true), [|idx + 2I; currentOutput; input|], relativeBase + operator1) 
-        | 99 -> ((false, false), [|idx; currentOutput; input|], relativeBase) // (lastoutput, false)
-        | _ -> ((false, true), [|idx; currentOutput; input|], relativeBase) // (0, true)
+        | 99 -> 
+            //printfn "HALT opcode= %A idx= %A" op idx
+            ((false, false), [|idx; currentOutput; input|], relativeBase) // (lastoutput, false)
+        | _ -> 
+            //printfn "UNDEFINED opcode= %A idx= %A" op idx
+            ((false, true), [|idx; currentOutput; input|], relativeBase) // (0, true)
 
     let rec getOutputBigData(values: Dictionary<bigint, bigint>, relativeBase: bigint, phase:bigint, input:bigint, idx: bigint, currentOutput:bigint) =
         let opDefinition = values.[idx].ToString().PadLeft(5, '0') |> Seq.toArray |> Array.map string 
