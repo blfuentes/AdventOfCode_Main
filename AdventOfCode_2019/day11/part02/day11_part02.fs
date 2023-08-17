@@ -8,23 +8,22 @@ let paintedPositionMap = new Dictionary<(int * int), int>()
 
 let rec getNextPaintPosition(values: Dictionary<bigint, bigint>, relativeBase: bigint, currentDirection: DirectionEnum, position:int[], inputColor:bigint, idx:bigint, paintedCount: int) =
     // GET COLOR
-    let (paintingOutput, (paintingInstructionIdx, paintingNotFinished), paintingRelativeBase)  =  executeBigDataWithMemory(values, relativeBase, idx, inputColor, 1I)
+    let colorResult = IntCodeModule.getOutput values idx relativeBase inputColor inputColor 1I false true false 0I
 
     // GET DIRECTION
-    let (movementOutput, (movementInstructionIdx, movementNotFinished), movementRelativeBase) =  executeBigDataWithMemory(values, paintingRelativeBase, paintingInstructionIdx, inputColor, 1I)
+    let directionResult = IntCodeModule.getOutput values colorResult.Idx colorResult.RelativeBase inputColor inputColor 1I false true false 0I
 
     // SET COLOR
-    paintingMap.[(position.[0], position.[1])] <- (int)paintingOutput
+    paintingMap.[(position.[0], position.[1])] <- (int)colorResult.Output
     let alreadyPainted, value = paintedPositionMap.TryGetValue ((position.[0], position.[1]))
-    let nextColor = paintingMap.[(position.[0], position.[1])]
     match alreadyPainted with 
-    | false -> paintedPositionMap.Add((position.[0], position.[1]), (int)paintingOutput)
+    | false -> paintedPositionMap.Add((position.[0], position.[1]), (int)colorResult.Output)
     | _ -> ()
     
 
     // SET DIRECTION
     let (nextDirection, nextCoord) =
-        match (currentDirection, (int)movementOutput) with
+        match (currentDirection, (int)directionResult.Output) with
         | (UP, 0) -> getNextPosition(LEFT, position)
         | (UP, 1) -> getNextPosition(RIGHT, position)
         | (DOWN, 0) -> getNextPosition(RIGHT, position)
@@ -38,8 +37,8 @@ let rec getNextPaintPosition(values: Dictionary<bigint, bigint>, relativeBase: b
 
     let nextColor = bigint paintingMap.[(nextCoord.[0], nextCoord.[1])] 
 
-    match paintingNotFinished with
-    | true -> getNextPaintPosition(values, movementRelativeBase, nextDirection, nextCoord, nextColor, movementInstructionIdx, paintedCount + 1 )
+    match colorResult.Pause with
+    | true -> getNextPaintPosition(values, directionResult.RelativeBase, nextDirection, nextCoord, nextColor, directionResult.Idx, paintedCount + 1 )
     | false -> paintedPositionMap.Keys.Count
 
 

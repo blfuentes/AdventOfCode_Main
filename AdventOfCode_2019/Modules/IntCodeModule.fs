@@ -152,7 +152,6 @@ module IntCodeModule =
         (fixAvInput: bool) (loopMode: bool) (usePhase: bool)
         (output:bigint) =
         let opDef = values.[idx].ToString().PadLeft(5, '0') |> Seq.toArray |> Array.map string 
-        //let currentPhase = if usePhase then phase else input
         let resultOp = performOperation values opDef idx relativeBase phase input availableInputs loopMode output
         match (resultOp.Continue && not resultOp.Pause) with
         | true ->             
