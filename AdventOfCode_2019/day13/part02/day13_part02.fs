@@ -26,11 +26,11 @@ let getBlocksSeq(blocksoutput: List<bigint>) =
     result
 
 let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint, alloutputs: List<bigint>) =
-    let (output, (idx, notfinished), relativeBase)  =  executeBigDataWithMemory(values, relativeBase,idx, input, numberOfInputs)
-    alloutputs.Add(output)
-    match notfinished with
-    | false -> (output, (idx, notfinished), relativeBase)
-    | true -> executeNext(values, relativeBase, input, idx, 1I, alloutputs)
+    let outputResult = IntCodeModule.getOutput values idx relativeBase input input numberOfInputs false true false 0I
+    alloutputs.Add(outputResult.Output)
+    match outputResult.Pause with
+    | false -> outputResult.Output
+    | true -> executeNext(values, outputResult.RelativeBase, input, outputResult.Idx, 1I, alloutputs)
 
 
 //let getBlockScore(blocksoutput: List<bigint>) =
@@ -83,6 +83,15 @@ let round(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint
 
     (score.[2], nextInput, numberOfBlocks <> 0)
 
+let rec executeRound (valuesArray: bigint array) (values: Dictionary<bigint, bigint>) (relativeBase: bigint) (input:bigint) (idx:bigint) (numberOfInputs: bigint) 
+    (doContinue: bool) (finalScore: int) =
+    if doContinue then
+        let (score, nextInput, numberOfBlocks) = round(values, relativeBase, input, idx, numberOfInputs)
+        Array.set valuesArray 0 nextInput
+        executeRound valuesArray values relativeBase valuesArray.[0] 0I 1I numberOfBlocks score
+    else
+        finalScore
+
 let execute =
     let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input.txt"
     let alloutputs = new List<bigint>()
@@ -91,12 +100,13 @@ let execute =
     let (score, nextInput, toContinue) = round(values, 0I, 0I, 0I, 1I)
     values.[0I] <- 2I
     let valuesArray = [|nextInput|]
-    let mutable continueLooping = toContinue
-    let mutable finalScore = score
-    while continueLooping do
-        let (score, nextInput, numberOfBlocks) = round(values, 0I, valuesArray.[0], 0I, 1I)
-        continueLooping <- numberOfBlocks
-        finalScore <- score
-        Array.set valuesArray 0 nextInput
+    executeRound valuesArray values 0I valuesArray.[0] 0I 1I toContinue score
+    //let mutable continueLooping = toContinue
+    //let mutable finalScore = score
+    //while continueLooping do
+    //    let (score, nextInput, numberOfBlocks) = round(values, 0I, valuesArray.[0], 0I, 1I)
+    //    continueLooping <- numberOfBlocks
+    //    finalScore <- score
+    //    Array.set valuesArray 0 nextInput
 
-    finalScore
+    //finalScore
