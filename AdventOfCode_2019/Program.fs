@@ -82,23 +82,23 @@ let main argv =
     let resultday13Part2 = day13_part02.execute
     printfn "Final result Day 13 part 2: %A" resultday13Part2
 
-    //// DAY 14
-    //let resultday14Part1 = day14_part01.execute
-    //printfn "Final result Day 14 part 1: %A" resultday14Part1
-    //let resultday14Part2 = day14_part02.execute
-    //printfn "Final result Day 14 part 2: %A" resultday14Part2
+    // DAY 14
+    let resultday14Part1 = day14_part01.execute
+    printfn "Final result Day 14 part 1: %A" resultday14Part1
+    let resultday14Part2 = day14_part02.execute
+    printfn "Final result Day 14 part 2: %A" resultday14Part2
 
-    //// DAY 15
-    //let resultday15Part1 = day15_part01.execute
-    //printfn "Final result Day 15 part 1: %A" resultday15Part1
-    //let resultday15Part2 = day15_part02.execute
-    //printfn "Final result Day 15 part 2: %A" resultday15Part2
+    // DAY 15
+    let resultday15Part1 = day15_part01.execute
+    printfn "Final result Day 15 part 1: %A" resultday15Part1
+    let resultday15Part2 = day15_part02.execute
+    printfn "Final result Day 15 part 2: %A" resultday15Part2
 
-    //// DAY 16
-    //let resultday16Part1 = day16_part01.execute
-    //printfn "Final result Day 16 part 1: %A" resultday16Part1
-    //let resultday16Part2 = day16_part02.execute
-    //printfn "Final result Day 16 part 2: %A" resultday16Part2
+    // DAY 16
+    let resultday16Part1 = day16_part01.execute
+    printfn "Final result Day 16 part 1: %A" resultday16Part1
+    let resultday16Part2 = day16_part02.execute
+    printfn "Final result Day 16 part 2: %A" resultday16Part2
 
     //// DAY 17
     //let resultday17Part1 = day17_part01.execute

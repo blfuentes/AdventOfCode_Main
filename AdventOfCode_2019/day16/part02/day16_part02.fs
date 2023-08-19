@@ -19,7 +19,7 @@ let calculateInput(input:int[]) =
 
 let rec convertInput(input:int[], offSet: int, numberOfPhases: int, currentPhase: int) =
     match currentPhase = numberOfPhases with
-    | true -> input |> Array.take(8) |> Array.map string |> String.concat ""
+    | true -> input |> Array.take(8) |> Array.map string |> String.concat "" |> int
     | false -> convertInput(calculateInput(input), offSet, numberOfPhases, currentPhase + 1)
 
 let execute =

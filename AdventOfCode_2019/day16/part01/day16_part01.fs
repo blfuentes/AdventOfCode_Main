@@ -24,7 +24,7 @@ let calculateInput(input:int[], pattern:int[]) =
 
 let rec convertInput(input:int[], basePattern: int[], numberOfPhases: int, currentPhase: int) =
     match currentPhase = numberOfPhases with
-    | true -> input |> Array.take(8) |> Array.map string |> String.concat ""
+    | true -> input |> Array.take(8) |> Array.map string |> String.concat "" |> int
     | false -> convertInput(calculateInput(input, basePattern), basePattern, numberOfPhases, currentPhase + 1)
 
 
