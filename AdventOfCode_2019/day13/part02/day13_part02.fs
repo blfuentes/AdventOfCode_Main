@@ -31,19 +31,7 @@ let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, in
     alloutputs.Add(outputResult.Output)
     match outputResult.Continue with
     | false -> outputResult.Output
-    | true -> executeNext(values, outputResult.RelativeBase, input, outputResult.Idx, 1I, alloutputs)
-
-
-//let getBlockScore(blocksoutput: List<bigint>) =
-//    let result = blocksoutput 
-//                    |> Seq.toList 
-//                    |> List.chunkBySize(3) 
-//                    |> List.filter (fun x -> x.Length = 3) 
-//                    |> List.map List.toArray
-//                    |> List.tryFind (fun x -> x.[0] = -1I && x.[1] = 0I )
-//    match result with
-//    | None -> 0I
-//    | Some x -> x.[2]
+    | true -> executeNext(values, outputResult.RelativeBase, outputResult.Input.Head, outputResult.Idx, 1I, alloutputs)
 
 let round(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint) = 
     let alloutputs = new List<bigint>()
@@ -67,19 +55,6 @@ let round(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint
     let (ball, ballCoordinates, numberOfBalls) = blocktypes |> List.find (fun x -> 
         let (block, _, size) = x
         block = BlockType.BALL)
-    //let coords = paddleCoordinates.[0] |> List.toArray
-    //let nextInput = 
-    //    match coords.[0]  with
-    //    | direction when direction = 23 -> 0I
-    //    | direction when direction < 23 -> -1I
-    //    | direction when direction > 23 -> 1I
-    //    | _ -> 0I
-    //let nextInput =
-    //    match paddleCoordinates.Head.[0] - (ballCoordinates |> List.rev).Head.[0] with
-    //    | direction when direction = 0 -> 0I
-    //    | direction when direction < 0 -> 1I
-    //    | direction when direction > 0 -> -1I
-    //    | _ -> 0I
 
     let nextInput = (new Random()).Next(-1, 1) |> bigint
         
@@ -96,8 +71,8 @@ let rec executeRound (valuesArray: bigint array) (values: Dictionary<bigint, big
         finalScore
 
 let execute =
-    let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input.txt"
-    //let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input_2.txt"
+    //let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input.txt"
+    let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input_2.txt"
     let alloutputs = new List<bigint>()
     let values = IntcodeComputerModule.getInputBigData filepath
 
@@ -105,12 +80,3 @@ let execute =
     values.[0I] <- 2I
     let valuesArray = [|nextInput|]
     executeRound valuesArray values 0I valuesArray.[0] 0I 1I toContinue score
-    //let mutable continueLooping = toContinue
-    //let mutable finalScore = score
-    //while continueLooping do
-    //    let (score, nextInput, numberOfBlocks) = round(values, 0I, valuesArray.[0], 0I, 1I)
-    //    continueLooping <- numberOfBlocks
-    //    finalScore <- score
-    //    Array.set valuesArray 0 nextInput
-
-    //finalScore
