@@ -1,9 +1,10 @@
 ﻿module day02_part02
 
 open System.IO
+open AoC_2019.Modules
 
 let (height, width) = (100, 100)
-let __SOLUTION__ = 19690720
+let __SOLUTION__ = 19690720I
 
 let solutionMatrix = 
     seq {
@@ -12,33 +13,18 @@ let solutionMatrix =
                 (row, col)
         }
 
-let rec performOperation (values: int[]) (idx: int) =
-    if idx < values.Length then
-        match values.[idx] with
-            | 1 -> 
-                Array.set values values.[idx + 3] (values.[values.[idx + 1]] + values.[values.[idx + 2]])
-                performOperation values (idx + 4)
-            | 2 -> 
-                Array.set values values.[idx + 3] (values.[values.[idx + 1]] * values.[values.[idx + 2]])
-                performOperation values (idx + 4)
-            | 99 -> idx
-            | _ -> idx
-    else
-       idx
-
 let displaySolutionMatrix =
     solutionMatrix
         |> Seq.skipWhile (fun (noum, verb) -> 
             let filepath = __SOURCE_DIRECTORY__ + @"../../day02_input.txt"
             //let filepath = __SOURCE_DIRECTORY__ + @"../../test_input_yavuz.txt"
-            let values = File.ReadAllText(filepath).Split(',')
-                            |> Array.map int
-            
-            // prepare the tranche input 
-            Array.set values 1 noum
-            Array.set values 2 verb
+            let values = IntCodeModule.getInput filepath
 
-            let calculated = performOperation values 0
+            // prepare the tranche input 
+            values.[1I] <- noum
+            values.[2I] <- verb
+
+            let result = IntCodeModule.getOutput values 0I 0I [0I] false 0I
             values.[0] <> __SOLUTION__
         )
         |> Seq.head 

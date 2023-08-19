@@ -36,7 +36,6 @@ https://adventofcode.com/2018
 https://adventofcode.com/2019
 
 2019 F#
-- 13.2
 - 17 al 25
 
 # Advent Of Code 2020

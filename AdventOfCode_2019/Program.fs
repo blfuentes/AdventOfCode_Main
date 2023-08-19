@@ -12,7 +12,7 @@ let main argv =
 
     // DAY 02
     let resultday02Part1 = day02_part01.execute
-    printfn "Final result Day 02 part 1: %i" resultday02Part1
+    printfn "Final result Day 02 part 1: %A" resultday02Part1
     let resultday02Part2 = day02_part02.execute
     printfn "Final result Day 02 part 2: %i" resultday02Part2
 
