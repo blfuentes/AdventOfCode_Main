@@ -28,9 +28,9 @@ let getBlocksSeq(blocksoutput: List<bigint>) =
     result
 
 let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint, alloutputs: List<bigint>) =
-    let outputResult = IntCodeModule.getOutput values idx relativeBase input input numberOfInputs false true false 0I
+    let outputResult = IntCodeModule.getOutput values idx relativeBase [input] true 0I
     alloutputs.Add(outputResult.Output)
-    match outputResult.Pause with
+    match outputResult.Continue with
     | false -> outputResult.Output
     | true -> executeNext(values, outputResult.RelativeBase, input, outputResult.Idx, 1I, alloutputs)
 

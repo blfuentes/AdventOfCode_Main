@@ -8,10 +8,10 @@ let paintedPositionMap = new Dictionary<(int * int), int>()
 
 let rec getNextPaintPosition(values: Dictionary<bigint, bigint>, relativeBase: bigint, currentDirection: DirectionEnum, position:int[], inputColor:bigint, idx:bigint, paintedCount: int) =
     // GET COLOR
-    let colorResult = IntCodeModule.getOutput values idx relativeBase inputColor inputColor 1I false true false 0I
+    let colorResult = IntCodeModule.getOutput values idx relativeBase [inputColor] true 0I
 
     // GET DIRECTION
-    let directionResult = IntCodeModule.getOutput values colorResult.Idx colorResult.RelativeBase inputColor inputColor 1I false true false 0I
+    let directionResult = IntCodeModule.getOutput values colorResult.Idx colorResult.RelativeBase [0I] true 0I
 
     // SET COLOR
     paintingMap.[(position.[0], position.[1])] <- (int)colorResult.Output
@@ -37,7 +37,7 @@ let rec getNextPaintPosition(values: Dictionary<bigint, bigint>, relativeBase: b
 
     let nextColor = bigint paintingMap.[(nextCoord.[0], nextCoord.[1])] 
 
-    match colorResult.Pause with
+    match colorResult.Continue with
     | true -> getNextPaintPosition(values, directionResult.RelativeBase, nextDirection, nextCoord, nextColor, directionResult.Idx, paintedCount + 1 )
     | false -> paintedPositionMap.Keys.Count
 

@@ -12,5 +12,5 @@ let execute =
     values.[1I] <- 12I
     values.[2I] <- 2I
 
-    let result = IntCodeModule.getOutput values 0I 0I 0I 0I 2I true false false 0I
+    let result = IntCodeModule.getOutput values 0I 0I [0I] false 0I
     values.[0I]

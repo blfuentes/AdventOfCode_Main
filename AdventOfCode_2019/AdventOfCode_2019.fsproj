@@ -106,6 +106,7 @@
     <Content Include="day12\day12_input.txt" />
     <Content Include="day12\test_input_01.txt" />
     <Content Include="day12\test_input_02.txt" />
+    <Content Include="day13\day13_input_2.txt" />
     <Content Include="day13\day13_input.txt" />
     <Compile Include="day13\part01\day13_part01.fs" />
     <Compile Include="day13\part02\day13_part02.fs" />

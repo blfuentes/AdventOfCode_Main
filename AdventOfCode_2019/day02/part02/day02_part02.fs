@@ -24,7 +24,7 @@ let displaySolutionMatrix =
             values.[1I] <- noum
             values.[2I] <- verb
 
-            let result = IntCodeModule.getOutput values 0I 0I 0I 0I 2I true false false 0I
+            let result = IntCodeModule.getOutput values 0I 0I [0I] false 0I
             values.[0] <> __SOLUTION__
         )
         |> Seq.head 

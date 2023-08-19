@@ -3,6 +3,7 @@
 open System.IO
 open System.Collections.Generic
 open AoC_2019.Modules
+open System
 
 type BlockType = EMPTY | WALL | BLOCK | PADDLE | BALL | NONE
 
@@ -26,9 +27,9 @@ let getBlocksSeq(blocksoutput: List<bigint>) =
     result
 
 let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint, alloutputs: List<bigint>) =
-    let outputResult = IntCodeModule.getOutput values idx relativeBase input input numberOfInputs false true false 0I
+    let outputResult = IntCodeModule.getOutput values idx relativeBase [input] true 0I
     alloutputs.Add(outputResult.Output)
-    match outputResult.Pause with
+    match outputResult.Continue with
     | false -> outputResult.Output
     | true -> executeNext(values, outputResult.RelativeBase, input, outputResult.Idx, 1I, alloutputs)
 
@@ -73,14 +74,16 @@ let round(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint
     //    | direction when direction < 23 -> -1I
     //    | direction when direction > 23 -> 1I
     //    | _ -> 0I
-    let nextInput =
-        match paddleCoordinates.Head.[0] - (ballCoordinates |> List.rev).Head.[0] with
-        | direction when direction = 0 -> 0I
-        | direction when direction < 0 -> 1I
-        | direction when direction > 0 -> -1I
-        | _ -> 0I
+    //let nextInput =
+    //    match paddleCoordinates.Head.[0] - (ballCoordinates |> List.rev).Head.[0] with
+    //    | direction when direction = 0 -> 0I
+    //    | direction when direction < 0 -> 1I
+    //    | direction when direction > 0 -> -1I
+    //    | _ -> 0I
 
-
+    let nextInput = (new Random()).Next(-1, 1) |> bigint
+        
+    printfn "Score: %A with remaining blocks %A. Paddle: %A Ball(%A): %A" score numberOfBlocks paddleCoordinates[0] numberOfBalls ballCoordinates[0]
     (score.[2], nextInput, numberOfBlocks <> 0)
 
 let rec executeRound (valuesArray: bigint array) (values: Dictionary<bigint, bigint>) (relativeBase: bigint) (input:bigint) (idx:bigint) (numberOfInputs: bigint) 
@@ -94,6 +97,7 @@ let rec executeRound (valuesArray: bigint array) (values: Dictionary<bigint, big
 
 let execute =
     let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input.txt"
+    //let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input_2.txt"
     let alloutputs = new List<bigint>()
     let values = IntcodeComputerModule.getInputBigData filepath
 

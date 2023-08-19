@@ -23,11 +23,11 @@ let permutation =
     let results = 
         perms [0I .. 4I] |> Seq.map
             (fun perm -> 
-                let result1 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[0] 0I 2I true false false 0I
-                let result2 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[1] result1.Output 2I true false false 0I
-                let result3 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[2] result2.Output 2I true false false 0I
-                let result4 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[3] result3.Output 2I true false false 0I
-                let result5 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I (perm |> List.toArray).[4] result4.Output 2I true false false 0I
+                let result1 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I [perm.Item(0); 0I] false 0I
+                let result2 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I [perm.Item(1); result1.Output] false 0I
+                let result3 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I [perm.Item(2); result2.Output] false 0I
+                let result4 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I [perm.Item(3); result3.Output] false 0I
+                let result5 = IntCodeModule.getOutput (IntCodeModule.getInput filepath) 0I 0I [perm.Item(4); result4.Output] false 0I
                 (perm, result5)
             ) |>Seq.maxBy snd
     results
