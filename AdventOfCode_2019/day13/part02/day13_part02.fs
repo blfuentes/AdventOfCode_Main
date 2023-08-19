@@ -1,82 +1,52 @@
 ﻿module day13_part02
 
-open System.IO
 open System.Collections.Generic
 open AoC_2019.Modules
 open System
 
-type BlockType = EMPTY | WALL | BLOCK | PADDLE | BALL | NONE
-
-let toBlock(v: bigint) =
-    match int(v) with
-    | 0 -> EMPTY
-    | 1 -> WALL
-    | 2 -> BLOCK
-    | 3 -> PADDLE
-    | 4 -> BALL
-    | _ -> NONE
-
-let getBlocksSeq(blocksoutput: List<bigint>) =
-    let result = blocksoutput 
-                    |> Seq.map int 
-                    |> Seq.toList 
-                    |> List.chunkBySize(3) 
-                    |> List.filter (fun x -> x.Length = 3) 
-                    |> List.groupBy (fun b -> toBlock(bigint(b.[2])))
-                    |> List.map (fun (block, coordinates) -> (block, coordinates, coordinates.Length))
-    result
-
-let rec executeNext(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint, alloutputs: List<bigint>) =
-    let outputResult = IntCodeModule.getOutput values idx relativeBase [input] true 0I
-    alloutputs.Add(outputResult.Output)
-    match outputResult.Continue with
-    | false -> outputResult.Output
-    | true -> executeNext(values, outputResult.RelativeBase, outputResult.Input.Head, outputResult.Idx, 1I, alloutputs)
-
-let round(values: Dictionary<bigint, bigint>, relativeBase: bigint, input:bigint, idx:bigint, numberOfInputs: bigint) = 
-    let alloutputs = new List<bigint>()
-    let result = executeNext(values, 0I, 0I, 0I, 1I, alloutputs)
-    let blocktypes = getBlocksSeq(alloutputs)
-    let scoreElement = blocktypes |> List.tryFind(fun (b, l, s) -> b = BlockType.NONE) //getBlockScore(alloutputs)
-    let score =
-        match scoreElement with
-        | None -> [|0; 0; 0|]
-        | Some (b, l, s) -> l.[0] |> List.toArray
-    let blocks = blocktypes |> List.tryFind (fun x -> 
-        let (block, _, size) = x
-        block = BlockType.BLOCK)
-    let numberOfBlocks =
-        match blocks with 
-        | None -> 0
-        | Some (b, l, s) -> s
-    let (paddle, paddleCoordinates, numberOfPaddles) = blocktypes |> List.find (fun x -> 
-        let (block, _, size) = x
-        block = BlockType.PADDLE)
-    let (ball, ballCoordinates, numberOfBalls) = blocktypes |> List.find (fun x -> 
-        let (block, _, size) = x
-        block = BlockType.BALL)
-
-    let nextInput = (new Random()).Next(-1, 1) |> bigint
-        
-    printfn "Score: %A with remaining blocks %A. Paddle: %A Ball(%A): %A" score numberOfBlocks paddleCoordinates[0] numberOfBalls ballCoordinates[0]
-    (score.[2], nextInput, numberOfBlocks <> 0)
-
-let rec executeRound (valuesArray: bigint array) (values: Dictionary<bigint, bigint>) (relativeBase: bigint) (input:bigint) (idx:bigint) (numberOfInputs: bigint) 
-    (doContinue: bool) (finalScore: int) =
-    if doContinue then
-        let (score, nextInput, numberOfBlocks) = round(values, relativeBase, input, idx, numberOfInputs)
-        Array.set valuesArray 0 nextInput
-        executeRound valuesArray values relativeBase valuesArray.[0] 0I 1I numberOfBlocks score
+let rec executeRound (values: Dictionary<bigint, bigint>) (idx: bigint) (relativeBase: bigint) (paddlePos: bigint) (ballPos: bigint)
+    (xPos: bigint) (totalBlocks: int) (latestScore: bigint)=
+    if (xPos = 99I) then
+        totalBlocks
     else
-        finalScore
+        let newJoystick =
+            match paddlePos - ballPos with
+            | x when x < 0I -> 1I
+            | x when x > 0I -> -1I
+            | _ -> 0I
+
+        let result1 = IntCodeModule.getOutput values idx relativeBase [newJoystick] true 0I
+        let result2 = IntCodeModule.getOutput values result1.Idx result1.RelativeBase [newJoystick] true 0I
+        let result3 = IntCodeModule.getOutput values result2.Idx result2.RelativeBase [newJoystick] true 0I
+        
+        let newLatestScore = 
+            if (result1.Output = -1I && result2.Output = 0I) then
+                //printfn "Score is %A" result3.Output            
+                result3.Output
+            else
+                latestScore
+        
+        if result3.Continue then
+            match (int)result3.Output with
+            | 2 ->
+                executeRound values result3.Idx result3.RelativeBase paddlePos ballPos result1.Output  (totalBlocks + 1) newLatestScore
+            | 3 ->    
+                executeRound values result3.Idx result3.RelativeBase result1.Output ballPos result1.Output totalBlocks newLatestScore
+            | 4->
+                executeRound values result3.Idx result3.RelativeBase paddlePos result1.Output result1.Output totalBlocks newLatestScore
+            | _ ->
+                executeRound values result3.Idx result3.RelativeBase paddlePos ballPos result1.Output totalBlocks newLatestScore
+        else
+            newLatestScore |> int
 
 let execute =
-    //let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input.txt"
-    let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input_2.txt"
-    let alloutputs = new List<bigint>()
+    let filepath = __SOURCE_DIRECTORY__ + @"../../day13_input.txt"
     let values = IntcodeComputerModule.getInputBigData filepath
-
-    let (score, nextInput, toContinue) = round(values, 0I, 0I, 0I, 1I)
+    
+    let xPos = 0I
+    let totalBlocks = 0
+    let paddlePos = 0I
+    let ballPos = 0I
     values.[0I] <- 2I
-    let valuesArray = [|nextInput|]
-    executeRound valuesArray values 0I valuesArray.[0] 0I 1I toContinue score
+
+    executeRound values 0I paddlePos ballPos xPos 0I totalBlocks 0I
