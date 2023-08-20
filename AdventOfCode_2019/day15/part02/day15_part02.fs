@@ -1,6 +1,5 @@
 ﻿module day15_part02
 
-open System.IO
 open System.Collections.Generic
 open System
 open System.Linq
@@ -99,16 +98,16 @@ let finBSFPath(values: Dictionary<bigint, bigint>, relativeBase: bigint, movInpu
         if movInput <= 4I then
             let neighbourPoint = getPoint(currentPoint, getMovement(movInput))
             if not(containsElement(visitedPoints, neighbourPoint)) then
-                let (output, (idx, notfinished), relativeBase)  =  executeBigDataWithMemory(values, paramInputs.[0], paramInputs.[1], movInput, paramInputs.[2])
-                match getStatus(output) with
+                let result = IntCodeModule.getOutput values paramInputs.[1] paramInputs.[0] [movInput] true 0I
+                match getStatus(result.Output) with
                 | WALL -> 
                     //printfn "Found Wall at %A, %A - %A" neighbourPoint.[0] neighbourPoint.[1] (getMovement(movInput))
                     visitedPoints.Add([|neighbourPoint.[0]; neighbourPoint.[1]; 0I; getBackMov(movInput); maxInt_1; 1I|])
                     Array.set currentPoint 2 movInput
                     ()
                 | WAY -> 
-                    Array.set paramInputs 0 relativeBase
-                    Array.set paramInputs 1 idx
+                    Array.set paramInputs 0 result.RelativeBase
+                    Array.set paramInputs 1 result.Idx
                     Array.set paramInputs 2 numberOfInputs
                     //printfn "Found WAY at %A, %A - %A" neighbourPoint.[0] neighbourPoint.[1] (getMovement(movInput))
                     chainPoints.Add([|neighbourPoint.[0]; neighbourPoint.[1]; movInput|], [|currentPoint.[0]; currentPoint.[1]; currentPoint.[2]|])
@@ -120,7 +119,7 @@ let finBSFPath(values: Dictionary<bigint, bigint>, relativeBase: bigint, movInpu
                 | OXYGEN -> 
                     //printfn "Found Oxygen at %A, %A - %A" neighbourPoint.[0] neighbourPoint.[1] (getMovement(movInput))
                     chainPoints.Add([|neighbourPoint.[0]; neighbourPoint.[1]; movInput|], [|currentPoint.[0]; currentPoint.[1]; currentPoint.[2]|])
-                    continueLooping <- notfinished
+                    continueLooping <- result.Continue
                     Array.set oxygenPoint 0 neighbourPoint.[0]
                     Array.set oxygenPoint 1 neighbourPoint.[1]
                     visitedPoints.Add([|neighbourPoint.[0]; neighbourPoint.[1]; movInput; getBackMov(movInput); 0I; 1I|])
@@ -138,12 +137,12 @@ let finBSFPath(values: Dictionary<bigint, bigint>, relativeBase: bigint, movInpu
             let prevMov = prevPoint.[3]
             if prevMov > 0I then 
                 let neighbourPoint = getPoint(currentPoint, getMovement(prevMov))
-                let (output, (idx, notfinished), relativeBase)  =  executeBigDataWithMemory(values, paramInputs.[0], paramInputs.[1], prevMov, paramInputs.[2])
-                match getStatus(output) with
+                let result = IntCodeModule.getOutput values paramInputs.[1] paramInputs.[0] [prevMov] true 0I
+                match getStatus(result.Output) with
                 | WAY 
                 | OXYGEN ->
-                    Array.set paramInputs 0 relativeBase
-                    Array.set paramInputs 1 idx
+                    Array.set paramInputs 0 result.RelativeBase
+                    Array.set paramInputs 1 result.Idx
                     Array.set paramInputs 2 numberOfInputs
                     //printfn "BACKWARD at %A, %A - %A" neighbourPoint.[0] neighbourPoint.[1] (getMovement(prevMov))
                     let prevPoint2 = visitedPoints.Find(fun x -> x.[0] = neighbourPoint.[0] && x.[1] = neighbourPoint.[1])
@@ -184,8 +183,7 @@ let rec countSteps(oxyPoint:bigint[], chainPoints: List<(bigint[]*bigint[])>) =
 
 let execute =
     let filepath = __SOURCE_DIRECTORY__ + @"../../day15_input.txt"
-    let alloutputs = new List<bigint>()
-    let values = IntcodeComputerModule.getInputBigData filepath
+    let values = IntCodeModule.getInput filepath
     
     let relBase = 0I
     let movInput = 0I

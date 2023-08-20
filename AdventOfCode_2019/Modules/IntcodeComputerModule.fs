@@ -81,7 +81,6 @@ module IntcodeComputerModule =
         | 4 -> // OUTPUT
             let output = getOperatorValueBigData(values, relativeBase, idx + 1I, param1Mode)
             //printfn "OUTPUT-->opcode= %A op1= %A idx= %A" op output idx
-            //printf "%A," output
             if not loopOutputMode then
                 ((false, true), [|idx + 2I; output; input|], relativeBase)
             else
@@ -119,7 +118,6 @@ module IntcodeComputerModule =
         | 9 -> // ADJUST RELATIVE BASE
             let operator1 = getOperatorValueBigData(values, relativeBase, idx + 1I, param1Mode)
             //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op relativeBase idx
-            //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op (relativeBase + operator1) idx
             ((false, true), [|idx + 2I; currentOutput; input|], relativeBase + operator1) 
         | 99 -> 
             //printfn "HALT opcode= %A idx= %A" op idx

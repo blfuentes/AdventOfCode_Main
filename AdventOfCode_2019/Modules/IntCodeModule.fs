@@ -82,14 +82,16 @@ module IntCodeModule =
             let writeAddress = getOperatorAddress values relativeBase (idx + 1I) param1Mode
             
             if input.Length > 0 then
+                //printfn "VM index %A - Opcode %A used input %A" idx 3 input.Head
                 setValue values writeAddress input.Head
                 { Idx = idx + 2I; MemoryMode = memoryMode; Pause = false; Continue = true; Output = output; Input = input.Tail; RelativeBase = relativeBase }
-            else            
+            else      
+                //printfn "VM No input index %A - Opcode %A used input" idx 3
                 { Idx = idx; MemoryMode = memoryMode; Pause = true; Continue = true; Output = output; Input = []; RelativeBase = relativeBase }
 
         | 4 -> // OUTPUT
             let newOutput = getOperatorValue values relativeBase (idx + 1I) param1Mode
-            //printfn "OUTPUT-->opcode= %A op1= %A idx= %A" op output idx
+            //printfn "OUTPUT-->opcode= %A op1= %A idx= %A" op newOutput idx
             { Idx = idx + 2I; MemoryMode = memoryMode; Pause = memoryMode; Continue = true; Output = newOutput; Input = input; RelativeBase = relativeBase }
 
         | 5 -> // JUMP IF TRUE
@@ -125,7 +127,6 @@ module IntCodeModule =
         | 9 -> // ADJUST RELATIVE BASE
             let operator1 = getOperatorValue values relativeBase (idx + 1I) param1Mode
             //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op relativeBase idx
-            //printfn "RELATIVE-->opcode= %A relative base= %A idx= %A" op (relativeBase + operator1) idx
             { Idx = idx + 2I; MemoryMode = memoryMode; Pause = false; Continue = true; Output = output; Input = input; RelativeBase = relativeBase + operator1 }
 
         | 99 -> // EXIT
