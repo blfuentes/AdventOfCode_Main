@@ -21,15 +21,12 @@ export class Day13Part02 {
         let fs = require("fs");
         let path = require('path');
 
-
-        // let filepath = path.join(__dirname, "../test13_input.txt");
-        // let filepath = path.join(__dirname, "../test13_input2.txt");
+         //let filepath = path.join(__dirname, "../test13_input.txt");
+        //let filepath = path.join(__dirname, "../test13_input2.txt");
+        //let filepath = path.join(__dirname, "../test13_input3.txt");
         let filepath = path.join(__dirname, "../day13_input.txt");
+        //let filepath = path.join(__dirname, "../day13_input2.txt");
         let lines = fs.readFileSync(filepath, "utf-8").split("\r\n");
-
-
-
-
 
         // INIT MAPROAD
         let roadMap: Array<Array<string>> = [];
@@ -57,18 +54,16 @@ export class Day13Part02 {
 
         // 
         function sortByPosition(a: CarPosition, b: CarPosition) {
-            if (a.coordX == b.coordX) return a.coordY - b.coordY;
-            return a.coordX - b.coordX;
+            if (a.coordY == b.coordY) return a.coordX - b.coordX;
+            return a.coordY - b.coordY;
         }
 
         let crashed = false;
-        let coordCrashed: Array<number> = []
-        // displayRoadMap(roadMap);
+        //this.displayRoadMap(lines, roadMap);
         let carsLeft = carsPositions.length;
         crashed = false;
         do {
-            carsPositions = carsPositions.sort((a, b) => sortByPosition(a, b));
-
+            carsPositions = carsPositions.filter(c => c.isAlive).sort((a, b) => sortByPosition(a, b));
             for (let car of carsPositions) {
                 let originCharacter = roadMapNoCars[car.coordX][car.coordY];
                 roadMap[car.coordX][car.coordY] = originCharacter;
@@ -82,31 +77,24 @@ export class Day13Part02 {
                 }
                 let stateNextCoord = roadMap[nextCoord[0]][nextCoord[1]];
                 if (stateNextCoord == "<" || stateNextCoord == ">" || stateNextCoord == "^" || stateNextCoord == "v") {
-                    let crashedCar = carsPositions.find(_c => _c.coordX == nextCoord[0] && _c.coordY == nextCoord[1] && _c.cardId != car.cardId);
+                    let crashedCar = carsPositions.find(_c => _c.isAlive && _c.coordX == nextCoord[0] && _c.coordY == nextCoord[1] && _c.cardId != car.cardId);
                     if (crashedCar != undefined) {
                         roadMap[crashedCar.coordX][crashedCar.coordY] = roadMapNoCars[crashedCar.coordX][crashedCar.coordY];
-                        if (!crashed) {
-                            coordCrashed = [car.coordX, car.coordY];
-                            crashed = true;
-                        }
                         car.isAlive = false;
                         crashedCar.isAlive = false;
-                        carsPositions.splice(carsPositions.indexOf(car), 1);
-                        carsPositions.splice(carsPositions.indexOf(crashedCar), 1);
                     }
                 } else {
                     roadMap[car.coordX][car.coordY] = car.state;
                 }
+                //this.displayRoadMap(lines, roadMap);
             }
-            // displayRoadMap(roadMap);
-            carsLeft = carsPositions.length;
-        } while (carsLeft > 1);
+            //this.displayRoadMap(lines, roadMap);
+            carsLeft = carsPositions.filter(c => c.isAlive).length;
+        } while (carsLeft != 1);
 
         let carSurvivor = carsPositions.find(_c => _c.isAlive);
 
         if (carSurvivor != undefined) {
-            //console.log(`Part 1 crashed: ${coordCrashed.toString()}!`);
-            //console.log(`Part 2 survivor: ${carSurvivor.coordX},${carSurvivor.coordY}!`);
             return `${carSurvivor.coordX},${carSurvivor.coordY}`;
         }
     }

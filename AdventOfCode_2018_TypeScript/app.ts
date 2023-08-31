@@ -25,7 +25,7 @@ let day05Part01 = new dayimports.Day05Part01(); let resultday05Part01 = day05Par
 console.log(`Result of day 05 part 01 is ${resultday05Part01}`);
 let day05Part02 = new dayimports.Day05Part02(); let resultday05Part02 = day05Part02.execute();
 console.log(`Result of day 05 part 02 is ${resultday05Part02}`);
-// Executing day 06 
+//// Executing day 06 
 //let day06Part01 = new dayimports.Day06Part01(); let resultday06Part01 = day06Part01.execute();
 //console.log(`Result of day 06 part 01 is ${resultday06Part01}`);
 //let day06Part02 = new dayimports.Day06Part02(); let resultday06Part02 = day06Part02.execute();
@@ -61,10 +61,10 @@ console.log(`Result of day 12 part 01 is ${resultday12Part01}`);
 let day12Part02 = new dayimports.Day12Part02(); let resultday12Part02 = day12Part02.execute();
 console.log(`Result of day 12 part 02 is ${resultday12Part02}`);
 // Executing day 13
-//let day13Part01 = new dayimports.Day13Part01(); let resultday13Part01 = day13Part01.execute();
-//console.log(`Result of day 13 part 01 is ${resultday13Part01}`);
-//let day13Part02 = new dayimports.Day13Part02(); let resultday13Part02 = day13Part02.execute();
-//console.log(`Result of day 13 part 02 is ${resultday13Part02}`);
+let day13Part01 = new dayimports.Day13Part01(); let resultday13Part01 = day13Part01.execute();
+console.log(`Result of day 13 part 01 is ${resultday13Part01}`);
+let day13Part02 = new dayimports.Day13Part02(); let resultday13Part02 = day13Part02.execute();
+console.log(`Result of day 13 part 02 is ${resultday13Part02}`);
 // Executing day 14
 let day14Part01 = new dayimports.Day14Part01(); let resultday14Part01 = day14Part01.execute();
 console.log(`Result of day 14 part 01 is ${resultday14Part01}`);
@@ -80,47 +80,47 @@ let day16Part01 = new dayimports.Day16Part01(); let resultday16Part01 = day16Par
 console.log(`Result of day 16 part 01 is ${resultday16Part01}`);
 let day16Part02 = new dayimports.Day16Part02(); let resultday16Part02 = day16Part02.execute();
 console.log(`Result of day 16 part 02 is ${resultday16Part02}`);
-// Executing day 17
-let day17Part01 = new dayimports.Day17Part01(); let resultday17Part01 = day17Part01.execute();
-console.log(`Result of day 17 part 01 is ${resultday17Part01}`);
-let day17Part02 = new dayimports.Day17Part02(); let resultday17Part02 = day17Part02.execute();
-console.log(`Result of day 17 part 02 is ${resultday17Part02}`);
-// Executing day 18
-let day18Part01 = new dayimports.Day18Part01(); let resultday18Part01 = day18Part01.execute();
-console.log(`Result of day 18 part 01 is ${resultday18Part01}`);
-let day18Part02 = new dayimports.Day18Part02(); let resultday18Part02 = day18Part02.execute();
-console.log(`Result of day 18 part 02 is ${resultday18Part02}`);
-// Executing day 19
-let day19Part01 = new dayimports.Day19Part01(); let resultday19Part01 = day19Part01.execute();
-console.log(`Result of day 19 part 01 is ${resultday19Part01}`);
-let day19Part02 = new dayimports.Day19Part02(); let resultday19Part02 = day19Part02.execute();
-console.log(`Result of day 19 part 02 is ${resultday19Part02}`);
-// Executing day 20
-let day20Part01 = new dayimports.Day20Part01(); let resultday20Part01 = day20Part01.execute();
-console.log(`Result of day 20 part 01 is ${resultday20Part01}`);
-let day20Part02 = new dayimports.Day20Part02(); let resultday20Part02 = day20Part02.execute();
-console.log(`Result of day 20 part 02 is ${resultday20Part02}`);
-// Executing day 21
-let day21Part01 = new dayimports.Day21Part01(); let resultday21Part01 = day21Part01.execute();
-console.log(`Result of day 21 part 01 is ${resultday21Part01}`);
-let day21Part02 = new dayimports.Day21Part02(); let resultday21Part02 = day21Part02.execute();
-console.log(`Result of day 21 part 02 is ${resultday21Part02}`);
-// Executing day 22
-let day22Part01 = new dayimports.Day22Part01(); let resultday22Part01 = day22Part01.execute();
-console.log(`Result of day 22 part 01 is ${resultday22Part01}`);
-let day22Part02 = new dayimports.Day22Part02(); let resultday22Part02 = day22Part02.execute();
-console.log(`Result of day 22 part 02 is ${resultday22Part02}`);
-// Executing day 23
-let day23Part01 = new dayimports.Day23Part01(); let resultday23Part01 = day23Part01.execute();
-console.log(`Result of day 23 part 01 is ${resultday23Part01}`);
-let day23Part02 = new dayimports.Day23Part02(); let resultday23Part02 = day23Part02.execute();
-console.log(`Result of day 23 part 02 is ${resultday23Part02}`);
-// Executing day 24
-let day24Part01 = new dayimports.Day24Part01(); let resultday24Part01 = day24Part01.execute();
-console.log(`Result of day 24 part 01 is ${resultday24Part01}`);
-let day24Part02 = new dayimports.Day24Part02(); let resultday24Part02 = day24Part02.execute();
-console.log(`Result of day 24 part 02 is ${resultday24Part02}`);
-// Executing day 25
-let day25Part01 = new dayimports.Day25Part01(); let resultday25Part01 = day25Part01.execute();
-console.log(`Result of day 25 part 01 is ${resultday25Part01}`);
+//// Executing day 17
+//let day17Part01 = new dayimports.Day17Part01(); let resultday17Part01 = day17Part01.execute();
+//console.log(`Result of day 17 part 01 is ${resultday17Part01}`);
+//let day17Part02 = new dayimports.Day17Part02(); let resultday17Part02 = day17Part02.execute();
+//console.log(`Result of day 17 part 02 is ${resultday17Part02}`);
+//// Executing day 18
+//let day18Part01 = new dayimports.Day18Part01(); let resultday18Part01 = day18Part01.execute();
+//console.log(`Result of day 18 part 01 is ${resultday18Part01}`);
+//let day18Part02 = new dayimports.Day18Part02(); let resultday18Part02 = day18Part02.execute();
+//console.log(`Result of day 18 part 02 is ${resultday18Part02}`);
+//// Executing day 19
+//let day19Part01 = new dayimports.Day19Part01(); let resultday19Part01 = day19Part01.execute();
+//console.log(`Result of day 19 part 01 is ${resultday19Part01}`);
+//let day19Part02 = new dayimports.Day19Part02(); let resultday19Part02 = day19Part02.execute();
+//console.log(`Result of day 19 part 02 is ${resultday19Part02}`);
+//// Executing day 20
+//let day20Part01 = new dayimports.Day20Part01(); let resultday20Part01 = day20Part01.execute();
+//console.log(`Result of day 20 part 01 is ${resultday20Part01}`);
+//let day20Part02 = new dayimports.Day20Part02(); let resultday20Part02 = day20Part02.execute();
+//console.log(`Result of day 20 part 02 is ${resultday20Part02}`);
+//// Executing day 21
+//let day21Part01 = new dayimports.Day21Part01(); let resultday21Part01 = day21Part01.execute();
+//console.log(`Result of day 21 part 01 is ${resultday21Part01}`);
+//let day21Part02 = new dayimports.Day21Part02(); let resultday21Part02 = day21Part02.execute();
+//console.log(`Result of day 21 part 02 is ${resultday21Part02}`);
+//// Executing day 22
+//let day22Part01 = new dayimports.Day22Part01(); let resultday22Part01 = day22Part01.execute();
+//console.log(`Result of day 22 part 01 is ${resultday22Part01}`);
+//let day22Part02 = new dayimports.Day22Part02(); let resultday22Part02 = day22Part02.execute();
+//console.log(`Result of day 22 part 02 is ${resultday22Part02}`);
+//// Executing day 23
+//let day23Part01 = new dayimports.Day23Part01(); let resultday23Part01 = day23Part01.execute();
+//console.log(`Result of day 23 part 01 is ${resultday23Part01}`);
+//let day23Part02 = new dayimports.Day23Part02(); let resultday23Part02 = day23Part02.execute();
+//console.log(`Result of day 23 part 02 is ${resultday23Part02}`);
+//// Executing day 24
+//let day24Part01 = new dayimports.Day24Part01(); let resultday24Part01 = day24Part01.execute();
+//console.log(`Result of day 24 part 01 is ${resultday24Part01}`);
+//let day24Part02 = new dayimports.Day24Part02(); let resultday24Part02 = day24Part02.execute();
+//console.log(`Result of day 24 part 02 is ${resultday24Part02}`);
+//// Executing day 25
+//let day25Part01 = new dayimports.Day25Part01(); let resultday25Part01 = day25Part01.execute();
+//console.log(`Result of day 25 part 01 is ${resultday25Part01}`);
 console.log("End of execution");

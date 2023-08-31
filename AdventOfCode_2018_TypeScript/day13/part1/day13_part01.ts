@@ -51,13 +51,13 @@ export class Day13Part01 {
 
         // 
         function sortByPosition(a: CarPosition, b: CarPosition) {
-            if (a.coordX == b.coordX) return a.coordY - b.coordY;
-            return a.coordX - b.coordX;
+            if (a.coordY == b.coordY) return a.coordX - b.coordX;
+            return a.coordY - b.coordY;
         }
 
         let crashed = false;
         let coordCrashed: Array<number> = []
-        this.displayRoadMap(roadMap);
+        //this.displayRoadMap(roadMap);
         do {
             crashed = false;
             carsPositions = carsPositions.sort((a, b) => sortByPosition(a, b));

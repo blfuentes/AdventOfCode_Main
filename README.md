@@ -27,7 +27,6 @@ https://adventofcode.com/2018
 
 2018 TS/F#
 - 6 (only F#)
-- 13
 - 17 al 25
 
 
