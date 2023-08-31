@@ -3,7 +3,7 @@ import { CarPosition } from "../CarPosition";
 export class Day13Part01 {
     displayRoadMap(roadmap: Array<Array<string>>) {
         let rowIdx = 0;
-        while (rowIdx < roadmap[rowIdx].length) {
+        while (roadmap[rowIdx] && rowIdx < roadmap[rowIdx].length) {
             let rowDisplay = "";
             for (let colIdx = 0; colIdx < roadmap.length; colIdx++) {
                 rowDisplay += roadmap[colIdx][rowIdx];
@@ -21,14 +21,9 @@ export class Day13Part01 {
         let fs = require("fs");
         let path = require('path');
 
-
-        // let filepath = path.join(__dirname, "../test13_input.txt");
+         //let filepath = path.join(__dirname, "../test13_input.txt");
         let filepath = path.join(__dirname, "../day13_input.txt");
         let lines = fs.readFileSync(filepath, "utf-8").split("\r\n");
-
-
-
-
 
         // INIT MAPROAD
         let roadMap: Array<Array<string>> = [];
