@@ -5,7 +5,7 @@ https://adventofcode.com/
 https://adventofcode.com/2015
 
 2015 F#/Go
-- 6 al 25
+- 7 al 25
 
 # Advent Of Code 2016
 

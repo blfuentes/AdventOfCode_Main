@@ -4,8 +4,12 @@
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="day00\part01\day00_part01.fs" />
+    <Compile Include="day00\part02\day00_part02.fs" />
     <Compile Include="Modules/Utilities.fs" />
     <Compile Include="day01/part01/day01_part01.fs" />
+    <None Include="day00\part01\day00_part01.fsx" />
+    <None Include="day00\part02\day00_part02.fsx" />
     <None Include="day01/part01/day01_part01.fsx" />
     <Compile Include="day01/part02/day01_part02.fs" />
     <None Include="day01/part02/day01_part02.fsx" />
@@ -25,6 +29,8 @@
     <None Include="day05/part01/day05_part01.fsx" />
     <Compile Include="day05/part02/day05_part02.fs" />
     <None Include="day05/part02/day05_part02.fsx" />
+    <Content Include="day00\day00_input.txt" />
+    <Content Include="day00\test_input.txt" />
     <Content Include="day06\test_input_02.txt" />
     <Content Include="day06\test_input_01.txt" />
     <Content Include="day06\day06_input.txt" />

@@ -1,59 +1,43 @@
 ﻿open System.IO
 
-// let path = "test_input_01.txt"
+//let path = "test_input_02.txt"
+//let path = "test_input_01.txt"
 let path = "day06_input.txt"
 
-let inputLines = File.ReadLines(__SOURCE_DIRECTORY__ + @"../../" + path) |>Seq.toList
+let inputLines = File.ReadLines(__SOURCE_DIRECTORY__ + @"../../" + path)
 
-let rec comb n l =
-  match (n,l) with
-  | (0,_) -> [[]]
-  | (_,[]) -> []
-  | (n,x::xs) ->
-      let useX = List.map (fun l -> x::l) (comb (n-1) xs)
-      let noX = comb n xs
-      (useX @ noX)
+let parseInstruction (instruction: string) =
+    instruction.Split(' ') |> fun i -> (
+        let value = 
+            match i.[0] with
+            | "turn" -> ((if i.[1] = "on" then 1 else -1), 0)
+            | "toggle" -> (2, -1)
+            | _ -> (0, 0)
+        //printfn "left corner %d, %d, right corner %d, %d" (int(i.[2 + snd value].Split(',').[0])) (int(i.[2 + snd value].Split(',').[1])) (int(i.[4 + snd value].Split(',').[0])) (int(i.[4 + snd value].Split(',').[1]))
+        [|fst value; int(i.[2 + snd value].Split(',').[0]); int(i.[2 + snd value].Split(',').[1]); int(i.[4 + snd value].Split(',').[0]); int(i.[4 + snd value].Split(',').[1])|]
+    )
 
-let convertToStrings (l: list<char>) = 
-    l |> List.map string |> List.reduce (+)
+let parseInstructions (instructions: string seq) =
+    instructions |> Seq.map(fun i -> parseInstruction i)
 
-let count needle haystack =
-    [ for i in 0..String.length haystack - 1 -> haystack.[i..] ]
-    |> Seq.filter (Seq.forall2 (=) needle)
-    |> Seq.length
-// (count "qj" "qjhvhtzxzqqjkmpb")
+let rec executeInstruction (instructions: int array list) (grid: int[,]) =
+    match instructions with
+    | instruction::rest ->
+        for col in instruction.[1]..instruction.[3] do
+            for row in instruction.[2]..instruction.[4] do
+                if instruction.[0] = -1 then
+                    grid[row, col] <- if grid[row, col] = 0 then 0 else grid[row, col] - 1
+                else
+                    grid[row, col] <- grid[row, col] + instruction.[0]
+        executeInstruction rest grid
+    | [] -> grid
 
-let areConsecutive (i: List<int>) =
-    i |> List.pairwise |> List.forall(fun a -> (snd a) - (fst a) = 1)
 
-// areConsecutive [1; 2; 3]
+let countValues (grid: int[,]) =
+    grid |> Seq.cast<int> |> Seq.sum
 
-let input = "aaa"
-let combinations = input.ToCharArray() |> Array.toList |> List.pairwise |> List.map(fun p -> string (fst p) + string (snd p))
-let filtered = combinations |> List.mapi(fun idx c -> (c, idx)) |> List.groupBy(fun g -> fst g) |> List.filter(fun g -> (snd g).Length > 1)
-let filteredReduced = filtered |> List.map(fun l -> (fst l, (snd l |> List.map snd))) |> List.map snd
-// let testReduced = [[0; 2; 4]]
-(filteredReduced |> List.filter(fun e -> (comb 2 e) |> List.exists(fun n -> not (areConsecutive n)))).Length > 0
 
-let pairIsRepeatedNoOverlapping (input: string) =
-    let combinations = input.ToCharArray() |> Array.toList |> List.pairwise |> List.map(fun p -> string (fst p) + string (snd p))
-    let filtered = combinations |> List.mapi(fun idx c -> (c, idx)) |> List.groupBy(fun g -> fst g) |> List.filter(fun g -> (snd g).Length > 1)
-    let filteredReduced = filtered |> List.map(fun l -> (fst l, (snd l |> List.map snd))) |> List.map snd
-    (filteredReduced |> List.filter(fun e -> (comb 2 e) |> List.exists(fun n -> not (areConsecutive n)))).Length > 0
-
-let mirroredLetter (input: string) =
-    let listOfThrees = [0..input.Length - 3] |> List.map(fun i -> input.Substring(i).ToCharArray() |> Array.take(3))
-    (listOfThrees |> List.filter (fun l -> l.[0] = l.[2])).Length > 0
-
-let isNiceStringNewRules (input: string) =
-    pairIsRepeatedNoOverlapping input && mirroredLetter input
-
-// let isNiceStringNewRules2 (input: string) =
-//     pairIsRepeatedNoOverlapping input //&& mirroredLetter input
-
-isNiceStringNewRules "qjhvhtzxzqqjkmpb"
-isNiceStringNewRules "xxyxx"
-isNiceStringNewRules "uurcxstgmygtbstg"
-isNiceStringNewRules "ieodomkazucvgmuy"
-
-(inputLines |> List.filter(fun l -> isNiceStringNewRules l)).Length
+let instructions = parseInstructions inputLines |> Seq.toList
+let grid = Array2D.create 1000 1000 0
+let result = executeInstruction instructions grid
+let final = countValues result

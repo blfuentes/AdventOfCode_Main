@@ -11,7 +11,7 @@ let parseInstruction (instruction: string) =
     instruction.Split(' ') |> fun i -> (
         let value = 
             match i.[0] with
-            | "turn" -> ((if i.[1] = "on" then 1 else -1), 0)
+            | "turn" -> ((if i.[1] = "on" then 1 else 0), 0)
             | "toggle" -> (-1, -1)
             | _ -> (0, 0)
         printfn "left corner %d, %d, right corner %d, %d" (int(i.[2 + snd value].Split(',').[0])) (int(i.[2 + snd value].Split(',').[1])) (int(i.[4 + snd value].Split(',').[0])) (int(i.[4 + snd value].Split(',').[1]))
@@ -27,9 +27,9 @@ let rec executeInstruction (instructions: int array list) (grid: int[,]) =
         for col in instruction.[1]..instruction.[3] do
             for row in instruction.[2]..instruction.[4] do
                 if instruction.[0] = -1 then
-                    grid[col, row] <- grid[col, row] * instruction.[0]
+                    grid[row, col] <- if grid[row, col] = 0 then 1 else 0
                 else
-                    grid[col, row] <- instruction.[0]
+                    grid[row, col] <- instruction.[0]
         executeInstruction rest grid
     | [] -> grid
 
