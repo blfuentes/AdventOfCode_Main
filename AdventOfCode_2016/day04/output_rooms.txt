@@ -1,0 +1,1796 @@
+Room: aczupnetwp-mfyyj-opalcexpye-977[peyac] - Sorted parts: [|"p, 4"; "e, 3"; "y, 3"; "a, 2"; "c, 2"; "f, 1"; "j, 1"; "l, 1"; "m, 1"; "n, 1";
+  "o, 1"; "t, 1"; "u, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'p'; 'e'; 'y'; 'a'; 'c'|] - Checksum: peyac 
+ 
+Room: molgbzqfib-bdd-mrozexpfkd-289[bdfmo] - Sorted parts: [|"b, 3"; "d, 3"; "f, 2"; "m, 2"; "o, 2"; "z, 2"; "e, 1"; "g, 1"; "i, 1"; "k, 1";
+  "l, 1"; "p, 1"; "q, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'b'; 'd'; 'f'; 'm'; 'o'|] - Checksum: bdfmo 
+ 
+Room: enzcntvat-pnaql-qrfvta-351[antqv] - Sorted parts: [|"a, 3"; "n, 3"; "t, 3"; "q, 2"; "v, 2"; "c, 1"; "e, 1"; "f, 1"; "l, 1"; "p, 1";
+  "r, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'n'; 't'; 'q'; 'v'|] - Checksum: antqv 
+ 
+Room: otzkxtgzoutgr-jek-vaxingyotm-670[tgokx] - Sorted parts: [|"t, 4"; "g, 3"; "o, 3"; "k, 2"; "x, 2"; "z, 2"; "a, 1"; "e, 1"; "i, 1"; "j, 1";
+  "m, 1"; "n, 1"; "r, 1"; "u, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'g'; 'o'; 'k'; 'x'|] - Checksum: tgokx 
+ 
+Room: fmsledevhsyw-gerhc-gsexmrk-qerekiqirx-126[ersgh] - Sorted parts: [|"e, 6"; "r, 4"; "s, 3"; "g, 2"; "h, 2"; "i, 2"; "k, 2"; "x, 2"; "m, 2"; "q, 2";
+  "c, 1"; "w, 1"; "v, 1"; "l, 1"; "d, 1"; "f, 1"; "y, 1"|] - ToBeChecked: [|'e'; 'r'; 's'; 'g'; 'h'|] - Checksum: ersgh 
+ 
+Room: dfcxsqhwzs-qobrm-gvwddwbu-532[dwbqs] - Sorted parts: [|"d, 3"; "w, 3"; "b, 2"; "q, 2"; "s, 2"; "c, 1"; "f, 1"; "g, 1"; "h, 1"; "m, 1";
+  "o, 1"; "r, 1"; "u, 1"; "v, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'w'; 'b'; 'q'; 's'|] - Checksum: dwbqs 
+ 
+Room: kwvacumz-ozilm-akidmvomz-pcvb-ikycqaqbqwv-538[mvaci] - Sorted parts: [|"m, 4"; "v, 4"; "a, 3"; "c, 3"; "i, 3"; "k, 3"; "q, 3"; "z, 3"; "b, 2"; "o, 2";
+  "w, 2"; "d, 1"; "l, 1"; "p, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'m'; 'v'; 'a'; 'c'; 'i'|] - Checksum: mvaci 
+ 
+Room: sno-rdbqds-qzaahs-rsnqzfd-599[sdqan] - Sorted parts: [|"s, 4"; "d, 3"; "q, 3"; "a, 2"; "n, 2"; "r, 2"; "z, 2"; "b, 1"; "f, 1"; "h, 1";
+  "o, 1"|] - ToBeChecked: [|'s'; 'd'; 'q'; 'a'; 'n'|] - Checksum: sdqan 
+ 
+Room: zekvierkzferc-treup-ivrthlzjzkzfe-633[ezrkf] - Sorted parts: [|"e, 5"; "z, 5"; "r, 4"; "k, 3"; "f, 2"; "i, 2"; "t, 2"; "v, 2"; "c, 1"; "h, 1";
+  "j, 1"; "l, 1"; "p, 1"; "u, 1"|] - ToBeChecked: [|'e'; 'z'; 'r'; 'k'; 'f'|] - Checksum: ezrkf 
+ 
+Room: aoubshwq-suu-difqvogwbu-922[uboqs] - Sorted parts: [|"u, 4"; "b, 2"; "o, 2"; "q, 2"; "s, 2"; "w, 2"; "a, 1"; "d, 1"; "f, 1"; "g, 1";
+  "h, 1"; "i, 1"; "v, 1"|] - ToBeChecked: [|'u'; 'b'; 'o'; 'q'; 's'|] - Checksum: uboqs 
+ 
+Room: dpotvnfs-hsbef-kfmmzcfbo-nbobhfnfou-571[fbonh] - Sorted parts: [|"f, 6"; "b, 4"; "o, 4"; "n, 3"; "h, 2"; "m, 2"; "s, 2"; "c, 1"; "d, 1"; "e, 1";
+  "k, 1"; "p, 1"; "t, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'b'; 'o'; 'n'; 'h'|] - Checksum: fbonh 
+ 
+Room: hcd-gsqfsh-qobrm-qcohwbu-gsfjwqsg-792[qsghb] - Sorted parts: [|"q, 4"; "s, 4"; "g, 3"; "h, 3"; "b, 2"; "c, 2"; "f, 2"; "o, 2"; "w, 2"; "d, 1";
+  "j, 1"; "m, 1"; "r, 1"; "u, 1"|] - ToBeChecked: [|'q'; 's'; 'g'; 'h'; 'b'|] - Checksum: qsghb 
+ 
+Room: nbhofujd-cvooz-mbcpsbupsz-649[bocps] - Sorted parts: [|"b, 3"; "o, 3"; "c, 2"; "p, 2"; "s, 2"; "u, 2"; "z, 2"; "d, 1"; "f, 1"; "h, 1";
+  "j, 1"; "m, 1"; "n, 1"; "v, 1"|] - ToBeChecked: [|'b'; 'o'; 'c'; 'p'; 's'|] - Checksum: bocps 
+ 
+Room: mvydjvxodqz-xviyt-hvivbzhzio-369[vizdh] - Sorted parts: [|"v, 5"; "i, 3"; "z, 3"; "d, 2"; "h, 2"; "o, 2"; "x, 2"; "y, 2"; "b, 1"; "j, 1";
+  "m, 1"; "q, 1"; "t, 1"|] - ToBeChecked: [|'v'; 'i'; 'z'; 'd'; 'h'|] - Checksum: vizdh 
+ 
+Room: bqxnfdmhb-bzmcx-bnzshmf-cdozqsldms-755[bmdsz] - Sorted parts: [|"b, 4"; "m, 4"; "d, 3"; "s, 3"; "z, 3"; "c, 2"; "f, 2"; "h, 2"; "n, 2"; "q, 2";
+  "x, 2"; "l, 1"; "o, 1"|] - ToBeChecked: [|'b'; 'm'; 'd'; 's'; 'z'|] - Checksum: bmdsz 
+ 
+Room: lxwbdvna-pajmn-snuuhknjw-mnbrpw-199[nwabj] - Sorted parts: [|"n, 5"; "w, 3"; "a, 2"; "b, 2"; "j, 2"; "m, 2"; "p, 2"; "u, 2"; "d, 1"; "h, 1";
+  "k, 1"; "l, 1"; "r, 1"; "s, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'n'; 'w'; 'a'; 'b'; 'j'|] - Checksum: nwabj 
+ 
+Room: molgbzqfib-zxkav-zlxqfkd-ildfpqfzp-627[fzlqb] - Sorted parts: [|"f, 4"; "z, 4"; "l, 3"; "q, 3"; "b, 2"; "d, 2"; "i, 2"; "k, 2"; "p, 2"; "x, 2";
+  "a, 1"; "g, 1"; "m, 1"; "o, 1"; "v, 1"|] - ToBeChecked: [|'f'; 'z'; 'l'; 'q'; 'b'|] - Checksum: fzlqb 
+ 
+Room: iuruxlar-vrgyzoi-mxgyy-sgtgmksktz-904[gryik] - Sorted parts: [|"g, 4"; "r, 3"; "y, 3"; "i, 2"; "k, 2"; "m, 2"; "s, 2"; "t, 2"; "u, 2"; "x, 2";
+  "z, 2"; "a, 1"; "l, 1"; "o, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'r'; 'y'; 'i'; 'k'|] - Checksum: gryik 
+ 
+Room: bkzrrhehdc-azrjds-qdzbpthrhshnm-729[hrdzb] - Sorted parts: [|"h, 5"; "r, 4"; "d, 3"; "z, 3"; "b, 2"; "s, 2"; "a, 1"; "c, 1"; "e, 1"; "j, 1";
+  "k, 1"; "m, 1"; "n, 1"; "p, 1"; "q, 1"; "t, 1"|] - ToBeChecked: [|'h'; 'r'; 'd'; 'z'; 'b'|] - Checksum: hrdzb 
+ 
+Room: kzgwomvqk-kpwkwtibm-xczkpiaqvo-772[kwimo] - Sorted parts: [|"k, 5"; "w, 3"; "i, 2"; "m, 2"; "o, 2"; "p, 2"; "q, 2"; "v, 2"; "z, 2"; "a, 1";
+  "b, 1"; "c, 1"; "g, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'k'; 'w'; 'i'; 'm'; 'o'|] - Checksum: kwimo 
+ 
+Room: amlqskcp-epybc-afmamjyrc-pcqcypaf-574[capmy] - Sorted parts: [|"c, 5"; "a, 4"; "p, 4"; "m, 3"; "y, 3"; "f, 2"; "q, 2"; "b, 1"; "e, 1"; "j, 1";
+  "k, 1"; "l, 1"; "r, 1"; "s, 1"|] - ToBeChecked: [|'c'; 'a'; 'p'; 'm'; 'y'|] - Checksum: capmy 
+ 
+Room: gcfcnuls-aluxy-zfiqyl-guleyncha-994[lcuya] - Sorted parts: [|"l, 4"; "c, 3"; "u, 3"; "y, 3"; "a, 2"; "f, 2"; "g, 2"; "n, 2"; "e, 1"; "h, 1";
+  "i, 1"; "q, 1"; "s, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'c'; 'u'; 'y'; 'a'|] - Checksum: lcuya 
+ 
+Room: vrurcjah-pajmn-ljwmh-bnaerlnb-771[ajnrb] - Sorted parts: [|"a, 3"; "j, 3"; "n, 3"; "r, 3"; "b, 2"; "h, 2"; "l, 2"; "m, 2"; "c, 1"; "e, 1";
+  "p, 1"; "u, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'a'; 'j'; 'n'; 'r'; 'b'|] - Checksum: ajnrb 
+ 
+Room: crwwv-bdd-rpbo-qbpqfkd-393[bdpqr] - Sorted parts: [|"b, 3"; "d, 3"; "p, 2"; "q, 2"; "r, 2"; "w, 2"; "c, 1"; "f, 1"; "k, 1"; "o, 1";
+  "v, 1"|] - ToBeChecked: [|'b'; 'd'; 'p'; 'q'; 'r'|] - Checksum: bdpqr 
+ 
+Room: dzczkrip-xiruv-srjbvk-rercpjzj-607[rjzci] - Sorted parts: [|"r, 5"; "j, 3"; "z, 3"; "c, 2"; "i, 2"; "k, 2"; "p, 2"; "v, 2"; "b, 1"; "d, 1";
+  "e, 1"; "s, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'r'; 'j'; 'z'; 'c'; 'i'|] - Checksum: rjzci 
+ 
+Room: bnqqnrhud-bzmcx-qdrdzqbg-781[qbdnr] - Sorted parts: [|"q, 4"; "b, 3"; "d, 3"; "n, 2"; "r, 2"; "z, 2"; "c, 1"; "g, 1"; "h, 1"; "m, 1";
+  "u, 1"; "x, 1"|] - ToBeChecked: [|'q'; 'b'; 'd'; 'n'; 'r'|] - Checksum: qbdnr 
+ 
+Room: upq-tfdsfu-kfmmzcfbo-tupsbhf-779[fubmp] - Sorted parts: [|"f, 5"; "u, 3"; "b, 2"; "m, 2"; "p, 2"; "s, 2"; "t, 2"; "c, 1"; "d, 1"; "h, 1";
+  "k, 1"; "o, 1"; "q, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'u'; 'b'; 'm'; 'p'|] - Checksum: fubmp 
+ 
+Room: xgjougizobk-vrgyzoi-mxgyy-yzuxgmk-826[gyoxz] - Sorted parts: [|"g, 5"; "y, 4"; "o, 3"; "x, 3"; "z, 3"; "i, 2"; "k, 2"; "m, 2"; "u, 2"; "b, 1";
+  "j, 1"; "r, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'y'; 'o'; 'x'; 'z'|] - Checksum: gyoxz 
+ 
+Room: lnkfaypeha-pkl-oaynap-xqjju-ykjpwejiajp-342[ajpky] - Sorted parts: [|"a, 5"; "j, 5"; "p, 5"; "k, 3"; "y, 3"; "e, 2"; "l, 2"; "n, 2"; "f, 1"; "h, 1";
+  "i, 1"; "o, 1"; "q, 1"; "u, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'a'; 'j'; 'p'; 'k'; 'y'|] - Checksum: ajpky 
+ 
+Room: qcffcgwjs-xszzmpsob-zopcfohcfm-246[cfosz] - Sorted parts: [|"c, 4"; "f, 4"; "o, 3"; "s, 3"; "z, 3"; "m, 2"; "p, 2"; "b, 1"; "g, 1"; "h, 1";
+  "j, 1"; "q, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'f'; 'o'; 's'; 'z'|] - Checksum: cfosz 
+ 
+Room: dpssptjwf-cvooz-sftfbsdi-727[sfdop] - Sorted parts: [|"s, 4"; "f, 3"; "d, 2"; "o, 2"; "p, 2"; "t, 2"; "b, 1"; "c, 1"; "i, 1"; "j, 1";
+  "v, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'f'; 'd'; 'o'; 'p'|] - Checksum: sfdop 
+ 
+Room: vdzonmhydc-bzmcx-nodqzshnmr-391[dmnzc] - Sorted parts: [|"d, 3"; "m, 3"; "n, 3"; "z, 3"; "c, 2"; "h, 2"; "o, 2"; "b, 1"; "q, 1"; "r, 1";
+  "s, 1"; "v, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'d'; 'm'; 'n'; 'z'; 'c'|] - Checksum: dmnzc 
+ 
+Room: zilqwikbqdm-akidmvomz-pcvb-lmdmtwxumvb-824[mbdiv] - Sorted parts: [|"m, 6"; "b, 3"; "d, 3"; "i, 3"; "v, 3"; "z, 2"; "w, 2"; "k, 2"; "l, 2"; "q, 2";
+  "u, 1"; "o, 1"; "p, 1"; "x, 1"; "c, 1"; "t, 1"; "a, 1"|] - ToBeChecked: [|'m'; 'b'; 'd'; 'i'; 'v'|] - Checksum: mbdiv 
+ 
+Room: sbejpbdujwf-cvooz-nbobhfnfou-181[bofjn] - Sorted parts: [|"b, 4"; "o, 4"; "f, 3"; "j, 2"; "n, 2"; "u, 2"; "c, 1"; "d, 1"; "e, 1"; "h, 1";
+  "p, 1"; "s, 1"; "v, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'o'; 'f'; 'j'; 'n'|] - Checksum: bofjn 
+ 
+Room: clotzlnetgp-prr-lnbftdtetzy-665[tlenp] - Sorted parts: [|"t, 5"; "l, 3"; "e, 2"; "n, 2"; "p, 2"; "r, 2"; "z, 2"; "b, 1"; "c, 1"; "d, 1";
+  "f, 1"; "g, 1"; "o, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'l'; 'e'; 'n'; 'p'|] - Checksum: tlenp 
+ 
+Room: fhezusjybu-rkddo-bqrehqjeho-894[ehbdj] - Sorted parts: [|"e, 3"; "h, 3"; "b, 2"; "d, 2"; "j, 2"; "o, 2"; "q, 2"; "r, 2"; "u, 2"; "f, 1";
+  "k, 1"; "s, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'h'; 'b'; 'd'; 'j'|] - Checksum: ehbdj 
+ 
+Room: xmtjbzidx-zbb-gjbdnodxn-291[bdxjn] - Sorted parts: [|"b, 4"; "d, 3"; "x, 3"; "j, 2"; "n, 2"; "z, 2"; "g, 1"; "i, 1"; "m, 1"; "o, 1";
+  "t, 1"|] - ToBeChecked: [|'b'; 'd'; 'x'; 'j'; 'n'|] - Checksum: bdxjn 
+ 
+Room: bnmrtldq-fqzcd-azrjds-rsnqzfd-261[dqrzf] - Sorted parts: [|"d, 4"; "q, 3"; "r, 3"; "z, 3"; "f, 2"; "n, 2"; "s, 2"; "a, 1"; "b, 1"; "c, 1";
+  "j, 1"; "l, 1"; "m, 1"; "t, 1"|] - ToBeChecked: [|'d'; 'q'; 'r'; 'z'; 'f'|] - Checksum: dqrzf 
+ 
+Room: avw-zljyla-jovjvshal-dvyrzovw-331[vajlo] - Sorted parts: [|"v, 5"; "a, 3"; "j, 3"; "l, 3"; "o, 2"; "w, 2"; "y, 2"; "z, 2"; "d, 1"; "h, 1";
+  "r, 1"; "s, 1"|] - ToBeChecked: [|'v'; 'a'; 'j'; 'l'; 'o'|] - Checksum: vajlo 
+ 
+Room: iuruxlar-iuxxuyobk-igtje-iutzgotsktz-644[uitxg] - Sorted parts: [|"u, 5"; "i, 4"; "t, 4"; "x, 3"; "g, 2"; "k, 2"; "o, 2"; "r, 2"; "z, 2"; "a, 1";
+  "b, 1"; "e, 1"; "j, 1"; "l, 1"; "s, 1"; "y, 1"|] - ToBeChecked: [|'u'; 'i'; 't'; 'x'; 'g'|] - Checksum: uitxg 
+ 
+Room: pdjqhwlf-hjj-hqjlqhhulqj-179[hjqld] - Sorted parts: [|"h, 5"; "j, 5"; "q, 4"; "l, 3"; "d, 1"; "f, 1"; "p, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'h'; 'j'; 'q'; 'l'; 'd'|] - Checksum: hjqld 
+ 
+Room: drxevkzt-irsszk-kvtyefcfxp-997[kefrs] - Sorted parts: [|"k, 3"; "e, 2"; "f, 2"; "r, 2"; "s, 2"; "t, 2"; "v, 2"; "x, 2"; "z, 2"; "c, 1";
+  "d, 1"; "i, 1"; "p, 1"; "y, 1"|] - ToBeChecked: [|'k'; 'e'; 'f'; 'r'; 's'|] - Checksum: kefrs 
+ 
+Room: mvkccspson-bkllsd-wkxkqowoxd-120[koscd] - Sorted parts: [|"k, 4"; "o, 3"; "s, 3"; "c, 2"; "d, 2"; "l, 2"; "w, 2"; "x, 2"; "b, 1"; "m, 1";
+  "n, 1"; "p, 1"; "q, 1"; "v, 1"|] - ToBeChecked: [|'k'; 'o'; 's'; 'c'; 'd'|] - Checksum: koscd 
+ 
+Room: udglrdfwlyh-vfdyhqjhu-kxqw-pdunhwlqj-829[dhlqu] - Sorted parts: [|"d, 4"; "h, 4"; "l, 3"; "q, 3"; "u, 3"; "w, 3"; "f, 2"; "j, 2"; "y, 2"; "g, 1";
+  "k, 1"; "n, 1"; "p, 1"; "r, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'d'; 'h'; 'l'; 'q'; 'u'|] - Checksum: dhlqu 
+ 
+Room: vcibutulxiom-jfumncw-alumm-mbcjjcha-370[mcuja] - Sorted parts: [|"m, 5"; "c, 4"; "u, 4"; "j, 3"; "a, 2"; "b, 2"; "i, 2"; "l, 2"; "f, 1"; "h, 1";
+  "n, 1"; "o, 1"; "t, 1"; "v, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'m'; 'c'; 'u'; 'j'; 'a'|] - Checksum: mcuja 
+ 
+Room: myxcewob-qbkno-bkllsd-nocsqx-744[bockl] - Sorted parts: [|"b, 3"; "o, 3"; "c, 2"; "k, 2"; "l, 2"; "n, 2"; "q, 2"; "s, 2"; "x, 2"; "d, 1";
+  "e, 1"; "m, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'o'; 'c'; 'k'; 'l'|] - Checksum: bockl 
+ 
+Room: zlilocri-pzxsbkdbo-erkq-ildfpqfzp-887[ilpzb] - Sorted parts: [|"i, 3"; "l, 3"; "p, 3"; "z, 3"; "b, 2"; "d, 2"; "f, 2"; "k, 2"; "o, 2"; "q, 2";
+  "r, 2"; "c, 1"; "e, 1"; "s, 1"; "x, 1"|] - ToBeChecked: [|'i'; 'l'; 'p'; 'z'; 'b'|] - Checksum: ilpzb 
+ 
+Room: zntargvp-pnaql-pbngvat-pbagnvazrag-377[agnpv] - Sorted parts: [|"a, 6"; "g, 4"; "n, 4"; "p, 4"; "v, 3"; "b, 2"; "r, 2"; "t, 2"; "z, 2"; "l, 1";
+  "q, 1"|] - ToBeChecked: [|'a'; 'g'; 'n'; 'p'; 'v'|] - Checksum: agnpv 
+ 
+Room: rgndvtcxr-uadltg-prfjxhxixdc-921[xdrcg] - Sorted parts: [|"x, 4"; "d, 3"; "r, 3"; "c, 2"; "g, 2"; "t, 2"; "a, 1"; "f, 1"; "h, 1"; "i, 1";
+  "j, 1"; "l, 1"; "n, 1"; "p, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'x'; 'd'; 'r'; 'c'; 'g'|] - Checksum: xdrcg 
+ 
+Room: pbeebfvir-cynfgvp-tenff-ernpdhvfvgvba-663[fvebn] - Sorted parts: [|"f, 5"; "v, 5"; "e, 4"; "b, 3"; "n, 3"; "p, 3"; "g, 2"; "r, 2"; "a, 1"; "c, 1";
+  "d, 1"; "h, 1"; "i, 1"; "t, 1"; "y, 1"|] - ToBeChecked: [|'f'; 'v'; 'e'; 'b'; 'n'|] - Checksum: fvebn 
+ 
+Room: bqvvu-ywjzu-ykwpejc-hwxknwpknu-290[wkujn] - Sorted parts: [|"w, 4"; "k, 3"; "u, 3"; "j, 2"; "n, 2"; "p, 2"; "v, 2"; "y, 2"; "b, 1"; "c, 1";
+  "e, 1"; "h, 1"; "q, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'k'; 'u'; 'j'; 'n'|] - Checksum: wkujn 
+ 
+Room: xjmmjndqz-xviyt-xjvodib-vivgtndn-785[vdijn] - Sorted parts: [|"v, 4"; "d, 3"; "i, 3"; "j, 3"; "n, 3"; "x, 3"; "m, 2"; "t, 2"; "b, 1"; "g, 1";
+  "o, 1"; "q, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'd'; 'i'; 'j'; 'n'|] - Checksum: vdijn 
+ 
+Room: szfyrqriuflj-srjbvk-tljkfdvi-jvimztv-919[jvfir] - Sorted parts: [|"j, 4"; "v, 4"; "f, 3"; "i, 3"; "r, 3"; "k, 2"; "l, 2"; "s, 2"; "t, 2"; "z, 2";
+  "b, 1"; "d, 1"; "m, 1"; "q, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'v'; 'f'; 'i'; 'r'|] - Checksum: jvfir 
+ 
+Room: ucynmlgxcb-afmamjyrc-pcacgtgle-574[cagml] - Sorted parts: [|"c, 5"; "a, 3"; "g, 3"; "m, 3"; "l, 2"; "y, 2"; "b, 1"; "e, 1"; "f, 1"; "j, 1";
+  "n, 1"; "p, 1"; "r, 1"; "t, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'a'; 'g'; 'm'; 'l'|] - Checksum: cagml 
+ 
+Room: zntargvp-pnaql-pbngvat-npdhvfvgvba-299[vanpg] - Sorted parts: [|"v, 5"; "a, 4"; "n, 4"; "p, 4"; "g, 3"; "b, 2"; "t, 2"; "d, 1"; "f, 1"; "h, 1";
+  "l, 1"; "q, 1"; "r, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'a'; 'n'; 'p'; 'g'|] - Checksum: vanpg 
+ 
+Room: gcfcnuls-aluxy-xsy-jolwbumcha-110[cluas] - Sorted parts: [|"c, 3"; "l, 3"; "u, 3"; "a, 2"; "s, 2"; "x, 2"; "y, 2"; "b, 1"; "f, 1"; "g, 1";
+  "h, 1"; "j, 1"; "m, 1"; "n, 1"; "o, 1"; "w, 1"|] - ToBeChecked: [|'c'; 'l'; 'u'; 'a'; 's'|] - Checksum: cluas 
+ 
+Room: qfmcusbwq-pibbm-aobousasbh-792[bsamo] - Sorted parts: [|"b, 5"; "s, 3"; "a, 2"; "m, 2"; "o, 2"; "q, 2"; "u, 2"; "c, 1"; "f, 1"; "h, 1";
+  "i, 1"; "p, 1"; "w, 1"|] - ToBeChecked: [|'b'; 's'; 'a'; 'm'; 'o'|] - Checksum: bsamo 
+ 
+Room: rwcnawjcrxwju-ljwmh-lxjcrwp-anjlzdrbrcrxw-667[rwjcl] - Sorted parts: [|"r, 6"; "w, 6"; "j, 5"; "c, 4"; "l, 3"; "x, 3"; "a, 2"; "n, 2"; "b, 1"; "d, 1";
+  "h, 1"; "m, 1"; "p, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'r'; 'w'; 'j'; 'c'; 'l'|] - Checksum: rwjcl 
+ 
+Room: ocipgvke-gii-vtckpkpi-466[ikpcg] - Sorted parts: [|"i, 4"; "k, 3"; "p, 3"; "c, 2"; "g, 2"; "v, 2"; "e, 1"; "o, 1"; "t, 1"|] - ToBeChecked: [|'i'; 'k'; 'p'; 'c'; 'g'|] - Checksum: ikpcg 
+ 
+Room: iruzfrtkzmv-treup-tfrkzex-kirzezex-945[rzekt] - Sorted parts: [|"r, 5"; "z, 5"; "e, 4"; "k, 3"; "t, 3"; "f, 2"; "i, 2"; "u, 2"; "x, 2"; "m, 1";
+  "p, 1"; "v, 1"|] - ToBeChecked: [|'r'; 'z'; 'e'; 'k'; 't'|] - Checksum: rzekt 
+ 
+Room: htqtwkzq-gzssd-tujwfyntsx-125[tsqwz] - Sorted parts: [|"t, 4"; "s, 3"; "q, 2"; "w, 2"; "z, 2"; "d, 1"; "f, 1"; "g, 1"; "h, 1"; "j, 1";
+  "k, 1"; "n, 1"; "u, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'t'; 's'; 'q'; 'w'; 'z'|] - Checksum: tsqwz 
+ 
+Room: wbhsfbohwcboz-qobrm-igsf-hsghwbu-584[bhosw] - Sorted parts: [|"b, 5"; "h, 4"; "o, 3"; "s, 3"; "w, 3"; "f, 2"; "g, 2"; "c, 1"; "i, 1"; "m, 1";
+  "q, 1"; "r, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'h'; 'o'; 's'; 'w'|] - Checksum: bhosw 
+ 
+Room: vkppo-vbemuh-qsgkyiyjyed-478[yekpv] - Sorted parts: [|"y, 3"; "e, 2"; "k, 2"; "p, 2"; "v, 2"; "b, 1"; "d, 1"; "g, 1"; "h, 1"; "i, 1";
+  "j, 1"; "m, 1"; "o, 1"; "q, 1"; "s, 1"; "u, 1"|] - ToBeChecked: [|'y'; 'e'; 'k'; 'p'; 'v'|] - Checksum: yekpv 
+ 
+Room: enzcntvat-hafgnoyr-qlr-ratvarrevat-325[artnv] - Sorted parts: [|"a, 5"; "r, 5"; "t, 4"; "n, 3"; "v, 3"; "e, 2"; "c, 1"; "f, 1"; "g, 1"; "h, 1";
+  "l, 1"; "o, 1"; "q, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'r'; 't'; 'n'; 'v'|] - Checksum: artnv 
+ 
+Room: ocipgvke-dcumgv-octmgvkpi-180[cgvik] - Sorted parts: [|"c, 3"; "g, 3"; "v, 3"; "i, 2"; "k, 2"; "m, 2"; "o, 2"; "p, 2"; "d, 1"; "e, 1";
+  "t, 1"; "u, 1"|] - ToBeChecked: [|'c'; 'g'; 'v'; 'i'; 'k'|] - Checksum: cgvik 
+ 
+Room: udglrdfwlyh-exqqb-ghyhorsphqw-595[hqdgl] - Sorted parts: [|"h, 4"; "q, 3"; "d, 2"; "g, 2"; "l, 2"; "r, 2"; "w, 2"; "y, 2"; "b, 1"; "e, 1";
+  "f, 1"; "o, 1"; "p, 1"; "s, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'h'; 'q'; 'd'; 'g'; 'l'|] - Checksum: hqdgl 
+ 
+Room: vhehkyne-vtgwr-vhtmbgz-ybgtgvbgz-657[gvbht] - Sorted parts: [|"g, 5"; "v, 4"; "b, 3"; "h, 3"; "t, 3"; "e, 2"; "y, 2"; "z, 2"; "k, 1"; "m, 1";
+  "n, 1"; "r, 1"; "w, 1"|] - ToBeChecked: [|'g'; 'v'; 'b'; 'h'; 't'|] - Checksum: gvbht 
+ 
+Room: shoewudys-uww-tuiywd-426[wudsy] - Sorted parts: [|"w, 4"; "u, 3"; "d, 2"; "s, 2"; "y, 2"; "e, 1"; "h, 1"; "i, 1"; "o, 1"; "t, 1"|] - ToBeChecked: [|'w'; 'u'; 'd'; 's'; 'y'|] - Checksum: wudsy 
+ 
+Room: krxqjijamxdb-kjbtnc-mnyjacvnwc-979[jcnab] - Sorted parts: [|"j, 4"; "c, 3"; "n, 3"; "a, 2"; "b, 2"; "k, 2"; "m, 2"; "x, 2"; "d, 1"; "i, 1";
+  "q, 1"; "r, 1"; "t, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'c'; 'n'; 'a'; 'b'|] - Checksum: jcnab 
+ 
+Room: bxaxipgn-vgpst-rpcsn-pcpanhxh-869[pnxac] - Sorted parts: [|"p, 5"; "n, 3"; "x, 3"; "a, 2"; "c, 2"; "g, 2"; "h, 2"; "s, 2"; "b, 1"; "i, 1";
+  "r, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'p'; 'n'; 'x'; 'a'; 'c'|] - Checksum: pnxac 
+ 
+Room: tcrjjzwzvu-jtrmvexvi-ylek-jkfirxv-165[jvrei] - Sorted parts: [|"j, 4"; "v, 4"; "r, 3"; "e, 2"; "i, 2"; "k, 2"; "t, 2"; "x, 2"; "z, 2"; "c, 1";
+  "f, 1"; "l, 1"; "m, 1"; "u, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'v'; 'r'; 'e'; 'i'|] - Checksum: jvrei 
+ 
+Room: sgmtkzoi-yigbktmkx-natz-iutzgotsktz-540[tkzgi] - Sorted parts: [|"t, 6"; "k, 4"; "z, 4"; "g, 3"; "i, 3"; "m, 2"; "o, 2"; "s, 2"; "a, 1"; "b, 1";
+  "n, 1"; "u, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'k'; 'z'; 'g'; 'i'|] - Checksum: tkzgi 
+ 
+Room: wpuvcdng-dwppa-eqpvckpogpv-284[pvcdg] - Sorted parts: [|"p, 6"; "v, 3"; "c, 2"; "d, 2"; "g, 2"; "w, 2"; "a, 1"; "e, 1"; "k, 1"; "n, 1";
+  "o, 1"; "q, 1"; "u, 1"|] - ToBeChecked: [|'p'; 'v'; 'c'; 'd'; 'g'|] - Checksum: pvcdg 
+ 
+Room: kzgwomvqk-kivlg-bmkpvwtwog-590[kgvwm] - Sorted parts: [|"k, 4"; "g, 3"; "v, 3"; "w, 3"; "m, 2"; "o, 2"; "b, 1"; "i, 1"; "l, 1"; "p, 1";
+  "q, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'g'; 'v'; 'w'; 'm'|] - Checksum: kgvwm 
+ 
+Room: tcrjjzwzvu-tyftfcrkv-ivrthlzjzkzfe-607[ztfjr] - Sorted parts: [|"z, 5"; "t, 4"; "f, 3"; "j, 3"; "r, 3"; "v, 3"; "c, 2"; "k, 2"; "e, 1"; "h, 1";
+  "i, 1"; "l, 1"; "u, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'z'; 't'; 'f'; 'j'; 'r'|] - Checksum: ztfjr 
+ 
+Room: vqr-ugetgv-hnqygt-fgxgnqrogpv-440[gqvnr] - Sorted parts: [|"g, 6"; "q, 3"; "v, 3"; "n, 2"; "r, 2"; "t, 2"; "e, 1"; "f, 1"; "h, 1"; "o, 1";
+  "p, 1"; "u, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'g'; 'q'; 'v'; 'n'; 'r'|] - Checksum: gqvnr 
+ 
+Room: gsrwyqiv-kvehi-hci-vigimzmrk-386[ivghk] - Sorted parts: [|"i, 5"; "v, 3"; "g, 2"; "h, 2"; "k, 2"; "m, 2"; "r, 2"; "c, 1"; "e, 1"; "q, 1";
+  "s, 1"; "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'i'; 'v'; 'g'; 'h'; 'k'|] - Checksum: ivghk 
+ 
+Room: lzfmdshb-eknvdq-rzkdr-339[dkrzb] - Sorted parts: [|"d, 3"; "k, 2"; "r, 2"; "z, 2"; "b, 1"; "e, 1"; "f, 1"; "h, 1"; "l, 1"; "m, 1";
+  "n, 1"; "q, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'d'; 'k'; 'r'; 'z'; 'b'|] - Checksum: dkrzb 
+ 
+Room: dmybmsuzs-qss-qzsuzqqduzs-690[sqzud] - Sorted parts: [|"s, 6"; "q, 4"; "z, 4"; "u, 3"; "d, 2"; "m, 2"; "b, 1"; "y, 1"|] - ToBeChecked: [|'s'; 'q'; 'z'; 'u'; 'd'|] - Checksum: sqzud 
+ 
+Room: nzwzcqfw-upwwjmply-opawzjxpye-925[wpzjy] - Sorted parts: [|"w, 5"; "p, 4"; "z, 3"; "j, 2"; "y, 2"; "a, 1"; "c, 1"; "e, 1"; "f, 1"; "l, 1";
+  "m, 1"; "n, 1"; "o, 1"; "q, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'w'; 'p'; 'z'; 'j'; 'y'|] - Checksum: wpzjy 
+ 
+Room: qvbmzvibqwvit-akidmvomz-pcvb-zmkmqdqvo-954[vmqbi] - Sorted parts: [|"v, 6"; "m, 5"; "q, 4"; "b, 3"; "i, 3"; "z, 3"; "d, 2"; "k, 2"; "o, 2"; "a, 1";
+  "c, 1"; "p, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'v'; 'm'; 'q'; 'b'; 'i'|] - Checksum: vmqbi 
+ 
+Room: ykjoqian-cnwza-oywrajcan-dqjp-hwxknwpknu-420[nawjk] - Sorted parts: [|"n, 5"; "a, 4"; "w, 4"; "j, 3"; "k, 3"; "q, 2"; "p, 2"; "y, 2"; "o, 2"; "c, 2";
+  "h, 1"; "d, 1"; "r, 1"; "u, 1"; "x, 1"; "i, 1"; "z, 1"|] - ToBeChecked: [|'n'; 'a'; 'w'; 'j'; 'k'|] - Checksum: nawjk 
+ 
+Room: dszphfojd-ezf-qvsdibtjoh-883[dfhjo] - Sorted parts: [|"d, 3"; "f, 2"; "h, 2"; "j, 2"; "o, 2"; "s, 2"; "z, 2"; "b, 1"; "e, 1"; "i, 1";
+  "p, 1"; "q, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'d'; 'f'; 'h'; 'j'; 'o'|] - Checksum: dfhjo 
+ 
+Room: ckgvutofkj-igtje-iugzotm-giwaoyozout-514[ogtiu] - Sorted parts: [|"o, 5"; "g, 4"; "t, 4"; "i, 3"; "u, 3"; "j, 2"; "k, 2"; "z, 2"; "a, 1"; "c, 1";
+  "e, 1"; "f, 1"; "m, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'o'; 'g'; 't'; 'i'; 'u'|] - Checksum: ogtiu 
+ 
+Room: ktiaaqnqml-akidmvomz-pcvb-mvoqvmmzqvo-226[mvqao] - Sorted parts: [|"m, 6"; "v, 5"; "q, 4"; "a, 3"; "o, 3"; "i, 2"; "k, 2"; "z, 2"; "b, 1"; "c, 1";
+  "d, 1"; "l, 1"; "n, 1"; "p, 1"; "t, 1"|] - ToBeChecked: [|'m'; 'v'; 'q'; 'a'; 'o'|] - Checksum: mvqao 
+ 
+Room: kyelcrga-qaytclecp-fslr-bcqgel-652[cleag] - Sorted parts: [|"c, 4"; "l, 4"; "e, 3"; "a, 2"; "g, 2"; "q, 2"; "r, 2"; "y, 2"; "b, 1"; "f, 1";
+  "k, 1"; "p, 1"; "s, 1"; "t, 1"|] - ToBeChecked: [|'c'; 'l'; 'e'; 'a'; 'g'|] - Checksum: cleag 
+ 
+Room: glrcplyrgmlyj-zyqicr-qyjcq-782[yclqr] - Sorted parts: [|"y, 4"; "c, 3"; "l, 3"; "q, 3"; "r, 3"; "g, 2"; "j, 2"; "i, 1"; "m, 1"; "p, 1";
+  "z, 1"|] - ToBeChecked: [|'y'; 'c'; 'l'; 'q'; 'r'|] - Checksum: yclqr 
+ 
+Room: udskkaxawv-kusnwfywj-zmfl-hmjuzskafy-242[kafsu] - Sorted parts: [|"k, 4"; "a, 3"; "f, 3"; "s, 3"; "u, 3"; "w, 3"; "j, 2"; "m, 2"; "y, 2"; "z, 2";
+  "d, 1"; "h, 1"; "l, 1"; "n, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'k'; 'a'; 'f'; 's'; 'u'|] - Checksum: kafsu 
+ 
+Room: tfejldvi-xiruv-wcfnvi-rercpjzj-477[ijrvc] - Sorted parts: [|"i, 3"; "j, 3"; "r, 3"; "v, 3"; "c, 2"; "e, 2"; "f, 2"; "d, 1"; "l, 1"; "n, 1";
+  "p, 1"; "t, 1"; "u, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'i'; 'j'; 'r'; 'v'; 'c'|] - Checksum: ijrvc 
+ 
+Room: qyujihctyx-luvvcn-lyuwkocmcncih-162[cuyhi] - Sorted parts: [|"c, 5"; "u, 3"; "y, 3"; "h, 2"; "i, 2"; "l, 2"; "n, 2"; "v, 2"; "j, 1"; "k, 1";
+  "m, 1"; "o, 1"; "q, 1"; "t, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'u'; 'y'; 'h'; 'i'|] - Checksum: cuyhi 
+ 
+Room: wkqxodsm-oqq-kxkvicsc-926[kqcos] - Sorted parts: [|"k, 3"; "q, 3"; "c, 2"; "o, 2"; "s, 2"; "x, 2"; "d, 1"; "i, 1"; "m, 1"; "v, 1";
+  "w, 1"|] - ToBeChecked: [|'k'; 'q'; 'c'; 'o'; 's'|] - Checksum: kqcos 
+ 
+Room: tfcfiwlc-avccpsvre-rercpjzj-815[crefj] - Sorted parts: [|"c, 5"; "r, 3"; "e, 2"; "f, 2"; "j, 2"; "p, 2"; "v, 2"; "a, 1"; "i, 1"; "l, 1";
+  "s, 1"; "t, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'r'; 'e'; 'f'; 'j'|] - Checksum: crefj 
+ 
+Room: ckgvutofkj-igtje-jkbkruvsktz-436[kjtgu] - Sorted parts: [|"k, 5"; "j, 3"; "t, 3"; "g, 2"; "u, 2"; "v, 2"; "b, 1"; "c, 1"; "e, 1"; "f, 1";
+  "i, 1"; "o, 1"; "r, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'j'; 't'; 'g'; 'u'|] - Checksum: kjtgu 
+ 
+Room: vhkkhlbox-ietlmbv-zktll-kxvxbobgz-267[bklvx] - Sorted parts: [|"b, 4"; "k, 4"; "l, 4"; "v, 3"; "x, 3"; "h, 2"; "o, 2"; "t, 2"; "z, 2"; "e, 1";
+  "g, 1"; "i, 1"; "m, 1"|] - ToBeChecked: [|'b'; 'k'; 'l'; 'v'; 'x'|] - Checksum: bklvx 
+ 
+Room: oazegyqd-sdmpq-rxaiqd-iadwetab-898[adqei] - Sorted parts: [|"a, 4"; "d, 4"; "q, 3"; "e, 2"; "i, 2"; "x, 1"; "w, 1"; "t, 1"; "s, 1"; "r, 1";
+  "p, 1"; "o, 1"; "m, 1"; "g, 1"; "b, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'd'; 'q'; 'e'; 'i'|] - Checksum: adqei 
+ 
+Room: pelbtravp-pubpbyngr-qrcyblzrag-143[bprag] - Sorted parts: [|"b, 4"; "p, 4"; "r, 4"; "a, 2"; "g, 2"; "l, 2"; "y, 2"; "c, 1"; "e, 1"; "n, 1";
+  "q, 1"; "t, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'p'; 'r'; 'a'; 'g'|] - Checksum: bprag 
+ 
+Room: vxupkizork-kmm-yzuxgmk-150[kmuxz] - Sorted parts: [|"k, 4"; "m, 3"; "u, 2"; "x, 2"; "z, 2"; "g, 1"; "i, 1"; "o, 1"; "p, 1"; "r, 1";
+  "v, 1"; "y, 1"|] - ToBeChecked: [|'k'; 'm'; 'u'; 'x'; 'z'|] - Checksum: kmuxz 
+ 
+Room: xlrypetn-qwzhpc-epnsyzwzrj-847[pzenr] - Sorted parts: [|"p, 3"; "z, 3"; "e, 2"; "n, 2"; "r, 2"; "w, 2"; "y, 2"; "c, 1"; "h, 1"; "j, 1";
+  "l, 1"; "q, 1"; "s, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'p'; 'z'; 'e'; 'n'; 'r'|] - Checksum: pzenr 
+ 
+Room: egdytrixat-gpqqxi-gtrtxkxcv-661[txgiq] - Sorted parts: [|"t, 4"; "x, 4"; "g, 3"; "i, 2"; "q, 2"; "r, 2"; "a, 1"; "c, 1"; "d, 1"; "e, 1";
+  "k, 1"; "p, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'x'; 'g'; 'i'; 'q'|] - Checksum: txgiq 
+ 
+Room: lxuxaodu-lxwbdvna-pajmn-kjbtnc-mnbrpw-979[nabxd] - Sorted parts: [|"n, 4"; "a, 3"; "b, 3"; "x, 3"; "d, 2"; "j, 2"; "l, 2"; "m, 2"; "w, 2"; "p, 2";
+  "u, 2"; "c, 1"; "k, 1"; "o, 1"; "r, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'n'; 'a'; 'b'; 'x'; 'd'|] - Checksum: nabxd 
+ 
+Room: pyknyegle-hcjjwzcyl-bcnyprkclr-678[cylej] - Sorted parts: [|"c, 4"; "y, 4"; "l, 3"; "e, 2"; "j, 2"; "k, 2"; "n, 2"; "p, 2"; "r, 2"; "b, 1";
+  "g, 1"; "h, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'y'; 'l'; 'e'; 'j'|] - Checksum: cylej 
+ 
+Room: rgndvtcxr-rpcsn-rdpixcv-gtprfjxhxixdc-791[rxcdp] - Sorted parts: [|"r, 5"; "x, 5"; "c, 4"; "d, 3"; "p, 3"; "g, 2"; "i, 2"; "n, 2"; "t, 2"; "v, 2";
+  "f, 1"; "h, 1"; "j, 1"; "s, 1"|] - ToBeChecked: [|'r'; 'x'; 'c'; 'd'; 'p'|] - Checksum: rxcdp 
+ 
+Room: kyelcrga-djmucp-cleglccpgle-834[clegp] - Sorted parts: [|"c, 5"; "l, 4"; "e, 3"; "g, 3"; "p, 2"; "a, 1"; "d, 1"; "j, 1"; "k, 1"; "m, 1";
+  "r, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'l'; 'e'; 'g'; 'p'|] - Checksum: clegp 
+ 
+Room: oknkvcta-itcfg-hnqygt-tgceswkukvkqp-180[ktcgn] - Sorted parts: [|"k, 5"; "t, 4"; "c, 3"; "g, 3"; "n, 2"; "v, 2"; "q, 2"; "u, 1"; "s, 1"; "p, 1";
+  "a, 1"; "w, 1"; "i, 1"; "h, 1"; "f, 1"; "e, 1"; "o, 1"; "y, 1"|] - ToBeChecked: [|'k'; 't'; 'c'; 'g'; 'n'|] - Checksum: ktcgn 
+ 
+Room: yknnkoera-fahhuxawj-pnwejejc-784[aejnh] - Sorted parts: [|"a, 3"; "e, 3"; "j, 3"; "n, 3"; "h, 2"; "k, 2"; "w, 2"; "c, 1"; "f, 1"; "o, 1";
+  "p, 1"; "r, 1"; "u, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'a'; 'e'; 'j'; 'n'; 'h'|] - Checksum: aejnh 
+ 
+Room: ktwbhtvmbox-vtgwr-mktbgbgz-631[btgkm] - Sorted parts: [|"b, 4"; "t, 4"; "g, 3"; "k, 2"; "m, 2"; "v, 2"; "w, 2"; "h, 1"; "o, 1"; "r, 1";
+  "x, 1"; "z, 1"|] - ToBeChecked: [|'b'; 't'; 'g'; 'k'; 'm'|] - Checksum: btgkm 
+ 
+Room: shmml-onfxrg-svanapvat-559[amnsv] - Sorted parts: [|"a, 3"; "m, 2"; "n, 2"; "s, 2"; "v, 2"; "f, 1"; "g, 1"; "h, 1"; "l, 1"; "o, 1";
+  "p, 1"; "r, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'a'; 'm'; 'n'; 's'; 'v'|] - Checksum: amnsv 
+ 
+Room: ugfkmewj-yjsvw-wyy-mkwj-lwklafy-138[wyjkf] - Sorted parts: [|"w, 5"; "y, 4"; "j, 3"; "k, 3"; "f, 2"; "l, 2"; "m, 2"; "a, 1"; "e, 1"; "g, 1";
+  "s, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'w'; 'y'; 'j'; 'k'; 'f'|] - Checksum: wyjkf 
+ 
+Room: zilqwikbqdm-jiasmb-zmkmqdqvo-382[mqibd] - Sorted parts: [|"m, 4"; "q, 4"; "i, 3"; "b, 2"; "d, 2"; "k, 2"; "z, 2"; "a, 1"; "j, 1"; "l, 1";
+  "o, 1"; "s, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'m'; 'q'; 'i'; 'b'; 'd'|] - Checksum: mqibd 
+ 
+Room: vqr-ugetgv-gii-ugtxkegu-414[gueit] - Sorted parts: [|"g, 5"; "u, 3"; "e, 2"; "i, 2"; "t, 2"; "v, 2"; "k, 1"; "q, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'g'; 'u'; 'e'; 'i'; 't'|] - Checksum: gueit 
+ 
+Room: tfcfiwlc-irsszk-drerxvdvek-165[rcdef] - Sorted parts: [|"r, 3"; "c, 2"; "d, 2"; "e, 2"; "f, 2"; "i, 2"; "k, 2"; "s, 2"; "v, 2"; "l, 1";
+  "t, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'r'; 'c'; 'd'; 'e'; 'f'|] - Checksum: rcdef 
+ 
+Room: ykhknbqh-nwxxep-iwngapejc-368[nehkp] - Sorted parts: [|"n, 3"; "e, 2"; "h, 2"; "k, 2"; "p, 2"; "w, 2"; "x, 2"; "a, 1"; "b, 1"; "c, 1";
+  "g, 1"; "i, 1"; "j, 1"; "q, 1"; "y, 1"|] - ToBeChecked: [|'n'; 'e'; 'h'; 'k'; 'p'|] - Checksum: nehkp 
+ 
+Room: zloolpfsb-tbxmlkfwba-oxyyfq-ixyloxqlov-887[loxbf] - Sorted parts: [|"l, 5"; "o, 5"; "x, 4"; "b, 3"; "f, 3"; "y, 3"; "q, 2"; "a, 1"; "w, 1"; "v, 1";
+  "t, 1"; "p, 1"; "m, 1"; "k, 1"; "i, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'o'; 'x'; 'b'; 'f'|] - Checksum: loxbf 
+ 
+Room: uwtojhynqj-jll-wjhjnansl-437[jlnhw] - Sorted parts: [|"j, 5"; "l, 3"; "n, 3"; "h, 2"; "w, 2"; "a, 1"; "o, 1"; "q, 1"; "s, 1"; "t, 1";
+  "u, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'l'; 'n'; 'h'; 'w'|] - Checksum: jlnhw 
+ 
+Room: ziuxioqvo-ntwemz-lmaqov-824[oimqv] - Sorted parts: [|"o, 3"; "i, 2"; "m, 2"; "q, 2"; "v, 2"; "z, 2"; "a, 1"; "e, 1"; "l, 1"; "n, 1";
+  "t, 1"; "u, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'o'; 'i'; 'm'; 'q'; 'v'|] - Checksum: oimqv 
+ 
+Room: yuxufmdk-sdmpq-nmewqf-abqdmfuaze-794[mdfqu] - Sorted parts: [|"m, 4"; "d, 3"; "f, 3"; "q, 3"; "u, 3"; "a, 2"; "e, 2"; "b, 1"; "k, 1"; "n, 1";
+  "p, 1"; "s, 1"; "w, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'m'; 'd'; 'f'; 'q'; 'u'|] - Checksum: mdfqu 
+ 
+Room: iwcjapey-ywjzu-odellejc-888[ejclw] - Sorted parts: [|"e, 3"; "j, 3"; "c, 2"; "l, 2"; "w, 2"; "y, 2"; "a, 1"; "d, 1"; "i, 1"; "o, 1";
+  "p, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'j'; 'c'; 'l'; 'w'|] - Checksum: ejclw 
+ 
+Room: pdjqhwlf-gbh-ilqdqflqj-413[qldfh] - Sorted parts: [|"q, 4"; "l, 3"; "d, 2"; "f, 2"; "h, 2"; "j, 2"; "b, 1"; "g, 1"; "i, 1"; "p, 1";
+  "w, 1"|] - ToBeChecked: [|'q'; 'l'; 'd'; 'f'; 'h'|] - Checksum: qldfh 
+ 
+Room: ide-htrgti-snt-hpath-479[thiad] - Sorted parts: [|"t, 4"; "h, 3"; "i, 2"; "a, 1"; "d, 1"; "e, 1"; "g, 1"; "n, 1"; "p, 1"; "r, 1";
+  "s, 1"|] - ToBeChecked: [|'t'; 'h'; 'i'; 'a'; 'd'|] - Checksum: thiad 
+ 
+Room: bnknqetk-azrjds-sdbgmnknfx-209[nkbds] - Sorted parts: [|"n, 4"; "k, 3"; "b, 2"; "d, 2"; "s, 2"; "a, 1"; "e, 1"; "f, 1"; "g, 1"; "j, 1";
+  "m, 1"; "q, 1"; "r, 1"; "t, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'n'; 'k'; 'b'; 'd'; 's'|] - Checksum: nkbds 
+ 
+Room: tfcfiwlc-irdgrxzex-wcfnvi-uvgcfpdvek-555[cfivd] - Sorted parts: [|"c, 4"; "f, 4"; "i, 3"; "v, 3"; "d, 2"; "e, 2"; "g, 2"; "w, 2"; "x, 2"; "r, 2";
+  "u, 1"; "n, 1"; "p, 1"; "l, 1"; "k, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'f'; 'i'; 'v'; 'd'|] - Checksum: cfivd 
+ 
+Room: clxalrtyr-ojp-epnsyzwzrj-249[rjlpy] - Sorted parts: [|"r, 3"; "j, 2"; "l, 2"; "p, 2"; "y, 2"; "z, 2"; "a, 1"; "c, 1"; "e, 1"; "n, 1";
+  "o, 1"; "s, 1"; "t, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'r'; 'j'; 'l'; 'p'; 'y'|] - Checksum: rjlpy 
+ 
+Room: zekvierkzferc-upv-dribvkzex-347[ekrvz] - Sorted parts: [|"e, 4"; "k, 3"; "r, 3"; "v, 3"; "z, 3"; "i, 2"; "b, 1"; "c, 1"; "d, 1"; "f, 1";
+  "p, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'e'; 'k'; 'r'; 'v'; 'z'|] - Checksum: ekrvz 
+ 
+Room: myxcewob-qbkno-lkcuod-mecdywob-cobfsmo-666[obcmd] - Sorted parts: [|"o, 6"; "b, 4"; "c, 4"; "m, 3"; "d, 2"; "e, 2"; "k, 2"; "w, 2"; "y, 2"; "f, 1";
+  "l, 1"; "n, 1"; "q, 1"; "s, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'o'; 'b'; 'c'; 'm'; 'd'|] - Checksum: obcmd 
+ 
+Room: nwilwcejc-nwxxep-zalwnpiajp-992[wnpac] - Sorted parts: [|"w, 4"; "n, 3"; "p, 3"; "a, 2"; "c, 2"; "e, 2"; "i, 2"; "j, 2"; "l, 2"; "x, 2";
+  "z, 1"|] - ToBeChecked: [|'w'; 'n'; 'p'; 'a'; 'c'|] - Checksum: wnpac 
+ 
+Room: wsvsdkbi-qbkno-cmkfoxqob-rexd-bokmaescsdsyx-302[sbkod] - Sorted parts: [|"s, 5"; "b, 4"; "k, 4"; "o, 4"; "d, 3"; "x, 3"; "m, 2"; "c, 2"; "e, 2"; "q, 2";
+  "w, 1"; "v, 1"; "a, 1"; "n, 1"; "i, 1"; "f, 1"; "r, 1"; "y, 1"|] - ToBeChecked: [|'s'; 'b'; 'k'; 'o'; 'd'|] - Checksum: sbkod 
+ 
+Room: hcd-gsqfsh-xszzmpsob-fsgsofqv-480[sfgho] - Sorted parts: [|"s, 6"; "f, 3"; "g, 2"; "h, 2"; "o, 2"; "q, 2"; "z, 2"; "b, 1"; "c, 1"; "d, 1";
+  "m, 1"; "p, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'s'; 'f'; 'g'; 'h'; 'o'|] - Checksum: sfgho 
+ 
+Room: ygcrqpkbgf-fag-tgceswkukvkqp-154[gkcfp] - Sorted parts: [|"g, 4"; "k, 4"; "c, 2"; "f, 2"; "p, 2"; "q, 2"; "a, 1"; "b, 1"; "e, 1"; "r, 1";
+  "s, 1"; "t, 1"; "u, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'g'; 'k'; 'c'; 'f'; 'p'|] - Checksum: gkcfp 
+ 
+Room: mvydjvxodqz-xviyt-rjmfncjk-421[jvdmx] - Sorted parts: [|"j, 3"; "v, 3"; "d, 2"; "m, 2"; "x, 2"; "y, 2"; "c, 1"; "f, 1"; "i, 1"; "k, 1";
+  "n, 1"; "o, 1"; "q, 1"; "r, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'v'; 'd'; 'm'; 'x'|] - Checksum: jvdmx 
+ 
+Room: froruixo-hjj-vhuylfhv-569[hfjor] - Sorted parts: [|"h, 3"; "f, 2"; "j, 2"; "o, 2"; "r, 2"; "u, 2"; "v, 2"; "i, 1"; "l, 1"; "x, 1";
+  "y, 1"|] - ToBeChecked: [|'h'; 'f'; 'j'; 'o'; 'r'|] - Checksum: hfjor 
+ 
+Room: froruixo-hjj-ghyhorsphqw-855[horjf] - Sorted parts: [|"h, 4"; "o, 3"; "r, 3"; "j, 2"; "f, 1"; "g, 1"; "i, 1"; "p, 1"; "q, 1"; "s, 1";
+  "u, 1"; "w, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'o'; 'r'; 'j'; 'f'|] - Checksum: horjf 
+ 
+Room: vdzonmhydc-eknvdq-qdbdhuhmf-157[dhmnq] - Sorted parts: [|"d, 5"; "h, 3"; "m, 2"; "n, 2"; "q, 2"; "v, 2"; "b, 1"; "c, 1"; "e, 1"; "f, 1";
+  "k, 1"; "o, 1"; "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'h'; 'm'; 'n'; 'q'|] - Checksum: dhmnq 
+ 
+Room: cxy-bnlanc-bljenwpna-qdwc-bqryyrwp-901[nbcwy] - Sorted parts: [|"n, 4"; "b, 3"; "c, 3"; "w, 3"; "y, 3"; "a, 2"; "l, 2"; "p, 2"; "q, 2"; "r, 2";
+  "d, 1"; "e, 1"; "j, 1"; "x, 1"|] - ToBeChecked: [|'n'; 'b'; 'c'; 'w'; 'y'|] - Checksum: nbcwy 
+ 
+Room: ocipgvke-rncuvke-itcuu-tgegkxkpi-284[kcegi] - Sorted parts: [|"k, 4"; "c, 3"; "e, 3"; "g, 3"; "i, 3"; "u, 3"; "p, 2"; "t, 2"; "v, 2"; "n, 1";
+  "o, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'k'; 'c'; 'e'; 'g'; 'i'|] - Checksum: kcegi 
+ 
+Room: npmhcargjc-afmamjyrc-rpyglgle-600[acgmr] - Sorted parts: [|"a, 3"; "c, 3"; "g, 3"; "m, 3"; "r, 3"; "j, 2"; "l, 2"; "p, 2"; "y, 2"; "e, 1";
+  "f, 1"; "h, 1"; "n, 1"|] - ToBeChecked: [|'a'; 'c'; 'g'; 'm'; 'r'|] - Checksum: acgmr 
+ 
+Room: npmhcargjc-qaytclecp-fslr-mncpyrgmlq-262[clmpr] - Sorted parts: [|"c, 5"; "l, 3"; "m, 3"; "p, 3"; "r, 3"; "a, 2"; "g, 2"; "n, 2"; "q, 2"; "y, 2";
+  "e, 1"; "f, 1"; "h, 1"; "j, 1"; "s, 1"; "t, 1"|] - ToBeChecked: [|'c'; 'l'; 'm'; 'p'; 'r'|] - Checksum: clmpr 
+ 
+Room: sgmtkzoi-xghhoz-sgtgmksktz-176[gkstz] - Sorted parts: [|"g, 4"; "k, 3"; "s, 3"; "t, 3"; "z, 3"; "h, 2"; "m, 2"; "o, 2"; "i, 1"; "x, 1"|] - ToBeChecked: [|'g'; 'k'; 's'; 't'; 'z'|] - Checksum: gkstz 
+ 
+Room: ohmnuvfy-xsy-fiacmncwm-162[mcfny] - Sorted parts: [|"m, 3"; "c, 2"; "f, 2"; "n, 2"; "y, 2"; "a, 1"; "h, 1"; "i, 1"; "o, 1"; "s, 1";
+  "u, 1"; "v, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'m'; 'c'; 'f'; 'n'; 'y'|] - Checksum: mcfny 
+ 
+Room: xekdwvwnzkqo-acc-ykjpwejiajp-706[jkwac] - Sorted parts: [|"j, 3"; "k, 3"; "w, 3"; "a, 2"; "c, 2"; "e, 2"; "p, 2"; "d, 1"; "i, 1"; "n, 1";
+  "o, 1"; "q, 1"; "v, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'k'; 'w'; 'a'; 'c'|] - Checksum: jkwac 
+ 
+Room: ujoon-gpqqxi-rjhidbtg-htgkxrt-349[gthij] - Sorted parts: [|"g, 3"; "t, 3"; "h, 2"; "i, 2"; "j, 2"; "o, 2"; "q, 2"; "r, 2"; "x, 2"; "b, 1";
+  "d, 1"; "k, 1"; "n, 1"; "p, 1"; "u, 1"|] - ToBeChecked: [|'g'; 't'; 'h'; 'i'; 'j'|] - Checksum: gthij 
+ 
+Room: votubcmf-ezf-sfbdrvjtjujpo-571[fjbot] - Sorted parts: [|"f, 3"; "j, 3"; "b, 2"; "o, 2"; "t, 2"; "u, 2"; "v, 2"; "c, 1"; "d, 1"; "e, 1";
+  "m, 1"; "p, 1"; "r, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'j'; 'b'; 'o'; 't'|] - Checksum: fjbot 
+ 
+Room: fbebmtkr-zktwx-utldxm-nlxk-mxlmbgz-423[mxbkl] - Sorted parts: [|"m, 4"; "x, 4"; "b, 3"; "k, 3"; "l, 3"; "t, 3"; "z, 2"; "d, 1"; "e, 1"; "f, 1";
+  "g, 1"; "n, 1"; "r, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'m'; 'x'; 'b'; 'k'; 'l'|] - Checksum: mxbkl 
+ 
+Room: sebehvkb-vbemuh-iqbui-920[behiu] - Sorted parts: [|"b, 4"; "e, 3"; "h, 2"; "i, 2"; "u, 2"; "v, 2"; "k, 1"; "m, 1"; "q, 1"; "s, 1"|] - ToBeChecked: [|'b'; 'e'; 'h'; 'i'; 'u'|] - Checksum: behiu 
+ 
+Room: esyfwlau-tskcwl-kzahhafy-918[afhkl] - Sorted parts: [|"a, 3"; "f, 2"; "h, 2"; "k, 2"; "l, 2"; "s, 2"; "w, 2"; "y, 2"; "c, 1"; "e, 1";
+  "t, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'f'; 'h'; 'k'; 'l'|] - Checksum: afhkl 
+ 
+Room: ajmrxjlcren-kjbtnc-xynajcrxwb-823[jcnrx] - Sorted parts: [|"j, 4"; "c, 3"; "n, 3"; "r, 3"; "x, 3"; "a, 2"; "b, 2"; "e, 1"; "k, 1"; "l, 1";
+  "m, 1"; "t, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'c'; 'n'; 'r'; 'x'|] - Checksum: jcnrx 
+ 
+Room: vehmsegxmzi-nippcfier-pefsvexsvc-594[eipsv] - Sorted parts: [|"e, 5"; "i, 3"; "p, 3"; "s, 3"; "v, 3"; "c, 2"; "f, 2"; "m, 2"; "x, 2"; "g, 1";
+  "h, 1"; "n, 1"; "r, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'i'; 'p'; 's'; 'v'|] - Checksum: eipsv 
+ 
+Room: mvkccspson-pvygob-nocsqx-718[cosnp] - Sorted parts: [|"c, 3"; "o, 3"; "s, 3"; "n, 2"; "p, 2"; "v, 2"; "b, 1"; "g, 1"; "k, 1"; "m, 1";
+  "q, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'o'; 's'; 'n'; 'p'|] - Checksum: cosnp 
+ 
+Room: avw-zljyla-msvdly-klwhyatlua-955[layvw] - Sorted parts: [|"l, 5"; "a, 4"; "y, 3"; "v, 2"; "w, 2"; "d, 1"; "h, 1"; "j, 1"; "k, 1"; "m, 1";
+  "s, 1"; "t, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'a'; 'y'; 'v'; 'w'|] - Checksum: layvw 
+ 
+Room: oazegyqd-sdmpq-nmewqf-ymdwqfuzs-560[qdmef] - Sorted parts: [|"q, 4"; "d, 3"; "m, 3"; "e, 2"; "f, 2"; "s, 2"; "w, 2"; "y, 2"; "z, 2"; "a, 1";
+  "g, 1"; "n, 1"; "o, 1"; "p, 1"; "u, 1"|] - ToBeChecked: [|'q'; 'd'; 'm'; 'e'; 'f'|] - Checksum: qdmef 
+ 
+Room: qxdwpopgsdjh-qphzti-gtprfjxhxixdc-323[pxdhg] - Sorted parts: [|"p, 4"; "x, 4"; "d, 3"; "h, 3"; "g, 2"; "i, 2"; "j, 2"; "q, 2"; "t, 2"; "c, 1";
+  "f, 1"; "o, 1"; "r, 1"; "s, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'p'; 'x'; 'd'; 'h'; 'g'|] - Checksum: pxdhg 
+ 
+Room: zloolpfsb-zxkav-obxznrfpfqflk-783[flozb] - Sorted parts: [|"f, 4"; "l, 3"; "o, 3"; "z, 3"; "b, 2"; "k, 2"; "p, 2"; "x, 2"; "a, 1"; "n, 1";
+  "q, 1"; "r, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'f'; 'l'; 'o'; 'z'; 'b'|] - Checksum: flozb 
+ 
+Room: jlidywncfy-mwupyhayl-bohn-lywycpcha-838[ychlw] - Sorted parts: [|"y, 6"; "c, 3"; "h, 3"; "l, 3"; "w, 3"; "a, 2"; "n, 2"; "p, 2"; "b, 1"; "d, 1";
+  "f, 1"; "i, 1"; "j, 1"; "m, 1"; "o, 1"; "u, 1"|] - ToBeChecked: [|'y'; 'c'; 'h'; 'l'; 'w'|] - Checksum: ychlw 
+ 
+Room: votubcmf-cvooz-mphjtujdt-285[otcjm] - Sorted parts: [|"o, 3"; "t, 3"; "c, 2"; "j, 2"; "m, 2"; "u, 2"; "v, 2"; "b, 1"; "d, 1"; "f, 1";
+  "h, 1"; "p, 1"; "z, 1"|] - ToBeChecked: [|'o'; 't'; 'c'; 'j'; 'm'|] - Checksum: otcjm 
+ 
+Room: etaqigpke-dcumgv-tgugctej-778[getcu] - Sorted parts: [|"g, 4"; "e, 3"; "t, 3"; "c, 2"; "u, 2"; "a, 1"; "d, 1"; "i, 1"; "j, 1"; "k, 1";
+  "m, 1"; "p, 1"; "q, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'e'; 't'; 'c'; 'u'|] - Checksum: getcu 
+ 
+Room: excdklvo-pvygob-kxkvicsc-380[ckvox] - Sorted parts: [|"c, 3"; "k, 3"; "v, 3"; "o, 2"; "x, 2"; "b, 1"; "d, 1"; "e, 1"; "g, 1"; "i, 1";
+  "l, 1"; "p, 1"; "s, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'k'; 'v'; 'o'; 'x'|] - Checksum: ckvox 
+ 
+Room: bjfutsneji-idj-xmnuunsl-437[jnuis] - Sorted parts: [|"j, 3"; "n, 3"; "u, 3"; "i, 2"; "s, 2"; "b, 1"; "d, 1"; "e, 1"; "f, 1"; "l, 1";
+  "m, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'j'; 'n'; 'u'; 'i'; 's'|] - Checksum: jnuis 
+ 
+Room: crwwv-avb-zlkqxfkjbkq-835[kbqvw] - Sorted parts: [|"k, 3"; "b, 2"; "q, 2"; "v, 2"; "w, 2"; "a, 1"; "c, 1"; "f, 1"; "j, 1"; "l, 1";
+  "r, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'b'; 'q'; 'v'; 'w'|] - Checksum: kbqvw 
+ 
+Room: clxalrtyr-nlyoj-nzletyr-dstaatyr-561[lrtya] - Sorted parts: [|"l, 4"; "r, 4"; "t, 4"; "y, 4"; "a, 3"; "n, 2"; "c, 1"; "d, 1"; "e, 1"; "j, 1";
+  "o, 1"; "s, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'r'; 't'; 'y'; 'a'|] - Checksum: lrtya 
+ 
+Room: drxevkzt-gcrjkzt-xirjj-rthlzjzkzfe-737[zjrkt] - Sorted parts: [|"z, 5"; "j, 4"; "r, 4"; "k, 3"; "t, 3"; "e, 2"; "x, 2"; "c, 1"; "d, 1"; "f, 1";
+  "g, 1"; "h, 1"; "i, 1"; "l, 1"; "v, 1"|] - ToBeChecked: [|'z'; 'j'; 'r'; 'k'; 't'|] - Checksum: zjrkt 
+ 
+Room: lahxpnwrl-npp-jwjuhbrb-329[pbhjl] - Sorted parts: [|"p, 3"; "b, 2"; "h, 2"; "j, 2"; "l, 2"; "n, 2"; "r, 2"; "w, 2"; "a, 1"; "u, 1";
+  "x, 1"|] - ToBeChecked: [|'p'; 'b'; 'h'; 'j'; 'l'|] - Checksum: pbhjl 
+ 
+Room: kwzzwaqdm-ntwemz-lmxizbumvb-148[mzwba] - Sorted parts: [|"m, 4"; "z, 4"; "w, 3"; "b, 2"; "a, 1"; "d, 1"; "e, 1"; "i, 1"; "k, 1"; "l, 1";
+  "n, 1"; "q, 1"; "t, 1"; "u, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'m'; 'z'; 'w'; 'b'; 'a'|] - Checksum: mzwba 
+ 
+Room: hcd-gsqfsh-foppwh-rsjszcdasbh-558[shcdf] - Sorted parts: [|"s, 5"; "h, 4"; "c, 2"; "d, 2"; "f, 2"; "p, 2"; "a, 1"; "b, 1"; "g, 1"; "j, 1";
+  "o, 1"; "q, 1"; "r, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'h'; 'c'; 'd'; 'f'|] - Checksum: shcdf 
+ 
+Room: willimcpy-mwupyhayl-bohn-mniluay-214[lyima] - Sorted parts: [|"l, 4"; "y, 4"; "i, 3"; "m, 3"; "a, 2"; "h, 2"; "n, 2"; "p, 2"; "u, 2"; "w, 2";
+  "b, 1"; "c, 1"; "o, 1"|] - ToBeChecked: [|'l'; 'y'; 'i'; 'm'; 'a'|] - Checksum: lyima 
+ 
+Room: ytu-xjhwjy-uqfxynh-lwfxx-wjfhvznxnynts-567[xnyfh] - Sorted parts: [|"x, 5"; "n, 4"; "y, 4"; "f, 3"; "h, 3"; "j, 3"; "w, 3"; "t, 2"; "u, 2"; "l, 1";
+  "q, 1"; "s, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'x'; 'n'; 'y'; 'f'; 'h'|] - Checksum: xnyfh 
+ 
+Room: zilqwikbqdm-rmttgjmiv-mvoqvmmzqvo-954[mqvio] - Sorted parts: [|"m, 6"; "q, 4"; "v, 4"; "i, 3"; "o, 2"; "t, 2"; "z, 2"; "b, 1"; "d, 1"; "g, 1";
+  "j, 1"; "k, 1"; "l, 1"; "r, 1"; "w, 1"|] - ToBeChecked: [|'m'; 'q'; 'v'; 'i'; 'o'|] - Checksum: mqvio 
+ 
+Room: qczcftiz-rms-aofyshwbu-610[cfsza] - Sorted parts: [|"c, 2"; "f, 2"; "s, 2"; "z, 2"; "a, 1"; "b, 1"; "h, 1"; "i, 1"; "m, 1"; "o, 1";
+  "q, 1"; "r, 1"; "t, 1"; "u, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'f'; 's'; 'z'; 'a'|] - Checksum: cfsza 
+ 
+Room: zekvierkzferc-irsszk-uvgrikdvek-191[keriv] - Sorted parts: [|"k, 5"; "e, 4"; "r, 4"; "i, 3"; "v, 3"; "z, 3"; "s, 2"; "c, 1"; "d, 1"; "f, 1";
+  "g, 1"; "u, 1"|] - ToBeChecked: [|'k'; 'e'; 'r'; 'i'; 'v'|] - Checksum: keriv 
+ 
+Room: wkqxodsm-lkcuod-nozvyiwoxd-328[odkwx] - Sorted parts: [|"o, 4"; "d, 3"; "k, 2"; "w, 2"; "x, 2"; "c, 1"; "i, 1"; "l, 1"; "m, 1"; "n, 1";
+  "q, 1"; "s, 1"; "u, 1"; "v, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'o'; 'd'; 'k'; 'w'; 'x'|] - Checksum: odkwx 
+ 
+Room: kwvacumz-ozilm-lgm-abwziom-668[mzail] - Sorted parts: [|"m, 4"; "z, 3"; "a, 2"; "i, 2"; "l, 2"; "o, 2"; "w, 2"; "b, 1"; "c, 1"; "g, 1";
+  "k, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'m'; 'z'; 'a'; 'i'; 'l'|] - Checksum: mzail 
+ 
+Room: vdzonmhydc-cxd-rdquhbdr-209[dchrb] - Sorted parts: [|"d, 5"; "c, 2"; "h, 2"; "r, 2"; "b, 1"; "m, 1"; "n, 1"; "o, 1"; "q, 1"; "u, 1";
+  "v, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'c'; 'h'; 'r'; 'b'|] - Checksum: dchrb 
+ 
+Room: molgbzqfib-mixpqfz-doxpp-qoxfkfkd-939[fopqx] - Sorted parts: [|"f, 4"; "o, 3"; "p, 3"; "q, 3"; "x, 3"; "b, 2"; "d, 2"; "i, 2"; "k, 2"; "m, 2";
+  "z, 2"; "g, 1"; "l, 1"|] - ToBeChecked: [|'f'; 'o'; 'p'; 'q'; 'x'|] - Checksum: fopqx 
+ 
+Room: oxmeeuruqp-pkq-abqdmfuaze-612[equam] - Sorted parts: [|"e, 3"; "q, 3"; "u, 3"; "a, 2"; "m, 2"; "p, 2"; "b, 1"; "d, 1"; "f, 1"; "k, 1";
+  "o, 1"; "r, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'q'; 'u'; 'a'; 'm'|] - Checksum: equam 
+ 
+Room: gpewwmjmih-tpewxmg-kveww-jmrergmrk-542[mwegr] - Sorted parts: [|"m, 5"; "w, 5"; "e, 4"; "g, 3"; "r, 3"; "j, 2"; "k, 2"; "p, 2"; "h, 1"; "i, 1";
+  "t, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'m'; 'w'; 'e'; 'g'; 'r'|] - Checksum: mwegr 
+ 
+Room: gpsxdprixkt-tvv-gtprfjxhxixdc-817[xptdg] - Sorted parts: [|"x, 5"; "p, 3"; "t, 3"; "d, 2"; "g, 2"; "i, 2"; "r, 2"; "v, 2"; "c, 1"; "f, 1";
+  "h, 1"; "j, 1"; "k, 1"; "s, 1"|] - ToBeChecked: [|'x'; 'p'; 't'; 'd'; 'g'|] - Checksum: xptdg 
+ 
+Room: amlqskcp-epybc-aylbw-amyrgle-qfgnngle-964[laegy] - Sorted parts: [|"l, 4"; "a, 3"; "e, 3"; "g, 3"; "y, 3"; "b, 2"; "c, 2"; "m, 2"; "n, 2"; "p, 2";
+  "q, 2"; "f, 1"; "k, 1"; "r, 1"; "s, 1"; "w, 1"|] - ToBeChecked: [|'l'; 'a'; 'e'; 'g'; 'y'|] - Checksum: laegy 
+ 
+Room: egdytrixat-ytaanqtpc-detgpixdch-505[tadce] - Sorted parts: [|"t, 5"; "a, 3"; "d, 3"; "c, 2"; "e, 2"; "g, 2"; "i, 2"; "p, 2"; "x, 2"; "y, 2";
+  "h, 1"; "n, 1"; "q, 1"; "r, 1"|] - ToBeChecked: [|'t'; 'a'; 'd'; 'c'; 'e'|] - Checksum: tadce 
+ 
+Room: hafgnoyr-ohaal-chepunfvat-221[ahfno] - Sorted parts: [|"a, 4"; "h, 3"; "f, 2"; "n, 2"; "o, 2"; "c, 1"; "e, 1"; "g, 1"; "l, 1"; "p, 1";
+  "r, 1"; "t, 1"; "u, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'a'; 'h'; 'f'; 'n'; 'o'|] - Checksum: ahfno 
+ 
+Room: vagreangvbany-cynfgvp-tenff-chepunfvat-559[nafve] - Sorted parts: [|"n, 5"; "a, 4"; "f, 4"; "v, 4"; "e, 3"; "g, 3"; "c, 2"; "p, 2"; "t, 2"; "y, 2";
+  "b, 1"; "h, 1"; "r, 1"; "u, 1"|] - ToBeChecked: [|'n'; 'a'; 'f'; 'v'; 'e'|] - Checksum: nafve 
+ 
+Room: tcorcikpi-ecpfa-eqcvkpi-wugt-vguvkpi-388[cipkv] - Sorted parts: [|"c, 4"; "i, 4"; "p, 4"; "k, 3"; "v, 3"; "e, 2"; "g, 2"; "t, 2"; "u, 2"; "a, 1";
+  "f, 1"; "o, 1"; "q, 1"; "r, 1"; "w, 1"|] - ToBeChecked: [|'c'; 'i'; 'p'; 'k'; 'v'|] - Checksum: cipkv 
+ 
+Room: zloolpfsb-zlkprjbo-doxab-zxkav-zlxqfkd-obzbfsfkd-757[bozfk] - Sorted parts: [|"b, 5"; "o, 5"; "z, 5"; "f, 4"; "k, 4"; "l, 4"; "d, 3"; "x, 3"; "a, 2"; "p, 2";
+  "s, 2"; "j, 1"; "q, 1"; "r, 1"; "v, 1"|] - ToBeChecked: [|'b'; 'o'; 'z'; 'f'; 'k'|] - Checksum: bozfk 
+ 
+Room: ykhknbqh-ywjzu-ykjpwejiajp-966[jkyhp] - Sorted parts: [|"j, 4"; "k, 3"; "y, 3"; "h, 2"; "p, 2"; "w, 2"; "a, 1"; "b, 1"; "e, 1"; "i, 1";
+  "n, 1"; "q, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'k'; 'y'; 'h'; 'p'|] - Checksum: jkyhp 
+ 
+Room: kwvacumz-ozilm-moo-aitma-512[maoiz] - Sorted parts: [|"m, 4"; "a, 3"; "o, 3"; "i, 2"; "z, 2"; "c, 1"; "k, 1"; "l, 1"; "t, 1"; "u, 1";
+  "v, 1"; "w, 1"|] - ToBeChecked: [|'m'; 'a'; 'o'; 'i'; 'z'|] - Checksum: maoiz 
+ 
+Room: wfruflnsl-nsyjwsfyntsfq-xhfajsljw-mzsy-jslnsjjwnsl-229[sjfln] - Sorted parts: [|"s, 9"; "j, 6"; "f, 5"; "l, 5"; "n, 5"; "w, 4"; "y, 3"; "a, 1"; "h, 1"; "m, 1";
+  "q, 1"; "r, 1"; "t, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'j'; 'f'; 'l'; 'n'|] - Checksum: sjfln 
+ 
+Room: yrwxefpi-tvsnigxmpi-veffmx-stivexmsrw-724[ixefm] - Sorted parts: [|"i, 4"; "x, 4"; "e, 3"; "f, 3"; "m, 3"; "s, 3"; "v, 3"; "p, 2"; "r, 2"; "t, 2";
+  "w, 2"; "g, 1"; "n, 1"; "y, 1"|] - ToBeChecked: [|'i'; 'x'; 'e'; 'f'; 'm'|] - Checksum: ixefm 
+ 
+Room: hqtyeqsjylu-isqludwuh-xkdj-huiuqhsx-712[uhqsd] - Sorted parts: [|"u, 5"; "h, 4"; "q, 4"; "s, 3"; "d, 2"; "i, 2"; "j, 2"; "l, 2"; "x, 2"; "y, 2";
+  "e, 1"; "k, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'u'; 'h'; 'q'; 's'; 'd'|] - Checksum: uhqsd 
+ 
+Room: yhkpvhjapcl-ibuuf-zavyhnl-903[halpu] - Sorted parts: [|"h, 3"; "a, 2"; "l, 2"; "p, 2"; "u, 2"; "v, 2"; "y, 2"; "b, 1"; "c, 1"; "f, 1";
+  "i, 1"; "j, 1"; "k, 1"; "n, 1"; "z, 1"|] - ToBeChecked: [|'h'; 'a'; 'l'; 'p'; 'u'|] - Checksum: halpu 
+ 
+Room: forwcoqhwjs-pogysh-gvwddwbu-818[wodgh] - Sorted parts: [|"w, 4"; "o, 3"; "d, 2"; "g, 2"; "h, 2"; "s, 2"; "b, 1"; "c, 1"; "f, 1"; "j, 1";
+  "p, 1"; "q, 1"; "r, 1"; "u, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'w'; 'o'; 'd'; 'g'; 'h'|] - Checksum: wodgh 
+ 
+Room: gzefmnxq-dmnnuf-dqeqmdot-482[dmnqe] - Sorted parts: [|"d, 3"; "m, 3"; "n, 3"; "q, 3"; "e, 2"; "f, 2"; "g, 1"; "o, 1"; "t, 1"; "u, 1";
+  "x, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'm'; 'n'; 'q'; 'e'|] - Checksum: dmnqe 
+ 
+Room: rmn-qcapcr-hcjjwzcyl-umpiqfmn-522[cmjnp] - Sorted parts: [|"c, 4"; "m, 3"; "j, 2"; "n, 2"; "p, 2"; "q, 2"; "r, 2"; "a, 1"; "f, 1"; "h, 1";
+  "i, 1"; "l, 1"; "u, 1"; "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'm'; 'j'; 'n'; 'p'|] - Checksum: cmjnp 
+ 
+Room: egdytrixat-gpqqxi-tcvxcttgxcv-271[txcgi] - Sorted parts: [|"t, 5"; "x, 4"; "c, 3"; "g, 3"; "i, 2"; "q, 2"; "v, 2"; "a, 1"; "d, 1"; "e, 1";
+  "p, 1"; "r, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'x'; 'c'; 'g'; 'i'|] - Checksum: txcgi 
+ 
+Room: njmjubsz-hsbef-fhh-tfswjdft-103[fhjsb] - Sorted parts: [|"f, 4"; "h, 3"; "j, 3"; "s, 3"; "b, 2"; "t, 2"; "d, 1"; "e, 1"; "m, 1"; "n, 1";
+  "u, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'h'; 'j'; 's'; 'b'|] - Checksum: fhjsb 
+ 
+Room: ugjjgkanw-tmffq-umklgewj-kwjnauw-996[jwgku] - Sorted parts: [|"j, 4"; "w, 4"; "g, 3"; "k, 3"; "u, 3"; "a, 2"; "f, 2"; "m, 2"; "n, 2"; "e, 1";
+  "l, 1"; "q, 1"; "t, 1"|] - ToBeChecked: [|'j'; 'w'; 'g'; 'k'; 'u'|] - Checksum: jwgku 
+ 
+Room: gifavtkzcv-gcrjkzt-xirjj-glityrjzex-737[jgirt] - Sorted parts: [|"j, 4"; "g, 3"; "i, 3"; "r, 3"; "t, 3"; "z, 3"; "c, 2"; "k, 2"; "v, 2"; "x, 2";
+  "a, 1"; "e, 1"; "f, 1"; "l, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'g'; 'i'; 'r'; 't'|] - Checksum: jgirt 
+ 
+Room: bgmxkgtmbhgte-unggr-xgzbgxxkbgz-137[gbxkm] - Sorted parts: [|"g, 8"; "b, 4"; "x, 4"; "k, 2"; "m, 2"; "t, 2"; "z, 2"; "e, 1"; "h, 1"; "n, 1";
+  "r, 1"; "u, 1"|] - ToBeChecked: [|'g'; 'b'; 'x'; 'k'; 'm'|] - Checksum: gbxkm 
+ 
+Room: nwilwcejc-zua-ykjpwejiajp-758[jwace] - Sorted parts: [|"j, 4"; "w, 3"; "a, 2"; "c, 2"; "e, 2"; "i, 2"; "p, 2"; "k, 1"; "l, 1"; "n, 1";
+  "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'w'; 'a'; 'c'; 'e'|] - Checksum: jwace 
+ 
+Room: ykhknbqh-oywrajcan-dqjp-naoawnyd-264[anydh] - Sorted parts: [|"a, 4"; "n, 4"; "y, 3"; "d, 2"; "h, 2"; "j, 2"; "k, 2"; "o, 2"; "q, 2"; "w, 2";
+  "b, 1"; "c, 1"; "p, 1"; "r, 1"|] - ToBeChecked: [|'a'; 'n'; 'y'; 'd'; 'h'|] - Checksum: anydh 
+ 
+Room: vhkkhlbox-vahvhetmx-kxlxtkva-163[hkvxa] - Sorted parts: [|"h, 4"; "k, 4"; "v, 4"; "x, 4"; "a, 2"; "l, 2"; "t, 2"; "b, 1"; "e, 1"; "m, 1";
+  "o, 1"|] - ToBeChecked: [|'h'; 'k'; 'v'; 'x'; 'a'|] - Checksum: hkvxa 
+ 
+Room: shoewudys-sxesebqju-kiuh-juijydw-998[suejd] - Sorted parts: [|"s, 4"; "u, 4"; "e, 3"; "j, 3"; "d, 2"; "h, 2"; "i, 2"; "w, 2"; "y, 2"; "b, 1";
+  "k, 1"; "o, 1"; "q, 1"; "x, 1"|] - ToBeChecked: [|'s'; 'u'; 'e'; 'j'; 'd'|] - Checksum: suejd 
+ 
+Room: zvyvgnel-tenqr-enzcntvat-wryylorna-znexrgvat-507[nertv] - Sorted parts: [|"n, 6"; "e, 4"; "r, 4"; "t, 4"; "v, 4"; "a, 3"; "y, 3"; "z, 3"; "g, 2"; "l, 2";
+  "c, 1"; "o, 1"; "q, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'n'; 'e'; 'r'; 't'; 'v'|] - Checksum: nertv 
+ 
+Room: qmpmxevc-kvehi-tpewxmg-kveww-qerekiqirx-880[eikmq] - Sorted parts: [|"e, 6"; "i, 3"; "k, 3"; "m, 3"; "q, 3"; "v, 3"; "w, 3"; "x, 3"; "p, 2"; "r, 2";
+  "c, 1"; "g, 1"; "h, 1"; "t, 1"|] - ToBeChecked: [|'e'; 'i'; 'k'; 'm'; 'q'|] - Checksum: eikmq 
+ 
+Room: emixwvqhml-kivlg-ivitgaqa-278[ivagl] - Sorted parts: [|"i, 4"; "v, 3"; "a, 2"; "g, 2"; "l, 2"; "m, 2"; "q, 2"; "e, 1"; "h, 1"; "k, 1";
+  "t, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'i'; 'v'; 'a'; 'g'; 'l'|] - Checksum: ivagl 
+ 
+Room: jchipqat-rpcsn-rdpixcv-jhtg-ithixcv-635[cihpt] - Sorted parts: [|"c, 4"; "i, 4"; "h, 3"; "p, 3"; "t, 3"; "j, 2"; "r, 2"; "v, 2"; "x, 2"; "a, 1";
+  "d, 1"; "g, 1"; "n, 1"; "q, 1"; "s, 1"|] - ToBeChecked: [|'c'; 'i'; 'h'; 'p'; 't'|] - Checksum: cihpt 
+ 
+Room: xtwtelcj-rclop-ojp-wlmzclezcj-275[cljeo] - Sorted parts: [|"c, 4"; "l, 4"; "j, 3"; "e, 2"; "o, 2"; "p, 2"; "t, 2"; "w, 2"; "z, 2"; "m, 1";
+  "r, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'l'; 'j'; 'e'; 'o'|] - Checksum: cljeo 
+ 
+Room: ncjzrpytn-ojp-xlcvpetyr-405[pcjnr] - Sorted parts: [|"p, 3"; "c, 2"; "j, 2"; "n, 2"; "r, 2"; "t, 2"; "y, 2"; "e, 1"; "l, 1"; "o, 1";
+  "v, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'p'; 'c'; 'j'; 'n'; 'r'|] - Checksum: pcjnr 
+ 
+Room: xgvnndadzy-ytz-yzndbi-967[dnyza] - Sorted parts: [|"d, 3"; "n, 3"; "y, 3"; "z, 3"; "a, 1"; "b, 1"; "g, 1"; "i, 1"; "t, 1"; "v, 1";
+  "x, 1"|] - ToBeChecked: [|'d'; 'n'; 'y'; 'z'; 'a'|] - Checksum: dnyza 
+ 
+Room: lujbbrornm-kdwwh-orwjwlrwp-615[wrbjl] - Sorted parts: [|"w, 5"; "r, 4"; "b, 2"; "j, 2"; "l, 2"; "o, 2"; "d, 1"; "h, 1"; "k, 1"; "m, 1";
+  "n, 1"; "p, 1"; "u, 1"|] - ToBeChecked: [|'w'; 'r'; 'b'; 'j'; 'l'|] - Checksum: wrbjl 
+ 
+Room: yhwooebeaz-ydkykhwpa-bejwjyejc-368[eyjwa] - Sorted parts: [|"e, 4"; "y, 4"; "j, 3"; "w, 3"; "a, 2"; "b, 2"; "h, 2"; "k, 2"; "o, 2"; "c, 1";
+  "d, 1"; "p, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'y'; 'j'; 'w'; 'a'|] - Checksum: eyjwa 
+ 
+Room: zbytomdsvo-mrymyvkdo-crszzsxq-458[mosyz] - Sorted parts: [|"m, 3"; "o, 3"; "s, 3"; "y, 3"; "z, 3"; "d, 2"; "r, 2"; "v, 2"; "b, 1"; "c, 1";
+  "k, 1"; "q, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'m'; 'o'; 's'; 'y'; 'z'|] - Checksum: mosyz 
+ 
+Room: ojk-nzxmzo-agjrzm-yzndbi-343[zjmno] - Sorted parts: [|"z, 4"; "j, 2"; "m, 2"; "n, 2"; "o, 2"; "a, 1"; "b, 1"; "d, 1"; "g, 1"; "i, 1";
+  "k, 1"; "r, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'z'; 'j'; 'm'; 'n'; 'o'|] - Checksum: zjmno 
+ 
+Room: dfcxsqhwzs-qobrm-fsoqeiwgwhwcb-792[wqsbc] - Sorted parts: [|"w, 4"; "q, 3"; "s, 3"; "b, 2"; "c, 2"; "f, 2"; "h, 2"; "o, 2"; "d, 1"; "e, 1";
+  "g, 1"; "i, 1"; "m, 1"; "r, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'q'; 's'; 'b'; 'c'|] - Checksum: wqsbc 
+ 
+Room: dpssptjwf-kfmmzcfbo-sfbdrvjtjujpo-649[fjpsb] - Sorted parts: [|"f, 4"; "j, 4"; "p, 3"; "s, 3"; "b, 2"; "d, 2"; "m, 2"; "o, 2"; "t, 2"; "c, 1";
+  "k, 1"; "r, 1"; "u, 1"; "v, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'j'; 'p'; 's'; 'b'|] - Checksum: fjpsb 
+ 
+Room: tmrszakd-cxd-kzanqzsnqx-235[zadkn] - Sorted parts: [|"z, 3"; "a, 2"; "d, 2"; "k, 2"; "n, 2"; "q, 2"; "s, 2"; "x, 2"; "c, 1"; "m, 1";
+  "r, 1"; "t, 1"|] - ToBeChecked: [|'z'; 'a'; 'd'; 'k'; 'n'|] - Checksum: zadkn 
+ 
+Room: zhdsrqlchg-fdqgb-frdwlqj-ghsduwphqw-725[dhqgw] - Sorted parts: [|"d, 4"; "h, 4"; "q, 4"; "g, 3"; "w, 3"; "f, 2"; "l, 2"; "r, 2"; "s, 2"; "b, 1";
+  "c, 1"; "j, 1"; "p, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'h'; 'q'; 'g'; 'w'|] - Checksum: dhqgw 
+ 
+Room: tyepcyletzylw-dnlgpyrpc-sfye-pyrtyppctyr-405[yptce] - Sorted parts: [|"y, 8"; "p, 6"; "t, 4"; "c, 3"; "e, 3"; "l, 3"; "r, 3"; "d, 1"; "f, 1"; "g, 1";
+  "n, 1"; "s, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'y'; 'p'; 't'; 'c'; 'e'|] - Checksum: yptce 
+ 
+Room: eadalsjq-yjsvw-kusnwfywj-zmfl-sfsdqkak-190[safjk] - Sorted parts: [|"s, 5"; "a, 3"; "f, 3"; "j, 3"; "k, 3"; "w, 3"; "d, 2"; "l, 2"; "q, 2"; "y, 2";
+  "e, 1"; "m, 1"; "n, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'a'; 'f'; 'j'; 'k'|] - Checksum: safjk 
+ 
+Room: clotzlnetgp-ojp-cpdplcns-899[pclno] - Sorted parts: [|"p, 4"; "c, 3"; "l, 3"; "n, 2"; "o, 2"; "t, 2"; "d, 1"; "e, 1"; "g, 1"; "j, 1";
+  "s, 1"; "z, 1"|] - ToBeChecked: [|'p'; 'c'; 'l'; 'n'; 'o'|] - Checksum: pclno 
+ 
+Room: pbybeshy-onfxrg-phfgbzre-freivpr-507[rbefp] - Sorted parts: [|"r, 4"; "b, 3"; "e, 3"; "f, 3"; "p, 3"; "g, 2"; "h, 2"; "y, 2"; "i, 1"; "n, 1";
+  "o, 1"; "s, 1"; "v, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'r'; 'b'; 'e'; 'f'; 'p'|] - Checksum: rbefp 
+ 
+Room: uiovmbqk-xtiabqk-oziaa-wxmzibqwva-902[aibqk] - Sorted parts: [|"a, 4"; "i, 4"; "b, 3"; "q, 3"; "k, 2"; "m, 2"; "o, 2"; "v, 2"; "w, 2"; "x, 2";
+  "z, 2"; "t, 1"; "u, 1"|] - ToBeChecked: [|'a'; 'i'; 'b'; 'q'; 'k'|] - Checksum: aibqk 
+ 
+Room: kgjgrypw-epybc-qaytclecp-fslr-pcacgtgle-288[cgpel] - Sorted parts: [|"c, 5"; "g, 4"; "p, 4"; "e, 3"; "l, 3"; "y, 3"; "a, 2"; "r, 2"; "t, 2"; "b, 1";
+  "f, 1"; "j, 1"; "k, 1"; "q, 1"; "s, 1"; "w, 1"|] - ToBeChecked: [|'c'; 'g'; 'p'; 'e'; 'l'|] - Checksum: cgpel 
+ 
+Room: dmybmsuzs-rxaiqd-fdmuzuzs-664[dmsuz] - Sorted parts: [|"d, 3"; "m, 3"; "s, 3"; "u, 3"; "z, 3"; "a, 1"; "b, 1"; "f, 1"; "i, 1"; "q, 1";
+  "r, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'d'; 'm'; 's'; 'u'; 'z'|] - Checksum: dmsuz 
+ 
+Room: jsvagsulanw-kusnwfywj-zmfl-esfsywewfl-528[swfla] - Sorted parts: [|"s, 5"; "w, 5"; "f, 4"; "l, 3"; "a, 2"; "e, 2"; "j, 2"; "n, 2"; "u, 2"; "y, 2";
+  "g, 1"; "k, 1"; "m, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'w'; 'f'; 'l'; 'a'|] - Checksum: swfla 
+ 
+Room: jvuzbtly-nyhkl-ibuuf-mpuhujpun-149[ubhjl] - Sorted parts: [|"u, 6"; "b, 2"; "h, 2"; "j, 2"; "l, 2"; "n, 2"; "p, 2"; "y, 2"; "f, 1"; "i, 1";
+  "k, 1"; "m, 1"; "t, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'u'; 'b'; 'h'; 'j'; 'l'|] - Checksum: ubhjl 
+ 
+Room: zsxyfgqj-gfxpjy-xjwanhjx-307[jxfgy] - Sorted parts: [|"j, 4"; "x, 4"; "f, 2"; "g, 2"; "y, 2"; "a, 1"; "h, 1"; "n, 1"; "p, 1"; "q, 1";
+  "s, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'x'; 'f'; 'g'; 'y'|] - Checksum: jxfgy 
+ 
+Room: wifilzof-wuhxs-womnigyl-mylpcwy-448[wilyf] - Sorted parts: [|"w, 4"; "i, 3"; "l, 3"; "y, 3"; "f, 2"; "m, 2"; "o, 2"; "c, 1"; "g, 1"; "h, 1";
+  "n, 1"; "p, 1"; "s, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'i'; 'l'; 'y'; 'f'|] - Checksum: wilyf 
+ 
+Room: dwbcjkun-kjbtnc-ujkxajcxah-537[jckab] - Sorted parts: [|"j, 4"; "c, 3"; "k, 3"; "a, 2"; "b, 2"; "n, 2"; "u, 2"; "x, 2"; "d, 1"; "h, 1";
+  "t, 1"; "w, 1"|] - ToBeChecked: [|'j'; 'c'; 'k'; 'a'; 'b'|] - Checksum: jckab 
+ 
+Room: gpewwmjmih-mrxivrexmsrep-veffmx-pefsvexsvc-490[emvxf] - Sorted parts: [|"e, 6"; "m, 5"; "v, 4"; "x, 4"; "f, 3"; "p, 3"; "r, 3"; "s, 3"; "i, 2"; "w, 2";
+  "c, 1"; "g, 1"; "h, 1"; "j, 1"|] - ToBeChecked: [|'e'; 'm'; 'v'; 'x'; 'f'|] - Checksum: emvxf 
+ 
+Room: wifilzof-vumeyn-mbcjjcha-682[cfijm] - Sorted parts: [|"c, 2"; "f, 2"; "i, 2"; "j, 2"; "m, 2"; "a, 1"; "w, 1"; "v, 1"; "u, 1"; "o, 1";
+  "l, 1"; "y, 1"; "h, 1"; "e, 1"; "b, 1"; "n, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'f'; 'i'; 'j'; 'm'|] - Checksum: cfijm 
+ 
+Room: ujqgywfau-bwddqtwsf-ljsafafy-658[fawdj] - Sorted parts: [|"f, 4"; "a, 3"; "w, 3"; "d, 2"; "j, 2"; "q, 2"; "s, 2"; "u, 2"; "y, 2"; "b, 1";
+  "g, 1"; "l, 1"; "t, 1"|] - ToBeChecked: [|'f'; 'a'; 'w'; 'd'; 'j'|] - Checksum: fawdj 
+ 
+Room: ujqgywfau-usfvq-ugslafy-suimakalagf-788[aufgs] - Sorted parts: [|"a, 5"; "u, 5"; "f, 4"; "g, 3"; "s, 3"; "l, 2"; "q, 2"; "y, 2"; "i, 1"; "j, 1";
+  "k, 1"; "m, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'a'; 'u'; 'f'; 'g'; 's'|] - Checksum: aufgs 
+ 
+Room: lgh-kwujwl-jsttal-ogjckzgh-294[gjlhk] - Sorted parts: [|"g, 3"; "j, 3"; "l, 3"; "h, 2"; "k, 2"; "t, 2"; "w, 2"; "a, 1"; "c, 1"; "o, 1";
+  "s, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'g'; 'j'; 'l'; 'h'; 'k'|] - Checksum: gjlhk 
+ 
+Room: votubcmf-qmbtujd-hsbtt-sfdfjwjoh-909[tbfjd] - Sorted parts: [|"t, 4"; "b, 3"; "f, 3"; "j, 3"; "d, 2"; "h, 2"; "m, 2"; "o, 2"; "s, 2"; "u, 2";
+  "c, 1"; "q, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'t'; 'b'; 'f'; 'j'; 'd'|] - Checksum: tbfjd 
+ 
+Room: zntargvp-wryylorna-qrcnegzrag-221[ragny] - Sorted parts: [|"r, 5"; "a, 3"; "g, 3"; "n, 3"; "y, 2"; "z, 2"; "c, 1"; "e, 1"; "l, 1"; "o, 1";
+  "p, 1"; "q, 1"; "t, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'r'; 'a'; 'g'; 'n'; 'y'|] - Checksum: ragny 
+ 
+Room: myvybpev-oqq-crszzsxq-276[qsvyz] - Sorted parts: [|"q, 3"; "s, 2"; "v, 2"; "y, 2"; "z, 2"; "b, 1"; "c, 1"; "e, 1"; "m, 1"; "o, 1";
+  "p, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'q'; 's'; 'v'; 'y'; 'z'|] - Checksum: qsvyz 
+ 
+Room: nzcczdtgp-nlyoj-nzletyr-nfdezxpc-dpcgtnp-535[ncpzd] - Sorted parts: [|"n, 5"; "c, 4"; "p, 4"; "z, 4"; "d, 3"; "t, 3"; "e, 2"; "g, 2"; "l, 2"; "y, 2";
+  "f, 1"; "j, 1"; "o, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'n'; 'c'; 'p'; 'z'; 'd'|] - Checksum: ncpzd 
+ 
+Room: wyvqljapsl-jovjvshal-svnpzapjz-877[jvalp] - Sorted parts: [|"j, 4"; "v, 4"; "a, 3"; "l, 3"; "p, 3"; "s, 3"; "z, 2"; "h, 1"; "n, 1"; "o, 1";
+  "q, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'v'; 'a'; 'l'; 'p'|] - Checksum: jvalp 
+ 
+Room: lxuxaodu-lqxlxujcn-bqryyrwp-381[xluqr] - Sorted parts: [|"x, 4"; "l, 3"; "u, 3"; "q, 2"; "r, 2"; "y, 2"; "a, 1"; "b, 1"; "c, 1"; "d, 1";
+  "j, 1"; "n, 1"; "o, 1"; "p, 1"; "w, 1"|] - ToBeChecked: [|'x'; 'l'; 'u'; 'q'; 'r'|] - Checksum: xluqr 
+ 
+Room: iuxxuyobk-jek-iayzuskx-ykxboik-826[kxiuy] - Sorted parts: [|"k, 5"; "x, 4"; "i, 3"; "u, 3"; "y, 3"; "b, 2"; "o, 2"; "a, 1"; "e, 1"; "j, 1";
+  "s, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'x'; 'i'; 'u'; 'y'|] - Checksum: kxiuy 
+ 
+Room: dmybmsuzs-omzpk-oamfuzs-efadmsq-690[mszad] - Sorted parts: [|"m, 5"; "s, 4"; "z, 3"; "a, 2"; "d, 2"; "f, 2"; "o, 2"; "u, 2"; "b, 1"; "e, 1";
+  "k, 1"; "p, 1"; "q, 1"; "y, 1"|] - ToBeChecked: [|'m'; 's'; 'z'; 'a'; 'd'|] - Checksum: mszad 
+ 
+Room: ymszqfuo-dmnnuf-pqbmdfyqzf-300[fmqdn] - Sorted parts: [|"f, 4"; "m, 3"; "q, 3"; "d, 2"; "n, 2"; "u, 2"; "y, 2"; "z, 2"; "b, 1"; "o, 1";
+  "p, 1"; "s, 1"|] - ToBeChecked: [|'f'; 'm'; 'q'; 'd'; 'n'|] - Checksum: fmqdn 
+ 
+Room: xfbqpojafe-cvooz-xpsltipq-649[opfqx] - Sorted parts: [|"o, 3"; "p, 3"; "f, 2"; "q, 2"; "x, 2"; "a, 1"; "b, 1"; "c, 1"; "e, 1"; "i, 1";
+  "j, 1"; "l, 1"; "s, 1"; "t, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'o'; 'p'; 'f'; 'q'; 'x'|] - Checksum: opfqx 
+ 
+Room: mvkccspson-bknsykmdsfo-oqq-domrxyvyqi-536[oskmq] - Sorted parts: [|"o, 4"; "s, 4"; "k, 3"; "m, 3"; "q, 3"; "y, 3"; "c, 2"; "d, 2"; "n, 2"; "v, 2";
+  "b, 1"; "f, 1"; "i, 1"; "p, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'o'; 's'; 'k'; 'm'; 'q'|] - Checksum: oskmq 
+ 
+Room: ykhknbqh-zua-iwjwcaiajp-420[ahijk] - Sorted parts: [|"a, 3"; "h, 2"; "i, 2"; "j, 2"; "k, 2"; "w, 2"; "b, 1"; "c, 1"; "n, 1"; "p, 1";
+  "q, 1"; "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'h'; 'i'; 'j'; 'k'|] - Checksum: ahijk 
+ 
+Room: pynffvsvrq-enoovg-fnyrf-585[fnvor] - Sorted parts: [|"f, 4"; "n, 3"; "v, 3"; "o, 2"; "r, 2"; "y, 2"; "e, 1"; "g, 1"; "p, 1"; "q, 1";
+  "s, 1"|] - ToBeChecked: [|'f'; 'n'; 'v'; 'o'; 'r'|] - Checksum: fnvor 
+ 
+Room: yaxsnlcrun-ljwmh-ldbcxvna-bnaerln-173[nlabc] - Sorted parts: [|"n, 5"; "l, 4"; "a, 3"; "b, 2"; "c, 2"; "x, 2"; "r, 2"; "w, 1"; "v, 1"; "u, 1";
+  "s, 1"; "m, 1"; "h, 1"; "e, 1"; "d, 1"; "j, 1"; "y, 1"|] - ToBeChecked: [|'n'; 'l'; 'a'; 'b'; 'c'|] - Checksum: nlabc 
+ 
+Room: zgmfyxypbmsq-aylbw-dglylagle-236[lygab] - Sorted parts: [|"l, 4"; "y, 4"; "g, 3"; "a, 2"; "b, 2"; "m, 2"; "d, 1"; "e, 1"; "f, 1"; "p, 1";
+  "q, 1"; "s, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'y'; 'g'; 'a'; 'b'|] - Checksum: lygab 
+ 
+Room: zadftbaxq-anvqof-efadmsq-482[afqdb] - Sorted parts: [|"a, 4"; "f, 3"; "q, 3"; "d, 2"; "b, 1"; "e, 1"; "m, 1"; "n, 1"; "o, 1"; "s, 1";
+  "t, 1"; "v, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'f'; 'q'; 'd'; 'b'|] - Checksum: afqdb 
+ 
+Room: jrncbavmrq-cynfgvp-tenff-fuvccvat-325[cfvna] - Sorted parts: [|"c, 4"; "f, 4"; "v, 4"; "n, 3"; "a, 2"; "r, 2"; "t, 2"; "b, 1"; "e, 1"; "g, 1";
+  "j, 1"; "m, 1"; "p, 1"; "q, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'f'; 'v'; 'n'; 'a'|] - Checksum: cfvna 
+ 
+Room: jsehsyafy-usfvq-ogjckzgh-814[sfghj] - Sorted parts: [|"s, 3"; "f, 2"; "g, 2"; "h, 2"; "j, 2"; "y, 2"; "a, 1"; "c, 1"; "e, 1"; "k, 1";
+  "o, 1"; "q, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'f'; 'g'; 'h'; 'j'|] - Checksum: sfghj 
+ 
+Room: upq-tfdsfu-cvooz-dvtupnfs-tfswjdf-519[fdstu] - Sorted parts: [|"f, 5"; "d, 3"; "s, 3"; "t, 3"; "u, 3"; "o, 2"; "p, 2"; "v, 2"; "c, 1"; "j, 1";
+  "n, 1"; "q, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'd'; 's'; 't'; 'u'|] - Checksum: fdstu 
+ 
+Room: dszphfojd-qmbtujd-hsbtt-ufdiopmphz-441[dhptb] - Sorted parts: [|"d, 4"; "h, 3"; "p, 3"; "t, 3"; "b, 2"; "f, 2"; "j, 2"; "m, 2"; "o, 2"; "s, 2";
+  "u, 2"; "z, 2"; "i, 1"; "q, 1"|] - ToBeChecked: [|'d'; 'h'; 'p'; 't'; 'b'|] - Checksum: dhptb 
+ 
+Room: bkwzkqsxq-pvygob-cdybkqo-198[bkqoy] - Sorted parts: [|"b, 3"; "k, 3"; "q, 3"; "o, 2"; "y, 2"; "c, 1"; "d, 1"; "g, 1"; "p, 1"; "s, 1";
+  "v, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'k'; 'q'; 'o'; 'y'|] - Checksum: bkqoy 
+ 
+Room: nzcczdtgp-clmmte-ecltytyr-275[ctelm] - Sorted parts: [|"c, 4"; "t, 4"; "e, 2"; "l, 2"; "m, 2"; "y, 2"; "z, 2"; "d, 1"; "g, 1"; "n, 1";
+  "p, 1"; "r, 1"|] - ToBeChecked: [|'c'; 't'; 'e'; 'l'; 'm'|] - Checksum: ctelm 
+ 
+Room: vehmsegxmzi-gerhc-wxsveki-308[eghim] - Sorted parts: [|"e, 4"; "g, 2"; "h, 2"; "i, 2"; "m, 2"; "s, 2"; "v, 2"; "x, 2"; "c, 1"; "k, 1";
+  "r, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'g'; 'h'; 'i'; 'm'|] - Checksum: eghim 
+ 
+Room: vagreangvbany-pnaql-znantrzrag-559[angrv] - Sorted parts: [|"a, 6"; "n, 5"; "g, 3"; "r, 3"; "v, 2"; "z, 2"; "b, 1"; "e, 1"; "l, 1"; "p, 1";
+  "q, 1"; "t, 1"; "y, 1"|] - ToBeChecked: [|'a'; 'n'; 'g'; 'r'; 'v'|] - Checksum: angrv 
+ 
+Room: iuruxlar-hgyqkz-xkikobotm-618[kioru] - Sorted parts: [|"k, 3"; "i, 2"; "o, 2"; "r, 2"; "u, 2"; "x, 2"; "a, 1"; "b, 1"; "g, 1"; "h, 1";
+  "l, 1"; "m, 1"; "q, 1"; "t, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'i'; 'o'; 'r'; 'u'|] - Checksum: kioru 
+ 
+Room: zilqwikbqdm-akidmvomz-pcvb-camz-bmabqvo-512[mbaiq] - Sorted parts: [|"m, 5"; "b, 4"; "a, 3"; "i, 3"; "q, 3"; "v, 3"; "z, 3"; "c, 2"; "d, 2"; "k, 2";
+  "o, 2"; "l, 1"; "p, 1"; "w, 1"|] - ToBeChecked: [|'m'; 'b'; 'a'; 'i'; 'q'|] - Checksum: mbaiq 
+ 
+Room: ohmnuvfy-wuhxs-wiuncha-nywbhifias-136[hinuw] - Sorted parts: [|"h, 4"; "i, 3"; "n, 3"; "u, 3"; "w, 3"; "a, 2"; "f, 2"; "s, 2"; "y, 2"; "b, 1";
+  "c, 1"; "m, 1"; "o, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'h'; 'i'; 'n'; 'u'; 'w'|] - Checksum: hinuw 
+ 
+Room: sorozgxe-mxgjk-xghhoz-rghuxgzuxe-904[gxhoz] - Sorted parts: [|"g, 5"; "x, 5"; "h, 3"; "o, 3"; "z, 3"; "e, 2"; "r, 2"; "u, 2"; "j, 1"; "k, 1";
+  "m, 1"; "s, 1"|] - ToBeChecked: [|'g'; 'x'; 'h'; 'o'; 'z'|] - Checksum: gxhoz 
+ 
+Room: ujoon-rpcsn-detgpixdch-661[cdnop] - Sorted parts: [|"c, 2"; "d, 2"; "n, 2"; "o, 2"; "p, 2"; "e, 1"; "g, 1"; "h, 1"; "i, 1"; "j, 1";
+  "r, 1"; "s, 1"; "t, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'd'; 'n'; 'o'; 'p'|] - Checksum: cdnop 
+ 
+Room: nzwzcqfw-awldetn-rcldd-hzcvdsza-561[dzcwa] - Sorted parts: [|"d, 4"; "z, 4"; "c, 3"; "w, 3"; "a, 2"; "l, 2"; "n, 2"; "e, 1"; "f, 1"; "h, 1";
+  "q, 1"; "r, 1"; "s, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'d'; 'z'; 'c'; 'w'; 'a'|] - Checksum: dzcwa 
+ 
+Room: oknkvcta-itcfg-eqpuwogt-itcfg-dwppa-gpikpggtkpi-830[gptik] - Sorted parts: [|"g, 6"; "p, 6"; "t, 5"; "i, 4"; "k, 4"; "c, 3"; "a, 2"; "f, 2"; "o, 2"; "w, 2";
+  "d, 1"; "e, 1"; "n, 1"; "q, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'p'; 't'; 'i'; 'k'|] - Checksum: gptik 
+ 
+Room: hcd-gsqfsh-suu-rsdofhasbh-454[shdfu] - Sorted parts: [|"s, 5"; "h, 4"; "d, 2"; "f, 2"; "u, 2"; "a, 1"; "b, 1"; "c, 1"; "g, 1"; "o, 1";
+  "q, 1"; "r, 1"|] - ToBeChecked: [|'s'; 'h'; 'd'; 'f'; 'u'|] - Checksum: shdfu 
+ 
+Room: aczupnetwp-mldvpe-hzcvdsza-613[pzacd] - Sorted parts: [|"p, 3"; "z, 3"; "a, 2"; "c, 2"; "d, 2"; "e, 2"; "v, 2"; "h, 1"; "l, 1"; "m, 1";
+  "n, 1"; "s, 1"; "t, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'p'; 'z'; 'a'; 'c'; 'd'|] - Checksum: pzacd 
+ 
+Room: drxevkzt-vxx-dribvkzex-581[xvdek] - Sorted parts: [|"x, 4"; "v, 3"; "d, 2"; "e, 2"; "k, 2"; "r, 2"; "z, 2"; "b, 1"; "i, 1"; "t, 1"|] - ToBeChecked: [|'x'; 'v'; 'd'; 'e'; 'k'|] - Checksum: xvdek 
+ 
+Room: esyfwlau-usfvq-ghwjslagfk-710[fsagl] - Sorted parts: [|"f, 3"; "s, 3"; "a, 2"; "g, 2"; "l, 2"; "u, 2"; "w, 2"; "e, 1"; "h, 1"; "j, 1";
+  "k, 1"; "q, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'f'; 's'; 'a'; 'g'; 'l'|] - Checksum: fsagl 
+ 
+Room: zlkprjbo-doxab-pzxsbkdbo-erkq-obxznrfpfqflk-861[bkofp] - Sorted parts: [|"b, 5"; "k, 4"; "o, 4"; "f, 3"; "p, 3"; "r, 3"; "x, 3"; "z, 3"; "d, 2"; "l, 2";
+  "q, 2"; "a, 1"; "e, 1"; "j, 1"; "n, 1"; "s, 1"|] - ToBeChecked: [|'b'; 'k'; 'o'; 'f'; 'p'|] - Checksum: bkofp 
+ 
+Room: mbiyqoxsm-mkxni-psxkxmsxq-536[xmsik] - Sorted parts: [|"x, 5"; "m, 4"; "s, 3"; "i, 2"; "k, 2"; "q, 2"; "b, 1"; "n, 1"; "o, 1"; "p, 1";
+  "y, 1"|] - ToBeChecked: [|'x'; 'm'; 's'; 'i'; 'k'|] - Checksum: xmsik 
+ 
+Room: wihmogyl-aluxy-lugjuacha-wuhxs-uwkocmcncih-942[uchal] - Sorted parts: [|"u, 5"; "c, 4"; "h, 4"; "a, 3"; "l, 3"; "w, 3"; "g, 2"; "i, 2"; "m, 2"; "o, 2";
+  "x, 2"; "y, 2"; "j, 1"; "k, 1"; "n, 1"; "s, 1"|] - ToBeChecked: [|'u'; 'c'; 'h'; 'a'; 'l'|] - Checksum: uchal 
+ 
+Room: aoubshwq-gqojsbusf-vibh-difqvogwbu-116[boqsu] - Sorted parts: [|"b, 4"; "o, 3"; "q, 3"; "s, 3"; "u, 3"; "f, 2"; "g, 2"; "h, 2"; "i, 2"; "v, 2";
+  "w, 2"; "a, 1"; "d, 1"; "j, 1"|] - ToBeChecked: [|'b'; 'o'; 'q'; 's'; 'u'|] - Checksum: boqsu 
+ 
+Room: tfejldvi-xiruv-vxx-fgvirkzfej-321[vfixe] - Sorted parts: [|"v, 4"; "f, 3"; "i, 3"; "x, 3"; "e, 2"; "j, 2"; "r, 2"; "d, 1"; "g, 1"; "k, 1";
+  "l, 1"; "t, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'f'; 'i'; 'x'; 'e'|] - Checksum: vfixe 
+ 
+Room: eqpuwogt-itcfg-hnqygt-uvqtcig-128[gtqci] - Sorted parts: [|"g, 4"; "t, 4"; "q, 3"; "c, 2"; "i, 2"; "u, 2"; "e, 1"; "f, 1"; "h, 1"; "n, 1";
+  "o, 1"; "p, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'g'; 't'; 'q'; 'c'; 'i'|] - Checksum: gtqci 
+ 
+Room: forwcoqhwjs-foppwh-gozsg-376[owfgh] - Sorted parts: [|"o, 4"; "w, 3"; "f, 2"; "g, 2"; "h, 2"; "p, 2"; "s, 2"; "c, 1"; "j, 1"; "q, 1";
+  "r, 1"; "z, 1"|] - ToBeChecked: [|'o'; 'w'; 'f'; 'g'; 'h'|] - Checksum: owfgh 
+ 
+Room: xjmmjndqz-wpiit-yzndbi-447[idjmn] - Sorted parts: [|"i, 3"; "d, 2"; "j, 2"; "m, 2"; "n, 2"; "z, 2"; "b, 1"; "p, 1"; "q, 1"; "t, 1";
+  "w, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'i'; 'd'; 'j'; 'm'; 'n'|] - Checksum: idjmn 
+ 
+Room: wyvqljapsl-jovjvshal-lunpullypun-721[ljpuv] - Sorted parts: [|"l, 6"; "j, 3"; "p, 3"; "u, 3"; "v, 3"; "a, 2"; "n, 2"; "s, 2"; "y, 2"; "h, 1";
+  "o, 1"; "q, 1"; "w, 1"|] - ToBeChecked: [|'l'; 'j'; 'p'; 'u'; 'v'|] - Checksum: ljpuv 
+ 
+Room: bnknqetk-bgnbnkzsd-dmfhmddqhmf-339[dnbkm] - Sorted parts: [|"d, 4"; "n, 4"; "b, 3"; "k, 3"; "m, 3"; "f, 2"; "h, 2"; "q, 2"; "e, 1"; "g, 1";
+  "s, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'n'; 'b'; 'k'; 'm'|] - Checksum: dnbkm 
+ 
+Room: bqxnfdmhb-cxd-bnmszhmldms-131[mbdhn] - Sorted parts: [|"m, 4"; "b, 3"; "d, 3"; "h, 2"; "n, 2"; "s, 2"; "x, 2"; "c, 1"; "f, 1"; "l, 1";
+  "q, 1"; "z, 1"|] - ToBeChecked: [|'m'; 'b'; 'd'; 'h'; 'n'|] - Checksum: mbdhn 
+ 
+Room: jsehsyafy-usfvq-ugslafy-jwsuimakalagf-788[asfuy] - Sorted parts: [|"a, 5"; "s, 5"; "f, 4"; "u, 3"; "y, 3"; "g, 2"; "j, 2"; "l, 2"; "e, 1"; "h, 1";
+  "i, 1"; "k, 1"; "m, 1"; "q, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'a'; 's'; 'f'; 'u'; 'y'|] - Checksum: asfuy 
+ 
+Room: ltpedcxots-rpcsn-rdpixcv-hwxeexcv-609[cxepd] - Sorted parts: [|"c, 4"; "x, 4"; "e, 3"; "p, 3"; "d, 2"; "r, 2"; "s, 2"; "t, 2"; "v, 2"; "h, 1";
+  "i, 1"; "l, 1"; "n, 1"; "o, 1"; "w, 1"|] - ToBeChecked: [|'c'; 'x'; 'e'; 'p'; 'd'|] - Checksum: cxepd 
+ 
+Room: krxqjijamxdb-kdwwh-jwjuhbrb-849[jbwdh] - Sorted parts: [|"j, 4"; "b, 3"; "w, 3"; "d, 2"; "h, 2"; "k, 2"; "r, 2"; "x, 2"; "a, 1"; "i, 1";
+  "m, 1"; "q, 1"; "u, 1"|] - ToBeChecked: [|'j'; 'b'; 'w'; 'd'; 'h'|] - Checksum: jbwdh 
+ 
+Room: dkqjcbctfqwu-dwppa-fgukip-622[pcdfk] - Sorted parts: [|"p, 3"; "c, 2"; "d, 2"; "f, 2"; "k, 2"; "q, 2"; "u, 2"; "w, 2"; "a, 1"; "b, 1";
+  "g, 1"; "i, 1"; "j, 1"; "t, 1"|] - ToBeChecked: [|'p'; 'c'; 'd'; 'f'; 'k'|] - Checksum: pcdfk 
+ 
+Room: cvabijtm-kivlg-kwibqvo-aitma-200[iavbk] - Sorted parts: [|"i, 4"; "a, 3"; "v, 3"; "b, 2"; "k, 2"; "m, 2"; "t, 2"; "c, 1"; "g, 1"; "j, 1";
+  "l, 1"; "o, 1"; "q, 1"; "w, 1"|] - ToBeChecked: [|'i'; 'a'; 'v'; 'b'; 'k'|] - Checksum: iavbk 
+ 
+Room: gpbepvxcv-gpsxdprixkt-eaphixr-vgphh-htgkxrth-453[phxgr] - Sorted parts: [|"p, 6"; "h, 5"; "x, 5"; "g, 4"; "r, 3"; "t, 3"; "v, 3"; "e, 2"; "i, 2"; "k, 2";
+  "a, 1"; "b, 1"; "c, 1"; "d, 1"; "s, 1"|] - ToBeChecked: [|'p'; 'h'; 'x'; 'g'; 'r'|] - Checksum: phxgr 
+ 
+Room: bnqqnrhud-rbzudmfdq-gtms-sdbgmnknfx-365[dnbmq] - Sorted parts: [|"d, 4"; "n, 4"; "b, 3"; "m, 3"; "q, 3"; "f, 2"; "g, 2"; "r, 2"; "s, 2"; "u, 2";
+  "h, 1"; "k, 1"; "t, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'n'; 'b'; 'm'; 'q'|] - Checksum: dnbmq 
+ 
+Room: etyyx-qzaahs-lzqjdshmf-547[ahqsy] - Sorted parts: [|"a, 2"; "h, 2"; "q, 2"; "s, 2"; "y, 2"; "z, 2"; "d, 1"; "e, 1"; "f, 1"; "j, 1";
+  "l, 1"; "m, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'a'; 'h'; 'q'; 's'; 'y'|] - Checksum: ahqsy 
+ 
+Room: kpvgtpcvkqpcn-lgnnadgcp-ujkrrkpi-154[pkcgn] - Sorted parts: [|"p, 5"; "k, 4"; "c, 3"; "g, 3"; "n, 3"; "r, 2"; "v, 2"; "a, 1"; "d, 1"; "i, 1";
+  "j, 1"; "l, 1"; "q, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'p'; 'k'; 'c'; 'g'; 'n'|] - Checksum: pkcgn 
+ 
+Room: cvabijtm-ntwemz-bmkpvwtwog-226[mtwbv] - Sorted parts: [|"m, 3"; "t, 3"; "w, 3"; "b, 2"; "v, 2"; "a, 1"; "c, 1"; "e, 1"; "g, 1"; "i, 1";
+  "j, 1"; "k, 1"; "n, 1"; "o, 1"; "p, 1"; "z, 1"|] - ToBeChecked: [|'m'; 't'; 'w'; 'b'; 'v'|] - Checksum: mtwbv 
+ 
+Room: guahyncw-mwupyhayl-bohn-uwkocmcncih-864[chnuw] - Sorted parts: [|"c, 4"; "h, 4"; "n, 3"; "u, 3"; "w, 3"; "y, 3"; "a, 2"; "m, 2"; "o, 2"; "b, 1";
+  "g, 1"; "i, 1"; "k, 1"; "l, 1"; "p, 1"|] - ToBeChecked: [|'c'; 'h'; 'n'; 'u'; 'w'|] - Checksum: chnuw 
+ 
+Room: ryexqpqhteki-sqdto-seqjydw-jhqydydw-920[qdyeh] - Sorted parts: [|"q, 5"; "d, 4"; "y, 4"; "e, 3"; "h, 2"; "j, 2"; "s, 2"; "t, 2"; "w, 2"; "i, 1";
+  "k, 1"; "o, 1"; "p, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'q'; 'd'; 'y'; 'e'; 'h'|] - Checksum: qdyeh 
+ 
+Room: aietsrmdih-hci-vigimzmrk-568[imhra] - Sorted parts: [|"i, 5"; "m, 3"; "h, 2"; "r, 2"; "a, 1"; "c, 1"; "d, 1"; "e, 1"; "g, 1"; "k, 1";
+  "s, 1"; "t, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'i'; 'm'; 'h'; 'r'; 'a'|] - Checksum: imhra 
+ 
+Room: zilqwikbqdm-lgm-xczkpiaqvo-356[iqklm] - Sorted parts: [|"i, 3"; "q, 3"; "k, 2"; "l, 2"; "m, 2"; "z, 2"; "a, 1"; "b, 1"; "c, 1"; "d, 1";
+  "g, 1"; "o, 1"; "p, 1"; "v, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'i'; 'q'; 'k'; 'l'; 'm'|] - Checksum: iqklm 
+ 
+Room: zvyvgnel-tenqr-pubpbyngr-npdhvfvgvba-533[vnbgp] - Sorted parts: [|"v, 5"; "n, 4"; "b, 3"; "g, 3"; "p, 3"; "e, 2"; "r, 2"; "y, 2"; "u, 1"; "t, 1";
+  "a, 1"; "l, 1"; "h, 1"; "f, 1"; "d, 1"; "q, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'n'; 'b'; 'g'; 'p'|] - Checksum: vnbgp 
+ 
+Room: mrxivrexmsrep-jpsaiv-irkmriivmrk-958[rimve] - Sorted parts: [|"r, 6"; "i, 5"; "m, 4"; "v, 3"; "e, 2"; "k, 2"; "p, 2"; "s, 2"; "x, 2"; "a, 1";
+  "j, 1"|] - ToBeChecked: [|'r'; 'i'; 'm'; 'v'; 'e'|] - Checksum: rimve 
+ 
+Room: cebwrpgvyr-pnaql-znantrzrag-117[rangp] - Sorted parts: [|"r, 4"; "a, 3"; "n, 3"; "g, 2"; "p, 2"; "z, 2"; "b, 1"; "c, 1"; "e, 1"; "l, 1";
+  "q, 1"; "t, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'r'; 'a'; 'n'; 'g'; 'p'|] - Checksum: rangp 
+ 
+Room: qfmcusbwq-qvcqczohs-obozmgwg-766[qcobg] - Sorted parts: [|"q, 4"; "c, 3"; "o, 3"; "b, 2"; "g, 2"; "m, 2"; "s, 2"; "w, 2"; "z, 2"; "f, 1";
+  "h, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'q'; 'c'; 'o'; 'b'; 'g'|] - Checksum: qcobg 
+ 
+Room: rflsjynh-hmthtqfyj-zxjw-yjxynsl-593[jyhfl] - Sorted parts: [|"j, 4"; "y, 4"; "h, 3"; "f, 2"; "l, 2"; "n, 2"; "s, 2"; "t, 2"; "x, 2"; "m, 1";
+  "q, 1"; "r, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'y'; 'h'; 'f'; 'l'|] - Checksum: jyhfl 
+ 
+Room: pdjqhwlf-fdqgb-frdwlqj-vwrudjh-699[dfjqw] - Sorted parts: [|"d, 4"; "f, 3"; "j, 3"; "q, 3"; "w, 3"; "h, 2"; "l, 2"; "r, 2"; "b, 1"; "g, 1";
+  "p, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'d'; 'f'; 'j'; 'q'; 'w'|] - Checksum: dfjqw 
+ 
+Room: slqryzjc-zsllw-yaosgqgrgml-210[lgsqr] - Sorted parts: [|"l, 4"; "g, 3"; "s, 3"; "q, 2"; "r, 2"; "y, 2"; "z, 2"; "a, 1"; "c, 1"; "j, 1";
+  "m, 1"; "o, 1"; "w, 1"|] - ToBeChecked: [|'l'; 'g'; 's'; 'q'; 'r'|] - Checksum: lgsqr 
+ 
+Room: bkwzkqsxq-oqq-vyqscdsmc-718[qsckb] - Sorted parts: [|"q, 5"; "s, 3"; "c, 2"; "k, 2"; "b, 1"; "d, 1"; "m, 1"; "o, 1"; "v, 1"; "w, 1";
+  "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'q'; 's'; 'c'; 'k'; 'b'|] - Checksum: qsckb 
+ 
+Room: lsyrkjkbnyec-oqq-vklybkdybi-224[kyblq] - Sorted parts: [|"k, 4"; "y, 4"; "b, 3"; "l, 2"; "q, 2"; "c, 1"; "d, 1"; "e, 1"; "i, 1"; "j, 1";
+  "n, 1"; "o, 1"; "r, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'k'; 'y'; 'b'; 'l'; 'q'|] - Checksum: kyblq 
+ 
+Room: vkppo-rqiauj-skijecuh-iuhlysu-530[uihjk] - Sorted parts: [|"u, 4"; "i, 3"; "h, 2"; "j, 2"; "k, 2"; "p, 2"; "s, 2"; "a, 1"; "c, 1"; "e, 1";
+  "l, 1"; "o, 1"; "q, 1"; "r, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'u'; 'i'; 'h'; 'j'; 'k'|] - Checksum: uihjk 
+ 
+Room: gsvvswmzi-hci-viwievgl-984[ivgsw] - Sorted parts: [|"i, 4"; "v, 4"; "g, 2"; "s, 2"; "w, 2"; "c, 1"; "e, 1"; "h, 1"; "l, 1"; "m, 1";
+  "z, 1"|] - ToBeChecked: [|'i'; 'v'; 'g'; 's'; 'w'|] - Checksum: ivgsw 
+ 
+Room: ftzgxmbv-vahvhetmx-vnlmhfxk-lxkobvx-345[vxhmb] - Sorted parts: [|"v, 5"; "x, 5"; "h, 3"; "m, 3"; "b, 2"; "f, 2"; "k, 2"; "l, 2"; "t, 2"; "a, 1";
+  "e, 1"; "g, 1"; "n, 1"; "o, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'x'; 'h'; 'm'; 'b'|] - Checksum: vxhmb 
+ 
+Room: eqttqukxg-hnqygt-rwtejcukpi-882[tqegk] - Sorted parts: [|"t, 4"; "q, 3"; "e, 2"; "g, 2"; "k, 2"; "u, 2"; "c, 1"; "h, 1"; "i, 1"; "j, 1";
+  "n, 1"; "p, 1"; "r, 1"; "w, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'q'; 'e'; 'g'; 'k'|] - Checksum: tqegk 
+ 
+Room: ygcrqpkbgf-gii-rwtejcukpi-674[gickp] - Sorted parts: [|"g, 3"; "i, 3"; "c, 2"; "k, 2"; "p, 2"; "r, 2"; "b, 1"; "e, 1"; "f, 1"; "j, 1";
+  "q, 1"; "t, 1"; "u, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'g'; 'i'; 'c'; 'k'; 'p'|] - Checksum: gickp 
+ 
+Room: ibghopzs-pogysh-qcbhowbasbh-558[bhosg] - Sorted parts: [|"b, 4"; "h, 4"; "o, 3"; "s, 3"; "g, 2"; "p, 2"; "a, 1"; "c, 1"; "i, 1"; "q, 1";
+  "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'h'; 'o'; 's'; 'g'|] - Checksum: bhosg 
+ 
+Room: vjpwncrl-ljwmh-mnbrpw-277[wjlmn] - Sorted parts: [|"w, 3"; "j, 2"; "l, 2"; "m, 2"; "n, 2"; "p, 2"; "r, 2"; "b, 1"; "c, 1"; "h, 1";
+  "v, 1"|] - ToBeChecked: [|'w'; 'j'; 'l'; 'm'; 'n'|] - Checksum: wjlmn 
+ 
+Room: ajyqqgdgcb-aylbw-amyrgle-pcacgtgle-522[gacly] - Sorted parts: [|"g, 5"; "a, 4"; "c, 3"; "l, 3"; "y, 3"; "b, 2"; "e, 2"; "q, 2"; "d, 1"; "j, 1";
+  "m, 1"; "p, 1"; "r, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'g'; 'a'; 'c'; 'l'; 'y'|] - Checksum: gacly 
+ 
+Room: zixppfcfba-zxkav-abpfdk-835[afpbk] - Sorted parts: [|"a, 3"; "f, 3"; "p, 3"; "b, 2"; "k, 2"; "x, 2"; "z, 2"; "c, 1"; "d, 1"; "i, 1";
+  "v, 1"|] - ToBeChecked: [|'a'; 'f'; 'p'; 'b'; 'k'|] - Checksum: afpbk 
+ 
+Room: gzefmnxq-oaddaeuhq-nmewqf-oazfmuzyqzf-924[fqzae] - Sorted parts: [|"f, 4"; "q, 4"; "z, 4"; "a, 3"; "e, 3"; "m, 3"; "d, 2"; "n, 2"; "o, 2"; "u, 2";
+  "g, 1"; "h, 1"; "w, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'f'; 'q'; 'z'; 'a'; 'e'|] - Checksum: fqzae 
+ 
+Room: drxevkzt-sleep-glityrjzex-841[elrtx] - Sorted parts: [|"e, 4"; "l, 2"; "r, 2"; "t, 2"; "x, 2"; "z, 2"; "d, 1"; "g, 1"; "i, 1"; "j, 1";
+  "k, 1"; "p, 1"; "s, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'e'; 'l'; 'r'; 't'; 'x'|] - Checksum: elrtx 
+ 
+Room: lugjuacha-dyffsvyuh-omyl-nymncha-578[yahuc] - Sorted parts: [|"y, 4"; "a, 3"; "h, 3"; "u, 3"; "c, 2"; "f, 2"; "l, 2"; "m, 2"; "n, 2"; "d, 1";
+  "g, 1"; "j, 1"; "o, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'y'; 'a'; 'h'; 'u'; 'c'|] - Checksum: yahuc 
+ 
+Room: tpspahyf-nyhkl-jovjvshal-aljouvsvnf-175[vahjl] - Sorted parts: [|"v, 4"; "a, 3"; "h, 3"; "j, 3"; "l, 3"; "s, 3"; "f, 2"; "n, 2"; "o, 2"; "p, 2";
+  "y, 2"; "k, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'v'; 'a'; 'h'; 'j'; 'l'|] - Checksum: vahjl 
+ 
+Room: htwwtxnaj-rnqnyfwd-lwfij-jll-wjfhvznxnynts-567[nwjfl] - Sorted parts: [|"n, 6"; "w, 5"; "j, 4"; "f, 3"; "l, 3"; "t, 3"; "x, 2"; "h, 2"; "y, 2"; "a, 1";
+  "v, 1"; "q, 1"; "r, 1"; "i, 1"; "d, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'n'; 'w'; 'j'; 'f'; 'l'|] - Checksum: nwjfl 
+ 
+Room: tipfxvezt-avccpsvre-ivjvrity-503[vitce] - Sorted parts: [|"v, 5"; "i, 3"; "t, 3"; "c, 2"; "e, 2"; "p, 2"; "r, 2"; "a, 1"; "f, 1"; "j, 1";
+  "s, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'i'; 't'; 'c'; 'e'|] - Checksum: vitce 
+ 
+Room: myvybpev-bkllsd-yzobkdsyxc-198[ybdkl] - Sorted parts: [|"y, 4"; "b, 3"; "d, 2"; "k, 2"; "l, 2"; "s, 2"; "v, 2"; "c, 1"; "e, 1"; "m, 1";
+  "o, 1"; "p, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'y'; 'b'; 'd'; 'k'; 'l'|] - Checksum: ybdkl 
+ 
+Room: jshzzpmplk-lnn-aljouvsvnf-175[lnjps] - Sorted parts: [|"l, 3"; "n, 3"; "j, 2"; "p, 2"; "s, 2"; "v, 2"; "z, 2"; "a, 1"; "f, 1"; "h, 1";
+  "k, 1"; "m, 1"; "o, 1"; "u, 1"|] - ToBeChecked: [|'l'; 'n'; 'j'; 'p'; 's'|] - Checksum: lnjps 
+ 
+Room: jxdkbqfz-zlilocri-pzxsbkdbo-erkq-zlkqxfkjbkq-679[kbqzl] - Sorted parts: [|"k, 6"; "b, 4"; "q, 4"; "z, 4"; "l, 3"; "x, 3"; "d, 2"; "f, 2"; "i, 2"; "j, 2";
+  "o, 2"; "r, 2"; "c, 1"; "e, 1"; "p, 1"; "s, 1"|] - ToBeChecked: [|'k'; 'b'; 'q'; 'z'; 'l'|] - Checksum: kbqzl 
+ 
+Room: irgyyolokj-hatte-xkikobotm-488[oktiy] - Sorted parts: [|"o, 4"; "k, 3"; "t, 3"; "i, 2"; "y, 2"; "a, 1"; "b, 1"; "e, 1"; "g, 1"; "h, 1";
+  "j, 1"; "l, 1"; "m, 1"; "r, 1"; "x, 1"|] - ToBeChecked: [|'o'; 'k'; 't'; 'i'; 'y'|] - Checksum: oktiy 
+ 
+Room: buzahisl-jhukf-zavyhnl-123[haluz] - Sorted parts: [|"h, 3"; "a, 2"; "l, 2"; "u, 2"; "z, 2"; "b, 1"; "f, 1"; "i, 1"; "j, 1"; "k, 1";
+  "n, 1"; "s, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'a'; 'l'; 'u'; 'z'|] - Checksum: haluz 
+ 
+Room: vhehkyne-utldxm-kxtvjnblbmbhg-293[bhekl] - Sorted parts: [|"b, 3"; "h, 3"; "e, 2"; "k, 2"; "l, 2"; "m, 2"; "n, 2"; "t, 2"; "v, 2"; "x, 2";
+  "d, 1"; "g, 1"; "j, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'h'; 'e'; 'k'; 'l'|] - Checksum: bhekl 
+ 
+Room: fmsledevhsyw-gerhc-gsexmrk-vieguymwmxmsr-282[emsgr] - Sorted parts: [|"e, 5"; "m, 5"; "s, 4"; "g, 3"; "r, 3"; "y, 2"; "w, 2"; "v, 2"; "h, 2"; "x, 2";
+  "u, 1"; "l, 1"; "i, 1"; "f, 1"; "d, 1"; "k, 1"; "c, 1"|] - ToBeChecked: [|'e'; 'm'; 's'; 'g'; 'r'|] - Checksum: emsgr 
+ 
+Room: xfbqpojafe-cbtlfu-tbmft-311[fbtac] - Sorted parts: [|"f, 4"; "b, 3"; "t, 3"; "a, 1"; "c, 1"; "e, 1"; "j, 1"; "l, 1"; "m, 1"; "o, 1";
+  "p, 1"; "q, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'f'; 'b'; 't'; 'a'; 'c'|] - Checksum: fbtac 
+ 
+Room: zlkprjbo-doxab-mixpqfz-doxpp-obzbfsfkd-601[bopdf] - Sorted parts: [|"b, 4"; "o, 4"; "p, 4"; "d, 3"; "f, 3"; "x, 3"; "z, 3"; "k, 2"; "a, 1"; "i, 1";
+  "j, 1"; "l, 1"; "m, 1"; "q, 1"; "r, 1"; "s, 1"|] - ToBeChecked: [|'b'; 'o'; 'p'; 'd'; 'f'|] - Checksum: bopdf 
+ 
+Room: hjgbwuladw-usfvq-ghwjslagfk-918[gwafh] - Sorted parts: [|"g, 3"; "w, 3"; "a, 2"; "f, 2"; "h, 2"; "j, 2"; "l, 2"; "s, 2"; "u, 2"; "b, 1";
+  "d, 1"; "k, 1"; "q, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'w'; 'a'; 'f'; 'h'|] - Checksum: gwafh 
+ 
+Room: pbeebfvir-pubpbyngr-fgbentr-221[beprf] - Sorted parts: [|"b, 5"; "e, 3"; "p, 3"; "r, 3"; "f, 2"; "g, 2"; "n, 2"; "i, 1"; "t, 1"; "u, 1";
+  "v, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'e'; 'p'; 'r'; 'f'|] - Checksum: beprf 
+ 
+Room: ujqgywfau-usfvq-ogjckzgh-164[gufjq] - Sorted parts: [|"g, 3"; "u, 3"; "f, 2"; "j, 2"; "q, 2"; "a, 1"; "c, 1"; "h, 1"; "k, 1"; "o, 1";
+  "s, 1"; "v, 1"; "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'g'; 'u'; 'f'; 'j'; 'q'|] - Checksum: gufjq 
+ 
+Room: fkqbokxqflkxi-bdd-pqloxdb-497[bdkqx] - Sorted parts: [|"b, 3"; "d, 3"; "k, 3"; "q, 3"; "x, 3"; "f, 2"; "l, 2"; "o, 2"; "i, 1"; "p, 1"|] - ToBeChecked: [|'b'; 'd'; 'k'; 'q'; 'x'|] - Checksum: bdkqx 
+ 
+Room: oxaflxzqfsb-gbiivybxk-obzbfsfkd-601[bfxik] - Sorted parts: [|"b, 5"; "f, 4"; "x, 3"; "i, 2"; "k, 2"; "o, 2"; "s, 2"; "z, 2"; "a, 1"; "d, 1";
+  "g, 1"; "l, 1"; "q, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'f'; 'x'; 'i'; 'k'|] - Checksum: bfxik 
+ 
+Room: gsvvswmzi-gerhc-gsexmrk-hiwmkr-594[gmrse] - Sorted parts: [|"g, 3"; "m, 3"; "r, 3"; "s, 3"; "e, 2"; "h, 2"; "i, 2"; "k, 2"; "v, 2"; "w, 2";
+  "c, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'g'; 'm'; 'r'; 's'; 'e'|] - Checksum: gmrse 
+ 
+Room: hdgdovmt-bmvyz-xjinphzm-bmvyz-zbb-pnzm-oznodib-109[zbmdn] - Sorted parts: [|"z, 6"; "b, 5"; "m, 5"; "d, 3"; "n, 3"; "o, 3"; "v, 3"; "h, 2"; "i, 2"; "p, 2";
+  "y, 2"; "g, 1"; "j, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'z'; 'b'; 'm'; 'd'; 'n'|] - Checksum: zbmdn 
+ 
+Room: hdgdovmt-bmvyz-agjrzm-vivgtndn-369[vdgmn] - Sorted parts: [|"v, 4"; "d, 3"; "g, 3"; "m, 3"; "n, 2"; "t, 2"; "z, 2"; "a, 1"; "b, 1"; "h, 1";
+  "i, 1"; "j, 1"; "o, 1"; "r, 1"; "y, 1"|] - ToBeChecked: [|'v'; 'd'; 'g'; 'm'; 'n'|] - Checksum: vdgmn 
+ 
+Room: rkpqxyib-zelzlixqb-obxznrfpfqflk-835[bflqx] - Sorted parts: [|"b, 3"; "f, 3"; "l, 3"; "q, 3"; "x, 3"; "z, 3"; "i, 2"; "k, 2"; "p, 2"; "r, 2";
+  "e, 1"; "n, 1"; "o, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'f'; 'l'; 'q'; 'x'|] - Checksum: bflqx 
+ 
+Room: aczupnetwp-awldetn-rcldd-lnbftdtetzy-483[tdeln] - Sorted parts: [|"t, 5"; "d, 4"; "e, 3"; "l, 3"; "n, 3"; "a, 2"; "c, 2"; "p, 2"; "w, 2"; "z, 2";
+  "b, 1"; "f, 1"; "r, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'t'; 'd'; 'e'; 'l'; 'n'|] - Checksum: tdeln 
+ 
+Room: gbc-frperg-pnaql-znantrzrag-637[ragnp] - Sorted parts: [|"r, 4"; "a, 3"; "g, 3"; "n, 3"; "p, 2"; "z, 2"; "b, 1"; "c, 1"; "e, 1"; "f, 1";
+  "l, 1"; "q, 1"; "t, 1"|] - ToBeChecked: [|'r'; 'a'; 'g'; 'n'; 'p'|] - Checksum: ragnp 
+ 
+Room: ugjjgkanw-kusnwfywj-zmfl-mkwj-lwklafy-918[wjkfl] - Sorted parts: [|"w, 5"; "j, 4"; "k, 4"; "f, 3"; "l, 3"; "a, 2"; "g, 2"; "m, 2"; "n, 2"; "u, 2";
+  "y, 2"; "s, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'j'; 'k'; 'f'; 'l'|] - Checksum: wjkfl 
+ 
+Room: pbafhzre-tenqr-qlr-znantrzrag-481[ranze] - Sorted parts: [|"r, 5"; "a, 3"; "n, 3"; "z, 3"; "e, 2"; "q, 2"; "t, 2"; "b, 1"; "f, 1"; "g, 1";
+  "h, 1"; "l, 1"; "p, 1"|] - ToBeChecked: [|'r'; 'a'; 'n'; 'z'; 'e'|] - Checksum: ranze 
+ 
+Room: wpuvcdng-ecpfa-vgejpqnqia-154[paceg] - Sorted parts: [|"p, 3"; "a, 2"; "c, 2"; "e, 2"; "g, 2"; "n, 2"; "q, 2"; "v, 2"; "d, 1"; "f, 1";
+  "i, 1"; "j, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'p'; 'a'; 'c'; 'e'; 'g'|] - Checksum: paceg 
+ 
+Room: mhi-lxvkxm-unggr-etuhktmhkr-605[hkmgr] - Sorted parts: [|"h, 3"; "k, 3"; "m, 3"; "g, 2"; "r, 2"; "t, 2"; "u, 2"; "x, 2"; "e, 1"; "i, 1";
+  "l, 1"; "n, 1"; "v, 1"|] - ToBeChecked: [|'h'; 'k'; 'm'; 'g'; 'r'|] - Checksum: hkmgr 
+ 
+Room: bnqqnrhud-atmmx-sqzhmhmf-157[mhqna] - Sorted parts: [|"m, 4"; "h, 3"; "q, 3"; "n, 2"; "a, 1"; "b, 1"; "d, 1"; "f, 1"; "r, 1"; "s, 1";
+  "t, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'m'; 'h'; 'q'; 'n'; 'a'|] - Checksum: mhqna 
+ 
+Room: vetllbybxw-vahvhetmx-hixktmbhgl-891[hbltv] - Sorted parts: [|"h, 4"; "b, 3"; "l, 3"; "t, 3"; "v, 3"; "x, 3"; "e, 2"; "m, 2"; "a, 1"; "g, 1";
+  "i, 1"; "k, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'b'; 'l'; 't'; 'v'|] - Checksum: hbltv 
+ 
+Room: dpssptjwf-gvaaz-ezf-fohjoffsjoh-597[fjosa] - Sorted parts: [|"f, 5"; "j, 3"; "o, 3"; "s, 3"; "a, 2"; "h, 2"; "p, 2"; "z, 2"; "d, 1"; "e, 1";
+  "g, 1"; "t, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'f'; 'j'; 'o'; 's'; 'a'|] - Checksum: fjosa 
+ 
+Room: jlidywncfy-xsy-xymcah-110[ycxad] - Sorted parts: [|"y, 4"; "c, 2"; "x, 2"; "a, 1"; "d, 1"; "f, 1"; "h, 1"; "i, 1"; "j, 1"; "l, 1";
+  "m, 1"; "n, 1"; "s, 1"; "w, 1"|] - ToBeChecked: [|'y'; 'c'; 'x'; 'a'; 'd'|] - Checksum: ycxad 
+ 
+Room: ktiaaqnqml-kivlg-wxmzibqwva-330[aiqkl] - Sorted parts: [|"a, 3"; "i, 3"; "q, 3"; "k, 2"; "l, 2"; "m, 2"; "v, 2"; "w, 2"; "b, 1"; "g, 1";
+  "n, 1"; "t, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'i'; 'q'; 'k'; 'l'|] - Checksum: aiqkl 
+ 
+Room: etaqigpke-rncuvke-itcuu-fgukip-934[ueikc] - Sorted parts: [|"u, 4"; "e, 3"; "i, 3"; "k, 3"; "c, 2"; "g, 2"; "p, 2"; "t, 2"; "a, 1"; "f, 1";
+  "n, 1"; "q, 1"; "r, 1"; "v, 1"|] - ToBeChecked: [|'u'; 'e'; 'i'; 'k'; 'c'|] - Checksum: ueikc 
+ 
+Room: ksodcbwnsr-qvcqczohs-oqeiwgwhwcb-922[cwoqs] - Sorted parts: [|"c, 4"; "w, 4"; "o, 3"; "q, 3"; "s, 3"; "b, 2"; "h, 2"; "d, 1"; "e, 1"; "g, 1";
+  "i, 1"; "k, 1"; "n, 1"; "r, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'w'; 'o'; 'q'; 's'|] - Checksum: cwoqs 
+ 
+Room: zlkprjbo-doxab-oxyyfq-rpbo-qbpqfkd-991[bopqd] - Sorted parts: [|"b, 4"; "o, 4"; "p, 3"; "q, 3"; "d, 2"; "f, 2"; "k, 2"; "r, 2"; "x, 2"; "y, 2";
+  "a, 1"; "j, 1"; "l, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'o'; 'p'; 'q'; 'd'|] - Checksum: bopqd 
+ 
+Room: nsyjwsfyntsfq-idj-hzxytrjw-xjwanhj-463[jnswy] - Sorted parts: [|"j, 5"; "n, 3"; "s, 3"; "w, 3"; "y, 3"; "f, 2"; "h, 2"; "t, 2"; "x, 2"; "a, 1";
+  "d, 1"; "i, 1"; "q, 1"; "r, 1"; "z, 1"|] - ToBeChecked: [|'j'; 'n'; 's'; 'w'; 'y'|] - Checksum: jnswy 
+ 
+Room: cxy-bnlanc-ljwmh-lxjcrwp-vjatncrwp-173[cjlnw] - Sorted parts: [|"c, 4"; "j, 3"; "l, 3"; "n, 3"; "w, 3"; "a, 2"; "p, 2"; "r, 2"; "x, 2"; "b, 1";
+  "h, 1"; "m, 1"; "t, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'j'; 'l'; 'n'; 'w'|] - Checksum: cjlnw 
+ 
+Room: wsvsdkbi-qbkno-lexxi-wkbuodsxq-172[bksxd] - Sorted parts: [|"b, 3"; "k, 3"; "s, 3"; "x, 3"; "d, 2"; "i, 2"; "o, 2"; "q, 2"; "w, 2"; "e, 1";
+  "l, 1"; "n, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'b'; 'k'; 's'; 'x'; 'd'|] - Checksum: bksxd 
+ 
+Room: clotzlnetgp-awldetn-rcldd-ecltytyr-327[ltcde] - Sorted parts: [|"l, 5"; "t, 5"; "c, 3"; "d, 3"; "e, 3"; "n, 2"; "r, 2"; "y, 2"; "a, 1"; "g, 1";
+  "o, 1"; "p, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'l'; 't'; 'c'; 'd'; 'e'|] - Checksum: ltcde 
+ 
+Room: qspkfdujmf-dboez-dpbujoh-ufdiopmphz-571[dpfou] - Sorted parts: [|"d, 4"; "p, 4"; "f, 3"; "o, 3"; "u, 3"; "b, 2"; "h, 2"; "j, 2"; "m, 2"; "z, 2";
+  "e, 1"; "i, 1"; "k, 1"; "q, 1"; "s, 1"|] - ToBeChecked: [|'d'; 'p'; 'f'; 'o'; 'u'|] - Checksum: dpfou 
+ 
+Room: bnmrtldq-fqzcd-bgnbnkzsd-rsnqzfd-599[dnbqz] - Sorted parts: [|"d, 4"; "n, 4"; "b, 3"; "q, 3"; "z, 3"; "f, 2"; "r, 2"; "s, 2"; "c, 1"; "g, 1";
+  "k, 1"; "l, 1"; "m, 1"; "t, 1"|] - ToBeChecked: [|'d'; 'n'; 'b'; 'q'; 'z'|] - Checksum: dnbqz 
+ 
+Room: tbxmlkfwba-ciltbo-abmilvjbkq-549[blaik] - Sorted parts: [|"b, 5"; "l, 3"; "a, 2"; "i, 2"; "k, 2"; "m, 2"; "t, 2"; "c, 1"; "f, 1"; "j, 1";
+  "o, 1"; "q, 1"; "v, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'b'; 'l'; 'a'; 'i'; 'k'|] - Checksum: blaik 
+ 
+Room: ujoon-hrpktcvtg-wjci-sthxvc-115[cthjo] - Sorted parts: [|"c, 3"; "t, 3"; "h, 2"; "j, 2"; "o, 2"; "v, 2"; "g, 1"; "i, 1"; "k, 1"; "n, 1";
+  "p, 1"; "r, 1"; "s, 1"; "u, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'c'; 't'; 'h'; 'j'; 'o'|] - Checksum: cthjo 
+ 
+Room: cybyjqho-whqtu-sxesebqju-ijehqwu-998[qehju] - Sorted parts: [|"q, 4"; "e, 3"; "h, 3"; "j, 3"; "u, 3"; "b, 2"; "s, 2"; "w, 2"; "y, 2"; "c, 1";
+  "i, 1"; "o, 1"; "t, 1"; "x, 1"|] - ToBeChecked: [|'q'; 'e'; 'h'; 'j'; 'u'|] - Checksum: qehju 
+ 
+Room: mvydjvxodqz-kgvnodx-bmvnn-mzvxlpdndodji-369[dvnmo] - Sorted parts: [|"d, 6"; "v, 5"; "n, 4"; "m, 3"; "o, 3"; "x, 3"; "j, 2"; "z, 2"; "b, 1"; "g, 1";
+  "i, 1"; "k, 1"; "l, 1"; "p, 1"; "q, 1"; "y, 1"|] - ToBeChecked: [|'d'; 'v'; 'n'; 'm'; 'o'|] - Checksum: dvnmo 
+ 
+Room: rwcnawjcrxwju-ajkkrc-uxprbcrlb-511[rcjwa] - Sorted parts: [|"r, 5"; "c, 4"; "j, 3"; "w, 3"; "a, 2"; "b, 2"; "k, 2"; "u, 2"; "x, 2"; "l, 1";
+  "n, 1"; "p, 1"|] - ToBeChecked: [|'r'; 'c'; 'j'; 'w'; 'a'|] - Checksum: rcjwa 
+ 
+Room: vkrhzxgbv-ietlmbv-zktll-hixktmbhgl-839[lbhkt] - Sorted parts: [|"l, 4"; "b, 3"; "h, 3"; "k, 3"; "t, 3"; "v, 3"; "g, 2"; "i, 2"; "m, 2"; "x, 2";
+  "z, 2"; "e, 1"; "r, 1"|] - ToBeChecked: [|'l'; 'b'; 'h'; 'k'; 't'|] - Checksum: lbhkt 
+ 
+Room: drxevkzt-irsszk-crsfirkfip-971[riksf] - Sorted parts: [|"r, 4"; "i, 3"; "k, 3"; "s, 3"; "f, 2"; "z, 2"; "c, 1"; "d, 1"; "e, 1"; "p, 1";
+  "t, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'r'; 'i'; 'k'; 's'; 'f'|] - Checksum: riksf 
+ 
+Room: enzcntvat-enqvbnpgvir-enoovg-freivprf-403[nverf] - Sorted parts: [|"n, 5"; "v, 5"; "e, 4"; "r, 3"; "f, 2"; "g, 2"; "i, 2"; "o, 2"; "p, 2"; "t, 2";
+  "a, 1"; "b, 1"; "c, 1"; "q, 1"; "z, 1"|] - ToBeChecked: [|'n'; 'v'; 'e'; 'r'; 'f'|] - Checksum: nverf 
+ 
+Room: iehepwnu-cnwza-ydkykhwpa-qoan-paopejc-888[apenw] - Sorted parts: [|"a, 4"; "p, 4"; "e, 3"; "n, 3"; "w, 3"; "c, 2"; "h, 2"; "k, 2"; "o, 2"; "y, 2";
+  "d, 1"; "i, 1"; "j, 1"; "q, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'p'; 'e'; 'n'; 'w'|] - Checksum: apenw 
+ 
+Room: luxciuwncpy-wuhxs-wiuncha-xyjfisgyhn-812[uchin] - Sorted parts: [|"u, 4"; "c, 3"; "h, 3"; "i, 3"; "n, 3"; "w, 3"; "x, 3"; "y, 3"; "s, 2"; "a, 1";
+  "f, 1"; "g, 1"; "j, 1"; "l, 1"; "p, 1"|] - ToBeChecked: [|'u'; 'c'; 'h'; 'i'; 'n'|] - Checksum: uchin 
+ 
+Room: houngfgxjuay-yigbktmkx-natz-ktmotkkxotm-358[ktgmo] - Sorted parts: [|"k, 5"; "t, 5"; "g, 3"; "m, 3"; "o, 3"; "x, 3"; "a, 2"; "n, 2"; "u, 2"; "y, 2";
+  "b, 1"; "f, 1"; "h, 1"; "i, 1"; "j, 1"; "z, 1"|] - ToBeChecked: [|'k'; 't'; 'g'; 'm'; 'o'|] - Checksum: ktgmo 
+ 
+Room: qzlozfhmf-bgnbnkzsd-qdzbpthrhshnm-911[hzbnd] - Sorted parts: [|"h, 4"; "z, 4"; "b, 3"; "n, 3"; "d, 2"; "f, 2"; "m, 2"; "q, 2"; "s, 2"; "g, 1";
+  "k, 1"; "l, 1"; "o, 1"; "p, 1"; "r, 1"; "t, 1"|] - ToBeChecked: [|'h'; 'z'; 'b'; 'n'; 'd'|] - Checksum: hzbnd 
+ 
+Room: ftzgxmbv-xzz-wxitkmfxgm-163[xmzfg] - Sorted parts: [|"x, 4"; "m, 3"; "z, 3"; "f, 2"; "g, 2"; "t, 2"; "b, 1"; "i, 1"; "k, 1"; "v, 1";
+  "w, 1"|] - ToBeChecked: [|'x'; 'm'; 'z'; 'f'; 'g'|] - Checksum: xmzfg 
+ 
+Room: ujqgywfau-wyy-ksdwk-970[wykua] - Sorted parts: [|"w, 3"; "y, 3"; "k, 2"; "u, 2"; "a, 1"; "d, 1"; "f, 1"; "g, 1"; "j, 1"; "q, 1";
+  "s, 1"|] - ToBeChecked: [|'w'; 'y'; 'k'; 'u'; 'a'|] - Checksum: wykua 
+ 
+Room: nwlddtqtpo-ojp-dezclrp-119[dplot] - Sorted parts: [|"d, 3"; "p, 3"; "l, 2"; "o, 2"; "t, 2"; "c, 1"; "e, 1"; "j, 1"; "n, 1"; "q, 1";
+  "r, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'p'; 'l'; 'o'; 't'|] - Checksum: dplot 
+ 
+Room: ugfkmewj-yjsvw-xdgowj-jwuwanafy-918[wjafg] - Sorted parts: [|"w, 5"; "j, 4"; "a, 2"; "f, 2"; "g, 2"; "u, 2"; "y, 2"; "d, 1"; "e, 1"; "k, 1";
+  "m, 1"; "n, 1"; "o, 1"; "s, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'w'; 'j'; 'a'; 'f'; 'g'|] - Checksum: wjafg 
+ 
+Room: ygcrqpkbgf-hnqygt-vtckpkpi-310[gkpcq] - Sorted parts: [|"g, 3"; "k, 3"; "p, 3"; "c, 2"; "q, 2"; "t, 2"; "y, 2"; "b, 1"; "f, 1"; "h, 1";
+  "i, 1"; "n, 1"; "r, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'k'; 'p'; 'c'; 'q'|] - Checksum: gkpcq 
+ 
+Room: crwwv-zxkav-zlxqfkd-abmilvjbkq-809[kvabl] - Sorted parts: [|"k, 3"; "v, 3"; "a, 2"; "b, 2"; "l, 2"; "q, 2"; "w, 2"; "x, 2"; "z, 2"; "c, 1";
+  "d, 1"; "f, 1"; "i, 1"; "j, 1"; "m, 1"; "r, 1"|] - ToBeChecked: [|'k'; 'v'; 'a'; 'b'; 'l'|] - Checksum: kvabl 
+ 
+Room: hjgbwuladw-tskcwl-vwkayf-632[waklb] - Sorted parts: [|"w, 4"; "a, 2"; "k, 2"; "l, 2"; "b, 1"; "c, 1"; "d, 1"; "f, 1"; "g, 1"; "h, 1";
+  "j, 1"; "s, 1"; "t, 1"; "u, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'w'; 'a'; 'k'; 'l'; 'b'|] - Checksum: waklb 
+ 
+Room: gifavtkzcv-tyftfcrkv-jrcvj-607[vcftj] - Sorted parts: [|"v, 4"; "c, 3"; "f, 3"; "t, 3"; "j, 2"; "k, 2"; "r, 2"; "a, 1"; "g, 1"; "i, 1";
+  "y, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'c'; 'f'; 't'; 'j'|] - Checksum: vcftj 
+ 
+Room: pejji-mrymyvkdo-ecob-docdsxq-172[docej] - Sorted parts: [|"d, 3"; "o, 3"; "c, 2"; "e, 2"; "j, 2"; "m, 2"; "y, 2"; "b, 1"; "i, 1"; "k, 1";
+  "p, 1"; "q, 1"; "r, 1"; "s, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'d'; 'o'; 'c'; 'e'; 'j'|] - Checksum: docej 
+ 
+Room: tinnm-dzoghwq-ufogg-hfowbwbu-844[gowbf] - Sorted parts: [|"g, 3"; "o, 3"; "w, 3"; "b, 2"; "f, 2"; "h, 2"; "n, 2"; "u, 2"; "d, 1"; "i, 1";
+  "m, 1"; "q, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'g'; 'o'; 'w'; 'b'; 'f'|] - Checksum: gowbf 
+ 
+Room: szfyrqriuflj-upv-tljkfdvi-jvimztv-347[vfijl] - Sorted parts: [|"v, 4"; "f, 3"; "i, 3"; "j, 3"; "l, 2"; "r, 2"; "t, 2"; "u, 2"; "z, 2"; "d, 1";
+  "k, 1"; "m, 1"; "p, 1"; "q, 1"; "s, 1"; "y, 1"|] - ToBeChecked: [|'v'; 'f'; 'i'; 'j'; 'l'|] - Checksum: vfijl 
+ 
+Room: cvabijtm-kwvacumz-ozilm-lgm-mvoqvmmzqvo-382[mvoza] - Sorted parts: [|"m, 7"; "v, 5"; "o, 3"; "z, 3"; "a, 2"; "c, 2"; "i, 2"; "l, 2"; "q, 2"; "b, 1";
+  "g, 1"; "j, 1"; "k, 1"; "t, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'m'; 'v'; 'o'; 'z'; 'a'|] - Checksum: mvoza 
+ 
+Room: forwcoqhwjs-foppwh-gsfjwqsg-454[wfosg] - Sorted parts: [|"w, 4"; "f, 3"; "o, 3"; "s, 3"; "g, 2"; "h, 2"; "j, 2"; "p, 2"; "q, 2"; "c, 1";
+  "r, 1"|] - ToBeChecked: [|'w'; 'f'; 'o'; 's'; 'g'|] - Checksum: wfosg 
+ 
+Room: lejkrscv-jtrmvexvi-ylek-glityrjzex-503[ejlrv] - Sorted parts: [|"e, 4"; "j, 3"; "l, 3"; "r, 3"; "v, 3"; "i, 2"; "k, 2"; "t, 2"; "x, 2"; "y, 2";
+  "c, 1"; "g, 1"; "m, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'j'; 'l'; 'r'; 'v'|] - Checksum: ejlrv 
+ 
+Room: bjfutsneji-jll-qtlnxynhx-333[jlntx] - Sorted parts: [|"j, 3"; "l, 3"; "n, 3"; "t, 2"; "x, 2"; "b, 1"; "e, 1"; "f, 1"; "h, 1"; "i, 1";
+  "q, 1"; "s, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'l'; 'n'; 't'; 'x'|] - Checksum: jlntx 
+ 
+Room: xgvnndadzy-wvnfzo-nzmqdxzn-915[nzdvx] - Sorted parts: [|"n, 5"; "z, 4"; "d, 3"; "v, 2"; "x, 2"; "a, 1"; "f, 1"; "g, 1"; "m, 1"; "o, 1";
+  "q, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'n'; 'z'; 'd'; 'v'; 'x'|] - Checksum: nzdvx 
+ 
+Room: yhwooebeaz-ywjzu-pnwejejc-602[ejwoy] - Sorted parts: [|"e, 4"; "j, 3"; "w, 3"; "o, 2"; "y, 2"; "z, 2"; "a, 1"; "b, 1"; "c, 1"; "h, 1";
+  "n, 1"; "p, 1"; "u, 1"|] - ToBeChecked: [|'e'; 'j'; 'w'; 'o'; 'y'|] - Checksum: ejwoy 
+ 
+Room: gpsxdprixkt-rpcsn-hpath-115[phrst] - Sorted parts: [|"p, 4"; "h, 2"; "r, 2"; "s, 2"; "t, 2"; "x, 2"; "a, 1"; "c, 1"; "d, 1"; "g, 1";
+  "i, 1"; "k, 1"; "n, 1"|] - ToBeChecked: [|'p'; 'h'; 'r'; 's'; 't'|] - Checksum: phrst 
+ 
+Room: tmrszakd-dff-kzanqzsnqx-781[zadfk] - Sorted parts: [|"z, 3"; "a, 2"; "d, 2"; "f, 2"; "k, 2"; "n, 2"; "q, 2"; "s, 2"; "m, 1"; "r, 1";
+  "t, 1"; "x, 1"|] - ToBeChecked: [|'z'; 'a'; 'd'; 'f'; 'k'|] - Checksum: zadfk 
+ 
+Room: gspsvjyp-tpewxmg-kveww-gywxsqiv-wivzmgi-880[wgvip] - Sorted parts: [|"w, 5"; "g, 4"; "v, 4"; "i, 3"; "p, 3"; "s, 3"; "e, 2"; "m, 2"; "x, 2"; "y, 2";
+  "j, 1"; "k, 1"; "q, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'g'; 'v'; 'i'; 'p'|] - Checksum: wgvip 
+ 
+Room: htwwtxnaj-xhfajsljw-mzsy-jslnsjjwnsl-151[jswln] - Sorted parts: [|"j, 6"; "s, 5"; "w, 4"; "l, 3"; "n, 3"; "a, 2"; "h, 2"; "t, 2"; "x, 2"; "f, 1";
+  "m, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'j'; 's'; 'w'; 'l'; 'n'|] - Checksum: jswln 
+ 
+Room: gspsvjyp-gerhc-wivzmgiw-932[gipsv] - Sorted parts: [|"g, 3"; "i, 2"; "p, 2"; "s, 2"; "v, 2"; "w, 2"; "c, 1"; "e, 1"; "h, 1"; "j, 1";
+  "m, 1"; "r, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'g'; 'i'; 'p'; 's'; 'v'|] - Checksum: gipsv 
+ 
+Room: yaxsnlcrun-yujbcrl-pajbb-uxprbcrlb-407[brclu] - Sorted parts: [|"b, 5"; "r, 4"; "c, 3"; "l, 3"; "u, 3"; "a, 2"; "j, 2"; "n, 2"; "p, 2"; "x, 2";
+  "y, 2"; "s, 1"|] - ToBeChecked: [|'b'; 'r'; 'c'; 'l'; 'u'|] - Checksum: brclu 
+ 
+Room: votubcmf-sbccju-fohjoffsjoh-571[focjb] - Sorted parts: [|"f, 4"; "o, 4"; "c, 3"; "j, 3"; "b, 2"; "h, 2"; "s, 2"; "u, 2"; "m, 1"; "t, 1";
+  "v, 1"|] - ToBeChecked: [|'f'; 'o'; 'c'; 'j'; 'b'|] - Checksum: focjb 
+ 
+Room: zixppfcfba-zxkav-obzbfsfkd-549[fbzak] - Sorted parts: [|"f, 4"; "b, 3"; "z, 3"; "a, 2"; "k, 2"; "p, 2"; "x, 2"; "c, 1"; "d, 1"; "i, 1";
+  "o, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'f'; 'b'; 'z'; 'a'; 'k'|] - Checksum: fbzak 
+ 
+Room: gbc-frperg-rtt-grpuabybtl-221[rbgtp] - Sorted parts: [|"r, 4"; "b, 3"; "g, 3"; "t, 3"; "p, 2"; "a, 1"; "c, 1"; "e, 1"; "f, 1"; "l, 1";
+  "u, 1"; "y, 1"|] - ToBeChecked: [|'r'; 'b'; 'g'; 't'; 'p'|] - Checksum: rbgtp 
+ 
+Room: zlilocri-zloolpfsb-gbiivybxk-jxkxdbjbkq-497[bilko] - Sorted parts: [|"b, 5"; "i, 4"; "l, 4"; "k, 3"; "o, 3"; "x, 3"; "j, 2"; "z, 2"; "f, 1"; "g, 1";
+  "c, 1"; "y, 1"; "p, 1"; "q, 1"; "r, 1"; "s, 1"; "v, 1"; "d, 1"|] - ToBeChecked: [|'b'; 'i'; 'l'; 'k'; 'o'|] - Checksum: bilko 
+ 
+Room: kgjgrypw-epybc-zsllw-rcaflmjmew-964[lwceg] - Sorted parts: [|"l, 3"; "w, 3"; "c, 2"; "e, 2"; "g, 2"; "j, 2"; "m, 2"; "p, 2"; "r, 2"; "y, 2";
+  "a, 1"; "b, 1"; "f, 1"; "k, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'w'; 'c'; 'e'; 'g'|] - Checksum: lwceg 
+ 
+Room: amjmpdsj-djmucp-qrmpyec-314[mjpcd] - Sorted parts: [|"m, 4"; "j, 3"; "p, 3"; "c, 2"; "d, 2"; "a, 1"; "e, 1"; "q, 1"; "r, 1"; "s, 1";
+  "u, 1"; "y, 1"|] - ToBeChecked: [|'m'; 'j'; 'p'; 'c'; 'd'|] - Checksum: mjpcd 
+ 
+Room: avw-zljyla-jovjvshal-zlycpjlz-721[ljavz] - Sorted parts: [|"l, 5"; "j, 4"; "a, 3"; "v, 3"; "z, 3"; "y, 2"; "c, 1"; "h, 1"; "o, 1"; "p, 1";
+  "s, 1"; "w, 1"|] - ToBeChecked: [|'l'; 'j'; 'a'; 'v'; 'z'|] - Checksum: ljavz 
+ 
+Room: rdggdhxkt-qjccn-prfjxhxixdc-297[xcdgh] - Sorted parts: [|"x, 4"; "c, 3"; "d, 3"; "g, 2"; "h, 2"; "j, 2"; "r, 2"; "f, 1"; "i, 1"; "k, 1";
+  "n, 1"; "p, 1"; "q, 1"; "t, 1"|] - ToBeChecked: [|'x'; 'c'; 'd'; 'g'; 'h'|] - Checksum: xcdgh 
+ 
+Room: hwdtljsnh-gzssd-knsfshnsl-281[shndl] - Sorted parts: [|"s, 6"; "h, 3"; "n, 3"; "d, 2"; "l, 2"; "f, 1"; "g, 1"; "j, 1"; "k, 1"; "t, 1";
+  "w, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'h'; 'n'; 'd'; 'l'|] - Checksum: shndl 
+ 
+Room: shoewudys-rkddo-husuylydw-166[dsuyh] - Sorted parts: [|"d, 4"; "s, 3"; "u, 3"; "y, 3"; "h, 2"; "o, 2"; "w, 2"; "e, 1"; "k, 1"; "l, 1";
+  "r, 1"|] - ToBeChecked: [|'d'; 's'; 'u'; 'y'; 'h'|] - Checksum: dsuyh 
+ 
+Room: zlilocri-ciltbo-cfkxkzfkd-107[ciklf] - Sorted parts: [|"c, 3"; "i, 3"; "k, 3"; "l, 3"; "f, 2"; "o, 2"; "z, 2"; "b, 1"; "d, 1"; "r, 1";
+  "t, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'i'; 'k'; 'l'; 'f'|] - Checksum: ciklf 
+ 
+Room: qvbmzvibqwvit-ntwemz-zmamizkp-356[mzivb] - Sorted parts: [|"m, 4"; "z, 4"; "i, 3"; "v, 3"; "b, 2"; "q, 2"; "t, 2"; "w, 2"; "a, 1"; "e, 1";
+  "k, 1"; "n, 1"; "p, 1"|] - ToBeChecked: [|'m'; 'z'; 'i'; 'v'; 'b'|] - Checksum: mzivb 
+ 
+Room: ajyqqgdgcb-pyzzgr-bcqgel-470[gqbcy] - Sorted parts: [|"g, 4"; "q, 3"; "b, 2"; "c, 2"; "y, 2"; "z, 2"; "a, 1"; "d, 1"; "e, 1"; "j, 1";
+  "l, 1"; "p, 1"; "r, 1"|] - ToBeChecked: [|'g'; 'q'; 'b'; 'c'; 'y'|] - Checksum: gqbcy 
+ 
+Room: pxtihgbsxw-wrx-etuhktmhkr-709[htxkr] - Sorted parts: [|"h, 3"; "t, 3"; "x, 3"; "k, 2"; "r, 2"; "w, 2"; "b, 1"; "e, 1"; "g, 1"; "i, 1";
+  "m, 1"; "p, 1"; "s, 1"; "u, 1"|] - ToBeChecked: [|'h'; 't'; 'x'; 'k'; 'r'|] - Checksum: htxkr 
+ 
+Room: lxwbdvna-pajmn-ajvyjprwp-ljwmh-lxjcrwp-jwjuhbrb-303[jwpab] - Sorted parts: [|"j, 7"; "w, 5"; "p, 4"; "a, 3"; "b, 3"; "l, 3"; "r, 3"; "h, 2"; "m, 2"; "n, 2";
+  "v, 2"; "x, 2"; "c, 1"; "d, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'w'; 'p'; 'a'; 'b'|] - Checksum: jwpab 
+ 
+Room: tyepcyletzylw-clmmte-pyrtyppctyr-613[ytpce] - Sorted parts: [|"y, 6"; "t, 5"; "p, 4"; "c, 3"; "e, 3"; "l, 3"; "m, 2"; "r, 2"; "w, 1"; "z, 1"|] - ToBeChecked: [|'y'; 't'; 'p'; 'c'; 'e'|] - Checksum: ytpce 
+ 
+Room: gspsvjyp-gerhc-gsexmrk-vigimzmrk-360[gmrse] - Sorted parts: [|"g, 4"; "m, 3"; "r, 3"; "s, 3"; "e, 2"; "i, 2"; "k, 2"; "p, 2"; "v, 2"; "c, 1";
+  "h, 1"; "j, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'g'; 'm'; 'r'; 's'; 'e'|] - Checksum: gmrse 
+ 
+Room: tmrszakd-okzrshb-fqzrr-rghoohmf-599[rhozf] - Sorted parts: [|"r, 5"; "h, 3"; "o, 3"; "z, 3"; "f, 2"; "k, 2"; "m, 2"; "s, 2"; "a, 1"; "b, 1";
+  "d, 1"; "g, 1"; "q, 1"; "t, 1"|] - ToBeChecked: [|'r'; 'h'; 'o'; 'z'; 'f'|] - Checksum: rhozf 
+ 
+Room: atyzghrk-xghhoz-iayzuskx-ykxboik-774[khxyz] - Sorted parts: [|"k, 4"; "h, 3"; "x, 3"; "y, 3"; "z, 3"; "a, 2"; "g, 2"; "i, 2"; "o, 2"; "b, 1";
+  "r, 1"; "s, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'k'; 'h'; 'x'; 'y'; 'z'|] - Checksum: khxyz 
+ 
+Room: bpvctixr-snt-pcpanhxh-167[pchnt] - Sorted parts: [|"p, 3"; "c, 2"; "h, 2"; "n, 2"; "t, 2"; "x, 2"; "a, 1"; "b, 1"; "i, 1"; "r, 1";
+  "s, 1"; "v, 1"|] - ToBeChecked: [|'p'; 'c'; 'h'; 'n'; 't'|] - Checksum: pchnt 
+ 
+Room: bxaxipgn-vgpst-gpsxdprixkt-rwdrdapit-rdcipxcbtci-609[pixdr] - Sorted parts: [|"p, 6"; "i, 5"; "x, 5"; "d, 4"; "r, 4"; "t, 4"; "c, 3"; "g, 3"; "a, 2"; "b, 2";
+  "s, 2"; "k, 1"; "n, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'p'; 'i'; 'x'; 'd'; 'r'|] - Checksum: pixdr 
+ 
+Room: yrwxefpi-fmsledevhsyw-fewoix-erepcwmw-672[ewfim] - Sorted parts: [|"e, 6"; "w, 5"; "f, 3"; "i, 2"; "m, 2"; "p, 2"; "r, 2"; "s, 2"; "x, 2"; "y, 2";
+  "c, 1"; "d, 1"; "h, 1"; "l, 1"; "o, 1"; "v, 1"|] - ToBeChecked: [|'e'; 'w'; 'f'; 'i'; 'm'|] - Checksum: ewfim 
+ 
+Room: jrncbavmrq-cebwrpgvyr-qlr-pbagnvazrag-533[rabgv] - Sorted parts: [|"r, 6"; "a, 4"; "b, 3"; "g, 3"; "v, 3"; "c, 2"; "n, 2"; "p, 2"; "q, 2"; "e, 1";
+  "j, 1"; "l, 1"; "m, 1"; "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'r'; 'a'; 'b'; 'g'; 'v'|] - Checksum: rabgv 
+ 
+Room: iwcjapey-fahhuxawj-naoawnyd-706[awhjn] - Sorted parts: [|"a, 5"; "w, 3"; "h, 2"; "j, 2"; "n, 2"; "y, 2"; "c, 1"; "d, 1"; "e, 1"; "f, 1";
+  "i, 1"; "o, 1"; "p, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'a'; 'w'; 'h'; 'j'; 'n'|] - Checksum: awhjn 
+ 
+Room: houngfgxjuay-jek-ktmotkkxotm-358[kotgj] - Sorted parts: [|"k, 4"; "o, 3"; "t, 3"; "g, 2"; "j, 2"; "m, 2"; "u, 2"; "x, 2"; "a, 1"; "e, 1";
+  "f, 1"; "h, 1"; "n, 1"; "y, 1"|] - ToBeChecked: [|'k'; 'o'; 't'; 'g'; 'j'|] - Checksum: kotgj 
+ 
+Room: dsxxw-aylbw-amyrgle-bcnyprkclr-496[lryab] - Sorted parts: [|"l, 3"; "r, 3"; "y, 3"; "a, 2"; "b, 2"; "c, 2"; "w, 2"; "x, 2"; "d, 1"; "e, 1";
+  "g, 1"; "k, 1"; "m, 1"; "n, 1"; "p, 1"; "s, 1"|] - ToBeChecked: [|'l'; 'r'; 'y'; 'a'; 'b'|] - Checksum: lryab 
+ 
+Room: fnjyxwrinm-lqxlxujcn-uxprbcrlb-433[xlnrb] - Sorted parts: [|"x, 4"; "l, 3"; "n, 3"; "r, 3"; "b, 2"; "c, 2"; "j, 2"; "u, 2"; "f, 1"; "i, 1";
+  "m, 1"; "p, 1"; "q, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'x'; 'l'; 'n'; 'r'; 'b'|] - Checksum: xlnrb 
+ 
+Room: emixwvqhml-kivlg-zmkmqdqvo-824[mqvik] - Sorted parts: [|"m, 4"; "q, 3"; "v, 3"; "i, 2"; "k, 2"; "l, 2"; "d, 1"; "e, 1"; "g, 1"; "h, 1";
+  "o, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'m'; 'q'; 'v'; 'i'; 'k'|] - Checksum: mqvik 
+ 
+Room: ikhcxvmbex-ktuubm-mxvaghehzr-813[hmxbe] - Sorted parts: [|"h, 3"; "m, 3"; "x, 3"; "b, 2"; "e, 2"; "k, 2"; "u, 2"; "v, 2"; "a, 1"; "c, 1";
+  "g, 1"; "i, 1"; "r, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'h'; 'm'; 'x'; 'b'; 'e'|] - Checksum: hmxbe 
+ 
+Room: ucynmlgxcb-kgjgrypw-epybc-zsllw-bctcjmnkclr-470[clbgy] - Sorted parts: [|"c, 6"; "l, 4"; "b, 3"; "g, 3"; "y, 3"; "w, 2"; "r, 2"; "p, 2"; "n, 2"; "k, 2";
+  "j, 2"; "m, 2"; "s, 1"; "t, 1"; "u, 1"; "e, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'l'; 'b'; 'g'; 'y'|] - Checksum: clbgy 
+ 
+Room: gbc-frperg-pynffvsvrq-rtt-fgbentr-533[rfgtb] - Sorted parts: [|"r, 5"; "f, 4"; "g, 3"; "t, 3"; "b, 2"; "e, 2"; "n, 2"; "p, 2"; "v, 2"; "c, 1";
+  "q, 1"; "s, 1"; "y, 1"|] - ToBeChecked: [|'r'; 'f'; 'g'; 't'; 'b'|] - Checksum: rfgtb 
+ 
+Room: hafgnoyr-qlr-erprvivat-949[ravef] - Sorted parts: [|"r, 4"; "a, 2"; "v, 2"; "e, 1"; "f, 1"; "g, 1"; "h, 1"; "i, 1"; "l, 1"; "n, 1";
+  "o, 1"; "p, 1"; "q, 1"; "t, 1"; "y, 1"|] - ToBeChecked: [|'r'; 'a'; 'v'; 'e'; 'f'|] - Checksum: ravef 
+ 
+Room: udpsdjlqj-udeelw-vdohv-179[dejlu] - Sorted parts: [|"d, 4"; "e, 2"; "j, 2"; "l, 2"; "u, 2"; "v, 2"; "h, 1"; "o, 1"; "p, 1"; "q, 1";
+  "s, 1"; "w, 1"|] - ToBeChecked: [|'d'; 'e'; 'j'; 'l'; 'u'|] - Checksum: dejlu 
+ 
+Room: ujqgywfau-hdsklau-yjskk-jwuwanafy-918[aujkw] - Sorted parts: [|"a, 4"; "u, 4"; "j, 3"; "k, 3"; "w, 3"; "y, 3"; "f, 2"; "s, 2"; "d, 1"; "g, 1";
+  "h, 1"; "l, 1"; "n, 1"; "q, 1"|] - ToBeChecked: [|'a'; 'u'; 'j'; 'k'; 'w'|] - Checksum: aujkw 
+ 
+Room: buzahisl-kfl-thyrlapun-123[lahub] - Sorted parts: [|"l, 3"; "a, 2"; "h, 2"; "u, 2"; "b, 1"; "f, 1"; "i, 1"; "k, 1"; "n, 1"; "p, 1";
+  "r, 1"; "s, 1"; "t, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'a'; 'h'; 'u'; 'b'|] - Checksum: lahub 
+ 
+Room: jshzzpmplk-ihzrla-klzpnu-591[zlphk] - Sorted parts: [|"z, 4"; "l, 3"; "p, 3"; "h, 2"; "k, 2"; "a, 1"; "i, 1"; "j, 1"; "m, 1"; "n, 1";
+  "r, 1"; "s, 1"; "u, 1"|] - ToBeChecked: [|'z'; 'l'; 'p'; 'h'; 'k'|] - Checksum: zlphk 
+ 
+Room: wlsiayhcw-wbiwifuny-ijyluncihm-136[iwych] - Sorted parts: [|"i, 5"; "w, 4"; "y, 3"; "c, 2"; "h, 2"; "l, 2"; "n, 2"; "u, 2"; "a, 1"; "b, 1";
+  "f, 1"; "j, 1"; "m, 1"; "s, 1"|] - ToBeChecked: [|'i'; 'w'; 'y'; 'c'; 'h'|] - Checksum: iwych 
+ 
+Room: vehmsegxmzi-wgezirkiv-lyrx-vieguymwmxmsr-672[meigr] - Sorted parts: [|"m, 5"; "e, 4"; "i, 4"; "g, 3"; "r, 3"; "v, 3"; "x, 3"; "s, 2"; "w, 2"; "y, 2";
+  "z, 2"; "h, 1"; "k, 1"; "l, 1"; "u, 1"|] - ToBeChecked: [|'m'; 'e'; 'i'; 'g'; 'r'|] - Checksum: meigr 
+ 
+Room: forwcoqhwjs-pogysh-kcfygvcd-870[cofgh] - Sorted parts: [|"c, 3"; "o, 3"; "f, 2"; "g, 2"; "h, 2"; "s, 2"; "w, 2"; "y, 2"; "d, 1"; "j, 1";
+  "k, 1"; "p, 1"; "q, 1"; "r, 1"; "v, 1"|] - ToBeChecked: [|'c'; 'o'; 'f'; 'g'; 'h'|] - Checksum: cofgh 
+ 
+Room: ryexqpqhteki-sqdto-seqjydw-bqrehqjeho-634[qehdj] - Sorted parts: [|"q, 6"; "e, 5"; "h, 3"; "d, 2"; "j, 2"; "o, 2"; "r, 2"; "s, 2"; "t, 2"; "y, 2";
+  "b, 1"; "i, 1"; "k, 1"; "p, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'q'; 'e'; 'h'; 'd'; 'j'|] - Checksum: qehdj 
+ 
+Room: buzahisl-jvyyvzpcl-qlssfilhu-vwlyhapvuz-591[lvhsu] - Sorted parts: [|"l, 5"; "v, 4"; "h, 3"; "s, 3"; "u, 3"; "y, 3"; "z, 3"; "a, 2"; "i, 2"; "p, 2";
+  "b, 1"; "c, 1"; "f, 1"; "j, 1"; "q, 1"; "w, 1"|] - ToBeChecked: [|'l'; 'v'; 'h'; 's'; 'u'|] - Checksum: lvhsu 
+ 
+Room: xmrrq-vqw-mkwj-lwklafy-762[wklmq] - Sorted parts: [|"w, 3"; "k, 2"; "l, 2"; "m, 2"; "q, 2"; "r, 2"; "a, 1"; "f, 1"; "j, 1"; "v, 1";
+  "x, 1"; "y, 1"|] - ToBeChecked: [|'w'; 'k'; 'l'; 'm'; 'q'|] - Checksum: wklmq 
+ 
+Room: irdgrxzex-tyftfcrkv-uvgrikdvek-555[rkvde] - Sorted parts: [|"r, 4"; "k, 3"; "v, 3"; "d, 2"; "e, 2"; "f, 2"; "g, 2"; "i, 2"; "t, 2"; "x, 2";
+  "c, 1"; "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'r'; 'k'; 'v'; 'd'; 'e'|] - Checksum: rkvde 
+ 
+Room: lgh-kwujwl-tmffq-esfsywewfl-190[fwles] - Sorted parts: [|"f, 4"; "w, 4"; "l, 3"; "e, 2"; "s, 2"; "g, 1"; "h, 1"; "j, 1"; "k, 1"; "m, 1";
+  "q, 1"; "t, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'f'; 'w'; 'l'; 'e'; 's'|] - Checksum: fwles 
+ 
+Room: dkqjcbctfqwu-uecxgpigt-jwpv-vtckpkpi-518[cpktg] - Sorted parts: [|"c, 4"; "p, 4"; "k, 3"; "t, 3"; "g, 2"; "i, 2"; "j, 2"; "q, 2"; "u, 2"; "v, 2";
+  "w, 2"; "b, 1"; "d, 1"; "e, 1"; "f, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'p'; 'k'; 't'; 'g'|] - Checksum: cpktg 
+ 
+Room: lejkrscv-srjbvk-jyzggzex-399[jegkr] - Sorted parts: [|"j, 3"; "e, 2"; "g, 2"; "k, 2"; "r, 2"; "s, 2"; "v, 2"; "z, 2"; "b, 1"; "c, 1";
+  "l, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'j'; 'e'; 'g'; 'k'; 'r'|] - Checksum: jegkr 
+ 
+Room: cqwdujys-rkddo-huqsgkyiyjyed-322[dyjkq] - Sorted parts: [|"d, 4"; "y, 4"; "j, 2"; "k, 2"; "q, 2"; "s, 2"; "u, 2"; "c, 1"; "e, 1"; "g, 1";
+  "h, 1"; "i, 1"; "o, 1"; "r, 1"; "w, 1"|] - ToBeChecked: [|'d'; 'y'; 'j'; 'k'; 'q'|] - Checksum: dyjkq 
+ 
+Room: apuut-xviyt-xjvodib-mznzvmxc-499[vximt] - Sorted parts: [|"v, 3"; "x, 3"; "i, 2"; "m, 2"; "t, 2"; "u, 2"; "z, 2"; "a, 1"; "b, 1"; "c, 1";
+  "d, 1"; "j, 1"; "n, 1"; "o, 1"; "p, 1"; "y, 1"|] - ToBeChecked: [|'v'; 'x'; 'i'; 'm'; 't'|] - Checksum: vximt 
+ 
+Room: aczupnetwp-awldetn-rcldd-cpdplcns-743[cdpln] - Sorted parts: [|"c, 4"; "d, 4"; "p, 4"; "l, 3"; "n, 3"; "a, 2"; "e, 2"; "t, 2"; "w, 2"; "r, 1";
+  "s, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'd'; 'p'; 'l'; 'n'|] - Checksum: cdpln 
+ 
+Room: kpvgtpcvkqpcn-hnqygt-ncdqtcvqta-570[cqtnp] - Sorted parts: [|"c, 4"; "q, 4"; "t, 4"; "n, 3"; "p, 3"; "v, 3"; "g, 2"; "k, 2"; "a, 1"; "d, 1";
+  "h, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'q'; 't'; 'n'; 'p'|] - Checksum: cqtnp 
+ 
+Room: crwwv-zxkav-zlxqfkd-cfkxkzfkd-653[kfxzc] - Sorted parts: [|"k, 5"; "f, 3"; "x, 3"; "z, 3"; "c, 2"; "d, 2"; "v, 2"; "w, 2"; "a, 1"; "l, 1";
+  "q, 1"; "r, 1"|] - ToBeChecked: [|'k'; 'f'; 'x'; 'z'; 'c'|] - Checksum: kfxzc 
+ 
+Room: kgjgrypw-epybc-aylbw-cleglccpgle-366[cglep] - Sorted parts: [|"c, 4"; "g, 4"; "l, 4"; "e, 3"; "p, 3"; "y, 3"; "b, 2"; "w, 2"; "a, 1"; "j, 1";
+  "k, 1"; "r, 1"|] - ToBeChecked: [|'c'; 'g'; 'l'; 'e'; 'p'|] - Checksum: cglep 
+ 
+Room: wpuvcdng-ecpfa-eqcvkpi-ceswkukvkqp-648[ckpev] - Sorted parts: [|"c, 4"; "k, 4"; "p, 4"; "e, 3"; "v, 3"; "q, 2"; "u, 2"; "w, 2"; "a, 1"; "d, 1";
+  "f, 1"; "g, 1"; "i, 1"; "n, 1"; "s, 1"|] - ToBeChecked: [|'c'; 'k'; 'p'; 'e'; 'v'|] - Checksum: ckpev 
+ 
+Room: cxy-bnlanc-lqxlxujcn-vjatncrwp-355[cnlxa] - Sorted parts: [|"c, 4"; "n, 4"; "l, 3"; "x, 3"; "a, 2"; "j, 2"; "b, 1"; "p, 1"; "q, 1"; "r, 1";
+  "t, 1"; "u, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'n'; 'l'; 'x'; 'a'|] - Checksum: cnlxa 
+ 
+Room: ikhcxvmbex-yehpxk-hixktmbhgl-397[hxkbe] - Sorted parts: [|"h, 4"; "x, 4"; "k, 3"; "b, 2"; "e, 2"; "i, 2"; "m, 2"; "c, 1"; "g, 1"; "l, 1";
+  "p, 1"; "t, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'x'; 'k'; 'b'; 'e'|] - Checksum: hxkbe 
+ 
+Room: tfejldvi-xiruv-treup-vexzevvizex-295[evixr] - Sorted parts: [|"e, 5"; "v, 5"; "i, 3"; "x, 3"; "r, 2"; "t, 2"; "u, 2"; "z, 2"; "d, 1"; "f, 1";
+  "j, 1"; "l, 1"; "p, 1"|] - ToBeChecked: [|'e'; 'v'; 'i'; 'x'; 'r'|] - Checksum: evixr 
+ 
+Room: frqvxphu-judgh-vfdyhqjhu-kxqw-pdqdjhphqw-361[hqdjp] - Sorted parts: [|"h, 6"; "q, 5"; "d, 4"; "j, 3"; "p, 3"; "u, 3"; "f, 2"; "v, 2"; "w, 2"; "x, 2";
+  "g, 1"; "k, 1"; "r, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'q'; 'd'; 'j'; 'p'|] - Checksum: hqdjp 
+ 
+Room: hcd-gsqfsh-gqojsbusf-vibh-ghcfous-844[shfgb] - Sorted parts: [|"s, 5"; "h, 4"; "f, 3"; "g, 3"; "b, 2"; "c, 2"; "o, 2"; "q, 2"; "u, 2"; "d, 1";
+  "i, 1"; "j, 1"; "v, 1"|] - ToBeChecked: [|'s'; 'h'; 'f'; 'g'; 'b'|] - Checksum: shfgb 
+ 
+Room: wfruflnsl-hfsid-htfynsl-hzxytrjw-xjwanhj-775[fhjln] - Sorted parts: [|"f, 4"; "h, 4"; "j, 3"; "l, 3"; "n, 3"; "s, 3"; "w, 3"; "r, 2"; "t, 2"; "x, 2";
+  "y, 2"; "a, 1"; "d, 1"; "i, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'h'; 'j'; 'l'; 'n'|] - Checksum: fhjln 
+ 
+Room: tbxmlkfwba-zelzlixqb-qoxfkfkd-393[bfklx] - Sorted parts: [|"b, 3"; "f, 3"; "k, 3"; "l, 3"; "x, 3"; "q, 2"; "z, 2"; "a, 1"; "d, 1"; "e, 1";
+  "i, 1"; "m, 1"; "o, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'b'; 'f'; 'k'; 'l'; 'x'|] - Checksum: bfklx 
+ 
+Room: xjmmjndqz-wpiit-adivixdib-395[idjmx] - Sorted parts: [|"i, 5"; "d, 3"; "j, 2"; "m, 2"; "x, 2"; "a, 1"; "b, 1"; "n, 1"; "p, 1"; "q, 1";
+  "t, 1"; "v, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'i'; 'd'; 'j'; 'm'; 'x'|] - Checksum: idjmx 
+ 
+Room: wyvqljapsl-jovjvshal-thuhnltlua-201[lahjv] - Sorted parts: [|"l, 5"; "a, 3"; "h, 3"; "j, 3"; "v, 3"; "s, 2"; "t, 2"; "u, 2"; "n, 1"; "o, 1";
+  "p, 1"; "q, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'l'; 'a'; 'h'; 'j'; 'v'|] - Checksum: lahjv 
+ 
+Room: pkl-oaynap-lhwopey-cnwoo-zalhkuiajp-446[aoplh] - Sorted parts: [|"a, 4"; "o, 4"; "p, 4"; "l, 3"; "h, 2"; "k, 2"; "n, 2"; "w, 2"; "y, 2"; "c, 1";
+  "e, 1"; "i, 1"; "j, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'o'; 'p'; 'l'; 'h'|] - Checksum: aoplh 
+ 
+Room: ugfkmewj-yjsvw-usfvq-kzahhafy-164[fahjk] - Sorted parts: [|"f, 3"; "a, 2"; "h, 2"; "j, 2"; "k, 2"; "s, 2"; "u, 2"; "v, 2"; "w, 2"; "y, 2";
+  "e, 1"; "g, 1"; "m, 1"; "q, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'a'; 'h'; 'j'; 'k'|] - Checksum: fahjk 
+ 
+Room: sebehvkb-hqcfqwydw-sqdto-iqbui-738[qbdeh] - Sorted parts: [|"q, 4"; "b, 3"; "d, 2"; "e, 2"; "h, 2"; "i, 2"; "s, 2"; "w, 2"; "c, 1"; "f, 1";
+  "k, 1"; "o, 1"; "t, 1"; "u, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'q'; 'b'; 'd'; 'e'; 'h'|] - Checksum: qbdeh 
+ 
+Room: mfklstdw-wyy-suimakalagf-814[afklm] - Sorted parts: [|"a, 3"; "f, 2"; "k, 2"; "l, 2"; "m, 2"; "s, 2"; "w, 2"; "y, 2"; "d, 1"; "g, 1";
+  "i, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'a'; 'f'; 'k'; 'l'; 'm'|] - Checksum: afklm 
+ 
+Room: htsxzrjw-lwfij-xhfajsljw-mzsy-uzwhmfxnsl-983[jswfh] - Sorted parts: [|"j, 4"; "s, 4"; "w, 4"; "f, 3"; "h, 3"; "l, 3"; "x, 3"; "z, 3"; "m, 2"; "a, 1";
+  "i, 1"; "n, 1"; "r, 1"; "t, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'j'; 's'; 'w'; 'f'; 'h'|] - Checksum: jswfh 
+ 
+Room: chnylhuncihuf-vohhs-uhufsmcm-994[hucfm] - Sorted parts: [|"h, 6"; "u, 4"; "c, 3"; "f, 2"; "m, 2"; "n, 2"; "s, 2"; "i, 1"; "l, 1"; "o, 1";
+  "v, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'u'; 'c'; 'f'; 'm'|] - Checksum: hucfm 
+ 
+Room: otzkxtgzoutgr-kmm-iayzuskx-ykxboik-696[kotxz] - Sorted parts: [|"k, 5"; "o, 3"; "t, 3"; "x, 3"; "z, 3"; "g, 2"; "i, 2"; "m, 2"; "u, 2"; "y, 2";
+  "a, 1"; "b, 1"; "r, 1"; "s, 1"|] - ToBeChecked: [|'k'; 'o'; 't'; 'x'; 'z'|] - Checksum: kotxz 
+ 
+Room: wlsiayhcw-wuhxs-lywycpcha-916[wchya] - Sorted parts: [|"w, 4"; "c, 3"; "h, 3"; "y, 3"; "a, 2"; "l, 2"; "s, 2"; "i, 1"; "p, 1"; "u, 1";
+  "x, 1"|] - ToBeChecked: [|'w'; 'c'; 'h'; 'y'; 'a'|] - Checksum: wchya 
+ 
+Room: htqtwkzq-gzssd-fhvznxnynts-931[nstzh] - Sorted parts: [|"n, 3"; "s, 3"; "t, 3"; "z, 3"; "h, 2"; "q, 2"; "d, 1"; "f, 1"; "g, 1"; "k, 1";
+  "v, 1"; "w, 1"; "x, 1"; "y, 1"|] - ToBeChecked: [|'n'; 's'; 't'; 'z'; 'h'|] - Checksum: nstzh 
+ 
+Room: crwwv-yxphbq-obpbxoze-809[bopwx] - Sorted parts: [|"b, 3"; "o, 2"; "p, 2"; "w, 2"; "x, 2"; "c, 1"; "e, 1"; "h, 1"; "q, 1"; "r, 1";
+  "v, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'o'; 'p'; 'w'; 'x'|] - Checksum: bopwx 
+ 
+Room: ksodcbwnsr-ibghopzs-qobrm-qcohwbu-gsfjwqsg-324[sbogq] - Sorted parts: [|"s, 5"; "b, 4"; "o, 4"; "g, 3"; "q, 3"; "w, 3"; "c, 2"; "h, 2"; "r, 2"; "u, 1";
+  "p, 1"; "m, 1"; "k, 1"; "j, 1"; "i, 1"; "f, 1"; "d, 1"; "n, 1"; "z, 1"|] - ToBeChecked: [|'s'; 'b'; 'o'; 'g'; 'q'|] - Checksum: sbogq 
+ 
+Room: jchipqat-hrpktcvtg-wjci-bpcpvtbtci-323[ctpib] - Sorted parts: [|"c, 5"; "t, 5"; "p, 4"; "i, 3"; "b, 2"; "h, 2"; "j, 2"; "v, 2"; "a, 1"; "g, 1";
+  "k, 1"; "q, 1"; "r, 1"; "w, 1"|] - ToBeChecked: [|'c'; 't'; 'p'; 'i'; 'b'|] - Checksum: ctpib 
+ 
+Room: lujbbrornm-npp-mnyjacvnwc-433[nbcjm] - Sorted parts: [|"n, 4"; "b, 2"; "c, 2"; "j, 2"; "m, 2"; "p, 2"; "r, 2"; "a, 1"; "l, 1"; "o, 1";
+  "u, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'n'; 'b'; 'c'; 'j'; 'm'|] - Checksum: nbcjm 
+ 
+Room: xgjougizobk-lruckx-zkinturume-488[ukgio] - Sorted parts: [|"u, 4"; "k, 3"; "g, 2"; "i, 2"; "o, 2"; "r, 2"; "x, 2"; "z, 2"; "b, 1"; "c, 1";
+  "e, 1"; "j, 1"; "l, 1"; "m, 1"; "n, 1"; "t, 1"|] - ToBeChecked: [|'u'; 'k'; 'g'; 'i'; 'o'|] - Checksum: ukgio 
+ 
+Room: lxaaxbren-mhn-vjwjpnvnwc-459[najvw] - Sorted parts: [|"n, 4"; "a, 2"; "j, 2"; "v, 2"; "w, 2"; "x, 2"; "b, 1"; "c, 1"; "e, 1"; "h, 1";
+  "l, 1"; "m, 1"; "p, 1"; "r, 1"|] - ToBeChecked: [|'n'; 'a'; 'j'; 'v'; 'w'|] - Checksum: najvw 
+ 
+Room: kyelcrga-bwc-pcacgtgle-834[cgael] - Sorted parts: [|"c, 4"; "g, 3"; "a, 2"; "e, 2"; "l, 2"; "b, 1"; "k, 1"; "p, 1"; "r, 1"; "t, 1";
+  "w, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'g'; 'a'; 'e'; 'l'|] - Checksum: cgael 
+ 
+Room: sgmtkzoi-vrgyzoi-mxgyy-sgxqkzotm-618[gmoyz] - Sorted parts: [|"g, 4"; "m, 3"; "o, 3"; "y, 3"; "z, 3"; "i, 2"; "k, 2"; "s, 2"; "t, 2"; "x, 2";
+  "q, 1"; "r, 1"; "v, 1"|] - ToBeChecked: [|'g'; 'm'; 'o'; 'y'; 'z'|] - Checksum: gmoyz 
+ 
+Room: surmhfwloh-fdqgb-frdwlqj-uhvhdufk-777[fhdul] - Sorted parts: [|"f, 4"; "h, 4"; "d, 3"; "u, 3"; "l, 2"; "q, 2"; "r, 2"; "w, 2"; "b, 1"; "g, 1";
+  "j, 1"; "k, 1"; "m, 1"; "o, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'f'; 'h'; 'd'; 'u'; 'l'|] - Checksum: fhdul 
+ 
+Room: vxupkizork-hatte-ynovvotm-670[otvka] - Sorted parts: [|"o, 3"; "t, 3"; "v, 3"; "k, 2"; "a, 1"; "e, 1"; "h, 1"; "i, 1"; "m, 1"; "n, 1";
+  "p, 1"; "r, 1"; "u, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'o'; 't'; 'v'; 'k'; 'a'|] - Checksum: otvka 
+ 
+Room: amlqskcp-epybc-afmamjyrc-amlryglkclr-704[aclmr] - Sorted parts: [|"a, 4"; "c, 4"; "l, 4"; "m, 4"; "r, 3"; "y, 3"; "k, 2"; "p, 2"; "b, 1"; "e, 1";
+  "f, 1"; "g, 1"; "j, 1"; "q, 1"; "s, 1"|] - ToBeChecked: [|'a'; 'c'; 'l'; 'm'; 'r'|] - Checksum: aclmr 
+ 
+Room: aflwjfslagfsd-tskcwl-vwhsjlewfl-892[lfswa] - Sorted parts: [|"l, 5"; "f, 4"; "s, 4"; "w, 4"; "a, 2"; "j, 2"; "c, 1"; "d, 1"; "e, 1"; "g, 1";
+  "h, 1"; "k, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'l'; 'f'; 's'; 'w'; 'a'|] - Checksum: lfswa 
+ 
+Room: hcd-gsqfsh-aoubshwq-gqojsbusf-vibh-qighcasf-gsfjwqs-376[shqfg] - Sorted parts: [|"s, 8"; "h, 5"; "q, 5"; "f, 4"; "g, 4"; "b, 3"; "a, 2"; "c, 2"; "i, 2"; "j, 2";
+  "o, 2"; "u, 2"; "w, 2"; "d, 1"; "v, 1"|] - ToBeChecked: [|'s'; 'h'; 'q'; 'f'; 'g'|] - Checksum: shqfg 
+ 
+Room: gbc-frperg-pnaql-pbagnvazrag-767[agprb] - Sorted parts: [|"a, 4"; "g, 4"; "p, 3"; "r, 3"; "b, 2"; "n, 2"; "c, 1"; "e, 1"; "f, 1"; "l, 1";
+  "q, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'g'; 'p'; 'r'; 'b'|] - Checksum: agprb 
+ 
+Room: emixwvqhml-jcvvg-wxmzibqwva-876[vmwiq] - Sorted parts: [|"v, 4"; "m, 3"; "w, 3"; "i, 2"; "q, 2"; "x, 2"; "a, 1"; "b, 1"; "c, 1"; "e, 1";
+  "g, 1"; "h, 1"; "j, 1"; "l, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'm'; 'w'; 'i'; 'q'|] - Checksum: vmwiq 
+ 
+Room: nuatmlmdpage-omzpk-oamfuzs-bgdotmeuzs-716[maouz] - Sorted parts: [|"m, 5"; "a, 3"; "o, 3"; "u, 3"; "z, 3"; "d, 2"; "e, 2"; "g, 2"; "p, 2"; "s, 2";
+  "t, 2"; "b, 1"; "f, 1"; "k, 1"; "l, 1"; "n, 1"|] - ToBeChecked: [|'m'; 'a'; 'o'; 'u'; 'z'|] - Checksum: maouz 
+ 
+Room: qczcftiz-dzoghwq-ufogg-hfowbwbu-818[fgowz] - Sorted parts: [|"f, 3"; "g, 3"; "o, 3"; "w, 3"; "z, 3"; "b, 2"; "c, 2"; "h, 2"; "q, 2"; "u, 2";
+  "d, 1"; "i, 1"; "t, 1"|] - ToBeChecked: [|'f'; 'g'; 'o'; 'w'; 'z'|] - Checksum: fgowz 
+ 
+Room: apuut-nxvqzibzm-cpio-yzkvmohzio-629[ziomp] - Sorted parts: [|"z, 4"; "i, 3"; "o, 3"; "m, 2"; "p, 2"; "u, 2"; "v, 2"; "h, 1"; "b, 1"; "k, 1";
+  "n, 1"; "y, 1"; "q, 1"; "t, 1"; "x, 1"; "c, 1"; "a, 1"|] - ToBeChecked: [|'z'; 'i'; 'o'; 'm'; 'p'|] - Checksum: ziomp 
+ 
+Room: rmn-qcapcr-njyqrga-epyqq-bctcjmnkclr-704[cqrna] - Sorted parts: [|"c, 5"; "q, 4"; "r, 4"; "n, 3"; "a, 2"; "j, 2"; "m, 2"; "p, 2"; "y, 2"; "b, 1";
+  "e, 1"; "g, 1"; "k, 1"; "l, 1"; "t, 1"|] - ToBeChecked: [|'c'; 'q'; 'r'; 'n'; 'a'|] - Checksum: cqrna 
+ 
+Room: njmjubsz-hsbef-cvooz-usbjojoh-675[jobsh] - Sorted parts: [|"j, 4"; "o, 4"; "b, 3"; "s, 3"; "h, 2"; "u, 2"; "z, 2"; "c, 1"; "e, 1"; "f, 1";
+  "m, 1"; "n, 1"; "v, 1"|] - ToBeChecked: [|'j'; 'o'; 'b'; 's'; 'h'|] - Checksum: jobsh 
+ 
+Room: kpvgtpcvkqpcn-dcumgv-ceswkukvkqp-492[kcpvg] - Sorted parts: [|"k, 5"; "c, 4"; "p, 4"; "v, 4"; "g, 2"; "q, 2"; "u, 2"; "d, 1"; "e, 1"; "m, 1";
+  "n, 1"; "s, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'k'; 'c'; 'p'; 'v'; 'g'|] - Checksum: kcpvg 
+ 
+Room: kfg-jvtivk-jtrmvexvi-ylek-uvjzxe-217[vejki] - Sorted parts: [|"v, 5"; "e, 3"; "j, 3"; "k, 3"; "i, 2"; "t, 2"; "x, 2"; "f, 1"; "g, 1"; "l, 1";
+  "m, 1"; "r, 1"; "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'e'; 'j'; 'k'; 'i'|] - Checksum: vejki 
+ 
+Room: vetllbybxw-xzz-hixktmbhgl-917[blxht] - Sorted parts: [|"b, 3"; "l, 3"; "x, 3"; "h, 2"; "t, 2"; "z, 2"; "e, 1"; "g, 1"; "i, 1"; "k, 1";
+  "m, 1"; "v, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'l'; 'x'; 'h'; 't'|] - Checksum: blxht 
+ 
+Room: htwwtxnaj-idj-fsfqdxnx-931[xdfjn] - Sorted parts: [|"x, 3"; "d, 2"; "f, 2"; "j, 2"; "n, 2"; "t, 2"; "w, 2"; "a, 1"; "h, 1"; "i, 1";
+  "q, 1"; "s, 1"|] - ToBeChecked: [|'x'; 'd'; 'f'; 'j'; 'n'|] - Checksum: xdfjn 
+ 
+Room: dmybmsuzs-pkq-dqeqmdot-144[dmqsb] - Sorted parts: [|"d, 3"; "m, 3"; "q, 3"; "s, 2"; "b, 1"; "e, 1"; "k, 1"; "o, 1"; "p, 1"; "t, 1";
+  "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'm'; 'q'; 's'; 'b'|] - Checksum: dmqsb 
+ 
+Room: nvrgfezqvu-wcfnvi-jvimztvj-815[vfijn] - Sorted parts: [|"v, 5"; "f, 2"; "i, 2"; "j, 2"; "n, 2"; "z, 2"; "c, 1"; "e, 1"; "g, 1"; "m, 1";
+  "q, 1"; "r, 1"; "t, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'v'; 'f'; 'i'; 'j'; 'n'|] - Checksum: vfijn 
+ 
+Room: aoubshwq-qvcqczohs-gsfjwqsg-272[qscgh] - Sorted parts: [|"q, 4"; "s, 4"; "c, 2"; "g, 2"; "h, 2"; "o, 2"; "w, 2"; "a, 1"; "b, 1"; "f, 1";
+  "j, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'q'; 's'; 'c'; 'g'; 'h'|] - Checksum: qscgh 
+ 
+Room: bknsykmdsfo-mkxni-nozvyiwoxd-510[knodi] - Sorted parts: [|"k, 3"; "n, 3"; "o, 3"; "d, 2"; "i, 2"; "m, 2"; "s, 2"; "x, 2"; "y, 2"; "b, 1";
+  "f, 1"; "v, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'n'; 'o'; 'd'; 'i'|] - Checksum: knodi 
+ 
+Room: bnmrtldq-fqzcd-dff-ehmzmbhmf-157[fmdbh] - Sorted parts: [|"f, 4"; "m, 4"; "d, 3"; "b, 2"; "h, 2"; "q, 2"; "z, 2"; "c, 1"; "e, 1"; "l, 1";
+  "n, 1"; "r, 1"; "t, 1"|] - ToBeChecked: [|'f'; 'm'; 'd'; 'b'; 'h'|] - Checksum: fmdbh 
+ 
+Room: vagreangvbany-pnaql-nanylfvf-195[anvfg] - Sorted parts: [|"a, 5"; "n, 5"; "v, 3"; "f, 2"; "g, 2"; "l, 2"; "y, 2"; "b, 1"; "e, 1"; "p, 1";
+  "q, 1"; "r, 1"|] - ToBeChecked: [|'a'; 'n'; 'v'; 'f'; 'g'|] - Checksum: anvfg 
+ 
+Room: lejkrscv-tyftfcrkv-uvjzxe-191[vcefj] - Sorted parts: [|"v, 3"; "c, 2"; "e, 2"; "f, 2"; "j, 2"; "k, 2"; "r, 2"; "t, 2"; "l, 1"; "s, 1";
+  "u, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'c'; 'e'; 'f'; 'j'|] - Checksum: vcefj 
+ 
+Room: qekrixmg-gerhc-gsexmrk-hitpscqirx-698[regix] - Sorted parts: [|"r, 4"; "e, 3"; "g, 3"; "i, 3"; "x, 3"; "c, 2"; "h, 2"; "k, 2"; "m, 2"; "q, 2";
+  "s, 2"; "p, 1"; "t, 1"|] - ToBeChecked: [|'r'; 'e'; 'g'; 'i'; 'x'|] - Checksum: regix 
+ 
+Room: xgsvgmotm-hgyqkz-xkgiwaoyozout-462[gokmt] - Sorted parts: [|"g, 4"; "o, 4"; "k, 2"; "m, 2"; "t, 2"; "x, 2"; "y, 2"; "z, 2"; "a, 1"; "h, 1";
+  "i, 1"; "q, 1"; "s, 1"; "u, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'g'; 'o'; 'k'; 'm'; 't'|] - Checksum: gokmt 
+ 
+Room: jsehsyafy-hdsklau-yjskk-umklgewj-kwjnauw-840[kjsau] - Sorted parts: [|"k, 5"; "j, 4"; "s, 4"; "a, 3"; "u, 3"; "w, 3"; "y, 3"; "e, 2"; "h, 2"; "l, 2";
+  "d, 1"; "f, 1"; "g, 1"; "m, 1"; "n, 1"|] - ToBeChecked: [|'k'; 'j'; 's'; 'a'; 'u'|] - Checksum: kjsau 
+ 
+Room: ymszqfuo-vqxxknqmz-ymdwqfuzs-300[qmzfs] - Sorted parts: [|"q, 4"; "m, 3"; "z, 3"; "f, 2"; "s, 2"; "u, 2"; "x, 2"; "y, 2"; "d, 1"; "k, 1";
+  "n, 1"; "o, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'q'; 'm'; 'z'; 'f'; 's'|] - Checksum: qmzfs 
+ 
+Room: wfruflnsl-wfggny-qfgtwfytwd-957[fwgln] - Sorted parts: [|"f, 5"; "w, 4"; "g, 3"; "l, 2"; "n, 2"; "t, 2"; "y, 2"; "d, 1"; "q, 1"; "r, 1";
+  "s, 1"; "u, 1"|] - ToBeChecked: [|'f'; 'w'; 'g'; 'l'; 'n'|] - Checksum: fwgln 
+ 
+Room: cebwrpgvyr-sybjre-freivprf-871[rebfp] - Sorted parts: [|"r, 5"; "e, 3"; "b, 2"; "f, 2"; "p, 2"; "v, 2"; "y, 2"; "c, 1"; "g, 1"; "i, 1";
+  "j, 1"; "s, 1"; "w, 1"|] - ToBeChecked: [|'r'; 'e'; 'b'; 'f'; 'p'|] - Checksum: rebfp 
+ 
+Room: yhtwhnpun-wshzapj-nyhzz-mpuhujpun-981[hnpuz] - Sorted parts: [|"h, 5"; "n, 4"; "p, 4"; "u, 4"; "z, 3"; "j, 2"; "w, 2"; "y, 2"; "a, 1"; "m, 1";
+  "s, 1"; "t, 1"|] - ToBeChecked: [|'h'; 'n'; 'p'; 'u'; 'z'|] - Checksum: hnpuz 
+ 
+Room: vkrhzxgbv-utldxm-nlxk-mxlmbgz-137[xlmbg] - Sorted parts: [|"x, 4"; "l, 3"; "m, 3"; "b, 2"; "g, 2"; "k, 2"; "v, 2"; "z, 2"; "d, 1"; "h, 1";
+  "n, 1"; "r, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'x'; 'l'; 'm'; 'b'; 'g'|] - Checksum: xlmbg 
+ 
+Room: jsvagsulanw-ugjjgkanw-wyy-vwhsjlewfl-398[wjagl] - Sorted parts: [|"w, 5"; "j, 4"; "a, 3"; "g, 3"; "l, 3"; "s, 3"; "n, 2"; "u, 2"; "v, 2"; "y, 2";
+  "e, 1"; "f, 1"; "h, 1"; "k, 1"|] - ToBeChecked: [|'w'; 'j'; 'a'; 'g'; 'l'|] - Checksum: wjagl 
+ 
+Room: xtwtelcj-rclop-nsznzwlep-opawzjxpye-795[pelwz] - Sorted parts: [|"p, 4"; "e, 3"; "l, 3"; "w, 3"; "z, 3"; "c, 2"; "j, 2"; "n, 2"; "o, 2"; "t, 2";
+  "x, 2"; "a, 1"; "r, 1"; "s, 1"; "y, 1"|] - ToBeChecked: [|'p'; 'e'; 'l'; 'w'; 'z'|] - Checksum: pelwz 
+ 
+Room: ugfkmewj-yjsvw-bwddqtwsf-ogjckzgh-736[wgjdf] - Sorted parts: [|"w, 4"; "g, 3"; "j, 3"; "d, 2"; "f, 2"; "k, 2"; "s, 2"; "b, 1"; "v, 1"; "u, 1";
+  "t, 1"; "m, 1"; "o, 1"; "y, 1"; "h, 1"; "e, 1"; "c, 1"; "q, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'g'; 'j'; 'd'; 'f'|] - Checksum: wgjdf 
+ 
+Room: yflexwxoalrp-bdd-qoxfkfkd-965[dfxkl] - Sorted parts: [|"d, 3"; "f, 3"; "x, 3"; "k, 2"; "l, 2"; "o, 2"; "a, 1"; "b, 1"; "e, 1"; "p, 1";
+  "q, 1"; "r, 1"; "w, 1"; "y, 1"|] - ToBeChecked: [|'d'; 'f'; 'x'; 'k'; 'l'|] - Checksum: dfxkl 
+ 
+Room: kdijqrbu-sbqiiyvyut-fbqijys-whqii-bewyijysi-660[iybqj] - Sorted parts: [|"i, 8"; "y, 5"; "b, 4"; "q, 4"; "j, 3"; "s, 3"; "u, 2"; "w, 2"; "d, 1"; "e, 1";
+  "f, 1"; "h, 1"; "k, 1"; "r, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'i'; 'y'; 'b'; 'q'; 'j'|] - Checksum: iybqj 
+ 
+Room: eza-dpncpe-upwwjmply-dpcgtnpd-457[pdcen] - Sorted parts: [|"p, 6"; "d, 3"; "c, 2"; "e, 2"; "n, 2"; "w, 2"; "a, 1"; "g, 1"; "j, 1"; "l, 1";
+  "m, 1"; "t, 1"; "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'p'; 'd'; 'c'; 'e'; 'n'|] - Checksum: pdcen 
+ 
+Room: tfejldvi-xiruv-srjbvk-crsfirkfip-451[irfvj] - Sorted parts: [|"i, 4"; "r, 4"; "f, 3"; "v, 3"; "j, 2"; "k, 2"; "s, 2"; "b, 1"; "c, 1"; "d, 1";
+  "e, 1"; "l, 1"; "p, 1"; "t, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'i'; 'r'; 'f'; 'v'; 'j'|] - Checksum: irfvj 
+ 
+Room: otzkxtgzoutgr-igtje-iugzotm-ykxboiky-280[tgoik] - Sorted parts: [|"t, 5"; "g, 4"; "o, 4"; "i, 3"; "k, 3"; "z, 3"; "u, 2"; "x, 2"; "y, 2"; "b, 1";
+  "e, 1"; "j, 1"; "m, 1"; "r, 1"|] - ToBeChecked: [|'t'; 'g'; 'o'; 'i'; 'k'|] - Checksum: tgoik 
+ 
+Room: ohmnuvfy-luvvcn-ijyluncihm-682[nuvch] - Sorted parts: [|"n, 3"; "u, 3"; "v, 3"; "c, 2"; "h, 2"; "i, 2"; "l, 2"; "m, 2"; "y, 2"; "f, 1";
+  "j, 1"; "o, 1"|] - ToBeChecked: [|'n'; 'u'; 'v'; 'c'; 'h'|] - Checksum: nuvch 
+ 
+Room: eadalsjq-yjsvw-usfvq-ugslafy-jwuwanafy-450[asfju] - Sorted parts: [|"a, 5"; "s, 4"; "f, 3"; "j, 3"; "u, 3"; "w, 3"; "y, 3"; "l, 2"; "q, 2"; "v, 2";
+  "d, 1"; "e, 1"; "g, 1"; "n, 1"|] - ToBeChecked: [|'a'; 's'; 'f'; 'j'; 'u'|] - Checksum: asfju 
+ 
+Room: fkqbokxqflkxi-yxphbq-cfkxkzfkd-653[kfxqb] - Sorted parts: [|"k, 6"; "f, 4"; "x, 4"; "q, 3"; "b, 2"; "c, 1"; "d, 1"; "h, 1"; "i, 1"; "l, 1";
+  "o, 1"; "p, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'f'; 'x'; 'q'; 'b'|] - Checksum: kfxqb 
+ 
+Room: owshgfarwv-uzgugdslw-vwhsjlewfl-372[wglsf] - Sorted parts: [|"w, 5"; "g, 3"; "l, 3"; "s, 3"; "f, 2"; "h, 2"; "u, 2"; "v, 2"; "a, 1"; "d, 1";
+  "e, 1"; "j, 1"; "o, 1"; "r, 1"; "z, 1"|] - ToBeChecked: [|'w'; 'g'; 'l'; 's'; 'f'|] - Checksum: wglsf 
+ 
+Room: ujoon-ytaanqtpc-pcpanhxh-869[anpch] - Sorted parts: [|"a, 3"; "n, 3"; "p, 3"; "c, 2"; "h, 2"; "o, 2"; "t, 2"; "j, 1"; "q, 1"; "u, 1";
+  "x, 1"; "y, 1"|] - ToBeChecked: [|'a'; 'n'; 'p'; 'c'; 'h'|] - Checksum: anpch 
+ 
+Room: iuxxuyobk-inuiurgzk-jkyomt-228[uikox] - Sorted parts: [|"u, 4"; "i, 3"; "k, 3"; "o, 2"; "x, 2"; "y, 2"; "b, 1"; "g, 1"; "j, 1"; "m, 1";
+  "n, 1"; "r, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'u'; 'i'; 'k'; 'o'; 'x'|] - Checksum: uikox 
+ 
+Room: zuv-ykixkz-hgyqkz-ynovvotm-332[kvyzo] - Sorted parts: [|"k, 3"; "v, 3"; "y, 3"; "z, 3"; "o, 2"; "g, 1"; "h, 1"; "i, 1"; "m, 1"; "n, 1";
+  "q, 1"; "t, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'k'; 'v'; 'y'; 'z'; 'o'|] - Checksum: kvyzo 
+ 
+Room: ujqgywfau-bwddqtwsf-kwjnauwk-190[wuadf] - Sorted parts: [|"w, 5"; "u, 3"; "a, 2"; "d, 2"; "f, 2"; "j, 2"; "k, 2"; "q, 2"; "b, 1"; "g, 1";
+  "n, 1"; "s, 1"; "t, 1"; "y, 1"|] - ToBeChecked: [|'w'; 'u'; 'a'; 'd'; 'f'|] - Checksum: wuadf 
+ 
+Room: frqvxphu-judgh-udeelw-orjlvwlfv-361[luvde] - Sorted parts: [|"l, 3"; "u, 3"; "v, 3"; "d, 2"; "e, 2"; "f, 2"; "h, 2"; "j, 2"; "r, 2"; "w, 2";
+  "g, 1"; "o, 1"; "p, 1"; "q, 1"; "x, 1"|] - ToBeChecked: [|'l'; 'u'; 'v'; 'd'; 'e'|] - Checksum: luvde 
+ 
+Room: vqr-ugetgv-dwppa-octmgvkpi-102[gpvta] - Sorted parts: [|"g, 3"; "p, 3"; "v, 3"; "t, 2"; "a, 1"; "c, 1"; "d, 1"; "e, 1"; "i, 1"; "k, 1";
+  "m, 1"; "o, 1"; "q, 1"; "r, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'g'; 'p'; 'v'; 't'; 'a'|] - Checksum: gpvta 
+ 
+Room: iuxxuyobk-vrgyzoi-mxgyy-iayzuskx-ykxboik-410[yxiko] - Sorted parts: [|"y, 6"; "x, 5"; "i, 4"; "k, 4"; "o, 3"; "u, 3"; "b, 2"; "g, 2"; "z, 2"; "a, 1";
+  "m, 1"; "r, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'y'; 'x'; 'i'; 'k'; 'o'|] - Checksum: yxiko 
+ 
+Room: vhglnfxk-zktwx-ietlmbv-zktll-ltexl-995[ltkxe] - Sorted parts: [|"l, 6"; "t, 4"; "k, 3"; "x, 3"; "e, 2"; "v, 2"; "z, 2"; "b, 1"; "f, 1"; "g, 1";
+  "h, 1"; "i, 1"; "m, 1"; "n, 1"; "w, 1"|] - ToBeChecked: [|'l'; 't'; 'k'; 'x'; 'e'|] - Checksum: ltkxe 
+ 
+Room: ktiaaqnqml-kivlg-kwvbiqvumvb-746[vikqa] - Sorted parts: [|"v, 4"; "i, 3"; "k, 3"; "q, 3"; "a, 2"; "b, 2"; "l, 2"; "m, 2"; "g, 1"; "n, 1";
+  "t, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'v'; 'i'; 'k'; 'q'; 'a'|] - Checksum: vikqa 
+ 
+Room: zlkprjbo-doxab-pzxsbkdbo-erkq-rpbo-qbpqfkd-601[bkopd] - Sorted parts: [|"b, 6"; "k, 4"; "o, 4"; "p, 4"; "d, 3"; "q, 3"; "r, 3"; "x, 2"; "z, 2"; "a, 1";
+  "e, 1"; "f, 1"; "j, 1"; "l, 1"; "s, 1"|] - ToBeChecked: [|'b'; 'k'; 'o'; 'p'; 'd'|] - Checksum: bkopd 
+ 
+Room: rdchjbtg-vgpst-rpcsn-rdpixcv-hidgpvt-973[pcdgr] - Sorted parts: [|"p, 4"; "c, 3"; "d, 3"; "g, 3"; "r, 3"; "t, 3"; "v, 3"; "h, 2"; "i, 2"; "s, 2";
+  "b, 1"; "j, 1"; "n, 1"; "x, 1"|] - ToBeChecked: [|'p'; 'c'; 'd'; 'g'; 'r'|] - Checksum: pcdgr 
+ 
+Room: ixccb-udeelw-ghvljq-803[celbd] - Sorted parts: [|"c, 2"; "e, 2"; "l, 2"; "b, 1"; "d, 1"; "g, 1"; "h, 1"; "i, 1"; "j, 1"; "q, 1";
+  "u, 1"; "v, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'e'; 'l'; 'b'; 'd'|] - Checksum: celbd 
+ 
+Room: qzlozfhmf-atmmx-cdoknxldms-833[mdflo] - Sorted parts: [|"m, 4"; "d, 2"; "f, 2"; "l, 2"; "o, 2"; "x, 2"; "z, 2"; "a, 1"; "c, 1"; "h, 1";
+  "k, 1"; "n, 1"; "q, 1"; "s, 1"; "t, 1"|] - ToBeChecked: [|'m'; 'd'; 'f'; 'l'; 'o'|] - Checksum: mdflo 
+ 
+Room: kgjgrypw-epybc-aylbw-bcnyprkclr-678[ybcpr] - Sorted parts: [|"y, 4"; "b, 3"; "c, 3"; "p, 3"; "r, 3"; "g, 2"; "k, 2"; "l, 2"; "w, 2"; "a, 1";
+  "e, 1"; "j, 1"; "n, 1"|] - ToBeChecked: [|'y'; 'b'; 'c'; 'p'; 'r'|] - Checksum: ybcpr 
+ 
+Room: ymszqfuo-nmewqf-oazfmuzyqzf-352[fzmqo] - Sorted parts: [|"f, 4"; "z, 4"; "m, 3"; "q, 3"; "o, 2"; "u, 2"; "y, 2"; "a, 1"; "e, 1"; "n, 1";
+  "s, 1"; "w, 1"|] - ToBeChecked: [|'f'; 'z'; 'm'; 'q'; 'o'|] - Checksum: fzmqo 
+ 
+Room: yhwooebeaz-lhwopey-cnwoo-wjwhuoeo-862[owehy] - Sorted parts: [|"o, 7"; "w, 5"; "e, 4"; "h, 3"; "y, 2"; "a, 1"; "b, 1"; "c, 1"; "j, 1"; "l, 1";
+  "n, 1"; "p, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'o'; 'w'; 'e'; 'h'; 'y'|] - Checksum: owehy 
+ 
+Room: xqvwdeoh-vfdyhqjhu-kxqw-vdohv-621[hvdqo] - Sorted parts: [|"h, 4"; "v, 4"; "d, 3"; "q, 3"; "o, 2"; "w, 2"; "x, 2"; "e, 1"; "f, 1"; "j, 1";
+  "k, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'h'; 'v'; 'd'; 'q'; 'o'|] - Checksum: hvdqo 
+ 
+Room: fab-eqodqf-ymszqfuo-otaoaxmfq-pqbmdfyqzf-222[fqoam] - Sorted parts: [|"f, 6"; "q, 6"; "o, 4"; "a, 3"; "m, 3"; "b, 2"; "d, 2"; "y, 2"; "z, 2"; "e, 1";
+  "p, 1"; "s, 1"; "t, 1"; "u, 1"; "x, 1"|] - ToBeChecked: [|'f'; 'q'; 'o'; 'a'; 'm'|] - Checksum: fqoam 
+ 
+Room: drxevkzt-tyftfcrkv-kvtyefcfxp-685[ftkvc] - Sorted parts: [|"f, 4"; "t, 4"; "k, 3"; "v, 3"; "c, 2"; "e, 2"; "r, 2"; "x, 2"; "y, 2"; "d, 1";
+  "p, 1"; "z, 1"|] - ToBeChecked: [|'f'; 't'; 'k'; 'v'; 'c'|] - Checksum: ftkvc 
+ 
+Room: pyknyegle-afmamjyrc-mncpyrgmlq-340[myace] - Sorted parts: [|"m, 4"; "y, 4"; "a, 2"; "c, 2"; "e, 2"; "g, 2"; "l, 2"; "n, 2"; "p, 2"; "r, 2";
+  "f, 1"; "j, 1"; "k, 1"; "q, 1"|] - ToBeChecked: [|'m'; 'y'; 'a'; 'c'; 'e'|] - Checksum: myace 
+ 
+Room: dpssptjwf-kfmmzcfbo-mphjtujdt-207[fjmpt] - Sorted parts: [|"f, 3"; "j, 3"; "m, 3"; "p, 3"; "t, 3"; "d, 2"; "s, 2"; "b, 1"; "c, 1"; "h, 1";
+  "k, 1"; "o, 1"; "u, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'j'; 'm'; 'p'; 't'|] - Checksum: fjmpt 
+ 
+Room: jvuzbtly-nyhkl-yhiipa-zavyhnl-123[yhlai] - Sorted parts: [|"y, 4"; "h, 3"; "l, 3"; "a, 2"; "i, 2"; "n, 2"; "v, 2"; "z, 2"; "b, 1"; "j, 1";
+  "k, 1"; "p, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'y'; 'h'; 'l'; 'a'; 'i'|] - Checksum: yhlai 
+ 
+Room: tcorcikpi-hnqygt-fgrctvogpv-232[cgtio] - Sorted parts: [|"c, 3"; "g, 3"; "t, 3"; "i, 2"; "o, 2"; "p, 2"; "r, 2"; "v, 2"; "f, 1"; "h, 1";
+  "k, 1"; "n, 1"; "q, 1"; "y, 1"|] - ToBeChecked: [|'c'; 'g'; 't'; 'i'; 'o'|] - Checksum: cgtio 
+ 
+Room: pbafhzre-tenqr-qlr-erfrnepu-117[refnp] - Sorted parts: [|"r, 5"; "e, 4"; "f, 2"; "n, 2"; "p, 2"; "q, 2"; "a, 1"; "b, 1"; "h, 1"; "l, 1";
+  "t, 1"; "u, 1"; "z, 1"|] - ToBeChecked: [|'r'; 'e'; 'f'; 'n'; 'p'|] - Checksum: refnp 
+ 
+Room: luxciuwncpy-yaa-qilembij-734[iaclu] - Sorted parts: [|"i, 3"; "a, 2"; "c, 2"; "l, 2"; "u, 2"; "y, 2"; "b, 1"; "e, 1"; "j, 1"; "m, 1";
+  "n, 1"; "p, 1"; "q, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'i'; 'a'; 'c'; 'l'; 'u'|] - Checksum: iaclu 
+ 
+Room: rflsjynh-hmthtqfyj-uzwhmfxnsl-827[hfjlm] - Sorted parts: [|"h, 4"; "f, 3"; "j, 2"; "l, 2"; "m, 2"; "n, 2"; "s, 2"; "t, 2"; "y, 2"; "q, 1";
+  "r, 1"; "u, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'h'; 'f'; 'j'; 'l'; 'm'|] - Checksum: hfjlm 
+ 
+Room: ktwbhtvmbox-vahvhetmx-vhgmtbgfxgm-709[hmtvb] - Sorted parts: [|"h, 4"; "m, 4"; "t, 4"; "v, 4"; "b, 3"; "g, 3"; "x, 3"; "a, 1"; "e, 1"; "f, 1";
+  "k, 1"; "o, 1"; "w, 1"|] - ToBeChecked: [|'h'; 'm'; 't'; 'v'; 'b'|] - Checksum: hmtvb 
+ 
+Room: fodvvlilhg-mhoobehdq-vwrudjh-517[hdovl] - Sorted parts: [|"h, 4"; "d, 3"; "o, 3"; "v, 3"; "l, 2"; "b, 1"; "e, 1"; "f, 1"; "g, 1"; "i, 1";
+  "j, 1"; "m, 1"; "q, 1"; "r, 1"; "u, 1"; "w, 1"|] - ToBeChecked: [|'h'; 'd'; 'o'; 'v'; 'l'|] - Checksum: hdovl 
+ 
+Room: lsyrkjkbnyec-lexxi-nozkbdwoxd-874[kxbde] - Sorted parts: [|"k, 3"; "x, 3"; "b, 2"; "d, 2"; "e, 2"; "l, 2"; "n, 2"; "o, 2"; "y, 2"; "c, 1";
+  "i, 1"; "j, 1"; "r, 1"; "s, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'k'; 'x'; 'b'; 'd'; 'e'|] - Checksum: kxbde 
+ 
+Room: njmjubsz-hsbef-gmpxfs-eftjho-597[fjsbe] - Sorted parts: [|"f, 3"; "j, 3"; "s, 3"; "b, 2"; "e, 2"; "h, 2"; "m, 2"; "g, 1"; "n, 1"; "o, 1";
+  "p, 1"; "t, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'j'; 's'; 'b'; 'e'|] - Checksum: fjsbe 
+ 
+Room: qyujihctyx-luvvcn-fiacmncwm-604[cimnu] - Sorted parts: [|"c, 4"; "i, 2"; "m, 2"; "n, 2"; "u, 2"; "v, 2"; "y, 2"; "a, 1"; "f, 1"; "h, 1";
+  "j, 1"; "l, 1"; "q, 1"; "t, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'c'; 'i'; 'm'; 'n'; 'u'|] - Checksum: cimnu 
+ 
+Room: udskkaxawv-wyy-umklgewj-kwjnauw-190[wkauj] - Sorted parts: [|"w, 5"; "k, 4"; "a, 3"; "u, 3"; "j, 2"; "y, 2"; "d, 1"; "e, 1"; "g, 1"; "l, 1";
+  "m, 1"; "n, 1"; "s, 1"; "v, 1"; "x, 1"|] - ToBeChecked: [|'w'; 'k'; 'a'; 'u'; 'j'|] - Checksum: wkauj 
+ 
+Room: sebehvkb-zubboruqd-husuylydw-192[budeh] - Sorted parts: [|"b, 4"; "u, 4"; "d, 2"; "e, 2"; "h, 2"; "s, 2"; "y, 2"; "k, 1"; "l, 1"; "o, 1";
+  "q, 1"; "r, 1"; "v, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'u'; 'd'; 'e'; 'h'|] - Checksum: budeh 
+ 
+Room: nzwzcqfw-upwwjmply-dpcgtnpd-795[pwcdn] - Sorted parts: [|"p, 4"; "w, 4"; "c, 2"; "d, 2"; "n, 2"; "z, 2"; "f, 1"; "g, 1"; "j, 1"; "l, 1";
+  "m, 1"; "q, 1"; "t, 1"; "u, 1"; "y, 1"|] - ToBeChecked: [|'p'; 'w'; 'c'; 'd'; 'n'|] - Checksum: pwcdn 
+ 
+Room: zloolpfsb-bdd-qoxfkfkd-679[dfobk] - Sorted parts: [|"d, 3"; "f, 3"; "o, 3"; "b, 2"; "k, 2"; "l, 2"; "p, 1"; "q, 1"; "s, 1"; "x, 1";
+  "z, 1"|] - ToBeChecked: [|'d'; 'f'; 'o'; 'b'; 'k'|] - Checksum: dfobk 
+ 
+Room: irgyyolokj-inuiurgzk-jkvruesktz-202[kirug] - Sorted parts: [|"k, 4"; "i, 3"; "r, 3"; "u, 3"; "g, 2"; "j, 2"; "o, 2"; "y, 2"; "z, 2"; "e, 1";
+  "l, 1"; "n, 1"; "s, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'k'; 'i'; 'r'; 'u'; 'g'|] - Checksum: kirug 
+ 
+Room: bnqqnrhud-hmsdqmzshnmzk-atmmx-btrsnldq-rdquhbd-599[dmqhn] - Sorted parts: [|"d, 5"; "m, 5"; "q, 5"; "h, 4"; "n, 4"; "b, 3"; "r, 3"; "s, 3"; "t, 2"; "u, 2";
+  "z, 2"; "a, 1"; "k, 1"; "l, 1"; "x, 1"|] - ToBeChecked: [|'d'; 'm'; 'q'; 'h'; 'n'|] - Checksum: dmqhn 
+ 
+Room: avw-zljyla-jhukf-jvhapun-jbzavtly-zlycpjl-149[jlavy] - Sorted parts: [|"j, 5"; "l, 5"; "a, 4"; "v, 3"; "y, 3"; "z, 3"; "h, 2"; "p, 2"; "u, 2"; "b, 1";
+  "c, 1"; "f, 1"; "k, 1"; "n, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'j'; 'l'; 'a'; 'v'; 'y'|] - Checksum: jlavy 
+ 
+Room: sno-rdbqds-bnqqnrhud-eknvdq-sqzhmhmf-729[qdnhs] - Sorted parts: [|"q, 5"; "d, 4"; "n, 4"; "h, 3"; "s, 3"; "b, 2"; "m, 2"; "r, 2"; "e, 1"; "f, 1";
+  "k, 1"; "o, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'q'; 'd'; 'n'; 'h'; 's'|] - Checksum: qdnhs 
+ 
+Room: slqryzjc-aylbw-amyrgle-dglylagle-392[lyage] - Sorted parts: [|"l, 6"; "y, 4"; "a, 3"; "g, 3"; "e, 2"; "r, 2"; "b, 1"; "c, 1"; "d, 1"; "j, 1";
+  "m, 1"; "q, 1"; "s, 1"; "w, 1"; "z, 1"|] - ToBeChecked: [|'l'; 'y'; 'a'; 'g'; 'e'|] - Checksum: lyage 
+ 
+Room: hqfxxnknji-hfsid-fsfqdxnx-151[fxndh] - Sorted parts: [|"f, 4"; "x, 4"; "n, 3"; "d, 2"; "h, 2"; "i, 2"; "q, 2"; "s, 2"; "j, 1"; "k, 1"|] - ToBeChecked: [|'f'; 'x'; 'n'; 'd'; 'h'|] - Checksum: fxndh 
+ 
+Room: vehmsegxmzi-tpewxmg-kveww-pskmwxmgw-308[mwegx] - Sorted parts: [|"m, 5"; "w, 5"; "e, 4"; "g, 3"; "x, 3"; "k, 2"; "p, 2"; "s, 2"; "v, 2"; "h, 1";
+  "i, 1"; "t, 1"; "z, 1"|] - ToBeChecked: [|'m'; 'w'; 'e'; 'g'; 'x'|] - Checksum: mwegx 
+ 
+Room: dzczkrip-xiruv-gcrjkzt-xirjj-ljvi-kvjkzex-633[jikrz] - Sorted parts: [|"j, 5"; "i, 4"; "k, 4"; "r, 4"; "z, 4"; "v, 3"; "x, 3"; "c, 2"; "d, 1"; "e, 1";
+  "g, 1"; "l, 1"; "p, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'j'; 'i'; 'k'; 'r'; 'z'|] - Checksum: jikrz 
+ 
+Room: mvhkvbdib-zbb-yzkvmohzio-915[bvzhi] - Sorted parts: [|"b, 4"; "v, 3"; "z, 3"; "h, 2"; "i, 2"; "k, 2"; "m, 2"; "o, 2"; "d, 1"; "y, 1"|] - ToBeChecked: [|'b'; 'v'; 'z'; 'h'; 'i'|] - Checksum: bvzhi 
+ 
+Room: ejpanjwpekjwh-xwogap-zarahkliajp-316[ajpwe] - Sorted parts: [|"a, 5"; "j, 4"; "p, 4"; "w, 3"; "e, 2"; "h, 2"; "k, 2"; "g, 1"; "i, 1"; "l, 1";
+  "n, 1"; "o, 1"; "r, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'j'; 'p'; 'w'; 'e'|] - Checksum: ajpwe 
+ 
+Room: dwbcjkun-odiih-mhn-jlzdrbrcrxw-719[drbch] - Sorted parts: [|"d, 3"; "r, 3"; "b, 2"; "c, 2"; "h, 2"; "i, 2"; "j, 2"; "n, 2"; "w, 2"; "k, 1";
+  "l, 1"; "m, 1"; "o, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'r'; 'b'; 'c'; 'h'|] - Checksum: drbch 
+ 
+Room: gifavtkzcv-sleep-jkfirxv-633[vefik] - Sorted parts: [|"v, 3"; "e, 2"; "f, 2"; "i, 2"; "k, 2"; "a, 1"; "c, 1"; "g, 1"; "j, 1"; "l, 1";
+  "p, 1"; "r, 1"; "s, 1"; "t, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'v'; 'e'; 'f'; 'i'; 'k'|] - Checksum: vefik 
+ 
+Room: myvybpev-mkxni-mykdsxq-nocsqx-432[mxykn] - Sorted parts: [|"m, 3"; "x, 3"; "y, 3"; "k, 2"; "n, 2"; "q, 2"; "s, 2"; "v, 2"; "b, 1"; "c, 1";
+  "d, 1"; "e, 1"; "i, 1"; "o, 1"; "p, 1"|] - ToBeChecked: [|'m'; 'x'; 'y'; 'k'; 'n'|] - Checksum: mxykn 
+ 
+Room: aczupnetwp-awldetn-rcldd-cpnptgtyr-431[ptcdn] - Sorted parts: [|"p, 4"; "t, 4"; "c, 3"; "d, 3"; "n, 3"; "a, 2"; "e, 2"; "l, 2"; "r, 2"; "w, 2";
+  "g, 1"; "u, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'p'; 't'; 'c'; 'd'; 'n'|] - Checksum: ptcdn 
+ 
+Room: fab-eqodqf-dmnnuf-geqd-fqefuzs-222[fqden] - Sorted parts: [|"f, 5"; "q, 4"; "d, 3"; "e, 3"; "n, 2"; "u, 2"; "a, 1"; "b, 1"; "g, 1"; "m, 1";
+  "o, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'f'; 'q'; 'd'; 'e'; 'n'|] - Checksum: fqden 
+ 
+Room: encuukhkgf-fag-ucngu-440[ugcfk] - Sorted parts: [|"u, 4"; "g, 3"; "c, 2"; "f, 2"; "k, 2"; "n, 2"; "a, 1"; "e, 1"; "h, 1"|] - ToBeChecked: [|'u'; 'g'; 'c'; 'f'; 'k'|] - Checksum: ugcfk 
+ 
+Room: cvabijtm-moo-twoqabqka-980[aobmq] - Sorted parts: [|"a, 3"; "o, 3"; "b, 2"; "m, 2"; "q, 2"; "t, 2"; "c, 1"; "i, 1"; "j, 1"; "k, 1";
+  "v, 1"; "w, 1"|] - ToBeChecked: [|'a'; 'o'; 'b'; 'm'; 'q'|] - Checksum: aobmq 
+ 
+Room: kmjezxodgz-nxvqzibzm-cpio-gjbdnodxn-421[zdnox] - Sorted parts: [|"z, 4"; "d, 3"; "n, 3"; "o, 3"; "x, 3"; "b, 2"; "g, 2"; "i, 2"; "j, 2"; "m, 2";
+  "c, 1"; "e, 1"; "k, 1"; "p, 1"; "q, 1"; "v, 1"|] - ToBeChecked: [|'z'; 'd'; 'n'; 'o'; 'x'|] - Checksum: zdnox 
+ 
+Room: dfcxsqhwzs-qobrm-qcohwbu-qcbhowbasbh-402[bhqco] - Sorted parts: [|"b, 5"; "h, 4"; "q, 4"; "c, 3"; "o, 3"; "s, 3"; "w, 3"; "a, 1"; "d, 1"; "f, 1";
+  "m, 1"; "r, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'h'; 'q'; 'c'; 'o'|] - Checksum: bhqco 
+ 
+Room: nvrgfezqvu-treup-rthlzjzkzfe-607[zerft] - Sorted parts: [|"z, 4"; "e, 3"; "r, 3"; "f, 2"; "t, 2"; "u, 2"; "v, 2"; "g, 1"; "h, 1"; "j, 1";
+  "k, 1"; "l, 1"; "n, 1"; "p, 1"; "q, 1"|] - ToBeChecked: [|'z'; 'e'; 'r'; 'f'; 't'|] - Checksum: zerft 
+ 
+Room: kfg-jvtivk-sleep-uvjzxe-555[evjkf] - Sorted parts: [|"e, 3"; "v, 3"; "j, 2"; "k, 2"; "f, 1"; "g, 1"; "i, 1"; "l, 1"; "p, 1"; "s, 1";
+  "t, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'v'; 'j'; 'k'; 'f'|] - Checksum: evjkf 
+ 
+Room: jfifqxov-doxab-oxjmxdfkd-avb-zlkqxfkjbkq-627[xfkbd] - Sorted parts: [|"x, 5"; "f, 4"; "k, 4"; "b, 3"; "d, 3"; "j, 3"; "o, 3"; "q, 3"; "a, 2"; "v, 2";
+  "i, 1"; "l, 1"; "m, 1"; "z, 1"|] - ToBeChecked: [|'x'; 'f'; 'k'; 'b'; 'd'|] - Checksum: xfkbd 
+ 
+Room: hcd-gsqfsh-qobrm-qcohwbu-rsgwub-350[bhqsc] - Sorted parts: [|"b, 3"; "h, 3"; "q, 3"; "s, 3"; "c, 2"; "g, 2"; "o, 2"; "r, 2"; "u, 2"; "w, 2";
+  "d, 1"; "f, 1"; "m, 1"|] - ToBeChecked: [|'b'; 'h'; 'q'; 's'; 'c'|] - Checksum: bhqsc 
+ 
+Room: xst-wigvix-hci-hiwmkr-464[ihwxc] - Sorted parts: [|"i, 4"; "h, 2"; "w, 2"; "x, 2"; "c, 1"; "g, 1"; "k, 1"; "m, 1"; "r, 1"; "s, 1";
+  "t, 1"; "v, 1"|] - ToBeChecked: [|'i'; 'h'; 'w'; 'x'; 'c'|] - Checksum: ihwxc 
+ 
+Room: yhwooebeaz-bhksan-odellejc-368[eoabh] - Sorted parts: [|"e, 4"; "o, 3"; "a, 2"; "b, 2"; "h, 2"; "l, 2"; "c, 1"; "d, 1"; "j, 1"; "k, 1";
+  "n, 1"; "s, 1"; "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'e'; 'o'; 'a'; 'b'; 'h'|] - Checksum: eoabh 
+ 
+Room: ziuxioqvo-xtiabqk-oziaa-lmxtwgumvb-746[iaoxb] - Sorted parts: [|"i, 4"; "a, 3"; "o, 3"; "x, 3"; "b, 2"; "m, 2"; "q, 2"; "t, 2"; "u, 2"; "v, 2";
+  "z, 2"; "g, 1"; "k, 1"; "l, 1"; "w, 1"|] - ToBeChecked: [|'i'; 'a'; 'o'; 'x'; 'b'|] - Checksum: iaoxb 
+ 
+Room: lhkhszqx-fqzcd-idkkxadzm-cdrhfm-209[dhkzc] - Sorted parts: [|"d, 4"; "h, 3"; "k, 3"; "z, 3"; "c, 2"; "f, 2"; "m, 2"; "q, 2"; "x, 2"; "a, 1";
+  "i, 1"; "l, 1"; "r, 1"; "s, 1"|] - ToBeChecked: [|'d'; 'h'; 'k'; 'z'; 'c'|] - Checksum: dhkzc 
+ 
+Room: pyknyegle-djmucp-umpiqfmn-158[mpenu] - Sorted parts: [|"m, 3"; "p, 3"; "e, 2"; "n, 2"; "u, 2"; "y, 2"; "c, 1"; "d, 1"; "f, 1"; "g, 1";
+  "i, 1"; "j, 1"; "k, 1"; "l, 1"; "q, 1"|] - ToBeChecked: [|'m'; 'p'; 'e'; 'n'; 'u'|] - Checksum: mpenu 
+ 
+Room: iqmbazulqp-rxaiqd-efadmsq-170[qadim] - Sorted parts: [|"q, 4"; "a, 3"; "d, 2"; "i, 2"; "m, 2"; "b, 1"; "e, 1"; "f, 1"; "l, 1"; "p, 1";
+  "r, 1"; "s, 1"; "u, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'q'; 'a'; 'd'; 'i'; 'm'|] - Checksum: qadim 
+ 
+Room: irdgrxzex-sleep-dribvkzex-789[erxdi] - Sorted parts: [|"e, 4"; "r, 3"; "x, 3"; "d, 2"; "i, 2"; "z, 2"; "b, 1"; "g, 1"; "k, 1"; "l, 1";
+  "p, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'e'; 'r'; 'x'; 'd'; 'i'|] - Checksum: erxdi 
+ 
+Room: cxy-bnlanc-lxwbdvna-pajmn-yujbcrl-pajbb-orwjwlrwp-953[bajln] - Sorted parts: [|"b, 5"; "a, 4"; "j, 4"; "l, 4"; "n, 4"; "w, 4"; "c, 3"; "p, 3"; "r, 3"; "x, 2";
+  "y, 2"; "d, 1"; "m, 1"; "o, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'b'; 'a'; 'j'; 'l'; 'n'|] - Checksum: bajln 
+ 
+Room: sedikcuh-whqtu-zubboruqd-cqhaujydw-348[udhqb] - Sorted parts: [|"u, 5"; "d, 3"; "h, 3"; "q, 3"; "b, 2"; "c, 2"; "w, 2"; "a, 1"; "t, 1"; "s, 1";
+  "r, 1"; "k, 1"; "y, 1"; "j, 1"; "i, 1"; "e, 1"; "o, 1"; "z, 1"|] - ToBeChecked: [|'u'; 'd'; 'h'; 'q'; 'b'|] - Checksum: udhqb 
+ 
+Room: mbggf-jhukf-jvhapun-ylhjxbpzpapvu-149[phjua] - Sorted parts: [|"p, 4"; "h, 3"; "j, 3"; "u, 3"; "a, 2"; "b, 2"; "f, 2"; "g, 2"; "v, 2"; "k, 1";
+  "l, 1"; "m, 1"; "n, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'p'; 'h'; 'j'; 'u'; 'a'|] - Checksum: phjua 
+ 
+Room: lzfmdshb-oqnidbshkd-cxd-sqzhmhmf-989[dhmsb] - Sorted parts: [|"d, 4"; "h, 4"; "m, 3"; "s, 3"; "b, 2"; "f, 2"; "q, 2"; "z, 2"; "c, 1"; "i, 1";
+  "k, 1"; "l, 1"; "n, 1"; "o, 1"; "x, 1"|] - ToBeChecked: [|'d'; 'h'; 'm'; 's'; 'b'|] - Checksum: dhmsb 
+ 
+Room: zbytomdsvo-lkcuod-bokmaescsdsyx-510[osdbc] - Sorted parts: [|"o, 4"; "s, 4"; "d, 3"; "b, 2"; "c, 2"; "k, 2"; "m, 2"; "y, 2"; "a, 1"; "e, 1";
+  "l, 1"; "t, 1"; "u, 1"; "v, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'o'; 's'; 'd'; 'b'; 'c'|] - Checksum: osdbc 
+ 
+Room: ejpanjwpekjwh-xwogap-odellejc-654[ejpwa] - Sorted parts: [|"e, 4"; "j, 4"; "p, 3"; "w, 3"; "a, 2"; "l, 2"; "o, 2"; "c, 1"; "d, 1"; "g, 1";
+  "h, 1"; "k, 1"; "n, 1"; "x, 1"|] - ToBeChecked: [|'e'; 'j'; 'p'; 'w'; 'a'|] - Checksum: ejpwa 
+ 
+Room: dwbcjkun-yujbcrl-pajbb-anjlzdrbrcrxw-589[bjrca] - Sorted parts: [|"b, 5"; "j, 4"; "r, 4"; "c, 3"; "a, 2"; "d, 2"; "l, 2"; "n, 2"; "u, 2"; "w, 2";
+  "k, 1"; "p, 1"; "x, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'b'; 'j'; 'r'; 'c'; 'a'|] - Checksum: bjrca 
+ 
+Room: diozmivodjivg-ezggtwzvi-hvivbzhzio-239[ivzgo] - Sorted parts: [|"i, 6"; "v, 5"; "z, 5"; "g, 3"; "o, 3"; "d, 2"; "h, 2"; "b, 1"; "e, 1"; "j, 1";
+  "m, 1"; "t, 1"; "w, 1"|] - ToBeChecked: [|'i'; 'v'; 'z'; 'g'; 'o'|] - Checksum: ivzgo 
+ 
+Room: vqr-ugetgv-ecpfa-eqcvkpi-hkpcpekpi-362[peckv] - Sorted parts: [|"p, 5"; "e, 4"; "c, 3"; "k, 3"; "v, 3"; "g, 2"; "i, 2"; "q, 2"; "a, 1"; "f, 1";
+  "h, 1"; "r, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'p'; 'e'; 'c'; 'k'; 'v'|] - Checksum: peckv 
+ 
+Room: yflexwxoalrp-zxkav-xkxivpfp-913[xpafk] - Sorted parts: [|"x, 5"; "p, 3"; "a, 2"; "f, 2"; "k, 2"; "l, 2"; "v, 2"; "e, 1"; "i, 1"; "o, 1";
+  "r, 1"; "w, 1"; "y, 1"; "z, 1"|] - ToBeChecked: [|'x'; 'p'; 'a'; 'f'; 'k'|] - Checksum: xpafk 
+ 
+Room: frqvxphu-judgh-hjj-whfkqrorjb-569[hjrfq] - Sorted parts: [|"h, 4"; "j, 4"; "r, 3"; "f, 2"; "q, 2"; "u, 2"; "b, 1"; "d, 1"; "g, 1"; "k, 1";
+  "o, 1"; "p, 1"; "v, 1"; "w, 1"; "x, 1"|] - ToBeChecked: [|'h'; 'j'; 'r'; 'f'; 'q'|] - Checksum: hjrfq 
+ 
+Room: sbqiiyvyut-rkddo-tufbeocudj-218[dubio] - Sorted parts: [|"d, 3"; "u, 3"; "b, 2"; "i, 2"; "o, 2"; "t, 2"; "y, 2"; "c, 1"; "e, 1"; "f, 1";
+  "j, 1"; "k, 1"; "q, 1"; "r, 1"; "s, 1"; "v, 1"|] - ToBeChecked: [|'d'; 'u'; 'b'; 'i'; 'o'|] - Checksum: dubio 
+ 
+Room: rgllk-vqxxknqmz-etubbuzs-534[bklqu] - Sorted parts: [|"b, 2"; "k, 2"; "l, 2"; "q, 2"; "u, 2"; "x, 2"; "z, 2"; "e, 1"; "g, 1"; "m, 1";
+  "n, 1"; "r, 1"; "s, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'b'; 'k'; 'l'; 'q'; 'u'|] - Checksum: bklqu 
+ 
+Room: nchhg-bwx-amkzmb-lgm-nqvivkqvo-486[mvbgh] - Sorted parts: [|"m, 3"; "v, 3"; "b, 2"; "g, 2"; "h, 2"; "k, 2"; "n, 2"; "q, 2"; "a, 1"; "c, 1";
+  "i, 1"; "l, 1"; "o, 1"; "w, 1"; "x, 1"; "z, 1"|] - ToBeChecked: [|'m'; 'v'; 'b'; 'g'; 'h'|] - Checksum: mvbgh 
+ 
+Room: tmrszakd-okzrshb-fqzrr-sqzhmhmf-937[rzhms] - Sorted parts: [|"r, 4"; "z, 4"; "h, 3"; "m, 3"; "s, 3"; "f, 2"; "k, 2"; "q, 2"; "a, 1"; "b, 1";
+  "d, 1"; "o, 1"; "t, 1"|] - ToBeChecked: [|'r'; 'z'; 'h'; 'm'; 's'|] - Checksum: rzhms 
+ 
+Room: zhdsrqlchg-fdqgb-frdwlqj-vwrudjh-127[dhqrf] - Sorted parts: [|"d, 4"; "h, 3"; "q, 3"; "r, 3"; "f, 2"; "g, 2"; "j, 2"; "l, 2"; "w, 2"; "b, 1";
+  "c, 1"; "s, 1"; "u, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'d'; 'h'; 'q'; 'r'; 'f'|] - Checksum: dhqrf 
+ 
+Room: eadalsjq-yjsvw-bwddqtwsf-ugflsafewfl-164[fswad] - Sorted parts: [|"f, 4"; "s, 4"; "w, 4"; "a, 3"; "d, 3"; "l, 3"; "e, 2"; "j, 2"; "q, 2"; "b, 1";
+  "g, 1"; "t, 1"; "u, 1"; "v, 1"; "y, 1"|] - ToBeChecked: [|'f'; 's'; 'w'; 'a'; 'd'|] - Checksum: fswad 
+ 
+Room: kfg-jvtivk-vxx-rthlzjzkzfe-919[kvzfj] - Sorted parts: [|"k, 3"; "v, 3"; "z, 3"; "f, 2"; "j, 2"; "t, 2"; "x, 2"; "e, 1"; "g, 1"; "h, 1";
+  "i, 1"; "l, 1"; "r, 1"|] - ToBeChecked: [|'k'; 'v'; 'z'; 'f'; 'j'|] - Checksum: kvzfj 
+ 
+Room: ltpedcxots-eaphixr-vgphh-gthtpgrw-349[hptge] - Sorted parts: [|"h, 4"; "p, 4"; "t, 4"; "g, 3"; "e, 2"; "r, 2"; "x, 2"; "a, 1"; "c, 1"; "d, 1";
+  "i, 1"; "l, 1"; "o, 1"; "s, 1"; "v, 1"; "w, 1"|] - ToBeChecked: [|'h'; 'p'; 't'; 'g'; 'e'|] - Checksum: hptge 
+ 
+Room: zlkprjbo-doxab-zelzlixqb-pxibp-315[blpxz] - Sorted parts: [|"b, 4"; "l, 3"; "p, 3"; "x, 3"; "z, 3"; "i, 2"; "o, 2"; "a, 1"; "d, 1"; "e, 1";
+  "j, 1"; "k, 1"; "q, 1"; "r, 1"|] - ToBeChecked: [|'b'; 'l'; 'p'; 'x'; 'z'|] - Checksum: blpxz 
+ 
+Room: eqnqthwn-ecpfa-ceswkukvkqp-336[ekqcn] - Sorted parts: [|"e, 3"; "k, 3"; "q, 3"; "c, 2"; "n, 2"; "p, 2"; "w, 2"; "a, 1"; "f, 1"; "h, 1";
+  "s, 1"; "t, 1"; "u, 1"; "v, 1"|] - ToBeChecked: [|'e'; 'k'; 'q'; 'c'; 'n'|] - Checksum: ekqcn 
+ 
+Room: jvyyvzpcl-ihzrla-zlycpjlz-383[lzycj] - Sorted parts: [|"l, 4"; "z, 4"; "y, 3"; "c, 2"; "j, 2"; "p, 2"; "v, 2"; "a, 1"; "h, 1"; "i, 1";
+  "r, 1"|] - ToBeChecked: [|'l'; 'z'; 'y'; 'c'; 'j'|] - Checksum: lzycj 
+ 
+Room: wbhsfbohwcboz-pwcvonofrcig-suu-cdsfohwcbg-896[cobwf] - Sorted parts: [|"c, 5"; "o, 5"; "b, 4"; "w, 4"; "f, 3"; "h, 3"; "s, 3"; "g, 2"; "u, 2"; "d, 1";
+  "i, 1"; "n, 1"; "p, 1"; "r, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'c'; 'o'; 'b'; 'w'; 'f'|] - Checksum: cobwf 
+ 
+Room: nwzekwypera-bhksan-nayaerejc-186[aenkr] - Sorted parts: [|"a, 4"; "e, 4"; "n, 3"; "k, 2"; "r, 2"; "w, 2"; "y, 2"; "b, 1"; "c, 1"; "h, 1";
+  "j, 1"; "p, 1"; "s, 1"; "z, 1"|] - ToBeChecked: [|'a'; 'e'; 'n'; 'k'; 'r'|] - Checksum: aenkr 
+ 
+Room: tmrszakd-eknvdq-lzmzfdldms-989[dmzkl] - Sorted parts: [|"d, 4"; "m, 3"; "z, 3"; "k, 2"; "l, 2"; "s, 2"; "a, 1"; "e, 1"; "f, 1"; "n, 1";
+  "q, 1"; "r, 1"; "t, 1"; "v, 1"|] - ToBeChecked: [|'d'; 'm'; 'z'; 'k'; 'l'|] - Checksum: dmzkl 
+ 
+Room: rgllk-qss-etubbuzs-430[sblue] - Sorted parts: [|"s, 3"; "b, 2"; "l, 2"; "u, 2"; "e, 1"; "g, 1"; "k, 1"; "q, 1"; "r, 1"; "t, 1";
+  "z, 1"|] - ToBeChecked: [|'s'; 'b'; 'l'; 'u'; 'e'|] - Checksum: sblue 
+ 
+Room: udglrdfwlyh-gbh-ghyhorsphqw-465[hgdlr] - Sorted parts: [|"h, 5"; "g, 3"; "d, 2"; "l, 2"; "r, 2"; "w, 2"; "y, 2"; "b, 1"; "f, 1"; "o, 1";
+  "p, 1"; "q, 1"; "s, 1"; "u, 1"|] - ToBeChecked: [|'h'; 'g'; 'd'; 'l'; 'r'|] - Checksum: hgdlr 
+ 
+Room: tpspahyf-nyhkl-kfl-aljouvsvnf-981[flahk] - Sorted parts: [|"f, 3"; "l, 3"; "a, 2"; "h, 2"; "k, 2"; "n, 2"; "p, 2"; "s, 2"; "v, 2"; "y, 2";
+  "j, 1"; "o, 1"; "t, 1"; "u, 1"|] - ToBeChecked: [|'f'; 'l'; 'a'; 'h'; 'k'|] - Checksum: flahk 
+ 
+Room: bxaxipgn-vgpst-qphzti-rdcipxcbtci-635[ipctx] - Sorted parts: [|"i, 4"; "p, 4"; "c, 3"; "t, 3"; "x, 3"; "b, 2"; "g, 2"; "a, 1"; "d, 1"; "h, 1";
+  "n, 1"; "q, 1"; "r, 1"; "s, 1"; "v, 1"; "z, 1"|] - ToBeChecked: [|'i'; 'p'; 'c'; 't'; 'x'|] - Checksum: ipctx 
+ 
