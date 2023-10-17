@@ -9,7 +9,8 @@ open AdventOfCode_2016.Modules
 //let path = "day04/test_input_01.txt"
 let path = "day04/day04_input.txt"
 
-type Room = { Content: string; Name: string; SectorId: int; Checksum: string; Parts: (char*int) array }
+type CharCount = { Character: char; Count: int }
+type Room = { Content: string; Name: string; SectorId: int; Checksum: string; Parts: CharCount array }
 
 let getParts(input: string) =
     let pattern = @"^(.*?)-(\d+)\[(.*?)\]$"
@@ -26,31 +27,28 @@ let getParts(input: string) =
             Name = groups.[1].Value; 
             SectorId = Int32.Parse(numberValue); 
             Checksum = bracketsContent; 
-            Parts = stringValueGroups
+            Parts = stringValueGroups |> Array.map(fun p -> {Character = fst p; Count = snd p})
         }
     | _ ->
         raise (ArgumentException "Invalid input")
 
-let sortByCountThenByChar(a: (char*int)) (b: (char*int)) =
-    let (aChar, aCount) = a
-    let (bChar, bCount) = b
-    if aCount = bCount then
-        compare aChar bChar
-    else
-        compare bCount aCount
+let sortByCountThenByChar(a: CharCount) (b: CharCount) =
+    if a.Count = b.Count then 
+        compare a.Character b.Character 
+    else 
+        compare b.Count a.Count
 
 let isRealRoom (room: Room) =
-    let sortedParts = room.Parts |> Array.sortDescending (sortByCountThenByChar) |> Array.map (fun (c, count) -> c) |> Array.take 5
+    let sortedParts = (Array.sortWith sortByCountThenByChar room.Parts) |> Array.map (fun p -> p.Character) |> Array.take 5
     //printfn "Sorted parts: %s - checksum: %s" (new String(sortedParts)) room.Checksum
     let outputString = sprintf "Room: %s - Sorted parts: %A - ToBeChecked: %A - Checksum: %s \r\n \r\n" 
-                        room.Content (room.Parts |> Array.sortByDescending (fun (c, count) -> count) |> Array.map(fun (c, count) -> $"{c}, {count}")) sortedParts room.Checksum
+                        room.Content (room.Parts |> Array.sortByDescending (fun p -> p.Count) |> Array.map(fun p -> $"{p.Character}, {p.Count}")) sortedParts room.Checksum
     let isRealRoom = room.Checksum = (new String(sortedParts))
     if isRealRoom then
         System.IO.File.AppendAllText("./../output_rooms.txt", outputString)
     else
         System.IO.File.AppendAllText("./../output_decoys.txt", outputString)
     isRealRoom
-    //Array.pairwise sortedParts|> Array.forall (fun (a, b) -> a <= b)
 
 let inputLines = Utilities.GetLinesFromFile(path)
 let rooms = inputLines |> Array.map getParts
