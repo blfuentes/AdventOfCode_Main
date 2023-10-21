@@ -12,7 +12,7 @@ https://adventofcode.com/2015
 https://adventofcode.com/2016
 
 2016 F#
-- 5 al 25
+- 6 al 25
 
 # Advent Of Code 2017
 
