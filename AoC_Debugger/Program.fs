@@ -2,19 +2,19 @@
 open System.Text.Json
 open System.Collections.Generic
 
-let path = "./test_input.txt"
+let path = "test_input.txt"
+//let path = "day_input.txt"
 
-let input = System.IO.File.ReadLines path |> Seq.map int |> Seq.toArray
+let input = System.IO.File.ReadLines path |> Seq.toArray
+let container = Array.create input.[0].Length [""]
 
-let rec execute (input: int[]) (index: int) (steps: int) =
-    let length = input.Length
-    if index < 0 || index >= length then
-        steps
-    else
-        let jump = input.[index]
-        let newIndex = index + jump
-        input.[index] <- input.[index] + 1
-        execute input newIndex (steps + 1)
+let buildContainer (value: string) (listOfChars: string list array) =
+    value.ToCharArray() |> Array.iteri(fun i c -> listOfChars.[i] <- (listOfChars.[i] @ [(c |> string)]))
 
-let result = execute input 0 0
-printfn "Number of jumps : %i" result
+let getErrorConnectedVersion (listOfChars: string list array) =
+    listOfChars |> Array.map(fun l -> (l |> List.groupBy id) |> List.sortByDescending(fun (k, v) -> v.Length) |> List.head |> fst)
+    
+input |> Array.iter(fun s -> buildContainer s container)
+String.concat "" ((getErrorConnectedVersion container) |> Array.toSeq) |> printfn "%A"
+
+
