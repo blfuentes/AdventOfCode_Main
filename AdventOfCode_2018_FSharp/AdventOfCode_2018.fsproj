@@ -27,13 +27,12 @@
     <Content Include="day03\day03_input.txt" />
     <Compile Include="day03\part01\day03_part01.fs" />
     <None Include="day03\part01\day03_part01.fsx" />
-    <Compile Include="day06\day06_part01.fs" />
-    <Compile Include="day06\day06_part02.fs" />
-    <Content Include="day06\test_input.txt" />
     <Content Include="day06\day06_input.txt" />
-    <Content Include="day06\day06_input2.txt" />
-    <None Include="day06\day06_part1.fsx" />
-    <None Include="day06\day06_part2.fsx" />
+    <Compile Include="day06\part01\day06_part01.fs" />
+    <None Include="day06\part01\day06_part01.fsx" />
+    <Content Include="day06\test_input.txt" />
+    <Compile Include="day06\part02\day06_part02.fs" />
+    <None Include="day06\part02\day06_part02.fsx" />
     <None Include="day07\part02\day07_part02.fsx" />
     <Compile Include="day07\part02\day07_part02.fs" />
     <Content Include="day07\test_input.txt" />
@@ -46,7 +45,5 @@
   <ItemGroup>
     <Content Include="day02\day02_input.txt" />
   </ItemGroup>
-
-  <ItemGroup />
 
 </Project>

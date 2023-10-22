@@ -36,7 +36,7 @@ let count (size: int) (maxvalue: int) (panel: Dictionary<string, int>) =
     result
 
 let execute =
-    let filepath = __SOURCE_DIRECTORY__ + @"./day06_input.txt"
+    let filepath = __SOURCE_DIRECTORY__ + @"./../day06_input.txt"
     let inputLines = File.ReadAllLines(filepath) |> List.ofArray
     let coords = inputLines |> List.mapi(fun idx v -> [|idx; int(v.Split(", ")[0]); int(v.Split(", ")[1]); 0|])
     let size = 400
