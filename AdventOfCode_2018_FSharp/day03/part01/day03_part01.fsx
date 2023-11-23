@@ -19,7 +19,7 @@ let elements =
 
 let getMaxCoords =
     let x = elements |> Seq.map (fun (_, x, _, _, _) -> x) |> Seq.max
-    let y = elements |> Seq.map (fun (_, _, y, _, _) -> x) |> Seq.max
+    let y = elements |> Seq.map (fun (_, _, y, _, _) -> y) |> Seq.max
     x, y
 
 let setArray (id : int, startX : int, startY : int, width : int, height : int) (maxX: int) (maxY: int) =
@@ -28,29 +28,25 @@ let setArray (id : int, startX : int, startY : int, width : int, height : int) (
             else -2 |> string
         )
 
-//let compareArray origin seqOfArrays =
-//    let baseOrigin = toArray origin
-//    seqOfArrays |> Seq.map (fun array -> toArray array) |> Seq.zip (toArray origin) |> Seq.map (fun (a, b) -> a <> -2 && a <> b) |> Seq.length
-
 let compareArray (origin: string[,]) (array: string[,]) =
     let baseOrigin = toArray origin
     Seq.zip baseOrigin (toArray array)
     |> Seq.map (fun (a, b) -> a <> "-2" && a <> b)
     |> Seq.length
 
-//let twoDimensionalArray =
-//    let inputElements = elements
-//    let (X, Y) = getMaxCoords // Destructure the tuple
-//    let originArray = Array2D.init X Y (fun _ _ -> ".")
+let twoDimensionalArray =
+    let inputElements = elements
+    let (X, Y) = getMaxCoords // Destructure the tuple
+    let originArray = Array2D.init X Y (fun _ _ -> ".")
     
-//    let collectionOfArrays() =
-//        elements |> Seq.map (fun e -> setArray e)
+    let collectionOfArrays =
+        elements |> Seq.map (fun e -> setArray e X Y)
 
-//    let differences =
-//        collectionOfArrays()
-//        |> Seq.map (fun input -> compareArray originArray input)
-//        |> Seq.sum
+    let differences =
+        collectionOfArrays
+        |> Seq.map (fun input -> compareArray originArray input)
+        |> Seq.sum
 
-//    differences
+    differences
 
     
