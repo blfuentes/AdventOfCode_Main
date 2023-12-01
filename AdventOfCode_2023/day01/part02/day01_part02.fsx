@@ -6,47 +6,39 @@ open System.Text.RegularExpressions
 
 open AdventOfCode_2023.Modules
 
-let path = "day01/test_input_02.txt"
-//let path = "day01/day01_input.txt"
+//let path = "day01/test_input_02.txt"
+let path = "day01/day01_input.txt"
 
 let lines = Utilities.GetLinesFromFile path
 
-let findIndexOfDigit (input: string) (digit: string) =
-    let matches = Regex.Matches(input, $"\d|{digit}")
-    if matches.Count > 0 then
-        matches |> Seq.cast<Match> |> Seq.map(fun m -> (m.Index, m.Value)) |> Seq.toList
-    else
-        [(-1, "")]
+let findFirstIndexOfDigit (input: string) (digit: string * string) =
+    let indexDigit = input.IndexOf(fst digit)
+    let indexWord = input.IndexOf(snd digit)
+    match (indexDigit, indexWord) with
+    | (-1, _) -> indexWord
+    | (_, -1) -> indexDigit
+    | (d, w) -> if d < w then  d else w
 
-let validDigits = ["0"; "1"; "2"; "3"; "4"; "5"; "6"; "7"; "8"; "9"; "one"; "two"; "three"; "four"; "five"; "six"; "seven"; "eight"; "nine"]
+let findLastIndexOfDigit (input: string) (digit: string * string) =
+    let indexDigit = input.LastIndexOf(fst digit)
+    let indexWord = input.LastIndexOf(snd digit)
+    match (indexDigit, indexWord) with
+    | (-1, _) -> indexWord
+    | (_, -1) -> indexDigit
+    | (d, w) -> if d > w then  d else w
 
-let convertNumber (input: string) =
-    match input with
-    | "one" -> "1"
-    | "two" -> "2"
-    | "three" -> "3"
-    | "four" -> "4"
-    | "five" -> "5"
-    | "six" -> "6"
-    | "seven" -> "7"
-    | "eight" -> "8"
-    | "nine" -> "9"
-    | _ -> input
+let getFirstAndLast (input: string) (digits: (string * string) list) =
+    digits |> List.map (fun d -> [|(int)(fst d); findFirstIndexOfDigit input d; findLastIndexOfDigit input d|])
 
-let findNumbers input =
-    let indexes = validDigits |> List.map (fun d -> findIndexOfDigit input d) |> List.concat
-    indexes |> List.sortBy fst
+let validDigits = [("1", "one"); ("2", "two"); ("3", "three"); ("4", "four"); ("5", "five"); ("6", "six"); ("7", "seven"); ("8", "eight"); ("9", "nine")]
 
-let check = findNumbers "six7sixqrdfive3twonehsk"
+let check = getFirstAndLast "six7sixqrdfive3twonehsk" validDigits
 
-//let getNumbersFromLine(line: string) =
-//    let numbers = findNumbers line
-//    if numbers.Length > 0 then (int)(numbers.Head + numbers.Item(numbers.Length - 1))
-//    else 0
+let buildNumber (input: int array list) =
+    let first = (input |> List.filter(fun i -> i.[1] > -1) |> List.sortBy (fun i -> i.[1])).Head.[0]
+    let last = (input |> List.filter(fun i -> i.[2] > -1) |> List.sortByDescending (fun i -> i.[2])).Head[0]
+    first * 10 + last
 
-//let values = lines |> Array.map getNumbersFromLine
-//values
-//let totalSum = Array.sumBy getNumbersFromLine lines
-//totalSum
-    
 
+//let check = getFirstAndLast "six7sixqrdfive3twonehsk" validDigits
+lines |> Array.map (fun l -> buildNumber (getFirstAndLast l validDigits))
