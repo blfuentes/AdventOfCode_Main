@@ -68,17 +68,7 @@ namespace day01_part02
 		regex_iterator<string::iterator> firstit(line.begin(), line.end(), firstDigit);
 		regex_iterator<string::iterator> lastit(reverseLine.begin(), reverseLine.end(), lastDigit);
 
-		// add first digit
-		//while (firstit != regex_iterator<string::iterator>())
-		//{
-		//	numbers.push_back(convertRevNumber(firstit->str()));
-		//	while (lastit != regex_iterator<string::iterator>())
-		//	{
-		//		numbers.push_back(convertRevNumber(lastit->str()));
-		//		break;
-		//	}
-		//	break;
-		//}
+		// add first and last digit
 		numbers.push_back(convertRevNumber(firstit->str()));
 		numbers.push_back(convertRevNumber(lastit->str()));
 
@@ -99,7 +89,7 @@ namespace day01_part02
 
 	export int Execute()
 	{
-		vector<string> lines = Utilities::readTextFile("day01_input.txt");
+		vector<string> lines = Utilities::readTextFile("day01/day01_input.txt");
 		int result = 0;
 		for (string line : lines)
 		{

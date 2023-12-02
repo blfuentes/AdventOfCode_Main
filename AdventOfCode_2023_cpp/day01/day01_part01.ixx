@@ -42,7 +42,7 @@ namespace day01_part01
 
 	export int Execute()
 	{
-		vector<string> lines = Utilities::readTextFile("day01_input.txt");
+		vector<string> lines = Utilities::readTextFile("day01/day01_input.txt");
 		int result = 0;
 		for (string line : lines)
 		{

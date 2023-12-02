@@ -106,6 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,15 +130,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="day01_part01.ixx" />
-    <ClCompile Include="day01_part02.ixx" />
+    <ClCompile Include="day01\day01_part01.ixx" />
+    <ClCompile Include="day01\day01_part02.ixx" />
+    <ClCompile Include="day02\day02_part01.ixx" />
+    <ClCompile Include="day02\day02_part02.ixx" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Solutions.ixx" />
     <ClCompile Include="Utilities.ixx" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="day01_input.txt" />
-    <Text Include="test_input_01.txt" />
-    <Text Include="test_input_02.txt" />
+    <Text Include="day01\day01_input.txt" />
+    <Text Include="day01\test_input_01.txt" />
+    <Text Include="day01\test_input_02.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AdventOfCode_2023_cpp.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,14 +5,21 @@
 
 import day01_part01;
 import day01_part02;
+import day02_part01;
+import day02_part02;
 
 int main()
 {
-    std::cout << "Advent of Code 2023!\n";
+    std::cout << "Advent of Code 2023!" << std::endl;
     int resultDay01Part01 = day01_part01::Execute();
-    std::cout << "Day 01 Part 01: " << resultDay01Part01 << "\n";
+    std::cout << "Day 01 Part 01: " << resultDay01Part01 << std::endl;
     int resultDay01Part02 = day01_part02::Execute();
-    std::cout << "Day 01 Part 02: " << resultDay01Part02 << "\n";
+    std::cout << "Day 01 Part 02: " << resultDay01Part02 << std::endl;
+
+    int resultDay02Part01 = day02_part01::Execute();
+    std::cout << "Day 02 Part 01: " << resultDay02Part01 << std::endl;
+    int resultDay02Part02 = day02_part02::Execute();
+    std::cout << "Day 02 Part 02: " << resultDay02Part02 << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
