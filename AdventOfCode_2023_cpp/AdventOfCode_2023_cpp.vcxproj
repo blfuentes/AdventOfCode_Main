@@ -142,6 +142,8 @@
     <Text Include="day01\day01_input.txt" />
     <Text Include="day01\test_input_01.txt" />
     <Text Include="day01\test_input_02.txt" />
+    <Text Include="day02\day02_input.txt" />
+    <Text Include="day02\test_input_01.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
