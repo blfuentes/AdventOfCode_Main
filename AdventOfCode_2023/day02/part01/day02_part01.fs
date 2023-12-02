@@ -2,6 +2,7 @@
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_2023.Modules
 
@@ -25,9 +26,11 @@ let gameRules = [
 
 let buildGame (line: string) =
     let gameParts = line.Split(':')
+    let pattern = @"(( \d+ (blue|green|red),\s*)+)?( \d+ (blue|green|red)\s*)"
     let cubeSets = 
-        gameParts.[1].Split(';') |> Array.map(fun cubeSet -> 
-            cubeSet.Split(',') |> Array.map(fun cube -> 
+        (Regex.Matches(gameParts.[1], pattern) |> Array.ofSeq) 
+        |> Array.map(fun cubeSet -> 
+            cubeSet.Value .Split(',') |> Array.map(fun cube -> 
                 let cubeParts = cube.Split(' ')
                 { numberOfCubes = int cubeParts.[1]; color = cubeParts.[2] }
             ) |> List.ofArray
