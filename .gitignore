@@ -11,3 +11,6 @@ bin
 .ionide
 .fake
 .vs
+x64
+*.filters
+*.user

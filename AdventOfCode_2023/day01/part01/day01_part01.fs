@@ -19,5 +19,4 @@ let getNumbersFromLine(line: string) =
 
 let execute =
     let lines = Utilities.GetLinesFromFile path
-    let numbers = lines |> Array.map findNumbers
     Array.sumBy getNumbersFromLine lines
