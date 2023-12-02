@@ -40,7 +40,7 @@ let buildGame (line: string) =
 let findMininumNumOfCubes (gameSet: GameSet) =
     let allCubes = gameSet.cubes |> List.concat
     let minCubesByColor = 
-        allCubes |> List.groupBy(fun cube -> cube.color) 
+        allCubes |> List.groupBy _.color
             |> List.map (fun (co, cu) -> { numberOfCubes = (cu |> List.maxBy _.numberOfCubes).numberOfCubes ; color = co })
     //minCubesByColor
     minCubesByColor |> List.map _.numberOfCubes |> List.reduce (*)
@@ -48,7 +48,7 @@ let findMininumNumOfCubes (gameSet: GameSet) =
         
 
 let processGame (lines: string array) =
-    let minimunByGame = lines |> Array.map buildGame |> Array.map(fun g -> findMininumNumOfCubes g)
+    let minimunByGame = lines |> Array.map buildGame |> Array.map findMininumNumOfCubes
     minimunByGame |> Array.sum
 
 let result = processGame lines
