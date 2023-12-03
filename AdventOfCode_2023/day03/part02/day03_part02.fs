@@ -12,7 +12,6 @@ type FoundNum = {
     col: int
 }
 
-
 let (|Int|_|) (str:string) =
     match System.Int32.TryParse str with
     | true,int -> Some int
@@ -48,8 +47,9 @@ let checkSymbol(schematic: string[,]) (row: int) (col: int) =
     if (row >= 0 && col >= 0 && row < schematic.GetLength(0) && col < schematic.GetLength(1)) then
         let element = schematic.[row, col]
         //printf "Element %s " element
-        if isSymbol element then 
+        if isNumber element then 
             //printfn "is symbol"
+
             true 
         else 
             //printfn "is not symbol"
@@ -58,34 +58,97 @@ let checkSymbol(schematic: string[,]) (row: int) (col: int) =
         //printfn "Out of bounds"
         false
 
+let transformPart (input: string array) =
+    let value = String.Join("", input)
+    let number = Regex.Match(value, "\d+")
+    match number with
+    | m when m.Success -> Int32.Parse(m.Value)
+    | _ -> 0
+
+let getCheckers (input:string array) =
+    let check =
+        match input |> Array.map isNumber with
+        // 1 1 1 X 1 1 1 (3 - 3)
+        | [|  true;   true;  true;  false;  true;  true;   true |] -> [| Array.sub input 0 3; Array.sub input 4 3 |]
+        // 1 1 1 X 1 1 X (3 - 2)
+        | [|  true;   true;  true;  false;  true;  true;  false |] -> [| Array.sub input 0 3; Array.sub input 4 2 |]
+        // 1 1 1 X 1 X - (3 - 1)
+        | [|  true;   true;  true;  false;  true; false;      _ |] -> [| Array.sub input 0 3; Array.sub input 4 1 |]
+        // 1 1 1 X X - - (3 - 0)
+        | [|  true;   true;  true;  false; false;     _;      _ |] -> [| Array.sub input 0 3 |]
+
+        // X 1 1 X 1 1 1 (2 - 3)
+        | [| false;   true;  true;  false;  true;  true;   true |] -> [| Array.sub input 1 2; Array.sub input 4 3 |]
+        // - 1 1 X 1 1 - (2 - 2)
+        | [|     _;   true;  true;  false;  true;  true;      _ |] -> [| Array.sub input 1 2; Array.sub input 4 2 |]
+        // - 1 1 X 1 X - (2 - 1)
+        | [|     _;   true;  true;  false;  true; false;      _ |] -> [| Array.sub input 1 2; Array.sub input 4 1 |]
+        // - 1 1 X X - - (2 - 0)
+        | [|     _;   true;  true;  false; false;     _;      _ |] -> [| Array.sub input 1 2 |]
+
+        // - X 1 X 1 1 1 (1 - 3)
+        | [|     _;  false;  true;  false;  true;  true;   true |] -> [| Array.sub input 2 1; Array.sub input 4 3 |]
+        // - X 1 X 1 1 X (1 - 2)
+        | [|     _;  false;  true;  false;  true;  true;  false |] -> [| Array.sub input 2 1; Array.sub input 4 2 |]
+        // - X 1 X 1 X - (1 - 1)
+        | [|     _;  false;  true;  false;  true; false;      _ |] -> [| Array.sub input 2 1; Array.sub input 4 1 |]
+        // - X 1 X X - - (1 - 0)
+        | [|     _;  false;  true;  false; false;     _;      _ |] -> [| Array.sub input 2 1 |]
+
+        // - - X X 1 1 1 (0 - 3)
+        | [|     _;      _; false;  false;  true;  true;   true |] -> [| Array.sub input 4 3 |]
+        // - - X X 1 1 X (0 - 2)
+        | [|     _;      _; false;  false;  true;  true;  false |] -> [| Array.sub input 4 2 |]
+        // - - X X 1 X X (0 - 1)
+        | [|     _;      _; false;  false;  true; false;  false |] -> [| Array.sub input 4 1 |]
+           
+        // - X 1 1 1 X - (1)
+        | [|     _;  false;  true;   true;  true; false;      _ |] -> [| Array.sub input 2 3 |]
+        // - 1 1 1 X - - (1)
+        | [|     _;   true;  true;   true; false;     _;      _ |] -> [| Array.sub input 1 3 |]
+        // - X 1 1 X X - (1)
+        | [|     _;  false;  true;   true; false; false;      _ |] -> [| Array.sub input 2 2 |]
+        // - X 1 1 X - - (1)
+        | [|     _;  false;  true;   true; false;     _;      _ |] -> [| Array.sub input 2 2 |]
+        // - X X 1 X X - (1)
+        | [|     _;  false; false;   true; false; false;      _ |] -> [| Array.sub input 3 1 |]
+        // - X X 1 1 X - (1)
+        | [|     _;  false; false;   true;  true; false;      _ |] -> [| Array.sub input 3 2 |]
+        // - - X 1 1 X - (1)
+        | [|     _;      _; false;   true;  true; false;      _ |] -> [| Array.sub input 3 2 |]
+        // - - X 1 1 1 - (1)
+        | [|     _;      _; false;   true;  true;  true;      _ |] -> [| Array.sub input 3 3 |]
+        | _ -> [||]
+    check
+
 let getGear (schematic: string[,]) (row: int) (col: int) =
     let currentSurrounding =
         seq {
-            // left up
-            let leftUp = schematic[row - 1,*] |> Array.sub(col - 2,)
-            if checkSymbol schematic (row - 1) (col - 1) then
-                yield true
-            // up
-            if checkSymbol schematic (row - 1) (col) then
-                yield true
-            // right up
-            if checkSymbol schematic (row - 1) (col + 1) then
-                yield true
-            // left
-            if checkSymbol schematic (row) (col - 1) then
-                yield true
-            // right
-            if checkSymbol schematic (row) (col + 1) then
-                yield true
-            // left down
-            if checkSymbol schematic (row + 1) (col - 1) then
-                yield true
-            // down 
-            if checkSymbol schematic (row + 1) (col) then
-                yield true
-            // right down 
-            if checkSymbol schematic (row + 1) (col + 1) then
-                yield true
+            // check up
+            let up = Array.sub schematic.[row - 1, *] (col - 3) 7
+            let checkUp = getCheckers up
+            for c in checkUp do
+                yield transformPart c
+
+            // check down
+            let down = Array.sub schematic.[row + 1, *] (col - 3) 7
+            let checkDown = getCheckers down
+            for c in checkDown do
+                yield transformPart c
+
+            // check left middle
+            if schematic[row, col - 1] <> "." then
+                let middleLeft = Array.sub schematic.[row, *] (col - 3) 3
+                let ml = transformPart middleLeft
+                if ml <> 0 then
+                    yield ml
+            // check right middle
+            if schematic[row, col + 1] <> "." then
+                let middleRight = Array.sub schematic.[row, *] (col + 1) 3
+                let mr = transformPart middleRight
+                if mr <> 0 then
+                    yield mr
+                
         } |> Seq.toList
     currentSurrounding
 
@@ -103,7 +166,8 @@ let processSchematic (schematic: string[,]) =
                         //printfn "Found number %A" foundNumber
                         yield (checkGear |> List.reduce (*))
                     else
-                        printfn "Symbol * at %i % i is not a gear" star.row star.col
+                        //printfn "Symbol * at %i % i is not a gear" star.row star.col
+                        ()
         }
     numbers
 

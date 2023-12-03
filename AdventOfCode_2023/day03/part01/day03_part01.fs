@@ -100,10 +100,11 @@ let processSchematic (schematic: string[,]) =
                 for num in numbers do
                     if isLinked schematic num.row num.col num.number then
                         let foundNumber = (int)num.number
-                        printfn "Found number %A" foundNumber
+                        //printfn "Found number %A" foundNumber
                         yield foundNumber
                     else
-                        printfn "Number %A is not linked" num.number
+                        //printfn "Number %A is not linked" num.number
+                        ()
         }
     numbers
 

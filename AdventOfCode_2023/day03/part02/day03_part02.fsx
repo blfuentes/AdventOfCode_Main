@@ -7,3 +7,5 @@ open AdventOfCode_2023.Modules
 
 //let path = "day03/test_input_01.txt"
 let path = "day03/day03_input.txt"
+
+"467..114..".Split('.')
