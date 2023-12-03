@@ -9,16 +9,16 @@ let from whom =
 [<EntryPoint>]
 let main argv =
     // DAY 01
-    //let resultday01Part1 = day01_part01.execute
-    //printfn "Final result Day 01 part 1: %i" resultday01Part1
-    //let resultday02Part2 = day01_part02.execute
-    //printfn "Final result Day 01 part 2: %i" resultday02Part2
+    let resultday01Part1 = day01_part01.execute
+    printfn "Final result Day 01 part 1: %i" resultday01Part1
+    let resultday02Part2 = day01_part02.execute
+    printfn "Final result Day 01 part 2: %i" resultday02Part2
 
     // DAY 02
-    //let resultday02Part1 = day02_part01.execute
-    //printfn "Final result Day 02 part 1: %i" resultday02Part1
-    //let resultday02Part2 = day02_part02.execute
-    //printfn "Final result Day 02 part 2: %i" resultday02Part2
+    let resultday02Part1 = day02_part01.execute
+    printfn "Final result Day 02 part 1: %i" resultday02Part1
+    let resultday02Part2 = day02_part02.execute
+    printfn "Final result Day 02 part 2: %i" resultday02Part2
 
     // DAY 03
     let resultday03Part1 = day03_part01.execute
