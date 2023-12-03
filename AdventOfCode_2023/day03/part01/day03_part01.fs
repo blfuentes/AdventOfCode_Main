@@ -17,44 +17,24 @@ let (|Int|_|) (str:string) =
     | true,int -> Some int
     | _ -> None
 
-let isNumber (input: string): bool =
-    match input with
-    |Int i -> true 
-    |_ -> false
-
 let isSymbol (input: string): bool =
     match input with
     |Int i -> false 
     |_ -> if input = "." then false else true
 
-let addToSymbols (symbols: string[]) (input: string) =
-    if Array.contains input symbols then symbols
-    else Array.append symbols [|input|]
-
-let buildSchematicEngine (schematic: string[,]) (lines: string[]) (symbols: string[])=
+let buildSchematicEngine (schematic: string[,]) (lines: string[]) =
     for i in 0..lines.Length-1 do
         for j in 0..lines.[0].Length-1 do
             schematic.[i,j] <- lines.[i].[j].ToString()
 
-let printSchematic (schematic: string[,]) =
-    for i in 0..schematic.GetLength(0)-1 do
-        for j in 0..schematic.GetLength(1)-1 do
-            printf "%s" schematic.[i,j]
-        printfn ""
-
 let checkSymbol(schematic: string[,]) (row: int) (col: int) =
-    //printf "Check element %i %i " row col
     if (row >= 0 && col >= 0 && row < schematic.GetLength(0) && col < schematic.GetLength(1)) then
         let element = schematic.[row, col]
-        //printf "Element %s " element
         if isSymbol element then 
-            //printfn "is symbol"
             true 
         else 
-            //printfn "is not symbol"
             false
     else
-        //printfn "Out of bounds"
         false
 
 let isLinked (schematic: string[,]) (row: int) (col: int) (number: string) : bool =
@@ -100,21 +80,14 @@ let processSchematic (schematic: string[,]) =
                 for num in numbers do
                     if isLinked schematic num.row num.col num.number then
                         let foundNumber = (int)num.number
-                        //printfn "Found number %A" foundNumber
                         yield foundNumber
-                    else
-                        //printfn "Number %A is not linked" num.number
-                        ()
         }
     numbers
 
 let execute =
     let path = "day03/day03_input.txt"
-    //let path = "day03/test_input_01.txt"
-    //let path = "day03/test_input_02.txt"
     let lines = Utilities.GetLinesFromFile path
     let engineSchematic = Array2D.create lines.Length lines.[0].Length ""
-    buildSchematicEngine engineSchematic lines [||]
-    //printSchematic engineSchematic
+    buildSchematicEngine engineSchematic lines
     let linkedNumbers = processSchematic engineSchematic
     linkedNumbers |> Seq.sum
