@@ -6,16 +6,30 @@ open System.Text.RegularExpressions
 
 open AdventOfCode_2023.Modules
 
-type FoundNum = {
-    number: string
+type Coord = {
+    element: string
     row: int
     col: int
+    isSymbol: bool
+}
+
+type Region = {
+    id: string
+    col: int
+    row: int
+    width: int
+    neighbours: Coord list
 }
 
 let (|Int|_|) (str:string) =
     match System.Int32.TryParse str with
     | true,int -> Some int
     | _ -> None
+
+let isNumber (input: string): bool =
+    match input with
+    |Int i -> true 
+    |_ -> false
 
 let isSymbol (input: string): bool =
     match input with
@@ -27,6 +41,23 @@ let buildSchematicEngine (schematic: string[,]) (lines: string[]) =
         for j in 0..lines.[0].Length-1 do
             schematic.[i,j] <- lines.[i].[j].ToString()
 
+let buildRegion (schematic: string[,]) (row: int) (col: int) (number: string) =
+    let directions = [(-1,-1);(-1,0);(-1,1);(0,-1);(0,1);(1,-1);(1,0);(1,1)]
+    let tmpNeighbours =
+        seq {
+            for j in (col)..(col + number.Length - 1) do
+                for dir in directions do
+                    let newRow = row + (fst dir)
+                    let newCol = j + (snd dir)
+                    if (newRow >= 0 && newCol >= 0 && newRow < schematic.GetLength(0) && newCol < schematic.GetLength(1)) then
+                        let element = schematic.[newRow, newCol]
+                        if not (isNumber element) then
+                            yield { element = element; row = newRow; col = newCol; isSymbol = isSymbol element }
+                    
+        } |> Seq.toList
+    let region = { id = number; col = col; row = row; width = number.Length; neighbours = tmpNeighbours }
+    region
+
 let checkSymbol(schematic: string[,]) (row: int) (col: int) =
     if (row >= 0 && col >= 0 && row < schematic.GetLength(0) && col < schematic.GetLength(1)) then
         let element = schematic.[row, col]
@@ -37,51 +68,15 @@ let checkSymbol(schematic: string[,]) (row: int) (col: int) =
     else
         false
 
-let isLinked (schematic: string[,]) (row: int) (col: int) (number: string) : bool =
-    let currentSurrounding =
-        seq {
-            for j in (col)..(col + number.Length - 1) do
-                // left up
-                if checkSymbol schematic (row - 1) (j - 1) then
-                    yield true
-                // up
-                if checkSymbol schematic (row - 1) (j) then
-                    yield true
-                // right up
-                if checkSymbol schematic (row - 1) (j + 1) then
-                    yield true
-                // left
-                if checkSymbol schematic (row) (j - 1) then
-                    yield true
-                // right
-                if checkSymbol schematic (row) (j + 1) then
-                    yield true
-                // left down
-                if checkSymbol schematic (row + 1) (j - 1) then
-                    yield true
-                // down 
-                if checkSymbol schematic (row + 1) (j) then
-                    yield true
-                // right down 
-                if checkSymbol schematic (row + 1) (j + 1) then
-                    yield true
-                    
-        } |> Seq.toList
-    currentSurrounding.Length > 0
-
 let processSchematic (schematic: string[,]) =
     let regex = Regex("(\d+)")
     let numbers =
         seq {
             for i in 0..schematic.GetLength(0) - 1 do
                 let matches = regex.Matches(String.Join("",schematic.[i,*]))
-                let numbers = matches |> Seq.map(fun m -> { number = m.Value; row = i; col = m.Index })
-                
-                for num in numbers do
-                    if isLinked schematic num.row num.col num.number then
-                        let foundNumber = (int)num.number
-                        yield foundNumber
-        }
+                let numbers = matches |> Seq.map(fun m -> buildRegion schematic i m.Index m.Value)
+                yield! numbers
+        } |> Seq.toList
     numbers
 
 let execute =
@@ -90,4 +85,4 @@ let execute =
     let engineSchematic = Array2D.create lines.Length lines.[0].Length ""
     buildSchematicEngine engineSchematic lines
     let linkedNumbers = processSchematic engineSchematic
-    linkedNumbers |> Seq.sum
+    linkedNumbers |> List.filter(fun n -> n.neighbours |> List.exists(fun c -> c.isSymbol)) |> List.sumBy(fun n -> (int)n.id)
