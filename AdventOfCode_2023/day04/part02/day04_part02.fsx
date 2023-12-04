@@ -28,28 +28,30 @@ let buildCardSet (input: string) =
 let countMatchingCards (cardSet: CardSet) =
     cardSet.MyCards |> Seq.filter (fun x -> cardSet.WinningCards |> Seq.contains x) |> Seq.length
 
-let getPoints (input: int) =
-    match input with
-    | v when v > 0 -> Math.Pow(2.0, float (v - 1)) |> int
-    | _ -> 0
+let returnMatchingCards (cardSet: CardSet) (originalCardSet: CardSet list) =
+    let matchingCards = countMatchingCards cardSet
+    let copyCardsIds = if matchingCards > 0 then [cardSet.CardId + 1 .. cardSet.CardId + matchingCards] else []
+    let copyCards = originalCardSet |> Seq.filter (fun x -> copyCardsIds |> Seq.contains x.CardId) 
+                    |> Seq.distinctBy _.CardId |> Seq.toList
+    copyCards
+
+let buildMemo (originalCardSet: CardSet list) =
+    originalCardSet |> List.map (fun c -> (c.CardId, returnMatchingCards c originalCardSet)) |> Array.ofList
 
 let cardSet (input: string array) =
     input |> Seq.map buildCardSet |> Seq.toList
 
-let rec playCardSet (originalCardSet: CardSet list) (remainingCardSet: CardSet list) =
-    match remainingCardSet with
-    | [] -> originalCardSet
+let rec playCardSet (initialCards: int array) (remainingCards: CardSet list) (memo: (int * CardSet list) array)=
+    match remainingCards with
+    | [] -> initialCards
     | card :: tail ->
-        let matchingCards = countMatchingCards card
-        let copyCardsIds = [card.CardId + 1 .. card.CardId + matchingCards]
-        let copyCards = originalCardSet |> Seq.filter (fun x -> copyCardsIds |> Seq.contains x.CardId) |> Seq.toList
-        let produceCopies = copyCards |> Seq.map countMatchingCards |> Seq.sum > 0
-        match produceCopies with
-        | false ->
-            playCardSet originalCardSet tail
-        | true ->
-            playCardSet (originalCardSet @ copyCards) (tail @ copyCards)
+        let copyCards = memo.[card.CardId - 1] |> snd
+        let numOfCurrentCards = initialCards.[card.CardId - 1]
+        for copy in copyCards do
+            initialCards.[copy.CardId - 1] <- initialCards.[copy.CardId - 1] + numOfCurrentCards
+        playCardSet initialCards tail memo
 
-let finalBoard = (playCardSet (cardSet lines) (cardSet lines)) |> List.groupBy _.CardId
-let result = finalBoard |> List.sumBy (fun b -> (snd b).Length)
-printfn "Result %i" result
+let memo = buildMemo (cardSet lines)
+let initialCards = Array.create lines.Length 1
+let ended = playCardSet initialCards (cardSet lines) memo
+ended |> Array.sum
