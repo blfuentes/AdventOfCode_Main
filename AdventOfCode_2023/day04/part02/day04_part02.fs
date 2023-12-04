@@ -2,10 +2,61 @@
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_2023.Modules
 
+//let path = "day04/test_input_01.txt"
 let path = "day04/day04_input.txt"
 
+type CardSet = {
+    CardId: int
+    WinningCards: int array
+    MyCards: int array
+    IsOriginal: bool
+}
+
+let buildCardSet (input: string) =
+    let parts = input.Split(':')
+    let cardId = Regex.Match(parts.[0], @"\d+").Value |> int
+    let winningCards = Regex.Matches(parts.[1].Split('|').[0], @"\d+") |> Seq.map _.Value |> Seq.map int |> Seq.distinct |> Seq.toArray
+    let myCards = Regex.Matches(parts.[1].Split('|').[1], @"\d+") |> Seq.map _.Value |> Seq.map int |> Seq.distinct |> Seq.toArray
+    { CardId = cardId; MyCards = myCards; WinningCards = winningCards; IsOriginal = true}
+
+let countMatchingCards (cardSet: CardSet) =
+    cardSet.MyCards |> Seq.filter (fun x -> cardSet.WinningCards |> Seq.contains x) |> Seq.length
+
+let returnMatchingCards (cardSet: CardSet) (originalCardSet: CardSet list) =
+    let matchingCards = countMatchingCards cardSet
+    let copyCardsIds = if matchingCards > 0 then [cardSet.CardId + 1 .. cardSet.CardId + matchingCards] else []
+    let copyCards = originalCardSet |> Seq.filter (fun x -> copyCardsIds |> Seq.contains x.CardId) 
+                    |> Seq.distinctBy _.CardId |> Seq.toList
+    copyCards
+
+let buildMemo (originalCardSet: CardSet list) =
+    originalCardSet |> List.map (fun c -> (c.CardId, returnMatchingCards c originalCardSet)) |> Array.ofList
+
+let getPoints (input: int) =
+    match input with
+    | v when v > 0 -> Math.Pow(2.0, float (v - 1)) |> int
+    | _ -> 0
+
+let cardSet (input: string array) =
+    input |> Seq.map buildCardSet |> Seq.toList
+
+let rec playCardSet (originalCardSet: CardSet list) (remainingCardSet: CardSet list) (memo: (int * CardSet list) array)=
+    match remainingCardSet with
+    | [] -> originalCardSet
+    | card :: tail ->
+        let copyCards = memo.[card.CardId - 1] |> snd
+        let newOriginalCardSet = (originalCardSet @ copyCards) |> List.sortBy _.CardId
+        printfn "Added %i cards. Now %i remaining" copyCards.Length newOriginalCardSet.Length
+        playCardSet newOriginalCardSet ((tail @ copyCards) |> List.sortBy _.CardId) memo
+
 let execute =
-    0
+    let lines = Utilities.GetLinesFromFile path
+    let memo = buildMemo (cardSet lines)
+    playCardSet (cardSet lines) (cardSet lines) memo |> List.length
+    //let finalBoard = (playCardSet (cardSet lines) (cardSet lines)) |> List.groupBy _.CardId
+    //let result = finalBoard |> List.sumBy (fun b -> (snd b).Length)
+    //result
