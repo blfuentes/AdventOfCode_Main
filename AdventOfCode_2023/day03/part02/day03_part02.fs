@@ -6,10 +6,19 @@ open System.Text.RegularExpressions
 
 open AdventOfCode_2023.Modules
 
-type FoundNum = {
-    number: string
+type Coord = {
+    element: string
     row: int
     col: int
+    isSymbol: bool
+}
+
+type Region = {
+    id: string
+    col: int
+    row: int
+    width: int
+    neighbours: Coord list
 }
 
 let (|Int|_|) (str:string) =
@@ -22,132 +31,86 @@ let isNumber (input: string): bool =
     |Int i -> true 
     |_ -> false
 
-let buildSchematicEngine (schematic: string[,]) (lines: string[])=
+let isSymbol (input: string): bool =
+    match input with
+    |Int i -> false 
+    |_ -> if input = "." then false else true
+
+let buildSchematicEngine (schematic: string[,]) (lines: string[]) =
     for i in 0..lines.Length-1 do
         for j in 0..lines.[0].Length-1 do
             schematic.[i,j] <- lines.[i].[j].ToString()
 
+let buildRegion (schematic: string[,]) (row: int) (col: int) (number: string) =
+    let directions = [(-1,-1);(-1,0);(-1,1);(0,-1);(0,1);(1,-1);(1,0);(1,1)]
+    let tmpNeighbours =
+        seq {
+            for j in (col)..(col + number.Length - 1) do
+                for dir in directions do
+                    let newRow = row + (fst dir)
+                    let newCol = j + (snd dir)
+                    if (newRow >= 0 && newCol >= 0 && newRow < schematic.GetLength(0) && newCol < schematic.GetLength(1)) then
+                        let element = schematic.[newRow, newCol]
+                        if not (isNumber element) then
+                            yield { element = element; row = newRow; col = newCol; isSymbol = isSymbol element }
+                    
+        } |> Seq.toList
+    let region = { id = number; col = col; row = row; width = number.Length; neighbours = tmpNeighbours }
+    region
+
 let checkSymbol(schematic: string[,]) (row: int) (col: int) =
-    //printf "Check element %i %i " row col
     if (row >= 0 && col >= 0 && row < schematic.GetLength(0) && col < schematic.GetLength(1)) then
         let element = schematic.[row, col]
-        isNumber element
+        if isSymbol element then 
+            true 
+        else 
+            false
     else
         false
 
-let transformPart (input: string array) =
-    let value = String.Join("", input)
-    let number = Regex.Match(value, "\d+")
-    match number with
-    | m when m.Success -> Int32.Parse(m.Value)
-    | _ -> 0
-
-let getCheckers (input:string array) =
-    let check =
-        match input |> Array.map isNumber with
-        // 1 1 1 X 1 1 1 (3 - 3)
-        | [|  true;   true;  true;  false;  true;  true;   true |] -> [| Array.sub input 0 3; Array.sub input 4 3 |]
-        // 1 1 1 X 1 1 X (3 - 2)
-        | [|  true;   true;  true;  false;  true;  true;  false |] -> [| Array.sub input 0 3; Array.sub input 4 2 |]
-        // 1 1 1 X 1 X - (3 - 1)
-        | [|  true;   true;  true;  false;  true; false;      _ |] -> [| Array.sub input 0 3; Array.sub input 4 1 |]
-        // 1 1 1 X X - - (3 - 0)
-        | [|  true;   true;  true;  false; false;     _;      _ |] -> [| Array.sub input 0 3 |]
-
-        // X 1 1 X 1 1 1 (2 - 3)
-        | [| false;   true;  true;  false;  true;  true;   true |] -> [| Array.sub input 1 2; Array.sub input 4 3 |]
-        // - 1 1 X 1 1 - (2 - 2)
-        | [|     _;   true;  true;  false;  true;  true;      _ |] -> [| Array.sub input 1 2; Array.sub input 4 2 |]
-        // - 1 1 X 1 X - (2 - 1)
-        | [|     _;   true;  true;  false;  true; false;      _ |] -> [| Array.sub input 1 2; Array.sub input 4 1 |]
-        // - 1 1 X X - - (2 - 0)
-        | [|     _;   true;  true;  false; false;     _;      _ |] -> [| Array.sub input 1 2 |]
-
-        // - X 1 X 1 1 1 (1 - 3)
-        | [|     _;  false;  true;  false;  true;  true;   true |] -> [| Array.sub input 2 1; Array.sub input 4 3 |]
-        // - X 1 X 1 1 X (1 - 2)
-        | [|     _;  false;  true;  false;  true;  true;  false |] -> [| Array.sub input 2 1; Array.sub input 4 2 |]
-        // - X 1 X 1 X - (1 - 1)
-        | [|     _;  false;  true;  false;  true; false;      _ |] -> [| Array.sub input 2 1; Array.sub input 4 1 |]
-        // - X 1 X X - - (1 - 0)
-        | [|     _;  false;  true;  false; false;     _;      _ |] -> [| Array.sub input 2 1 |]
-
-        // - - X X 1 1 1 (0 - 3)
-        | [|     _;      _; false;  false;  true;  true;   true |] -> [| Array.sub input 4 3 |]
-        // - - X X 1 1 X (0 - 2)
-        | [|     _;      _; false;  false;  true;  true;  false |] -> [| Array.sub input 4 2 |]
-        // - - X X 1 X X (0 - 1)
-        | [|     _;      _; false;  false;  true; false;  false |] -> [| Array.sub input 4 1 |]
-           
-        // - X 1 1 1 X - (1)
-        | [|     _;  false;  true;   true;  true; false;      _ |] -> [| Array.sub input 2 3 |]
-        // - 1 1 1 X - - (1)
-        | [|     _;   true;  true;   true; false;     _;      _ |] -> [| Array.sub input 1 3 |]
-        // - X 1 1 X X - (1)
-        | [|     _;  false;  true;   true; false; false;      _ |] -> [| Array.sub input 2 2 |]
-        // - X 1 1 X - - (1)
-        | [|     _;  false;  true;   true; false;     _;      _ |] -> [| Array.sub input 2 2 |]
-        // - X X 1 X X - (1)
-        | [|     _;  false; false;   true; false; false;      _ |] -> [| Array.sub input 3 1 |]
-        // - X X 1 1 X - (1)
-        | [|     _;  false; false;   true;  true; false;      _ |] -> [| Array.sub input 3 2 |]
-        // - - X 1 1 X - (1)
-        | [|     _;      _; false;   true;  true; false;      _ |] -> [| Array.sub input 3 2 |]
-        // - - X 1 1 1 - (1)
-        | [|     _;      _; false;   true;  true;  true;      _ |] -> [| Array.sub input 3 3 |]
-        | _ -> [||]
-    check
-
-let getGear (schematic: string[,]) (row: int) (col: int) =
-    let currentSurrounding =
-        seq {
-            // check up
-            let up = Array.sub schematic.[row - 1, *] (col - 3) 7
-            let checkUp = getCheckers up
-            for c in checkUp do
-                yield transformPart c
-
-            // check down
-            let down = Array.sub schematic.[row + 1, *] (col - 3) 7
-            let checkDown = getCheckers down
-            for c in checkDown do
-                yield transformPart c
-
-            // check left middle
-            if schematic[row, col - 1] <> "." then
-                let middleLeft = Array.sub schematic.[row, *] (col - 3) 3
-                let ml = transformPart middleLeft
-                if ml <> 0 then
-                    yield ml
-            // check right middle
-            if schematic[row, col + 1] <> "." then
-                let middleRight = Array.sub schematic.[row, *] (col + 1) 3
-                let mr = transformPart middleRight
-                if mr <> 0 then
-                    yield mr
-                
-        } |> Seq.toList
-    currentSurrounding
-
-let processSchematic (schematic: string[,]) =
-    let regex = Regex("(\*)")
+let findNumberRegions (schematic: string[,]) =
+    let regex = Regex("(\d+)")
     let numbers =
         seq {
             for i in 0..schematic.GetLength(0) - 1 do
                 let matches = regex.Matches(String.Join("",schematic.[i,*]))
-                let stars = matches |> Seq.map(fun m -> { number = m.Value; row = i; col = m.Index })
-                
-                for star in stars do
-                    let checkGear = getGear schematic star.row star.col
-                    if checkGear.Length = 2 then
-                        yield (checkGear |> List.reduce (*))
-        }
+                let numbers = matches |> Seq.map(fun m -> buildRegion schematic i m.Index m.Value)
+                yield! numbers
+        } |> Seq.toList
     numbers
+
+let findGearRegions (schematic: string[,]) =
+    let regex = Regex("(\*)")
+    let gears =
+        seq {
+            for i in 0..schematic.GetLength(0) - 1 do
+                let matches = regex.Matches(String.Join("",schematic.[i,*]))
+                let gears = matches |> Seq.map(fun m -> buildRegion schematic i m.Index m.Value)
+                yield! gears
+        } |> Seq.toList
+    gears
+
+let isNeighbour (coord: Region) (region: Region) =
+    let neighbours = region.neighbours
+    let result = neighbours |> Seq.filter(fun n -> n.col = coord.col && n.row = coord.row)
+    not (Seq.isEmpty result)
+
+let findCollision (numbers: Region list) (gears: Region list) =
+    let collisions =
+        seq {
+            for ger in gears do
+                let numbers = numbers |> Seq.filter(fun n -> (isNeighbour ger n)) |> Seq.toList
+                if numbers.Length = 2 then
+                    yield numbers |> List.map (fun n ->  (int)n.id) |> List.reduce (*)
+        } |> Seq.toList
+    collisions
 
 let execute =
     let path = "day03/day03_input.txt"
     let lines = Utilities.GetLinesFromFile path
     let engineSchematic = Array2D.create lines.Length lines.[0].Length ""
     buildSchematicEngine engineSchematic lines
-    let linkedNumbers = processSchematic engineSchematic
-    linkedNumbers |> Seq.sum
+    let numbers = findNumberRegions engineSchematic
+    let gears = findGearRegions engineSchematic
+    findCollision numbers gears |> List.sum
+    
