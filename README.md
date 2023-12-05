@@ -62,4 +62,4 @@ https://adventofcode.com/2022
 https://adventofcode.com/2023
 
 2023 F#
-- 5 al 25
+- 6 al 25
