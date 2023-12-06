@@ -134,6 +134,8 @@
     <ClCompile Include="day01\day01_part02.ixx" />
     <ClCompile Include="day02\day02_part01.ixx" />
     <ClCompile Include="day02\day02_part02.ixx" />
+    <ClCompile Include="day03\day03_part01.ixx" />
+    <ClCompile Include="day03\day03_part02.ixx" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Solutions.ixx" />
     <ClCompile Include="Utilities.ixx" />
@@ -144,6 +146,8 @@
     <Text Include="day01\test_input_02.txt" />
     <Text Include="day02\day02_input.txt" />
     <Text Include="day02\test_input_01.txt" />
+    <Text Include="day03\day03_input.txt" />
+    <Text Include="day03\test_input_01.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
