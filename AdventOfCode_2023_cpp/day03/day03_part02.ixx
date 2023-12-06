@@ -125,7 +125,6 @@ static int findCollision(vector<REGION> numbers, vector<REGION> gears) {
 namespace day03_part02 {
 	export int execute() {
 		vector<string> lines = Utilities::readTextFile("day03/day03_input.txt");
-		//vector<string> lines = Utilities::readTextFile("day03/test_input_01.txt");
 
 		// get numbers for regions
 		std::regex numbersRgx("\\d+");

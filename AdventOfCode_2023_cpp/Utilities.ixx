@@ -30,16 +30,7 @@ namespace Utilities {
     }
 
     export bool isNumber(const std::string& s) {
-        try {
-            size_t pos;
-            std::stoi(s, &pos);
-            return pos == s.length();  // Check if the entire string was consumed
-        }
-        catch (const std::invalid_argument& ia) {
-            return false;  // Conversion failed (not a number)
-        }
-        catch (const std::out_of_range& oor) {
-            return false;  // Conversion out of range
-        }
+		return !s.empty() && std::find_if(s.begin(),
+			s.end(), [](unsigned char c) { return !std::isdigit(c); }) == s.end();
     }
 }

@@ -79,7 +79,6 @@ static REGION buildRegion(string** schematic, int row, int col, string number, i
 namespace day03_part01 {
 	export int execute() {
 		vector<string> lines = Utilities::readTextFile("day03/day03_input.txt");
-		//vector<string> lines = Utilities::readTextFile("day03/test_input_01.txt");
 
 		// get numbers for regions
 		std::regex rgx("\\d+");
