@@ -3,6 +3,7 @@
 #include <regex>
 #include <iostream>
 #include <sstream>
+#include <unordered_map>
 
 import Utilities;
 
@@ -10,56 +11,29 @@ using namespace std;
 
 export module day02_part01;
 
-namespace day02_part01
-{
-	class GameCube
-	{
+namespace day02_part01 {
+	class GameSet {
 	public:
-		GameCube(int numOfCubes, string color)
-			: _numOfCubes(numOfCubes), _color(color)
+		GameSet(int id, vector<std::unordered_map<std::string, int>> cubes)
+			: _idGame(id), _gameCubes(cubes)
 		{
 		}
 
-		int GetNumOfCubes() const
-		{
-			return _numOfCubes;
+		int idGame() const {
+			return _idGame;
 		}
 
-		string GetColor() const
-		{
-			return _color;
+		vector<std::unordered_map<std::string, int>> gameCubes() const {
+			return _gameCubes;
 		}
 	private:
-		int _numOfCubes;
-		string _color;
+		int _idGame;
+		vector<std::unordered_map<std::string, int>> _gameCubes;
 	};
 
-	class GameSet
-	{
-	public:
-		GameSet(int idGame, vector<vector<GameCube>> gameCubes)
-			: idGame(idGame), gameCubes(gameCubes)
-		{
-		}
-
-		int GetIdGame() const
-		{
-			return idGame;
-		}
-
-		vector<vector<GameCube>> GetGameCubes() const
-		{
-			return gameCubes;
-		}
-	private:
-		int idGame;
-		vector<vector<GameCube>> gameCubes;
-	};
-
-	GameSet buildGameSet(string line)
-	{
+	static GameSet buildGameSet(string line) {
 		int gameId = 0;
-		vector<vector<GameCube>> gameCubes;
+		vector<std::unordered_map<std::string, int>> gameCubes;
 
 		// extract game part
 		std::istringstream gameParts(line);
@@ -75,20 +49,18 @@ namespace day02_part01
 		std::sregex_iterator iter(line.begin(), line.end(), rgx);
 		std::sregex_iterator end;
 
-		while (iter != end) 
-		{
+		while (iter != end) {
 			std::istringstream cubeSet(iter->str());
 			std::string cube;
-			std::vector<GameCube> cubesOfCubSet;
-			while (std::getline(cubeSet, cube, ',')) 
-			{
+			std::unordered_map<std::string, int> cubesOfCubSet;
+			while (std::getline(cubeSet, cube, ',')) {
 				std::istringstream partDef(cube);
 				string numOfCubes;
 				string color;
 				partDef >> numOfCubes >> color;
-				cubesOfCubSet.push_back(GameCube(stoi(numOfCubes), color));
+				cubesOfCubSet[color] = stoi(numOfCubes);
 			}
-			
+
 			// Move to the next match
 			++iter;
 			gameCubes.push_back(cubesOfCubSet);
@@ -97,17 +69,39 @@ namespace day02_part01
 		return GameSet(gameId, gameCubes);
 	}
 
-	export int Execute()
-	{
-		/*vector<string> lines = Utilities::readTextFile("day02/day02_input.txt");*/
-		vector<string> lines = Utilities::readTextFile("day02/test_input_01.txt");
+	export int execute() {
+		vector<string> lines = Utilities::readTextFile("day02/day02_input.txt");
+		//vector<string> lines = Utilities::readTextFile("day02/test_input_01.txt");
 		int result = 0;
-
+		vector<GameSet> gameSets;
 		for (string line : lines)
-		{
-			GameSet gameSet = buildGameSet(line);
+			gameSets.push_back(buildGameSet(line));
+
+		int sumOfIds = 0;
+		bool isGameValid = true;
+		std::unordered_map<std::string, int> rules;
+		rules["red"] = 12;
+		rules["green"] = 13;
+		rules["blue"] = 14;
+		for (GameSet gameSet : gameSets) {
+			for (std::unordered_map<std::string, int> cubes : gameSet.gameCubes()) {
+				for (auto const& [key, val] : cubes) {
+					if (val > rules[key]) {
+						isGameValid = false;
+						break;
+					}
+				}
+				if (!isGameValid)
+					break;
+			}
+
+			if (isGameValid) {
+				sumOfIds += gameSet.idGame();
+			}
+
+			isGameValid = true;
 		}
 
-		return 0;
+		return sumOfIds;
 	}
 }

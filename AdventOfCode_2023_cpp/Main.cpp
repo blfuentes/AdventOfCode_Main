@@ -8,17 +8,16 @@ import day01_part02;
 import day02_part01;
 import day02_part02;
 
-int main()
-{
+int main() {
     std::cout << "Advent of Code 2023!" << std::endl;
-    int resultDay01Part01 = day01_part01::Execute();
+    int resultDay01Part01 = day01_part01::execute();
     std::cout << "Day 01 Part 01: " << resultDay01Part01 << std::endl;
-    int resultDay01Part02 = day01_part02::Execute();
+    int resultDay01Part02 = day01_part02::execute();
     std::cout << "Day 01 Part 02: " << resultDay01Part02 << std::endl;
 
-    int resultDay02Part01 = day02_part01::Execute();
+    int resultDay02Part01 = day02_part01::execute();
     std::cout << "Day 02 Part 01: " << resultDay02Part01 << std::endl;
-    int resultDay02Part02 = day02_part02::Execute();
+    int resultDay02Part02 = day02_part02::execute();
     std::cout << "Day 02 Part 02: " << resultDay02Part02 << std::endl;
 }
 

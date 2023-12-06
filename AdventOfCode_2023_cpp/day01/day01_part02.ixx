@@ -9,53 +9,30 @@ using namespace std;
 
 export module day01_part02;
 
-namespace day01_part02
-{
-	int convertRevNumber(string input)
-	{
+namespace day01_part02 {
+	int static convertRevNumber(string input) {
 		if (input == "eno" or input == "one")
-		{
 			return 1;
-		}
 		else if (input == "owt" or input == "two")
-		{
 			return 2;
-		}
 		else if (input == "eerht" or input == "three")
-		{
 			return 3;
-		}
 		else if (input == "ruof" or input == "four")
-		{
 			return 4;
-		}
 		else if (input == "evif" or input == "five")
-		{
 			return 5;
-		}
 		else if (input == "xis" or input == "six")
-		{
 			return 6;
-		}
 		else if (input == "neves" or input == "seven")
-		{
 			return 7;
-		}
 		else if (input == "thgie" or input == "eight")
-		{
 			return 8;
-		}
 		else if (input == "enin" or input == "nine")
-		{
 			return 9;
-		}
 		else
-		{
 			return stoi(input);
-		}
 	}
-	vector<int> findNumbers(string line)
-	{
+	vector<int> static findNumbers(string line) {
 		vector<int> numbers;
 
 		regex firstDigit("(\\d|one|two|three|four|five|six|seven|eight|nine)"); // matches digits from left to right
@@ -75,24 +52,17 @@ namespace day01_part02
 		return numbers;
 	}
 
-	int extractNumber(vector<int> numbers)
-	{
+	int static extractNumber(vector<int> numbers) {
 		if (numbers.size() == 0)
-		{
 			return 0;
-		}
 		else
-		{
 			return numbers[0] * 10 + numbers[numbers.size() - 1];
-		}
 	}
 
-	export int Execute()
-	{
+	export int execute() {
 		vector<string> lines = Utilities::readTextFile("day01/day01_input.txt");
 		int result = 0;
-		for (string line : lines)
-		{
+		for (string line : lines) {
 			vector<int> numbers = findNumbers(line);
 			result += extractNumber(numbers);
 		}
