@@ -58,16 +58,6 @@ let buildRegion (schematic: string[,]) (row: int) (col: int) (number: string) =
     let region = { id = number; col = col; row = row; width = number.Length; neighbours = tmpNeighbours }
     region
 
-let checkSymbol(schematic: string[,]) (row: int) (col: int) =
-    if (row >= 0 && col >= 0 && row < schematic.GetLength(0) && col < schematic.GetLength(1)) then
-        let element = schematic.[row, col]
-        if isSymbol element then 
-            true 
-        else 
-            false
-    else
-        false
-
 let processSchematic (schematic: string[,]) =
     let regex = Regex("(\d+)")
     let numbers =
