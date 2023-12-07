@@ -112,27 +112,19 @@ let calculateHandType (cards: char array) =
             | OnePair -> ThreeOfKind
             | TwoPairs -> FullHouse
             | ThreeOfKind -> FourOfKind
-            | FullHouse -> FullHouse // not possible
             | FourOfKind -> FiveOfKind
-            | FiveOfKind -> FiveOfKind // not possible
+            | _ -> remainingHandType
         | 2 ->
             match remainingHandType with
             | HighCard -> ThreeOfKind
             | OnePair -> FourOfKind
-            | TwoPairs -> TwoPairs // not possible
             | ThreeOfKind -> FiveOfKind
-            | FullHouse -> FullHouse // not possible
-            | FourOfKind -> FourOfKind // not possible
-            | FiveOfKind -> FiveOfKind // not possible
+            | _ -> remainingHandType
         | 3 ->
             match remainingHandType with
             | HighCard -> FourOfKind
             | OnePair -> FiveOfKind
-            | TwoPairs -> TwoPairs // not possible
-            | ThreeOfKind -> ThreeOfKind // not possible
-            | FullHouse -> FullHouse // not possible
-            | FourOfKind -> FourOfKind // not possible
-            | FiveOfKind -> FiveOfKind // not possible
+            | _ -> remainingHandType
         | 4 -> FiveOfKind
         | 5 -> FiveOfKind
         | _ -> getRemainingHandType cards
@@ -141,22 +133,13 @@ let calculateHandType (cards: char array) =
 let parseHand (hand: string) =
     let cards = hand.Split(' ')
     let bid = cards.[1] |> bigint
-    let cards = cards.[0].ToCharArray()
- 
-    { 
-        HandType = calculateHandType cards
-        Cards = cards |> Array.map (string) |>List.ofArray ; 
-        Bid = bid 
-        }
+    let cards = cards.[0].ToCharArray() 
+    { HandType = calculateHandType cards; Cards = cards |> Array.map (string) |>List.ofArray; Bid = bid }
 
 let execute =
     let path = "day07/day07_input.txt"
-    //let path = "day07/test_input_01.txt"
     let lines = Utilities.GetLinesFromFile path
     let hands = lines |> Array.map parseHand
-    hands |> Array.iter (fun hand -> printfn "%A" hand)
     let sortedHands = hands |> Array.sortWith sortByHandType
-    sortedHands |> Array.iter (fun hand -> System.IO.File.AppendAllText("day07_output.txt", sprintf "%A" hand))
-    //System.IO.File.AppendAllText("day07_output.txt",  |> Array.map(fun h -> $"")
     let rankedHands = sortedHands |> Array.mapi (fun index hand -> hand.Bid * (bigint(index.ToString()) + 1I))
     rankedHands |> Array.sum

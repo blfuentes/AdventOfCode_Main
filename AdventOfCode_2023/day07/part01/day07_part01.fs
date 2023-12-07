@@ -80,10 +80,8 @@ let parseHand (hand: string) =
 
 let execute = 
     let path = "day07/day07_input.txt"
-    //let path = "day07/test_input_01.txt"
     let lines = Utilities.GetLinesFromFile path
     let hands = lines |> Array.map parseHand
-    hands |> Array.iter (fun hand -> printfn "%A" hand)
     let sortedHands = hands |> Array.sortWith sortByHandType
     let rankedHands = sortedHands |> Array.mapi (fun index hand -> hand.Bid * (index + 1))
     rankedHands |> Array.sum
