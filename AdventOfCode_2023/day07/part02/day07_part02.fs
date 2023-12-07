@@ -77,13 +77,12 @@ let getRemainingHandType (cards: char array) =
             | 2 -> TwoPairs
             | 1 -> FourOfKind
             | _ -> failwith "Unexpected"
-        | _ -> FourOfKind
+        | _ -> FiveOfKind
     handType
         
 let mutateHandType (handType: HandType) (cards: char array) =
     let numberOfJokers = cards |> Array.filter(fun c -> c = 'J') |> Array.length
     let remainingHandType = getRemainingHandType (cards |> Array.filter (fun c -> c <> 'J'))
-    //let currentValue = strengthHandTypes.[handType.HandType]
     let newHandType =
         match numberOfJokers with
         | 1 -> 
@@ -109,6 +108,7 @@ let mutateHandType (handType: HandType) (cards: char array) =
             | HighCard -> FiveOfKind
             | FourOfKind -> FiveOfKind
             | _ -> handType
+        | 5 -> FiveOfKind
         | _ -> handType
     newHandType
 
@@ -141,8 +141,8 @@ let parseHand (hand: string) =
         }
 
 let execute =
-    let path = "day07/day07_input.txt"
-    //let path = "day07/test_input_01.txt"
+    //let path = "day07/day07_input.txt"
+    let path = "day07/test_input_01.txt"
     let lines = Utilities.GetLinesFromFile path
     let hands = lines |> Array.map parseHand
     hands |> Array.iter (fun hand -> printfn "%A" hand)
