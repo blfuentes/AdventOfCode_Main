@@ -5,6 +5,8 @@ open System.Collections.Generic
 
 open AdventOfCode_2023.Modules
 
+let bigint = System.Numerics.BigInteger.Parse
+
 type HandType = FiveOfKind | FourOfKind | FullHouse | ThreeOfKind | TwoPairs | OnePair | HighCard
 
 let strengthHandTypes = dict[
@@ -27,7 +29,7 @@ let strengthCards = dict[
     "8", 8
     "9", 9
     "T", 10
-    "J", 11
+    "J", 1
     "Q", 12
     "K", 13
     "A", 14
@@ -36,7 +38,7 @@ let strengthCards = dict[
 type Hand = {
     HandType: HandType
     Cards: string list
-    Bid: int
+    Bid: bigint
 }
 
 let rec sortByCard (card1: string list) (card2: string list) =
@@ -58,67 +60,7 @@ let getRemainingHandType (cards: char array) =
     let handType = 
         let groups = cards |> Array.groupBy id
         match cards.Length with
-        | 1 -> HighCard
-        | 2 ->
-            match groups.Length with
-            | 2 -> HighCard
-            | 1 -> OnePair
-            | _ -> failwith "Unexpected" 
-        | 3 ->
-            match groups.Length with
-            | 3 -> HighCard
-            | 2 -> OnePair
-            | 1 -> ThreeOfKind
-            | _ -> failwith "Unexpected"
-        | 4 ->
-            match groups.Length with
-            | 4 -> HighCard
-            | 3 -> OnePair
-            | 2 -> TwoPairs
-            | 1 -> FourOfKind
-            | _ -> failwith "Unexpected"
-        | _ -> FiveOfKind
-    handType
-        
-let mutateHandType (handType: HandType) (cards: char array) =
-    let numberOfJokers = cards |> Array.filter(fun c -> c = 'J') |> Array.length
-    let remainingHandType = getRemainingHandType (cards |> Array.filter (fun c -> c <> 'J'))
-    let newHandType =
-        match numberOfJokers with
-        | 1 -> 
-            match remainingHandType with
-            | HighCard -> OnePair
-            | OnePair -> ThreeOfKind
-            | TwoPairs -> FullHouse
-            | FourOfKind -> FiveOfKind
-            | _ -> handType
-        | 2 ->
-            match remainingHandType with
-            | HighCard -> ThreeOfKind
-            | OnePair -> FourOfKind
-            | ThreeOfKind -> FiveOfKind
-            | _ -> handType
-        | 3 ->
-            match remainingHandType with
-            | HighCard -> FourOfKind
-            | OnePair -> FiveOfKind
-            | _ -> handType
-        | 4 ->
-            match remainingHandType with
-            | HighCard -> FiveOfKind
-            | FourOfKind -> FiveOfKind
-            | _ -> handType
-        | 5 -> FiveOfKind
-        | _ -> handType
-    newHandType
-
-
-let parseHand (hand: string) =
-    let cards = hand.Split(' ')
-    let bid = cards.[1] |> int
-    let cards = cards.[0].ToCharArray()
-    let handType = 
-            let groups = cards |> Array.groupBy id
+        | 5 ->
             match groups.Length with
             | 5 -> HighCard
             | 4 -> OnePair
@@ -133,19 +75,88 @@ let parseHand (hand: string) =
                 | [| 2; 3 |] -> FullHouse
                 | _ -> failwith "Unexpected"
             | 1 -> FiveOfKind
-            | _ -> failwith "Unexpected"    
+            | _ -> failwith "Unexpected"  
+        | 4 ->
+            match groups.Length with
+            | 4 -> HighCard
+            | 3 -> OnePair
+            | 2 -> 
+                match groups |> Array.map (fun (key, value) -> value.Length) |> Array.sort with
+                | [| 1; 3 |] -> ThreeOfKind
+                | [| 2; 2 |] -> TwoPairs
+                | _ -> failwith "Unexpected"
+            | 1 -> FourOfKind
+            | _ -> failwith "Unexpected"
+        | 3 ->
+            match groups.Length with
+            | 3 -> HighCard
+            | 2 -> OnePair
+            | 1 -> ThreeOfKind
+            | _ -> failwith "Unexpected"
+        | 2 ->
+            match groups.Length with
+            | 1 -> OnePair
+            | _ -> HighCard
+        | 1 -> HighCard
+        | _ -> HighCard                           
+    handType
+        
+let calculateHandType (cards: char array) =
+    let numberOfJokers = cards |> Array.filter(fun c -> c = 'J') |> Array.length
+    let remainingHandType = getRemainingHandType (cards |> Array.filter (fun c -> c <> 'J'))
+    let newHandType =
+        match numberOfJokers with
+        | 1 -> 
+            match remainingHandType with
+            | HighCard -> OnePair
+            | OnePair -> ThreeOfKind
+            | TwoPairs -> FullHouse
+            | ThreeOfKind -> FourOfKind
+            | FullHouse -> FullHouse // not possible
+            | FourOfKind -> FiveOfKind
+            | FiveOfKind -> FiveOfKind // not possible
+        | 2 ->
+            match remainingHandType with
+            | HighCard -> ThreeOfKind
+            | OnePair -> FourOfKind
+            | TwoPairs -> TwoPairs // not possible
+            | ThreeOfKind -> FiveOfKind
+            | FullHouse -> FullHouse // not possible
+            | FourOfKind -> FourOfKind // not possible
+            | FiveOfKind -> FiveOfKind // not possible
+        | 3 ->
+            match remainingHandType with
+            | HighCard -> FourOfKind
+            | OnePair -> FiveOfKind
+            | TwoPairs -> TwoPairs // not possible
+            | ThreeOfKind -> ThreeOfKind // not possible
+            | FullHouse -> FullHouse // not possible
+            | FourOfKind -> FourOfKind // not possible
+            | FiveOfKind -> FiveOfKind // not possible
+        | 4 -> FiveOfKind
+        | 5 -> FiveOfKind
+        | _ -> getRemainingHandType cards
+    newHandType
+
+let parseHand (hand: string) =
+    let cards = hand.Split(' ')
+    let bid = cards.[1] |> bigint
+    let cards = cards.[0].ToCharArray()
+ 
     { 
-        HandType = if (cards |> Array.contains 'J') then (mutateHandType handType cards) else handType; 
+        HandType = calculateHandType cards
         Cards = cards |> Array.map (string) |>List.ofArray ; 
         Bid = bid 
         }
 
 let execute =
-    //let path = "day07/day07_input.txt"
-    let path = "day07/test_input_01.txt"
+    let path = "day07/day07_input.txt"
+    //let path = "day07/test_input_01.txt"
     let lines = Utilities.GetLinesFromFile path
     let hands = lines |> Array.map parseHand
     hands |> Array.iter (fun hand -> printfn "%A" hand)
     let sortedHands = hands |> Array.sortWith sortByHandType
-    let rankedHands = sortedHands |> Array.mapi (fun index hand -> hand.Bid * (index + 1))
+    sortedHands |> Array.iter (fun hand -> System.IO.File.AppendAllText("day07_output.txt", sprintf "%A" hand))
+    //System.IO.File.AppendAllText("day07_output.txt",  |> Array.map(fun h -> $"")
+    let rankedHands = sortedHands |> Array.mapi (fun index hand -> hand.Bid * (bigint(index.ToString()) + 1I))
     rankedHands |> Array.sum
