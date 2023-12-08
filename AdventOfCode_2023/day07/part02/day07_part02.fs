@@ -127,7 +127,7 @@ let calculateHandType (cards: char array) =
             | _ -> remainingHandType
         | 4 -> FiveOfKind
         | 5 -> FiveOfKind
-        | _ -> getRemainingHandType cards
+        | _ -> remainingHandType
     newHandType
 
 let parseHand (hand: string) =
