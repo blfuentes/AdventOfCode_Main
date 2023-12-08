@@ -333,3 +333,18 @@ module Utilities =
         |> Seq.map (fun i -> StringInfo.GetNextTextElement(str, i))
         |> String.concat ""
     ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    let rec gcdBig (a: bigint) (b: bigint) =
+        if b = bigint.Zero then a
+        else gcdBig b (a % b)
+    
+    let rec lcmBig (a: bigint) (b: bigint) =
+        if a = bigint.Zero || b = bigint.Zero then bigint.Zero
+        else (a * b) / (gcdBig a b)
+    
+    let rec listLcmBig (numbers: bigint list) =
+        match numbers with
+        | [] -> bigint.One
+        | hd :: tl -> lcmBig hd (listLcmBig tl)
+    ///////////////////////////////////////////////////////////////////////////////////
