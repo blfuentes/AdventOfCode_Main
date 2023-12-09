@@ -1,11 +1,11 @@
-﻿#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
 open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
 open System.Collections.Generic
 
-open AdventOfCode_2015.Modules
+open AdventOfCode_Utilities
 
 type Operation = {
     op1: string

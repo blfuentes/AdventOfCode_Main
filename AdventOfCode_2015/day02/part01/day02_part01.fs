@@ -1,7 +1,7 @@
 ﻿module day02_part01
 
 open System.IO
-open AdventOfCode_2015.Modules
+open AdventOfCode_Utilities
 
 let path = "day02/day02_input.txt"
 let inputLine = GetLinesFromFile(path) |> Seq.map(fun x -> x.Split('x') |> Array.map int)

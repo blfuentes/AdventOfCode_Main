@@ -1,6 +1,6 @@
 ﻿module day05_part01
 
-open AdventOfCode_2015.Modules
+open AdventOfCode_Utilities
 
 let path = "day05/day05_input.txt"
 

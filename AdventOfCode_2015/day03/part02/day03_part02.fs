@@ -2,7 +2,7 @@
 
 open System.IO
 
-open AdventOfCode_2015.Modules
+open AdventOfCode_Utilities
 
 let path = "day03/day03_input.txt"
 
