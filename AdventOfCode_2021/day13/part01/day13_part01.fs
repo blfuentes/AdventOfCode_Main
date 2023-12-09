@@ -5,6 +5,8 @@ open System.IO
 open System.Text.RegularExpressions
 open System.Collections.Generic
 
+open AdventOfCode_Utilities
+
 let createBoard(coords: int[] list) =
     let maxY = 1500//((coords |> List.sortByDescending(fun c -> c.[1])) |> List.head).[1] + 1
     let maxX = 1500//((coords |> List.sortByDescending(fun c -> c.[0])) |> List.head).[0] + 1

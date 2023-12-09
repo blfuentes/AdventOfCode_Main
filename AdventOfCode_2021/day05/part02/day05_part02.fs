@@ -5,7 +5,7 @@ open System.IO
 open System.Text.RegularExpressions
 
 //#load "..\..\Modules\Utilities.fs"
-//open Utilities
+//open AdventOfCode_Utilities
 
 let path = "day05_input.txt"
 //let path = "test_input.txt"
