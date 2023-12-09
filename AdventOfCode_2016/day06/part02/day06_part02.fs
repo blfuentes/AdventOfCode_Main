@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2016.Modules
+open AdventOfCode_Utilities
 
 let buildContainer (value: string) (listOfChars: string list array) =
     value.ToCharArray() |> Array.iteri(fun i c -> listOfChars.[i] <- if listOfChars.[0] = [] then [(c |> string)] else (listOfChars.[i] @ [(c |> string)]))

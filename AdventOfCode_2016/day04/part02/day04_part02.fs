@@ -3,7 +3,7 @@
 open System
 open System.Text.RegularExpressions
 
-open AdventOfCode_2016.Modules
+open AdventOfCode_Utilities
 
 type CharCount = { Character: char; Count: int }
 type Room = { Content: string; Name: string; SectorId: int; Checksum: string; Parts: CharCount array }

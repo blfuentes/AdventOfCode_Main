@@ -1,9 +1,9 @@
-﻿#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2016.Modules
+open AdventOfCode_Utilities
 
 //let path = "day24/test_input_01.txt"
 let path = "day24/day24_input.txt"
