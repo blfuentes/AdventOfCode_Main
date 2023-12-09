@@ -62,4 +62,4 @@ https://adventofcode.com/2022
 https://adventofcode.com/2023
 
 2023 F#/C++
-- 9 al 25
+- 10 al 25
