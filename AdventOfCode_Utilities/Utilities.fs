@@ -1,4 +1,4 @@
-namespace AdventOfCode_BASE.Modules
+ï»¿namespace AdventOfCode_Utilities
 
 open System
 open System.IO
@@ -124,10 +124,10 @@ module Utilities =
 
     ///////////////////////////////////////////////////////////////////////////////////
     let getLinesGroupBySeparatorWithEmptySpaceFixReplace (inputLines: string list) (separator: string) =
-        let validlines = inputLines |> List.map(fun e -> if e = " " then "§" else e)
+        let validlines = inputLines |> List.map(fun e -> if e = " " then "Â§" else e)
         let validsplitter =
             match separator = " " with
-            | true -> "§"
+            | true -> "Â§"
             | false -> separator
         let complete = 
             seq {
@@ -332,4 +332,19 @@ module Utilities =
         |> Array.rev
         |> Seq.map (fun i -> StringInfo.GetNextTextElement(str, i))
         |> String.concat ""
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    let rec gcdBig (a: bigint) (b: bigint) =
+        if b = bigint.Zero then a
+        else gcdBig b (a % b)
+    
+    let rec lcmBig (a: bigint) (b: bigint) =
+        if a = bigint.Zero || b = bigint.Zero then bigint.Zero
+        else (a * b) / (gcdBig a b)
+    
+    let rec listLcmBig (numbers: bigint list) =
+        match numbers with
+        | [] -> bigint.One
+        | hd :: tl -> lcmBig hd (listLcmBig tl)
     ///////////////////////////////////////////////////////////////////////////////////

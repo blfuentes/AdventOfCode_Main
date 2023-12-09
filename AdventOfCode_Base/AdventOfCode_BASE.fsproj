@@ -4,7 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Modules/Utilities.fs" />
     <None Include="day00\playground.fsx" />
     <Compile Include="day00\part01\day00_part01.fs" />
     <Compile Include="day00\part02\day00_part02.fs" />
@@ -167,5 +166,11 @@
     <None Include="day24\part02\day24_part02.fsx" />
     <None Include="day25\part01\day25_part01.fsx" />
     <None Include="day25\part02\day25_part02.fsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdventOfCode_Utilities\AdventOfCode_Utilities.fsproj" />
   </ItemGroup>
 </Project>

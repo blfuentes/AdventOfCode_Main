@@ -37,6 +37,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AdventOfCode_2020", "Advent
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventOfCode_2023_cpp", "AdventOfCode_2023_cpp\AdventOfCode_2023_cpp.vcxproj", "{0D5332EA-3CE1-425A-8006-76805BB5641C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode_Utilities", "AdventOfCode_Utilities\AdventOfCode_Utilities.fsproj", "{1D1A73E5-713F-4741-B819-C61A74E216C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +217,18 @@ Global
 		{0D5332EA-3CE1-425A-8006-76805BB5641C}.Release|x64.Build.0 = Release|x64
 		{0D5332EA-3CE1-425A-8006-76805BB5641C}.Release|x86.ActiveCfg = Release|Win32
 		{0D5332EA-3CE1-425A-8006-76805BB5641C}.Release|x86.Build.0 = Release|Win32
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Debug|x64.Build.0 = Debug|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Release|x64.ActiveCfg = Release|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Release|x64.Build.0 = Release|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D1A73E5-713F-4741-B819-C61A74E216C6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
