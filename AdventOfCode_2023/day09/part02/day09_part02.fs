@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2023.Modules
+open AdventOfCode_Utilities
 
 let rec processHistory (history: int array) (lasNumbers: int list) =
     let diffs = history |> Array.pairwise |> Array.map (fun (a, b) -> b - a)

@@ -1,10 +1,10 @@
-﻿#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
 open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
 
-open AdventOfCode_2023.Modules
+open AdventOfCode_Utilities
 
 //let path = "day08/test_input_01.txt"
 //let path = "day08/test_input_02.txt"

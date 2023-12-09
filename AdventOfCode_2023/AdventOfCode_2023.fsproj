@@ -6,7 +6,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="Modules\Utilities.fs" />
 		<Compile Include="day00\part01\day00_part01.fs" />
 		<Compile Include="day00\part02\day00_part02.fs" />
 		<Compile Include="day01\part01\day01_part01.fs" />
@@ -145,6 +144,14 @@
 		<None Include="day25\part01\day25_part01.fsx" />
 		<None Include="day25\part02\day25_part02.fsx" />
 		<Compile Include="Program.fs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Modules\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\AdventOfCode_Utilities\AdventOfCode_Utilities.fsproj" />
 	</ItemGroup>
 
 </Project>

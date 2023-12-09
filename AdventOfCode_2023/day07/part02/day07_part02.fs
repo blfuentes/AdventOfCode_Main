@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2023.Modules
+open AdventOfCode_Utilities
 
 let bigint = System.Numerics.BigInteger.Parse
 

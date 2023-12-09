@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2023.Modules
+open AdventOfCode_Utilities
 
 type HandType = FiveOfKind | FourOfKind | FullHouse | ThreeOfKind | TwoPairs | OnePair | HighCard
 

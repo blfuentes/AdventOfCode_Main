@@ -4,7 +4,7 @@ open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
 
-open AdventOfCode_2023.Modules
+open AdventOfCode_Utilities
 
 let path = "day08/day08_input.txt"
 
