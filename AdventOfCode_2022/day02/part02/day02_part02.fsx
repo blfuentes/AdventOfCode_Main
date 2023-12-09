@@ -1,7 +1,7 @@
 ﻿open System.IO
 
-#load @"../../Modules/Utilities.fs"
-open AoC_2022.Modules
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+open AdventOfCode_Utilities
 
 // let path = "day02/test_input_01.txt"
 let path = "day02/day02_input.txt"

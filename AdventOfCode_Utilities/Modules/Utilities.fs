@@ -13,6 +13,9 @@ module Utilities =
     let GetContentFromFile(path: string) =
         File.ReadAllText(__SOURCE_DIRECTORY__ + @"../../" + path)
 
+    let ReadLines(path: string) =
+        File.ReadLines(__SOURCE_DIRECTORY__ + @"../../" + path)
+
     ///////////////////////////////////////////////////////////////////////////////////
     /// Splits a string in two parts
     let splitString (input: string) =

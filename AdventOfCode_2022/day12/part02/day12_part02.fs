@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AoC_2022.Modules
+open AdventOfCode_Utilities
 
 let path = "day12/day12_input.txt"
 

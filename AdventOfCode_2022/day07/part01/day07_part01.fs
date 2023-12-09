@@ -1,5 +1,6 @@
 ﻿module day07_part01
 
+open AdventOfCode_Utilities
 open AoC_2022.Modules
 
 //let path = "day07/test_input_01.txt"

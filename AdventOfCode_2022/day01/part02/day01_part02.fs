@@ -1,6 +1,6 @@
 ﻿module day01_part02
 
-open AoC_2022.Modules
+open AdventOfCode_Utilities
 
 let path = "day01/day01_input.txt"
 

@@ -1,9 +1,9 @@
-﻿#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
 open System
 open System.Text.Json.Nodes
 
-open AoC_2022.Modules
+open AdventOfCode_Utilities
 
 // let path = "day13/test_input_01.txt"
 let path = "day13/day13_input.txt"

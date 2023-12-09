@@ -1,8 +1,8 @@
 ﻿open System.IO
 open System.Collections.Generic
 
-#load @"../../Modules/Utilities.fs"
-open AoC_2022.Modules
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+open AdventOfCode_Utilities
 
 let path = "day05/test_input_01.txt"
 // let path = "day05/day05_input.txt"

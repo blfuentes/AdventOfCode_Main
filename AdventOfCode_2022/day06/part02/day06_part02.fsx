@@ -1,5 +1,5 @@
-﻿#load @"../../Modules/Utilities.fs"
-open AoC_2022.Modules
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+open AdventOfCode_Utilities
 
 // let path = "day06/test_input_01.txt"
 // let path = "day06/test_input_02.txt"
