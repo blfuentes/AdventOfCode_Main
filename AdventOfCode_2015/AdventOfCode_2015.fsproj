@@ -124,7 +124,8 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="day07\test_input.txt" />
+    <Content Include="day07\day07_input.txt" />
+    <Content Include="day07\test_input_01.txt" />
     <Content Include="day08\test_input.txt" />
     <Content Include="day09\test_input.txt" />
     <Content Include="day10\test_input.txt" />

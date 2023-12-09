@@ -1,6 +1,6 @@
 ﻿module day06_part02
 
-open Utilities
+open AdventOfCode_2015.Modules
 
 let parseInstruction (instruction: string) =
     instruction.Split(' ') |> fun i -> (

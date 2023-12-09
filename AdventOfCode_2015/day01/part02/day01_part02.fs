@@ -1,6 +1,6 @@
 ﻿module day01_part02
 
-open Utilities
+open AdventOfCode_2015.Modules
 
 let path = "day01/day01_input.txt"
 let inputline = GetContentFromFile(path).ToCharArray()
