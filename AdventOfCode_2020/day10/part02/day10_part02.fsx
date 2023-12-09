@@ -1,13 +1,14 @@
-﻿#load @"../../Model/CustomDataTypes.fs"
-#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Model/CustomDataTypes.fs"
+#load @"../../Modules/Helpers.fs"
 
-open Utilities
-open CustomDataTypes
+open AoC_2020.Modules.Helpers
+open AdventOfCode_Utilities
 
 //let file = "test_input.txt"
 let file = "day10_input.txt"
-let path = __SOURCE_DIRECTORY__ + @"../../" + file
-let inputLines = GetLinesFromFileFSI2(path) |> Array.map int |> Array.sort |> List.ofArray
+let path = "day10/" + file
+let inputLines = GetLinesFromFile(path) |> Array.map int |> Array.sort |> List.ofArray
 
 let diff(a, b) =
     b - a

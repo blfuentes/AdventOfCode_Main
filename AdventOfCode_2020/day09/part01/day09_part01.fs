@@ -4,7 +4,7 @@ open System.IO
 open System.Collections.Generic
 open System
 
-open Utilities
+open AdventOfCode_Utilities
 open CustomDataTypes
 
 let path = "day09/day09_input.txt"
@@ -14,7 +14,7 @@ let inputLines = GetLinesFromFile(path) |> Array.map (fun x -> Convert.ToUInt64(
 let preambleSize = 25
 
 let numberIsValid (value: uint64) (listChecker: uint64 list) =
-   let permu = combination (2, listChecker)
+   let permu = combination 2 listChecker
    (permu |> List.exists(fun x -> x.Item(0) + x.Item(1) = value), value)
 
 let rec findInvalidValue (elements: uint64 list) (preamble: int) : (bool * uint64)=

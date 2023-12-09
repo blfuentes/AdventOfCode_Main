@@ -78,6 +78,16 @@ module Utilities =
     ///////////////////////////////////////////////////////////////////////////////////
 
     /////////////////////////////////////////////////////////////////////////////////// 
+    let possibleCombinations (combSize: int) (mainList: uint64 list) =
+        seq {
+            for init in mainList do
+                let index = mainList |> List.findIndex(fun e -> e = init)
+                if mainList.Length - combSize > index then
+                    yield mainList |> List.skip(index) |> List.take(combSize)
+        } |> List.ofSeq
+    /////////////////////////////////////////////////////////////////////////////////// 
+
+    /////////////////////////////////////////////////////////////////////////////////// 
     /// Returns if all elements of the list are consecutive
     let areConsecutive (i: int list) =
         i |> List.pairwise |> List.forall(fun a -> ((snd a) - (fst a)) = 1)   

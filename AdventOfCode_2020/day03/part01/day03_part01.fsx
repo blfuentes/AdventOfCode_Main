@@ -2,15 +2,15 @@
 open System.Collections.Generic
 
 #load @"../../Model/CustomDataTypes.fs"
-#load @"../../Modules/Utilities.fs"
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
-open Utilities
+open AdventOfCode_Utilities
 
 let file = "test_input.txt"
 //let file = "day03_input.txt"
-let path = __SOURCE_DIRECTORY__ + @"../../" + file
+let path = "day03/" + file
 
-let values = GetLinesFromFileFSI(path) |> Array.ofSeq |> Array.map (fun line -> line.ToCharArray())
+let values = GetLinesFromFile(path) |> Array.ofSeq |> Array.map (fun line -> line.ToCharArray())
 
 let width = values.[0].Length
 let height = values.Length

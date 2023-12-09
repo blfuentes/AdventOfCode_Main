@@ -1,7 +1,7 @@
 ﻿module day02_part01
 
 open System.IO
-open Utilities
+open AdventOfCode_Utilities
 open CustomDataTypes
 
 

@@ -2,17 +2,18 @@
 open System.Collections.Generic
 open System
 
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 #load @"../../Model/CustomDataTypes.fs"
-#load @"../../Modules/Utilities.fs"
+#load @"../../Modules/Helpers.fs"
 
-open Utilities
-open CustomDataTypes
+open AoC_2020.Modules.Helpers
+open AdventOfCode_Utilities
 
 let file = "test_input.txt"
 //let file = "test_input_complete.txt"
 //let file = "day05_input.txt"
-let path = __SOURCE_DIRECTORY__ + @"../../" + file
-let inputLines = GetLinesFromFileFSI2(path)
+let path = "day05/" + file
+let inputLines = GetLinesFromFile(path)
 
 let rec calculateSeat minRowCur maxRowCur minColCur maxColCur (index:int) (seatdefinition:string)=
     match index < seatdefinition.Length with

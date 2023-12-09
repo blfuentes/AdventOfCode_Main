@@ -2,21 +2,22 @@
 open System.Collections.Generic
 open System
 
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 #load @"../../Model/CustomDataTypes.fs"
-#load @"../../Modules/Utilities.fs"
+#load @"../../Modules/Helpers.fs"
 
-open Utilities
-open CustomDataTypes
+open AoC_2020.Modules.Helpers
+open AdventOfCode_Utilities
 
 //let file = "test_input.txt"
 let file = "day09_input.txt"
-let path = __SOURCE_DIRECTORY__ + @"../../" + file
-let inputLines = GetLinesFromFileFSI2(path) |> Array.map (fun x -> Convert.ToUInt64(x)) |> List.ofArray
+let path = "day09/" + file
+let inputLines = GetLinesFromFile(path) |> Array.map (fun x -> Convert.ToUInt64(x)) |> List.ofArray
 
 let preambleSize = 25
 
 let numberIsValid (value: uint64) (listChecker: uint64 list) =
-    let permu = combination (2, listChecker)
+    let permu = combination 2 listChecker
     (permu |> List.exists(fun x -> x.Item(0) + x.Item(1) = value), value)
 
 let rec findInvalidValue (elements: uint64 list) (preamble: int) : (bool * uint64)=

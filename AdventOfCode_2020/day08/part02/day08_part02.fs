@@ -4,8 +4,9 @@ open System.IO
 open System.Collections.Generic
 open System
 
-open Utilities
+open AdventOfCode_Utilities
 open CustomDataTypes
+open AoC_2020.Modules
 
 let path = "day08/day08_input.txt"
 

@@ -1,16 +1,16 @@
 ﻿open System.IO
 
 #load @"../../Model/CustomDataTypes.fs"
-#load @"../../Modules/Utilities.fs"
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
-open Utilities
+open AdventOfCode_Utilities
 open CustomDataTypes
 
 //let file = "test_input.txt"
 let file = "day02_input.txt"
-let path = __SOURCE_DIRECTORY__ + @"../../" + file
+let path = "day02/" + file
 
-let inputLines = List.ofSeq <| GetLinesFromFileFSI(path)
+let inputLines = List.ofSeq <| GetLinesFromFile(path)
 let extract l =
     match l with
     | Regex @"(?<min>\d+)-(?<max>\d+) (?<elem>\w): (?<code>\w+)" [m; M; e; c] -> Some {min = m |> int; max = M |> int; element = e; code = c }

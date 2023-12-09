@@ -1,10 +1,11 @@
 ﻿open System.Collections.Generic
 
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 #load @"../../Model/CustomDataTypes.fs"
-#load @"../../Modules/Utilities.fs"
+#load @"../../Modules/Helpers.fs"
 
-open Utilities
-open CustomDataTypes
+open AoC_2020.Modules.Helpers
+open AdventOfCode_Utilities
 
 //let file = "test_input.txt"
 //let file = "test_input_00.txt"
@@ -13,8 +14,8 @@ open CustomDataTypes
 //let file = "test_input_03.txt"
 //let file = "test_input_04.txt"
 let file = "day13_input.txt"
-let path = __SOURCE_DIRECTORY__ + @"../../" + file
-let inputLines = GetLinesFromFileFSI2(path)
+let path = "day13/" + file
+let inputLines = GetLinesFromFile(path)
 
 let buses = 
     let inputSplitted = inputLines.[1].Split(',')

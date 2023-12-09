@@ -2,7 +2,8 @@
 
 open System.IO
 open System.Collections.Generic
-open Utilities
+open AdventOfCode_Utilities
+open AoC_2020.Modules
 
 
 let path = "day07/day07_input.txt"

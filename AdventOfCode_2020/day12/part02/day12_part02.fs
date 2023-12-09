@@ -4,7 +4,7 @@ open System.IO
 open System.Collections.Generic
 open System
 
-open Utilities
+open AdventOfCode_Utilities
 open CustomDataTypes
 
 let path = "day12/day12_input.txt"

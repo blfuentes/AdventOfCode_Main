@@ -2,7 +2,7 @@
 
 open System.IO
 open System.Collections.Generic
-open Utilities
+open AdventOfCode_Utilities
 
 
 let path = "day04/day04_input.txt"
