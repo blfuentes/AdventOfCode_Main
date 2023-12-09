@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2017.Modules
+open AdventOfCode_Utilities
 
 let hasBeenSeen (banks: int[]) (seen: int array list) =
     seen |> List.exists(fun s -> Array.compareWith(fun x y -> x - y) s banks = 0)

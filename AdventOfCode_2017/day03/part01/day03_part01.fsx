@@ -1,8 +1,8 @@
-﻿#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
 open System
 
-open AdventOfCode_2017.Modules
+open AdventOfCode_Utilities
 
 let path = "day03/test_input_01.txt"
 

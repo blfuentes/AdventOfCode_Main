@@ -1,8 +1,8 @@
-﻿#load @"../../Modules/Utilities.fs"
+﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 
 open System
 
-open AdventOfCode_2017.Modules
+open AdventOfCode_Utilities
 
 let printSpiral (spiral: int[,]) =
     let size = spiral.GetLength(0)

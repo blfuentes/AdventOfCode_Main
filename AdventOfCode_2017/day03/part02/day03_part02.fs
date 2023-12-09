@@ -1,6 +1,6 @@
 ﻿module day03_part02
 
-open AdventOfCode_2017.Modules
+open AdventOfCode_Utilities
 
 let getValueForPosition (position: int[]) (spiral: int[,]) =
     let rowRange = [-1..1]

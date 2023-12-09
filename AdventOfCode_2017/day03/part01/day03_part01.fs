@@ -2,7 +2,7 @@
 
 open System
 
-open AdventOfCode_2017.Modules
+open AdventOfCode_Utilities
 
 let calculateManhattanDistance (pointA: int[]) (pointB: int[])=
     Math.Abs(pointA.[0] - pointB.[0]) + Math.Abs(pointA.[1] - pointB.[1]);

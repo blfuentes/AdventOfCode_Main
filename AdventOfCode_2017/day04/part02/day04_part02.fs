@@ -3,7 +3,7 @@
 open System
 open System.Collections.Generic
 
-open AdventOfCode_2017.Modules
+open AdventOfCode_Utilities
 
 let isAnagram (s1:string) (s2:string) =
     let s1 = s1 |> Seq.sort |> Seq.toArray
