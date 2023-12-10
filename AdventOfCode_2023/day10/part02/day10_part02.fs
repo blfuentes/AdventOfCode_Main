@@ -86,6 +86,9 @@ let rec numOfCuts (from: Coord) (target: Coord) (visited: Coord Set) (map: strin
         let next = { row = from.row; col = from.col + 1 }
         if Set.contains next visited then 
             let point = map.[next.row, next.col]
+            // count all vertical | and then either: nonzero rule
+            // F and 7 for  -><-
+            // J and L for <->
             if point = "F" || point = "7" || point = "|" then
                 numOfCuts next target visited map (cuts + 1)
             else
