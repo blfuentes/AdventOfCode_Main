@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 open System.IO
 
+open AdventOfCode_2023.Modules
 open AdventOfCode_Utilities
 
 let ReadLines(path: string) =
@@ -14,16 +15,19 @@ type Coord = {
     col: int
 }
 
-type Position = {
-    coord: Coord
-    value: string
-    connections: Position list
-}
+let buildMap (input: string list) =
+    let array = Array2D.create (input.Length) (input.[0].Length) "."
+    let startPoint = Array.create 1 { row = 0; col = 0 }
 
-type VisitedPosition = {
-    position: Position
-    visited: bool
-}
+    for rowIdx in 0..input.Length - 1 do
+        for colIdx in 0..input.[0].Length - 1 do
+            let value = input.[rowIdx].[colIdx].ToString()
+            array[rowIdx, colIdx] <- value
+            if value = "S" then 
+                startPoint.[0] <- { row = rowIdx; col = colIdx }
+
+
+    (startPoint.[0], array)
 
 let getValidDirections (position: Coord) (map: string[,]) =
     let directions = [[|-1; 0|]; [|1; 0|]; [|0; -1|]; [|0; 1|]]
@@ -34,39 +38,25 @@ let getValidDirections (position: Coord) (map: string[,]) =
     )
     validDirections
 
-let getDirectionsPositions (position: Coord) (map: string[,]) =
-    let availableDirections = getValidDirections position map
-    availableDirections |> List.map (fun direction ->
-        let row = position.row + direction.[0]
-        let col = position.col + direction.[1]
-        { coord = { row = row; col = col }; value = map.[row, col]; connections = [] }        
-    )
-
-let getValueOfDirection (position: Coord) (map: string[,]) =
-    if position.row >= 0 && position.row < map.GetLength(0) && position.col >= 0 && position.col < map.GetLength(1) then 
-        [{ coord = position; value = map.[position.row, position.col]; connections = [] }]
-    else
-        []
-
 let getStartDirections (position: Coord) (map: string[,]) =
     let availableDirections = getValidDirections position map
     let startDirections = seq {
         for d in availableDirections do
             let posToCheck = { row = position.row + d.[0]; col = position.col + d.[1] }
-            let value = getValueOfDirection posToCheck map
-            if value.Length > 0 then                
-                match d, value.Head.value with
-                | [|-1; 0|], p when ["|"; "7"; "F"] |> List.contains p -> yield d
-                | [|0; -1|], p when ["-"; "L"; "F"] |> List.contains p -> yield d
-                | [|0; 1|], p when ["-"; "J"; "7"] |> List.contains p -> yield d
-                | [|1; 0|], p when ["|"; "J"; "L"] |> List.contains p -> yield d
-                | _ -> ()
+            let value = map.[posToCheck.row, posToCheck.col]
+            match d, value with
+            | [|-1; 0|], p when ["|"; "7"; "F"] |> List.contains p -> yield d
+            | [|0; -1|], p when ["-"; "L"; "F"] |> List.contains p -> yield d
+            | [|0; 1|], p when ["-"; "J"; "7"] |> List.contains p -> yield d
+            | [|1; 0|], p when ["|"; "J"; "L"] |> List.contains p -> yield d
+            | _ -> ()
     }
     startDirections |> List.ofSeq
 
-let getConnections (input: string) (position: Coord) (map: string[,])=
+let getConnections (position: Coord) (map: string[,])=
+    let value = map.[position.row, position.col]
     let directions =
-        match input with
+        match value with
         | "|" -> [[|-1; 0|]; [|1; 0|]]
         | "-" -> [[|0; -1|]; [|0; 1|]]
         | "L" -> [[|-1; 0|]; [|0; 1|]]
@@ -79,27 +69,9 @@ let getConnections (input: string) (position: Coord) (map: string[,])=
     let connections = seq {
         for d in directions do
             let posToCheck = { row = position.row + d.[0]; col = position.col + d.[1] }
-            let value = getValueOfDirection posToCheck map
-            if value.Length > 0 then
-                yield value.Head
+            yield { row = posToCheck.row; col = posToCheck.col }
     }
-    connections |> List.ofSeq
-
-let buildMap (input: string list) =
-    let map = new Dictionary<(int * int), Position>()
-    let array = Array2D.create (input.Length) (input.[0].Length) "."
-    for rowIdx in 0..input.Length - 1 do
-        for colIdx in 0..input.[0].Length - 1 do
-            let value = input.[rowIdx].[colIdx].ToString()
-            array[rowIdx, colIdx] <- value
-    for rowIdx in 0..input.Length - 1 do
-        for colIdx in 0..input.[0].Length - 1 do
-            let value = array[rowIdx, colIdx]
-            if value <> "." then
-                let coord = { row = rowIdx; col = colIdx }
-                let conn = getConnections value coord array
-                map.Add((rowIdx, colIdx), { coord = coord; value = value; connections = conn })
-    (map, array)
+    connections |> Set.ofSeq
 
 let printMap (map: string[,]) =
     for row in 0..map.GetLength(0) - 1 do
@@ -107,98 +79,105 @@ let printMap (map: string[,]) =
             printf "%s" map.[row, col]
         printfn ""
 
-let containsPosition (position: Position) (visited: VisitedPosition list) =
-    visited |> List.exists (fun v -> v.position.coord.row = position.coord.row && v.position.coord.col = position.coord.col)
-
-let getNextPosition (curentPosition: Position) (map: Dictionary<(int * int), Position>) (visited: VisitedPosition list) =
-    let connection = map.Values |> Seq.toList |> List.filter (fun c -> c.coord.row = curentPosition.coord.row && c.coord.col = curentPosition.coord.col) |> List.head
-    let wasVisited = containsPosition connection visited
-    match wasVisited with
-    | true -> failwith "all visited"
-    | false -> connection
-
-let rec travelMap (startPosition: Position) (map: Dictionary<(int * int), Position>) (visited: VisitedPosition list) =
-    let nextPosition = getNextPosition startPosition map visited
-    //printfn "Visiting %A" nextPosition.value
-    let visited' = { position = startPosition; visited = true }::visited
-    let nextPosition' = nextPosition.connections |> List.filter (fun c -> not(containsPosition c visited'))
-    match nextPosition' with
-    | [] -> visited'
-    | head :: _ -> travelMap head map visited'
-
-let max (a: float) (b: float) =
-    if a > b then
-        a
+let rec numOfCuts (from: Coord) (target: Coord) (visited: Coord Set) (map: string[,]) (cuts: int) =
+    if from.col = target.col then 
+        cuts
     else
-        b
-let min (a: float) (b: float) =
-    if a < b then
-        a
-    else
-        b
-
-let rec intersects (pointA: Coord) (pointB: Coord) (cut: float array) =
-    if pointA.col > pointB.col then
-        intersects pointB pointA cut
-    else
-        if cut.[1] = pointA.col || cut.[1] = pointB.col then
-            cut.[1] <- cut.[1] + 0.0001
-
-        if cut.[1] > pointB.col || cut.[1] < pointA.col || cut.[0] >= (max((float)pointA.row) ((float)pointB.row)) then
-            false
-        else
-            if cut.[0] < (min((float)pointA.row) ((float)pointB.row)) then
-                true
+        let next = { row = from.row; col = from.col + 1 }
+        if Set.contains next visited then 
+            let point = map.[next.row, next.col]
+            if point = "F" || point = "7" || point = "|" then
+                numOfCuts next target visited map (cuts + 1)
             else
-                let red = (cut.[1] - (float)pointA.row) / (float)(cut.[0] - (float)pointA.col)
-                let blue = (float)(pointB.row - pointA.row) / (float)(pointB.col - pointA.col)
-                red >= blue
+                numOfCuts next target visited map cuts
+        else 
+            numOfCuts next target visited map cuts
 
-let contains (polygon: Coord list) (point: Coord) =
-    let mutable inside = false
-    let len = polygon.Length
-    for idx in 0..len - 1 do
-        if intersects (polygon.Item(idx)) (polygon.Item((idx + 1) % len)) ([| (float)point.row; (float)point.col |]) then
-            inside <- not inside
-    inside
+let rec travelMap (startPosition: Coord) (map: string[,]) (visited: Coord Set) =
+    let possiblePositions = getConnections startPosition map
+    let nextPosition = Set.difference possiblePositions visited
+    if nextPosition.IsEmpty then visited
+    else
+        let point = nextPosition.MinimumElement
+        let visited' = Set.add point visited
+        travelMap point map visited'
 
- 
+let replaceStartPoint (map: string[,]) (startPoint: Coord) =
+    let right = map.[startPoint.row, startPoint.col + 1]
+    let left = map.[startPoint.row, startPoint.col - 1]
+    let top = map.[startPoint.row - 1, startPoint.col]
+    let bottom = map.[startPoint.row + 1, startPoint.col]
+    
+    match right, left, top, bottom  with 
+    // horizontal
+    | "-", "-", _, _ -> "-"
+    | "-", "L", _, _ -> "-"
+    | "J", "-", _, _ -> "-"
+    | "J", "L", _, _ -> "-"
+
+    // vertical
+    | _, _, "|", "|" -> "|"
+    | _, _, "|", "J" -> "|"
+    | _, _, "7", "|" -> "|"
+    | _, _, "7", "J" -> "|"
+
+    // top left
+    | _, "-", "|", _ -> "J"
+    | _, "-", "7", _ -> "J"
+    | _, "L", "|", _ -> "J"
+    | _, "L", "7", _ -> "J"
+    | _, "F", "|", _ -> "J"
+    | _, "F", "7", _ -> "J"
+
+    // top right
+    | "-", _, "|", _ -> "L"
+    | "-", _, "7", _ -> "L"
+    | "J", _, "|", _ -> "L"
+    | "J", _, "7", _ -> "L"
+    | "7", _, "|", _ -> "L"
+    | "7", _, "7", _ -> "L"
+
+    // bottom left
+    |  _, "-", _, "|" -> "7"
+    |  _, "-", _, "J" -> "7"
+    |  _, "L", _, "|" -> "7"
+    |  _, "L", _, "J" -> "7"
+    |  _, "F", _, "|" -> "7"
+    |  _, "F", _, "J" -> "7"
+
+    // bottom right
+    | "-", _,  _, "|" -> "F"
+    | "-", _,  _, "J" -> "F"
+    | "7", _,  _, "|" -> "F"
+    | "7", _,  _, "J" -> "F"
+    | "J", _,  _, "|" -> "F"
+    | "J", _,  _, "J" -> "F"
+
+    | _ -> "S"
 
 let execute =
-    //let path = "day10/test_input_01.txt"
-    //let path = "day10/test_input_02.txt"
-    //let path = "day10/test_input_03.txt"
-    //let path = "day10/test_input_04.txt"
     let path = "day10/day10_input.txt"
-    let lines = ReadLines path |> List.ofSeq
-    let maps = buildMap lines
-    let start = (fst maps).Values |> Seq.find (fun p -> p.value = "S")
-    let visited = travelMap start.connections.Head (fst maps) [{ position = start; visited = true }]
-    let transformedVisitedPoints = visited |> List.map (fun v -> v.position.coord)
-    let visitedDictionary = visited |> List.map (fun v -> (v.position.coord, v.position.value)) |> Map.ofList
+    let input = LocalHelper.ReadLines path |> Seq.toList
+    let (startPoint, map) = buildMap input
+    let visited = Set.add(startPoint) Set.empty
+    let pipePath = travelMap startPoint map visited
 
-    let top = transformedVisitedPoints |> List.minBy (fun p -> p.row)
-    let bottom = transformedVisitedPoints |> List.maxBy (fun p -> p.row)
-    let left = transformedVisitedPoints |> List.minBy (fun p -> p.col)
-    let right = transformedVisitedPoints |> List.maxBy (fun p -> p.col)
+    let pipePath' = pipePath |> List.ofSeq
 
-    let array = snd maps
-    let counting = 
+    let top = pipePath' |> List.minBy (fun p -> p.row)
+    let bottom = pipePath' |> List.maxBy (fun p -> p.row)
+    let left = pipePath' |> List.minBy (fun p -> p.col)
+    let right = pipePath' |> List.maxBy (fun p -> p.col)
+    
+    map.[startPoint.row, startPoint.col] <- replaceStartPoint map startPoint
+    let points =
         seq {
-            for rowIdx = top.row to bottom.row do
-                for colIdx = left.col to right.col do
-                    //let isVisited = visited |> List.exists (fun v -> v.position.coord.row = rowIdx && v.position.coord.col = colIdx)
-                    printf "Checking %i %i value %s. " rowIdx colIdx array.[rowIdx, colIdx]
-                    let isVisited = visitedDictionary.ContainsKey({ row = rowIdx; col = colIdx })
-                    if not isVisited then
-                        let coord = { row = rowIdx; col = colIdx }
-                        let isInside = contains transformedVisitedPoints coord 
-                        if isInside then
-                            printfn "is inside"
-                            yield array.[rowIdx, colIdx]
-                        else
-                            printfn "is outside"
-                    else
-                        printfn "Belongs to visited"
+            for rowIdx in (top.row + 1)..(bottom.row - 1) do
+                for colIdx in (left.col + 1)..(right.col - 1) do
+                    let pointToCheck = { row = rowIdx; col = colIdx }
+                    if not (pipePath.Contains(pointToCheck)) then
+                        let cuts = numOfCuts pointToCheck { row = rowIdx; col = right.col } pipePath map 0
+                        if cuts % 2 = 1 then
+                            yield { row = rowIdx; col = colIdx }
         } |> List.ofSeq
-    counting.Length
+    points.Length

@@ -6,10 +6,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Remove="Modules\**" />
-	</ItemGroup>
-
-	<ItemGroup>
+		<Compile Include="Modules\LocalHelper.fs" />
 		<Compile Include="day00\part01\day00_part01.fs" />
 		<Compile Include="day00\part02\day00_part02.fs" />
 		<Compile Include="day01\part01\day01_part01.fs" />
@@ -80,7 +77,9 @@
 		<Content Include="day09\test_input_01.txt" />
 		<Content Include="day10\day10_input.txt" />
 		<Content Include="day10\test_input_02.txt" />
+		<Content Include="day10\test_input_06.txt" />
 		<Content Include="day10\test_input_03.txt" />
+		<Content Include="day10\test_input_05.txt" />
 		<Content Include="day10\test_input_04.txt" />
 		<Content Include="day10\test_input_01.txt" />
 		<Content Include="day11\test_input_01.txt" />
