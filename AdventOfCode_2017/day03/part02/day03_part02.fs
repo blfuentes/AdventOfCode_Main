@@ -1,6 +1,5 @@
 ﻿module day03_part02
 
-open AdventOfCode_Utilities
 open AdventOfCode_2017.Modules.LocalHelper
 
 let getValueForPosition (position: int[]) (spiral: int[,]) =

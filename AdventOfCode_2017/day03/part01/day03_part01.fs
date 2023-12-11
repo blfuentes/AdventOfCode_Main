@@ -2,7 +2,6 @@
 
 open System
 
-open AdventOfCode_Utilities
 open AdventOfCode_2017.Modules.LocalHelper
 
 let calculateManhattanDistance (pointA: int[]) (pointB: int[])=

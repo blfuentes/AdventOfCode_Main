@@ -1,9 +1,6 @@
 ﻿module day14_part02
 
-open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 open AdventOfCode_2022.Modules
 
 let path = "day14/day14_input.txt"

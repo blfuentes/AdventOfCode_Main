@@ -1,9 +1,7 @@
 ﻿module day07_part02
 
 open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules.LocalHelper
 
 let bigint = System.Numerics.BigInteger.Parse

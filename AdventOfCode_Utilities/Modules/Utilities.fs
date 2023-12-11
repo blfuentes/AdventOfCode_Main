@@ -1,7 +1,6 @@
 ﻿namespace AdventOfCode_Utilities
 
 open System
-open System.IO
 open System.Text.RegularExpressions
 open System.Globalization
 

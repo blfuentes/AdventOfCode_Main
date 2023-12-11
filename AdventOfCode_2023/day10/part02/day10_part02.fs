@@ -1,11 +1,8 @@
 ﻿module day10_part02
 
-open System
-open System.Collections.Generic
 open System.IO
 
 open AdventOfCode_2023.Modules
-open AdventOfCode_Utilities
 
 let ReadLines(path: string) =
     File.ReadLines(__SOURCE_DIRECTORY__ + @"../../../" + path)

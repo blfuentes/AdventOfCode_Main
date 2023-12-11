@@ -1,9 +1,6 @@
 ﻿module day04_part02
 
-open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 open AdventOfCode_2017.Modules.LocalHelper
 
 let isAnagram (s1:string) (s2:string) =

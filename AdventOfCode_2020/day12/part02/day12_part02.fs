@@ -1,8 +1,5 @@
 ﻿module day12_part02
 
-open System.IO
-open System.Collections.Generic
-open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes

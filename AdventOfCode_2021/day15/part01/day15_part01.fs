@@ -2,7 +2,6 @@
 
 open System
 open System.IO
-open System.Text.RegularExpressions
 open System.Collections.Generic
 
 let getNeighboors(myCave: int[][], from: int[]) =

@@ -1,6 +1,5 @@
 ﻿module day05_part02
 
-open System
 open System.IO
 open System.Text.RegularExpressions
 

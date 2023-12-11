@@ -3,8 +3,6 @@
 open System
 open System.IO
 open System.Text.RegularExpressions
-open System.Collections.Generic
-open System.Globalization
 
 let extractparts(input: string, pattern:string) =
     let m = Regex.Match(input, pattern)

@@ -1,7 +1,5 @@
 ﻿namespace AoC_2019.Modules
 
-open System.Collections.Generic
-open System.Numerics
 
 [<AutoOpen>]
 module AsteroidStationModule =

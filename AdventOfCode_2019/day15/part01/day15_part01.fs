@@ -1,5 +1,4 @@
 ﻿module day15_part01
-open System.IO
 open System.Collections.Generic
 
 open AoC_2019.Modules

@@ -1,9 +1,6 @@
 ﻿module day13_part02
 
-open System
 open System.IO
-open System.Text.RegularExpressions
-open System.Collections.Generic
 
 let createBoard(coords: int[] list) =
     let maxY = 1500//((coords |> List.sortByDescending(fun c -> c.[1])) |> List.head).[1] + 1

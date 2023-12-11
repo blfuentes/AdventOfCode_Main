@@ -1,7 +1,6 @@
 ﻿namespace AoC_2022.Modules
 
 open System.Collections.Generic
-open System.Numerics
 open System.Text.RegularExpressions
 
 [<AutoOpen>]

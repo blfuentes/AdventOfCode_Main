@@ -2,12 +2,10 @@
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 #load @"../../Modules/LocalHelper.fs"
 
-open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_2015.Modules
-open AdventOfCode_Utilities
 
 type Operation = {
     op1: string

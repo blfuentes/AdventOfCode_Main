@@ -1,8 +1,6 @@
 ﻿module day07_part01
 
-open System
 open System.IO
-open System.Text.RegularExpressions
 
 let path = "day07_input.txt"
 //let path = "test_input.txt"

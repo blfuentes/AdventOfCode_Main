@@ -1,8 +1,6 @@
 ﻿namespace AdventOfCode_2020.Modules
 
 open System
-open System.IO
-open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 open CustomDataTypes

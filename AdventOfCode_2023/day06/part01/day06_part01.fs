@@ -1,10 +1,8 @@
 ﻿module day06_part01
 
 open System
-open System.Collections.Generic
 open System.Text.RegularExpressions
 
-open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day06/day06_input.txt"

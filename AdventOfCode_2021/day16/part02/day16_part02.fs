@@ -2,9 +2,6 @@
 
 open System
 open System.IO
-open System.Text.RegularExpressions
-open System.Collections.Generic
-open System.Globalization  
 
 let hexToBin(hex: string) =
     match hex with

@@ -3,7 +3,6 @@
 open System
 open System.Text.RegularExpressions
 
-open AdventOfCode_Utilities
 open AdventOfCode_2016.Modules.LocalHelper
 
 type CharCount = { Character: char; Count: int }

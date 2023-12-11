@@ -1,9 +1,6 @@
 ﻿module day12_part01
 
-open System
 open System.IO
-open System.Text.RegularExpressions
-open System.Collections.Generic
 open CustomDataTypes
 
 let path = "day12_input.txt"

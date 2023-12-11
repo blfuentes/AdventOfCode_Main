@@ -1,11 +1,6 @@
 ﻿module day10_part02
 
-open System.IO
-open System.Collections.Generic
-open System
 
-open AdventOfCode_Utilities
-open CustomDataTypes
 open AdventOfCode_2020.Modules
 
 let path = "day10/day10_input.txt"
