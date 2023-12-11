@@ -6,10 +6,11 @@ open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes
+open AdventOfCode_2020.Modules
 
 let path = "day09/day09_input.txt"
 
-let inputLines = GetLinesFromFile(path) |> Array.map (fun x -> Convert.ToUInt64(x)) |> List.ofArray
+let inputLines = LocalHelper.GetLinesFromFile(path) |> Array.map (fun x -> Convert.ToUInt64(x)) |> List.ofArray
 
 let preambleSize = 25
 

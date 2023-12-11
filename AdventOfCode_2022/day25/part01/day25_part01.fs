@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules
 
 let path = "day25/day25_input.txt"
 
@@ -37,6 +38,6 @@ let rec convertToSnuff (current: string) (decvalue: bigint) =
         convertToSnuff (current + newdigit) ((decvalue + 2I) / 5I)
 
 let execute =
-    let inputLines = GetLinesFromFile(path)
+    let inputLines = LocalHelper.GetLinesFromFile(path)
     let totalsumdec = bigint.Parse((inputLines |> Array.map convertToDecimal |> Array.sum).ToString())
     convertToSnuff "" totalsumdec

@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2017.Modules.LocalHelper
 
 let path = "day01/day01_input.txt"
 
@@ -19,4 +20,4 @@ let calculateCaptcha (captcha: string) =
     values |> Seq.sum
 
 let execute =
-    calculateCaptcha (Utilities.GetContentFromFile(path))
+    calculateCaptcha (GetContentFromFile(path))

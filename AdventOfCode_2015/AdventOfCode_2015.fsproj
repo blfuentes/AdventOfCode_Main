@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Modules\LocalHelper.fs" />
     <Compile Include="day00\part01\day00_part01.fs" />
     <Compile Include="day00\part02\day00_part02.fs" />
     <Compile Include="day01/part01/day01_part01.fs" />
@@ -140,9 +141,6 @@
     <Content Include="day20\test_input.txt" />
     <Content Include="day21\test_input.txt" />
     <Content Include="day22\test_input.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modules\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode_Utilities\AdventOfCode_Utilities.fsproj" />

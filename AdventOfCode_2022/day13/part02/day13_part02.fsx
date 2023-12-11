@@ -1,7 +1,12 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open System.Text.Json.Nodes
+open AdventOfCode_2022.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
-open System.Text.Json.Nodes
+open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -40,7 +45,7 @@ let rec compare (l : Packet) (r : Packet) =
         | 0 when ll.Length > rl.Length -> 1
         | x -> x
 
-let inputLines = Utilities.ReadLines(path)
+let inputLines = ReadLines(path)
 let packets = inputLines |> Seq.filter (fun l -> String.IsNullOrEmpty l = false) 
                 |> Seq.map (JsonNode.Parse >> convert) |> Array.ofSeq
 // let result = [0.. 2 .. (packets.Length - 1)]

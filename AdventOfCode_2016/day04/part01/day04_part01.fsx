@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2016.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -50,7 +53,7 @@ let isRealRoom (room: Room) =
         System.IO.File.AppendAllText("./../output_decoys.txt", outputString)
     isRealRoom
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = LocalHelper.GetLinesFromFile(path)
 let rooms = inputLines |> Array.map getParts
 let realRooms = rooms |> Array.filter isRealRoom
 let sumSectorsId = realRooms |> Array.sumBy (fun room -> room.SectorId)

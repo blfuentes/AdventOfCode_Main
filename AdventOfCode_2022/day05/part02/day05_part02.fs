@@ -1,6 +1,7 @@
 ﻿module day05_part02
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day05/day05_input.txt"
 
@@ -29,7 +30,7 @@ let rec runMovements (towers: string[]) (movs: int[] list) =
         runMovements newTowers movs.Tail
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+    let inputLines = GetLinesFromFile(path) |> Seq.toList
     let content = Utilities.getGroupsOnSeparator inputLines ""
     let (initDrawing, movements) = (content.Head, content.Tail.Head)
     let movDefinitions = movements |> List.map(fun m -> [|(int)(m.Split(' ').[1]); (int)(m.Split(' ').[3]); (int)(m.Split(' ').[5])|])

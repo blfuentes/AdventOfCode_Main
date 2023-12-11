@@ -1,10 +1,11 @@
 ﻿module day05_part01
 
 open AdventOfCode_Utilities
+open AdventOfCode_2015.Modules.LocalHelper
 
 let path = "day05/day05_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path) |>Seq.toList
+let inputLines = GetLinesFromFile(path) |>Seq.toList
 
 let containsThreeVowels (input: string) =
     input.ToCharArray() |> Array.filter(fun c -> c = 'a' || c = 'e' || c = 'i' || c = 'o' || c = 'u') |> Array.countBy(fun c -> c) |> Array.sumBy(fun c -> snd c) >= 3

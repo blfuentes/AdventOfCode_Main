@@ -1,10 +1,12 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
-open System.Collections.Generic
 
+open AdventOfCode_2015.Modules
 open AdventOfCode_Utilities
 
 type Operation = {
@@ -115,7 +117,7 @@ let execute =
     //let path = "day07/test_input_01.txt"
     let path = "day07/day07_input.txt"
 
-    let lines = Utilities.GetLinesFromFile path |> List.ofSeq
+    let lines = LocalHelper.GetLinesFromFile path |> List.ofSeq
     let instructions = lines |> List.map parseInstruction
 
     let result = evaluate instructions (Dictionary<string, uint16>())

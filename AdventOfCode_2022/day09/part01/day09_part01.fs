@@ -2,6 +2,7 @@
 
 open System
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules
 
 let path = "day09/day09_input.txt"
 
@@ -66,7 +67,7 @@ let rec run (rope: int[] list) (movs: (int[] * int) list) (visited: int[] list) 
     | [] -> visited
 
 let execute =
-    let inputLines = GetLinesFromFile(path)
+    let inputLines = LocalHelper.GetLinesFromFile(path)
     let movements = inputLines |> Array.map(fun l -> getDirection (l.Split(' ').[0]), (int)(l.Split(' ').[1])) |> Array.toList
     let initRope = [0..1] |> List.map(fun i -> [|0; 0|])
     run initRope movements [] |> List.length

@@ -1,6 +1,7 @@
 ﻿module day03_part02
 
 open AdventOfCode_Utilities
+open AdventOfCode_2017.Modules.LocalHelper
 
 let getValueForPosition (position: int[]) (spiral: int[,]) =
     let rowRange = [-1..1]
@@ -58,7 +59,7 @@ let rec buildSpiral (mid: int) (input: int) (result: int[]) (ring: int) (spiral:
 
 let execute =
     let path = "day03/day03_input.txt"
-    let input = Utilities.GetContentFromFile path |> int
+    let input = GetContentFromFile path |> int
     let length = 1000
     let spiral = Array2D.create length length 0
     let mid = length / 2

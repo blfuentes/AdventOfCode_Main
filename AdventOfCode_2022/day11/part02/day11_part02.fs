@@ -3,6 +3,7 @@
 open System
 open AdventOfCode_Utilities
 open AoC_2022.Modules
+open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day11/day11_input.txt"
 
@@ -94,7 +95,7 @@ let rec ExecuteRound (remainingRounds: int) (resultsMonkeys: Monkey list) (reduc
         ExecuteRound (remainingRounds - 1) newResultMonkeys reducer
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+    let inputLines = GetLinesFromFile(path) |> Seq.toList
     let monkeyChunks = inputLines|> splitWhen(fun x -> x = "")
     let monkeys = monkeyChunks |> List.map(fun m -> parseMonkeyChunk m)
     let common = monkeys |> List.map(fun m -> m.TestValue) 

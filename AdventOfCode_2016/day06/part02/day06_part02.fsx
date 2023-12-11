@@ -1,14 +1,19 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2016.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
+open AdventOfCode_Utilities
 open AdventOfCode_Utilities
 
 //let path = "day06/test_input_01.txt"
 let path = "day06/day06_input.txt"
 
-let input = Utilities.GetLinesFromFile path
+let input = LocalHelper.GetLinesFromFile path
 let container = Array.create input.[0].Length List.empty
 
 let buildContainer (value: string) (listOfChars: string list array) =

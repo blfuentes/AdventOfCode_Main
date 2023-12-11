@@ -1,7 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2017.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -25,5 +29,5 @@ let calculateCheckSumRow (line: string) =
     if int(found.Item(0)) % int(found.Item(1)) = 0 then int(found.Item(0)) / int(found.Item(1)) else int(found.Item(1)) / int(found.[0])
     
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = GetLinesFromFile(path)
 inputLines |> Array.sumBy calculateCheckSumRow

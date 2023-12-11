@@ -4,6 +4,7 @@ open System
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2016.Modules.LocalHelper
 
 type CharCount = { Character: char; Count: int }
 type Room = { Content: string; Name: string; SectorId: int; Checksum: string; Parts: CharCount array }
@@ -41,7 +42,7 @@ let isRealRoom (room: Room) =
 
 let execute =
     let path = "day04/day04_input.txt"
-    let inputLines = Utilities.GetLinesFromFile(path)
+    let inputLines = GetLinesFromFile(path)
     let rooms = inputLines |> Array.map getParts
     let realRooms = rooms |> Array.filter isRealRoom
     realRooms |> Array.sumBy (fun room -> room.SectorId)

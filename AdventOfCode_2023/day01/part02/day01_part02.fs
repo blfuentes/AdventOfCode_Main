@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules
 
 let path = "day01/day01_input.txt"
 
@@ -26,5 +27,5 @@ let findNumbers input =
     let secondNumber = Regex.Match(input, @"\d|one|two|three|four|five|six|seven|eight|nine", RegexOptions.RightToLeft).Value
     convertDigit(firstNumber) * 10 + convertDigit(secondNumber)
 let execute =
-    let lines = Utilities.GetLinesFromFile path
+    let lines = LocalHelper.GetLinesFromFile path
     lines |> Array.sumBy findNumbers

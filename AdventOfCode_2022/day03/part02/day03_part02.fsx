@@ -1,6 +1,13 @@
 ﻿open System.IO
+open AdventOfCode_2022.Modules.LocalHelper
 
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 // let path = "day03/test_input_00.txt"
@@ -8,7 +15,7 @@ open AdventOfCode_Utilities
 // let path = "day03/test_input_02.txt"
 let path = "day03/day03_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path) |> Array.toList
+let inputLines = GetLinesFromFile(path) |> Array.toList
 let groupOfRucksacks = inputLines |> List.chunkBySize 3 |> List.map(fun l -> l |> List.map(fun s -> s.ToCharArray()))
 
 let getValueOfElement (input: char) =

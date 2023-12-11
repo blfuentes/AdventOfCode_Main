@@ -6,10 +6,11 @@ open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes
+open AdventOfCode_2020.Modules
 
 let path = "day13/day13_input.txt"
 
-let inputLines = GetLinesFromFile(path) 
+let inputLines = LocalHelper.GetLinesFromFile(path) 
 
 let initTime = inputLines.[0] |> int
 let buses = inputLines.[1].Split(',') |> Array.filter(fun b -> b <> "x") |> Array.map int

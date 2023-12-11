@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2016.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -71,7 +74,7 @@ let decrypherText (input: string) (shifter: int) =
 let decypherRoom (room: Room) =
     decrypherText room.Name room.SectorId
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = LocalHelper.GetLinesFromFile(path)
 let rooms = inputLines |> Array.map getParts
 let realRooms = rooms |> Array.filter isRealRoom
 //realRooms |> Array.iter(fun r -> System.IO.File.AppendAllText("./../output_decypher_rooms.txt", sprintf "%s \r\n" (decypherRoom r)))

@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules
 
 let path = "day12/day12_input.txt"
 
@@ -58,7 +59,7 @@ let rec generateLeePath (map: char[][]) (dest: int[]) (visited: int[] list) (cur
             generateLeePath map dest (visited @ newVisited) currentQueue
 
 let execute =
-    let inputLines = GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
+    let inputLines = LocalHelper.GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
     let starts = (findElements 'S' inputLines) @ (findElements 'a' inputLines)
     let goal = findElement 'E' inputLines
     let possiblePaths = starts |> List.map(fun s -> 

@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 type Coord = {
     element: string
@@ -71,7 +72,7 @@ let processSchematic (schematic: string[,]) =
 
 let execute =
     let path = "day03/day03_input.txt"
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let engineSchematic = Array2D.create lines.Length lines.[0].Length ""
     buildSchematicEngine engineSchematic lines
     let linkedNumbers = processSchematic engineSchematic

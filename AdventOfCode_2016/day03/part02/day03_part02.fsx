@@ -1,7 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2016.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -13,7 +17,7 @@ let isValidTriangle (sides: int[]) =
     sides.[1] + sides.[2] > sides.[0] &&
     sides.[0] + sides.[2] > sides.[1]
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = LocalHelper.GetLinesFromFile(path)
 
 let triangleDef = 
     inputLines 

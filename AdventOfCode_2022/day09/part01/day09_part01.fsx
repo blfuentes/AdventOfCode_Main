@@ -1,12 +1,18 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2022.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 //let path = "day09/test_input_01.txt"
 let path = "day09/day09_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = GetLinesFromFile(path)
 
 let getDirection (mov: string) =
     match mov with 

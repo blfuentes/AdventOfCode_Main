@@ -1,6 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2017.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -68,7 +73,7 @@ let rec buildSpiral (mid: int) (input: int) (result: int[]) (ring: int) (spiral:
 //let path = "day03/test_input_01.txt"
 let path = "day03/day03_input.txt"
 
-let input = Utilities.GetContentFromFile(path) |> int
+let input = GetContentFromFile(path) |> int
 let length = 1000
 let spiral = Array2D.create length length 0
 let mid = length / 2

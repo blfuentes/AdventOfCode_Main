@@ -1,9 +1,10 @@
 ﻿module day01_part02
 open System.IO
 open AdventOfCode_Utilities
+open AdventOfCode_2020.Modules
 
 let path = "day01/day01_input.txt"
-let inputLines = GetLinesFromFile(path) |> List.ofArray |> List.map (int)
+let inputLines = LocalHelper.GetLinesFromFile(path) |> List.ofArray |> List.map (int)
 
 let execute =
     let comb3 = combination 3 inputLines

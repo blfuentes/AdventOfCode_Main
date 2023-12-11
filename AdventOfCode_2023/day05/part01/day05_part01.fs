@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day05/day05_input.txt"
 
@@ -40,7 +41,7 @@ let rec getEnd(destinationRanges: RangeDefinition list list) (source: bigint) =
         getEnd tail destination
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path |> List.ofSeq
+    let lines = GetLinesFromFile path |> List.ofSeq
     let groups = Utilities.getGroupsOnSeparator lines ""
     let seedDefinition = groups.Head.Head
     let mappingDefinition = groups.Tail

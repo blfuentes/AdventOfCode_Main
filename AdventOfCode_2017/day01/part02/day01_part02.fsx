@@ -1,7 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2017.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -33,5 +37,5 @@ calculateCaptcha value2 (value2.Length / 2)
 calculateCaptcha value3 (value3.Length / 2)
 calculateCaptcha value4 (value4.Length / 2)
 
-let value = Utilities.GetContentFromFile(path)
+let value = LocalHelper.GetContentFromFile(path)
 calculateCaptcha value (value.Length / 2)

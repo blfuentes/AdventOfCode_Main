@@ -3,12 +3,12 @@
 open System.IO
 open System.Collections.Generic
 open AdventOfCode_Utilities
-open AoC_2020.Modules
+open AdventOfCode_2020.Modules
 
 
 let path = "day06/day06_input.txt"
 
-let inputLines = GetLinesFromFile(path) |> List.ofArray
+let inputLines = LocalHelper.GetLinesFromFile(path) |> List.ofArray
 let answers = getLinesGroupBySeparator2 inputLines ""
 
 let execute =

@@ -1,10 +1,17 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2022.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
 // let path = "day08/test_input_01.txt"
 let path = "day08/day08_input.txt"
-let inputLines = Utilities.GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
+let inputLines = GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
 
 let createForestVis (inputLines: char [] []) =
     let forest = Array2D.create inputLines.[0].Length inputLines.Length (0, "V")

@@ -6,10 +6,11 @@ open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes
+open AdventOfCode_2020.Modules
 
 let path = "day12/day12_input.txt"
 
-let inputLines = GetLinesFromFile(path) 
+let inputLines = LocalHelper.GetLinesFromFile(path) 
 
 let movements = 
     seq {

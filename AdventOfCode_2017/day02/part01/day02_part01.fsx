@@ -1,7 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2017.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -27,5 +31,5 @@ let calculateCheckSumRow (line: string) =
     parts.[0] - parts.[parts.Length - 1]
     
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = LocalHelper.GetLinesFromFile(path)
 inputLines |> Array.sumBy calculateCheckSumRow

@@ -1,4 +1,12 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2022.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 // let path = "day06/test_input_01.txt"
@@ -8,7 +16,7 @@ open AdventOfCode_Utilities
 // let path = "day06/test_input_05.txt"
 let path = "day06/day06_input.txt"
 
-let content = Utilities.GetContentFromFile(path)
+let content = GetContentFromFile(path)
 
 let rec findIdxOfUnique (size: int) (pos: int) (prev: string) (input: string) = 
     match pos < size with

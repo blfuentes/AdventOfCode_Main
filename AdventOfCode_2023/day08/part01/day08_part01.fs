@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day08/day08_input.txt"
 
@@ -29,7 +30,7 @@ let rec countSteps (nodes: Node list) (currentNode: Node) (steps: int) (instruct
         
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let instructions = lines.[0].ToCharArray() |> Array.map string
     let nodes = 
         lines 

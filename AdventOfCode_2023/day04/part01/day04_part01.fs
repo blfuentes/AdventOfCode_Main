@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day04/day04_input.txt"
 
@@ -34,6 +35,6 @@ let cardSet (input: string array) =
     cardSets |> Seq.map countMatchingCards
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let winningsBySet = cardSet lines
     winningsBySet |> Seq.map getPoints |> Seq.sum

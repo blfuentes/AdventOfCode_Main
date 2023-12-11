@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let rec processHistory (history: int array) (lasNumbers: int list) =
     let diffs = history |> Array.pairwise |> Array.map (fun (a, b) -> b - a)
@@ -14,7 +15,7 @@ let rec processHistory (history: int array) (lasNumbers: int list) =
 
 let execute = 
     let path = "day09/day09_input.txt"
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let histories = lines 
                     |> Array.map (fun l -> l.Split(' ') |> Array.map int)
 

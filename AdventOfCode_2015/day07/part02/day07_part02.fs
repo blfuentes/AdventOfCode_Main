@@ -6,6 +6,7 @@ open System.Text.RegularExpressions
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2015.Modules.LocalHelper
 
 type Operation = {
     op1: string
@@ -114,7 +115,7 @@ let rec evaluate (valueOfA:uint16) (instructions: Operation list) (currentMap: D
 let execute =
     let path = "day07/day07_input.txt"
 
-    let lines = Utilities.GetLinesFromFile path |> List.ofSeq
+    let lines = GetLinesFromFile path |> List.ofSeq
     let instructions = lines |> List.map parseInstruction
 
     let valueOfA = evaluate 0us instructions (Dictionary<string, uint16>())

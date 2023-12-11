@@ -1,6 +1,7 @@
 ﻿module day06_part01
 
 open AdventOfCode_Utilities
+open AdventOfCode_2015.Modules.LocalHelper
 
 let parseInstruction (instruction: string) =
     instruction.Split(' ') |> fun i -> (
@@ -33,7 +34,7 @@ let countMatchingValue (grid: int[,]) (valueToCount: int) =
 
 let execute =
     let path = "day06/day06_input.txt"    
-    let inputLines = Utilities.GetLinesFromFile(path) |>Seq.toList
+    let inputLines = GetLinesFromFile(path) |>Seq.toList
     let instructions = parseInstructions inputLines |> Seq.toList
     let grid = Array2D.create 1000 1000 0
     let result = executeInstruction instructions grid

@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day05/day05_input.txt"
 
@@ -48,7 +49,7 @@ let rec tryNumber (seedRanges: bigint list list) (currentLocation: bigint) (dest
         currentLocation   
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path |> List.ofSeq
+    let lines = GetLinesFromFile path |> List.ofSeq
 
     let groups = Utilities.getGroupsOnSeparator lines ""
     let seedDefinition = groups.Head.Head

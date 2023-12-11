@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2016.Modules.LocalHelper
 
 let path = "day01/day01_input.txt"
 
@@ -40,7 +41,7 @@ let rec getPosition (ops: (string * int) list) (currentPos: string * int[]) =
     | head :: tail -> getPosition tail (getNewPosition currentPos head)
 
 let execute =
-    let inputLines = Utilities.GetContentFromFile(path)
+    let inputLines = GetContentFromFile(path)
     let operations = inputLines.Split(',') |> Array.map(fun op -> getOp op) |> List.ofArray
     let initPos = ("N", [|0; 0|])
     let finalPos = getPosition operations initPos

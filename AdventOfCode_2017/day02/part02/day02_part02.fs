@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2017.Modules.LocalHelper
 
 let path = "day02/day02_input.txt"
 
@@ -24,5 +25,5 @@ let calculateCheckSumRow (line: string) =
     if int(found.Item(0)) % int(found.Item(1)) = 0 then int(found.Item(0)) / int(found.Item(1)) else int(found.Item(1)) / int(found.[0])
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path)
+    let inputLines = GetLinesFromFile(path)
     inputLines |> Array.sumBy calculateCheckSumRow

@@ -2,11 +2,12 @@
 
 open AdventOfCode_Utilities
 open AoC_2022.Modules
+open AdventOfCode_2022.Modules.LocalHelper
 
 //let path = "day07/test_input_01.txt"
 let path = "day07/day07_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+let inputLines = GetLinesFromFile(path) |> Seq.toList
 
 let createElement (parent: option<FileSystemItem>) (input: string) =
     let newElement =

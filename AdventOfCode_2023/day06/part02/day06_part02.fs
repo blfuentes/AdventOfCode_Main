@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day06/day06_input.txt"
 
@@ -22,7 +23,7 @@ let getWinners (race: RaceTime) =
 
 let execute =
     let raceTimes = 
-        let lines = Utilities.GetLinesFromFile path
+        let lines = GetLinesFromFile path
         let timeLine = lines.[0]
         let distanceTime = lines.[1]
         let times = Regex.Matches(timeLine, @"\d+") |> List.ofSeq |> List.map (fun m -> m.Value) |> String.concat ""
