@@ -1,9 +1,6 @@
 ﻿module day07_part01
 
-open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules.LocalHelper
 
 type HandType = FiveOfKind | FourOfKind | FullHouse | ThreeOfKind | TwoPairs | OnePair | HighCard

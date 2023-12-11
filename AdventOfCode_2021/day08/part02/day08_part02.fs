@@ -1,8 +1,6 @@
 ﻿module day08_part02
 
-open System
 open System.IO
-open System.Text.RegularExpressions
 open AdventOfCode_Utilities
 
 let path = "day08_input.txt"

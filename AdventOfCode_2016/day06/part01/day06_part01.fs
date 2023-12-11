@@ -1,9 +1,6 @@
 ﻿module day06_part01
 
-open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 open AdventOfCode_2016.Modules.LocalHelper
 
 let buildContainer (value: string) (listOfChars: string list array) =

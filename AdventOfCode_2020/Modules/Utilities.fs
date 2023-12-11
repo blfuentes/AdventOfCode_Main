@@ -1,10 +1,8 @@
 module Utilities_deprecated
 
-open System
 open System.IO
 open System.Text.RegularExpressions
 
-open CustomDataTypes
 
 let GetLinesFromFile(path: string) =
     File.ReadAllLines(__SOURCE_DIRECTORY__ + @"../../" + path)

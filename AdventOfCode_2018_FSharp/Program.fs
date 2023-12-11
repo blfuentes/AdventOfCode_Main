@@ -2,11 +2,7 @@
 
 open System
 
-open day01_part01
-open day01_part02
 
-open day02_part01
-open day01_part02
 
 [<EntryPoint>]
 let main argv =

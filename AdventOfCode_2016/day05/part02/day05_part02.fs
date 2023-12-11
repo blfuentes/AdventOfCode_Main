@@ -1,9 +1,6 @@
 ﻿module day05_part02
 
-open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 
 let calculateMD5Hash (input: string) =
     let md5 = System.Security.Cryptography.MD5.Create()

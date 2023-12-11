@@ -1,6 +1,5 @@
 ﻿namespace AdventOfCode_BASE.Modules
 
-open System
 open System.IO
 
 module LocalHelper =

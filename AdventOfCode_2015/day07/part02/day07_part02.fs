@@ -1,11 +1,8 @@
 ﻿module day07_part02
 
-open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 open AdventOfCode_2015.Modules.LocalHelper
 
 type Operation = {

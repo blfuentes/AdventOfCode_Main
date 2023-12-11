@@ -1,7 +1,6 @@
 ﻿module day08_part02
 
 open System
-open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities

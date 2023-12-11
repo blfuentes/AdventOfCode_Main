@@ -1,6 +1,5 @@
 ﻿module day01_part01
 
-open AdventOfCode_Utilities
 open AdventOfCode_2015.Modules.LocalHelper
 
 let path = "day01/day01_input.txt"

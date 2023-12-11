@@ -1,5 +1,4 @@
 ﻿module day01_part02
-open System.IO
 open AdventOfCode_Utilities
 open AdventOfCode_2020.Modules
 

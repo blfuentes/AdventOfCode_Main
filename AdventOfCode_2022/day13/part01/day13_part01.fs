@@ -1,10 +1,8 @@
 ﻿module day13_part01
 
 open System
-open System.Collections.Generic
 open System.Text.Json.Nodes
 
-open AdventOfCode_Utilities
 open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day13/day13_input.txt"

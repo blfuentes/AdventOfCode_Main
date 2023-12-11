@@ -1,9 +1,6 @@
 ﻿module day06_part01
 
-open System
-open System.Collections.Generic
 
-open AdventOfCode_Utilities
 
 let hasBeenSeen (banks: int[]) (seen: int array list) =
     seen |> List.exists(fun s -> Array.compareWith(fun x y -> x - y) s banks = 0)

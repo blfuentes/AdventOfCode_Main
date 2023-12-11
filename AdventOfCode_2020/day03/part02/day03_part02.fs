@@ -1,8 +1,5 @@
 ﻿module day03_part02
 
-open System.IO
-open AdventOfCode_Utilities
-open AdventOfCode_2020.Modules
 open AdventOfCode_2020.Modules
 
 let path = "day03/day03_input.txt"

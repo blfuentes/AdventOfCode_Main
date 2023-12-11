@@ -1,7 +1,5 @@
 ﻿module day03_part02
 
-open System.IO
-
 open AdventOfCode_Utilities
 open AdventOfCode_2015.Modules.LocalHelper
 

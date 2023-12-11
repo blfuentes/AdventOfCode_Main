@@ -1,6 +1,5 @@
 ﻿module day02_part02
 
-open System.IO
 open AoC_2019.Modules
 
 let (height, width) = (100, 100)

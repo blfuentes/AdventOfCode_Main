@@ -1,10 +1,6 @@
 ﻿module day10_part01
 
-open System
-open System.Collections.Generic
-open System.IO
 
-open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
 
 type Coord = {

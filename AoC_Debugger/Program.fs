@@ -1,7 +1,4 @@
-﻿open System
-open System.Text.Json
-open System.Collections.Generic
-
+﻿
 //let path = "test_input.txt"
 let path = "day_input.txt"
 

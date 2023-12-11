@@ -1,8 +1,6 @@
 ﻿module day10_part01
 
-open System
 open System.IO
-open System.Text.RegularExpressions
 open System.Collections.Generic
 
 let path = "day10_input.txt"

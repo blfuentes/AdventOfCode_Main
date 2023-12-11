@@ -2,7 +2,6 @@
 
 open System
 open System.IO
-open System.Text.RegularExpressions
 open System.Collections.Generic
 
 let rec runStep(currentStep: int, steps: int, counter: (string * bigint)[], myrules: Dictionary<string, string[]>) =

@@ -1,6 +1,5 @@
 ﻿module day02_part01
 
-open System.IO
 open AdventOfCode_Utilities
 open CustomDataTypes
 open AdventOfCode_2020.Modules
