@@ -1,11 +1,18 @@
 ﻿open System.IO
+open AdventOfCode_2022.Modules.LocalHelper
 
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 // let path = "day02/test_input_01.txt"
 let path = "day02/day02_input.txt"
-let inputLines = Utilities.GetLinesFromFile(path) |> Array.toList
+let inputLines = GetLinesFromFile(path) |> Array.toList
 let rounds = inputLines |> List.map(fun l -> l.Split(" "))
 
 let win = [[|"A"; "Y"|]; [|"B"; "Z"|]; [|"C"; "X"|]]

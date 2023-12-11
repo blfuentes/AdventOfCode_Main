@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day04/day04_input.txt"
 
@@ -50,6 +51,6 @@ let rec playCardSet (initialCards: int array) (remainingCards: CardSet list)=
         playCardSet newCards tail
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let initialCards = Array.create lines.Length 1
     playCardSet initialCards (cardSet lines)

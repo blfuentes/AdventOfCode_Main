@@ -6,11 +6,11 @@ open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes
-open AoC_2020.Modules
+open AdventOfCode_2020.Modules
 
 let path = "day08/day08_input.txt"
 
-let inputLines = GetLinesFromFile(path)
+let inputLines = LocalHelper.GetLinesFromFile(path)
 
 let operations = 
     seq {

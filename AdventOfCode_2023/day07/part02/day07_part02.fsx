@@ -1,7 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -140,7 +144,7 @@ let parseHand (hand: string) =
     { HandType = calculateHandType cards; Cards = cards |> Array.map (string) |>List.ofArray; Bid = bid }
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let hands = lines |> Array.map parseHand
     let sortedHands = hands |> Array.sortWith sortByHandType
     let rankedHands = sortedHands |> Array.mapi (fun index hand -> hand.Bid * (bigint(index.ToString()) + 1I))

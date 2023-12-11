@@ -1,7 +1,15 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AoC_2022.Modules
+open AdventOfCode_2022.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 #load @"../../Modules/DataModels.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
+open AdventOfCode_2022.Modules
 open AdventOfCode_Utilities
 
 let path = "day11/test_input_01.txt"
@@ -81,7 +89,7 @@ let rec ExecuteRound (remainingRounds: int) (resultsMonkeys: Monkey list) =
         let newResultMonkeys = round resultsMonkeys resultsMonkeys
         ExecuteRound (remainingRounds - 1) newResultMonkeys
 
-let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+let inputLines = GetLinesFromFile(path) |> Seq.toList
 let monkeyChunks = inputLines|> splitWhen(fun x -> x = "")
 let monkeys = monkeyChunks |> List.map(fun m -> parseMonkeyChunk m)
 let boringMonkeys = ExecuteRound 20 monkeys

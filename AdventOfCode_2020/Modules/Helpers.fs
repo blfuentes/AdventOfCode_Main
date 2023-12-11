@@ -1,4 +1,4 @@
-﻿namespace AoC_2020.Modules
+﻿namespace AdventOfCode_2020.Modules
 
 open System
 open System.IO

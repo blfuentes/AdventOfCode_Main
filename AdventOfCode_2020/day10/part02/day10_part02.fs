@@ -6,10 +6,11 @@ open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes
+open AdventOfCode_2020.Modules
 
 let path = "day10/day10_input.txt"
 
-let inputLines = GetLinesFromFile(path) |> Array.map int |> Array.sort |> List.ofArray
+let inputLines = LocalHelper.GetLinesFromFile(path) |> Array.map int |> Array.sort |> List.ofArray
 
 let diff(a, b) =
    b - a

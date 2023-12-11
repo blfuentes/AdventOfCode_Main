@@ -1,12 +1,21 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
-#load @"../../Modules/DataModels.fs"
+﻿open AdventOfCode_2022.Modules.LocalHelper
+open AoC_2022.Modules
 
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/DataModels.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
+open AdventOfCode_Utilities
 open AdventOfCode_Utilities
 
 //let path = "day07/test_input_01.txt"
 let path = "day07/day07_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+let inputLines = GetLinesFromFile(path) |> Seq.toList
 
 let createElement (parent: option<FileSystemItem>) (input: string) =
     let newElement =

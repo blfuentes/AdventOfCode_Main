@@ -5,6 +5,7 @@ open System.Collections.Generic
 open System.Text.Json.Nodes
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day13/day13_input.txt"
 
@@ -40,7 +41,7 @@ let rec compare (l : Packet) (r : Packet) =
         | x -> x
 
 let execute =
-    let inputLines = Utilities.ReadLines(path)
+    let inputLines = ReadLines(path)
     let packets = inputLines |> Seq.filter (fun l -> String.IsNullOrEmpty l = false) 
                 |> Seq.map (JsonNode.Parse >> convert) |> Array.ofSeq
     let result = [0.. 2 .. (packets.Length - 1)]

@@ -2,13 +2,11 @@
 #load @"../../Modules/LocalHelper.fs"
 
 open System
-open System.IO
 open System.Collections.Generic
+open System.Text.RegularExpressions
+
+open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
-
-
-let ReadLines(path: string) =
-    File.ReadLines(__SOURCE_DIRECTORY__ + @"../../../" + path)
 
 type Coord = {
     row: int

@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Modules\LocalHelper.fs" />
     <Compile Include="Modules/HelperModule.fs" />
     <Compile Include="Modules/DataModels.fs" />
     <Compile Include="day00\part01\day00_part01.fs" />

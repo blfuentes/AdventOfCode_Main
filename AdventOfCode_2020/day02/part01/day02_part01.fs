@@ -3,10 +3,11 @@
 open System.IO
 open AdventOfCode_Utilities
 open CustomDataTypes
+open AdventOfCode_2020.Modules
 
 
 let path = "day02/day02_input.txt"
-let inputLines = List.ofArray <| GetLinesFromFile(path)
+let inputLines = List.ofArray <| LocalHelper.GetLinesFromFile(path)
 
 let extract l =
     match l with

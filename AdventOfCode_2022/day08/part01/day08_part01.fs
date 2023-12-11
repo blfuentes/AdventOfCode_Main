@@ -1,6 +1,7 @@
 ﻿module day08_part01
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules.LocalHelper
 
 //let path = "day08/test_input_01.txt"
 let path = "day08/day08_input.txt"
@@ -58,7 +59,7 @@ let countVisibleTrees (forest: (int*string) [, ]) =
     trees |> Seq.length
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
+    let inputLines = GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
     let myforestV = createForestVis inputLines
     let newforest = processForest myforestV
     countVisibleTrees newforest

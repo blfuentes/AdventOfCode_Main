@@ -2,6 +2,7 @@
 
 open System
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day10/day10_input.txt"
 
@@ -33,7 +34,7 @@ let displayCRT (output: string list seq) =
         printfn "%s" (System.String.Concat(line))
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path)
+    let inputLines = GetLinesFromFile(path)
     let instructions = inputLines |> Array.map(fun l -> if l.Split(' ').[0] = "noop" then (1, 0) else (2, (int)(l.Split(' ').[1]))) |> Array.toList
     let initValue = 1
     let initlistOfCycles = [1]

@@ -1,6 +1,7 @@
 ﻿module day03_part01
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day03/day03_input.txt"
 
@@ -10,7 +11,7 @@ let getValueOfElement (input: char) =
     snd ((minorletters @ capitalleters) |> List.find(fun e -> (fst e) = input))
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path) |> Array.toList
+    let inputLines = GetLinesFromFile(path) |> Array.toList
     let rucksacks = inputLines |> List.map splitString
     rucksacks |> 
         List.map Utilities.commonElements |> 

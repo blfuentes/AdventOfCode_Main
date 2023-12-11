@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -111,7 +114,7 @@ let processSchematic (schematic: string[,]) =
 let path = "day03/day03_input.txt"
 //let path = "day03/test_input_01.txt"
 //let path = "day03/test_input_02.txt"
-let lines = Utilities.GetLinesFromFile path
+let lines = GetLinesFromFile path
 let engineSchematic = Array2D.create lines.Length lines.[0].Length ""
 buildSchematicEngine engineSchematic lines [||]
 //printSchematic engineSchematic

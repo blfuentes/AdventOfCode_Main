@@ -2,6 +2,7 @@
 
 open System.IO
 open AdventOfCode_Utilities
+open AdventOfCode_2015.Modules.LocalHelper
 
 let path = "day02/day02_input.txt"
 let inputLine = GetLinesFromFile(path) |> Seq.map(fun x -> x.Split('x') |> Array.map int)

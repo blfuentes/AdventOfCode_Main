@@ -1,7 +1,11 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
@@ -15,7 +19,7 @@ let rec processHistory (history: int array) (lasNumbers: int list) =
 let execute = 
     //let path = "day09/test_input_01.txt"
     let path = "day09/day09_input.txt"
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let histories = lines 
                     |> Array.map (fun l -> l.Split(' ') |> Array.map int)
 

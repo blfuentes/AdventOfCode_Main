@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules
 
 let path = "day14/day14_input.txt"
 
@@ -65,7 +66,7 @@ let rec doPouring (counter: int) (pPoint: int[]) (bottom: int) (cave: string arr
         doPouring (counter + 1) pPoint bottom cave
 
 let execute =
-    let inputLines = GetLinesFromFile(path)
+    let inputLines = LocalHelper.GetLinesFromFile(path)
     let parts = inputLines |> Array.map(fun l -> l.Split("->"))
                 |> Array.map(fun r -> r |> Array.map(fun sb -> [|int(sb.Split(",")[1]); int(sb.Split(",")[0])|]))
     let stones = generateCave parts

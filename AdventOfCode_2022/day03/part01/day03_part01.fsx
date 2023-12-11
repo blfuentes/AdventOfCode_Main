@@ -1,12 +1,19 @@
 ﻿open System.IO
+open AdventOfCode_2022.Modules.LocalHelper
 
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 // let path = "day03/test_input_01.txt"
 let path = "day03/day03_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path) |> Array.toList
+let inputLines = GetLinesFromFile(path) |> Array.toList
 
 let splitStringInTwo (str: string) =
     let len = str.Length

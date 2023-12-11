@@ -1,7 +1,13 @@
 ﻿open System.IO
+open AdventOfCode_2020.Modules.LocalHelper
 
 #load @"../../Model/CustomDataTypes.fs"
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 open CustomDataTypes

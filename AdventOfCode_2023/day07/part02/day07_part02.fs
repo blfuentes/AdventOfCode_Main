@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let bigint = System.Numerics.BigInteger.Parse
 
@@ -138,7 +139,7 @@ let parseHand (hand: string) =
 
 let execute =
     let path = "day07/day07_input.txt"
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let hands = lines |> Array.map parseHand
     let sortedHands = hands |> Array.sortWith sortByHandType
     let rankedHands = sortedHands |> Array.mapi (fun index hand -> hand.Bid * (bigint(index.ToString()) + 1I))

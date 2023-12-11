@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -31,7 +34,7 @@ let rec countSteps (nodes: Node list) (currentNode: Node) (steps: int) (instruct
         
 
 let execute =
-    let lines = Utilities.GetLinesFromFile path
+    let lines = GetLinesFromFile path
     let instructions = lines.[0].ToCharArray() |> Array.map string
     let nodes = 
         lines 

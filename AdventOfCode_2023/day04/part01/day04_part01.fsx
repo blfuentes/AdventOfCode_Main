@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -15,7 +18,7 @@ type CardSet = {
 //let path = "day04/test_input_01.txt"
 let path = "day04/day04_input.txt"
 
-let lines = Utilities.GetLinesFromFile path
+let lines = GetLinesFromFile path
 
 let buildCardSet (input: string) =
     let parts = input.Split(':')

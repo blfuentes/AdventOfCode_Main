@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -9,7 +12,7 @@ open AdventOfCode_Utilities
 //let path = "day01/test_input_02.txt"
 let path = "day01/day01_input.txt"
 
-let lines = Utilities.GetLinesFromFile path
+let lines = GetLinesFromFile path
 
 let convertDigit (input: string) =
     match input with

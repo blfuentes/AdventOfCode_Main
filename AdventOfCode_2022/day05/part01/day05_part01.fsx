@@ -1,12 +1,19 @@
 ﻿open System.IO
 open System.Collections.Generic
+open AdventOfCode_2022.Modules.LocalHelper
 
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 let path = "day05/test_input_01.txt"
 // let path = "day05/day05_input.txt"
-let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+let inputLines = GetLinesFromFile(path) |> Seq.toList
 
 let content = Utilities.getGroupsOnSeparator inputLines ""
 let (initDrawing, movements) = (content.Head, content.Tail.Head)

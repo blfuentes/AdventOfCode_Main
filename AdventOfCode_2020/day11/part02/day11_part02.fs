@@ -6,10 +6,11 @@ open System
 
 open AdventOfCode_Utilities
 open CustomDataTypes
+open AdventOfCode_2020.Modules
 
 let path = "day11/day11_input.txt"
 
-let inputLines = GetLinesFromFile(path) 
+let inputLines = LocalHelper.GetLinesFromFile(path) 
 
 let maxX = inputLines.[0].Length
 let maxY = inputLines.Length

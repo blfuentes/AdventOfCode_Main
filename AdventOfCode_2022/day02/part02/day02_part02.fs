@@ -1,6 +1,7 @@
 ﻿module day02_part02
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules.LocalHelper
 
 let path = "day02/day02_input.txt"
 
@@ -42,6 +43,6 @@ let calculateRoundScore (round: int) (play: string[]) =
     result
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path) |> Array.toList
+    let inputLines = GetLinesFromFile(path) |> Array.toList
     let rounds = inputLines |> List.map(fun l -> l.Split(" "))
     rounds |> List.map(fun r -> calculateRoundScore 0 r) |> List.sum

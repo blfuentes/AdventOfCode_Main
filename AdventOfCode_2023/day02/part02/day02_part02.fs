@@ -4,6 +4,7 @@ open System
 open System.Collections.Generic
 
 open AdventOfCode_Utilities
+open AdventOfCode_2023.Modules.LocalHelper
 
 let path = "day02/day02_input.txt"
 
@@ -40,4 +41,4 @@ let processGame (lines: string array) =
     minimunByGame |> Array.sum
 
 let execute =
-    Utilities.GetLinesFromFile path |> processGame
+    GetLinesFromFile path |> processGame

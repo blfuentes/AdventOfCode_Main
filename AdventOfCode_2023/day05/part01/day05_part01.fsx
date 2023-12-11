@@ -1,4 +1,7 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2023.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
@@ -10,7 +13,7 @@ type RangeDefinition = { DestRangeStart: bigint; SourceRangeStart: bigint; Lengt
 
 //let path = "day05/test_input_01.txt"
 let path = "day05/day05_input.txt"
-let lines = Utilities.GetLinesFromFile path |> List.ofSeq
+let lines = GetLinesFromFile path |> List.ofSeq
 
 let groups = Utilities.getGroupsOnSeparator lines ""
 let seedDefinition = groups.Head.Head

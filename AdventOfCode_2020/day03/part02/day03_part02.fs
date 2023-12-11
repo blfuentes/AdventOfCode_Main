@@ -2,10 +2,11 @@
 
 open System.IO
 open AdventOfCode_Utilities
-open AoC_2020.Modules
+open AdventOfCode_2020.Modules
+open AdventOfCode_2020.Modules
 
 let path = "day03/day03_input.txt"
-let values = GetLinesFromFile(path) |> Array.map (fun line -> line.ToCharArray())
+let values = LocalHelper.GetLinesFromFile(path) |> Array.map (fun line -> line.ToCharArray())
 
 let width = values.[0].Length
 let height = values.Length

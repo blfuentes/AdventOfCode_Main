@@ -1,13 +1,19 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2022.Modules.LocalHelper
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 // let path = "day10/test_input_01.txt"
 // let path = "day10/test_input_02.txt"
 let path = "day10/day10_input.txt"
 
-let inputLines = Utilities.GetLinesFromFile(path)
+let inputLines = GetLinesFromFile(path)
 let instructions = inputLines |> Array.map(fun l -> if l.Split(' ').[0] = "noop" then (1, 0) else (2, (int)(l.Split(' ').[1]))) |> Array.toList
 
 let rec runOp (op: int * int) (currentValue: int) (listOfCycles: int list) =

@@ -3,10 +3,11 @@
 open System.IO
 open System.Collections.Generic
 open AdventOfCode_Utilities
+open AdventOfCode_2020.Modules
 
 
 let path = "day04/day04_input.txt"
-let inputLines = GetLinesFromFile(path) |> List.ofArray
+let inputLines = LocalHelper.GetLinesFromFile(path) |> List.ofArray
 
 let allFields = [|"byr"; "iyr"; "eyr"; "hgt"; "hcl"; "ecl"; "pid"; "cid"|]
 let requiredFields = [|"byr"; "iyr"; "eyr"; "hgt"; "hcl"; "ecl"; "pid"|]

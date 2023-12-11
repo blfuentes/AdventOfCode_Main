@@ -3,12 +3,12 @@
 open System.IO
 open System.Collections.Generic
 open AdventOfCode_Utilities
-open AoC_2020.Modules
+open AdventOfCode_2020.Modules
 
 
 let path = "day07/day07_input.txt"
 
-let inputLines = GetLinesFromFile(path)
+let inputLines = LocalHelper.GetLinesFromFile(path)
 let elements = parseBagsInput inputLines |> List.ofSeq
 let shinyBag = elements |> List.filter(fun b -> b.Name = "shiny gold") |> List.head
 

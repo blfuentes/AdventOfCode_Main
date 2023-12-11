@@ -1,13 +1,17 @@
-﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+﻿open AdventOfCode_2016.Modules
+
+#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic
+open System.Text.RegularExpressions
 
 open AdventOfCode_Utilities
 
 // let path = "day01/text_input_04.txt"
 let path = "day01/day01_input.txt"
-let inputLines = Utilities.GetContentFromFile(path)
+let inputLines = LocalHelper.GetContentFromFile(path)
 
 let getOp (value: string) =
     (value.Trim().Substring(0, 1), int(value.Trim().Substring(1)))

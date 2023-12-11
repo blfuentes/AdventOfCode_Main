@@ -1,6 +1,7 @@
 ﻿module day08_part02
 
 open AdventOfCode_Utilities
+open AdventOfCode_2022.Modules
 
 //let path = "day08/test_input_01.txt"
 let path = "day08/day08_input.txt"
@@ -67,7 +68,7 @@ let findMaxScenicScore (currentForest: ((int*int)*string) [, ]) =
     trees |> Seq.sortDescending |> Seq.toList |> List.head 
 
 let execute =
-    let inputLines = Utilities.GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
+    let inputLines = LocalHelper.GetLinesFromFile(path) |> Array.map(fun l -> l.ToCharArray())
     let myforestV = createForestVis inputLines
     let newforest = processForest myforestV
     findMaxScenicScore newforest

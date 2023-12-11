@@ -1,11 +1,18 @@
 ﻿open System.IO
+open AdventOfCode_2022.Modules.LocalHelper
 
 #load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../Modules/LocalHelper.fs"
+
+open System
+open System.Collections.Generic
+open System.Text.RegularExpressions
+
 open AdventOfCode_Utilities
 
 // let path = "day04/test_input_01.txt"
 let path = "day04/day04_input.txt"
-let inputLines = Utilities.GetLinesFromFile(path) |> Seq.toList
+let inputLines = GetLinesFromFile(path) |> Seq.toList
 
 let elvesPairs = inputLines |> 
                     List.map(fun l -> 
