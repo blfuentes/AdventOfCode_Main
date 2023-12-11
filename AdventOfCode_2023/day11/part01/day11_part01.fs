@@ -54,7 +54,8 @@ let printMap (map: char[,]) =
         printfn ""
 
 let distance (a: int array) (b: int array) =
-    Math.Abs(a.[0] - b.[0]) + Math.Abs(a.[1] - b.[1])
+    let d = Math.Abs(a.[0] - b.[0]) + Math.Abs(a.[1] - b.[1])
+    d
 
 let execute =
     let path = "day11/day11_input.txt"
