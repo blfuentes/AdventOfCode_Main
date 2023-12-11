@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\Graph.fs" />
+    <Compile Include="Modules\BinarySearchTree.fs" />
     <Compile Include="Modules\Utilities.fs" />
   </ItemGroup>
 
