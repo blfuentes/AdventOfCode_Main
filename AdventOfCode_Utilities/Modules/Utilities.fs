@@ -236,6 +236,14 @@ module Utilities =
         | h::t -> Seq.collect (distrib h) (perms t)
     ///////////////////////////////////////////////////////////////////////////////////
 
+    let rec combinationsOfLists lists =
+        match lists with
+        | [] -> [[]]
+        | headList::tailLists ->
+            [ for headElement in headList do
+                for tailCombination in combinationsOfLists tailLists do
+                    yield headElement :: tailCombination ]
+
     ///////////////////////////////////////////////////////////////////////////////////
     /// Returns a collection of lists from a splitted list by 0
     let folder (a) (cur, acc) = 
