@@ -6,77 +6,74 @@ open System.Collections.Generic
 open AdventOfCode_2023.Modules
 open AdventOfCode_Utilities
 
-//let path = "day13/test_input_01.txt"
-let path = "day13/day13_input.txt"
 
-let parseGroup (line:string list) =
-    let rows = if line.Length % 2 = 0 then line.Length else line.Length + 1
-    let cols = if line[0].Length % 2 = 0 then line.[0].Length else line.[0].Length + 1
+let parseGroup (lines:string list) =
+    let rows = lines.Length
+    let cols = lines.[0].Length
     let group = Array2D.create rows cols '0'
-    for i in 0..line.Length - 1 do
-            for j in 0..line.[0].Length - 1 do
-                group.[i,j] <- line.[i].[j]
+    for i in 0..rows - 1 do
+        for j in 0..cols - 1 do
+            group.[i,j] <- lines.[i].[j]
     group
 
-
-let printGroup (group:char[,]) =
-    for i in 0..group.GetLength(0)-1 do
-        for j in 0..group.GetLength(1)-1 do
-            printf "%c" group.[i,j]
-        printfn ""
-
-let findMirror (group: char[,]) =
-    printGroup group
-    let hMirror = 
-        seq {
-            let mid = group.GetLength(0) / 2 - 1
-            for idx in 0..mid - 1 do
-                let up = group.[mid - idx, *]
-                let down = group.[mid + idx + 1, *]
-                if down |> Array.forall ((=) '0') then
-                    yield mid
-                else
-                    if up = down then
-                        yield mid
+let rec checkHMirrorPoint (group: char[,]) (currentRow: int) (lastmirror: int)=
+    if currentRow = group.GetLength(0) then
+        lastmirror
+    else
+        let mirrored' =
+            seq {
+                for i in 0..currentRow - 1 do
+                    let upRow = currentRow - i - 1
+                    let downRow = currentRow + i
+                    if downRow >= group.GetLength(0) then
+                        yield upRow
                     else
-                        yield -1
-        } |>Seq.toList
-    let vMirror =
-        seq {
-            let mid = group.GetLength(1) / 2 - 1
-            for idx in 0..mid - 1 do
-                let left = group.[*, mid - idx]
-                let right = group.[*, mid + idx + 1]
-                if right |> Array.forall ((=) '0') then
-                    yield mid
-                else
-                    if left = right then
-                        yield mid
-                    else 
-                        yield -1
-        } |>Seq.toList
-    (hMirror, vMirror)
+                        let up = group.[upRow, *]
+                        let down = group.[downRow, *]
+                        if up = down then
+                            yield upRow
+                        else
+                            yield -1
+                        
+            } |> Seq.toList
+        let lastmirror' = if (mirrored' |> List.forall((<>) -1)) then currentRow else lastmirror
+        checkHMirrorPoint group (currentRow + 1) lastmirror'
 
-let calculateMirror (mirrors: int list * int list) =
-    let (hMirror, vMirror) = mirrors
-    let hMirror' = 
-        if (hMirror |> List.filter((=) -1)).Length > 0 then
-            0
-        else
-            hMirror.[0] + 1
-    let vMirror' = 
-        if (vMirror |> List.filter((=) -1)).Length > 0 then
-            0
-        else
-            vMirror.[0] + 1
-    vMirror' + hMirror' * 100
+let rec checkVMirrorPoint (group: char[,]) (currentCol: int) (lastmirror: int) =
+    if currentCol = group.GetLength(1) then
+        lastmirror   
+    else
+        let mirrored' =
+            seq {
+                for i in 0..currentCol - 1 do
+                    let leftCol = currentCol - i - 1
+                    let rightCol = currentCol + i
+                    if rightCol >= group.GetLength(1) then
+                        yield leftCol
+                    else
+                        let left = group.[*, leftCol]
+                        let right = group.[*, rightCol]
+                        if left = right then
+                            yield leftCol
+                        else
+                            yield -1
+                        
+            } |> Seq.toList
+        let lastmirror' = if (mirrored' |> List.forall((<>) -1)) then currentCol else lastmirror
+        checkVMirrorPoint group (currentCol + 1) lastmirror'
+
+                
+
+let calculateMirror (mirrors: int * int) =
+    let (vMirror, hMirror) = mirrors
+    vMirror + hMirror * 100
 
 let execute =
-    //let path = "day13/test_input_01.txt"
-    //let path = "day13/test_input_02.txt"
     let path = "day13/day13_input.txt"
     let lines = LocalHelper.ReadLines path |> Seq.toList
     let groups = getGroupsOnSeparator lines ""
     let maps = groups |> List.map parseGroup
-    //maps |> List.iter printGroup
-    maps |> List.map findMirror |> List.map calculateMirror |> List.sum
+    maps 
+    |> List.map(fun g -> (checkVMirrorPoint g 0 0, checkHMirrorPoint g 0 0)) 
+    |> List.map calculateMirror 
+    |> List.sum
