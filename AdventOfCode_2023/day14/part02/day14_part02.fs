@@ -45,28 +45,28 @@ let printGroup (group:Tile[,]) =
             printf "%c" (tileToChar group.[i,j])
         printfn ""
 
-let rec findNearestTile (from: Tile) (tiles: Tile list) =
-    match tiles with
-    | head :: tail ->
-        if head.FloorType = Empty then
-            findNearestTile head tail
+let rec findNearestTile (from: Tile) (tiles: Tile array) =
+    match tiles.Length with
+    | 0 -> from
+    | _ ->
+        if tiles.[0].FloorType = Empty then
+            findNearestTile tiles.[0] (tiles |> Array.skip 1)
         else
             from
-    | [] -> from
 
 let getNewPos (tile: Tile) (map: Tile[,]) (direction: int[]) =
     match direction with
     | [| r; c |] when r = -1 && c = 0 ->
-        let fullCol = map.[*, tile.Y] |> Array.filter (fun t -> t.X < tile.X) |> Array.toList |> List.rev
+        let fullCol = map.[*, tile.Y] |> Array.filter (fun t -> t.X < tile.X) |> Array.rev
         findNearestTile tile fullCol
     | [| r; c |] when r = 1 && c = 0 ->
-        let fullCol = map.[*, tile.Y] |> Array.filter (fun t -> t.X > tile.X) |> Array.toList
+        let fullCol = map.[*, tile.Y] |> Array.filter (fun t -> t.X > tile.X)
         findNearestTile tile fullCol
     | [| r; c |] when r = 0 && c = -1 ->
-        let fullRow = map.[tile.X, *] |> Array.filter (fun t -> t.Y < tile.Y) |> Array.toList |> List.rev
+        let fullRow = map.[tile.X, *] |> Array.filter (fun t -> t.Y < tile.Y) |> Array.rev
         findNearestTile tile fullRow
     | [| r; c |] when r = 0 && c = 1 ->
-        let fullRow = map.[tile.X, *] |> Array.filter (fun t -> t.Y > tile.Y) |> Array.toList
+        let fullRow = map.[tile.X, *] |> Array.filter (fun t -> t.Y > tile.Y)
         findNearestTile tile fullRow
     | _ -> failwith "Not implemented"
 
