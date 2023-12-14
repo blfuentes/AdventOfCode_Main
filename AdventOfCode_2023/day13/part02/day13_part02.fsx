@@ -1,4 +1,5 @@
 ﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
+#load @"../../../AdventOfCode_2023/Modules/LocalHelper.fs"
 
 open System
 open System.Collections.Generic

@@ -2,6 +2,7 @@
 
 open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
+open System.Collections.Generic
 
 type FloorType = Rounded | Damaged | Empty
 
@@ -79,45 +80,39 @@ let rec moveOnDirection (group:Tile[,]) (remainingTiles: Tile list) (x:int) (y:i
         group'.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
         moveOnDirection group' tail x y
 
-let rec performCycle (group:Tile[,]) (roundedTiles: Tile list) (numOfCycles: int) =
-    if numOfCycles = 0 then
+let rec performCycle (group:Tile[,]) (roundedTiles: Tile list) (maxCycles: int) (currentCycle: int) (scores: Tile[,] list) =
+    if currentCycle = maxCycles then
         group
     else
-        //printfn "Initial state"
-        //printGroup group
-
-        let afterNorth = moveOnDirection group roundedTiles -1 0
+        let afterNorth = moveOnDirection group roundedTiles -1 0           
         let northRoundedTiles = gridToList afterNorth |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-        //printfn "After north"
-        //printGroup afterNorth
 
         let afterWest = moveOnDirection afterNorth northRoundedTiles 0 -1
         let westRoundedTiles = gridToList afterWest |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-        //printfn "After west"
-        //printGroup afterWest
 
-        let afterSouth = moveOnDirection afterWest (westRoundedTiles |> List.rev) 1 0  
+        let afterSouth = moveOnDirection afterWest (westRoundedTiles |> List.rev) 1 0
         let southRoundedTiles = gridToList afterSouth |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-        //printfn "After south"
-        //printGroup afterSouth
 
         let afterEast = moveOnDirection afterSouth (southRoundedTiles |> List.rev) 0 1
         let eastRoundedTiles = gridToList afterEast |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-        //printfn "After east %i" numOfCycles
-        //printGroup afterEast
-        printfn "Reamianing cycles %i\n" numOfCycles
-        performCycle afterEast eastRoundedTiles (numOfCycles - 1)
+
+        if scores |> List.contains afterEast then
+            let prevHit = scores |> List.findIndex (fun t -> t = afterEast)
+            let period = currentCycle - prevHit
+            let jumps = (((maxCycles-1) - currentCycle) / period)
+            let jumpsTo = currentCycle + jumps * period
+            let diff = maxCycles - 1 - jumpsTo
+            let goalPrev = prevHit + diff
+            scores.[goalPrev]
+        else
+            performCycle afterEast eastRoundedTiles maxCycles (currentCycle + 1) (scores @ [afterEast])
 
 let execute =
-    let path = "day14/test_input_01.txt"
-    //let path = "day14/day14_input.txt"
+    let path = "day14/day14_input.txt"
     let lines = LocalHelper.ReadLines path |> Seq.toList
     let map = parseGroup lines
-    //printGroup map
+    let mapOfCyclesValue = []
     let roundedTiles = gridToList map |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-    //let result = moveOnDirection map roundedTiles 0 0
-    let result = performCycle map roundedTiles 1000000000
+    let result = performCycle map roundedTiles 1000000000 0 mapOfCyclesValue
     let newRoundedTiles = gridToList result |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-    //printfn ""
-    //printGroup result
     newRoundedTiles |> List.sumBy _.InitialLoad
