@@ -75,7 +75,9 @@ let execute =
     let path = "day14/day14_input.txt"
     let lines = LocalHelper.ReadLines path |> Seq.toList
     let map = parseGroup lines
-    let roundedTiles = gridToArray map |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
-    let result = moveNorth map roundedTiles
-    let newRoundedTiles = gridToArray result |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
-    newRoundedTiles |> Array.sumBy _.InitialLoad
+    let run() =
+        let roundedTiles = gridToArray map |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+        let result = moveNorth map roundedTiles
+        let newRoundedTiles = gridToArray result |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+        newRoundedTiles |> Array.sumBy _.InitialLoad
+    duration run

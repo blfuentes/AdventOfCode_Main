@@ -122,7 +122,9 @@ let execute =
     let lines = LocalHelper.ReadLines path |> Seq.toList
     let map = parseGroup lines
     let mapOfCyclesValue = []
-    let roundedTiles = gridToArray map |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
-    let result = performCycle map roundedTiles 1000000000 0 mapOfCyclesValue
-    let newRoundedTiles = gridToArray result |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
-    newRoundedTiles |> Array.sumBy _.InitialLoad
+    let run() =
+        let roundedTiles = gridToArray map |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+        let result = performCycle map roundedTiles 1000000000 0 mapOfCyclesValue
+        let newRoundedTiles = gridToArray result |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+        newRoundedTiles |> Array.sumBy _.InitialLoad
+    duration run
