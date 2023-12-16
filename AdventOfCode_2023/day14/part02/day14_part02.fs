@@ -33,10 +33,10 @@ let parseGroup (lines:string list) =
             group.[i,j] <- tile
     group
 
-let gridToList (group: Tile[,]) =
+let gridToArray (group: Tile[,]) =
     let rows = group.GetLength(0)
     let cols = group.GetLength(1)
-    let list = List.init rows (fun i -> List.init cols (fun j -> group.[i,j]))
+    let list = Array.init rows (fun i -> Array.init cols (fun j -> group.[i,j]))
     list
 
 let printGroup (group:Tile[,]) =
@@ -70,31 +70,41 @@ let getNewPos (tile: Tile) (map: Tile[,]) (direction: int[]) =
         findNearestTile tile fullRow
     | _ -> failwith "Not implemented"
 
-let rec moveOnDirection (group:Tile[,]) (remainingTiles: Tile list) (x:int) (y:int) =
-    match remainingTiles with
-    | [] -> group
-    | head :: tail ->
+let rec moveOnDirection (group:Tile[,]) (remainingTiles: Tile array) (x:int) (y:int) =
+    match remainingTiles.Length with
+    | 0 -> group
+    | _ ->
+        let head = remainingTiles.[0]
         let group' = group |> Array2D.copy
         let newPos = getNewPos head group [| x; y |]
         group'.[head.X, head.Y] <- { FloorType = Empty; X = head.X; Y = head.Y; InitialLoad = head.InitialLoad }
         group'.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
-        moveOnDirection group' tail x y
+        moveOnDirection group' (remainingTiles |> Array.skip 1) x y
+    //match remainingTiles with
+    //| [] -> group
+    //| head :: tail ->
+    //    let group' = group |> Array2D.copy
+    //    let newPos = getNewPos head group [| x; y |]
+    //    group'.[head.X, head.Y] <- { FloorType = Empty; X = head.X; Y = head.Y; InitialLoad = head.InitialLoad }
+    //    group'.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
+    //    moveOnDirection group' tail x y
 
-let rec performCycle (group:Tile[,]) (roundedTiles: Tile list) (maxCycles: int) (currentCycle: int) (scores: Tile[,] list) =
+let rec performCycle (group:Tile[,]) (roundedTiles: Tile array) (maxCycles: int) (currentCycle: int) (scores: Tile[,] list) =
     if currentCycle = maxCycles then
         group
     else
+        printfn "Running cycle %i" currentCycle
         let afterNorth = moveOnDirection group roundedTiles -1 0           
-        let northRoundedTiles = gridToList afterNorth |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
+        let northRoundedTiles = gridToArray afterNorth |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
 
         let afterWest = moveOnDirection afterNorth northRoundedTiles 0 -1
-        let westRoundedTiles = gridToList afterWest |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
+        let westRoundedTiles = gridToArray afterWest |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
 
-        let afterSouth = moveOnDirection afterWest (westRoundedTiles |> List.rev) 1 0
-        let southRoundedTiles = gridToList afterSouth |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
+        let afterSouth = moveOnDirection afterWest (westRoundedTiles |> Array.rev) 1 0
+        let southRoundedTiles = gridToArray afterSouth |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
 
-        let afterEast = moveOnDirection afterSouth (southRoundedTiles |> List.rev) 0 1
-        let eastRoundedTiles = gridToList afterEast |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
+        let afterEast = moveOnDirection afterSouth (southRoundedTiles |> Array.rev) 0 1
+        let eastRoundedTiles = gridToArray afterEast |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
 
         if scores |> List.contains afterEast then
             let prevHit = scores |> List.findIndex (fun t -> t = afterEast)
@@ -112,7 +122,7 @@ let execute =
     let lines = LocalHelper.ReadLines path |> Seq.toList
     let map = parseGroup lines
     let mapOfCyclesValue = []
-    let roundedTiles = gridToList map |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
+    let roundedTiles = gridToArray map |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
     let result = performCycle map roundedTiles 1000000000 0 mapOfCyclesValue
-    let newRoundedTiles = gridToList result |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-    newRoundedTiles |> List.sumBy _.InitialLoad
+    let newRoundedTiles = gridToArray result |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+    newRoundedTiles |> Array.sumBy _.InitialLoad

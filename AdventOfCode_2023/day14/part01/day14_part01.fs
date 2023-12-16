@@ -32,38 +32,38 @@ let parseGroup (lines:string list) =
             group.[i,j] <- tile
     group
 
-let gridToList (group: Tile[,]) =
+let gridToArray (group: Tile[,]) =
     let rows = group.GetLength(0)
     let cols = group.GetLength(1)
-    let list = List.init rows (fun i -> List.init cols (fun j -> group.[i,j]))
+    let list = Array.init rows (fun i -> Array.init cols (fun j -> group.[i,j]))
     list
 
-let rec findNearestTile (from: Tile) (tiles: Tile list) =
-    match tiles with
-    | head :: tail ->
-        if head.FloorType = Empty then
-            findNearestTile head tail
+let rec findNearestTile (from: Tile) (tiles: Tile array) =
+    match tiles.Length with
+    | 0 -> from
+    | _ ->
+        if tiles.[0].FloorType = Empty then
+            findNearestTile tiles.[0] (tiles |> Array.skip 1)
         else
             from
-    | [] -> from
 
 let getNewPos (tile: Tile) (map: Tile[,]) (direction: int[]) =
     match direction with
     | [| r; c |] when r = -1 && c = 0 ->
-        let fullCol = map.[*, tile.Y] |> Array.filter (fun t -> t.X < tile.X) |> Array.toList |> List.rev
+        let fullCol = map.[*, tile.Y] |> Array.filter (fun t -> t.X < tile.X) |> Array.rev
         findNearestTile tile fullCol
 
     | _ -> failwith "Not implemented"
 
-let rec moveNorth (group:Tile[,]) (remainingTiles: Tile list) (x:int) (y:int) =
-    match remainingTiles with
-    | [] -> group
-    | head :: tail ->
-        let group' = group |> Array2D.copy
-        let newPos = getNewPos head group [|-1;0|]
-        group'.[head.X, head.Y] <- { FloorType = Empty; X = head.X; Y = head.Y; InitialLoad = head.InitialLoad }
-        group'.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
-        moveNorth group' tail x y
+let rec moveNorth (group:Tile[,]) (remainingTiles: Tile array) =
+    match remainingTiles.Length with
+    | 0 -> group
+    | _ ->
+            //let group' = group |> Array2D.copy
+            let newPos = getNewPos remainingTiles.[0] group [| -1; 0 |]
+            group.[remainingTiles.[0].X, remainingTiles.[0].Y] <- { FloorType = Empty; X = remainingTiles.[0].X; Y = remainingTiles.[0].Y; InitialLoad = remainingTiles.[0].InitialLoad }
+            group.[newPos.X, newPos.Y] <- { FloorType = remainingTiles.[0].FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
+            moveNorth group (remainingTiles |> Array.skip 1)
 
 let printGroup (group:Tile[,]) =
     for i in 0..group.GetLength(0)-1 do
@@ -75,7 +75,7 @@ let execute =
     let path = "day14/day14_input.txt"
     let lines = LocalHelper.ReadLines path |> Seq.toList
     let map = parseGroup lines
-    let roundedTiles = gridToList map |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-    let result = moveNorth map roundedTiles 0 0
-    let newRoundedTiles = gridToList result |> List.concat |> List.filter (fun t -> t.FloorType = Rounded)
-    newRoundedTiles |> List.sumBy _.InitialLoad
+    let roundedTiles = gridToArray map |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+    let result = moveNorth map roundedTiles
+    let newRoundedTiles = gridToArray result |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+    newRoundedTiles |> Array.sumBy _.InitialLoad
