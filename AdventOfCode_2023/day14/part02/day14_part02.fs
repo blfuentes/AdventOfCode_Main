@@ -2,7 +2,6 @@
 
 open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
-open System.Collections.Generic
 open System
 
 type FloorType = Rounded | Damaged | Empty
