@@ -3,6 +3,7 @@
 open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
 open System.Collections.Generic
+open System
 
 type FloorType = Rounded | Damaged | Empty
 
@@ -75,25 +76,15 @@ let rec moveOnDirection (group:Tile[,]) (remainingTiles: Tile array) (x:int) (y:
     | 0 -> group
     | _ ->
         let head = remainingTiles.[0]
-        let group' = group |> Array2D.copy
         let newPos = getNewPos head group [| x; y |]
-        group'.[head.X, head.Y] <- { FloorType = Empty; X = head.X; Y = head.Y; InitialLoad = head.InitialLoad }
-        group'.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
-        moveOnDirection group' (remainingTiles |> Array.skip 1) x y
-    //match remainingTiles with
-    //| [] -> group
-    //| head :: tail ->
-    //    let group' = group |> Array2D.copy
-    //    let newPos = getNewPos head group [| x; y |]
-    //    group'.[head.X, head.Y] <- { FloorType = Empty; X = head.X; Y = head.Y; InitialLoad = head.InitialLoad }
-    //    group'.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
-    //    moveOnDirection group' tail x y
+        group.[head.X, head.Y] <- { FloorType = Empty; X = head.X; Y = head.Y; InitialLoad = head.InitialLoad }
+        group.[newPos.X, newPos.Y] <- { FloorType = head.FloorType; X = newPos.X; Y = newPos.Y; InitialLoad = newPos.InitialLoad }
+        moveOnDirection group (remainingTiles |> Array.skip 1) x y
 
-let rec performCycle (group:Tile[,]) (roundedTiles: Tile array) (maxCycles: int) (currentCycle: int) (scores: Tile[,] list) =
+let rec performCycle (group:Tile[,]) (roundedTiles: Tile array) (maxCycles: int) (currentCycle: int) (scores: string list) =
     if currentCycle = maxCycles then
         group
     else
-        printfn "Running cycle %i" currentCycle
         let afterNorth = moveOnDirection group roundedTiles -1 0           
         let northRoundedTiles = gridToArray afterNorth |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
 
@@ -105,17 +96,27 @@ let rec performCycle (group:Tile[,]) (roundedTiles: Tile array) (maxCycles: int)
 
         let afterEast = moveOnDirection afterSouth (southRoundedTiles |> Array.rev) 0 1
         let eastRoundedTiles = gridToArray afterEast |> Array.concat |> Array.filter (fun t -> t.FloorType = Rounded)
+        
+        let key = String.Join("", afterEast |> gridToArray |> Array.concat |> Array.map (fun e -> tileToChar e))
 
-        if scores |> List.contains afterEast then
-            let prevHit = scores |> List.findIndex (fun t -> t = afterEast)
+        if scores |> List.contains key then
+            let prevHit = scores |> List.findIndex ((=) key)
             let period = currentCycle - prevHit
             let jumps = (((maxCycles-1) - currentCycle) / period)
             let jumpsTo = currentCycle + jumps * period
             let diff = maxCycles - 1 - jumpsTo
-            let goalPrev = prevHit + diff
-            scores.[goalPrev]
-        else
-            performCycle afterEast eastRoundedTiles maxCycles (currentCycle + 1) (scores @ [afterEast])
+            let goalPrev = prevHit + diff   
+            let goalPrevKey = scores |> Seq.item goalPrev
+            let parts = goalPrevKey.ToCharArray() |> Array.chunkBySize (group.GetLength(0))
+            let result = Array2D.create (group.GetLength(0)) (group.GetLength(1)) { FloorType = Empty; X = 0; Y = 0; InitialLoad = 0 }
+            for row in 0..parts.Length - 1 do
+                for col in 0..parts[0].Length - 1 do
+                    let tile = parts.[row].[col]
+                    let newTile = charToTile tile row col (group.GetLength(0))
+                    result.[row, col] <- newTile
+            result
+        else               
+            performCycle afterEast eastRoundedTiles maxCycles (currentCycle + 1) (scores @ [key])
 
 let execute =
     let path = "day14/day14_input.txt"
