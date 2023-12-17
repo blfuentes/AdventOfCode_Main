@@ -38,31 +38,37 @@ let doStep
         | RIGHT -> 1
         | _ -> 0
 
-    let mutable doStop = false
-    let mutable cc = 1
-    let mutable heat = currentHeat
-    while not doStop && cc <= maxSteps do
-        let newRow = row + cc * dirRow
-        let newCol = col + cc * dirCol
-        let newNumOfMoves = numOfMoves + cc
+    let outOfBounds (row: int) (col: int) =
+        row < 0 || row > grid.GetUpperBound(0) || col < 0 || col > grid.GetUpperBound(1)
 
-        if newRow < 0 || newRow > grid.GetUpperBound(0) || newCol < 0 || newCol > grid.GetUpperBound(1) || newNumOfMoves > maxSteps then
-            doStop <- true
-        else
-            heat <- heat + grid[newRow, newCol]
-            if cc >= minSteps then
-                if visited.[newRow, newCol].ContainsKey(dir, newNumOfMoves) then
-                    let tempHeat = visited.[newRow, newCol][(dir, newNumOfMoves)]
-                    if tempHeat <= heat then
-                        doStop <- true
-                if not doStop  then
-                    queue.Enqueue((newRow, newCol, dir, newNumOfMoves), heat)
-                    let newVisited = new Dictionary<(Direction*int), int>()
-                    for x in visited.[newRow, newCol] do
-                        newVisited.Add(x.Key, x.Value)
-                    newVisited[(dir, newNumOfMoves)] <- heat
-                    visited.[newRow, newCol] <- newVisited
-            cc <- cc + 1    
+    let rec explore (stop: bool) (cc: int) (heat: int) =
+        if not stop && cc <= maxSteps then
+            let newRow = row + cc * dirRow
+            let newCol = col + cc * dirCol
+            let newNumOfMoves = numOfMoves + cc
+            if not (outOfBounds newRow newCol) && newNumOfMoves <= maxSteps then
+                let newHeat = heat + grid[newRow, newCol]
+                let stop =
+                    if cc >= minSteps then
+                        let doContinue =
+                            if visited.[newRow, newCol].ContainsKey(dir, newNumOfMoves) then
+                                let tempHeat = visited.[newRow, newCol][(dir, newNumOfMoves)]
+                                tempHeat > newHeat
+                            else
+                                true
+                        if doContinue  then
+                            queue.Enqueue((newRow, newCol, dir, newNumOfMoves), newHeat)
+                            let newVisited = new Dictionary<(Direction*int), int>()
+                            for x in visited.[newRow, newCol] do
+                                newVisited.Add(x.Key, x.Value)
+                            newVisited[(dir, newNumOfMoves)] <- newHeat
+                            visited.[newRow, newCol] <- newVisited
+                        not doContinue
+                    else
+                        false
+                explore stop (cc + 1) newHeat
+    
+    explore false 1 currentHeat 
 
 let travel (grid: int[,]) (minSteps: int) (maxSteps: int) =
     let queue = new PriorityQueue<(int*int*Direction*int), int>()
@@ -80,8 +86,6 @@ let travel (grid: int[,]) (minSteps: int) (maxSteps: int) =
                 visited.[row, col][(direction, numOfMoves)]
             else
                 0
-        //if heat % 100 = 0 then
-        //    printfn "Heat: %i" heat
 
         if (numOfMoves < maxSteps) then
             doStep grid visited queue row col direction heat numOfMoves minSteps maxSteps
