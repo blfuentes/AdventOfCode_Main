@@ -165,6 +165,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="FSharpx.Collections" Version="3.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <ProjectReference Include="..\AdventOfCode_Utilities\AdventOfCode_Utilities.fsproj" />
 	</ItemGroup>
 

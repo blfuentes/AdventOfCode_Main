@@ -2,71 +2,97 @@
 
 open System
 open AdventOfCode_2023.Modules
+open System.Collections.Generic
 
-type Node = { Row: int; Col: int; Value: int; }
+type Direction = None | UP | DOWN | LEFT | RIGHT
 
-type Edge = { Start: Node; End: Node; Weight: int }
-
-let dijkstraWithConstraints startNode endNode graph =
-    let distance = Map.empty |> Map.add startNode 0
-    let directionCount = Map.empty |> Map.add startNode 0
-
-    let rec relaxEdges (currentNode: Node) (currentDistance: int) (currentDirectionCount: int) =
-        graph
-        |> Seq.filter (fun edge -> edge.Start = currentNode || edge.End = currentNode)
-        |> Seq.filter (fun edge ->
-            let neighbor = if edge.Start = currentNode then edge.End else edge.Start
-            let neighborDistance = Map.tryFind neighbor distance
-            match neighborDistance with
-            | Some d -> currentDistance + edge.Weight < d
-            | None -> true
-        )
-        |> Seq.iter (fun edge ->
-            let neighbor = if edge.Start = currentNode then edge.End else edge.Start
-            let neighborDistance = currentDistance + edge.Weight
-            let updatedDirectionCount =
-                if currentDirectionCount + 1 > 3 then 0
-                else currentDirectionCount + 1
-
-            let isSmallerDistance = 
-                match Map.tryFind neighbor distance with
-                | Some d -> neighborDistance < d
-                | None -> true
-
-            if isSmallerDistance then
-                relaxEdges neighbor neighborDistance updatedDirectionCount
-        )
-
-    let rec dijkstraLoop (visited: Set<Node>) =
-        let unvisitedNodes =
-            distance
-            |> Map.filter (fun key _ -> not (Set.contains key visited))
-            |> Map.fold (fun (minNode, minValue) key value ->
-                if minValue = 0 || value < minValue then (key, value) else (minNode, minValue)
-            ) ({ Row = -1; Col = -1; Value = 0 }, 0) // Initialize with a dummy node
-
-        match unvisitedNodes with
-        | (currentNode, currentDistance) ->
-            relaxEdges currentNode currentDistance (Map.find currentNode directionCount)
-            dijkstraLoop (Set.add currentNode visited)
-
-    dijkstraLoop Set.empty
-
-    // Retrieve the shortest path
-    let rec reconstructPath (node: Node) (path: Node list) =
-        if Map.containsKey node distance then          
-            let previousNode = Map.tryFind node distance
-            match previousNode with
-            | Some(prev) ->
-                let updatedPath = node :: path
-                reconstructPath node updatedPath
-            | None -> path
-        else
-            path
-
-    match Map.tryFind endNode distance with
-    | Some _ -> Some (reconstructPath endNode [endNode])
+let turnLeft (direction: Direction) =
+    match direction with
     | None -> None
+    | UP -> LEFT
+    | DOWN -> RIGHT
+    | LEFT -> DOWN
+    | RIGHT -> UP
+
+let turnRight (direction: Direction) =
+    match direction with
+    | None -> None
+    | UP -> RIGHT
+    | DOWN -> LEFT
+    | LEFT -> UP
+    | RIGHT -> DOWN
+
+let doStep 
+    (grid: int[,]) (visited: Dictionary<(Direction*int), int>[,])
+    (queue: PriorityQueue<(int*int*Direction*int), int>) (row: int) (col: int) 
+    (dir: Direction) (currentHeat: int) 
+    (numOfMoves: int) (minSteps: int) (maxSteps: int) =
+    let dirRow =
+        match dir with
+        | UP -> -1
+        | DOWN -> 1
+        | _ -> 0
+    let dirCol =
+        match dir with
+        | LEFT -> -1
+        | RIGHT -> 1
+        | _ -> 0
+
+    let mutable doStop = false
+    let mutable cc = 1
+    let mutable heat = currentHeat
+    while not doStop && cc <= maxSteps do
+        let newRow = row + cc * dirRow
+        let newCol = col + cc * dirCol
+        let newNumOfMoves = numOfMoves + cc
+
+        if newRow < 0 || newRow > grid.GetUpperBound(0) || newCol < 0 || newCol > grid.GetUpperBound(1) || newNumOfMoves > maxSteps then
+            doStop <- true
+        else
+            heat <- heat + grid[newRow, newCol]
+            if cc >= minSteps then
+                if visited.[newRow, newCol].ContainsKey(dir, newNumOfMoves) then
+                    let tempHeat = visited.[newRow, newCol][(dir, newNumOfMoves)]
+                    if tempHeat <= heat then
+                        doStop <- true
+                if not doStop  then
+                    queue.Enqueue((newRow, newCol, dir, newNumOfMoves), heat)
+                    let newVisited = new Dictionary<(Direction*int), int>()
+                    for x in visited.[newRow, newCol] do
+                        newVisited.Add(x.Key, x.Value)
+                    newVisited[(dir, newNumOfMoves)] <- heat
+                    visited.[newRow, newCol] <- newVisited
+            cc <- cc + 1    
+
+let travel (grid: int[,]) (minSteps: int) (maxSteps: int) =
+    let queue = new PriorityQueue<(int*int*Direction*int), int>()
+    let visited = Array2D.create (grid.GetUpperBound(0) + 1) (grid.GetUpperBound(1) + 1) (new Dictionary<(Direction*int), int>())
+    for i in 0..(grid.GetUpperBound(0) - 1) do
+        for j in 0..(grid.GetUpperBound(1) - 1) do
+            visited.[i,j] <- new Dictionary<(Direction*int), int>()
+    queue.Enqueue((0, 0, RIGHT, 0), 0)
+    queue.Enqueue((0, 0, DOWN, 0), 0)
+
+    while(queue.Count > 0) do
+        let (row, col, direction, numOfMoves) = queue.Dequeue()
+        let heat = 
+            if visited.[row, col].ContainsKey((direction, numOfMoves)) then
+                visited.[row, col][(direction, numOfMoves)]
+            else
+                0
+        //if heat % 100 = 0 then
+        //    printfn "Heat: %i" heat
+
+        if (numOfMoves < maxSteps) then
+            doStep grid visited queue row col direction heat numOfMoves minSteps maxSteps
+        if (numOfMoves >= minSteps) then
+            doStep grid visited queue row col (turnLeft direction) heat 0 minSteps maxSteps
+            doStep grid visited queue row col (turnRight direction) heat 0 minSteps maxSteps
+
+
+    let maxRow = grid.GetUpperBound(0)
+    let maxCol = grid.GetUpperBound(1)
+    visited[maxRow, maxCol] |> Seq.minBy(fun x -> x.Value)
 
 let parseInput (input: string list) =
     let grid = Array2D.create (input.Length) (input.[0].Length) 0
@@ -75,48 +101,9 @@ let parseInput (input: string list) =
             grid.[i,j] <- (int)(input.[i].[j].ToString())
     grid
 
-let generateGraph (grid: int[,]) =
-    let nodes =
-        seq {
-            for i in 0..(grid.GetUpperBound(0)) do
-            for j in 0..(grid.GetUpperBound(1)) do
-                yield { Row = i; Col = j; Value = grid.[i,j] }     
-        }
-    let edges =
-        seq {
-            for i in 0..(grid.GetUpperBound(0)) do
-                for j in 0..(grid.GetUpperBound(1)) do
-                    let currentNode = { Row = i; Col = j; Value = grid.[i,j] }
-                    let neighbors =
-                        seq {
-                            for k in -1..1 do
-                                for l in -1..1 do
-                                    if k <> 0 || l <> 0 then
-                                        let neighborRow = i + k
-                                        let neighborCol = j + l
-                                        if neighborRow >= 0 && neighborRow <= grid.GetUpperBound(0) && 
-                                            neighborCol >= 0 && neighborCol <= grid.GetUpperBound(1) then
-                                            yield { Row = neighborRow; Col = neighborCol; Value = grid.[neighborRow, neighborCol] }
-                        }
-                    for neighbor in neighbors do
-                        yield { Start = currentNode; End = neighbor; Weight = 1 }
-        }
-    nodes, edges
-
-
 let execute =
-    let path = "day17/test_input_01.txt"
-    //let path = "day17/day17_input.txt"
+    let path = "day17/day17_input.txt"
     let lines = LocalHelper.ReadLines path |> List.ofSeq
     let matrix = parseInput lines
-
-    let maxRow = matrix.GetUpperBound(0) + 1
-    let maxCol = matrix.GetUpperBound(1) + 1
-    let maxDistance = Int32.MaxValue
-    let (nodes, edges) = generateGraph matrix
-    let startingNode = nodes |> Seq.find (fun node -> node.Row = 0 && node.Col = 0)
-    let endingNode = nodes |> Seq.find (fun node -> node.Row = maxRow - 1 && node.Col = maxCol - 1)
-    let result = dijkstraWithConstraints startingNode endingNode edges
-    match result with
-    | Some path -> path |> List.sumBy _.Value
-    | None -> 0
+    let result = travel matrix 1 3
+    result.Value
