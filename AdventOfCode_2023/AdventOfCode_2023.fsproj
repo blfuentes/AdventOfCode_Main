@@ -98,6 +98,7 @@
 		<Content Include="day16\day16_input.txt" />
 		<Content Include="day16\TextFile1.txt" />
 		<Content Include="day16\test_input_01.txt" />
+		<Content Include="day17\day17_input.txt" />
 		<Content Include="day17\test_input_01.txt" />
 		<Content Include="day18\test_input_01.txt" />
 		<Content Include="day19\test_input_01.txt" />
