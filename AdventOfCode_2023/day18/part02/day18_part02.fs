@@ -18,7 +18,7 @@ let digHoleFold (ans: Instruction list) (dirMap: Map<string, Direction>) (direct
     let calcArea (acc: bigint*bigint*bigint*bigint) (input: Instruction) =
         let steps = calculateFromHex(input.Color)
         let direction = dirMap.[input.Color.Substring(input.Color.Length - 1)]
-        let dIdx = Array.findIndex (fun d -> d = direction) directions
+        let dIdx = Array.findIndex ((=) direction) directions
         let row, col, border, area = acc
         let newRow = row + dirRows[dIdx] * steps
         let newCol = col + dirCols[dIdx] * steps
