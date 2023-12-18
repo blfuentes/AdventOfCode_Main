@@ -4,15 +4,12 @@ open AdventOfCode_2023.Modules
 open System.Text.RegularExpressions
 open System
 
-let (bigint_) = bigint.Parse
-
 type Direction = UP | RIGHT | DOWN | LEFT
 
 type Instruction = { Direction: Direction; Steps: bigint; Color: string }
 
 let calculateFromHex(input: string) =
-    let valueTo = input.Substring(0, input.Length - 1)
-    (bigint_)(Int32.Parse(valueTo, System.Globalization.NumberStyles.HexNumber).ToString())
+    (Int32.Parse(input.Substring(0, input.Length - 1), System.Globalization.NumberStyles.HexNumber)) |> bigint
 
 let dirRows = [| -1I; 0I; 1I; 0I |]
 let dirCols = [| 0I; 1I; 0I; -1I |]
@@ -44,7 +41,7 @@ let parseInput (input: string list) =
                     | "L" -> LEFT
                     | "R" -> RIGHT
                     | _ -> failwith "Unknown direction"
-                ; Steps = bigint_ parts.Groups.[2].Value
+                ; Steps = bigint.Parse(parts.Groups.[2].Value)
                 ; Color = parts.Groups.[3].Value
             }
     )
