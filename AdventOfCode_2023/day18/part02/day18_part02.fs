@@ -14,28 +14,23 @@ let calculateFromHex(input: string) =
     let valueTo = input.Substring(0, input.Length - 1)
     (bigint_)(Int32.Parse(valueTo, System.Globalization.NumberStyles.HexNumber).ToString())
 
-//calculateFromHex"70c710"
-
 let dirRows = [| -1I; 0I; 1I; 0I |]
 let dirCols = [| 0I; 1I; 0I; -1I |]
 
-let rec digHole (ans: Instruction list) (directions: string[]) 
-    (area: bigint) (border: bigint) (row: bigint) (nextRow: bigint) 
-    (col: bigint) (nextCol: bigint) =
-    match ans with
-    | head :: tail ->
-        let steps = calculateFromHex(head.Color)
-        let dIdx = Array.findIndex (fun d -> d = head.Color.Substring(head.Color.Length - 1)) directions
+let digHoleFold (ans: Instruction list) (dirMap: Map<string, Direction>) (directions: Direction[])=
+    let calcArea (acc: bigint*bigint*bigint*bigint) (input: Instruction) =
+        let steps = calculateFromHex(input.Color)
+        let direction = dirMap.[input.Color.Substring(input.Color.Length - 1)]
+        let dIdx = Array.findIndex (fun d -> d = direction) directions
+        let row, col, border, area = acc
         let newRow = row + dirRows[dIdx] * steps
         let newCol = col + dirCols[dIdx] * steps
-        let newArea = area + (nextRow - newRow) * (nextCol + newCol) * 1I
+        let newArea = area + (row - newRow) * (col + newCol) * 1I
         let newBorder = border + steps
-        let newNextRow = newRow
-        let newNextCol = newCol
-        digHole tail directions newArea newBorder newRow newNextRow newCol newNextCol
-    | [] ->
-        let resultArea = area + (nextRow - row) * (nextCol + col)
-        bigint ((float)border / 2. + Math.Abs((float)resultArea) / 2. + 1. )
+        (newRow, newCol, newBorder, newArea)
+
+    let _, _, border, area = List.fold calcArea (0I, 0I, 0I, 0I) ans
+    bigint ((float)border / 2. + Math.Abs((float)area) / 2. + 1. )
 
 let parseInput (input: string list) =
     input 
@@ -57,4 +52,9 @@ let parseInput (input: string list) =
 let execute =
     let path = "day18/day18_input.txt"
     let instructions = LocalHelper.ReadLines(path) |> List.ofSeq |> parseInput
-    digHole instructions [| "3"; "0"; "1"; "2" |] 0I 0I 0I 0I 0I 0I
+    let mapDirection = Map.empty
+                        .Add("0", RIGHT)
+                        .Add("1", DOWN)
+                        .Add("2", LEFT)
+                        .Add("3", UP)
+    digHoleFold instructions mapDirection [| UP; RIGHT; DOWN; LEFT |]
