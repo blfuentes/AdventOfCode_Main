@@ -100,6 +100,7 @@
 		<Content Include="day16\test_input_01.txt" />
 		<Content Include="day17\day17_input.txt" />
 		<Content Include="day17\test_input_01.txt" />
+		<Content Include="day18\day18_input.txt" />
 		<Content Include="day18\test_input_01.txt" />
 		<Content Include="day19\test_input_01.txt" />
 		<Content Include="day20\test_input_01.txt" />
