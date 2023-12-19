@@ -75,7 +75,7 @@ let evaluate (a: string) (b: string) (c: int) (msg: Map<string, int>) =
     else
         msg[a] < c
 
-let rec RunMessages (currentRule: Rule) (rules: Rule list) (message: Map<string, int>) =
+let rec RunMessages (currentRule: Rule) (rules: Map<string, Rule>) (message: Map<string, int>) =
     let rec runOps (ops: Op list) =
         match ops with
         | hop :: top ->
@@ -94,7 +94,7 @@ let rec RunMessages (currentRule: Rule) (rules: Rule list) (message: Map<string,
                 | "A" -> ("A", message)
                 | "R" -> ("R", message)
                 | _ ->
-                    let newRule = rules |> List.find(fun r -> r.Id = dest)
+                    let newRule = rules[dest]
                     RunMessages newRule rules message                                                 
         | [] -> failwith "Unexpected"
     runOps currentRule.Ops
@@ -104,14 +104,18 @@ let parseInput (input: string list) =
     let parts = Utilities.getGroupsOnSeparator input ""
     let rules = parts.[0] |> List.map parseRule
     let messages = parts.[1] |> List.map parseMessage
-    (rules, messages)
+    let rulesMap = 
+        rules 
+        |> List.map(fun r -> (r.Id, r)) 
+        |> Map.ofList
+    (rulesMap, messages)
 
 let execute =
     //let path = "day19/test_input_01.txt"
-    let path = "day19/test_input_02.txt"
-    //let path = "day19/day19_input.txt"
+    //let path = "day19/test_input_02.txt"
+    let path = "day19/day19_input.txt"
     let (rules, messages) = parseInput (LocalHelper.GetLinesFromFile path |> List.ofArray)
-    let results = messages |> List.map (fun m -> RunMessages rules.[0] rules m )
+    let results = messages |> List.map (fun m -> RunMessages (rules["in"]) rules m )
     let accepted = 
         results 
         |> List.filter(fun r -> (fst r) = "A") 
