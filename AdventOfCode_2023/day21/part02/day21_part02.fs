@@ -86,7 +86,7 @@ let multiplymap (grid: char[,]) (num: int) =
                         mGrid.[row + rowLength * i, col + colLength * j] <- grid.[row, col]
     mGrid
 
-let interpolate (target: bigint) (values: bigint[]) =
+let extrapolate (target: bigint) (values: bigint[]) =
     let result = Array.zeroCreate 3
     result.[0] <- values.[0]
     result.[1] <- values.[1] - values.[0]
@@ -107,5 +107,5 @@ let execute =
     let res5 = calculate map5 (65 + (131 * 2))
 
     let tmp = [| res1 |> bigint; res3 |> bigint; res5 |> bigint |]
-    let poly = interpolate ((26501365I - 65I) / 131I) tmp
+    let poly = extrapolate ((26501365I - 65I) / 131I) tmp
     poly
