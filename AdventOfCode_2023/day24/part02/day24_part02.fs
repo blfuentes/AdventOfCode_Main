@@ -21,14 +21,6 @@ type Hailstone = {
     speed: Speed
 }
 
-type PairOfHails = {
-    h1: Hailstone
-    h2: Hailstone
-    lambda: float
-    x: double
-    y: double
-}
-
 let parseInput (input: string list) =
     input
     |> List.map(fun line ->
