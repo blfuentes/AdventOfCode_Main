@@ -19,33 +19,33 @@ https://adventofcode.com/2015
 
 2015 F#/Go
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ❌ Day 8     | ❌ Day 8     |
-| ❌ Day 9     | ❌ Day 9     |
-| ❌ Day 10    | ❌ Day 10    |
-| ❌ Day 11    | ❌ Day 11    |
-| ❌ Day 12    | ❌ Day 12    |
-| ❌ Day 13    | ❌ Day 13    |
-| ❌ Day 14    | ❌ Day 14    |
-| ❌ Day 15    | ❌ Day 15    |
-| ❌ Day 16    | ❌ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ❌ | ❌ |
+| Day 9   | ❌ | ❌ |
+| Day 10  | ❌ | ❌ |
+| Day 11  | ❌ | ❌ |
+| Day 12  | ❌ | ❌ |
+| Day 13  | ❌ | ❌ |
+| Day 14  | ❌ | ❌ |
+| Day 15  | ❌ | ❌ |
+| Day 16  | ❌ | ❌ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 
 # Advent Of Code 2016
@@ -56,33 +56,33 @@ https://adventofcode.com/2016
 
 2016 F#
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ❌ Day 7     | ❌ Day 7     |
-| ❌ Day 8     | ❌ Day 8     |
-| ❌ Day 9     | ❌ Day 9     |
-| ❌ Day 10    | ❌ Day 10    |
-| ❌ Day 11    | ❌ Day 11    |
-| ❌ Day 12    | ❌ Day 12    |
-| ❌ Day 13    | ❌ Day 13    |
-| ❌ Day 14    | ❌ Day 14    |
-| ❌ Day 15    | ❌ Day 15    |
-| ❌ Day 16    | ❌ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ❌ | ❌ |
+| Day 8   | ❌ | ❌ |
+| Day 9   | ❌ | ❌ |
+| Day 10  | ❌ | ❌ |
+| Day 11  | ❌ | ❌ |
+| Day 12  | ❌ | ❌ |
+| Day 13  | ❌ | ❌ |
+| Day 14  | ❌ | ❌ |
+| Day 15  | ❌ | ❌ |
+| Day 16  | ❌ | ❌ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 
 # Advent Of Code 2017
@@ -93,33 +93,33 @@ https://adventofcode.com/2017
 
 2017 F#
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ❌ Day 7     | ❌ Day 7     |
-| ❌ Day 8     | ❌ Day 8     |
-| ❌ Day 9     | ❌ Day 9     |
-| ❌ Day 10    | ❌ Day 10    |
-| ❌ Day 11    | ❌ Day 11    |
-| ❌ Day 12    | ❌ Day 12    |
-| ❌ Day 13    | ❌ Day 13    |
-| ❌ Day 14    | ❌ Day 14    |
-| ❌ Day 15    | ❌ Day 15    |
-| ❌ Day 16    | ❌ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ❌ | ❌ |
+| Day 8   | ❌ | ❌ |
+| Day 9   | ❌ | ❌ |
+| Day 10  | ❌ | ❌ |
+| Day 11  | ❌ | ❌ |
+| Day 12  | ❌ | ❌ |
+| Day 13  | ❌ | ❌ |
+| Day 14  | ❌ | ❌ |
+| Day 15  | ❌ | ❌ |
+| Day 16  | ❌ | ❌ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 # Advent Of Code 2018
 
@@ -129,33 +129,33 @@ https://adventofcode.com/2018
 
 2018 F#/Typescript
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ✔️ Day 8     | ✔️ Day 8     |
-| ✔️ Day 9     | ✔️ Day 9     |
-| ✔️ Day 10    | ✔️ Day 10    |
-| ✔️ Day 11    | ✔️ Day 11    |
-| ✔️ Day 12    | ✔️ Day 12    |
-| ✔️ Day 13    | ✔️ Day 13    |
-| ✔️ Day 14    | ✔️ Day 14    |
-| ✔️ Day 15    | ✔️ Day 15    |
-| ✔️ Day 16    | ✔️ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ✔️ | ✔️ |
+| Day 9   | ✔️ | ✔️ |
+| Day 10  | ✔️ | ✔️ |
+| Day 11  | ✔️ | ✔️ |
+| Day 12  | ✔️ | ✔️ |
+| Day 13  | ✔️ | ✔️ |
+| Day 14  | ✔️ | ✔️ |
+| Day 15  | ✔️ | ✔️ |
+| Day 16  | ✔️ | ✔️ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 
 # Advent Of Code 2019
@@ -166,33 +166,33 @@ https://adventofcode.com/2019
 
 2019 F#
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ✔️ Day 8     | ✔️ Day 8     |
-| ✔️ Day 9     | ✔️ Day 9     |
-| ✔️ Day 10    | ✔️ Day 10    |
-| ✔️ Day 11    | ✔️ Day 11    |
-| ✔️ Day 12    | ✔️ Day 12    |
-| ✔️ Day 13    | ✔️ Day 13    |
-| ✔️ Day 14    | ✔️ Day 14    |
-| ✔️ Day 15    | ✔️ Day 15    |
-| ✔️ Day 16    | ✔️ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ✔️ | ✔️ |
+| Day 9   | ✔️ | ✔️ |
+| Day 10  | ✔️ | ✔️ |
+| Day 11  | ✔️ | ✔️ |
+| Day 12  | ✔️ | ✔️ |
+| Day 13  | ✔️ | ✔️ |
+| Day 14  | ✔️ | ✔️ |
+| Day 15  | ✔️ | ✔️ |
+| Day 16  | ✔️ | ✔️ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 # Advent Of Code 2020
 
@@ -202,33 +202,33 @@ https://adventofcode.com/2020
 
 2020 F#
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ✔️ Day 8     | ✔️ Day 8     |
-| ✔️ Day 9     | ✔️ Day 9     |
-| ✔️ Day 10    | ✔️ Day 10    |
-| ✔️ Day 11    | ✔️ Day 11    |
-| ✔️ Day 12    | ✔️ Day 12    |
-| ✔️ Day 13    | ✔️ Day 13    |
-| ❌ Day 14    | ❌ Day 14    |
-| ❌ Day 15    | ❌ Day 15    |
-| ❌ Day 16    | ❌ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ✔️ | ✔️ |
+| Day 9   | ✔️ | ✔️ |
+| Day 10  | ✔️ | ✔️ |
+| Day 11  | ✔️ | ✔️ |
+| Day 12  | ✔️ | ✔️ |
+| Day 13  | ✔️ | ✔️ |
+| Day 14  | ❌ | ❌ |
+| Day 15  | ❌ | ❌ |
+| Day 16  | ❌ | ❌ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 # Advent Of Code 2021
 
@@ -238,33 +238,33 @@ https://adventofcode.com/2021
 
 2021 F#
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ✔️ Day 8     | ✔️ Day 8     |
-| ✔️ Day 9     | ✔️ Day 9     |
-| ✔️ Day 10    | ✔️ Day 10    |
-| ✔️ Day 11    | ✔️ Day 11    |
-| ✔️ Day 12    | ✔️ Day 12    |
-| ✔️ Day 13    | ✔️ Day 13    |
-| ✔️ Day 14    | ✔️ Day 14    |
-| ✔️ Day 15    | ✔️ Day 15    |
-| ✔️ Day 16    | ✔️ Day 16    |
-| ✔️ Day 17    | ✔️ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ✔️ | ✔️ |
+| Day 9   | ✔️ | ✔️ |
+| Day 10  | ✔️ | ✔️ |
+| Day 11  | ✔️ | ✔️ |
+| Day 12  | ✔️ | ✔️ |
+| Day 13  | ✔️ | ✔️ |
+| Day 14  | ✔️ | ✔️ |
+| Day 15  | ✔️ | ✔️ |
+| Day 16  | ✔️ | ✔️ |
+| Day 17  | ✔️ | ✔️ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ❌ | ❌ |
 
 # Advent Of Code 2022
 
@@ -274,33 +274,34 @@ https://adventofcode.com/2022
 
 2022 F#
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ✔️ Day 8     | ✔️ Day 8     |
-| ✔️ Day 9     | ✔️ Day 9     |
-| ✔️ Day 10    | ✔️ Day 10    |
-| ✔️ Day 11    | ✔️ Day 11    |
-| ✔️ Day 12    | ✔️ Day 12    |
-| ✔️ Day 13    | ✔️ Day 13    |
-| ✔️ Day 14    | ✔️ Day 14    |
-| ❌ Day 15    | ❌ Day 15    |
-| ❌ Day 16    | ❌ Day 16    |
-| ❌ Day 17    | ❌ Day 17    |
-| ❌ Day 18    | ❌ Day 18    |
-| ❌ Day 19    | ❌ Day 19    |
-| ❌ Day 20    | ❌ Day 20    |
-| ❌ Day 21    | ❌ Day 21    |
-| ❌ Day 22    | ❌ Day 22    |
-| ❌ Day 23    | ❌ Day 23    |
-| ❌ Day 24    | ❌ Day 24    |
-| ✔️ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ✔️ | ✔️ |
+| Day 9   | ✔️ | ✔️ |
+| Day 10  | ✔️ | ✔️ |
+| Day 11  | ✔️ | ✔️ |
+| Day 12  | ✔️ | ✔️ |
+| Day 13  | ✔️ | ✔️ |
+| Day 14  | ✔️ | ✔️ |
+| Day 15  | ❌ | ❌ |
+| Day 16  | ❌ | ❌ |
+| Day 17  | ❌ | ❌ |
+| Day 18  | ❌ | ❌ |
+| Day 19  | ❌ | ❌ |
+| Day 20  | ❌ | ❌ |
+| Day 21  | ❌ | ❌ |
+| Day 22  | ❌ | ❌ |
+| Day 23  | ❌ | ❌ |
+| Day 24  | ❌ | ❌ |
+| Day 25  | ✔️ | ❌ |
+
 
 # Advent Of Code 2023
 
@@ -310,30 +311,30 @@ https://adventofcode.com/2023
 
 2023 F#/C++
 
-| Part 1        | Part 2        |
-| ------------- | ------------- |
-| ✔️ Day 1     | ✔️ Day 1     |
-| ✔️ Day 2     | ✔️ Day 2     |
-| ✔️ Day 3     | ✔️ Day 3     |
-| ✔️ Day 4     | ✔️ Day 4     |
-| ✔️ Day 5     | ✔️ Day 5     |
-| ✔️ Day 6     | ✔️ Day 6     |
-| ✔️ Day 7     | ✔️ Day 7     |
-| ✔️ Day 8     | ✔️ Day 8     |
-| ✔️ Day 9     | ✔️ Day 9     |
-| ✔️ Day 10    | ✔️ Day 10    |
-| ✔️ Day 11    | ✔️ Day 11    |
-| ✔️ Day 12    | ✔️ Day 12    |
-| ✔️ Day 13    | ✔️ Day 13    |
-| ✔️ Day 14    | ✔️ Day 14    |
-| ✔️ Day 15    | ✔️ Day 15    |
-| ✔️ Day 16    | ✔️ Day 16    |
-| ✔️ Day 17    | ✔️ Day 17    |
-| ✔️ Day 18    | ✔️ Day 18    |
-| ✔️ Day 19    | ✔️ Day 19    |
-| ✔️ Day 20    | ✔️ Day 20    |
-| ✔️ Day 21    | ✔️ Day 21    |
-| ✔️ Day 22    | ✔️ Day 22    |
-| ✔️ Day 23    | ✔️ Day 23    |
-| ✔️ Day 24    | ✔️ Day 24    |
-| ❌ Day 25    | ❌ Day 25    |
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ✔️ | ✔️ |
+| Day 2   | ✔️ | ✔️ |
+| Day 3   | ✔️ | ✔️ |
+| Day 4   | ✔️ | ✔️ |
+| Day 5   | ✔️ | ✔️ |
+| Day 6   | ✔️ | ✔️ |
+| Day 7   | ✔️ | ✔️ |
+| Day 8   | ✔️ | ✔️ |
+| Day 9   | ✔️ | ✔️ |
+| Day 10  | ✔️ | ✔️ |
+| Day 11  | ✔️ | ✔️ |
+| Day 12  | ✔️ | ✔️ |
+| Day 13  | ✔️ | ✔️ |
+| Day 14  | ✔️ | ✔️ |
+| Day 15  | ✔️ | ✔️ |
+| Day 16  | ✔️ | ✔️ |
+| Day 17  | ✔️ | ✔️ |
+| Day 18  | ✔️ | ✔️ |
+| Day 19  | ✔️ | ✔️ |
+| Day 20  | ✔️ | ✔️ |
+| Day 21  | ✔️ | ✔️ |
+| Day 22  | ✔️ | ✔️ |
+| Day 23  | ✔️ | ✔️ |
+| Day 24  | ✔️ | ✔️ |
+| Day 25  | ❌ | ❌ |
