@@ -21,13 +21,13 @@ https://adventofcode.com/2015
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day01/part01/day01_part01.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day01/day01_1.go) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day01/part01/day01_part02.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day01/day01_2.go) |
-| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day02/part01/day02_part01.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day02/day02_1.go) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day02/part01/day02_part02.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day02/day02_2.go) |
-| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day03/part01/day03_part02.fs) |
-| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day04/part01/day04_part02.fs) |
-| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day05/part01/day05_part02.fs) |
-| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day06/part01/day06_part02.fs) |
-| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day07/part01/day07_part02.fs) |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day01/part01/day01_part01.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day01/day01_1.go) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day01/part02/day01_part02.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day01/day01_2.go) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day02/part01/day02_part01.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day02/day02_1.go) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day02/part02/day02_part02.fs) - [Go](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015_Go/day02/day02_2.go) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day06/part02/day06_part02.fs) |
+| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day07/part02/day07_part02.fs) |
 | Day 8   | ❌ | ❌ |
 | Day 9   | ❌ | ❌ |
 | Day 10  | ❌ | ❌ |
@@ -58,12 +58,12 @@ https://adventofcode.com/2016
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# | ✔️ F# |
-| Day 2   | ✔️ F# | ✔️ F# |
-| Day 3   | ✔️ F# | ✔️ F# |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day01/part01/day01_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day01/part02/day01_part02.fs) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day02/part01/day02_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day02/part02/day02_part02.fs) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2016/day06/part02/day06_part02.fs) |
 | Day 7   | ❌ | ❌ |
 | Day 8   | ❌ | ❌ |
 | Day 9   | ❌ | ❌ |
@@ -95,12 +95,12 @@ https://adventofcode.com/2017
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# | ✔️ F# |
-| Day 2   | ✔️ F# | ✔️ F# |
-| Day 3   | ✔️ F# | ✔️ F# |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day01/part01/day01_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day01/part02/day01_part02.fs) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day02/part01/day02_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day02/part02/day02_part02.fs) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2017/day06/part02/day06_part02.fs) |
 | Day 7   | ❌ | ❌ |
 | Day 8   | ❌ | ❌ |
 | Day 9   | ❌ | ❌ |
@@ -168,22 +168,22 @@ https://adventofcode.com/2019
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# | ✔️ F# |
-| Day 2   | ✔️ F# | ✔️ F# |
-| Day 3   | ✔️ F# | ✔️ F# |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
-| Day 7   | ✔️ F# | ✔️ F# |
-| Day 8   | ✔️ F# | ✔️ F# |
-| Day 9   | ✔️ F# | ✔️ F# |
-| Day 10  | ✔️ F# | ✔️ F# |
-| Day 11  | ✔️ F# | ✔️ F# |
-| Day 12  | ✔️ F# | ✔️ F# |
-| Day 13  | ✔️ F# | ✔️ F# |
-| Day 14  | ✔️ F# | ✔️ F# |
-| Day 15  | ✔️ F# | ✔️ F# |
-| Day 16  | ✔️ F# | ✔️ F# |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day01/part01/day01_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day01/part02/day01_part02.fs) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day02/part01/day02_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day02/part02/day02_part02.fs) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day06/part02/day06_part02.fs) |
+| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day07/part02/day07_part02.fs) |
+| Day 8   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day08/part01/day08_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day08/part02/day08_part02.fs) |
+| Day 9   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day09/part01/day09_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day09/part02/day09_part02.fs) |
+| Day 10  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day10/part01/day10_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day10/part02/day10_part02.fs) |
+| Day 11  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day11/part01/day11_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day11/part02/day11_part02.fs) |
+| Day 12  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day12/part01/day12_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day12/part02/day12_part02.fs) |
+| Day 13  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day13/part01/day13_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day13/part02/day13_part02.fs) |
+| Day 14  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day14/part01/day14_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day14/part02/day14_part02.fs) |
+| Day 15  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day15/part01/day15_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day15/part02/day15_part02.fs) |
+| Day 16  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day16/part01/day16_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2019/day16/part02/day16_part02.fs) |
 | Day 17  | ❌ | ❌ |
 | Day 18  | ❌ | ❌ |
 | Day 19  | ❌ | ❌ |
@@ -204,19 +204,19 @@ https://adventofcode.com/2020
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# | ✔️ F# |
-| Day 2   | ✔️ F# | ✔️ F# |
-| Day 3   | ✔️ F# | ✔️ F# |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
-| Day 7   | ✔️ F# | ✔️ F# |
-| Day 8   | ✔️ F# | ✔️ F# |
-| Day 9   | ✔️ F# | ✔️ F# |
-| Day 10  | ✔️ F# | ✔️ F# |
-| Day 11  | ✔️ F# | ✔️ F# |
-| Day 12  | ✔️ F# | ✔️ F# |
-| Day 13  | ✔️ F# | ✔️ F# |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day01/part01/day01_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day01/part02/day01_part02.fs) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day02/part01/day02_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day02/part02/day02_part02.fs) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day06/part02/day06_part02.fs) |
+| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day07/part02/day07_part02.fs) |
+| Day 8   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day08/part01/day08_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day08/part02/day08_part02.fs) |
+| Day 9   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day09/part01/day09_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day09/part02/day09_part02.fs) |
+| Day 10  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day10/part01/day10_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day10/part02/day10_part02.fs) |
+| Day 11  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day11/part01/day11_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day11/part02/day11_part02.fs) |
+| Day 12  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day12/part01/day12_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day12/part02/day12_part02.fs) |
+| Day 13  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day13/part01/day13_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2020/day13/part02/day13_part02.fs) |
 | Day 14  | ❌ | ❌ |
 | Day 15  | ❌ | ❌ |
 | Day 16  | ❌ | ❌ |
@@ -240,23 +240,23 @@ https://adventofcode.com/2021
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# | ✔️ F# |
-| Day 2   | ✔️ F# | ✔️ F# |
-| Day 3   | ✔️ F# | ✔️ F# |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
-| Day 7   | ✔️ F# | ✔️ F# |
-| Day 8   | ✔️ F# | ✔️ F# |
-| Day 9   | ✔️ F# | ✔️ F# |
-| Day 10  | ✔️ F# | ✔️ F# |
-| Day 11  | ✔️ F# | ✔️ F# |
-| Day 12  | ✔️ F# | ✔️ F# |
-| Day 13  | ✔️ F# | ✔️ F# |
-| Day 14  | ✔️ F# | ✔️ F# |
-| Day 15  | ✔️ F# | ✔️ F# |
-| Day 16  | ✔️ F# | ✔️ F# |
-| Day 17  | ✔️ F# | ✔️ F# |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day01/part01/day01_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day01/part02/day01_part02.fs) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day02/part01/day02_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day02/part02/day02_part02.fs) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day06/part02/day06_part02.fs) |
+| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day07/part02/day07_part02.fs) |
+| Day 8   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day08/part01/day08_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day08/part02/day08_part02.fs) |
+| Day 9   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day09/part01/day09_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day09/part02/day09_part02.fs) |
+| Day 10  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day10/part01/day10_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day10/part02/day10_part02.fs) |
+| Day 11  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day11/part01/day11_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day11/part02/day11_part02.fs) |
+| Day 12  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day12/part01/day12_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day12/part02/day12_part02.fs) |
+| Day 13  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day13/part01/day13_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day13/part02/day13_part02.fs) |
+| Day 14  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day14/part01/day14_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day14/part02/day14_part02.fs) |
+| Day 15  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day15/part01/day15_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day15/part02/day15_part02.fs) |
+| Day 16  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day16/part01/day16_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day16/part02/day16_part02.fs) |
+| Day 17  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day17/part01/day17_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2021/day17/part02/day17_part01.fs) |
 | Day 18  | ❌ | ❌ |
 | Day 19  | ❌ | ❌ |
 | Day 20  | ❌ | ❌ |
@@ -276,20 +276,20 @@ https://adventofcode.com/2022
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# | ✔️ F# |
-| Day 2   | ✔️ F# | ✔️ F# |
-| Day 3   | ✔️ F# | ✔️ F# |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
-| Day 7   | ✔️ F# | ✔️ F# |
-| Day 8   | ✔️ F# | ✔️ F# |
-| Day 9   | ✔️ F# | ✔️ F# |
-| Day 10  | ✔️ F# | ✔️ F# |
-| Day 11  | ✔️ F# | ✔️ F# |
-| Day 12  | ✔️ F# | ✔️ F# |
-| Day 13  | ✔️ F# | ✔️ F# |
-| Day 14  | ✔️ F# | ✔️ F# |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day01/part01/day01_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day01/part02/day01_part02.fs) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day02/part01/day02_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day02/part02/day02_part02.fs) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day03/part01/day03_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day03/part02/day03_part02.fs) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day06/part02/day06_part02.fs) |
+| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day07/part02/day07_part02.fs) |
+| Day 8   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day08/part01/day08_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day08/part02/day08_part02.fs) |
+| Day 9   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day09/part01/day09_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day09/part02/day09_part02.fs) |
+| Day 10  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day10/part01/day10_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day10/part02/day10_part02.fs) |
+| Day 11  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day11/part01/day11_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day11/part02/day11_part02.fs) |
+| Day 12  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day12/part01/day12_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day12/part02/day12_part02.fs) |
+| Day 13  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day13/part01/day13_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day13/part02/day13_part02.fs) |
+| Day 14  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day14/part01/day14_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day14/part02/day14_part02.fs) |
 | Day 15  | ❌ | ❌ |
 | Day 16  | ❌ | ❌ |
 | Day 17  | ❌ | ❌ |
@@ -300,7 +300,7 @@ https://adventofcode.com/2022
 | Day 22  | ❌ | ❌ |
 | Day 23  | ❌ | ❌ |
 | Day 24  | ❌ | ❌ |
-| Day 25  | ✔️ F# | ❌ |
+| Day 25  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day25/part01/day25_part01.fs) | ❌ |
 
 
 # Advent Of Code 2023
@@ -313,28 +313,28 @@ https://adventofcode.com/2023
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ F# - C++ | ✔️ F# - C++ |
-| Day 2   | ✔️ F# - C++ | ✔️ F# - C++ |
-| Day 3   | ✔️ F# - C++ | ✔️ F# - C++ |
-| Day 4   | ✔️ F# | ✔️ F# |
-| Day 5   | ✔️ F# | ✔️ F# |
-| Day 6   | ✔️ F# | ✔️ F# |
-| Day 7   | ✔️ F# | ✔️ F# |
-| Day 8   | ✔️ F# | ✔️ F# |
-| Day 9   | ✔️ F# | ✔️ F# |
-| Day 10  | ✔️ F# | ✔️ F# |
-| Day 11  | ✔️ F# | ✔️ F# |
-| Day 12  | ✔️ F# | ✔️ F# |
-| Day 13  | ✔️ F# | ✔️ F# |
-| Day 14  | ✔️ F# | ✔️ F# |
-| Day 15  | ✔️ F# | ✔️ F# |
-| Day 16  | ✔️ F# | ✔️ F# |
-| Day 17  | ✔️ F# | ✔️ F# |
-| Day 18  | ✔️ F# | ✔️ F# |
-| Day 19  | ✔️ F# | ✔️ F# |
-| Day 20  | ✔️ F# | ✔️ F# |
-| Day 21  | ✔️ F# | ✔️ F# |
-| Day 22  | ✔️ F# | ✔️ F# |
-| Day 23  | ✔️ F# | ✔️ F# |
-| Day 24  | ✔️ F# | ✔️ F# |
-| Day 25  | ✔️ F# | ✔️ |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day01/part01/day01_part01.fs) - [C++](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023_cpp/day01/day01_part01.ixx) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day01/part02/day01_part02.fs) - [C++](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023_cpp/day01/day01_part02.ixx) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day02/part01/day02_part01.fs) - [C++](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023_cpp/day02/day02_part01.ixx) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day02/part02/day02_part02.fs) - [C++](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023_cpp/day02/day02_part02.ixx) |
+| Day 3   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day03/part01/day03_part01.fs) - [C++](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023_cpp/day03/day03_part01.ixx) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2022/day03/part02/day03_part02.fs) - [C++](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023_cpp/day03/day03_part02.ixx) |
+| Day 4   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day04/part01/day04_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day04/part02/day04_part02.fs) |
+| Day 5   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day05/part01/day05_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day05/part02/day05_part02.fs) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day06/part02/day06_part02.fs) |
+| Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day07/part02/day07_part02.fs) |
+| Day 8   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day08/part01/day08_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day08/part02/day08_part02.fs) |
+| Day 9   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day09/part01/day09_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day09/part02/day09_part02.fs) |
+| Day 10  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day10/part01/day10_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day10/part02/day10_part02.fs) |
+| Day 11  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day11/part01/day11_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day11/part02/day11_part02.fs) |
+| Day 12  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day12/part01/day12_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day12/part02/day12_part02.fs) |
+| Day 13  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day13/part01/day13_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day13/part02/day13_part02.fs) |
+| Day 14  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day14/part01/day14_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day14/part02/day14_part02.fs) |
+| Day 15  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day15/part01/day15_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day15/part02/day15_part02.fs) |
+| Day 16  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day16/part01/day16_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day16/part02/day16_part02.fs) |
+| Day 17  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day17/part01/day17_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day17/part02/day17_part02.fs) |
+| Day 18  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day18/part01/day18_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day18/part02/day18_part02.fs) |
+| Day 19  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day19/part01/day19_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day19/part02/day19_part02.fs) |
+| Day 20  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day20/part01/day20_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day20/part02/day20_part02.fs) |
+| Day 21  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day21/part01/day21_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day21/part02/day21_part02.fs) |
+| Day 22  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day22/part01/day22_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day22/part02/day22_part02.fs) |
+| Day 23  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day23/part01/day23_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day23/part02/day23_part02.fs) |
+| Day 24  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day24/part01/day24_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day24/part02/day24_part02.fs) |
+| Day 25  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day25/part01/day25_part01.fs) | ✔️ |
