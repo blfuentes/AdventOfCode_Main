@@ -338,3 +338,40 @@ https://adventofcode.com/2023
 | Day 23  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day23/part01/day23_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day23/part02/day23_part02.fs) |
 | Day 24  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day24/part01/day24_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day24/part02/day24_part02.fs) |
 | Day 25  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day25/part01/day25_part01.fs) | ✔️ |
+
+
+# Advent Of Code 2023
+
+
+
+https://adventofcode.com/2024
+
+2024 F#
+
+|Day      | Part 1 | Part 2 |
+|---------|----|----|
+| Day 1   | ❌  | ❌ |
+| Day 2   | ❌  | ❌ |
+| Day 3   | ❌  | ❌ |
+| Day 4   | ❌  | ❌ |
+| Day 5   | ❌  | ❌ |
+| Day 6   | ❌  | ❌ |
+| Day 7   | ❌  | ❌ |
+| Day 8   | ❌  | ❌ |
+| Day 9   | ❌  | ❌ |
+| Day 10  | ❌  | ❌ |
+| Day 11  | ❌  | ❌ |
+| Day 12  | ❌  | ❌ |
+| Day 13  | ❌  | ❌ |
+| Day 14  | ❌  | ❌ |
+| Day 15  | ❌  | ❌ |
+| Day 16  | ❌  | ❌ |
+| Day 17  | ❌  | ❌ |
+| Day 18  | ❌  | ❌ |
+| Day 19  | ❌  | ❌ |
+| Day 20  | ❌  | ❌ |
+| Day 21  | ❌  | ❌ |
+| Day 22  | ❌  | ❌ |
+| Day 23  | ❌  | ❌ |
+| Day 24  | ❌  | ❌ |
+| Day 25  | ❌  | ❌ |
