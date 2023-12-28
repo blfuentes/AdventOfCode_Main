@@ -131,22 +131,22 @@ https://adventofcode.com/2018
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ | ✔️ |
-| Day 2   | ✔️ | ✔️ |
-| Day 3   | ✔️ | ✔️ |
-| Day 4   | ✔️ | ✔️ |
-| Day 5   | ✔️ | ✔️ |
-| Day 6   | ✔️ | ✔️ |
-| Day 7   | ✔️ | ✔️ |
-| Day 8   | ✔️ | ✔️ |
-| Day 9   | ✔️ | ✔️ |
-| Day 10  | ✔️ | ✔️ |
-| Day 11  | ✔️ | ✔️ |
-| Day 12  | ✔️ | ✔️ |
-| Day 13  | ✔️ | ✔️ |
-| Day 14  | ✔️ | ✔️ |
-| Day 15  | ✔️ | ✔️ |
-| Day 16  | ✔️ | ✔️ |
+| Day 1   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/tree/master/AdventOfCode_2018_FSharp/day01/part01/day01_part01.fs) - [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day01/part1/day01_part01.ts) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/tree/master/AdventOfCode_2018_FSharp/day01/part02/day01_part02.fs) - [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day01/part2/day01_part02.ts) |
+| Day 2   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/tree/master/AdventOfCode_2018_FSharp/day02/part01/day02_part01.fs) - [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day02/part1/day02_part01.ts) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/tree/master/AdventOfCode_2018_FSharp/day02/part02/day02_part02.fs) - [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day02/part2/day02_part02.ts) |
+| Day 3   | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day03/part1/day03_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day03/part2/day03_part02.ts) |
+| Day 4   | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day04/part1/day04_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day04/part2/day04_part02.ts) |
+| Day 5   | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day05/part1/day05_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day05/part2/day05_part02.ts) |
+| Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/tree/master/AdventOfCode_2018_FSharp/day06/part01/day06_part01.fs) - [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day06/part1/day06_part01.ts) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/tree/master/AdventOfCode_2018_FSharp/day06/part02/day06_part02.fs) - [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day06/part1/day06_part02.ts) |
+| Day 7   | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day07/part1/day07_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day07/part2/day07_part02.ts) |
+| Day 8   | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day08/part1/day08_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day08/part2/day08_part02.ts) |
+| Day 9   | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day09/part1/day09_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day09/part2/day09_part02.ts) |
+| Day 10  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day10/part1/day10_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day10/part2/day10_part02.ts) |
+| Day 11  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day11/part1/day11_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day11/part2/day11_part02.ts) |
+| Day 12  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day12/part1/day12_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day12/part2/day12_part02.ts) |
+| Day 13  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day13/part1/day13_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day13/part2/day13_part02.ts) |
+| Day 14  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day14/part1/day14_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day14/part2/day14_part02.ts) |
+| Day 15  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day15/part1/day15_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day15/part2/day15_part02.ts) |
+| Day 16  | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day16/part1/day16_part01.ts) | ✔️ [Typescript](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2018_TypeScript/day16/part2/day16_part02.ts) |
 | Day 17  | ❌ | ❌ |
 | Day 18  | ❌ | ❌ |
 | Day 19  | ❌ | ❌ |
