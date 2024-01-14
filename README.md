@@ -340,7 +340,7 @@ https://adventofcode.com/2023
 | Day 25  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day25/part01/day25_part01.fs) | ✔️ |
 
 
-# Advent Of Code 2023
+# Advent Of Code 2024
 
 
 
