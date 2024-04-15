@@ -1,7 +1,7 @@
 https://adventofcode.com/
 
 ## Stars
-- 2015: ⭐⭐⭐⭐⭐⭐⭐⭐
+- 2015: ⭐⭐⭐⭐⭐⭐⭐⭐⭐
 - 2016: ⭐⭐⭐⭐⭐⭐
 - 2017: ⭐⭐⭐⭐⭐⭐
 - 2018: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
@@ -13,7 +13,7 @@ https://adventofcode.com/
 
 # Advent Of Code 2015
 
-⭐⭐⭐⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
 https://adventofcode.com/2015
 
@@ -29,7 +29,7 @@ https://adventofcode.com/2015
 | Day 6   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day06/part01/day06_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day06/part02/day06_part02.fs) |
 | Day 7   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day07/part01/day07_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day07/part02/day07_part02.fs) |
 | Day 8   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day08/part01/day08_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day08/part02/day08_part02.fs) |
-| Day 9   | ❌ | ❌ |
+| Day 9   | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day09/part01/day09_part01.fs) | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2015/day09/part02/day09_part02.fs) |
 | Day 10  | ❌ | ❌ |
 | Day 11  | ❌ | ❌ |
 | Day 12  | ❌ | ❌ |
@@ -340,7 +340,7 @@ https://adventofcode.com/2023
 | Day 25  | ✔️ [F#](https://github.com/blfuentes/AdventOfCode_Main/blob/master/AdventOfCode_2023/day25/part01/day25_part01.fs) | ✔️ |
 
 
-# Advent Of Code 2023
+# Advent Of Code 2024
 
 
 
