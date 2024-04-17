@@ -1,16 +1,20 @@
 ﻿module day10_part02
 
-let read (input : string) =
+let nextElement (input : string) =
     input
-    |> Seq.fold (fun acc x ->
+    |> Seq.fold (fun acc checker ->
         match acc with
-        | (n, x')::tl when x = x' -> (n+1, x')::tl
-        | _ -> (1, x)::acc) []
+        | (numOfRepeats, currentElement)::tl when checker = currentElement -> 
+            // repeated element
+            (numOfRepeats+1, currentElement)::tl
+        | _ -> 
+            // no more repeated elements
+            (1, checker)::acc) []
     |> List.rev
-    |> Seq.collect (fun (n, x) -> sprintf "%d%c" n x)
-    |> fun xs -> System.String.Join("", xs)
+    |> Seq.collect (fun (numOfRepeats, element) -> sprintf "%d%c" numOfRepeats element)
+    |> fun elements -> System.String.Join("", elements)
 
 let execute =
     {1..50}
-    |> Seq.fold (fun acc _ -> read acc) "1321131112"
+    |> Seq.fold (fun acc _ -> nextElement acc) "1321131112"
     |> Seq.length

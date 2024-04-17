@@ -19,17 +19,23 @@ let result = lookAndSay 0 50 "1321131112"
 printf "%i" result.Length
 
 
-let read (input : string) =
+let nextElement (input : string) =
+    printf "input: %s\n" input
     input
-    |> Seq.fold (fun acc x ->
+    |> Seq.fold (fun acc checker ->
+        printf "acc: %A tocompare: %c \n" acc checker
         match acc with
-        | (n, x')::tl when x = x' -> (n+1, x')::tl
-        | _ -> (1, x)::acc) []
+        | (numOfRepeats, currentElement)::tl when checker = currentElement -> 
+            // repeated element
+            (numOfRepeats+1, currentElement)::tl
+        | _ -> 
+            // no more repeated elements
+            (1, checker)::acc) []
     |> List.rev
-    |> Seq.collect (fun (n, x) -> sprintf "%d%c" n x)
-    |> fun xs -> System.String.Join("", xs)
+    |> Seq.collect (fun (numOfRepeats, element) -> sprintf "%d%c" numOfRepeats element)
+    |> fun elements -> System.String.Join("", elements)
 
-//read "1321131112" |> printfn "result %s"
-{1..50}
-|> Seq.fold (fun acc _ -> read acc) "1321131112"
+//read "1321131112" |> printfn "result %s"º
+{1..3}
+|> Seq.fold (fun acc _ -> nextElement acc) "1321131112"
 |> Seq.length
