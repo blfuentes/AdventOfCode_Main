@@ -1,16 +1,17 @@
 ﻿module day10_part01
 
-let rec lookAndSay (round: int) (max: int) (input: string) : string =
-    let rec lookAndSay' (consumed: string) (input: string list) : string =
-        if input.IsEmpty then consumed
+let rec lookAndSay (round: int) (max: int) (input: char array) : char array =
+    let rec lookAndSay' (consumed: char array) (input: char array) : char array =
+        if input.Length = 0 then consumed
         else
-            let initial = input |> List.takeWhile(fun x -> x = input.Head)
-            let remaining = input |> List.skipWhile(fun x -> x = input.Head)
-            let consumed' = initial.Length.ToString() + input.Head
-            lookAndSay' (consumed + consumed') remaining
+            let initial = input |> Array.takeWhile(fun x -> x = input.[0])
+            let remaining = input |> Array.skipWhile(fun x -> x = input.[0])
+            let consumed' = [|((char)(initial.Length.ToString())); input.[0] |]
+            lookAndSay' (consumed' |> Array.append consumed) remaining
     if round = max then input
     else
-        lookAndSay (round + 1) max (lookAndSay' "" (input.ToCharArray() |> Array.map string |> List.ofArray))
+        let newInput = lookAndSay' Array.empty input
+        lookAndSay (round + 1) max newInput
 
 let execute =
-    (lookAndSay 0 40 "1321131112").Length
+    (lookAndSay 0 40 ("1321131112".ToCharArray())).Length

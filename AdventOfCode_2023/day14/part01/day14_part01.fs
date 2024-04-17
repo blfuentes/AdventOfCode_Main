@@ -1,6 +1,5 @@
 ﻿module day14_part01
 
-open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
 
 type FloorType = Rounded | Damaged | Empty

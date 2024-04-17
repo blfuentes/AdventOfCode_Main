@@ -1,6 +1,5 @@
 ﻿module day17_part01
 
-open System
 open AdventOfCode_2023.Modules
 open System.Collections.Generic
 

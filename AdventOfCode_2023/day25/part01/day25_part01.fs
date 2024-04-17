@@ -1,9 +1,7 @@
 ﻿module day25_part01
 
-open System.Collections.Generic
 
 open AdventOfCode_2023.Modules
-open AdventOfCode_Utilities
 open System
 
 let random = new Random()

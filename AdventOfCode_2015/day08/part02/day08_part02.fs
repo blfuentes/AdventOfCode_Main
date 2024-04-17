@@ -1,9 +1,6 @@
 ﻿module day08_part02
 
-open System
-open System.Text.RegularExpressions
 open AdventOfCode_2015.Modules
-open System.Globalization
 
 type StringData = {
     numOfChars: int

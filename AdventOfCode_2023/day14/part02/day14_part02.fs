@@ -1,6 +1,5 @@
 ﻿module day14_part02
 
-open AdventOfCode_Utilities
 open AdventOfCode_2023.Modules
 open System
 
