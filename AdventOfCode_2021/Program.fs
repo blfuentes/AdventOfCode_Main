@@ -46,14 +46,14 @@ let main argv =
         printfn "Final result Day 04 part 2: %i" resultday04Part2
     )
     // DAY 05
-    // Utilities.duration(fun () ->
-    //     let resultday05Part1 = day05_part01.execute
-    //     printfn "Final result Day 05 part 1: %i" resultday05Part1
-    // )
-    // Utilities.duration(fun () ->
-    //     let resultday05Part2 = day05_part02.execute
-    //     printfn "Final result Day 05 part 2: %i" resultday05Part2
-    // )
+    Utilities.duration(fun () ->
+        let resultday05Part1 = day05_part01.execute
+        printfn "Final result Day 05 part 1: %i" resultday05Part1
+    )
+    Utilities.duration(fun () ->
+        let resultday05Part2 = day05_part02.execute
+        printfn "Final result Day 05 part 2: %i" resultday05Part2
+    )
     // DAY 06
     Utilities.duration(fun () ->
         let resultday06Part1 = day06_part01.execute
@@ -170,14 +170,14 @@ let main argv =
     )
 
     // DAY 18
-    Utilities.duration(fun () ->
-        let resultday18Part1 = day18_part01.execute
-        printfn "Final result Day 18 part 1: %A" resultday18Part1
-    )
-    Utilities.duration(fun () ->
-        let resultday18Part2 = day18_part02.execute
-        printfn "Final result Day 18 part 2: %A" resultday18Part2
-    )
+    //Utilities.duration(fun () ->
+    //    let resultday18Part1 = day18_part01.execute
+    //    printfn "Final result Day 18 part 1: %A" resultday18Part1
+    //)
+    //Utilities.duration(fun () ->
+    //    let resultday18Part2 = day18_part02.execute
+    //    printfn "Final result Day 18 part 2: %A" resultday18Part2
+    //)
     // DAY 19
     //let resultday19Part1 = day19_part01.execute
     //printfn "Final result Day 19 part 1: %A" resultday19Part1
