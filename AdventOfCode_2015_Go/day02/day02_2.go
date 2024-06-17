@@ -33,16 +33,17 @@ func ExtractParts2(input string) Present {
 
 		sort.Sort(utilities.Int64Array(dim))
 
-		return Present{dim, dim[0]}
+		return Present{dim[0], dim[1], dim[2]}
 	}
 
 	return Present{}
 }
 
 func CalculatePresent2(present Present) int {
-	return 2*int(present.dimensions[0]) +
-		2*int(present.dimensions[1]) +
-		(int(present.dimensions[0]) *
-			int(present.dimensions[1]) *
-			int(present.dimensions[2]))
+	values := make([]int64, 3)
+	values[0], values[1], values[2] = present.long, present.width, present.height
+	sort.Sort(utilities.Int64Array(values))
+
+	return 2*int(values[0]) + 2*int(values[1]) +
+		int(present.long*present.width*present.height)
 }
