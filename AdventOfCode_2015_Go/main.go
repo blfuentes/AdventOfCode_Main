@@ -1,15 +1,17 @@
 package main
 
-import "fmt"
-import "AdventOfCode_2015_Go/day01"
-import "AdventOfCode_2015_Go/day02"
-// import "adventofcode_2015_go/day01"
-
+import (
+	"AdventOfCode_2015_Go/day01"
+	"AdventOfCode_2015_Go/day02"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
-	day01.Executepart1()
-	day01.Executepart2()
-	day02.Executepart1()
-	day02.Executepart2()
+	// Day 01
+	fmt.Printf("Final result Day 01 part 1: %d\n", day01.Executepart1())
+	fmt.Printf("Final result Day 01 part 2: %d\n", day01.Executepart2())
+
+	// Day 02
+	fmt.Printf("Final result Day 02 part 1: %d\n", day02.Executepart1())
+	fmt.Printf("Final result Day 02 part 2: %d\n", day02.Executepart2())
 }

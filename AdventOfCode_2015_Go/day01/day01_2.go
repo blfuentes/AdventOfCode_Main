@@ -1,19 +1,14 @@
 package day01
 
 import (
-	"fmt"
-	"os"
+	"AdventOfCode_2015_Go/utilities"
 )
 
-func Executepart2() {
+func Executepart2() int {
 	var fileName string = "./day01/day01.txt"
 	var result int = 0
-	file, err := os.ReadFile(fileName)
-	if err != nil {
-		fmt.Printf("Cannot read file %s", fileName)
-	}
-	fileContent := string(file)
-	if fileContent != "" {
+
+	if fileContent, err := utilities.ReadFileAsText(fileName); err == nil {
 		chars := []rune(fileContent)
 		for i := 0; i < len(chars); i++ {
 			if string(chars[i]) == "(" {
@@ -28,5 +23,5 @@ func Executepart2() {
 		}
 	}
 
-	fmt.Println("Result day 01 part 2: %i", result)
+	return result
 }
