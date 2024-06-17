@@ -8,8 +8,7 @@ import (
 )
 
 type Present struct {
-	dimensions []int64
-	smallest   int64
+	long, width, height int64
 }
 
 func Executepart1() int {
@@ -30,28 +29,27 @@ func Executepart1() int {
 func ExtractParts(input string) Present {
 	r, _ := regexp.Compile(`\d+`)
 	dim := make([]int64, 3)
-	areas := make([]int64, 3)
 
 	if parts := r.FindAllString(input, 3); parts != nil {
 		dim[0], _ = strconv.ParseInt(parts[0], 10, 0)
 		dim[1], _ = strconv.ParseInt(parts[1], 10, 0)
 		dim[2], _ = strconv.ParseInt(parts[2], 10, 0)
 
-		areas[0] = dim[0] * dim[1]
-		areas[1] = dim[1] * dim[2]
-		areas[2] = dim[0] * dim[2]
-
-		sort.Sort(utilities.Int64Array(areas))
-
-		return Present{areas, areas[0]}
+		return Present{dim[0], dim[1], dim[2]}
 	}
 
 	return Present{}
 }
 
 func CalculatePresent(present Present) int {
-	return int(present.smallest) +
-		2*int(present.dimensions[0]) +
-		2*int(present.dimensions[1]) +
-		2*int(present.dimensions[2])
+	values := make([]int64, 3)
+	values[0] = present.long
+	values[1] = present.width
+	values[2] = present.height
+	sort.Sort(utilities.Int64Array(values))
+
+	return int(values[0]) +
+		2*int(present.long*present.width) +
+		2*int(present.width*present.height) +
+		2*int(present.long*present.height)
 }
