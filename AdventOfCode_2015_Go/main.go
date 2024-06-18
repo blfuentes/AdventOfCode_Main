@@ -3,6 +3,7 @@ package main
 import (
 	"AdventOfCode_2015_Go/day01"
 	"AdventOfCode_2015_Go/day02"
+	"AdventOfCode_2015_Go/day03"
 	"fmt"
 )
 
@@ -14,4 +15,8 @@ func main() {
 	// Day 02
 	fmt.Printf("Final result Day 02 part 1: %d\n", day02.Executepart1())
 	fmt.Printf("Final result Day 02 part 2: %d\n", day02.Executepart2())
+
+	// Day 03
+	fmt.Printf("Final result Day 03 part 1: %d\n", day03.Executepart1())
+	fmt.Printf("Final result Day 03 part 2: %d\n", day03.Executepart2())
 }
