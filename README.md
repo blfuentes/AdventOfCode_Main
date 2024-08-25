@@ -1,23 +1,31 @@
+# Main Site
 https://adventofcode.com/
 
 ## Stars
-- 2015: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-- 2016: ⭐⭐⭐⭐⭐⭐⭐
-- 2017: ⭐⭐⭐⭐⭐⭐⭐
-- 2018: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-- 2019: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-- 2020: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-- 2021: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-- 2022: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★
-- 2023: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+⭐ = full day (2 stars)
 
-# Advent Of Code 2015
+★ = half day (1 star)
 
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+- 2015: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (20/50)
+- 2016: ⭐⭐⭐⭐⭐⭐⭐ (14/50)
+- 2017: ⭐⭐⭐⭐⭐⭐⭐ (14/50)
+- 2018: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (32/50)
+- 2019: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (32/50)
+- 2020: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (26/50)
+- 2021: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (34/50)
+- 2022: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (29/50)
+- 2023: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (50/50)
+- 2024: (0/0)
+- Overal: 251/450 (~55,78%)
+
+## Advent Of Code 2015
+
+### 2015 F#/Go
 
 https://adventofcode.com/2015
 
-2015 F#/Go
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (10/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -48,13 +56,13 @@ https://adventofcode.com/2015
 | Day 25  | ❌ | ❌ |
 
 
-# Advent Of Code 2016
-
-⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2016
+### 2016 F#
 
 https://adventofcode.com/2016
 
-2016 F#
+⭐⭐⭐⭐⭐⭐⭐ (7/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -85,13 +93,13 @@ https://adventofcode.com/2016
 | Day 25  | ❌ | ❌ |
 
 
-# Advent Of Code 2017
-
-⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2017
+### 2017 F#
 
 https://adventofcode.com/2017
 
-2017 F#
+⭐⭐⭐⭐⭐⭐⭐ (7/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -121,13 +129,12 @@ https://adventofcode.com/2017
 | Day 24  | ❌ | ❌ |
 | Day 25  | ❌ | ❌ |
 
-# Advent Of Code 2018
-
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2018
+### 2018 F#/Typescript
 
 https://adventofcode.com/2018
 
-2018 F#/Typescript
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (16/25)
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -158,13 +165,13 @@ https://adventofcode.com/2018
 | Day 25  | ❌ | ❌ |
 
 
-# Advent Of Code 2019
-
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2019
+### 2019 F#
 
 https://adventofcode.com/2019
 
-2019 F#
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (16/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -194,13 +201,13 @@ https://adventofcode.com/2019
 | Day 24  | ❌ | ❌ |
 | Day 25  | ❌ | ❌ |
 
-# Advent Of Code 2020
-
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2020
+#### 2020 F#
 
 https://adventofcode.com/2020
 
-2020 F#
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (13/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -230,13 +237,13 @@ https://adventofcode.com/2020
 | Day 24  | ❌ | ❌ |
 | Day 25  | ❌ | ❌ |
 
-# Advent Of Code 2021
-
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2021
+### 2021 F#
 
 https://adventofcode.com/2021
 
-2021 F#
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (17/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -266,13 +273,13 @@ https://adventofcode.com/2021
 | Day 24  | ❌ | ❌ |
 | Day 25  | ❌ | ❌ |
 
-# Advent Of Code 2022
-
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★
+## Advent Of Code 2022
+### 2022 F#
 
 https://adventofcode.com/2022
 
-2022 F#
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (14.5/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -303,13 +310,13 @@ https://adventofcode.com/2022
 | Day 25  | ✔️ [F#](./AdventOfCode_2022/day25/part01/day25_part01.fs) | ❌ |
 
 
-# Advent Of Code 2023
-
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Advent Of Code 2023
+### 2023 F#/C++
 
 https://adventofcode.com/2023
 
-2023 F#/C++
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (25/25)
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -340,13 +347,13 @@ https://adventofcode.com/2023
 | Day 25  | ✔️ [F#](./AdventOfCode_2023/day25/part01/day25_part01.fs) | ✔️ |
 
 
-# Advent Of Code 2024
+## Advent Of Code 2024
 
-
+### 2024 F#
 
 https://adventofcode.com/2024
 
-2024 F#
+
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
