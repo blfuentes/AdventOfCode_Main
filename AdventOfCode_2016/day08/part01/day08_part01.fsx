@@ -1,26 +1,24 @@
 ﻿#load @"../../../AdventOfCode_Utilities/Modules/Utilities.fs"
 #load @"../../Modules/LocalHelper.fs"
 
-open System
-open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open AdventOfCode_2016.Modules
-open AdventOfCode_Utilities
 
 type Instruction =
     | Rect of columns: int * rows: int
     | RotateColumn of column: int * distance: int
     | RotateRow of row: int * distance: int
 
-let path = "day08/test_input_01.txt"
-//let path = "day08/day08_input.txt"
+//let path = "day08/test_input_01.txt"
+let path = "day08/day08_input.txt"
 
 let parseLines (lines: string array) : Instruction list =
     let parseRect(line: string) : Instruction =
-        let pattern = "(?<type>rect|rotate) (((?<column>\d)x(?<row>\d))|((?<axis>column|row) (x|y)=(?<index>\d) by (?<steps>\d)))"
+        let pattern = "(?<type>rect|rotate) (((?<column>\d+)x(?<row>\d+))|((?<axis>column|row) (x|y)=(?<index>\d+) by (?<steps>\d+)))"
         let regex = new Regex(pattern)
         let matches = regex.Match(line)
+        printfn "%s" line
         match matches.Groups["type"].Value with
         | "rect" ->
             Rect((int)matches.Groups["column"].Value, (int)matches.Groups["row"].Value)
@@ -29,6 +27,7 @@ let parseLines (lines: string array) : Instruction list =
                 RotateColumn((int)matches.Groups["index"].Value, (int)matches.Groups["steps"].Value)
             else
                 RotateRow((int)matches.Groups["index"].Value, (int)matches.Groups["steps"].Value)
+        | _ -> failwith line
 
     let parseLine (line: string) : Instruction =
         parseRect line
@@ -47,28 +46,35 @@ let executeRect (width: int) (tall: int) (map: string[,]) =
             map[row, col] <- "#"
 
 let executeRotateColumn (column: int) (distance: int) (map: string[,]) =
-    let maxRows = map.GetUpperBound(0) + 1
-    printfn "max rows %i" maxRows
-    for row = (maxRows - 1) downto 0 do
-        let currentValue = map[row - 1, column]
-        printfn "row %i col %i value %s" ((row + distance)%maxRows) column currentValue
-        map[(row + distance)%maxRows, column] <- currentValue
-        map[row, column] <- "."
+    let maxRowIdx = map.GetUpperBound(0)
+    printfn "max rows %i" (maxRowIdx + 1)
+    let newColumns = Array.create (maxRowIdx + 1) "."
+    for row = maxRowIdx downto 0 do
+        let currentValue = map[row, column]
+        let newIdx = (row + distance)%(maxRowIdx + 1)
+        newColumns[newIdx] <- currentValue
+        printfn "row %i col %i value %s" newIdx column currentValue
+    newColumns
+        |> Array.iteri(fun idx v -> map[idx, column] <- v)
 
 let executeRotateRow (row: int) (distance: int) (map: string[,]) =
-    let maxColumns = map.GetUpperBound(1)
-    for col in [0..maxColumns] do
-        for idx in [0..distance] do
-            let currentValue = map[row, col]
-            printfn "row %i col %i value %s" row ((col + idx) % maxColumns) currentValue
-            map[row, (col + idx) % maxColumns] <- currentValue
-            map[row, col] <- "."
+    let maxColumnIdx = map.GetUpperBound(1)
+    printfn "max cols %i" (maxColumnIdx + 1)
+    let newRows = Array.create (maxColumnIdx + 1) "."
+    for column = maxColumnIdx downto 0 do
+        let currentValue = map[row, column]
+        let newIdx = (column + distance)%(maxColumnIdx + 1)
+        newRows[newIdx] <- currentValue
+        printfn "row %i col %i value %s" row column currentValue
+    newRows
+        |> Array.iteri(fun idx v -> map[row, idx] <- v)
+
 
 let rec runInstructions (instructions: Instruction list) (map: string[,]) =
     match instructions with
     | instruction::rest ->
         match instruction with
-        | Rect (width,tall) -> executeRect width width map
+        | Rect (width,tall) -> executeRect width tall map
         | RotateColumn(column, distance) ->  executeRotateColumn column distance map
         | RotateRow(row, distance) -> executeRotateRow row distance map
         printMap map
@@ -76,15 +82,16 @@ let rec runInstructions (instructions: Instruction list) (map: string[,]) =
     | [] -> map
 
 let lines = LocalHelper.GetLinesFromFile(path)
-let rows = 3
-let columns = 7
+let rows = 6
+let columns = 50
 let map = Array2D.create rows columns "."
 printMap map
 let instructions = parseLines lines
 
-executeRect 3 2 map
-executeRotateColumn 1 1 map
-executeRotateRow 0 4
-executeRotateColumn 1 1
+//executeRect 3 2 map
+//executeRotateColumn 1 1 map
+//executeRotateRow 0 4 map
+//executeRotateColumn 1 1 map
 
 runInstructions instructions map
+Utilities.flattenArray2D(map) |> Array.filter(fun e -> e = "#") |> Array.length
