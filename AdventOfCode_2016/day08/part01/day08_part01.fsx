@@ -2,7 +2,7 @@
 #load @"../../Modules/LocalHelper.fs"
 
 open System.Text.RegularExpressions
-
+open AdventOfCode_Utilities
 open AdventOfCode_2016.Modules
 
 type Instruction =
