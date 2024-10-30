@@ -12,8 +12,6 @@ let rec processContent (content: string) (currentIdx: int) =
         match found.Success with
         | true ->
             let endIdx = (found.Value.Length + found.Index)
-            let substring = content.Substring(found.Index, found.Value.Length)
-            printfn "starts at %i and ends at %i: %s" found.Index endIdx substring
             let size = (int)found.Groups["size"].Value
             let times = (int)found.Groups["times"].Value
             let toRepeat = content.Substring(endIdx, size)
