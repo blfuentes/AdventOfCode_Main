@@ -12,13 +12,19 @@ open System.Numerics
 let path = "day10/test_input_01.txt"
 //let path = "day10/day10_input.txt"
 
-type targetType =
-    | Bot of id: int
-    | Output of target: int
+type TargetType =
+    | Bot of Id: int
+    | Output of Target: int
 
-type instruction =
-    | GiveToBot of botid: int * value: int
-    | Compare of botid: int * lowtarget: targetType * hightarget: targetType
+type Instruction =
+    | GiveToBot of BotId: int * Value: int
+    | Compare of BotId: int * LowTarget: TargetType * HighTarget: TargetType
+
+type BotInfo = {
+    Id: int;
+    Microchips: int list;
+    Output: int list;
+}
 
 let parseInstructions (lines: string array) =
     let pattern = "(?<type>(value|bot)) (?<numbers>\d+)[aA-zZ ]*(?<lowtype>(bot|output)) (?<lowtarget>\d+)(([aA-zZ ]*((?<hightype>(bot|output)) (?<hightarget>\d+)))|)"
@@ -41,9 +47,70 @@ let parseInstructions (lines: string array) =
                 Compare(idValue, lowtype, hightype)
     )
 
-let rec runInstructions (instructions: instruction list) =
-    match
+let executeGiveToBot (botid: int, value: int) (bots: BotInfo list) =
+    let mutable updated = false
+    let updateBot bot =
+        if bot.Id = botid && bot.Microchips.Length < 2 then
+            updated <- true
+            { bot with Microchips = (value :: bot.Microchips) |> List.sort }
+        else
+            bot
+    let found = bots |> List.tryFind(fun b -> b.Id = botid)
+    match found with
+    | Some(b) ->
+        (List.map updateBot bots, updated)
+    | None ->
+        ({ Id= botid; Microchips = [value]; Output = [] } :: bots, updated)
+
+let executeCompare (botid: int, lowtarget: TargetType, hightarget: TargetType) (bots: BotInfo list) =
+    let updateCompareBot bot idgiver idreceiver newvalue =
+        if bot.Id = idreceiver then
+            { bot with Output = newvalue :: bot.Output }
+        else
+            if bot.Id = idgiver then
+                { bot with Microchips = (bot.Microchips |> List.except([newvalue])) }
+            else
+                bot
+    let giver = bots |> List.find(fun b -> b.Id = botid)
+    let lows' =
+        match lowtarget with
+        | Bot(receiver) ->
+            executeGiveToBot (receiver, giver.Microchips[0]) bots
+        | Output(target) ->
+            (bots |> List.map(fun b -> updateCompareBot b giver.Id target giver.Microchips[0]), true)
+    let highs' =
+        match hightarget with
+        | Bot(receiver) ->
+            executeGiveToBot (receiver, giver.Microchips[1]) bots
+        | Output(target) ->
+            (bots |> List.map(fun b -> updateCompareBot b giver.Id target giver.Microchips[1]), true)    
+            
+    highs'
+
+let rec runInstructions (instructions: Instruction list) (bots: BotInfo list) (index: int) =
+    match instructions with
+    | [] ->
+        (bots, false)
+    | _ ->
+        let workingIndex = if index = instructions.Length then 0 else index
+        let instruction = instructions[workingIndex]
+        match instruction with
+        | GiveToBot(botid,value) -> 
+            let newbots = executeGiveToBot (botid, value) bots
+            runInstructions instructions.Tail (fst newbots) workingIndex
+        | Compare(botid, lowtarget, hightarget) -> 
+            let giver = bots |> List.tryFind(fun b -> b.Id = botid)
+            match giver with
+            | Some(g) ->
+                if g.Microchips.Length = 2 then
+                    let newbots = executeCompare (botid, lowtarget, hightarget) bots
+                    runInstructions instructions.Tail (fst newbots) workingIndex
+                else
+                    runInstructions instructions bots (workingIndex + 1)
+            | None ->
+                runInstructions instructions bots (workingIndex + 1) 
 
 let lines = LocalHelper.GetLinesFromFile path
-
-parseInstructions lines
+let instructions = List.ofArray(parseInstructions lines)
+let result = runInstructions instructions [] 0
+result
