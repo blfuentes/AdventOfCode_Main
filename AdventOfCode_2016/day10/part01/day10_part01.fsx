@@ -13,12 +13,12 @@ let path = "day10/test_input_01.txt"
 //let path = "day10/day10_input.txt"
 
 type targetType =
-    | Bot of int
-    | Output of int
+    | Bot of id: int
+    | Output of target: int
 
 type instruction =
-    | Value of botid: int * value: int
-    | SetBot of botid: int * lowtarget: targetType * hightarget: targetType
+    | GiveToBot of botid: int * value: int
+    | Compare of botid: int * lowtarget: targetType * hightarget: targetType
 
 let parseInstructions (lines: string array) =
     let pattern = "(?<type>(value|bot)) (?<numbers>\d+)[aA-zZ ]*(?<lowtype>(bot|output)) (?<lowtarget>\d+)(([aA-zZ ]*((?<hightype>(bot|output)) (?<hightarget>\d+)))|)"
@@ -31,14 +31,14 @@ let parseInstructions (lines: string array) =
         | true ->
             let ins = found.Groups["type"].Value
             let idValue = (int)found.Groups["numbers"].Value
-            let target1 = (int)found.Groups["lowtarget"].Value
+            let lowtarget = (int)found.Groups["lowtarget"].Value
             if ins = "value" then
-                Value(target1, idValue)
+                GiveToBot(lowtarget, idValue)
             else
-                let target1Type = if found.Groups["lowtype"].Value = "bot" then Bot(target1) else Output(target1)
-                let target2 = (int)found.Groups["hightarget"].Value
-                let target2Type = if found.Groups["hightype"].Value = "bot" then Bot(target2) else Output(target2)
-                SetBot(idValue, target1Type, target2Type)
+                let lowtype = if found.Groups["lowtype"].Value = "bot" then Bot(lowtarget) else Output(lowtarget)
+                let hightarget = (int)found.Groups["hightarget"].Value
+                let hightype = if found.Groups["hightype"].Value = "bot" then Bot(hightarget) else Output(hightarget)
+                Compare(idValue, lowtype, hightype)
     )
 
 let rec runInstructions (instructions: instruction list) =
