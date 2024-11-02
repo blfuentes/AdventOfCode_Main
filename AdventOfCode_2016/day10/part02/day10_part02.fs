@@ -14,8 +14,8 @@ type Instruction =
 
 type BotInfo = {
     Id: int;
-    mutable Microchips: int list;
-    mutable Output: int list;
+    Microchips: int list;
+    Output: int list;
 }
 
 let parseInstructions (lines: string array) =
@@ -41,27 +41,26 @@ let parseInstructions (lines: string array) =
 
 let executeGiveToBot(botid: int, value: int) (bots: Dictionary<int, BotInfo>) =
     if bots.ContainsKey botid then
-        bots[botid].Microchips <- (value :: bots[botid].Microchips) |> List.sort
+        bots[botid] <- { bots[botid] with Microchips = (value :: bots[botid].Microchips) |> List.sort }
     else
         bots.Add(botid, { Id = botid; Microchips = [value]; Output = [] })
-    bots
 
 let executeCompare (botid: int, lowtarget: TargetType, hightarget: TargetType) (bots: Dictionary<int, BotInfo>) =
     match lowtarget with
     | Bot(id) ->
-        bots[id].Microchips <- (bots[botid].Microchips[0] :: bots[id].Microchips) |> List.sort
+        bots[id] <- { bots[id] with Microchips = (bots[botid].Microchips[0] :: bots[id].Microchips) |> List.sort }
     | _ -> ignore()
     match lowtarget with
     | Output(target) ->
-        bots[target].Output <- (bots[botid].Microchips[0] :: bots[target].Output) |> List.sort
+        bots[target] <- {bots[target]  with Output = (bots[botid].Microchips[0] :: bots[target].Output) |> List.sort }
     | _ -> ignore()
     match hightarget with
     | Bot(id) ->
-        bots[id].Microchips <- (bots[botid].Microchips[1] :: bots[id].Microchips) |> List.sort
+        bots[id] <- {bots[id] with Microchips = (bots[botid].Microchips[1] :: bots[id].Microchips) |> List.sort }
     | _ -> ignore()
     match hightarget with
     | Output(target) ->
-        bots[target].Output <- (bots[botid].Microchips[1] :: bots[target].Output) |> List.sort
+        bots[target] <- {bots[target] with Output = (bots[botid].Microchips[1] :: bots[target].Output) |> List.sort }
     | _ -> ignore()
     let found = 
         if bots[botid].Microchips[0] = 17 && bots[botid].Microchips[1] = 61 then
@@ -69,8 +68,8 @@ let executeCompare (botid: int, lowtarget: TargetType, hightarget: TargetType) (
         else
             -1
 
-    bots[botid].Microchips <- []
-    (bots, found)
+    bots[botid] <- { bots[botid] with Microchips = [] }
+    found
 
 
 let rec runInstructions (instructions: Instruction list) (bots: Dictionary<int, BotInfo>) (found: int) (index: int) =
@@ -83,19 +82,19 @@ let rec runInstructions (instructions: Instruction list) (bots: Dictionary<int, 
         match instruction with
         | GiveToBot(botid,value) -> 
             let newbots = executeGiveToBot (botid, value) bots
-            runInstructions (instructions |> List.except([instruction])) newbots found workingIndex
+            runInstructions (instructions |> List.except([instruction])) bots found workingIndex
         | Compare(botid, lowtarget, hightarget) -> 
             let giver = bots.TryGetValue(botid)
             match giver with
             | (true, g) ->
                 if g.Microchips.Length = 2 then
-                    let (newbots, newfound) = executeCompare (botid, lowtarget, hightarget) bots
+                    let newfound = executeCompare (botid, lowtarget, hightarget) bots
                     let newfound' =
                         if newfound <> -1 then
                             newfound
                         else
                             found
-                    runInstructions (instructions |> List.except([instruction])) newbots newfound' workingIndex
+                    runInstructions (instructions |> List.except([instruction])) bots newfound' workingIndex
                 else
                     runInstructions instructions bots found (workingIndex + 1)
             | (false, _) ->
