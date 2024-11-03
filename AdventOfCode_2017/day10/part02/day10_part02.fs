@@ -14,22 +14,20 @@ let rec processLengths (roundsleft: int) (state: int array) (initiallengths: int
             seq {
                 for idx in [currentindex..currentindex + totake - 1] do
                     yield (state[idx % state.Length], idx % state.Length)
-            } |> Array.ofSeq
+            }
 
-        Array.iter2(fun el rev -> state[snd el] <- fst rev) indexes (indexes |> Array.rev)
+        Seq.iter2(fun el rev -> state[snd el] <- fst rev) indexes (indexes |> Seq.rev)
 
         processLengths roundsleft state  initiallengths rest (currentskip + 1) ((currentindex + totake + currentskip) % state.Length)
 
 let execute =
     let path = "day10/day10_input.txt"
     let text = (LocalHelper.GetContentFromFile path)
-    let extra = "17, 31, 73, 47, 23".Split(", ") |> Array.map(fun v ->  int v) |> List.ofArray
+    let extra = "17, 31, 73, 47, 23".Split(", ") |> Array.map int |> List.ofArray
     let content = List.concat([text.ToCharArray() |> Array.map int |> List.ofArray; extra])
     let size = 256
     let rounds = 64
-    let circular = 
-        (Array.create size 0) 
-        |> Array.mapi(fun idx _ -> idx)
+    let circular = [|0 .. size - 1|]
     processLengths (rounds - 1)  circular content content 0 0 |> ignore
     let hexadecimals = 
         circular 
