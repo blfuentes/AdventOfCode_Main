@@ -17,9 +17,13 @@ let getPart (state: Node array) (start: int) (count: int) =
     part |> Array.ofSeq
         
 
-let rec processLengths (state: Node array) (lengths: int list) (currentskip: int) (currentindex: int) =
+let rec processLengths (roundsleft: int) (state: Node array) (initiallengths: int list) (lengths: int list) (currentskip: int) (currentindex: int) =
     match lengths with
-    | [] -> state
+    | [] -> 
+        if roundsleft > 0 then
+            processLengths (roundsleft - 1) state initiallengths initiallengths currentskip currentindex
+        else
+            state
     | totake :: rest ->
         let indexes = 
             seq {
@@ -29,15 +33,22 @@ let rec processLengths (state: Node array) (lengths: int list) (currentskip: int
 
         Array.iteri2(fun idx el rev -> state[snd el] <- fst rev) indexes (indexes |> Array.rev)
 
-        processLengths state rest (currentskip + 1) ((currentindex + totake + currentskip) % state.Length)
+        processLengths roundsleft state  initiallengths rest (currentskip + 1) ((currentindex + totake + currentskip) % state.Length)
 
 let execute =
-    //let path = "day10/test_input_01.txt"
     let path = "day10/day10_input.txt"
-    let content = (LocalHelper.GetContentFromFile path).Split(",") |> Array.map(fun v ->  int v) |> List.ofArray
+    let text = (LocalHelper.GetContentFromFile path)
+    let extra = "17, 31, 73, 47, 23".Split(", ") |> Array.map(fun v ->  int v) |> List.ofArray
+    let content = List.concat([text.ToCharArray() |> Array.map int |> List.ofArray;extra])
     let size = 256
+    let rounds = 64
     let circular = 
         (Array.create size { Index = 0; Value = 0; NextIndex = 0 }) 
         |> Array.mapi(fun idx value -> { Index = idx; Value = idx; NextIndex = (idx + 1) % size })
-    processLengths circular content 0 0
-    circular |> Array.take(2) |> Array.map _.Value |> Array.reduce (*)
+    let cloned = content |> Array.ofList |> Array.copy |> List.ofArray
+    processLengths (rounds - 1)  circular cloned content 0 0 |> ignore
+    circular |> Array.take(2) |> Array.map _.Value |> Array.reduce (*) |> ignore
+    let chunks = circular |> Array.map _.Value |> Array.chunkBySize(16)
+    let reduced = chunks |> Array.map(fun c -> c |> Array.reduce (^^^))
+    let hexadecimals = reduced |> Array.map(fun v -> sprintf "%02X" v) |> Seq.ofArray
+    (String.concat "" hexadecimals).ToLowerInvariant()
