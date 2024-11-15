@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Modules\LocalHelper.fs" />
@@ -182,6 +182,12 @@
     <None Include="day24\part02\day24_part02.fsx" />
     <None Include="day25\part01\day25_part01.fsx" />
     <None Include="day25\part02\day25_part02.fsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode_Utilities\AdventOfCode_Utilities.fsproj" />
