@@ -2,9 +2,7 @@
 https://adventofcode.com/
 
 ## Stars
-⭐ = full day (2 stars)
-
-★ = half day (1 star)
+⭐ = full day (2 stars) | ★ = half day (1 star)
 
 - 2015: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (20/50)
 - 2016: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (20/50)
@@ -16,7 +14,7 @@ https://adventofcode.com/
 - 2022: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (29/50)
 - 2023: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (50/50)
 - 2024: (0/50)
-- Overal: 263/450 (~58,44%)
+- Overal: 263/500 (~52,6%)
 
 ## Advent Of Code 2015
 
