@@ -46,6 +46,18 @@ module Utilities =
     ///////////////////////////////////////////////////////////////////////////////////
 
     ///////////////////////////////////////////////////////////////////////////////////
+    // Returns all possible combinations of all elements of the list
+    let rec permutations list =
+        match list with
+        | [] -> [[]]
+        | _ -> 
+            list 
+            |> List.collect (fun x -> 
+                permutations (List.filter ((<>) x) list)
+                |> List.map (fun perm -> x :: perm))
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
     // Returns lists formed by all possible combinations of n numbers from a list
     let rec comb n l =
         match (n,l) with
