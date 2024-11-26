@@ -4,7 +4,7 @@ https://adventofcode.com/
 ## Stars
 ⭐ = full day (2 stars) | ★ = half day (1 star)
 
-- 2015: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (24/50)
+- 2015: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (26/50)
 - 2016: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (20/50)
 - 2017: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (20/50)
 - 2018: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (32/50)
@@ -14,7 +14,7 @@ https://adventofcode.com/
 - 2022: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (29/50)
 - 2023: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (50/50)
 - 2024: (0/50)
-- Overal: 267/500 (~53,4%)
+- Overal: 269/500 (~53,8%)
 
 ## Advent Of Code 2015
 
@@ -22,7 +22,7 @@ https://adventofcode.com/
 
 https://adventofcode.com/2015
 
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (12/25)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (13/25)
 
 
 |Day      | Part 1 | Part 2 |
@@ -39,7 +39,7 @@ https://adventofcode.com/2015
 | Day 10  | ✔️ [F#](./AdventOfCode_2015/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day10/part02/day10_part02.fs) |
 | Day 11  | ✔️ [F#](./AdventOfCode_2015/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day11/part02/day11_part02.fs) |
 | Day 12  | ✔️ [F#](./AdventOfCode_2015/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day12/part02/day12_part02.fs) |
-| Day 13  | ❌ | ❌ |
+| Day 13  | ✔️ [F#](./AdventOfCode_2015/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day13/part02/day13_part02.fs) |
 | Day 14  | ❌ | ❌ |
 | Day 15  | ❌ | ❌ |
 | Day 16  | ❌ | ❌ |
