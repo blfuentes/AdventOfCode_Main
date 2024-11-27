@@ -75,10 +75,10 @@ let main argv =
     //printfn "Final result Day 11 part 2: %A" resultday11Part2
 
     // DAY 12
-    //let resultday12Part1 = day12_part01.execute
-    //printfn "Final result Day 12 part 1: %A" resultday12Part1
-    //let resultday12Part2 = day12_part02.execute
-    //printfn "Final result Day 12 part 2: %A" resultday12Part2
+    let resultday12Part1 = day12_part01.execute
+    printfn "Final result Day 12 part 1: %A" resultday12Part1
+    let resultday12Part2 = day12_part02.execute
+    printfn "Final result Day 12 part 2: %A" resultday12Part2
 
     // DAY 13
     //let resultday13Part1 = day13_part01.execute
