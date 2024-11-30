@@ -1,22 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="Modules\SearchAlgos\A_Star_graph.fs" />
+    <Compile Include="Modules\SearchAlgos\BFS.fs" />
+    <Compile Include="Modules\SearchAlgos\DFS.fs" />
+    <Compile Include="Modules\SearchAlgos\A_Star_grid.fs" />
     <Compile Include="Modules\GridGraph.fs" />
     <Compile Include="Modules\Graph.fs" />
     <Compile Include="Modules\BinarySearchTree.fs" />
     <Compile Include="Modules\Utilities.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
 </Project>
