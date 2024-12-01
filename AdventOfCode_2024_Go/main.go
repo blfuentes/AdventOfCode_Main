@@ -1,8 +1,9 @@
 package main
 
 import (
-	"AdventOfCode_2024_Go/day01"
 	"fmt"
+
+	"github.com/blfuentes/AdventOfCode_2024_Go/day01"
 )
 
 func main() {
