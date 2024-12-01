@@ -13,8 +13,8 @@ https://adventofcode.com/
 - [2021](#2021-f): ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (34/50)
 - [2022](#2022-f): ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (29/50)
 - [2023](#2023-fc): ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (50/50)
-- [2024](#2024-f): (0/50)
-- Overal: 273/500 (~54,6%)
+- [2024](#2024-f): ⭐ (2/50)
+- Overal: 275/500 (55%)
 
 ## Advent Of Code 2015
 
@@ -351,11 +351,11 @@ https://adventofcode.com/2023
 
 https://adventofcode.com/2024
 
-(0/25)
+⭐ (1/25)
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ❌  | ❌ |
+| Day 1   | ✔️ [F#](./AdventOfCode_2024/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day01/part02/day01_part02.fs) |
 | Day 2   | ❌  | ❌ |
 | Day 3   | ❌  | ❌ |
 | Day 4   | ❌  | ❌ |
