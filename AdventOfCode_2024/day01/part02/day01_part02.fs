@@ -9,7 +9,7 @@ let parseContent (lines: string array) =
         |> Array.map(fun line -> 
             ((int)(line.Split(" ", StringSplitOptions.RemoveEmptyEntries)[0]),
                 (int)(line.Split(" ", StringSplitOptions.RemoveEmptyEntries)[1])))
-    pairs
+    (pairs |> Array.map fst), (pairs |> Array.map snd)
     
 let countTimes (element: int*int) (searchlist: (int*int) array) =
     match searchlist |> Array.tryFind(fun a -> fst element = fst a) with
@@ -19,8 +19,8 @@ let countTimes (element: int*int) (searchlist: (int*int) array) =
 let execute =
     let path = "day01/day01_input.txt"
     let content = LocalHelper.GetLinesFromFile path
-    let pairs = parseContent content
-    let groupLeft = pairs |> Array.countBy(fun a -> fst a)
-    let groupRight = pairs |> Array.countBy(fun a -> snd a)
+    let (lefts, rights) = parseContent content
+    let groupLeft = lefts |> Array.countBy id
+    let groupRight = rights |> Array.countBy id
     groupLeft |> Array.sumBy(fun l -> countTimes l groupRight)
     
