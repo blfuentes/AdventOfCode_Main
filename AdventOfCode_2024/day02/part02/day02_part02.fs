@@ -10,19 +10,20 @@ let parseContent (lines: string array) =
 let getExclusions (arr: 'a array) : 'a array list =
     [for i in 0 .. arr.Length - 1 -> Array.append (arr.[0 .. i-1]) (arr.[i+1 ..])]
 
-let checkWithoutOne(elems: int array) =
-    let areSafeInc(tocheck: int array) =
-        tocheck
-        |> Array.pairwise
-        |> Array.forall (fun (a, b) -> b - a >= 1 && b - a <= 3)
-    let areSafeDec(tocheck: int array) =
-        tocheck
-        |> Array.pairwise
-        |> Array.forall (fun (a, b) -> a - b >= 1 && a - b <= 3)  
+let areSafeInc(i: int array) should =
+    i |> Array.pairwise |> Array.forall (fun (a,b) -> should a b)
 
-    let isSafe e = areSafeInc e || areSafeDec e
+let areSafeDec(i: int array) should =
+    i |> Array.pairwise |> Array.forall (fun (a, b) -> should b a)
+
+let validDiff a b =
+    b - a >= 1 && b - a <= 3
+
+let isSafe l = areSafeInc l validDiff || areSafeDec l validDiff
+
+let checkWithoutOne(elems: int array) =
     getExclusions elems
-    |> List.exists isSafe
+    |> List.exists isSafe 
 
 let execute =
     let path = "day02/day02_input.txt"

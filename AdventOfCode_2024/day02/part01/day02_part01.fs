@@ -4,19 +4,23 @@ open AdventOfCode_2024.Modules
 
 let parseContent (lines: string array) =
     lines
-    |> Array.map(fun line -> line.Split(" ") |> Array.map int |> List.ofArray)
+    |> Array.map(fun line -> line.Split(" ") |> Array.map int)
 
-let areSafeInc(i: int list) =
-    i |> List.pairwise |> List.forall(fun (a, b) -> b - a >= 1 && b - a <= 3)   
+let validDiff a b =
+    b - a >= 1 && b - a <= 3
 
-let areSafeDec(i: int list) =
-    i |> List.pairwise |> List.forall(fun (a, b) -> a - b >= 1 && a - b <= 3)   
+let areSafeInc(i: int array) should =
+    i |> Array.pairwise |> Array.forall (fun (a,b) -> should a b)
+
+let areSafeDec(i: int array) should =
+    i |> Array.pairwise |> Array.forall (fun (a, b) -> should b a)
+
+let isSafe l = areSafeInc l validDiff || areSafeDec l validDiff
 
 let execute =
     let path = "day02/day02_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let values = parseContent content
-    let isSafe l = areSafeInc l || areSafeDec l
     values
     |> Array.filter isSafe
     |> Array.length
