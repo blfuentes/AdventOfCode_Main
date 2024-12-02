@@ -16,6 +16,7 @@ let execute =
     let path = "day02/day02_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let values = parseContent content
+    let isSafe l = areSafeInc l || areSafeDec l
     values
-    |> Array.filter(fun line -> areSafeInc <| line || line |> areSafeDec)
+    |> Array.filter isSafe
     |> Array.length

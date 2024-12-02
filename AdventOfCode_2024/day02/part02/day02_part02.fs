@@ -20,13 +20,14 @@ let checkWithoutOne(elems: int array) =
         |> Array.pairwise
         |> Array.forall (fun (a, b) -> a - b >= 1 && a - b <= 3)  
 
+    let isSafe e = areSafeInc e || areSafeDec e
     getExclusions elems
-    |> List.exists (fun e -> (e |> areSafeInc) || (e |> areSafeDec))
+    |> List.exists isSafe
 
 let execute =
     let path = "day02/day02_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let values = parseContent content
     values
-    |> Array.filter(fun line -> checkWithoutOne line)
+    |> Array.filter checkWithoutOne
     |> Array.length
