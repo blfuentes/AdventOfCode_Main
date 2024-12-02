@@ -53,6 +53,21 @@ func Contains[T comparable](arr []T, target T) bool {
 	return false
 }
 
+func RemoveElementAt[T any](index int, report []T) []T {
+	if index < 0 || index >= len(report) {
+		return []T{}
+	}
+
+	temp := make([]T, 0)
+	for idx, value := range report {
+		if idx != index {
+			temp = append(temp, value)
+		}
+	}
+
+	return temp
+}
+
 func PrintMatrix(matrix *[][]int) {
 	for rowIdx := 0; rowIdx < len(*matrix); rowIdx++ {
 		for colIdx := 0; colIdx < len((*matrix)[rowIdx]); colIdx++ {

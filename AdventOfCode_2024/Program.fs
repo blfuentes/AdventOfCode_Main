@@ -1,30 +1,34 @@
 // Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
 
 open System
+open AdventOfCode_Utilities
 
 // Define a function to construct a message to print
 let from whom =
     sprintf "from %s" whom
 
+let ms ticks =
+    (TimeSpan.FromTicks ticks).TotalMilliseconds
+
 [<EntryPoint>]
 let main argv =
     // DAY 01
-    let resultday01Part1 = day01_part01.execute
-    printfn "Final result Day 01 part 1: %i" resultday01Part1
-    let resultday02Part2 = day01_part02.execute
-    printfn "Final result Day 01 part 2: %i" resultday02Part2
+    let (resultday01Part1, time01_1) = Utilities.measureTime day01_part01.execute
+    printfn "Final result Day 01 part 1: %A in %A ms" resultday01Part1 (ms time01_1)
+    let (resultday02Part2, time01_2) = Utilities.measureTime day01_part02.execute
+    printfn "Final result Day 01 part 1: %A in %A ms" resultday02Part2 (ms time01_2)
 
     // DAY 02
-    let resultday02Part1 = day02_part01.execute
-    printfn "Final result Day 02 part 1: %i" resultday02Part1
-    let resultday02Part2 = day02_part02.execute
-    printfn "Final result Day 02 part 2: %i" resultday02Part2
+    let (resultday02Part1, time02_1) = Utilities.measureTime day02_part01.execute
+    printfn "Final result Day 02 part 1: %A in %A ms" resultday02Part1 (ms time02_1)
+    let (resultday02Part2, time02_2) = Utilities.measureTime day02_part02.execute
+    printfn "Final result Day 02 part 2: %A in %A ms" resultday02Part2 (ms time02_2)
 
     // DAY 03
-    let resultday03Part1 = day03_part01.execute
-    printfn "Final result Day 03 part 1: %i" resultday03Part1
-    let resultday03Part2 = day03_part02.execute
-    printfn "Final result Day 03 part 2: %i" resultday03Part2
+    let (resultday03Part1, time03_1) = Utilities.measureTime day03_part01.execute
+    printfn "Final result Day 03 part 1: %A in %A ms" resultday03Part1 (ms time03_1)
+    let (resultday03Part2, time03_2) = Utilities.measureTime day03_part02.execute
+    printfn "Final result Day 03 part 2: %A in %A ms" resultday03Part2 (ms time03_2)
 
     // DAY 04
     //let resultday04Part1 = day04_part01.execute

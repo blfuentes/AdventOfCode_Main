@@ -3,9 +3,20 @@
 open System
 open System.Text.RegularExpressions
 open System.Globalization
+open System.Diagnostics
 
 [<AutoOpen>]
 module Utilities = 
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    /// Calculates time of execution of fucntion
+    let measureTime f =
+        let stopwatch = Stopwatch.StartNew()
+        let result = f
+        stopwatch.Stop()
+        (result, stopwatch.ElapsedTicks)
+    ///////////////////////////////////////////////////////////////////////////////////
+
     ///////////////////////////////////////////////////////////////////////////////////
     /// distance for a grid
     let chebyshevDistance (x1, y1) (x2, y2) =

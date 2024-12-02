@@ -1,5 +1,7 @@
 package day02
 
+import "github.com/blfuentes/AdventOfCode_2024_Go/utilities"
+
 func IsSafeUpReport(report []int) bool {
 	isSafe := true
 	for idx := 0; idx < len(report)-1; idx++ {
@@ -26,25 +28,10 @@ func IsSafeReport(report []int) bool {
 	return IsSafeUpReport(report) || IsSafeDownReport(report)
 }
 
-func GetExcludedReport(index int, report []int) []int {
-	if index < 0 || index >= len(report) {
-		return []int{}
-	}
-
-	temp := make([]int, 0)
-	for i, v := range report {
-		if i != index {
-			temp = append(temp, v)
-		}
-	}
-
-	return temp
-}
-
 func IsSafeReportWithoutOne(report []int) bool {
 	isSafe := false
 	for idx := 0; idx < len(report); idx++ {
-		if IsSafeReport(GetExcludedReport(idx, report)) {
+		if IsSafeReport(utilities.RemoveElementAt(idx, report)) {
 			isSafe = true
 			break
 		}
