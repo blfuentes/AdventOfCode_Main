@@ -356,7 +356,7 @@ https://adventofcode.com/2024
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
 | Day 1   | ✔️ [F#](./AdventOfCode_2024/day01/part01/day01_part01.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_1.go) | ✔️ [F#](./AdventOfCode_2024/day01/part02/day01_part02.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_2.go) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2024/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day02/part02/day02_part02.fs) |
+| Day 2   | ✔️ [F#](./AdventOfCode_2024/day02/part01/day02_part01.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_1.go) | ✔️ [F#](./AdventOfCode_2024/day02/part02/day02_part02.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_2.go) |
 | Day 3   | ❌  | ❌ |
 | Day 4   | ❌  | ❌ |
 | Day 5   | ❌  | ❌ |
