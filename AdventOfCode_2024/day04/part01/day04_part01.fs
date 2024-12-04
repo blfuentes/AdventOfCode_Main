@@ -72,10 +72,10 @@ let countXmas(map: string [,]) =
     let diagonals = getDiagonals map |> List.map(fun d -> String.concat "" d)
     let foundIndDiagonals = 
         diagonals
-        |> List.map(fun d -> 
+        |> List.sumBy(fun d ->
             (countTimesOverlapped "XMAS" d) +
-            (countTimesOverlapped "SAMX" d))
-        |> List.sum
+            (countTimesOverlapped "SAMX" d)
+        )
     
     foundInRows + foundInCols + foundIndDiagonals
 
