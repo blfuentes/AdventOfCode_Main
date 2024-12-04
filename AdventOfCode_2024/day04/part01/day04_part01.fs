@@ -17,17 +17,23 @@ let getDiagonals (matrix: string[,]) =
 
     // diagonals from left to right
     let leftToRightDiagonals =
-        [ for d in 0 .. rows + cols - 2 do
-            [ for i in 0 .. d do
-                let j = d - i
-                if i < rows && j < cols then yield matrix[i, j] ] ]
+        [ for diagonalIdx in 0 .. rows + cols - 2 do
+            [ for rowIdx in 0 .. diagonalIdx do
+                let colIdx = diagonalIdx - rowIdx
+                if rowIdx < rows && colIdx < cols then 
+                    yield matrix.[rowIdx, colIdx]
+            ]
+        ]
 
     // diagonals from right to left
     let rightToLeftDiagonals =
-        [ for d in 0 .. rows + cols - 2 do
-            [ for i in 0 .. d do
-                let j = cols - 1 - (d - i)
-                if i < rows && j >= 0 then yield matrix[i, j] ] ]
+        [ for diagonalIdx in 0 .. rows + cols - 2 do
+            [ for rowIdx in 0 .. diagonalIdx do
+                let colIdx = cols - 1 - (diagonalIdx - rowIdx)
+                if rowIdx < rows && colIdx >= 0 then 
+                    yield matrix[rowIdx, colIdx]
+            ]
+        ]
 
     leftToRightDiagonals @ rightToLeftDiagonals
 
@@ -48,17 +54,21 @@ let countTimesOverlapped (pattern: string) (input: string) =
     countFromIndex 0 0
 
 let countXmas(map: string [,]) =
-    let maxRows = map.GetLength(0)
-    let maxCols = map.GetLength(1)
-    let mutable count = 0
-    for rowIdx in [0..maxRows-1] do
-        let row = String.concat "" (getRow  map rowIdx) 
-        count <- count + countTimesOverlapped "XMAS" row
-        count <- count + countTimesOverlapped "SAMX" row
-    for colIdx in [0..maxCols-1] do
-        let col = String.concat "" (getCol  map colIdx) 
-        count <- count + countTimesOverlapped "XMAS" col
-        count <- count + countTimesOverlapped "SAMX" col    
+    let maxRows = Array2D.length1 map
+    let maxCols = Array2D.length2 map
+    let foundInRows =
+        [0..maxRows - 1]
+        |> List.sumBy(fun rowIdx ->
+            let row = String.concat "" (getRow  map rowIdx) 
+            (countTimesOverlapped "XMAS" row) + (countTimesOverlapped "SAMX" row)
+        )
+    let foundInCols =
+        [0..maxCols - 1]
+        |> List.sumBy(fun colIdx ->
+            let col = String.concat "" (getCol  map colIdx) 
+            (countTimesOverlapped "XMAS" col) + (countTimesOverlapped "SAMX" col)
+        )
+ 
     let diagonals = getDiagonals map |> List.map(fun d -> String.concat "" d)
     let foundIndDiagonals = 
         diagonals
@@ -66,14 +76,11 @@ let countXmas(map: string [,]) =
             (countTimesOverlapped "XMAS" d) +
             (countTimesOverlapped "SAMX" d))
         |> List.sum
-
-    count <- count + foundIndDiagonals
-
-    count
+    
+    foundInRows + foundInCols + foundIndDiagonals
 
 let execute =
     let path = "day04/day04_input.txt"
-    //let path = "day04/test_input_01.txt"
     let content = LocalHelper.GetLinesFromFile path
     let map = parseContent content
     countXmas map

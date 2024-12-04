@@ -10,17 +10,16 @@ let parseContent (lines: string array) =
             map[rowIdx, colIdx] <- (string)row[colIdx]
     map
 
-let buildSubArray (matrix: string[,]) =
+let buildSubArray (matrix: string[,]) (size: int)=
     let rows = Array2D.length1 matrix
     let cols = Array2D.length2 matrix
 
-    [ for i in 0 .. rows - 3 do
-        for j in 0 .. cols - 3 do
+    [ for i in 0 .. rows - size do
+        for j in 0 .. cols - size do
             yield
-                Array2D.init 3 3 (fun x y -> matrix[i + x, j + y]) ]
-    |> List.filter(fun m -> m[1, 1] = "A")
+                Array2D.init size size (fun x y -> matrix[i + x, j + y]) ]
 
-let hasMASMAS (map: string [,]) =
+let hasCrossMAS (map: string [,]) =
     let middle = map[1,1] = "A"
     let lefttop = (map[0,0] = "M" && map[2,2] = "S") || (map[0,0] = "S" && map[2,2] = "M")
     let righttop = (map[0,2] = "M" && map[2,0] = "S") || (map[0,2] = "S" && map[2,0] = "M")
@@ -28,8 +27,8 @@ let hasMASMAS (map: string [,]) =
     if middle && lefttop && righttop then 1 else 0
 
 let countXmas(map: string [,]) =
-    buildSubArray map
-    |> List.map(fun m -> hasMASMAS m)
+    buildSubArray map 3
+    |> List.map(fun m -> hasCrossMAS m)
     |> List.sum
 
 let execute =
