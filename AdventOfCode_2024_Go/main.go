@@ -7,6 +7,7 @@ import (
 	"github.com/blfuentes/AdventOfCode_2024_Go/day02"
 	"github.com/blfuentes/AdventOfCode_2024_Go/day03"
 	"github.com/blfuentes/AdventOfCode_2024_Go/day04"
+	"github.com/blfuentes/AdventOfCode_2024_Go/day05"
 )
 
 func main() {
@@ -22,4 +23,7 @@ func main() {
 	// Day 04
 	fmt.Printf("Final result Day 04 part 1: %d\n", day04.Executepart1())
 	fmt.Printf("Final result Day 04 part 2: %d\n", day04.Executepart2())
+	// Day 05
+	fmt.Printf("Final result Day 05 part 1: %d\n", day05.Executepart1())
+	fmt.Printf("Final result Day 05 part 2: %d\n", day05.Executepart2())
 }

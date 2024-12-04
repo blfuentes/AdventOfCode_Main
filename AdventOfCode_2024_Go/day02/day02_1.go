@@ -8,9 +8,9 @@ import (
 )
 
 func Executepart1() int {
-	var fileName string = "./day02/day02.txt"
 	var result int = 0
 
+	var fileName string = "./day02/day02.txt"
 	if fileContent, err := utilities.ReadFileAsLines(fileName); err == nil {
 		reports := make([][]int, len(fileContent))
 		for lineIdx := 0; lineIdx < len(fileContent); lineIdx++ {

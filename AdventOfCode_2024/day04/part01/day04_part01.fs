@@ -56,28 +56,15 @@ let countTimesOverlapped (pattern: string) (input: string) =
 let countXmas(map: string [,]) =
     let maxRows = Array2D.length1 map
     let maxCols = Array2D.length2 map
-    let foundInRows =
-        [0..maxRows - 1]
-        |> List.sumBy(fun rowIdx ->
-            let row = String.concat "" (getRow  map rowIdx) 
-            (countTimesOverlapped "XMAS" row) + (countTimesOverlapped "SAMX" row)
-        )
-    let foundInCols =
-        [0..maxCols - 1]
-        |> List.sumBy(fun colIdx ->
-            let col = String.concat "" (getCol  map colIdx) 
-            (countTimesOverlapped "XMAS" col) + (countTimesOverlapped "SAMX" col)
-        )
- 
-    let diagonals = getDiagonals map |> List.map(fun d -> String.concat "" d)
-    let foundIndDiagonals = 
-        diagonals
-        |> List.sumBy(fun d ->
-            (countTimesOverlapped "XMAS" d) +
-            (countTimesOverlapped "SAMX" d)
-        )
-    
-    foundInRows + foundInCols + foundIndDiagonals
+
+    List.init maxRows (fun id -> String.concat "" (getRow map id))
+    @
+    List.init maxCols (fun id -> String.concat "" (getCol map id))
+    @ 
+    (getDiagonals map |> List.map(fun d -> String.concat "" d))
+    |> List.sumBy(fun row -> 
+        (countTimesOverlapped "XMAS" row) + (countTimesOverlapped "SAMX" row)
+    )
 
 let execute =
     let path = "day04/day04_input.txt"

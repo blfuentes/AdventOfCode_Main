@@ -28,8 +28,7 @@ let hasCrossMAS (map: string [,]) =
 
 let countXmas(map: string [,]) =
     buildSubArray map 3
-    |> List.map(fun m -> hasCrossMAS m)
-    |> List.sum
+    |> List.sumBy(fun m -> hasCrossMAS m)
 
 let execute =
     let path = "day04/day04_input.txt"

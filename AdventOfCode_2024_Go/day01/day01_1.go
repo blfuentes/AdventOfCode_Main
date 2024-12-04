@@ -18,9 +18,9 @@ func calculateDistance(leftside, rightside []int) (result int) {
 }
 
 func Executepart1() int {
-	var fileName string = "./day01/day01.txt"
 	var result int = 0
 
+	var fileName string = "./day01/day01.txt"
 	if fileContent, err := utilities.ReadFileAsLines(fileName); err == nil {
 		left := make([]int, len(fileContent))
 		right := make([]int, len(fileContent))

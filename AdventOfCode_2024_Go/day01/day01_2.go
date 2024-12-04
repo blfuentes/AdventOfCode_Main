@@ -22,9 +22,9 @@ func countTimes(leftside []string, rightside []string) (result int) {
 }
 
 func Executepart2() int {
-	var fileName string = "./day01/day01.txt"
 	var result int = 0
 
+	var fileName string = "./day01/day01.txt"
 	if fileContent, err := utilities.ReadFileAsLines(fileName); err == nil {
 		left := make([]string, len(fileContent))
 		right := make([]string, len(fileContent))

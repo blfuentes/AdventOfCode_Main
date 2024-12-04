@@ -8,9 +8,9 @@ import (
 )
 
 func Executepart1() int {
-	var fileName string = "./day03/day03.txt"
 	var result int = 0
 
+	var fileName string = "./day03/day03.txt"
 	if fileContent, err := utilities.ReadFileAsText(fileName); err == nil {
 		pattern := regexp.MustCompile(`mul\((\d+),(\d+)\)`)
 		parts := pattern.FindAllStringSubmatch(fileContent, -1)
