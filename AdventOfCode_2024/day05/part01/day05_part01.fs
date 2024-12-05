@@ -3,35 +3,35 @@
 open AdventOfCode_2024.Modules
 open AdventOfCode_Utilities
 
-let parseContent(string: string list) =
-    let parts = Utilities.getGroupsOnSeparator string ""
-    let orders = parts[0] |> List.map(fun l -> ((int)(l.Split("|")[0]), (int)(l.Split("|")[1])))
-    let chekers = parts[1] |> List.map(fun l -> l.Split(",") |> Array.map int |> List.ofArray)
+let parseContent(string: string array) =
+    let parts = Utilities.getGroupsOnSeparator (string |> List.ofArray) ""
+    let orders = parts[0] |> Array.ofList |> Array.map(fun l -> ((int)(l.Split("|")[0]), (int)(l.Split("|")[1])))
+    let chekers = parts[1] |> Array.ofList  |> Array.map(fun l -> l.Split(",") |> Array.map int)
     (orders, chekers)
 
 let orderfound (prev, next) (prev', next') =
     prev = prev' && next = next'
 
-let inOrder (number: int) (tocheck: int list) (pages: (int * int) list) =
+let inOrder (number: int) (tocheck: int array) (pages: (int * int) array) =
     tocheck
-    |> List.forall (fun c ->
+    |> Array.forall (fun c ->
         pages
-        |> List.exists (orderfound (number, c))
+        |> Array.exists (orderfound (number, c))
     )
 
-let checkerInOrder (pairs: int list) (pages: (int * int) list) =
+let checkerInOrder (pairs: int array) (pages: (int * int) array) =
     pairs
-    |> List.indexed
-    |> List.tryFind (fun (index, value) ->
-        let rest = List.skip (index + 1) pairs
+    |> Array.indexed
+    |> Array.tryFind (fun (index, value) ->
+        let rest = Array.skip (index + 1) pairs
         not (inOrder value rest pages)
     )
     |> Option.isNone
 
 let execute =
     let path = "day05/day05_input.txt"
-    let content = LocalHelper.GetLinesFromFile path |> List.ofArray
+    let content = LocalHelper.GetLinesFromFile path
     let (validorders, tobechecked) = parseContent content
     tobechecked
-    |> List.filter(fun check -> checkerInOrder check validorders)
-    |> List.sumBy(fun check -> check.Item(check.Length / 2))
+    |> Array.filter(fun check -> checkerInOrder check validorders)
+    |> Array.sumBy(fun check -> check[check.Length / 2])
