@@ -9,26 +9,28 @@ let parseContent(string: string list) =
     let chekers = parts[1] |> List.map(fun l -> l.Split(",") |> Array.map int |> List.ofArray)
     (orders, chekers)
 
-let inOrder(number: int) (tocheck: int list) (pages: (int*int) list) =
+let orderfound (prev, next) (prev', next') =
+    prev = prev' && next = next'
+
+let inOrder (number: int) (tocheck: int list) (pages: (int * int) list) =
     tocheck
-    |> List.forall(fun c ->
-        match pages |> List.tryFind(fun (f, t) -> f = number && c = t) with
-        | Some(_) -> true
-        | None -> false
+    |> List.forall (fun c ->
+        pages
+        |> List.exists (orderfound (number, c))
     )
 
-let rec checkerInOrder(pairs: int list)(pages: (int*int) list) =
-    match pairs with
-    | [] -> true
-    | head::tail ->
-        if inOrder head tail pages then
-            checkerInOrder tail pages
-        else
-            false
+let checkerInOrder (pairs: int list) (pages: (int * int) list) =
+    pairs
+    |> List.indexed
+    |> List.tryFind (fun (index, value) ->
+        let rest = List.skip (index + 1) pairs
+        not (inOrder value rest pages)
+    )
+    |> Option.isNone
 
 let reorder(pairs: int list)(pages: (int*int) list) =
-    let sort a b =
-        match pages |> List.tryFind(fun (f, t) -> f = a && t =b) with
+    let sort left right =
+        match pages |> List.tryFind (orderfound (left,right)) with
         | Some(_) -> - 1
         | None -> 1
         
