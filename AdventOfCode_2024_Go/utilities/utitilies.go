@@ -3,6 +3,7 @@ package utilities
 import (
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 
 	"github.com/fatih/color"
@@ -99,6 +100,11 @@ func PrintMatrixWithColors(matrix [][]int) {
 		}
 		fmt.Println()
 	}
+}
+
+func StringToInt(value string) int {
+	result, _ := strconv.Atoi(value)
+	return result
 }
 
 func IsInBoundaries(row, col, maxrows, maxcols int) bool {
