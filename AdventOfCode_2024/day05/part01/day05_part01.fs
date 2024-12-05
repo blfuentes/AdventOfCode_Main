@@ -31,7 +31,7 @@ let checkerInOrder (pairs: int list) (pages: (int * int) list) =
 let execute =
     let path = "day05/day05_input.txt"
     let content = LocalHelper.GetLinesFromFile path |> List.ofArray
-    let (orders, checkers) = parseContent content
-    checkers
-    |> List.filter(fun o -> checkerInOrder o orders)
-    |> List.sumBy(fun l -> l.Item(l.Length / 2))
+    let (validorders, tobechecked) = parseContent content
+    tobechecked
+    |> List.filter(fun check -> checkerInOrder check validorders)
+    |> List.sumBy(fun check -> check.Item(check.Length / 2))
