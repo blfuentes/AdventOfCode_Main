@@ -4,5 +4,5 @@
 
 let path = "day16/day16_input.txt"
 
-let execute =
+let execute() =
     0
