@@ -148,8 +148,8 @@ module Utilities =
         let timer = new System.Diagnostics.Stopwatch()
         timer.Start()
         let returnValue = f()
-        printfn "Elapsed Time: %i" timer.ElapsedMilliseconds
-        returnValue 
+        //printfn "Elapsed Time: %i" timer.ElapsedMilliseconds
+        (returnValue, timer.ElapsedTicks)
     ///////////////////////////////////////////////////////////////////////////////////    
 
     ///////////////////////////////////////////////////////////////////////////////////

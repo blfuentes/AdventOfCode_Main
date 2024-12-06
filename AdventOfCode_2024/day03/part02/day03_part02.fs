@@ -30,7 +30,7 @@ let solveline (input: string) =
 
     finalResult
 
-let execute =
+let execute() =
     let path = "day03/day03_input.txt"
     let content = LocalHelper.GetContentFromFile path
     solveline content

@@ -13,7 +13,7 @@ let parseContent (lines: string array) =
         )
     (lefties |> List.rev, righties |> List.rev)
 
-let execute =
+let execute() =
     let path = "day01/day01_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (lefts, rights) = parseContent content

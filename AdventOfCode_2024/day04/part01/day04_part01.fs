@@ -66,7 +66,7 @@ let countXmas(map: string [,]) =
         (countTimesOverlapped "XMAS" row) + (countTimesOverlapped "SAMX" row)
     )
 
-let execute =
+let execute() =
     let path = "day04/day04_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let map = parseContent content

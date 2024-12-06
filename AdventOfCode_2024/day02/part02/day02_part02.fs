@@ -26,7 +26,7 @@ let checkWithoutOne(elems: int array) =
     skipOnes elems
     |> Array.exists isSafe 
 
-let execute =
+let execute() =
     let path = "day02/day02_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let values = parseContent content

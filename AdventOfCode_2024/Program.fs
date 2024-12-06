@@ -8,45 +8,46 @@ let from whom =
     sprintf "from %s" whom
 
 let ms ticks =
-    (TimeSpan.FromTicks ticks).TotalMilliseconds
+    let timespan = (TimeSpan.FromTicks ticks)
+    sprintf "%02i:%02i.%03i" timespan.Minutes timespan.Seconds timespan.Milliseconds
 
 [<EntryPoint>]
 let main argv =
     // DAY 01
-    let (resultday01Part1, time01_1) = Utilities.measureTime day01_part01.execute
+    let (resultday01Part1, time01_1) = Utilities.duration day01_part01.execute
     printfn "Final result Day 01 part 1: %A in %A ms" resultday01Part1 (ms time01_1)
-    let (resultday02Part2, time01_2) = Utilities.measureTime day01_part02.execute
+    let (resultday02Part2, time01_2) = Utilities.duration day01_part02.execute
     printfn "Final result Day 01 part 1: %A in %A ms" resultday02Part2 (ms time01_2)
 
     // DAY 02
-    let (resultday02Part1, time02_1) = Utilities.measureTime day02_part01.execute
+    let (resultday02Part1, time02_1) = Utilities.duration day02_part01.execute
     printfn "Final result Day 02 part 1: %A in %A ms" resultday02Part1 (ms time02_1)
-    let (resultday02Part2, time02_2) = Utilities.measureTime day02_part02.execute
+    let (resultday02Part2, time02_2) = Utilities.duration day02_part02.execute
     printfn "Final result Day 02 part 2: %A in %A ms" resultday02Part2 (ms time02_2)
 
     // DAY 03
-    let (resultday03Part1, time03_1) = Utilities.measureTime day03_part01.execute
+    let (resultday03Part1, time03_1) = Utilities.duration day03_part01.execute
     printfn "Final result Day 03 part 1: %A in %A ms" resultday03Part1 (ms time03_1)
-    let (resultday03Part2, time03_2) = Utilities.measureTime day03_part02.execute
+    let (resultday03Part2, time03_2) = Utilities.duration day03_part02.execute
     printfn "Final result Day 03 part 2: %A in %A ms" resultday03Part2 (ms time03_2)
 
     // DAY 04
-    let (resultday04Part1, time04_1) = Utilities.measureTime day04_part01.execute
+    let (resultday04Part1, time04_1) = Utilities.duration day04_part01.execute
     printfn "Final result Day 04 part 1: %A in %A ms" resultday04Part1 (ms time04_1)
-    let (resultday04Part2, time04_2) = Utilities.measureTime day04_part02.execute
+    let (resultday04Part2, time04_2) = Utilities.duration day04_part02.execute
     printfn "Final result Day 04 part 2: %A in %A ms" resultday04Part2 (ms time04_2)
 
     // DAY 05
-    let (resultday05Part1, time05_1) = Utilities.measureTime day05_part01.execute
-    printfn "Final result Day 05 part 1: %A in %A" resultday05Part1 (ms time05_1)
-    let (resultday05Part2, time05_2) = Utilities.measureTime day05_part02.execute
-    printfn "Final result Day 05 part 2: %A in %A" resultday05Part2 (ms time05_1)
+    let (resultday05Part1, time05_1) = Utilities.duration day05_part01.execute
+    printfn "Final result Day 05 part 1: %A in %A ms" resultday05Part1 (ms time05_1)
+    let (resultday05Part2, time05_2) = Utilities.duration day05_part02.execute
+    printfn "Final result Day 05 part 2: %A in %A ms" resultday05Part2 (ms time05_1)
 
     // DAY 06
-    let (resultday06Part1, time06_1) = Utilities.measureTime day06_part01.execute
-    printfn "Final result Day 06 part 1: %A in %A" resultday06Part1 (ms time06_1)
-    let (resultday06Part2, time06_2) = Utilities.measureTime day06_part02.execute
-    printfn "Final result Day 06 part 2: %A in %A" resultday06Part2 (ms time06_2)
+    let (resultday06Part1, time06_1) = Utilities.duration day06_part01.execute
+    printfn "Final result Day 06 part 1: %A in %A ms" resultday06Part1 (ms time06_1)
+    let (resultday06Part2, time06_2) = Utilities.duration day06_part02.execute
+    printfn "Final result Day 06 part 2: %A in %A ms" resultday06Part2 (ms time06_2)
 
     // DAY 07
     //let resultday07Part1 = day07_part01.execute

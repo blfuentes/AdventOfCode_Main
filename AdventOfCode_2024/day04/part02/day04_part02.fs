@@ -30,7 +30,7 @@ let countXmas(map: string [,]) =
     buildSubArray map 3
     |> List.sumBy(fun m -> hasCrossMAS m)
 
-let execute =
+let execute() =
     let path = "day04/day04_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let map = parseContent content

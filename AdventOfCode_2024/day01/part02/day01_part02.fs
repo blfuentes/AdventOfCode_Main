@@ -18,7 +18,7 @@ let countTimes (element: int*int) (searchlist: (int*int) List) =
     | Some(result) -> (fst element) * (snd element)  * (snd result)
     | None -> 0
 
-let execute =
+let execute() =
     let path = "day01/day01_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (lefts, rights) = parseContent content

@@ -37,7 +37,7 @@ let reorder(pairs: int array)(pages: (int*int) array) =
     pairs
     |> Array.sortWith sort
 
-let execute =
+let execute() =
     let path = "day05/day05_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (validorders, tobechecked) = parseContent content

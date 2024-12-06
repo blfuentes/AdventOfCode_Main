@@ -17,7 +17,7 @@ let areSafeDec(i: int array) should =
 
 let isSafe l = areSafeInc l validDiff || areSafeDec l validDiff
 
-let execute =
+let execute() =
     let path = "day02/day02_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let values = parseContent content
