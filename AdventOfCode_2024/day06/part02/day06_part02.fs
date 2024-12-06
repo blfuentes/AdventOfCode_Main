@@ -96,14 +96,16 @@ let patrol(patrol: MapDefinition) (newWall: int array) =
     (visitedMap, counter)
 
 let checkWalls(map: MapDefinition) =
-    let maxRows = map.Definition.GetLength(0)
-    let maxCols = map.Definition.GetLength(1)
+    let (visited, counted) = patrol map map.PatrolPos
+    let maxRows = visited.GetLength(0)
+    let maxCols = visited.GetLength(1)
     let mutable wallsfound = 0
     for row in 0..maxRows-1 do
         for col in 0..maxCols-1 do
-            let (visited, counted) = patrol map [|row; col|]
-            if counted = -1 then
-                wallsfound <- wallsfound + 1
+            if visited[row, col] = 'X' then
+                let (visited, counted) = patrol map [|row; col|]
+                if counted = -1 then
+                    wallsfound <- wallsfound + 1
 
     wallsfound
                 
