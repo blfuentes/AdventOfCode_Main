@@ -69,10 +69,10 @@ func RemoveElementAt[T any](index int, report []T) []T {
 	return temp
 }
 
-func PrintMatrix(matrix *[][]int) {
+func PrintMatrix[T any](matrix *[][]T) {
 	for rowIdx := 0; rowIdx < len(*matrix); rowIdx++ {
 		for colIdx := 0; colIdx < len((*matrix)[rowIdx]); colIdx++ {
-			fmt.Printf("%d", (*matrix)[rowIdx][colIdx])
+			fmt.Printf("%v", (*matrix)[rowIdx][colIdx])
 		}
 		fmt.Println()
 	}
