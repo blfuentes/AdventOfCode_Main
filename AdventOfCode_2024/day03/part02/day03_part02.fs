@@ -2,7 +2,6 @@
 
 open AdventOfCode_2024.Modules
 open System.Text.RegularExpressions
-open System
 
 let solveline (input: string) =
     let pattern = @"mul\(\d+,\d+\)|do\(\)|don't\(\)"
