@@ -107,6 +107,11 @@ func StringToInt(value string) int {
 	return result
 }
 
+func StringToInt64(value string) int64 {
+	result, _ := strconv.ParseInt(value, 10, 64)
+	return result
+}
+
 func IsInBoundaries(row, col, maxrows, maxcols int) bool {
 	return row >= 0 && row < maxrows && col >= 0 && col < maxcols
 }
