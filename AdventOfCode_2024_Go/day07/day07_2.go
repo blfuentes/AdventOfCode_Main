@@ -1,27 +1,29 @@
 package day07
 
 import (
-	"strconv"
 	"strings"
 
 	"github.com/blfuentes/AdventOfCode_2024_Go/utilities"
 )
 
 func concat(a, b int64) int64 {
-	v, _ := strconv.ParseInt(strconv.FormatInt(a, 10)+strconv.FormatInt(b, 10), 10, 64)
-	return v
+	multiplier := int64(1)
+	for temp := b; temp > 0; temp /= 10 {
+		multiplier *= 10
+	}
+	return a*multiplier + b
 }
 
-func calculate2(expected, valueSoFar int64, eqparams []int64) bool {
+func calculate2(expected, valueSoFar int64, eqparams []int64, index int) bool {
 	if valueSoFar > expected {
 		return false
 	}
-	if len(eqparams) == 0 {
+	if index == len(eqparams) {
 		return expected == valueSoFar
 	}
-	return calculate2(expected, valueSoFar+eqparams[0], eqparams[1:]) ||
-		calculate2(expected, valueSoFar*eqparams[0], eqparams[1:]) ||
-		calculate2(expected, concat(valueSoFar, eqparams[0]), eqparams[1:])
+	return calculate2(expected, valueSoFar+eqparams[index], eqparams, index+1) ||
+		calculate2(expected, valueSoFar*eqparams[index], eqparams, index+1) ||
+		calculate2(expected, concat(valueSoFar, eqparams[index]), eqparams, index+1)
 }
 
 func Executepart2() int64 {
@@ -36,7 +38,7 @@ func Executepart2() int64 {
 			for _, val := range strings.Split(strings.Split(fileContent[index], ":")[1], " ") {
 				values = append(values, utilities.StringToInt64(val))
 			}
-			if calculate2(expected, 0, values) {
+			if calculate2(expected, 0, values, 0) {
 				result += expected
 			}
 		}

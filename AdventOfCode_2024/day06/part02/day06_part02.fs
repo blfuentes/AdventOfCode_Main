@@ -91,7 +91,6 @@ let patrol(patrol: MapDefinition) (newWall: int array) =
                             yield true
                     else
                         visitedMap[pos[0], pos[1]] <- mapvalue
-                        visitedMap[newWall[0], newWall[1]] <- '0'
                         pos[0] <- pos[0] - currentDir[0]
                         pos[1] <- pos[1] - currentDir[1]
                         currentDirection <- turnRight currentDirection]

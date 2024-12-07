@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/blfuentes/AdventOfCode_2024_Go/day01"
 	"github.com/blfuentes/AdventOfCode_2024_Go/day02"
@@ -14,28 +15,69 @@ import (
 )
 
 func main() {
+	var timer time.Time
 	// Day 01
-	fmt.Printf("Final result Day 01 part 1: %d\n", day01.Executepart1())
-	fmt.Printf("Final result Day 01 part 2: %d\n", day01.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 01 part 1: %d", day01.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 01 part 2: %d", day01.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 02
-	fmt.Printf("Final result Day 02 part 1: %d\n", day02.Executepart1())
-	fmt.Printf("Final result Day 02 part 2: %d\n", day02.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 02 part 1: %d", day02.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 02 part 2: %d", day02.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 03
-	fmt.Printf("Final result Day 03 part 1: %d\n", day03.Executepart1())
-	fmt.Printf("Final result Day 03 part 2: %d\n", day03.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 03 part 1: %d", day03.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 03 part 2: %d", day03.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 04
-	fmt.Printf("Final result Day 04 part 1: %d\n", day04.Executepart1())
-	fmt.Printf("Final result Day 04 part 2: %d\n", day04.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 04 part 1: %d", day04.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 04 part 2: %d", day04.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 05
-	fmt.Printf("Final result Day 05 part 1: %d\n", day05.Executepart1())
-	fmt.Printf("Final result Day 05 part 2: %d\n", day05.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 05 part 1: %d", day05.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 05 part 2: %d", day05.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 06
-	fmt.Printf("Final result Day 06 part 1: %d\n", day06.Executepart1())
-	fmt.Printf("Final result Day 06 part 2: %d\n", day06.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 06 part 1: %d", day06.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 06 part 2: %d", day06.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 07
-	fmt.Printf("Final result Day 07 part 1: %d\n", day07.Executepart1())
-	fmt.Printf("Final result Day 07 part 2: %d\n", day07.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 07 part 1: %d", day07.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 07 part 2: %d", day07.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 	// Day 08
-	fmt.Printf("Final result Day 08 part 1: %d\n", day08.Executepart1())
-	fmt.Printf("Final result Day 08 part 2: %d\n", day08.Executepart2())
+	timer = time.Now()
+	fmt.Printf("Final result Day 08 part 1: %d", day08.Executepart1())
+	fmt.Printf(" in %v\n", time.Since(timer))
+	timer = time.Now()
+	fmt.Printf("Final result Day 08 part 2: %d", day08.Executepart2())
+	fmt.Printf(" in %v\n", time.Since(timer))
+
 }

@@ -68,6 +68,7 @@ let patrol(patrol: MapDefinition) =
     visitedMap[pos[0], pos[1]] <- 'X'
 
     let visited = 
+        [visitedMap[pos[0], pos[1]]] @
         [while not outOfRange do
             let currentDir = getDir currentDirection
             pos[0] <- pos[0] + currentDir[0]
