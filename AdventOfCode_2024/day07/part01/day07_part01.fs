@@ -7,28 +7,26 @@ let parseContent(lines: string array) =
     |> Array.map(fun line ->
         (
            System.Int64.Parse(line.Split(":")[0]),
-            (line.Split(":")[1]).Trim().Split(" ")
-                |> Array.map int64)
-    )
+           (line.Split(":")[1]).Trim().Split(" ") |> Seq.map int64)
+        )
 
-let compute((expected, values): int64*int64 array) (ops: (int64->int64->int64) list)=
-    let rec calculate(expected': int64) (tocalculate: int64 list) (currentValue: int64)=
-        if currentValue > expected' then false
+let compute((expected, eqmembers): int64*int64 seq) (ops: (int64->int64->int64) seq)=
+    let rec calculate(expected': int64) (tocalculate: int64 list) (currentResult: int64)=
+        if currentResult > expected' then false
         else
             match tocalculate with
-            | [] -> expected' = currentValue
+            | [] -> expected' = currentResult
             | newvalue :: tocompute ->
                 ops
-                |> List.exists(fun op -> (calculate (expected') (tocompute) (op newvalue currentValue)))
+                |> Seq.exists(fun op -> (calculate (expected') (tocompute) (op currentResult newvalue)))
 
-    calculate expected (values |> List.ofArray) 0
-        
+    calculate expected (eqmembers |> List.ofSeq) 0        
 
 let execute() =
     let path = "day07/day07_input.txt"
     let content = LocalHelper.GetLinesFromFile path
 
     parseContent content
-    |> Array.sumBy (fun (expected, values) -> 
-        if compute (expected, values) [(+); (*)] then expected else 0
+    |> Array.sumBy (fun (expected, eqmembers) -> 
+        if compute (expected, eqmembers) [(+); (*)] then expected else 0
     )
