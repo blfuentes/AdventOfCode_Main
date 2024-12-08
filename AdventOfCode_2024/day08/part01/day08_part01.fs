@@ -50,8 +50,8 @@ let calculateAntinode (antennas: Antenna list) (mapAntennas: AntennaMap) =
 
     let rAntennas =
         [for comb in combinations do
-            let pair = comb |> Array.ofList
-            let (fromFirst, fromSecond) = mirror pair[0].Position pair[1].Position
+            let (coordA, coordB) = comb.Item(0).Position, comb.Item(1).Position
+            let (fromFirst, fromSecond) = mirror coordA coordB
             if inBoundaries fromFirst maxRows maxCols then
                 yield fromFirst
             if inBoundaries fromSecond maxRows maxCols then
@@ -66,9 +66,8 @@ let execute() =
     let (mapAntennas, antennas) = parseContent content
     let groups = antennas |> List.groupBy _.Name
     groups
-    |> List.map(fun g ->
+    |> List.collect(fun g ->
         calculateAntinode (snd g) mapAntennas
     )
-    |> List.concat
     |> List.distinct
     |> List.length

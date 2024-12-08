@@ -32,41 +32,47 @@ let inBoundaries (coord: Coord) (maxRows: int) (maxCols: int) =
     coord.Row >= 0 && coord.Row < maxRows &&
     coord.Col >= 0 && coord.Col < maxCols
 
-let mirroredForRep (coordA: Coord) (coordB: Coord) repetition =
+let mirroredForRep (coordA: Coord) (coordB: Coord) rep =
     let rowDistance = coordB.Row - coordA.Row
     let colDistance = coordB.Col - coordA.Col
 
-    let mirrored1 = { Row = coordB.Row + repetition * rowDistance; Col = coordB.Col + repetition * colDistance }
-    let mirrored2 = { Row = coordA.Row - repetition * rowDistance; Col = coordA.Col - repetition * colDistance }
+    let mirrored1 = { Row = coordB.Row + rep * rowDistance; Col = coordB.Col + rep * colDistance }
+    let mirrored2 = { Row = coordA.Row - rep * rowDistance; Col = coordA.Col - rep * colDistance }
     (mirrored1, mirrored2)
 
 let calculateAntinode (antennas: Antenna list) (mapAntenna: AntennaMap) =
     let combinations = Utilities.combination 2 antennas
-    let maxRows = mapAntenna.MaxRow
-    let maxCols = mapAntenna.MaxCol
-
-    let rAntennas =
-        [for comb in combinations do
-            let pair = comb |> Array.ofList
-            let mutable fOutOfRange = false
-            let mutable sOutOfRange = false
-            let mutable expand = 1
-            yield pair[0].Position
-            yield pair[1].Position
-            while not fOutOfRange || not sOutOfRange do                
-                let (fromFirst, fromSecond) = mirroredForRep pair[0].Position pair[1].Position expand
-                if not fOutOfRange && inBoundaries fromFirst maxRows maxCols then
-                    yield fromFirst
-                else
-                    fOutOfRange <- true
-                if not sOutOfRange && inBoundaries fromSecond maxRows maxCols then
-                    yield fromSecond
-                else
-                    sOutOfRange <- true
-                expand <- expand + 1
-    ]
-    rAntennas
+    let maxRows, maxCols = mapAntenna.MaxRow, mapAntenna.MaxCol
     
+    combinations
+    |> List.collect (fun comb ->
+        // Add the initial antennas
+        let initialPositions = [comb.Item(0).Position; comb.Item(1).Position]
+        
+        // Add antennas for the specific radius until the radius is out of range
+        let rec generatePositions coordA coordB currentAntennas antennaRadius fOutOfRange sOutOfRange =
+            if fOutOfRange && sOutOfRange then
+                currentAntennas
+            else
+                let mirrorA, mirrorB = mirroredForRep coordA coordB antennaRadius
+                let (newAntennas, newfOutOfRange) = 
+                    if not fOutOfRange && inBoundaries mirrorA maxRows maxCols then
+                        (mirrorA :: currentAntennas, false)
+                    else
+                        (currentAntennas, true)
+                
+                let (newAntenas, newsOutOfRange) = 
+                    if not sOutOfRange && inBoundaries mirrorB maxRows maxCols then
+                        (mirrorB :: newAntennas, false)
+                    else
+                        (newAntennas, true)
+                
+                generatePositions coordA coordB newAntenas (antennaRadius + 1) newfOutOfRange newsOutOfRange
+
+        // Call initial case                    
+        generatePositions (comb.Item(0).Position) (comb.Item(1).Position) initialPositions 1 false false
+    )
+
 
 let execute() =
     let path = "day08/day08_input.txt"
@@ -74,9 +80,8 @@ let execute() =
     let (mapAntenna, antennas) = parseContent content
     let groups = antennas |> List.groupBy _.Name
     groups
-    |> List.map(fun g ->
+    |> List.collect(fun g ->
         calculateAntinode (snd g) mapAntenna
     )
-    |> List.concat
     |> List.distinct
     |> List.length
