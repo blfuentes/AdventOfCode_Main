@@ -16,21 +16,17 @@ type Antenna = {
 type AntennaMap = {
     MaxRow: int;
     MaxCol: int;
-    Display: char [,];
 }
 let parseContent (lines: string array) =
     let maxRows = lines.Length
     let maxCols = lines[0].Length
-
-    let mapAntennas = Array2D.create maxRows maxCols '.'
-    let antennas = 
+    let antennas =
         [for row in [0..maxRows-1] do
             for col in [0..maxCols-1] do
                 let value = lines[row][col]
-                mapAntennas[row, col] <- value
                 if value <> '.' then
                     yield { Name = value; Position = {Row = row; Col = col} }]
-    (mapAntennas, antennas)
+    ({ MaxRow = maxRows; MaxCol = maxCols }, antennas)
 
 let inBoundaries (coord: Coord) (maxRows: int) (maxCols: int) =
     coord.Row >= 0 && coord.Row < maxRows &&
@@ -43,17 +39,11 @@ let mirroredForRep (coordA: Coord) (coordB: Coord) repetition =
     let mirrored1 = { Row = coordB.Row + repetition * rowDistance; Col = coordB.Col + repetition * colDistance }
     let mirrored2 = { Row = coordA.Row - repetition * rowDistance; Col = coordA.Col - repetition * colDistance }
     (mirrored1, mirrored2)
-        
-let printAntennaMap (map: char[,]) =
-    for r in 0..map.GetLength(0)-1 do
-        for c in 0..map.GetLength(1)-1  do
-            printf "%c" map[r, c]
-        printfn ""
 
-let calculateAntinode (antennas: Antenna list) (antennaMap: char[,]) =
+let calculateAntinode (antennas: Antenna list) (mapAntenna: AntennaMap) =
     let combinations = Utilities.combination 2 antennas
-    let maxRows = antennaMap.GetLength(0)
-    let maxCols = antennaMap.GetLength(1)
+    let maxRows = mapAntenna.MaxRow
+    let maxCols = mapAntenna.MaxCol
 
     let rAntennas =
         [for comb in combinations do
@@ -66,20 +56,10 @@ let calculateAntinode (antennas: Antenna list) (antennaMap: char[,]) =
             while not fOutOfRange || not sOutOfRange do                
                 let (fromFirst, fromSecond) = mirroredForRep pair[0].Position pair[1].Position expand
                 if not fOutOfRange && inBoundaries fromFirst maxRows maxCols then
-                    let value = antennaMap[fromFirst.Row, fromFirst.Col]
-                    if value = '.' then
-                        antennaMap[fromFirst.Row, fromFirst.Col] <- '#'
-                    else
-                        antennaMap[fromFirst.Row, fromFirst.Col] <- '@'
                     yield fromFirst
                 else
                     fOutOfRange <- true
                 if not sOutOfRange && inBoundaries fromSecond maxRows maxCols then
-                    let value = antennaMap[fromSecond.Row, fromSecond.Col]
-                    if value = '.' then
-                        antennaMap[fromSecond.Row, fromSecond.Col] <- '#'
-                    else
-                        antennaMap[fromSecond.Row, fromSecond.Col] <- '@'
                     yield fromSecond
                 else
                     sOutOfRange <- true
@@ -91,11 +71,11 @@ let calculateAntinode (antennas: Antenna list) (antennaMap: char[,]) =
 let execute() =
     let path = "day08/day08_input.txt"
     let content = LocalHelper.GetLinesFromFile path
-    let (mapAntennas, antennas) = parseContent content
+    let (mapAntenna, antennas) = parseContent content
     let groups = antennas |> List.groupBy _.Name
     groups
     |> List.map(fun g ->
-        calculateAntinode (snd g) mapAntennas
+        calculateAntinode (snd g) mapAntenna
     )
     |> List.concat
     |> List.distinct

@@ -16,22 +16,19 @@ type Antenna = {
 type AntennaMap = {
     MaxRow: int;
     MaxCol: int;
-    Display: char [,];
 }
 
 let parseContent (lines: string array) =
     let maxRows = lines.Length
     let maxCols = lines[0].Length
 
-    let mapAntennas = Array2D.create maxRows maxCols '.'
     let antennas = 
         [for row in [0..maxRows-1] do
             for col in [0..maxCols-1] do
                 let value = lines[row][col]
-                mapAntennas[row, col] <- value
                 if value <> '.' then
                     yield { Name = value; Position = {Row = row; Col = col} }]
-    (mapAntennas, antennas)
+    ({ MaxRow = maxRows; MaxCol = maxCols } , antennas)
 
 let inBoundaries (coord: Coord) (maxRows: int) (maxCols: int) =
     coord.Row >= 0 && coord.Row < maxRows &&
@@ -46,37 +43,19 @@ let mirror (coordA: Coord) (coordB: Coord) =
         { Row = fst mirrored2; Col = snd mirrored2 }
     )
 
-let printAntennaMap (map: char[,]) =
-    for r in 0..map.GetLength(0)-1 do
-        for c in 0..map.GetLength(1)-1  do
-            printf "%c" map[r, c]
-        printfn ""
-
-let calculateAntinode (antennas: Antenna list) (antennaMap: char[,]) =
+let calculateAntinode (antennas: Antenna list) (mapAntennas: AntennaMap) =
     let combinations = Utilities.combination 2 antennas
-    let maxRows = antennaMap.GetLength(0)
-    let maxCols = antennaMap.GetLength(1)
+    let maxRows = mapAntennas.MaxRow
+    let maxCols = mapAntennas.MaxCol
 
     let rAntennas =
         [for comb in combinations do
             let pair = comb |> Array.ofList
             let (fromFirst, fromSecond) = mirror pair[0].Position pair[1].Position
             if inBoundaries fromFirst maxRows maxCols then
-                let value = antennaMap[fromFirst.Row, fromFirst.Col]
-                if value = '.' then
-                    antennaMap[fromFirst.Row, fromFirst.Col] <- '#'
-                else
-                    antennaMap[fromFirst.Row, fromFirst.Col] <- '@'
-                if antennaMap[fromFirst.Row, fromFirst.Col] = '#' || antennaMap[fromFirst.Row, fromFirst.Col] = '@' then
-                    yield fromFirst
+                yield fromFirst
             if inBoundaries fromSecond maxRows maxCols then
-                let value = antennaMap[fromSecond.Row, fromSecond.Col]
-                if value = '.' then
-                    antennaMap[fromSecond.Row, fromSecond.Col] <- '#'
-                else
-                    antennaMap[fromSecond.Row, fromSecond.Col] <- '@'
-                if antennaMap[fromSecond.Row, fromSecond.Col] = '#' || antennaMap[fromSecond.Row, fromSecond.Col] = '@' then
-                    yield fromSecond
+                yield fromSecond
     ]
     rAntennas
     
