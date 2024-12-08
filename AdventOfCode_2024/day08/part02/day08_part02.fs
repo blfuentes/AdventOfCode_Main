@@ -44,30 +44,30 @@ let calculateAntinode (antennas: Antenna list) (mapAntenna: AntennaMap) =
     let combinations = Utilities.combination 2 antennas
     let maxRows, maxCols = mapAntenna.MaxRow, mapAntenna.MaxCol
     
+    // Add antennas for the specific radius until the radius is out of range
+    let rec generatePositions coordA coordB currentAntennas antennaRadius fOutOfRange sOutOfRange =
+        if fOutOfRange && sOutOfRange then
+            currentAntennas
+        else
+            let mirrorA, mirrorB = mirroredForRep coordA coordB antennaRadius
+            let (newAntennas, newfOutOfRange) = 
+                if not fOutOfRange && inBoundaries mirrorA maxRows maxCols then
+                    (mirrorA :: currentAntennas, false)
+                else
+                    (currentAntennas, true)
+            
+            let (newAntenas, newsOutOfRange) = 
+                if not sOutOfRange && inBoundaries mirrorB maxRows maxCols then
+                    (mirrorB :: newAntennas, false)
+                else
+                    (newAntennas, true)
+            
+            generatePositions coordA coordB newAntenas (antennaRadius + 1) newfOutOfRange newsOutOfRange
+
     combinations
     |> List.collect (fun comb ->
         // Add the initial antennas
         let initialPositions = [comb.Item(0).Position; comb.Item(1).Position]
-        
-        // Add antennas for the specific radius until the radius is out of range
-        let rec generatePositions coordA coordB currentAntennas antennaRadius fOutOfRange sOutOfRange =
-            if fOutOfRange && sOutOfRange then
-                currentAntennas
-            else
-                let mirrorA, mirrorB = mirroredForRep coordA coordB antennaRadius
-                let (newAntennas, newfOutOfRange) = 
-                    if not fOutOfRange && inBoundaries mirrorA maxRows maxCols then
-                        (mirrorA :: currentAntennas, false)
-                    else
-                        (currentAntennas, true)
-                
-                let (newAntenas, newsOutOfRange) = 
-                    if not sOutOfRange && inBoundaries mirrorB maxRows maxCols then
-                        (mirrorB :: newAntennas, false)
-                    else
-                        (newAntennas, true)
-                
-                generatePositions coordA coordB newAntenas (antennaRadius + 1) newfOutOfRange newsOutOfRange
 
         // Call initial case                    
         generatePositions (comb.Item(0).Position) (comb.Item(1).Position) initialPositions 1 false false
