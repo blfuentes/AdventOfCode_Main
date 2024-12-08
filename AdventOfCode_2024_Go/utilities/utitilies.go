@@ -116,6 +116,24 @@ func IsInBoundaries(row, col, maxrows, maxcols int) bool {
 	return row >= 0 && row < maxrows && col >= 0 && col < maxcols
 }
 
+func Combinations[T any](list []T, size int) [][]T {
+	var combs [][]T
+	var generate func([]T, int, []T)
+	generate = func(current []T, start int, combination []T) {
+		if len(combination) == size {
+			comb := make([]T, size)
+			copy(comb, combination)
+			combs = append(combs, comb)
+			return
+		}
+		for i := start; i < len(current); i++ {
+			generate(current, i+1, append(combination, current[i]))
+		}
+	}
+	generate(list, 0, []T{})
+	return combs
+}
+
 type Int64Array []int64
 
 func (a Int64Array) Len() int           { return len(a) }

@@ -362,7 +362,7 @@ https://adventofcode.com/2024
 | Day 5   | ✔️ [F#](./AdventOfCode_2024/day05/part01/day05_part01.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_1.go) | ✔️ [F#](./AdventOfCode_2024/day05/part02/day05_part02.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_2.go) |
 | Day 6   | ✔️ [F#](./AdventOfCode_2024/day06/part01/day06_part01.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_1.go) | ✔️ [F#](./AdventOfCode_2024/day06/part02/day06_part02.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_2.go) |
 | Day 7   | ✔️ [F#](./AdventOfCode_2024/day07/part01/day07_part01.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_1.go) | ✔️ [F#](./AdventOfCode_2024/day07/part02/day07_part02.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_2.go) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) |
+| Day 8   | ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_1.go) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_2.go) |
 | Day 9   | ❌  | ❌ |
 | Day 10  | ❌  | ❌ |
 | Day 11  | ❌  | ❌ |
