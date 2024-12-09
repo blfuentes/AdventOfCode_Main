@@ -49,7 +49,7 @@ func compactFiles2(files *[]DiskFile) []DiskFile {
 		} else {
 			fileIdx--
 		}
-		for gapIdx = 0; gapIdx < len(*files); gapIdx++ {
+		for gapIdx = 0; gapIdx < fileIdx; gapIdx++ {
 			if (*files)[gapIdx].Space > 0 {
 				break
 			}
