@@ -25,36 +25,45 @@ func buildChecksum(files *[]DiskFile) int64 {
 }
 
 func compactFiles2(files *[]DiskFile) []DiskFile {
-	fileIdx := len((*files)) - 1
+	fileList := *files
+	fileIdx := len(fileList) - 1
 	gapIdx := 0
-	firstgap := 0
+	firstGap := 0
+
 	for fileIdx > gapIdx {
-		if (*files)[fileIdx].FileId != -1 {
-			for gapIdx < fileIdx && ((*files)[gapIdx].FileId != -1 || (*files)[gapIdx].Space < (*files)[fileIdx].Space) {
+		if fileList[fileIdx].FileId != -1 {
+			for gapIdx < fileIdx && (fileList[gapIdx].FileId != -1 || fileList[gapIdx].Space < fileList[fileIdx].Space) {
 				gapIdx++
 			}
+
 			if gapIdx < fileIdx {
-				insertedFiles := DiskFile{(*files)[fileIdx].FileId, (*files)[fileIdx].Space}
-				(*files)[gapIdx].Space -= (*files)[fileIdx].Space
+				insertedFile := DiskFile{FileId: fileList[fileIdx].FileId, Space: fileList[fileIdx].Space}
+				fileList[gapIdx].Space -= fileList[fileIdx].Space
 
-				(*files) = utilities.InsertElementAt(gapIdx, insertedFiles, *files)
+				fileList = append(fileList[:gapIdx+1], fileList[gapIdx:]...)
+				fileList[gapIdx] = insertedFile
 
-				(*files)[fileIdx+1].FileId = -1
+				fileList[fileIdx+1].FileId = -1
 				delPos := gapIdx + 1
-				if (*files)[delPos].Space == 0 {
-					(*files) = utilities.DeleteElementAt(delPos, *files)
+				if fileList[delPos].Space == 0 {
+					fileList = append(fileList[:delPos], fileList[delPos+1:]...)
 				}
 			}
 		}
+
 		fileIdx--
-		for gapIdx = firstgap; gapIdx < fileIdx; gapIdx++ {
-			if (*files)[gapIdx].Space > 0 && (*files)[gapIdx].FileId == -1 {
-				firstgap = gapIdx
-				break
+
+		if gapIdx != 0 {
+			for gapIdx = firstGap; gapIdx < fileIdx; gapIdx++ {
+				if fileList[gapIdx].Space > 0 && fileList[gapIdx].FileId == -1 {
+					firstGap = gapIdx
+					break
+				}
 			}
 		}
 	}
-	return (*files)
+
+	return fileList
 }
 
 func Executepart2() int {
