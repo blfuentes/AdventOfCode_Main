@@ -2,86 +2,74 @@
 
 open AdventOfCode_2024.Modules
 
-let parseContent(line: string) =
-    let numFiles = (line.Length + 1) / 2
-    let files = Array.zeroCreate numFiles
-    let freefiles = Array.zeroCreate (numFiles - 1)
-    for fIdx in 0..numFiles-1 do
-        files[fIdx] <- (int)(line[2*fIdx].ToString())
-        if fIdx < numFiles - 1 then
-            freefiles[fIdx] <- (int)(line[2*fIdx+1].ToString())
-    (files, freefiles)
+type DiskFile = {
+    mutable FileId: int;
+    mutable Space: int;
+}
 
-let buildBlocksAndPositions (numOfBlocks: int) (numOfFiles: int) (files: int array) (freefiles: int array) =
-    let blocks = Array.create numOfBlocks -1
-    let positions = Array.zeroCreate numOfFiles
-    let mutable block = 0
-
-    for fIdx in 0 .. (numOfFiles - 1) do
-        positions[fIdx] <- block
-        for b in block .. block + files[fIdx] - 1 do
-            blocks[b] <- fIdx
-        block <- block + files[fIdx]
-        if fIdx < numOfFiles - 1 then
-            block <- block + freefiles[fIdx]
-    (blocks, positions)    
-
-let countFreeBlocks (blocks: int[]) from =
-    let mutable freeblocks = 0
-    let mutable isdone = false
-    
-    while not isdone do
-        if from + 1 >= blocks.Length || blocks[from + freeblocks] > -1 then
-            isdone <- true
+let parseContent2(line: string) =
+    let mutable fileIdx = 0
+    line.ToCharArray()
+    |> Array.mapi (fun cIdx v ->
+        let size = System.Int32.Parse(string(v))
+        if cIdx % 2 = 0 then
+            let discfile = { FileId = fileIdx; Space = size }
+            fileIdx <- fileIdx + 1
+            discfile
         else
-            freeblocks <- freeblocks + 1
-    
-    freeblocks
+            { FileId = -1; Space = size }
+    )
 
-let gapOfSizeAvailable (blocks: int[]) size position =
-    let mutable block = 0
-    let mutable finished = false
-    let mutable result : int option = None
+let compactFiles (files: DiskFile array) =
+    let mutable fileIdx = files.Length - 1
+    let mutable gapIdx = 0
+    let mutable firstGap = 0
+    let mutable tmpfiles = files
+    while fileIdx > gapIdx do
+        if tmpfiles[fileIdx].FileId <> -1 then
+            while gapIdx < fileIdx && (tmpfiles[gapIdx].FileId <> -1 || tmpfiles[gapIdx].Space < tmpfiles[fileIdx].Space) do
+                gapIdx <- gapIdx + 1
+            if gapIdx < fileIdx then
+                let insertedFile = { FileId = tmpfiles[fileIdx].FileId; Space = tmpfiles[fileIdx].Space }
+                tmpfiles[gapIdx].Space <- tmpfiles[gapIdx].Space - insertedFile.Space
+                
+                let before, after = Array.splitAt gapIdx tmpfiles
+                tmpfiles <- Array.concat [before; [|insertedFile|]; after]
+                
+                tmpfiles[fileIdx+1].FileId <- -1
+            
+                let delPos = gapIdx + 1
+                if tmpfiles[delPos].Space = 0 then
+                    tmpfiles <- tmpfiles |> Array.removeAt delPos
+        fileIdx <- fileIdx - 1
+        if gapIdx <> 0 then
+            gapIdx <- firstGap
+            let mutable exit = false
+            while not exit && gapIdx < fileIdx do
+                if files[gapIdx].FileId = -1 && files[gapIdx].Space > 0 then
+                    firstGap <- gapIdx
+                    exit <- true
+                if not exit then
+                    gapIdx <- gapIdx + 1
+    tmpfiles
 
-    while not finished do
-        if block >= position then
-            finished <- true
-        elif blocks[block] > -1 then
-            block <- block + 1
+let buildChecksum(files: DiskFile array) =
+    files
+    |> Array.filter(fun f -> f.Space > 0)
+    |> Array.collect(fun sub ->
+        Array.init sub.Space (fun _ -> sub.FileId)
+    )  
+    |> Array.indexed
+    |> Array.sumBy(fun (idx, v) -> 
+        if v > 0 then
+            (int64)(idx * v)
         else
-            let numFree = countFreeBlocks blocks block
-            if numFree >= size then
-                result <- Some block
-                finished <- true
-            else
-                block <- block + numFree
-    result
+            (int64)0
+    )
 
 let execute() =
     let path = "day09/day09_input.txt"
     let content = LocalHelper.GetContentFromFile path
-    let numFiles = (content.Length + 1) / 2
-
-    let (files, freefiles) = parseContent content
-    
-    let allfilengths = Array.sum files
-    
-    let blocks = allfilengths + Array.sum freefiles
-    
-    let (initBlocks, fPositions) = 
-        buildBlocksAndPositions blocks numFiles files freefiles
-
-    let blocks = Array.copy initBlocks
-    for fIdx in (numFiles - 1) .. -1 .. 1 do
-        let requiredGapSize = files[fIdx]
-        let filePosition = fPositions[fIdx]
-        match gapOfSizeAvailable blocks requiredGapSize filePosition with
-        | None -> ()
-        | Some firstFree ->
-            for gapIdx in 0 .. requiredGapSize - 1 do
-                blocks[firstFree + gapIdx] <- fIdx
-                blocks[filePosition + gapIdx] <- -1
-
-    blocks
-    |> Array.mapi(fun idx v -> if v = -1 then 0I else (bigint(idx) * bigint.Parse(v.ToString())))
-    |> Array.sum
+    let files = parseContent2 content
+    let compacted = compactFiles files
+    buildChecksum compacted
