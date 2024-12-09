@@ -27,6 +27,7 @@ func buildChecksum(files *[]DiskFile) int64 {
 func compactFiles2(files *[]DiskFile) []DiskFile {
 	fileIdx := len((*files)) - 1
 	gapIdx := 0
+	firstgap := 0
 	for fileIdx > gapIdx {
 		if (*files)[fileIdx].FileId != -1 {
 			for gapIdx < fileIdx && ((*files)[gapIdx].FileId != -1 || (*files)[gapIdx].Space < (*files)[fileIdx].Space) {
@@ -43,14 +44,12 @@ func compactFiles2(files *[]DiskFile) []DiskFile {
 				if (*files)[delPos].Space == 0 {
 					(*files) = utilities.DeleteElementAt(delPos, *files)
 				}
-			} else {
-				fileIdx--
 			}
-		} else {
-			fileIdx--
 		}
-		for gapIdx = 0; gapIdx < fileIdx; gapIdx++ {
-			if (*files)[gapIdx].Space > 0 {
+		fileIdx--
+		for gapIdx = firstgap; gapIdx < fileIdx; gapIdx++ {
+			if (*files)[gapIdx].Space > 0 && (*files)[gapIdx].FileId == -1 {
+				firstgap = gapIdx
 				break
 			}
 		}
