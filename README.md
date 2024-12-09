@@ -13,8 +13,8 @@ https://adventofcode.com/
 - [2021](#2021-f): ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (34/50)
 - [2022](#2022-f): ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (29/50)
 - [2023](#2023-fc): ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (50/50)
-- [2024](#2024-fgo): ⭐⭐⭐⭐⭐⭐⭐ (16/50)
-- Overal: 289/500 (57,8%)
+- [2024](#2024-fgo): ⭐⭐⭐⭐⭐⭐⭐⭐ (18/50)
+- Overal: 291/500 (58,2%)
 
 ## Advent Of Code 2015
 
@@ -351,7 +351,7 @@ https://adventofcode.com/2023
 
 https://adventofcode.com/2024
 
-⭐⭐⭐⭐⭐⭐⭐⭐ (8/25)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐ (9/25)
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
@@ -363,7 +363,7 @@ https://adventofcode.com/2024
 | Day 6   | ✔️ [F#](./AdventOfCode_2024/day06/part01/day06_part01.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_1.go) | ✔️ [F#](./AdventOfCode_2024/day06/part02/day06_part02.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_2.go) |
 | Day 7   | ✔️ [F#](./AdventOfCode_2024/day07/part01/day07_part01.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_1.go) | ✔️ [F#](./AdventOfCode_2024/day07/part02/day07_part02.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_2.go) |
 | Day 8   | ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_1.go) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_2.go) |
-| Day 9   | ❌  | ❌ |
+| Day 9   | ✔️ [F#](./AdventOfCode_2024/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day09/part02/day09_part02.fs) |
 | Day 10  | ❌  | ❌ |
 | Day 11  | ❌  | ❌ |
 | Day 12  | ❌  | ❌ |
