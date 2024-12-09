@@ -1,7 +1,6 @@
 package day09
 
 import (
-	"fmt"
 	"strings"
 
 	"github.com/blfuentes/AdventOfCode_2024_Go/utilities"
@@ -12,15 +11,23 @@ type DiskFile struct {
 	Space  int
 }
 
-func checksum2(files *[]DiskFile) int64 {
-	return 0
+func buildChecksum(files *[]DiskFile) int64 {
+	values := make([]int, 0)
+	for fIdx := 0; fIdx < len(*files); fIdx++ {
+		size := (*files)[fIdx].Space
+		if size > 0 {
+			for sIdx := 0; sIdx < size; sIdx++ {
+				values = append(values, (*files)[fIdx].FileId)
+			}
+		}
+	}
+	return checksum(&values)
 }
 
 func compactFiles2(files *[]DiskFile) []DiskFile {
 	fileIdx := len((*files)) - 1
 	gapIdx := 0
-	firstgap := 0
-	for fileIdx > firstgap {
+	for fileIdx > gapIdx {
 		if (*files)[fileIdx].FileId != -1 {
 			for gapIdx < fileIdx && ((*files)[gapIdx].FileId != -1 || (*files)[gapIdx].Space < (*files)[fileIdx].Space) {
 				gapIdx++
@@ -32,38 +39,35 @@ func compactFiles2(files *[]DiskFile) []DiskFile {
 				(*files) = append((*files)[:gapIdx], append([]DiskFile{insertedFiles}, (*files)[gapIdx:]...)...)
 
 				(*files)[fileIdx+1].FileId = -1
-				if (*files)[gapIdx].Space == 0 {
-
+				delPos := gapIdx + 1
+				if (*files)[delPos].Space == 0 {
+					(*files) = append((*files)[:delPos], (*files)[delPos+1:]...)
 				}
-				gapIdx = 0
 			} else {
 				fileIdx--
-				gapIdx = 0
 			}
 		} else {
 			fileIdx--
 		}
-		for firstgap := 0; firstgap < len(*files); firstgap++ {
-			if (*files)[firstgap].Space > 0 {
+		for gapIdx = 0; gapIdx < len(*files); gapIdx++ {
+			if (*files)[gapIdx].Space > 0 {
 				break
 			}
 		}
 	}
-	return (*files)[:gapIdx]
+	return (*files)
 }
 
 func Executepart2() int {
 	var result int = 0
 
-	// var fileName string = "./day09/day09.txt"
-	var fileName string = "./day09/test_input_09.txt"
+	var fileName string = "./day09/day09.txt"
 
 	if fileContent, err := utilities.ReadFileAsText(fileName); err == nil {
 		fileIdx := 0
 		var tmpIdx int
 		disk := make([]DiskFile, 0)
 		for cIdx, size := range strings.Split(fileContent, "") {
-			// part := make([]int, size)
 			if cIdx%2 == 0 {
 				tmpIdx = fileIdx
 				fileIdx++
@@ -71,14 +75,10 @@ func Executepart2() int {
 				tmpIdx = -1
 			}
 			diskfile := DiskFile{tmpIdx, utilities.StringToInt(size)}
-			// sector := DiskSector{make([]DiskFile, 0)}
-			// sector.Files = append(sector.Files, diskfile)
 			disk = append(disk, diskfile)
 		}
 		compacteddisk := compactFiles2(&disk)
-		// result = int(checksum(&compacteddisk))
-		// fmt.Printf("%s\n", strings.Join(compacteddisk, ""))
-		fmt.Printf("%d\n", len(compacteddisk))
+		result = int(buildChecksum(&compacteddisk))
 	}
 
 	return result
