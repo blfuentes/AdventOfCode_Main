@@ -134,6 +134,14 @@ func Combinations[T any](list []T, size int) [][]T {
 	return combs
 }
 
+func InsertElementAt[T any](pos int, element T, collection []T) []T {
+	return append((collection)[:pos], append([]T{element}, (collection)[pos:]...)...)
+}
+
+func DeleteElementAt[T any](pos int, collection []T) []T {
+	return append((collection)[:pos], (collection)[pos+1:]...)
+}
+
 type Int64Array []int64
 
 func (a Int64Array) Len() int           { return len(a) }

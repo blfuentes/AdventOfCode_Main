@@ -36,12 +36,12 @@ func compactFiles2(files *[]DiskFile) []DiskFile {
 				insertedFiles := DiskFile{(*files)[fileIdx].FileId, (*files)[fileIdx].Space}
 				(*files)[gapIdx].Space -= (*files)[fileIdx].Space
 
-				(*files) = append((*files)[:gapIdx], append([]DiskFile{insertedFiles}, (*files)[gapIdx:]...)...)
+				(*files) = utilities.InsertElementAt(gapIdx, insertedFiles, *files)
 
 				(*files)[fileIdx+1].FileId = -1
 				delPos := gapIdx + 1
 				if (*files)[delPos].Space == 0 {
-					(*files) = append((*files)[:delPos], (*files)[delPos+1:]...)
+					(*files) = utilities.DeleteElementAt(delPos, *files)
 				}
 			} else {
 				fileIdx--
