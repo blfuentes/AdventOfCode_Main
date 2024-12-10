@@ -62,28 +62,25 @@ let isComplete (startNode: Node) (connections: Node list) =
         |> List.map (fun node -> (node.Row, node.Col), node)
         |> Map.ofList
 
-    let rec foundValidTrails (currentNode: Node) (pathSoFar: Set<int * int>) (currentSize: int) =
-        if currentNode.Name = 9 && currentSize = 9 then
+    let rec foundValidTrails (currentNode: Node) =
+        if currentNode.Name = 9 then
             [currentNode]
         else
             match nodeMap.TryFind((currentNode.Row, currentNode.Col)) with
             | Some c ->
                 c.Neighbours
-                |> List.filter (fun neighbor ->
-                    not (pathSoFar.Contains (neighbor.Row, neighbor.Col)) &&
-                    neighbor.Name - currentNode.Name = 1)
-                |> List.collect (fun neighbor ->
-                    foundValidTrails neighbor (pathSoFar.Add (neighbor.Row, neighbor.Col)) (currentSize + 1))
+                |> List.filter (fun neighbor -> neighbor.Name - currentNode.Name = 1)
+                |> List.collect (fun neighbor -> foundValidTrails neighbor)
             | None -> []
-    foundValidTrails startNode (Set.empty.Add (startNode.Row, startNode.Col)) startNode.Name
+    foundValidTrails startNode
 
 
 let execute() =
     let path = "day10/day10_input.txt"
     let content = LocalHelper.GetLinesFromFile path
-    let map = parseContent content
-    let connections = buildGraph map
-    let heads = findHeads connections
-    heads
+    
+    let connections = 
+        parseContent content |> buildGraph
+    findHeads connections
     |> List.collect (fun h -> isComplete h connections)
     |> List.length
