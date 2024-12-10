@@ -65,7 +65,7 @@ let isComplete (startNode: Node) (connections: Node list) =
     let rec foundValidTrails (currentNode: Node) (pathSoFar: Set<int * int>) (currentSize: int) =
         if currentNode.Name = 9 && currentSize = 9 then
             [currentNode]
-        elif currentNode.Name = currentSize then
+        else
             match nodeMap.TryFind((currentNode.Row, currentNode.Col)) with
             | Some c ->
                 c.Neighbours
@@ -75,10 +75,7 @@ let isComplete (startNode: Node) (connections: Node list) =
                 |> List.collect (fun neighbor ->
                     foundValidTrails neighbor (pathSoFar.Add (neighbor.Row, neighbor.Col)) (currentSize + 1))
             | None -> []
-        else
-            []
-    let trails = foundValidTrails startNode (Set.empty.Add (startNode.Row, startNode.Col)) startNode.Name
-    trails |> List.length
+    foundValidTrails startNode (Set.empty.Add (startNode.Row, startNode.Col)) startNode.Name
 
 
 let execute() =
@@ -88,4 +85,5 @@ let execute() =
     let connections = buildGraph map
     let heads = findHeads connections
     heads
-    |> List.sumBy(fun h -> isComplete h connections)
+    |> List.collect (fun h -> isComplete h connections)
+    |> List.length
