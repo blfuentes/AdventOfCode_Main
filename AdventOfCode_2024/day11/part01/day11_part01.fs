@@ -14,7 +14,7 @@ let mutateStones(stone: int64) =
         [System.Int64.Parse(left); System.Int64.Parse(right)]
     | _ -> [(stone * 2024L)]
 
-let rec runMurations (stones: int64 array) (step: int) =
+let rec runMutations (stones: int64 array) (step: int) =
     if step = 0 then
         stones
     else
@@ -23,11 +23,11 @@ let rec runMurations (stones: int64 array) (step: int) =
                 for stone in stones do
                     yield mutateStones stone
             } |> Seq.concat |> Array.ofSeq
-        runMurations newmutations (step - 1)
+        runMutations newmutations (step - 1)
 
 let execute() =
     let path = "day11/day11_input.txt"
     let content = LocalHelper.GetContentFromFile path
     let stones = parseContent content
-    let mutated = runMurations stones 25
+    let mutated = runMutations stones 25
     mutated.Length

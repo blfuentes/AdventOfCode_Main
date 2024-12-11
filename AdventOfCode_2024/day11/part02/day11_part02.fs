@@ -19,7 +19,7 @@ let parseContent (lines: string) =
     )
     data
 
-let runMurations (stonesdata: Dictionary<int64, int64>) (step: int) =
+let runMutations (stonesdata: Dictionary<int64, int64>) (step: int) =
     let mutable currentStoneData = stonesdata
     [1..step]
     |> List.iter(fun _ ->
@@ -51,6 +51,6 @@ let execute() =
     let path = "day11/day11_input.txt"
     let content = LocalHelper.GetContentFromFile path
     let stones = parseContent content
-    let stoneQuantityData = runMurations stones 75
+    let stoneQuantityData = runMutations stones 75
 
     stoneQuantityData.Values |> Seq.sum

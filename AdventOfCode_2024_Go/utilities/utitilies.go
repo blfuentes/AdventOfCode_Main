@@ -2,6 +2,7 @@ package utilities
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -140,6 +141,40 @@ func InsertElementAt[T any](pos int, element T, collection []T) []T {
 
 func DeleteElementAt[T any](pos int, collection []T) []T {
 	return append((collection)[:pos], (collection)[pos+1:]...)
+}
+
+func SplitNumberInTwo(n int) (int, int) {
+	numDigits := func(n int) int {
+		if n == 0 {
+			return 1
+		}
+		return int(math.Log10(float64(n))) + 1
+	}
+
+	numDigitsCount := numDigits(n)
+	middle := numDigitsCount / 2
+	divisor := int(math.Pow(10, float64(middle)))
+	leftPart := n / divisor
+	rightPart := n % divisor
+
+	return leftPart, rightPart
+}
+
+func SplitNumber64InTwo(n int64) (int64, int64) {
+	numDigits := func(n int64) int {
+		if n == 0 {
+			return 1
+		}
+		return int(math.Log10(float64(n))) + 1
+	}
+
+	numDigitsCount := numDigits(n)
+	middle := numDigitsCount / 2
+	divisor := int64(math.Pow(10, float64(middle)))
+	leftPart := n / divisor
+	rightPart := n % divisor
+
+	return leftPart, rightPart
 }
 
 type Int64Array []int64
