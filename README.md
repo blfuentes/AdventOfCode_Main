@@ -173,31 +173,31 @@ https://adventofcode.com/2019
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2019/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day01/part02/day01_part02.fs) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2019/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day02/part02/day02_part02.fs) |
-| Day 3   | ✔️ [F#](./AdventOfCode_2019/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day03/part02/day03_part02.fs) |
-| Day 4   | ✔️ [F#](./AdventOfCode_2019/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day04/part02/day04_part02.fs) |
-| Day 5   | ✔️ [F#](./AdventOfCode_2019/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day05/part02/day05_part02.fs) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2019/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day06/part02/day06_part02.fs) |
-| Day 7   | ✔️ [F#](./AdventOfCode_2019/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day07/part02/day07_part02.fs) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2019/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day08/part02/day08_part02.fs) |
-| Day 9   | ✔️ [F#](./AdventOfCode_2019/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day09/part02/day09_part02.fs) |
-| Day 10  | ✔️ [F#](./AdventOfCode_2019/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day10/part02/day10_part02.fs) |
-| Day 11  | ✔️ [F#](./AdventOfCode_2019/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day11/part02/day11_part02.fs) |
-| Day 12  | ✔️ [F#](./AdventOfCode_2019/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day12/part02/day12_part02.fs) |
-| Day 13  | ✔️ [F#](./AdventOfCode_2019/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day13/part02/day13_part02.fs) |
-| Day 14  | ✔️ [F#](./AdventOfCode_2019/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day14/part02/day14_part02.fs) |
-| Day 15  | ✔️ [F#](./AdventOfCode_2019/day15/part01/day15_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day15/part02/day15_part02.fs) |
-| Day 16  | ✔️ [F#](./AdventOfCode_2019/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day16/part02/day16_part02.fs) |
-| Day 17  | ❌ | ❌ |
-| Day 18  | ❌ | ❌ |
-| Day 19  | ❌ | ❌ |
-| Day 20  | ❌ | ❌ |
-| Day 21  | ❌ | ❌ |
-| Day 22  | ❌ | ❌ |
-| Day 23  | ❌ | ❌ |
-| Day 24  | ❌ | ❌ |
-| Day 25  | ❌ | ❌ |
+| Day 1: The Tyranny of the Rocket Equation	| ✔️ [F#](./AdventOfCode_2019/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day01/part02/day01_part02.fs) |
+| Day 2: 1202 Program Alarm					| ✔️ [F#](./AdventOfCode_2019/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day02/part02/day02_part02.fs) |
+| Day 3: Crossed Wires						| ✔️ [F#](./AdventOfCode_2019/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day03/part02/day03_part02.fs) |
+| Day 4: Secure Container					| ✔️ [F#](./AdventOfCode_2019/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day04/part02/day04_part02.fs) |
+| Day 5: Sunny with a Chance of Asteroids   | ✔️ [F#](./AdventOfCode_2019/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day05/part02/day05_part02.fs) |
+| Day 6: Universal Orbit Map				| ✔️ [F#](./AdventOfCode_2019/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day06/part02/day06_part02.fs) |
+| Day 7: Amplification Circuit				| ✔️ [F#](./AdventOfCode_2019/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day07/part02/day07_part02.fs) |
+| Day 8: Space Image Format					| ✔️ [F#](./AdventOfCode_2019/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day08/part02/day08_part02.fs) |
+| Day 9: Sensor Boost						| ✔️ [F#](./AdventOfCode_2019/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day09/part02/day09_part02.fs) |
+| Day 10: Monitoring Station				| ✔️ [F#](./AdventOfCode_2019/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day10/part02/day10_part02.fs) |
+| Day 11: Space Police						| ✔️ [F#](./AdventOfCode_2019/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day11/part02/day11_part02.fs) |
+| Day 12: The N-Body Problem				| ✔️ [F#](./AdventOfCode_2019/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day12/part02/day12_part02.fs) |
+| Day 13: Care Package						| ✔️ [F#](./AdventOfCode_2019/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day13/part02/day13_part02.fs) |
+| Day 14: Space Stoichiometry				| ✔️ [F#](./AdventOfCode_2019/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day14/part02/day14_part02.fs) |
+| Day 15: Oxygen System						| ✔️ [F#](./AdventOfCode_2019/day15/part01/day15_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day15/part02/day15_part02.fs) |
+| Day 16: Flawed Frequency Transmission		| ✔️ [F#](./AdventOfCode_2019/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day16/part02/day16_part02.fs) |
+| Day 17: Set and Forget					| ❌ | ❌ |
+| Day 18: Many-Worlds Interpretation		| ❌ | ❌ |
+| Day 19: Tractor Beam						| ❌ | ❌ |
+| Day 20: Donut Maze						| ❌ | ❌ |
+| Day 21: Springdroid Adventure				| ❌ | ❌ |
+| Day 22: Slam Shuffle						| ❌ | ❌ |
+| Day 23: Category Six						| ❌ | ❌ |
+| Day 24: Planet of Discord					| ❌ | ❌ |
+| Day 25: Cryostasis						| ❌ | ❌ |
 
 ## Advent Of Code 2020
 #### 2020 F#
