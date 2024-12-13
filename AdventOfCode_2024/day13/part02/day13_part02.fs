@@ -3,6 +3,7 @@
 open AdventOfCode_2024.Modules
 open System.Text.RegularExpressions
 open AdventOfCode_Utilities
+open Microsoft.Z3
 
 type Push = {
     Name: string;
@@ -52,6 +53,34 @@ let solveEcuation (ecuation: Combination) =
         Some(mulA, mulB)
     else
         None
+
+// Just for curiosity...
+let solveZ3 (ecuation: Combination) =
+    let cfg = System.Collections.Generic.Dictionary()
+    cfg.Add("model", "true")
+    use ctx = new Context(cfg)
+
+    let x = ctx.MkIntConst("X")
+    let y = ctx.MkIntConst("Y")
+
+    let ax, ay = ecuation.ButtonA.X, ecuation.ButtonA.Y
+    let bx, by = ecuation.ButtonB.X, ecuation.ButtonB.Y
+    let rx, ry = ecuation.ResultX, ecuation.ResultY
+
+    let eq1 = ctx.MkEq(ctx.MkAdd(ctx.MkMul(ctx.MkInt(ax), x), ctx.MkMul(ctx.MkInt(bx), y)), ctx.MkInt(rx))
+    let eq2 = ctx.MkEq(ctx.MkAdd(ctx.MkMul(ctx.MkInt(ay), x), ctx.MkMul(ctx.MkInt(by), y)), ctx.MkInt(ry))
+
+    use solver = ctx.MkSolver()
+    solver.Add(eq1)
+    solver.Add(eq2)
+
+    match solver.Check() with
+    | Status.SATISFIABLE ->
+        let model = solver.Model
+        let valueA = model.Eval(x, true).ToString() |> int64
+        let valueB = model.Eval(y, true).ToString() |> int64
+        Some(valueA, valueB)
+    | _ -> None
 
 let execute() =
     let path = "day13/day13_input.txt"
