@@ -1,7 +1,6 @@
 package day12
 
 import (
-	"fmt"
 	"strings"
 
 	"github.com/blfuentes/AdventOfCode_2024_Go/utilities"
@@ -30,19 +29,22 @@ func nextPosition(movDir Direction, position Coord) Coord {
 	return Coord{}
 }
 
-func growDimension(region, visitedSoFar map[Coord]struct{}, movDir Direction, point Coord) map[Coord]struct{} {
-	var nextPoint Coord
+func getPerpendicularDir(movDir Direction) Direction {
 	if movDir == Up || movDir == Down {
-		nextPoint = nextPosition(Right, point)
-	} else {
-		nextPoint = nextPosition(Down, point)
+		return Right
 	}
+	return Down
+}
+
+func growDimension(region, visitedSoFar map[Coord]struct{}, movDir Direction, point Coord) map[Coord]struct{} {
+	nextPoint := nextPosition(getPerpendicularDir(movDir), point)
 
 	if _, ok := region[nextPoint]; ok {
 		secondStep := nextPosition(movDir, nextPoint)
-		if _, ok := region[secondStep]; !ok {
-			visitedSoFar[point] = struct{}{}
-			return growDimension(region, visitedSoFar, movDir, nextPoint)
+		if _, seen := region[secondStep]; !seen {
+			newVisited := copyMap(visitedSoFar)
+			newVisited[point] = struct{}{}
+			return growDimension(region, newVisited, movDir, nextPoint)
 		}
 	}
 	visitedSoFar[point] = struct{}{}
@@ -55,45 +57,46 @@ func consumeRegion(name string, movDir Direction, region, visited map[Coord]stru
 	}
 
 	currentPoint := regionPoints[0]
-	restPoints := regionPoints[1:]
+	restPoints := make([]Coord, 0)
+	restPoints = append(restPoints, regionPoints[1:]...)
+
 	if _, ok := visited[currentPoint]; ok {
 		return consumeRegion(name, movDir, region, visited, restPoints, numOfSides)
 	}
 
 	nextPoint := nextPosition(movDir, currentPoint)
-	if _, ok := region[nextPoint]; ok {
-		visited[currentPoint] = struct{}{}
-		return consumeRegion(name, movDir, region, visited, restPoints, numOfSides)
-	}
 
+	if _, ok := region[nextPoint]; ok {
+		newVisited := copyMap(visited)
+		newVisited[currentPoint] = struct{}{}
+		return consumeRegion(name, movDir, region, newVisited, restPoints, numOfSides)
+	}
 	newVisited := growDimension(region, visited, movDir, currentPoint)
 	numOfSides++
-	fmt.Printf("visited: %v\n", newVisited)
-	fmt.Printf("New side for %v at %v\n", name, currentPoint)
 	return consumeRegion(name, movDir, region, newVisited, restPoints, numOfSides)
 }
 
 func exploreRegion(region Region) (sides int) {
-	for _, dir := range []Direction{Up, Down, Right, Left} {
+	directions := []Direction{Up, Right, Down, Left}
+
+	for _, dir := range directions {
 		regionMap := make(map[Coord]struct{})
 		for _, p := range region.Points {
 			regionMap[p] = struct{}{}
-
 		}
-		sides += consumeRegion(region.Name, dir, regionMap, make(map[Coord]struct{}), region.Points, 0)
+		regionPoints := append([]Coord{}, orderPointsByRowCol(region.Points)...)
+		sides += consumeRegion(region.Name, dir, regionMap, make(map[Coord]struct{}), regionPoints, 0)
 	}
+
 	return
 }
 
 func Executepart2() int {
 	var result int = 0
 
-	// var fileName string = "./day12/day12.txt"
-
-	var fileName string = "./day12/test_input_12.txt"
+	var fileName string = "./day12/day12.txt"
 
 	if fileContent, err := utilities.ReadFileAsLines(fileName); err == nil {
-		// result = len(fileContent)
 		garden := make([][]string, 0)
 		for _, line := range fileContent {
 			garden = append(garden, strings.Split(line, ""))
@@ -103,7 +106,6 @@ func Executepart2() int {
 		for _, reg := range regions {
 			sides := exploreRegion(reg)
 			result += reg.Size * sides
-			fmt.Printf("Region %v - Size %v - Sides %v\n", reg.Name, reg.Size, sides)
 		}
 	}
 

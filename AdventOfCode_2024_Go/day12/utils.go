@@ -1,6 +1,10 @@
 package day12
 
-import "github.com/blfuentes/AdventOfCode_2024_Go/utilities"
+import (
+	"sort"
+
+	"github.com/blfuentes/AdventOfCode_2024_Go/utilities"
+)
 
 type Coord struct {
 	Row int
@@ -10,6 +14,24 @@ type Region struct {
 	Name   string
 	Size   int
 	Points []Coord
+}
+
+func copyMap(original map[Coord]struct{}) map[Coord]struct{} {
+	copy := make(map[Coord]struct{}, len(original))
+	for k, v := range original {
+		copy[k] = v
+	}
+	return copy
+}
+
+func orderPointsByRowCol(points []Coord) []Coord {
+	sort.Slice(points, func(row, col int) bool {
+		if points[row].Row != points[col].Row {
+			return points[row].Row < points[col].Row
+		}
+		return points[row].Col < points[col].Col
+	})
+	return points
 }
 
 func neighbours(point Coord) []Coord {
