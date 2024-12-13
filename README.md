@@ -245,31 +245,31 @@ https://adventofcode.com/2021
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2021/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day01/part02/day01_part02.fs) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2021/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day02/part02/day02_part02.fs) |
-| Day 3   | ✔️ [F#](./AdventOfCode_2021/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day03/part02/day03_part02.fs) |
-| Day 4   | ✔️ [F#](./AdventOfCode_2021/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day04/part02/day04_part02.fs) |
-| Day 5   | ✔️ [F#](./AdventOfCode_2021/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day05/part02/day05_part02.fs) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2021/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day06/part02/day06_part02.fs) |
-| Day 7   | ✔️ [F#](./AdventOfCode_2021/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day07/part02/day07_part02.fs) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2021/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day08/part02/day08_part02.fs) |
-| Day 9   | ✔️ [F#](./AdventOfCode_2021/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day09/part02/day09_part02.fs) |
-| Day 10  | ✔️ [F#](./AdventOfCode_2021/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day10/part02/day10_part02.fs) |
-| Day 11  | ✔️ [F#](./AdventOfCode_2021/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day11/part02/day11_part02.fs) |
-| Day 12  | ✔️ [F#](./AdventOfCode_2021/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day12/part02/day12_part02.fs) |
-| Day 13  | ✔️ [F#](./AdventOfCode_2021/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day13/part02/day13_part02.fs) |
-| Day 14  | ✔️ [F#](./AdventOfCode_2021/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day14/part02/day14_part02.fs) |
-| Day 15  | ✔️ [F#](./AdventOfCode_2021/day15/part01/day15_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day15/part02/day15_part02.fs) |
-| Day 16  | ✔️ [F#](./AdventOfCode_2021/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day16/part02/day16_part02.fs) |
-| Day 17  | ✔️ [F#](./AdventOfCode_2021/day17/part01/day17_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day17/part02/day17_part01.fs) |
-| Day 18  | ❌ | ❌ |
-| Day 19  | ❌ | ❌ |
-| Day 20  | ❌ | ❌ |
-| Day 21  | ❌ | ❌ |
-| Day 22  | ❌ | ❌ |
-| Day 23  | ❌ | ❌ |
-| Day 24  | ❌ | ❌ |
-| Day 25  | ❌ | ❌ |
+| Day 1: Sonar Sweep				| ✔️ [F#](./AdventOfCode_2021/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day01/part02/day01_part02.fs) |
+| Day 2: Dive!						| ✔️ [F#](./AdventOfCode_2021/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day02/part02/day02_part02.fs) |
+| Day 3: Binary Diagnosti			| ✔️ [F#](./AdventOfCode_2021/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day03/part02/day03_part02.fs) |
+| Day 4: Giant Squid				| ✔️ [F#](./AdventOfCode_2021/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day04/part02/day04_part02.fs) |
+| Day 5: Hydrothermal Venture		| ✔️ [F#](./AdventOfCode_2021/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day05/part02/day05_part02.fs) |
+| Day 6: Lanternfish				| ✔️ [F#](./AdventOfCode_2021/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day06/part02/day06_part02.fs) |
+| Day 7: The Treachery of Whales	| ✔️ [F#](./AdventOfCode_2021/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day07/part02/day07_part02.fs) |
+| Day 8: Seven Segment Search		| ✔️ [F#](./AdventOfCode_2021/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day08/part02/day08_part02.fs) |
+| Day 9: Smoke Basin				| ✔️ [F#](./AdventOfCode_2021/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day09/part02/day09_part02.fs) |
+| Day 10: Syntax Scoring			| ✔️ [F#](./AdventOfCode_2021/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day10/part02/day10_part02.fs) |
+| Day 11: Dumbo Octopus				| ✔️ [F#](./AdventOfCode_2021/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day11/part02/day11_part02.fs) |
+| Day 12: Passage Pathing			| ✔️ [F#](./AdventOfCode_2021/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day12/part02/day12_part02.fs) |
+| Day 13: Transparent Origami		| ✔️ [F#](./AdventOfCode_2021/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day13/part02/day13_part02.fs) |
+| Day 14: Extended Polymerization	| ✔️ [F#](./AdventOfCode_2021/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day14/part02/day14_part02.fs) |
+| Day 15: Chiton					| ✔️ [F#](./AdventOfCode_2021/day15/part01/day15_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day15/part02/day15_part02.fs) |
+| Day 16: Packet Decoder			| ✔️ [F#](./AdventOfCode_2021/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day16/part02/day16_part02.fs) |
+| Day 17: Trick Shot				| ✔️ [F#](./AdventOfCode_2021/day17/part01/day17_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day17/part02/day17_part01.fs) |
+| Day 18: Snailfish					| ❌ | ❌ |
+| Day 19: Beacon Scanner			| ❌ | ❌ |
+| Day 20: Trench Map				| ❌ | ❌ |
+| Day 21: Dirac Dice				| ❌ | ❌ |
+| Day 22: Reactor Reboot			| ❌ | ❌ |
+| Day 23: Amphipod					| ❌ | ❌ |
+| Day 24: Arithmetic Logic Unit		| ❌ | ❌ |
+| Day 25: Sea Cucumber				| ❌ | ❌ |
 
 ## Advent Of Code 2022
 ### 2022 F#
