@@ -36,18 +36,17 @@ func getPerpendicularDir(movDir Direction) Direction {
 	return Down
 }
 
-func growDimension(region, visitedSoFar map[Coord]struct{}, movDir Direction, point Coord) map[Coord]struct{} {
+func growDimension(region map[Coord]struct{}, visitedSoFar *map[Coord]struct{}, movDir Direction, point Coord) {
 	nextPoint := nextPosition(getPerpendicularDir(movDir), point)
 
 	if _, ok := region[nextPoint]; ok {
 		secondStep := nextPosition(movDir, nextPoint)
 		if _, seen := region[secondStep]; !seen {
-			visitedSoFar[point] = struct{}{}
-			return growDimension(region, visitedSoFar, movDir, nextPoint)
+			(*visitedSoFar)[point] = struct{}{}
+			growDimension(region, visitedSoFar, movDir, nextPoint)
 		}
 	}
-	visitedSoFar[point] = struct{}{}
-	return visitedSoFar
+	(*visitedSoFar)[point] = struct{}{}
 }
 
 func consumeRegion(name string, movDir Direction, region, visited map[Coord]struct{}, regionPoints []Coord, numOfSides int) int {
@@ -68,9 +67,8 @@ func consumeRegion(name string, movDir Direction, region, visited map[Coord]stru
 		visited[currentPoint] = struct{}{}
 		return consumeRegion(name, movDir, region, visited, restPoints, numOfSides)
 	}
-	newVisited := growDimension(region, visited, movDir, currentPoint)
-	numOfSides++
-	return consumeRegion(name, movDir, region, newVisited, restPoints, numOfSides)
+	growDimension(region, &visited, movDir, currentPoint)
+	return consumeRegion(name, movDir, region, visited, restPoints, numOfSides+1)
 }
 
 func exploreRegion(region Region) (sides int) {
