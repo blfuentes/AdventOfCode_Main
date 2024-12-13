@@ -64,31 +64,31 @@ https://adventofcode.com/2016
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2016/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day01/part02/day01_part02.fs) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2016/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day02/part02/day02_part02.fs) |
-| Day 3   | ✔️ [F#](./AdventOfCode_2016/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day03/part02/day03_part02.fs) |
-| Day 4   | ✔️ [F#](./AdventOfCode_2016/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day04/part02/day04_part02.fs) |
-| Day 5   | ✔️ [F#](./AdventOfCode_2016/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day05/part02/day05_part02.fs) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2016/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day06/part02/day06_part02.fs) |
-| Day 7   | ✔️ [F#](./AdventOfCode_2016/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day07/part02/day07_part02.fs) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2016/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day08/part02/day08_part02.fs) |
-| Day 9   | ✔️ [F#](./AdventOfCode_2016/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day09/part02/day09_part02.fs) |
-| Day 10  | ✔️ [F#](./AdventOfCode_2016/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day10/part02/day10_part02.fs) |
-| Day 11  | ❌ | ❌ |
-| Day 12  | ✔️ [F#](./AdventOfCode_2016/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day12/part02/day12_part02.fs) |
-| Day 13  | ❌ | ❌ |
-| Day 14  | ❌ | ❌ |
-| Day 15  | ❌ | ❌ |
-| Day 16  | ❌ | ❌ |
-| Day 17  | ❌ | ❌ |
-| Day 18  | ❌ | ❌ |
-| Day 19  | ❌ | ❌ |
-| Day 20  | ❌ | ❌ |
-| Day 21  | ❌ | ❌ |
-| Day 22  | ❌ | ❌ |
-| Day 23  | ❌ | ❌ |
-| Day 24  | ❌ | ❌ |
-| Day 25  | ❌ | ❌ |
+| Day 1: No Time for a Taxicab						| ✔️ [F#](./AdventOfCode_2016/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day01/part02/day01_part02.fs) |
+| Day 2: Bathroom Security							| ✔️ [F#](./AdventOfCode_2016/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day02/part02/day02_part02.fs) |
+| Day 3: Squares With Three Sides					| ✔️ [F#](./AdventOfCode_2016/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day03/part02/day03_part02.fs) |
+| Day 4: Security Through Obscurity					| ✔️ [F#](./AdventOfCode_2016/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day04/part02/day04_part02.fs) |
+| Day 5: How About a Nice Game of Chess?			| ✔️ [F#](./AdventOfCode_2016/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day05/part02/day05_part02.fs) |
+| Day 6: Signals and Noise							| ✔️ [F#](./AdventOfCode_2016/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day06/part02/day06_part02.fs) |
+| Day 7: Internet Protocol Version 7				| ✔️ [F#](./AdventOfCode_2016/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day07/part02/day07_part02.fs) |
+| Day 8: Two-Factor Authentication					| ✔️ [F#](./AdventOfCode_2016/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day08/part02/day08_part02.fs) |
+| Day 9: Explosives in Cyberspace					| ✔️ [F#](./AdventOfCode_2016/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day09/part02/day09_part02.fs) |
+| Day 10: Balance Bots								| ✔️ [F#](./AdventOfCode_2016/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day10/part02/day10_part02.fs) |
+| Day 11: Radioisotope Thermoelectric Generators	| ❌ | ❌ |
+| Day 12: Leonardo's Monorail						| ✔️ [F#](./AdventOfCode_2016/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day12/part02/day12_part02.fs) |
+| Day 13: A Maze of Twisty Little Cubicles			| ❌ | ❌ |
+| Day 14: One-Time Pad								| ❌ | ❌ |
+| Day 15: Timing is Everything						| ❌ | ❌ |
+| Day 16: Dragon Checksum							| ❌ | ❌ |
+| Day 17: Two Steps Forward							| ❌ | ❌ |
+| Day 18: Like a Rogue								| ❌ | ❌ |
+| Day 19: An Elephant Named Joseph					| ❌ | ❌ |
+| Day 20: Firewall Rules							| ❌ | ❌ |
+| Day 21: Scrambled Letters and Hash				| ❌ | ❌ |
+| Day 22: Grid Computing							| ❌ | ❌ |
+| Day 23: Safe Cracking								| ❌ | ❌ |
+| Day 24: Air Duct Spelunking						| ❌ | ❌ |
+| Day 25: Clock Signal								| ❌ | ❌ |
 
 
 ## Advent Of Code 2017
