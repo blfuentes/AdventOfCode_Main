@@ -42,9 +42,8 @@ func growDimension(region, visitedSoFar map[Coord]struct{}, movDir Direction, po
 	if _, ok := region[nextPoint]; ok {
 		secondStep := nextPosition(movDir, nextPoint)
 		if _, seen := region[secondStep]; !seen {
-			newVisited := copyMap(visitedSoFar)
-			newVisited[point] = struct{}{}
-			return growDimension(region, newVisited, movDir, nextPoint)
+			visitedSoFar[point] = struct{}{}
+			return growDimension(region, visitedSoFar, movDir, nextPoint)
 		}
 	}
 	visitedSoFar[point] = struct{}{}
@@ -57,8 +56,7 @@ func consumeRegion(name string, movDir Direction, region, visited map[Coord]stru
 	}
 
 	currentPoint := regionPoints[0]
-	restPoints := make([]Coord, 0)
-	restPoints = append(restPoints, regionPoints[1:]...)
+	restPoints := regionPoints[1:]
 
 	if _, ok := visited[currentPoint]; ok {
 		return consumeRegion(name, movDir, region, visited, restPoints, numOfSides)
@@ -67,9 +65,8 @@ func consumeRegion(name string, movDir Direction, region, visited map[Coord]stru
 	nextPoint := nextPosition(movDir, currentPoint)
 
 	if _, ok := region[nextPoint]; ok {
-		newVisited := copyMap(visited)
-		newVisited[currentPoint] = struct{}{}
-		return consumeRegion(name, movDir, region, newVisited, restPoints, numOfSides)
+		visited[currentPoint] = struct{}{}
+		return consumeRegion(name, movDir, region, visited, restPoints, numOfSides)
 	}
 	newVisited := growDimension(region, visited, movDir, currentPoint)
 	numOfSides++
@@ -84,8 +81,7 @@ func exploreRegion(region Region) (sides int) {
 		for _, p := range region.Points {
 			regionMap[p] = struct{}{}
 		}
-		regionPoints := append([]Coord{}, orderPointsByRowCol(region.Points)...)
-		sides += consumeRegion(region.Name, dir, regionMap, make(map[Coord]struct{}), regionPoints, 0)
+		sides += consumeRegion(region.Name, dir, regionMap, make(map[Coord]struct{}), orderPointsByRowCol(region.Points), 0)
 	}
 
 	return
