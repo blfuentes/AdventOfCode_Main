@@ -101,31 +101,31 @@ https://adventofcode.com/2017
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2017/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day01/part02/day01_part02.fs) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2017/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day02/part02/day02_part02.fs) |
-| Day 3   | ✔️ [F#](./AdventOfCode_2017/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day03/part02/day03_part02.fs) |
-| Day 4   | ✔️ [F#](./AdventOfCode_2017/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day04/part02/day04_part02.fs) |
-| Day 5   | ✔️ [F#](./AdventOfCode_2017/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day05/part02/day05_part02.fs) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2017/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day06/part02/day06_part02.fs) |
-| Day 7   | ✔️ [F#](./AdventOfCode_2017/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day07/part02/day07_part02.fs) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2017/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day08/part02/day08_part02.fs) |
-| Day 9   | ✔️ [F#](./AdventOfCode_2017/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day09/part02/day09_part02.fs) |
-| Day 10  | ✔️ [F#](./AdventOfCode_2017/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day10/part02/day10_part02.fs) |
-| Day 11  | ✔️ [F#](./AdventOfCode_2017/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day11/part02/day11_part02.fs) |
-| Day 12  | ❌ | ❌ |
-| Day 13  | ❌ | ❌ |
-| Day 14  | ❌ | ❌ |
-| Day 15  | ❌ | ❌ |
-| Day 16  | ❌ | ❌ |
-| Day 17  | ❌ | ❌ |
-| Day 18  | ❌ | ❌ |
-| Day 19  | ❌ | ❌ |
-| Day 20  | ❌ | ❌ |
-| Day 21  | ❌ | ❌ |
-| Day 22  | ❌ | ❌ |
-| Day 23  | ❌ | ❌ |
-| Day 24  | ❌ | ❌ |
-| Day 25  | ❌ | ❌ |
+| Day 1: Inverse Captcha							| ✔️ [F#](./AdventOfCode_2017/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day01/part02/day01_part02.fs) |
+| Day 2: Corruption Checksum						| ✔️ [F#](./AdventOfCode_2017/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day02/part02/day02_part02.fs) |
+| Day 3: Spiral Memory								| ✔️ [F#](./AdventOfCode_2017/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day03/part02/day03_part02.fs) |
+| Day 4: High-Entropy Passphrases					| ✔️ [F#](./AdventOfCode_2017/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day04/part02/day04_part02.fs) |
+| Day 5: A Maze of Twisty Trampolines, All Alike	| ✔️ [F#](./AdventOfCode_2017/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day05/part02/day05_part02.fs) |
+| Day 6: Memory Reallocation						| ✔️ [F#](./AdventOfCode_2017/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day06/part02/day06_part02.fs) |
+| Day 7: Recursive Circus							| ✔️ [F#](./AdventOfCode_2017/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day07/part02/day07_part02.fs) |
+| Day 8: I Heard You Like Registers					| ✔️ [F#](./AdventOfCode_2017/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day08/part02/day08_part02.fs) |
+| Day 9: Stream Processing							| ✔️ [F#](./AdventOfCode_2017/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day09/part02/day09_part02.fs) |
+| Day 10: Knot Hash									| ✔️ [F#](./AdventOfCode_2017/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day10/part02/day10_part02.fs) |
+| Day 11: Hex Ed									| ✔️ [F#](./AdventOfCode_2017/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day11/part02/day11_part02.fs) |
+| Day 12: Digital Plumber							| ❌ | ❌ |
+| Day 13: Packet Scanners							| ❌ | ❌ |
+| Day 14: Disk Defragmentation						| ❌ | ❌ |
+| Day 15: Dueling Generators						| ❌ | ❌ |
+| Day 16: Permutation Promenade						| ❌ | ❌ |
+| Day 17: Spinlock									| ❌ | ❌ |
+| Day 18: Duet										| ❌ | ❌ |
+| Day 19: A Series of Tubes							| ❌ | ❌ |
+| Day 20: Particle Swarm							| ❌ | ❌ |
+| Day 21: Fractal Art								| ❌ | ❌ |
+| Day 22: Sporifica Virus							| ❌ | ❌ |
+| Day 23: Coprocessor Conflagration					| ❌ | ❌ |
+| Day 24: Electromagnetic Moat						| ❌ | ❌ |
+| Day 25: The Halting Problem						| ❌ | ❌ |
 
 ## Advent Of Code 2018
 ### 2018 F#/Typescript
