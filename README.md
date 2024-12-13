@@ -281,31 +281,31 @@ https://adventofcode.com/2022
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2022/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day01/part02/day01_part02.fs) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2022/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day02/part02/day02_part02.fs) |
-| Day 3   | ✔️ [F#](./AdventOfCode_2022/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day03/part02/day03_part02.fs) |
-| Day 4   | ✔️ [F#](./AdventOfCode_2022/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day04/part02/day04_part02.fs) |
-| Day 5   | ✔️ [F#](./AdventOfCode_2022/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day05/part02/day05_part02.fs) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2022/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day06/part02/day06_part02.fs) |
-| Day 7   | ✔️ [F#](./AdventOfCode_2022/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day07/part02/day07_part02.fs) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2022/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day08/part02/day08_part02.fs) |
-| Day 9   | ✔️ [F#](./AdventOfCode_2022/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day09/part02/day09_part02.fs) |
-| Day 10  | ✔️ [F#](./AdventOfCode_2022/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day10/part02/day10_part02.fs) |
-| Day 11  | ✔️ [F#](./AdventOfCode_2022/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day11/part02/day11_part02.fs) |
-| Day 12  | ✔️ [F#](./AdventOfCode_2022/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day12/part02/day12_part02.fs) |
-| Day 13  | ✔️ [F#](./AdventOfCode_2022/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day13/part02/day13_part02.fs) |
-| Day 14  | ✔️ [F#](./AdventOfCode_2022/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day14/part02/day14_part02.fs) |
-| Day 15  | ❌ | ❌ |
-| Day 16  | ❌ | ❌ |
-| Day 17  | ❌ | ❌ |
-| Day 18  | ❌ | ❌ |
-| Day 19  | ❌ | ❌ |
-| Day 20  | ❌ | ❌ |
-| Day 21  | ❌ | ❌ |
-| Day 22  | ❌ | ❌ |
-| Day 23  | ❌ | ❌ |
-| Day 24  | ❌ | ❌ |
-| Day 25  | ✔️ [F#](./AdventOfCode_2022/day25/part01/day25_part01.fs) | ❌ |
+| Day 1: Calorie Counting			| ✔️ [F#](./AdventOfCode_2022/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day01/part02/day01_part02.fs) |
+| Day 2: Rock Paper Scissors		| ✔️ [F#](./AdventOfCode_2022/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day02/part02/day02_part02.fs) |
+| Day 3: Rucksack Reorganization	| ✔️ [F#](./AdventOfCode_2022/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day03/part02/day03_part02.fs) |
+| Day 4: Camp Cleanup				| ✔️ [F#](./AdventOfCode_2022/day04/part01/day04_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day04/part02/day04_part02.fs) |
+| Day 5: Supply Stacks				| ✔️ [F#](./AdventOfCode_2022/day05/part01/day05_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day05/part02/day05_part02.fs) |
+| Day 6: Tuning Trouble				| ✔️ [F#](./AdventOfCode_2022/day06/part01/day06_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day06/part02/day06_part02.fs) |
+| Day 7: No Space Left On Device	| ✔️ [F#](./AdventOfCode_2022/day07/part01/day07_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day07/part02/day07_part02.fs) |
+| Day 8: Treetop Tree House			| ✔️ [F#](./AdventOfCode_2022/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day08/part02/day08_part02.fs) |
+| Day 9: Rope Bridge				| ✔️ [F#](./AdventOfCode_2022/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day09/part02/day09_part02.fs) |
+| Day 10: Cathode-Ray Tube			| ✔️ [F#](./AdventOfCode_2022/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day10/part02/day10_part02.fs) |
+| Day 11: Monkey in the Middle		| ✔️ [F#](./AdventOfCode_2022/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day11/part02/day11_part02.fs) |
+| Day 12: Hill Climbing Algorithm	| ✔️ [F#](./AdventOfCode_2022/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day12/part02/day12_part02.fs) |
+| Day 13: Distress Signal			| ✔️ [F#](./AdventOfCode_2022/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day13/part02/day13_part02.fs) |
+| Day 14: Regolith Reservoir		| ✔️ [F#](./AdventOfCode_2022/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day14/part02/day14_part02.fs) |
+| Day 15: Beacon Exclusion Zone		| ❌ | ❌ |
+| Day 16: Proboscidea Volcanium		| ❌ | ❌ |
+| Day 17: Pyroclastic Flow			| ❌ | ❌ |
+| Day 18: Boiling Boulders			| ❌ | ❌ |
+| Day 19: Not Enough Minerals		| ❌ | ❌ |
+| Day 20: Grove Positioning System  | ❌ | ❌ |
+| Day 21: Monkey Math				| ❌ | ❌ |
+| Day 22: Monkey Map				| ❌ | ❌ |
+| Day 23: Unstable Diffusion		| ❌ | ❌ |
+| Day 24: Blizzard Basin			| ❌ | ❌ |
+| Day 25: Full of Hot Air			| ✔️ [F#](./AdventOfCode_2022/day25/part01/day25_part01.fs) | ❌ |
 
 
 ## Advent Of Code 2023
