@@ -136,31 +136,31 @@ https://adventofcode.com/2018
 
 |Day      | Part 1 | Part 2 |
 |---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2018_FSharp/day01/part01/day01_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day01/part1/day01_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day01/part02/day01_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day01/part2/day01_part02.ts) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2018_FSharp/day02/part01/day02_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day02/part1/day02_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day02/part02/day02_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day02/part2/day02_part02.ts) |
-| Day 3   | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day03/part1/day03_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day03/part2/day03_part02.ts) |
-| Day 4   | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day04/part1/day04_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day04/part2/day04_part02.ts) |
-| Day 5   | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day05/part1/day05_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day05/part2/day05_part02.ts) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2018_FSharp/day06/part01/day06_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day06/part1/day06_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day06/part02/day06_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day06/part2/day06_part02.ts) |
-| Day 7   | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day07/part1/day07_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day07/part2/day07_part02.ts) |
-| Day 8   | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day08/part1/day08_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day08/part2/day08_part02.ts) |
-| Day 9   | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day09/part1/day09_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day09/part2/day09_part02.ts) |
-| Day 10  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day10/part1/day10_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day10/part2/day10_part02.ts) |
-| Day 11  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day11/part1/day11_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day11/part2/day11_part02.ts) |
-| Day 12  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day12/part1/day12_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day12/part2/day12_part02.ts) |
-| Day 13  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day13/part1/day13_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day13/part2/day13_part02.ts) |
-| Day 14  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day14/part1/day14_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day14/part2/day14_part02.ts) |
-| Day 15  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day15/part1/day15_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day15/part2/day15_part02.ts) |
-| Day 16  | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day16/part1/day16_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day16/part2/day16_part02.ts) |
-| Day 17  | ❌ | ❌ |
-| Day 18  | ❌ | ❌ |
-| Day 19  | ❌ | ❌ |
-| Day 20  | ❌ | ❌ |
-| Day 21  | ❌ | ❌ |
-| Day 22  | ❌ | ❌ |
-| Day 23  | ❌ | ❌ |
-| Day 24  | ❌ | ❌ |
-| Day 25  | ❌ | ❌ |
+| Day 1: Chronal Calibration					| ✔️ [F#](./AdventOfCode_2018_FSharp/day01/part01/day01_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day01/part1/day01_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day01/part02/day01_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day01/part2/day01_part02.ts) |
+| Day 2: Inventory Management System			| ✔️ [F#](./AdventOfCode_2018_FSharp/day02/part01/day02_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day02/part1/day02_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day02/part02/day02_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day02/part2/day02_part02.ts) |
+| Day 3: No Matter How You Slice It				| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day03/part1/day03_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day03/part2/day03_part02.ts) |
+| Day 4: Repose Record							| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day04/part1/day04_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day04/part2/day04_part02.ts) |
+| Day 5: Alchemical Reduction					| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day05/part1/day05_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day05/part2/day05_part02.ts) |
+| Day 6: Chronal Coordinates					| ✔️ [F#](./AdventOfCode_2018_FSharp/day06/part01/day06_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day06/part1/day06_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day06/part02/day06_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day06/part2/day06_part02.ts) |
+| Day 7: The Sum of Its Parts					| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day07/part1/day07_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day07/part2/day07_part02.ts) |
+| Day 8: Memory Maneuver						| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day08/part1/day08_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day08/part2/day08_part02.ts) |
+| Day 9: Marble Mania							| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day09/part1/day09_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day09/part2/day09_part02.ts) |
+| Day 10: The Stars Align						| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day10/part1/day10_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day10/part2/day10_part02.ts) |
+| Day 11: Chronal Charge						| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day11/part1/day11_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day11/part2/day11_part02.ts) |
+| Day 12: Subterranean Sustainability			| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day12/part1/day12_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day12/part2/day12_part02.ts) |
+| Day 13: Mine Cart Madness						| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day13/part1/day13_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day13/part2/day13_part02.ts) |
+| Day 14: Chocolate Charts						| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day14/part1/day14_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day14/part2/day14_part02.ts) |
+| Day 15: Beverage Bandits						| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day15/part1/day15_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day15/part2/day15_part02.ts) |
+| Day 16: Chronal Classification				| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day16/part1/day16_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day16/part2/day16_part02.ts) |
+| Day 17: Reservoir Research					| ❌ | ❌ |
+| Day 18: Settlers of The North Pole			| ❌ | ❌ |
+| Day 19: Go With The Flow						| ❌ | ❌ |
+| Day 20: A Regular Map							| ❌ | ❌ |
+| Day 21: Chronal Conversion					| ❌ | ❌ |
+| Day 22: Mode Maze								| ❌ | ❌ |
+| Day 23: Experimental Emergency Teleportation  | ❌ | ❌ |
+| Day 24: Immune System Simulator 20XX			| ❌ | ❌ |
+| Day 25: Four-Dimensional Adventure			| ❌ | ❌ |
 
 
 ## Advent Of Code 2019
