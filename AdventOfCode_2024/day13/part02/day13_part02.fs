@@ -36,6 +36,7 @@ let parseContent(lines: string array) =
         { ButtonA = { Name = "A"; X = pushAX; Y = pushAY }; ButtonB = { Name = "B"; X = pushBX; Y = pushBY }; ResultX = extra + resultX; ResultY = extra + resultY }
     )
 
+// https://en.wikipedia.org/wiki/Cramer's_rule
 let solveEcuation (ecuation: Combination) =
     let partA1 = (ecuation.ButtonB.Y * ecuation.ResultX - ecuation.ButtonB.X * ecuation.ResultY)
     let partA2 = (ecuation.ButtonA.X * ecuation.ButtonB.Y - ecuation.ButtonA.Y * ecuation.ButtonB.X)
@@ -59,6 +60,7 @@ let execute() =
     ecuations
     |> List.sumBy(fun e ->
         match solveEcuation e with
+        //match solveEcuation e with
         | Some((aValue, bValue)) -> aValue*3L + bValue*1L
         | _ -> 0
     )
