@@ -25,8 +25,8 @@ https://adventofcode.com/2015
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (13/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day											| Part 1 | Part 2 |
+|-----------------------------------------------|----|----|
 | Day 1: Not Quite Lisp							| ✔️ [F#](./AdventOfCode_2015/day01/part01/day01_part01.fs) - [Go](./AdventOfCode_2015_Go/day01/day01_1.go) | ✔️ [F#](./AdventOfCode_2015/day01/part02/day01_part02.fs) - [Go](./AdventOfCode_2015_Go/day01/day01_2.go) |
 | Day 2: I Was Told There Would Be No Math		| ✔️ [F#](./AdventOfCode_2015/day02/part01/day02_part01.fs) - [Go](./AdventOfCode_2015_Go/day02/day02_1.go) | ✔️ [F#](./AdventOfCode_2015/day02/part02/day02_part02.fs) - [Go](./AdventOfCode_2015_Go/day02/day02_2.go) |
 | Day 3: Perfectly Spherical Houses in a Vacuum	| ✔️ [F#](./AdventOfCode_2015/day03/part01/day03_part01.fs) - [Go](./AdventOfCode_2015_Go/day03/day03_1.go) | ✔️ [F#](./AdventOfCode_2015/day03/part02/day03_part02.fs) - [Go](./AdventOfCode_2015_Go/day03/day03_2.go) |
@@ -62,8 +62,8 @@ https://adventofcode.com/2016
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (11/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day												| Part 1 | Part 2 |
+|---------------------------------------------------|----|----|
 | Day 1: No Time for a Taxicab						| ✔️ [F#](./AdventOfCode_2016/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day01/part02/day01_part02.fs) |
 | Day 2: Bathroom Security							| ✔️ [F#](./AdventOfCode_2016/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day02/part02/day02_part02.fs) |
 | Day 3: Squares With Three Sides					| ✔️ [F#](./AdventOfCode_2016/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day03/part02/day03_part02.fs) |
@@ -99,8 +99,8 @@ https://adventofcode.com/2017
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (11/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day												| Part 1 | Part 2 |
+|---------------------------------------------------|----|----|
 | Day 1: Inverse Captcha							| ✔️ [F#](./AdventOfCode_2017/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day01/part02/day01_part02.fs) |
 | Day 2: Corruption Checksum						| ✔️ [F#](./AdventOfCode_2017/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day02/part02/day02_part02.fs) |
 | Day 3: Spiral Memory								| ✔️ [F#](./AdventOfCode_2017/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2017/day03/part02/day03_part02.fs) |
@@ -134,8 +134,8 @@ https://adventofcode.com/2018
 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (16/25)
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day											| Part 1 | Part 2 |
+|-----------------------------------------------|----|----|
 | Day 1: Chronal Calibration					| ✔️ [F#](./AdventOfCode_2018_FSharp/day01/part01/day01_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day01/part1/day01_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day01/part02/day01_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day01/part2/day01_part02.ts) |
 | Day 2: Inventory Management System			| ✔️ [F#](./AdventOfCode_2018_FSharp/day02/part01/day02_part01.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day02/part1/day02_part01.ts) | ✔️ [F#](./AdventOfCode_2018_FSharp/day02/part02/day02_part02.fs) - [Typescript](./AdventOfCode_2018_TypeScript/day02/part2/day02_part02.ts) |
 | Day 3: No Matter How You Slice It				| ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day03/part1/day03_part01.ts) | ✔️ [Typescript](./AdventOfCode_2018_TypeScript/day03/part2/day03_part02.ts) |
@@ -171,8 +171,8 @@ https://adventofcode.com/2019
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (16/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day										| Part 1 | Part 2 |
+|-------------------------------------------|----|----|
 | Day 1: The Tyranny of the Rocket Equation	| ✔️ [F#](./AdventOfCode_2019/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day01/part02/day01_part02.fs) |
 | Day 2: 1202 Program Alarm					| ✔️ [F#](./AdventOfCode_2019/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day02/part02/day02_part02.fs) |
 | Day 3: Crossed Wires						| ✔️ [F#](./AdventOfCode_2019/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2019/day03/part02/day03_part02.fs) |
@@ -207,8 +207,8 @@ https://adventofcode.com/2020
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (13/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day								| Part 1 | Part 2 |
+|-----------------------------------|----|----|
 | Day 1: Report Repair				| ✔️ [F#](./AdventOfCode_2020/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2020/day01/part02/day01_part02.fs) |
 | Day 2: Password Philosophy		| ✔️ [F#](./AdventOfCode_2020/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2020/day02/part02/day02_part02.fs) |
 | Day 3: Toboggan Trajectory		| ✔️ [F#](./AdventOfCode_2020/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2020/day03/part02/day03_part02.fs) |
@@ -243,8 +243,8 @@ https://adventofcode.com/2021
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (17/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day								| Part 1 | Part 2 |
+|-----------------------------------|----|----|
 | Day 1: Sonar Sweep				| ✔️ [F#](./AdventOfCode_2021/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day01/part02/day01_part02.fs) |
 | Day 2: Dive!						| ✔️ [F#](./AdventOfCode_2021/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day02/part02/day02_part02.fs) |
 | Day 3: Binary Diagnosti			| ✔️ [F#](./AdventOfCode_2021/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2021/day03/part02/day03_part02.fs) |
@@ -279,8 +279,8 @@ https://adventofcode.com/2022
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐★ (14.5/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day								| Part 1 | Part 2 |
+|-----------------------------------|----|----|
 | Day 1: Calorie Counting			| ✔️ [F#](./AdventOfCode_2022/day01/part01/day01_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day01/part02/day01_part02.fs) |
 | Day 2: Rock Paper Scissors		| ✔️ [F#](./AdventOfCode_2022/day02/part01/day02_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day02/part02/day02_part02.fs) |
 | Day 3: Rucksack Reorganization	| ✔️ [F#](./AdventOfCode_2022/day03/part01/day03_part01.fs) | ✔️ [F#](./AdventOfCode_2022/day03/part02/day03_part02.fs) |
@@ -316,8 +316,8 @@ https://adventofcode.com/2023
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (25/25)
 
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
+|Day										| Part 1 | Part 2 |
+|-------------------------------------------|----|----|
 | Day 1: Trebuchet?!						| ✔️ [F#](./AdventOfCode_2023/day01/part01/day01_part01.fs) - [C++](./AdventOfCode_2023_cpp/day01/day01_part01.ixx) | ✔️ [F#](./AdventOfCode_2022/day01/part02/day01_part02.fs) - [C++](./AdventOfCode_2023_cpp/day01/day01_part02.ixx) |
 | Day 2: Cube Conundrum						| ✔️ [F#](./AdventOfCode_2023/day02/part01/day02_part01.fs) - [C++](./AdventOfCode_2023_cpp/day02/day02_part01.ixx) | ✔️ [F#](./AdventOfCode_2022/day02/part02/day02_part02.fs) - [C++](./AdventOfCode_2023_cpp/day02/day02_part02.ixx) |
 | Day 3: Gear Ratios						| ✔️ [F#](./AdventOfCode_2023/day03/part01/day03_part01.fs) - [C++](./AdventOfCode_2023_cpp/day03/day03_part01.ixx) | ✔️ [F#](./AdventOfCode_2022/day03/part02/day03_part02.fs) - [C++](./AdventOfCode_2023_cpp/day03/day03_part02.ixx) |
@@ -353,21 +353,21 @@ https://adventofcode.com/2024
 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (13/25)
 
-|Day      | Part 1 | Part 2 |
-|---------|----|----|
-| Day 1   | ✔️ [F#](./AdventOfCode_2024/day01/part01/day01_part01.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_1.go) | ✔️ [F#](./AdventOfCode_2024/day01/part02/day01_part02.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_2.go) |
-| Day 2   | ✔️ [F#](./AdventOfCode_2024/day02/part01/day02_part01.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_1.go) | ✔️ [F#](./AdventOfCode_2024/day02/part02/day02_part02.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_2.go) |
-| Day 3   | ✔️ [F#](./AdventOfCode_2024/day03/part01/day03_part01.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_1.go) | ✔️ [F#](./AdventOfCode_2024/day03/part02/day03_part02.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_2.go) |
-| Day 4   | ✔️ [F#](./AdventOfCode_2024/day04/part01/day04_part01.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_1.go) | ✔️ [F#](./AdventOfCode_2024/day04/part02/day04_part02.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_2.go) |
-| Day 5   | ✔️ [F#](./AdventOfCode_2024/day05/part01/day05_part01.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_1.go) | ✔️ [F#](./AdventOfCode_2024/day05/part02/day05_part02.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_2.go) |
-| Day 6   | ✔️ [F#](./AdventOfCode_2024/day06/part01/day06_part01.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_1.go) | ✔️ [F#](./AdventOfCode_2024/day06/part02/day06_part02.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_2.go) |
-| Day 7   | ✔️ [F#](./AdventOfCode_2024/day07/part01/day07_part01.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_1.go) | ✔️ [F#](./AdventOfCode_2024/day07/part02/day07_part02.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_2.go) |
-| Day 8   | ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_1.go) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_2.go) |
-| Day 9   | ✔️ [F#](./AdventOfCode_2024/day09/part01/day09_part01.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_1.go) | ✔️ [F#](./AdventOfCode_2024/day09/part02/day09_part02.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_2.go) |
-| Day 10  | ✔️ [F#](./AdventOfCode_2024/day10/part01/day10_part01.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_1.go) | ✔️ [F#](./AdventOfCode_2024/day10/part02/day10_part02.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_2.go) |
-| Day 11  | ✔️ [F#](./AdventOfCode_2024/day11/part01/day11_part01.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_1.go) | ✔️ [F#](./AdventOfCode_2024/day11/part02/day11_part02.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_2.go) |
-| Day 12  | ✔️ [F#](./AdventOfCode_2024/day12/part01/day12_part01.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_1.go) | ✔️ [F#](./AdventOfCode_2024/day12/part02/day12_part02.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_2.go) |
-| Day 13  | ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) |
+|Day							| Part 1 | Part 2 |
+|-------------------------------|----|----|
+| Day 1: Historian Hysteria		| ✔️ [F#](./AdventOfCode_2024/day01/part01/day01_part01.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_1.go) | ✔️ [F#](./AdventOfCode_2024/day01/part02/day01_part02.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_2.go) |
+| Day 2: Red-Nosed Reports		| ✔️ [F#](./AdventOfCode_2024/day02/part01/day02_part01.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_1.go) | ✔️ [F#](./AdventOfCode_2024/day02/part02/day02_part02.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_2.go) |
+| Day 3: Mull It Over			| ✔️ [F#](./AdventOfCode_2024/day03/part01/day03_part01.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_1.go) | ✔️ [F#](./AdventOfCode_2024/day03/part02/day03_part02.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_2.go) |
+| Day 4: Ceres Search			| ✔️ [F#](./AdventOfCode_2024/day04/part01/day04_part01.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_1.go) | ✔️ [F#](./AdventOfCode_2024/day04/part02/day04_part02.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_2.go) |
+| Day 5: Print Queue			| ✔️ [F#](./AdventOfCode_2024/day05/part01/day05_part01.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_1.go) | ✔️ [F#](./AdventOfCode_2024/day05/part02/day05_part02.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_2.go) |
+| Day 6: Guard Gallivant		| ✔️ [F#](./AdventOfCode_2024/day06/part01/day06_part01.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_1.go) | ✔️ [F#](./AdventOfCode_2024/day06/part02/day06_part02.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_2.go) |
+| Day 7: Bridge Repair			| ✔️ [F#](./AdventOfCode_2024/day07/part01/day07_part01.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_1.go) | ✔️ [F#](./AdventOfCode_2024/day07/part02/day07_part02.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_2.go) |
+| Day 8: Resonant Collinearity	| ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_1.go) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_2.go) |
+| Day 9: Disk Fragmenter		| ✔️ [F#](./AdventOfCode_2024/day09/part01/day09_part01.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_1.go) | ✔️ [F#](./AdventOfCode_2024/day09/part02/day09_part02.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_2.go) |
+| Day 10: Hoof It				| ✔️ [F#](./AdventOfCode_2024/day10/part01/day10_part01.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_1.go) | ✔️ [F#](./AdventOfCode_2024/day10/part02/day10_part02.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_2.go) |
+| Day 11: Plutonian Pebbles		| ✔️ [F#](./AdventOfCode_2024/day11/part01/day11_part01.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_1.go) | ✔️ [F#](./AdventOfCode_2024/day11/part02/day11_part02.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_2.go) |
+| Day 12: Garden Groups			| ✔️ [F#](./AdventOfCode_2024/day12/part01/day12_part01.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_1.go) | ✔️ [F#](./AdventOfCode_2024/day12/part02/day12_part02.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_2.go) |
+| Day 13: Claw Contraption		| ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) |
 | Day 14  | ❌  | ❌ |
 | Day 15  | ❌  | ❌ |
 | Day 16  | ❌  | ❌ |
