@@ -60,7 +60,6 @@ let execute() =
     ecuations
     |> List.sumBy(fun e ->
         match solveEcuation e with
-        //match solveEcuation e with
         | Some((aValue, bValue)) -> aValue*3L + bValue*1L
         | _ -> 0
     )
