@@ -2,13 +2,14 @@
 
 open AdventOfCode_2024.Modules
 open System.Text.RegularExpressions
+open System.Drawing
 
 type Pos = {
     X: int64;
     Y: int64;
 }
 
-type Point = {
+type Robot = {
     Position: Pos;
     Velocity: Pos;
 }
@@ -16,7 +17,7 @@ type Point = {
 let INT64 s =
     System.Int64.Parse(s)
 
-let parseContent(lines: string array) : Point array =
+let parseContent(lines: string array) : Robot array =
     let extractValues(l: string) =
         let regexp = @"p=(-?\d+),(-?\d+)\s+v=(-?\d+),(-?\d+)"
         let matches = Regex.Match(l, regexp)
@@ -25,7 +26,7 @@ let parseContent(lines: string array) : Point array =
     lines
     |> Array.map extractValues
 
-let move(point: Point) (times: int64) maxRows maxCols =
+let move(point: Robot) (times: int64) maxRows maxCols =
     let newX = 
         match (point.Position.X + (point.Velocity.X * times))%maxRows with
         | x when x >= 0L && x < maxRows -> x
@@ -38,15 +39,15 @@ let move(point: Point) (times: int64) maxRows maxCols =
         | _ -> failwith "error"
     { point with Position = {X = newX; Y = newY} }
 
-let moveAll(positions: Point array) (times: int64) maxRows maxCols =
+let moveAll(positions: Robot array) (times: int64) maxRows maxCols =
     positions
     |> Array.map(fun p -> move p times maxRows maxCols)
 
-let belongToQ(position: Point) (qfromX,qtoX,qfromY,qtoY) =
+let belongToQ(position: Robot) (qfromX,qtoX,qfromY,qtoY) =
     position.Position.X >= qfromX && position.Position.X <= qtoX &&
         position.Position.Y >= qfromY && position.Position.Y <= qtoY
 
-let getSectors(positions: Point array) maxRows maxCols =
+let getSectors(positions: Robot array) maxRows maxCols =
     let Q1fromX,Q1toX,Q1fromY,Q1toY = 0L,               (maxRows/2L)-1L,    0L,                 (maxCols/2L)-1L
     let Q2fromX,Q2toX,Q2fromY,Q2toY = 0L,               (maxRows/2L)-1L,    (maxCols/2L)+1L,    maxCols-1L
     let Q3fromX,Q3toX,Q3fromY,Q3toY = (maxRows/2L)+1L,  maxRows-1L,         0L,                 (maxCols/2L)-1L
@@ -66,8 +67,28 @@ let getSectors(positions: Point array) maxRows maxCols =
                 (0L, p)
         ) 
     mapped
+
+// for printing the image...
+let saveChristmasTreeAsImage(points: Robot array) (seconds: int) maxrows maxcols =
+    let newpositions = moveAll points seconds maxrows maxcols
+    if newpositions |> Array.map _.Position |> Set.ofArray |> Seq.length = newpositions.Length then
+        let bmp = new Bitmap(int maxcols, int maxrows)
+        let graphics = Graphics.FromImage(bmp)
+        graphics.Clear(Color.White)
         
-let printChristmasTree(points: Point array) (seconds: int) maxrows maxcols =
+        for row in 0L..(maxrows-1L) do
+            for col in 0L..(maxcols-1L) do
+                match newpositions |> Array.tryFind(fun p -> p.Position.X = row && p.Position.Y = col) with
+                | Some(_) -> 
+                    bmp.SetPixel(int col, int row, Color.Black) // Draw the block
+                | None -> ()
+        
+        bmp.Save("christmasstree.png")
+        true
+    else
+        false
+
+let printChristmasTree(points: Robot array) (seconds: int) maxrows maxcols =
     let newpositions = moveAll points seconds maxrows maxcols
     if newpositions |> Array.map _.Position |> Set.ofArray |> Seq.length = newpositions.Length then
         for row in 0L..(maxrows-1L) do
