@@ -29,8 +29,21 @@ let parseContent (lines: string array) =
     let elements = lines |> Array.mapi(fun idx line -> (idx, parseLine line))
     elements
 
+let moveElements(elements: (int*Element list) array) =
+    let elementsByFloor = elements |> Array.mapi(fun idx (k, e) -> e.Length)
+    let totalElements = elementsByFloor |> Array.sum
+    let mutable movements = 0
+    while elementsByFloor[3] <> totalElements do
+        let mutable currentFloor = 0
+        while elementsByFloor[currentFloor] = 0 do
+            currentFloor <- currentFloor + 1
+        movements <- movements + 2 * (elementsByFloor[currentFloor] - 1) - 1
+        elementsByFloor[currentFloor+1] <- elementsByFloor[currentFloor+1] + elementsByFloor[currentFloor]
+        elementsByFloor[currentFloor] <- 0
+    movements
+
 let execute =
     let path = "day11/day11_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let elementsbyfloor = parseContent content
-    elementsbyfloor.Length
+    moveElements elementsbyfloor
