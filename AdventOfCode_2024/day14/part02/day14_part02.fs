@@ -102,10 +102,21 @@ let printChristmasTree(points: Robot array) (seconds: int) maxrows maxcols =
     else
         false
 
+let calculateSafetyFactor(positions: Robot array) seconds maxRows maxCols = 
+    let newpositions = moveAll positions seconds maxRows maxCols
+    getSectors newpositions maxRows maxCols
+    |> Array.filter(fun (s, p) -> s <> 0L)
+    |> Array.groupBy fst
+    |> Array.map(fun (k,g) -> g.Length)
+    |> Array.reduce (*)
+
 let execute() =
     let maxrows, maxcols = 103, 101
     let path = "day14/day14_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let positions = parseContent content
-    [0..(maxrows*maxcols)]
-    |> List.find (fun seconds -> printChristmasTree positions seconds maxrows maxcols)
+    let (seconds, safetyfactor) = 
+        [0..(maxrows*maxcols)]
+        |> List.map (fun seconds -> (seconds, calculateSafetyFactor positions  seconds maxrows maxcols))
+        |> List.minBy snd
+    seconds
