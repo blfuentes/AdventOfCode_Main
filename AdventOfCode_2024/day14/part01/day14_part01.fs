@@ -47,10 +47,10 @@ let belongToQ(position: Point) (qfromX,qtoX,qfromY,qtoY) =
         position.Position.Y >= qfromY && position.Position.Y <= qtoY
 
 let getSectors(positions: Point array) maxRows maxCols =
-    let Q1fromX,Q1toX,Q1fromY,Q1toY = 0L, (maxRows/2L)-1L, 0L, (maxCols/2L)-1L
-    let Q2fromX,Q2toX,Q2fromY,Q2toY = 0L, (maxRows/2L)-1L, (maxCols/2L)+1L, maxCols-1L
-    let Q3fromX,Q3toX,Q3fromY,Q3toY = (maxRows/2L)+1L, maxRows-1L, 0L, (maxCols/2L)-1L
-    let Q4fromX,Q4toX,Q4fromY,Q4toY = (maxRows/2L)+1L, maxRows-1L, (maxCols/2L)+1L, maxCols-1L
+    let Q1fromX,Q1toX,Q1fromY,Q1toY = 0L,               (maxRows/2L)-1L,    0L,                 (maxCols/2L)-1L
+    let Q2fromX,Q2toX,Q2fromY,Q2toY = 0L,               (maxRows/2L)-1L,    (maxCols/2L)+1L,    maxCols-1L
+    let Q3fromX,Q3toX,Q3fromY,Q3toY = (maxRows/2L)+1L,  maxRows-1L,         0L,                 (maxCols/2L)-1L
+    let Q4fromX,Q4toX,Q4fromY,Q4toY = (maxRows/2L)+1L,  maxRows-1L,         (maxCols/2L)+1L,    maxCols-1L
     let mapped =
         positions
         |> Array.map(fun p ->
