@@ -73,7 +73,7 @@ let printegg(points: Point array) (seconds: int) maxrows maxcols =
         for row in 0L..(maxrows-1L) do
             for col in 0L..(maxcols-1L) do
                 match newpositions |> Array.tryFind(fun p -> p.Position.X = row && p.Position.Y = col) with
-                | Some(p) -> printf"@" 
+                | Some(p) -> printf"%c" '\u2588'
                 | None -> printf " "
             printfn ""
         printfn "%s" System.Environment.NewLine
