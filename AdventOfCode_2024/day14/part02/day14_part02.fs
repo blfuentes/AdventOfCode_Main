@@ -86,5 +86,5 @@ let execute() =
     let path = "day14/day14_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let positions = parseContent content
-    [0..10000]
+    [0..(maxrows*maxcols)]
     |> List.find (fun seconds -> printChristmasTree positions seconds maxrows maxcols)
