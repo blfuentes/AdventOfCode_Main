@@ -369,8 +369,8 @@ https://adventofcode.com/2024
 | Day 10: Hoof It				| ✔️ [F#](./AdventOfCode_2024/day10/part01/day10_part01.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_1.go) | ✔️ [F#](./AdventOfCode_2024/day10/part02/day10_part02.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_2.go) |
 | Day 11: Plutonian Pebbles		| ✔️ [F#](./AdventOfCode_2024/day11/part01/day11_part01.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_1.go) | ✔️ [F#](./AdventOfCode_2024/day11/part02/day11_part02.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_2.go) |
 | Day 12: Garden Groups			| ✔️ [F#](./AdventOfCode_2024/day12/part01/day12_part01.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_1.go) | ✔️ [F#](./AdventOfCode_2024/day12/part02/day12_part02.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_2.go) |
-| Day 13: Claw Contraption		| ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) |
-| Day 14: Restroom Redoubt		| ✔️ [F#](./AdventOfCode_2024/day14/part01/day14_part01.fs)  | ✔️ [F#](./AdventOfCode_2024/day14/part02/day14_part02.fs) |
+| Day 13: Claw Contraption		| ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_2.go) |
+| Day 14: Restroom Redoubt		| ✔️ [F#](./AdventOfCode_2024/day14/part01/day14_part01.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_1.go) | ✔️ [F#](./AdventOfCode_2024/day14/part02/day14_part02.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_2.go)|
 | Day 15  | ❌  | ❌ |
 | Day 16  | ❌  | ❌ |
 | Day 17  | ❌  | ❌ |
