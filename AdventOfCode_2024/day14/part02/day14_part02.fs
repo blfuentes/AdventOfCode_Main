@@ -72,21 +72,25 @@ let getSectors(positions: Robot array) maxRows maxCols =
 let saveChristmasTreeAsImage(points: Robot array) (seconds: int) maxrows maxcols =
     let newpositions = moveAll points seconds maxrows maxcols
     if newpositions |> Array.map _.Position |> Set.ofArray |> Seq.length = newpositions.Length then
-        let bmp = new Bitmap(int maxcols, int maxrows)
+        let bmp = new Bitmap(int maxcols * 16, int maxrows * 16)
         let graphics = Graphics.FromImage(bmp)
         graphics.Clear(Color.White)
-        
+
+        let font = new Font("Segoe UI Emoji", 16.0f)
+        let brush = new SolidBrush(Color.Black)
+
         for row in 0L..(maxrows-1L) do
             for col in 0L..(maxcols-1L) do
                 match newpositions |> Array.tryFind(fun p -> p.Position.X = row && p.Position.Y = col) with
-                | Some(_) -> 
-                    bmp.SetPixel(int col, int row, Color.Black) // Draw the block
+                | Some(_) ->
+                    graphics.DrawString("🤖", font, brush, float32 (col * 16L), float32 (row * 16L))
                 | None -> ()
-        
-        bmp.Save("christmasstree.png")
+
+        bmp.Save("christmastree.png")
         true
     else
         false
+
 
 let printChristmasTree(points: Robot array) (seconds: int) maxrows maxcols =
     let newpositions = moveAll points seconds maxrows maxcols
@@ -94,8 +98,8 @@ let printChristmasTree(points: Robot array) (seconds: int) maxrows maxcols =
         for row in 0L..(maxrows-1L) do
             for col in 0L..(maxcols-1L) do
                 match newpositions |> Array.tryFind(fun p -> p.Position.X = row && p.Position.Y = col) with
-                | Some(p) -> printf"%c" '\u2588'
-                | None -> printf " "
+                | Some(p) -> printf "🤖"
+                | None -> printf "  "
             printfn ""
         printfn "%s" System.Environment.NewLine
         true
@@ -119,4 +123,7 @@ let execute() =
         [0..(maxrows*maxcols)]
         |> List.map (fun seconds -> (seconds, calculateSafetyFactor positions  seconds maxrows maxcols))
         |> List.minBy snd
+    // Enable for printing-saving image
+    //printChristmasTree positions seconds maxrows maxcols
+    //saveChristmasTreeAsImage positions seconds maxrows maxcols
     seconds
