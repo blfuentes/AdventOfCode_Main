@@ -66,11 +66,6 @@ let getSectors(positions: Point array) maxRows maxCols =
                 (0L, p)
         ) 
     mapped
-    |> Array.filter(fun (s, p) -> s <> 0L)
-    |> Array.groupBy fst
-    |> Array.map(fun (k,g) -> g.Length)
-        
-
 
 let execute() =
     let maxrows, maxcols = 103, 101
@@ -80,4 +75,7 @@ let execute() =
     let positions = parseContent content
     let newpositions = moveAll positions seconds maxrows maxcols
     getSectors newpositions maxrows maxcols
+    |> Array.filter(fun (s, p) -> s <> 0L)
+    |> Array.groupBy fst
+    |> Array.map(fun (k,g) -> g.Length)
     |> Array.reduce (*)

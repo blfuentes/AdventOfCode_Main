@@ -67,9 +67,9 @@ let getSectors(positions: Point array) maxRows maxCols =
         ) 
     mapped
         
-let printegg(points: Point array) (seconds: int) maxrows maxcols =
+let printChristmasTree(points: Point array) (seconds: int) maxrows maxcols =
     let newpositions = moveAll points seconds maxrows maxcols
-    if newpositions |> Array.groupBy(fun p -> p.Position) |> Array.length = newpositions.Length then
+    if newpositions |> Array.map _.Position |> Set.ofArray |> Seq.length = newpositions.Length then
         for row in 0L..(maxrows-1L) do
             for col in 0L..(maxcols-1L) do
                 match newpositions |> Array.tryFind(fun p -> p.Position.X = row && p.Position.Y = col) with
@@ -84,9 +84,7 @@ let printegg(points: Point array) (seconds: int) maxrows maxcols =
 let execute() =
     let maxrows, maxcols = 103, 101
     let path = "day14/day14_input.txt"
-    let seconds = 100
     let content = LocalHelper.GetLinesFromFile path
     let positions = parseContent content
     [0..10000]
-    |> List.filter (fun i -> printegg positions i maxrows maxcols)
-    |> List.head
+    |> List.find (fun seconds -> printChristmasTree positions seconds maxrows maxcols)
