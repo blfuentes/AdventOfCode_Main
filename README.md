@@ -7,7 +7,7 @@ https://adventofcode.com/
 |Year						| Progress												| Total		|
 |---------------------------|-------------------------------------------------------|-----------|
 |[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (26/50)	|
-|[2016](#2016-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (24/50)	|
+|[2016](#2016-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (26/50)	|
 |[2017](#2017-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (22/50)	|
 |[2018](#2018-ftypescript)	| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
 |[2019](#2019-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
@@ -16,7 +16,7 @@ https://adventofcode.com/
 |[2022](#2022-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️🌟				| (29/50)	|
 |[2023](#2023-fc)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (30/50)	|
-|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (61%) 						| (305/500) |
+|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (61,4%) 			| (307/500) |
 
 ## Advent Of Code 2015
 
@@ -76,9 +76,9 @@ https://adventofcode.com/2016
 | Day 8: Two-Factor Authentication					| ✔️ [F#](./AdventOfCode_2016/day08/part01/day08_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day08/part02/day08_part02.fs) |
 | Day 9: Explosives in Cyberspace					| ✔️ [F#](./AdventOfCode_2016/day09/part01/day09_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day09/part02/day09_part02.fs) |
 | Day 10: Balance Bots								| ✔️ [F#](./AdventOfCode_2016/day10/part01/day10_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day10/part02/day10_part02.fs) |
-| Day 11: Radioisotope Thermoelectric Generators	| ✔️ [F#](./AdventOfCode_2016/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day11/part02/day11_part02.fs)
+| Day 11: Radioisotope Thermoelectric Generators	| ✔️ [F#](./AdventOfCode_2016/day11/part01/day11_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day11/part02/day11_part02.fs) |
 | Day 12: Leonardo's Monorail						| ✔️ [F#](./AdventOfCode_2016/day12/part01/day12_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day12/part02/day12_part02.fs) |
-| Day 13: A Maze of Twisty Little Cubicles			| ❌ | ❌ |
+| Day 13: A Maze of Twisty Little Cubicles			| ✔️ [F#](./AdventOfCode_2016/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2016/day13/part02/day13_part02.fs) |
 | Day 14: One-Time Pad								| ❌ | ❌ |
 | Day 15: Timing is Everything						| ❌ | ❌ |
 | Day 16: Dragon Checksum							| ❌ | ❌ |
