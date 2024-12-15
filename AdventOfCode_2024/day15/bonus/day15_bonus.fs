@@ -3,6 +3,8 @@
 open AdventOfCode_2024.Modules
 open AdventOfCode_Utilities
 open System.Drawing
+open System
+open System.Text
 
 type TileType =
     | Wall
@@ -147,14 +149,26 @@ let findBoxes(from : Tile, map: Tile[,], mov: MovType) (step: int) =
         ] |> List.rev
     if emptyfound then temptiles else []
 
-let printMap(map: Tile[,]) =
-    let (maxrows, maxcols) = (map.GetLength(0),map.GetLength(1))
-    //let font = new Font("Segoe UI Emoji", 16.0f)
-    System.Console.OutputEncoding <- System.Text.Encoding.UTF8
+//let printMap(map: Tile[,]) =
+//    let (maxrows, maxcols) = (map.GetLength(0),map.GetLength(1))
+//    //let font = new Font("Segoe UI Emoji", 16.0f)
+//    System.Console.OutputEncoding <- System.Text.Encoding.UTF8
+//    for row in 0..(maxrows-1) do
+//        for col in 0..(maxcols-1) do
+//            printf "%s" (symbolOfKind map[row,col].Kind)
+//        printfn ""
+
+let printMap (map: Tile[,]) =
+    let (maxrows, maxcols) = (map.GetLength(0), map.GetLength(1))
+    Console.OutputEncoding <- System.Text.Encoding.UTF8
+
+    let output = StringBuilder()
     for row in 0..(maxrows-1) do
         for col in 0..(maxcols-1) do
-            printf "%s" (symbolOfKind map[row,col].Kind)
-        printfn ""
+            output.Append(sprintf "%s" (symbolOfKind map[row, col].Kind)) |> ignore
+        output.AppendLine() |> ignore
+    Console.Clear()
+    Console.Write(output.ToString())
 
 let move((robotinit, map, movements): Tile*Tile [,]* MovType list) =
     let rec doStep robot steps =
@@ -214,8 +228,8 @@ let calculateGPS(tile: Tile) =
         0
 
 let playgame() =
-    //let path = "day15/day15_input.txt"
-    let path = "day15/test_input_15.txt"
+    let path = "day15/day15_input.txt"
+    //let path = "day15/test_input_15.txt"
 
     let content = LocalHelper.GetContentFromFile path
     let (robotinit, map, movements) = parseContent content
