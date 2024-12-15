@@ -104,12 +104,12 @@ let take(from : Tile list, map: Tile[,], mov: MovType) (steps: int)=
                     yield! parents
                 ]
             let allparentsEmpty = newparentsTocheck |> List.forall(fun p -> p.Kind.IsEmpty)
-            let nowallfound = newparentsTocheck |> List.forall(fun p -> not p.Kind.IsWall)
+            let noWallFound = newparentsTocheck |> List.forall(fun p -> not p.Kind.IsWall)
             if allparentsEmpty then (currentparents@parentsToCheck@newparentsTocheck)
             else
                 let filteredparents = 
                     newparentsTocheck |> List.filter(fun p -> not p.Kind.IsEmpty)
-                canMove (currentparents@parentsToCheck) filteredparents nowallfound
+                canMove (currentparents@parentsToCheck) filteredparents noWallFound
 
     canMove [] from true
 
@@ -135,22 +135,6 @@ let findBoxes(from : Tile, map: Tile[,], mov: MovType) (step: int) =
                 yield! availableboxes
                 cantake <- false
                 emptyfound <- availableboxes.Length > 0
-            | x when x.IsEmpty && (mov.IsUP || mov.IsDOWN) ->
-                if prev.Kind.IsBoxRIGHT then
-                    let partner = map[current.Row, current.Col-1]
-                    if not partner.Kind.IsWall then
-                        cantake <- false
-                        emptyfound <- true
-                    else
-                        cantake <- false
-                if prev.Kind.IsBoxLEFT then
-                    let partner = map[current.Row, current.Col+1]
-                    if not partner.Kind.IsWall then
-                        cantake <- false
-                        emptyfound <- true
-                    else
-                        cantake <- false
-
             | x when x.IsEmpty && (mov.IsLEFT || mov.IsRIGHT) ->
                     yield current
                     emptyfound <- true
