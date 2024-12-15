@@ -103,10 +103,9 @@ let take(from : Tile list, map: Tile[,], mov: MovType) (steps: int)=
                     
                     yield! parents
                 ]
-            let allparentsEmpty = newparentsTocheck |> List.forall(fun p -> p.Kind.IsEmpty)
-            let noWallFound = newparentsTocheck |> List.forall(fun p -> not p.Kind.IsWall)
-            if allparentsEmpty then (currentparents@parentsToCheck@newparentsTocheck)
+            if newparentsTocheck |> List.forall(fun p -> p.Kind.IsEmpty) then (currentparents@parentsToCheck@newparentsTocheck)
             else
+                let noWallFound = newparentsTocheck |> List.forall(fun p -> not p.Kind.IsWall)
                 let filteredparents = 
                     newparentsTocheck |> List.filter(fun p -> not p.Kind.IsEmpty)
                 canMove (currentparents@parentsToCheck) filteredparents noWallFound
@@ -120,7 +119,6 @@ let findBoxes(from : Tile, map: Tile[,], mov: MovType) (step: int) =
     let mutable current = map[from.Row, from.Col]
     let temptiles =
         [while cantake do
-            let prev = map[current.Row, current.Col]
             current <- map[current.Row+r, current.Col+c]
             match current.Kind with
             | x when x.IsBoxRIGHT && (mov.IsUP || mov.IsDOWN) ->
@@ -185,11 +183,6 @@ let move((robotinit, map, movements): Tile*Tile [,]* MovType list) =
                         if not t.Kind.IsEmpty then
                             map[t.Row+r, t.Col+c] <- { map[t.Row+r, t.Col+c] with Kind = t.Kind }
                         map[t.Row, t.Col] <- { map[t.Row, t.Col] with Kind = replacementKind }
-                    let emptyRobot = 
-                        if m.IsUP || m.IsDOWN then
-                            let nextrobotpair = map[nextPos.Row, nextPos.Col+1]
-                            if tilesToMov |> List.exists(fun t -> t.Row = nextrobotpair.Row && t.Col = nextrobotpair.Col) then
-                                map[nextrobotpair.Row, nextrobotpair.Col] <- { map[nextrobotpair.Row, nextrobotpair.Col] with Kind = Empty }
                     map[nextPos.Row, nextPos.Col] <- { map[nextPos.Row, nextPos.Col] with Kind = Robot }
 
                     doStep { robot with Row = nextPos.Row; Col = nextPos.Col } restmovs (steps+1)
