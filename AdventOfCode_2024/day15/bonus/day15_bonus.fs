@@ -170,33 +170,50 @@ let printMap (map: Tile[,]) =
     Console.Clear()
     Console.Write(output.ToString())
 
+let calculateGPS(tile: Tile) =
+    if tile.Kind.IsBoxLEFT then
+        100 * tile.Row + tile.Col
+    else
+        0
+
 let move((robotinit, map, movements): Tile*Tile [,]* MovType list) =
-    let rec doStep robot steps =
+    let rec doStep robot steps (moves: MovType list) =
         System.Console.Clear()
         printMap map
-        printfn "Use W A S D to move..."
+        let score =
+            Utilities.flattenArray2D map
+            |> Array.sumBy calculateGPS
+        printfn "Current Score %d - %d movements to go..." (score) (moves.Length)
 
-        let key  = System.Console.ReadKey()
-        let m =
-            match key.Key with
-            | System.ConsoleKey.W -> UP
-            | System.ConsoleKey.A -> LEFT
-            | System.ConsoleKey.D -> RIGHT
-            | System.ConsoleKey.S -> DOWN
-            | _ -> NONE
-        if m.IsNONE then true
-        else
-            printfn "Moving to %c" (symbolOfMov m)
+        //printfn "Use W A S D to move... - Score %d"  score
+
+        //let key  = System.Console.ReadKey()
+        //let m =
+        //    match key.Key with
+        //    | System.ConsoleKey.W -> UP
+        //    | System.ConsoleKey.A -> LEFT
+        //    | System.ConsoleKey.D -> RIGHT
+        //    | System.ConsoleKey.S -> DOWN
+        //    | _ -> NONE
+        //if m.IsNONE then true
+        //else
+        match moves with
+        | [] -> true
+        | m :: restmoves ->
+            async {
+                    do! Async.Sleep 5 // Sleeps for 2000 milliseconds (2 seconds)
+                }|> Async.RunSynchronously // Run the async computation synchronously
+            //printfn "Moving to %c" (symbolOfMov m)
             let (r, c) = direction m
             let nextPos = map[robot.Row + r, robot.Col + c]
             match nextPos.Kind with
             | k when k.IsWall -> 
-                doStep robot (steps+1)
+                doStep robot (steps+1) restmoves
 
             | k when k.IsEmpty -> // just walk one step further
                 map[robot.Row, robot.Col] <- { map[robot.Row, robot.Col] with Kind = Empty }
                 map[nextPos.Row, nextPos.Col] <- { map[nextPos.Row, nextPos.Col] with Kind = Robot }
-                doStep { robot with Row = nextPos.Row; Col = nextPos.Col } (steps+1)
+                doStep { robot with Row = nextPos.Row; Col = nextPos.Col } (steps+1) restmoves
 
             | k -> // push boxes
                 let tilesToMov = findBoxes (robot,map, m) steps
@@ -214,18 +231,12 @@ let move((robotinit, map, movements): Tile*Tile [,]* MovType list) =
                         map[t.Row, t.Col] <- { map[t.Row, t.Col] with Kind = replacementKind }
                     map[nextPos.Row, nextPos.Col] <- { map[nextPos.Row, nextPos.Col] with Kind = Robot }
 
-                    doStep { robot with Row = nextPos.Row; Col = nextPos.Col } (steps+1)
+                    doStep { robot with Row = nextPos.Row; Col = nextPos.Col } (steps+1) restmoves
                 else
-                    doStep robot (steps+1)
+                    doStep robot (steps+1) restmoves
     
     printfn "Initial state:"
-    doStep robotinit 1
-
-let calculateGPS(tile: Tile) =
-    if tile.Kind.IsBoxLEFT then
-        100 * tile.Row + tile.Col
-    else
-        0
+    doStep robotinit 1 movements
 
 let playgame() =
     let path = "day15/day15_input.txt"
