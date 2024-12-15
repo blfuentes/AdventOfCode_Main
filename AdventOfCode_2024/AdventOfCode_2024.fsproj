@@ -36,6 +36,7 @@
     <Compile Include="day13\part02\day13_part02.fs" />
     <Compile Include="day14\part01\day14_part01.fs" />
     <Compile Include="day14\part02\day14_part02.fs" />
+    <Compile Include="day15\bonus\day15_part02.fs" />
     <Compile Include="day15\part01\day15_part01.fs" />
     <Compile Include="day15\part02\day15_part02.fs" />
     <Compile Include="day16\part01\day16_part01.fs" />
