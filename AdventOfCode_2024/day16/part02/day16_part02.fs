@@ -70,7 +70,7 @@ let dijkstraExplore (map: char[,]) startnode endnode =
                 elif distance = currentNode.Distance then
                     paths @ currentNode.Paths
                 else
-                    currentNode.Paths
+                    []
 
             graph[position.Row, position.Col, dir] <- 
                 { currentNode with Distance = distance; Paths = newPaths }
@@ -106,7 +106,7 @@ let dijkstraExplore (map: char[,]) startnode endnode =
                 setVisited (currentPoint, currentDir)
 
                 neighbours currentPoint currentDir
-                |> Seq.filter (fun ((position, dir), distance) -> 
+                |> Seq.filter (fun ((position, dir), _) -> 
                     isValidCoord map position && not (alreadyVisited (position, dir))
                 )
                 |> Seq.map (fun ((position, dir), distance) -> 
@@ -116,9 +116,8 @@ let dijkstraExplore (map: char[,]) startnode endnode =
                         |> List.map (fun path -> path @ [(position, dir)])
                     (position, dir), d' + distance, paths
                 )
-                |> Seq.filter (fun ((position, dir), distance, _) -> 
-                    let d' = graph[position.Row, position.Col, dir].Distance
-                    distance <= d'
+                |> Seq.filter (fun ((position, dir), distance, paths) -> 
+                    distance <= graph[position.Row, position.Col, dir].Distance && not paths.IsEmpty
                 )
                 |> Seq.iter (fun ((position, dir), distance, paths) ->
                     updateDistanceAndPaths distance paths (position, dir)
