@@ -3,93 +3,122 @@
 open AdventOfCode_2024.Modules
 open System.Collections.Generic
 
-type CellType = 
-    | WALL
-    | EMPTY
-    | START
-    | END
-
 type Cell = {
-    Kind: CellType
-    Row: int;
-    Col: int;
-    Orientation : int
+    Visited: bool
+    Distance: int
+}
+
+type Position = {
+    Row: int
+    Col: int
 }
 
 let parseContent(lines: string array) =
     let maxrows = lines.Length
     let maxcols = lines[0].Length
-    let map = Array2D.init maxrows maxcols (fun row col -> { Kind = WALL; Row = row; Col = col; Orientation = -1 })
-    let mutable Start = { Kind = START; Row = -1; Col = -1; Orientation = 2 }
-    let mutable End = { Kind = END; Row = -1; Col = -1; Orientation = 0 }
+    let map = Array2D.create maxrows maxcols '.'
+    let mutable Start = { Row = -1; Col = -1 }
+    let mutable End = { Row = -1; Col = -1 }
+
     for row in 0..(maxrows-1) do
         let line = lines[row].ToCharArray()        
         for col in 0..(maxcols-1) do
             let value = line[col]
-            if value <> '#' then
-                map[row, col] <- { map[row, col] with Kind = EMPTY } 
-                if value = 'S' then
-                    Start <- { Start with Row = row; Col = col }
-                elif value = 'E' then
-                    map[row, col] <- { map[row, col] with Kind = EMPTY } 
-                    End <- { End with Row = row; Col = col; }
+            map[row, col] <- value
+            if value = 'S' then
+                Start <- { Start with Row = row; Col = col }
+            elif value = 'E' then
+                End <- { End with Row = row; Col = col; }
+
     (map, Start, End)
 
-let minValueAtCell (dimensions: int[][][]) (endnode: Cell) =
-    dimensions[endnode.Row][endnode.Col]
-    |> Array.min
- 
-let walk ((startnode, endnode):Cell*Cell) (dimensions: int array array array) (map: Cell[,]) =
-    let queue = new Queue<Cell>()
+let neighbours (position: Position) dir =
+    let neighbor =
+        match dir with
+        | 0 -> ({ Row = position.Row; Col = position.Col + 1 }, dir), 1 // EAST
+        | 1 -> ({ Row = position.Row + 1; Col = position.Col }, dir), 1 // SOUTH
+        | 2 -> ({ Row = position.Row; Col = position.Col - 1}, dir), 1 // WEST
+        | 3 -> ({ Row = position.Row - 1; Col = position.Col }, dir), 1 // NORTH
+        | _ -> failwith "error"
+    let clockwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 1) % 4), 1000
+    let counterwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 3) % 4), 1000
+    [ neighbor; clockwisecell; counterwisecell ]
 
-    let rowDirs = [|-1; 0; 1; 0 |]
-    let colDirs = [|0; -1; 0; 1 |]
+let neighboursBackwards (position: Position) dir =
+    let neighbor =
+        match dir with
+        | 0 -> ({ Row = position.Row; Col = position.Col - 1 }, dir), 1 // WEST
+        | 1 -> ({ Row = position.Row - 1; Col = position.Col }, dir), 1 // NORTH
+        | 2 -> ({ Row = position.Row; Col = position.Col + 1 }, dir), 1 // EAST
+        | 3 -> ({ Row = position.Row + 1; Col = position.Col }, dir), 1 // SOUTH
+        | _ -> failwith "error"
+    let clockwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 1) % 4), 1000
+    let counterwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 3) % 4), 1000
+    [ neighbor; clockwisecell; counterwisecell ]
 
-    let add  (cell: Cell) (cost: int) =
-        let currentCost = dimensions[cell.Row][cell.Col][cell.Orientation]
-        if not cell.Kind.IsWALL && currentCost > cost then
-            dimensions[cell.Row][cell.Col][cell.Orientation] <- cost
-            queue.Enqueue(cell)
+let dijkstraExplore (map: char[,]) startnode endnode =
+    let (maxrows, maxcols) = (map.GetLength(0), map.GetLength(1))
+    let graph = Array3D.create maxrows maxcols 4 { Visited = false; Distance = System.Int32.MaxValue }
+    let queue = PriorityQueue<Position * int, int>()
 
-    add startnode 0
-    while queue.Count > 0 do
-        let newcell = queue.Dequeue()
-        let distance = dimensions[newcell.Row][newcell.Col][newcell.Orientation]
-        let (newRow, newCol) = (newcell.Row + rowDirs[newcell.Orientation], newcell.Col + colDirs[newcell.Orientation])
-        let cell1 = { 
-            Kind = map[newRow, newCol].Kind        
-            Row = newRow;
-            Col = newCol;
-            Orientation = newcell.Orientation
-        }
-        add cell1 (distance+1)
+    let isValidCoord (map: char[,]) (position: Position) =
+        position.Row >= 0 && position.Col >= 0 &&
+        position.Row < maxrows && position.Col < maxcols && 
+        map[position.Row,position.Col] <> '#'
 
-        let cell2 = { 
-            Kind = newcell.Kind        
-            Row = newcell.Row;
-            Col = newcell.Col;
-            Orientation = (newcell.Orientation + 1) % 4
-        }
-        add cell2 (distance+1000)
+    let alreadyVisited (position, dir) = 
+        graph[position.Row, position.Col, dir].Visited
 
-        let cell3 = { 
-            Kind = newcell.Kind       
-            Row = newcell.Row;
-            Col = newcell.Col;
-            Orientation = (newcell.Orientation + 3) % 4
-        }
-        add cell3 (distance+1000)
-    
-    (minValueAtCell dimensions endnode) - 1000
+    let setVisited (position, dir) =
+        graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Visited = true }
+        
+    let setDistance distance (position, dir) =
+        graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Distance = distance }
+
+    let rec consumePath () =
+        if queue.Count = 0 then
+            let lowestCost=
+                [ 0..3 ]
+                |> List.map (fun dir -> 
+                    graph[endnode.Row, endnode.Col, dir].Distance
+                )
+                |> List.min
+            (graph, lowestCost)
+        else
+            let (currentPoint, currentDir) = queue.Dequeue()
+
+            if alreadyVisited (currentPoint, currentDir) then consumePath ()
+            else
+                setVisited (currentPoint, currentDir)
+
+                neighbours currentPoint currentDir
+                |> Seq.filter (fun ((position, dir), distance) -> 
+                    isValidCoord map position && not (alreadyVisited (position, dir))
+                )
+                |> Seq.map (fun ((position, dir), distance) -> 
+                    let d' = graph[currentPoint.Row, currentPoint.Col, currentDir].Distance
+                    (position, dir), d' + distance
+                )
+                |> Seq.filter (fun ((position, dir), distance) -> 
+                    let d' = graph[position.Row, position.Col, dir].Distance
+                    distance <= d'
+                )
+                |> Seq.iter (fun ((position, dir), distance) ->
+                    setDistance distance (position, dir)
+                    queue.Enqueue((position, dir), distance)
+                )
+
+                consumePath ()
+
+    setDistance 0 (startnode, 0)
+    queue.Enqueue((startnode, 0), 0)
+
+    consumePath ()
 
 let execute() =
     let path = "day16/day16_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (map, startNode, endNode) = parseContent content
-    let (maxrows, maxcols) = (map.GetLength(0), map.GetLength(1))
-    let arrayofdimensions = Array.init maxrows (fun _ -> 
-        Array.init maxcols (fun _ -> 
-            Array.create 4 System.Int32.MaxValue
-        )
-    )
-    walk (startNode, endNode) arrayofdimensions map
+
+    let costGraph, minimalcost = dijkstraExplore map startNode endNode
+    minimalcost
