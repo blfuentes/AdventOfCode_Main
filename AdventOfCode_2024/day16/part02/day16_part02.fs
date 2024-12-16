@@ -3,14 +3,16 @@
 open AdventOfCode_2024.Modules
 open System.Collections.Generic
 
-type Cell = {
-    Visited: bool
-    Distance: int
-}
 
 type Position = {
     Row: int
     Col: int
+}
+
+type Cell = {
+    Visited: bool
+    Distance: int
+    Paths: (Position*int) list list
 }
 
 let parseContent(lines: string array) =
@@ -44,22 +46,9 @@ let neighbours (position: Position) dir =
     let counterwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 3) % 4), 1000
     [ neighbor; clockwisecell; counterwisecell ]
 
-let neighboursBackwards (position: Position) dir =
-    let neighbor =
-        match dir with
-        | 0 -> ({ Row = position.Row; Col = position.Col - 1 }, dir), 1 // WEST
-        | 1 -> ({ Row = position.Row - 1; Col = position.Col }, dir), 1 // NORTH
-        | 2 -> ({ Row = position.Row; Col = position.Col + 1 }, dir), 1 // EAST
-        | 3 -> ({ Row = position.Row + 1; Col = position.Col }, dir), 1 // SOUTH
-        | _ -> failwith "error"
-    let clockwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 1) % 4), 1000
-    let counterwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 3) % 4), 1000
-    [ neighbor; clockwisecell; counterwisecell ]
-
-
 let dijkstraExplore (map: char[,]) startnode endnode =
     let (maxrows, maxcols) = (map.GetLength(0), map.GetLength(1))
-    let graph = Array3D.create maxrows maxcols 4 { Visited = false; Distance = System.Int32.MaxValue }
+    let graph = Array3D.create maxrows maxcols 4 { Visited = false; Distance = System.Int32.MaxValue; Paths = [] }
     let queue = PriorityQueue<Position * int, int>()
 
     let isValidCoord (map: char[,]) (position: Position) =
@@ -72,19 +61,43 @@ let dijkstraExplore (map: char[,]) startnode endnode =
 
     let setVisited (position, dir) =
         graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Visited = true }
-        
-    let setDistance distance (position, dir) =
-        graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Distance = distance }
+
+    let updateDistanceAndPaths distance paths (position, dir) =
+            let currentNode = graph[position.Row, position.Col, dir]
+            let newPaths = 
+                if distance < currentNode.Distance then
+                    paths
+                elif distance = currentNode.Distance then
+                    paths @ currentNode.Paths
+                else
+                    currentNode.Paths
+
+            graph[position.Row, position.Col, dir] <- 
+                { currentNode with Distance = distance; Paths = newPaths }
 
     let rec consumePath () =
         if queue.Count = 0 then
-            let lowestCost=
+            let lowestCost =
                 [ 0..3 ]
-                |> List.map (fun dir -> 
-                    graph[endnode.Row, endnode.Col, dir].Distance
-                )
+                |> List.map (fun dir -> graph[endnode.Row, endnode.Col, dir].Distance)
                 |> List.min
-            (graph, lowestCost)
+            
+            let allpaths =
+                [ 0..3 ]
+                |> List.collect (fun dir ->
+                    if graph[endnode.Row, endnode.Col, dir].Distance = lowestCost then
+                        graph[endnode.Row, endnode.Col, dir].Paths
+                    else
+                        []
+                ) |> List.map(fun p ->
+                    p |> List.distinctBy(fun (pos, _) -> pos)
+                )
+
+            let uniquePaths =
+                List.concat allpaths
+                |> List.distinctBy(fun (pos, _) -> pos)
+
+            (graph, lowestCost, uniquePaths)
         else
             let (currentPoint, currentDir) = queue.Dequeue()
 
@@ -98,50 +111,32 @@ let dijkstraExplore (map: char[,]) startnode endnode =
                 )
                 |> Seq.map (fun ((position, dir), distance) -> 
                     let d' = graph[currentPoint.Row, currentPoint.Col, currentDir].Distance
-                    (position, dir), d' + distance
+                    let paths = 
+                        graph[currentPoint.Row, currentPoint.Col, currentDir].Paths
+                        |> List.map (fun path -> path @ [(position, dir)])
+                    (position, dir), d' + distance, paths
                 )
-                |> Seq.filter (fun ((position, dir), distance) -> 
+                |> Seq.filter (fun ((position, dir), distance, _) -> 
                     let d' = graph[position.Row, position.Col, dir].Distance
                     distance <= d'
                 )
-                |> Seq.iter (fun ((position, dir), distance) ->
-                    setDistance distance (position, dir)
+                |> Seq.iter (fun ((position, dir), distance, paths) ->
+                    updateDistanceAndPaths distance paths (position, dir)
                     queue.Enqueue((position, dir), distance)
                 )
 
                 consumePath ()
 
-    setDistance 0 (startnode, 0)
+    let initialPath = [[(startnode, 0)]]
+    updateDistanceAndPaths 0 initialPath (startnode, 0)
     queue.Enqueue((startnode, 0), 0)
 
     consumePath ()
-
-
-let rec DFS (graph: Cell [,,]) visited (remainings: (Position*int) list) =
-    match remainings with
-    | [] -> visited
-    | point :: restpoints when Set.contains point visited -> 
-        DFS graph visited restpoints
-    | (position, dir) :: t ->
-        let neighbors =
-            neighboursBackwards position dir
-            |> List.filter (fun ((pos, d), distance) -> 
-                graph[position.Row, position.Col, dir].Distance - graph[pos.Row, pos.Col, d].Distance = distance)
-            |> List.map fst
-
-        let newneighbors = List.append neighbors t
-        newneighbors |> DFS graph (Set.add (position, dir) visited)
 
 let execute() =
     let path = "day16/day16_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (map, startNode, endNode) = parseContent content
 
-    let costGraph, _ = dijkstraExplore map startNode endNode
-    let endingsDirections =
-        [ 0..3 ]
-        |> List.map (fun dir -> (endNode, dir))
-
-    DFS costGraph Set.empty endingsDirections
-    |> Set.map (fun (position, _) -> position.Row, position.Col)
-    |> Set.count
+    let (_, _, uniquepaths) = dijkstraExplore map startNode endNode
+    uniquepaths.Length

@@ -103,11 +103,11 @@ let main argv =
     let (resultday15Part2, timer15_2) = Utilities.duration day15_part02.execute
     printfn "Final result Day 15 part 2: %A in %s" resultday15Part2 (ms timer15_2)
 
-    //// DAY 16
-    //let (resultday16Part1, time16_1) = Utilities.duration day16_part01.execute
-    //printfn "Final result Day 16 part 1: %A in %s" resultday16Part1 (ms time16_1)
-    //let (resultday16Part2, timer16_2) = Utilities.duration day16_part02.execute
-    //printfn "Final result Day 16 part 2: %A in %s" resultday16Part2 (ms timer16_2)
+    // DAY 16
+    let (resultday16Part1, time16_1) = Utilities.duration day16_part01.execute
+    printfn "Final result Day 16 part 1: %A in %s" resultday16Part1 (ms time16_1)
+    let (resultday16Part2, timer16_2) = Utilities.duration day16_part02.execute
+    printfn "Final result Day 16 part 2: %A in %s" resultday16Part2 (ms timer16_2)
 
     //// DAY 17
     //let (resultday17Part1, time17_1) = Utilities.duration day17_part01.execute

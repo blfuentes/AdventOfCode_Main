@@ -3,14 +3,15 @@
 open AdventOfCode_2024.Modules
 open System.Collections.Generic
 
-type Cell = {
-    Visited: bool
-    Distance: int
-}
 
 type Position = {
     Row: int
     Col: int
+}
+
+type Cell = {
+    Visited: bool
+    Distance: int
 }
 
 let parseContent(lines: string array) =
@@ -44,18 +45,6 @@ let neighbours (position: Position) dir =
     let counterwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 3) % 4), 1000
     [ neighbor; clockwisecell; counterwisecell ]
 
-let neighboursBackwards (position: Position) dir =
-    let neighbor =
-        match dir with
-        | 0 -> ({ Row = position.Row; Col = position.Col - 1 }, dir), 1 // WEST
-        | 1 -> ({ Row = position.Row - 1; Col = position.Col }, dir), 1 // NORTH
-        | 2 -> ({ Row = position.Row; Col = position.Col + 1 }, dir), 1 // EAST
-        | 3 -> ({ Row = position.Row + 1; Col = position.Col }, dir), 1 // SOUTH
-        | _ -> failwith "error"
-    let clockwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 1) % 4), 1000
-    let counterwisecell = ({ Row = position.Row; Col = position.Col }, (dir + 3) % 4), 1000
-    [ neighbor; clockwisecell; counterwisecell ]
-
 let dijkstraExplore (map: char[,]) startnode endnode =
     let (maxrows, maxcols) = (map.GetLength(0), map.GetLength(1))
     let graph = Array3D.create maxrows maxcols 4 { Visited = false; Distance = System.Int32.MaxValue }
@@ -69,19 +58,17 @@ let dijkstraExplore (map: char[,]) startnode endnode =
     let alreadyVisited (position, dir) = 
         graph[position.Row, position.Col, dir].Visited
 
-    let setVisited (position, dir) =
-        graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Visited = true }
-        
     let setDistance distance (position, dir) =
         graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Distance = distance }
 
+    let setVisited (position, dir) =
+        graph[position.Row, position.Col, dir] <- { graph[position.Row, position.Col, dir] with Visited = true }
+
     let rec consumePath () =
         if queue.Count = 0 then
-            let lowestCost=
+            let lowestCost =
                 [ 0..3 ]
-                |> List.map (fun dir -> 
-                    graph[endnode.Row, endnode.Col, dir].Distance
-                )
+                |> List.map (fun dir -> graph[endnode.Row, endnode.Col, dir].Distance)
                 |> List.min
             (graph, lowestCost)
         else
@@ -120,5 +107,5 @@ let execute() =
     let content = LocalHelper.GetLinesFromFile path
     let (map, startNode, endNode) = parseContent content
 
-    let costGraph, minimalcost = dijkstraExplore map startNode endNode
+    let (costGraph, minimalcost) = dijkstraExplore map startNode endNode
     minimalcost
