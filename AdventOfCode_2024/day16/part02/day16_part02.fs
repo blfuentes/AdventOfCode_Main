@@ -12,7 +12,7 @@ type Position = {
 type Cell = {
     Visited: bool
     Distance: int
-    Paths: (Position*int) list list
+    Paths: Position list list
 }
 
 let parseContent(lines: string array) =
@@ -90,12 +90,12 @@ let dijkstraExplore (map: char[,]) startnode endnode =
                     else
                         []
                 ) |> List.map(fun p ->
-                    p |> List.distinctBy(fun (pos, _) -> pos)
+                    p |> List.distinctBy id
                 )
 
             let uniquePaths =
                 List.concat allpaths
-                |> List.distinctBy(fun (pos, _) -> pos)
+                |> List.distinctBy id
 
             (graph, lowestCost, uniquePaths)
         else
@@ -113,7 +113,7 @@ let dijkstraExplore (map: char[,]) startnode endnode =
                     let d' = graph[currentPoint.Row, currentPoint.Col, currentDir].Distance
                     let paths = 
                         graph[currentPoint.Row, currentPoint.Col, currentDir].Paths
-                        |> List.map (fun path -> path @ [(position, dir)])
+                        |> List.map (fun path -> path @ [position])
                     (position, dir), d' + distance, paths
                 )
                 |> Seq.filter (fun ((position, dir), distance, paths) -> 
@@ -126,7 +126,7 @@ let dijkstraExplore (map: char[,]) startnode endnode =
 
                 consumePath ()
 
-    let initialPath = [[(startnode, 0)]]
+    let initialPath = [[startnode]]
     updateDistanceAndPaths 0 initialPath (startnode, 0)
     queue.Enqueue((startnode, 0), 0)
 
