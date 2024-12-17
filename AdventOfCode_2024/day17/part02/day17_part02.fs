@@ -108,43 +108,39 @@ let performOp(op: OpCode) (opOp: OpCode) (registers: Dictionary<string,int64>) (
 
     (pointerIdx, output)
 
-let runProgram(ops: OpCode array)(registers: Dictionary<string,int64>) (ops2: int64 list) (ignorecheck: bool)  =
+let runProgram(ops: OpCode array)(registers: Dictionary<string,int64>) =
     let mutable pIdx = 0
-    let mutable shouldContinue = true
     let mutable outputValues = []
-    let mutable opIdx = 0
-    while pIdx < ops.Length && shouldContinue do
+    while pIdx < ops.Length do
         let (newPidx, output) = performOp ops[pIdx] ops[pIdx+1] registers pIdx
         pIdx <- newPidx
         if output <> -1 then
-            if ignorecheck then
-                outputValues <- outputValues @ [output]
-                opIdx <- opIdx + 1
-            else
-                if output = ops2.Item(opIdx) then
-                    outputValues <- outputValues @ [output]
-                    opIdx <- opIdx + 1
-                else
-                    shouldContinue <- false
+            outputValues <- outputValues @ [output]
     outputValues
 
-let rec findNewRegisterA (originalValue: int64) (currentValue: int64) (ops: OpCode array) (ops2: int64 list) (registers: Dictionary<string,int64>) =
-    let newRegisters = Dictionary(registers)
-    newRegisters["A"] <- currentValue
-    if currentValue <> originalValue then
-        let result = runProgram ops newRegisters ops2 false
-        if result = ops2 then
-            currentValue
-        else
-            findNewRegisterA originalValue (currentValue + 1L) ops ops2 newRegisters
-    else
-        findNewRegisterA originalValue (currentValue + 1L) ops ops2 newRegisters
-
+let findNewRegister(ops: OpCode array) (registers: Dictionary<string,int64>) =
+    let reversedOps = ops |> Array.rev
+    let reversedOpsIds = reversedOps |> Array.map revOpType
+    let checkStack = new Stack<int64*int>()
+    checkStack.Push((0L,0))
+    let mutable currentsolution = System.Int64.MaxValue
+    while checkStack.Count > 0 do
+        let (pIdx, mindex) = checkStack.Pop()
+        for bitIdx in 0L..8L do
+            let newRegisters = Dictionary(registers)
+            newRegisters["A"] <- bitIdx + pIdx
+            let output = runProgram ops newRegisters
+            if output[0] = reversedOpsIds[mindex] then
+                if mindex+1 >= ops.Length then
+                    if bitIdx + pIdx < currentsolution then
+                        currentsolution <- bitIdx + pIdx
+                else
+                    checkStack.Push((8L*(pIdx+bitIdx), mindex+1))
+    currentsolution
 
 let execute() =
     let path = "day17/day17_input.txt"
     let content = LocalHelper.GetContentFromFile path
     let (registers, ops) = parseContent content
-    let ops2 = ops |> Array.map revOpType |> List.ofArray
-    let registerA = findNewRegisterA registers["A"] System.Int32.MaxValue ops ops2 registers
+    let registerA = findNewRegister ops registers
     registerA
