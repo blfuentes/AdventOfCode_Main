@@ -15,8 +15,8 @@ https://adventofcode.com/
 |[2021](#2021-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️				| (34/50)	|
 |[2022](#2022-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️🌟				| (29/50)	|
 |[2023](#2023-fc)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
-|[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
-|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (61,8%) 			| (309/500) |
+|[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️				| (34/50)	|
+|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (62,2%) 			| (311/500) |
 
 ## Advent Of Code 2015
 
@@ -353,27 +353,27 @@ https://adventofcode.com/2023
 
 https://adventofcode.com/2024
 
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (16/25)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (17/25)
 
-|Day							| Part 1 | Part 2 |
-|-------------------------------|----|----|
-| Day 1: Historian Hysteria		| ✔️ [F#](./AdventOfCode_2024/day01/part01/day01_part01.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_1.go) | ✔️ [F#](./AdventOfCode_2024/day01/part02/day01_part02.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_2.go) |
-| Day 2: Red-Nosed Reports		| ✔️ [F#](./AdventOfCode_2024/day02/part01/day02_part01.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_1.go) | ✔️ [F#](./AdventOfCode_2024/day02/part02/day02_part02.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_2.go) |
-| Day 3: Mull It Over			| ✔️ [F#](./AdventOfCode_2024/day03/part01/day03_part01.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_1.go) | ✔️ [F#](./AdventOfCode_2024/day03/part02/day03_part02.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_2.go) |
-| Day 4: Ceres Search			| ✔️ [F#](./AdventOfCode_2024/day04/part01/day04_part01.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_1.go) | ✔️ [F#](./AdventOfCode_2024/day04/part02/day04_part02.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_2.go) |
-| Day 5: Print Queue			| ✔️ [F#](./AdventOfCode_2024/day05/part01/day05_part01.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_1.go) | ✔️ [F#](./AdventOfCode_2024/day05/part02/day05_part02.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_2.go) |
-| Day 6: Guard Gallivant		| ✔️ [F#](./AdventOfCode_2024/day06/part01/day06_part01.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_1.go) | ✔️ [F#](./AdventOfCode_2024/day06/part02/day06_part02.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_2.go) |
-| Day 7: Bridge Repair			| ✔️ [F#](./AdventOfCode_2024/day07/part01/day07_part01.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_1.go) | ✔️ [F#](./AdventOfCode_2024/day07/part02/day07_part02.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_2.go) |
-| Day 8: Resonant Collinearity	| ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_1.go) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_2.go) |
-| Day 9: Disk Fragmenter		| ✔️ [F#](./AdventOfCode_2024/day09/part01/day09_part01.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_1.go) | ✔️ [F#](./AdventOfCode_2024/day09/part02/day09_part02.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_2.go) |
-| Day 10: Hoof It				| ✔️ [F#](./AdventOfCode_2024/day10/part01/day10_part01.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_1.go) | ✔️ [F#](./AdventOfCode_2024/day10/part02/day10_part02.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_2.go) |
-| Day 11: Plutonian Pebbles		| ✔️ [F#](./AdventOfCode_2024/day11/part01/day11_part01.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_1.go) | ✔️ [F#](./AdventOfCode_2024/day11/part02/day11_part02.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_2.go) |
-| Day 12: Garden Groups			| ✔️ [F#](./AdventOfCode_2024/day12/part01/day12_part01.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_1.go) | ✔️ [F#](./AdventOfCode_2024/day12/part02/day12_part02.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_2.go) |
-| Day 13: Claw Contraption		| ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_2.go) |
-| Day 14: Restroom Redoubt		| ✔️ [F#](./AdventOfCode_2024/day14/part01/day14_part01.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_1.go) | ✔️ [F#](./AdventOfCode_2024/day14/part02/day14_part02.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_2.go) |
-| Day 15: Warehouse Woes		| ✔️ [F#](./AdventOfCode_2024/day15/part01/day15_part01.fs) - [Go](./AdventOfCode_2024_Go/day15/day15_1.go) | ✔️ [F#](./AdventOfCode_2024/day15/part02/day15_part02.fs) |
-| Day 16: Reindeer Maze			| ✔️ [F#](./AdventOfCode_2024/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day16/part02/day16_part02.fs) |
-| Day 17  | ❌  | ❌ |
+|Day								| Part 1 | Part 2 |
+|-----------------------------------|----|----|
+| Day 1: Historian Hysteria			| ✔️ [F#](./AdventOfCode_2024/day01/part01/day01_part01.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_1.go) | ✔️ [F#](./AdventOfCode_2024/day01/part02/day01_part02.fs) - [Go](./AdventOfCode_2024_Go/day01/day01_2.go) |
+| Day 2: Red-Nosed Reports			| ✔️ [F#](./AdventOfCode_2024/day02/part01/day02_part01.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_1.go) | ✔️ [F#](./AdventOfCode_2024/day02/part02/day02_part02.fs) - [Go](./AdventOfCode_2024_Go/day02/day02_2.go) |
+| Day 3: Mull It Over				| ✔️ [F#](./AdventOfCode_2024/day03/part01/day03_part01.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_1.go) | ✔️ [F#](./AdventOfCode_2024/day03/part02/day03_part02.fs) - [Go](./AdventOfCode_2024_Go/day03/day03_2.go) |
+| Day 4: Ceres Search				| ✔️ [F#](./AdventOfCode_2024/day04/part01/day04_part01.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_1.go) | ✔️ [F#](./AdventOfCode_2024/day04/part02/day04_part02.fs) - [Go](./AdventOfCode_2024_Go/day04/day04_2.go) |
+| Day 5: Print Queue				| ✔️ [F#](./AdventOfCode_2024/day05/part01/day05_part01.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_1.go) | ✔️ [F#](./AdventOfCode_2024/day05/part02/day05_part02.fs) - [Go](./AdventOfCode_2024_Go/day05/day05_2.go) |
+| Day 6: Guard Gallivant			| ✔️ [F#](./AdventOfCode_2024/day06/part01/day06_part01.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_1.go) | ✔️ [F#](./AdventOfCode_2024/day06/part02/day06_part02.fs) - [Go](./AdventOfCode_2024_Go/day06/day06_2.go) |
+| Day 7: Bridge Repair				| ✔️ [F#](./AdventOfCode_2024/day07/part01/day07_part01.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_1.go) | ✔️ [F#](./AdventOfCode_2024/day07/part02/day07_part02.fs) - [Go](./AdventOfCode_2024_Go/day07/day07_2.go) |
+| Day 8: Resonant Collinearity		| ✔️ [F#](./AdventOfCode_2024/day08/part01/day08_part01.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_1.go) | ✔️ [F#](./AdventOfCode_2024/day08/part02/day08_part02.fs) - [Go](./AdventOfCode_2024_Go/day08/day08_2.go) |
+| Day 9: Disk Fragmenter			| ✔️ [F#](./AdventOfCode_2024/day09/part01/day09_part01.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_1.go) | ✔️ [F#](./AdventOfCode_2024/day09/part02/day09_part02.fs) - [Go](./AdventOfCode_2024_Go/day09/day09_2.go) |
+| Day 10: Hoof It					| ✔️ [F#](./AdventOfCode_2024/day10/part01/day10_part01.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_1.go) | ✔️ [F#](./AdventOfCode_2024/day10/part02/day10_part02.fs) - [Go](./AdventOfCode_2024_Go/day10/day10_2.go) |
+| Day 11: Plutonian Pebbles			| ✔️ [F#](./AdventOfCode_2024/day11/part01/day11_part01.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_1.go) | ✔️ [F#](./AdventOfCode_2024/day11/part02/day11_part02.fs) - [Go](./AdventOfCode_2024_Go/day11/day11_2.go) |
+| Day 12: Garden Groups				| ✔️ [F#](./AdventOfCode_2024/day12/part01/day12_part01.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_1.go) | ✔️ [F#](./AdventOfCode_2024/day12/part02/day12_part02.fs) - [Go](./AdventOfCode_2024_Go/day12/day12_2.go) |
+| Day 13: Claw Contraption			| ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_2.go) |
+| Day 14: Restroom Redoubt			| ✔️ [F#](./AdventOfCode_2024/day14/part01/day14_part01.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_1.go) | ✔️ [F#](./AdventOfCode_2024/day14/part02/day14_part02.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_2.go) |
+| Day 15: Warehouse Woes			| ✔️ [F#](./AdventOfCode_2024/day15/part01/day15_part01.fs) - [Go](./AdventOfCode_2024_Go/day15/day15_1.go) | ✔️ [F#](./AdventOfCode_2024/day15/part02/day15_part02.fs) |
+| Day 16: Reindeer Maze				| ✔️ [F#](./AdventOfCode_2024/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day16/part02/day16_part02.fs) |
+| Day 17: Chronospatial Computer	| ✔️ [F#](./AdventOfCode_2024/day17/part01/day17_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day17/part01/day17_part02.fs) |
 | Day 18  | ❌  | ❌ |
 | Day 19  | ❌  | ❌ |
 | Day 20  | ❌  | ❌ |
