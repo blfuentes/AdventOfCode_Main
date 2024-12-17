@@ -4,6 +4,22 @@ import (
 	"github.com/blfuentes/AdventOfCode_2024_Go/utilities"
 )
 
+type DefineTile int
+
+const (
+	Wall DefineTile = iota
+	Empty
+	Robot
+	Box
+	None
+)
+
+type Tile struct {
+	Kind DefineTile
+	Row  int
+	Col  int
+}
+
 func findBoxes(from Tile, themap [][]Tile, mov DefinedDir) []Tile {
 	result := make([]Tile, 0)
 	r, c := directionOfMov(mov)
