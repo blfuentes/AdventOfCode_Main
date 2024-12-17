@@ -138,6 +138,28 @@ let findNewRegister(ops: OpCode array) (registers: Dictionary<string,int64>) =
                     checkStack.Push((8L*(pIdx+bitIdx), mindex+1))
     currentsolution
 
+// alternative solution with decomposition of the problem
+let findA (output: int64 list) =
+    let rec generateA (output: int64 list) =
+        let mutable registerB = 0L
+        seq {
+            if output.Length = 0 then
+                yield 0L
+            else
+                for currentOp in generateA output.Tail do // iterate in reverse order
+                    for bitPos in 0L..7L do
+                        let registerA = currentOp * 8L + bitPos
+                        registerB <- registerA % 8L
+                        registerB <- registerB ^^^ 3L
+                        let registerC = registerA >>> int registerB
+                        registerB <- registerB ^^^ registerC
+                        registerB <- registerB ^^^ 5L
+                        if output[0] = registerB % 8L then
+                            yield registerA
+        }
+    
+    generateA output |> Seq.min
+
 let execute() =
     let path = "day17/day17_input.txt"
     let content = LocalHelper.GetContentFromFile path
