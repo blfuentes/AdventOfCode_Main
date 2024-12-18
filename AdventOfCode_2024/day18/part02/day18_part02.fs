@@ -40,10 +40,10 @@ let findShortestPath (graph: Coord[,]) (start: Coord) (goal: Coord) =
 
     let directions = [ (0, 1); (1, 0); (0, -1); (-1, 0) ]
 
-    let queue = Queue<Coord * Coord list>()
+    let queue = Queue<Coord * int>()
     let visited = HashSet<Coord>()
 
-    queue.Enqueue((start, [start]))
+    queue.Enqueue((start, 0))
 
     let rec bfs () =
         if queue.Count = 0 then None
@@ -62,7 +62,7 @@ let findShortestPath (graph: Coord[,]) (start: Coord) (goal: Coord) =
                         if isInBoundaries nextX nextY then
                             let neighbor = graph[nextX, nextY]
                             if not (visited.Contains(neighbor)) then
-                                queue.Enqueue((neighbor, path @ [neighbor]))
+                                queue.Enqueue((neighbor, path+1))
                 bfs ()
 
     bfs ()
