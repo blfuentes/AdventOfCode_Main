@@ -14,31 +14,31 @@ type Coord ={
 }
 
 let parseContent(lines: string array) =
-    let map = Array2D.init 71 71 (fun x y -> { X = x; Y = y; Kind = Empty })
+    let map = Array2D.init 71 71 (fun row col -> { X = col; Y = row; Kind = Empty })
     let corrupted = 
         lines
         |> Array.map(fun l ->
-            { X = (int)(l.Split(",")[0]); Y =(int)(l.Split(",")[1]); Kind = Corrupted }
+            { X = (int)(l.Split(",")[0]); Y = (int)(l.Split(",")[1]); Kind = Corrupted }
         ) |> List.ofArray
             
     (map, corrupted)
 
 let printMap(graph: Coord[,]) =
-    let maxX = graph.GetLength(0)
-    let maxY = graph.GetLength(1)
-    for row in 0..(maxX-1) do
-        for col in 0..(maxY-1) do
+    let maxRows = graph.GetLength(0)
+    let maxCols = graph.GetLength(1)
+    for row in 0..(maxRows-1) do
+        for col in 0..(maxCols-1) do
             printf "%s" (if graph[row,col].Kind.IsCorrupted then "#" else ".")
         printfn ""
 
 let findShortestPath (graph: Coord[,]) (start: Coord) (goal: Coord) =
-    let maxY = graph.GetLength(0)
-    let maxX = graph.GetLength(1)
+    let maxRows = graph.GetLength(0)
+    let maxCols = graph.GetLength(1)
 
-    let isInBoundaries (x: int) (y: int) =
-        x >= 0 && y >= 0 && x < maxX && y < maxY
+    let isInBoundaries (row: int) (col: int) =
+        row >= 0 && col >= 0 && row < maxRows && col < maxCols
 
-    let directions = [ (0, 1); (1, 0); (0, -1); (-1, 0) ]
+    let directions = [ (-1, 0); (1, 0); (0, 1); (0, -1) ]
 
     let queue = Queue<Coord * int>()
     let visited = HashSet<Coord>()
@@ -56,11 +56,11 @@ let findShortestPath (graph: Coord[,]) (start: Coord) (goal: Coord) =
                 if not (visited.Contains(current)) && current.Kind.IsEmpty then
                     let _ = visited.Add(current)
 
-                    for (dx, dy) in directions do
-                        let nextX = current.X + dx
-                        let nextY = current.Y + dy
-                        if isInBoundaries nextX nextY then
-                            let neighbor = graph[nextX, nextY]
+                    for (dRow, dCol) in directions do
+                        let nextRow = current.Y + dRow
+                        let nextCol = current.X + dCol
+                        if isInBoundaries nextRow nextCol then
+                            let neighbor = graph[nextRow, nextCol]
                             if not (visited.Contains(neighbor)) then
                                 queue.Enqueue((neighbor, path+1))
                 bfs ()
@@ -71,7 +71,7 @@ let findCorrupted(map: Coord[,]) (corrupted: Coord list) (start: Coord) (goal: C
     let rec walk (remainingCorrupted: Coord list) =
         match remainingCorrupted with
         | c :: tail ->
-            map[c.Y, c.X] <- { map[c.Y, c.X] with Kind = Corrupted }
+            map[c.Y, c.X] <- { map[c.X, c.Y] with Kind = Corrupted }
             let canFinish = findShortestPath map start goal
             match canFinish with
             | Some(p) -> walk tail
