@@ -113,7 +113,7 @@ let main argv =
     let (resultday17Part1, time17_1) = Utilities.duration day17_part01.execute
     printfn "Final result Day 17 part 1: %A in %s" resultday17Part1 (ms time17_1)
     let (resultday17Part2, timer17_2) = Utilities.duration day17_part02.execute
-    printfn "Final result Day 17 part 2: %A in %s" resultday17Part2 (ms timer17_2)
+    printfn "Final result Day 17 part 2: %d in %s" resultday17Part2 (ms timer17_2)
 
     // DAY 18
     let (resultday18Part1, time18_1) = Utilities.duration day18_part01.execute
@@ -121,11 +121,11 @@ let main argv =
     let (resultday18Part2, timer18_2) = Utilities.duration day18_part02.execute
     printfn "Final result Day 18 part 2: %A in %s" resultday18Part2 (ms timer18_2)
 
-    //// DAY 19
-    //let (resultday19Part1, time19_1) = Utilities.duration day19_part01.execute
-    //printfn "Final result Day 19 part 1: %A in %s" resultday19Part1 (ms time19_1)
-    //let (resultday19Part2, timer19_2) = Utilities.duration day19_part02.execute
-    //printfn "Final result Day 19 part 2: %A in %s" resultday19Part2 (ms timer19_2)
+    // DAY 19
+    let (resultday19Part1, time19_1) = Utilities.duration day19_part01.execute
+    printfn "Final result Day 19 part 1: %A in %s" resultday19Part1 (ms time19_1)
+    let (resultday19Part2, timer19_2) = Utilities.duration day19_part02.execute
+    printfn "Final result Day 19 part 2: %d in %s" resultday19Part2 (ms timer19_2)
 
     //// DAY 20
     //let (resultday20Part1, time20_1) = Utilities.duration day20_part01.execute
