@@ -372,7 +372,7 @@ https://adventofcode.com/2024
 | Day 13: Claw Contraption			| ✔️ [F#](./AdventOfCode_2024/day13/part01/day13_part01.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_1.go) | ✔️ [F#](./AdventOfCode_2024/day13/part02/day13_part02.fs) - [Go](./AdventOfCode_2024_Go/day13/day13_2.go) |
 | Day 14: Restroom Redoubt			| ✔️ [F#](./AdventOfCode_2024/day14/part01/day14_part01.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_1.go) | ✔️ [F#](./AdventOfCode_2024/day14/part02/day14_part02.fs) - [Go](./AdventOfCode_2024_Go/day14/day14_2.go) |
 | Day 15: Warehouse Woes			| ✔️ [F#](./AdventOfCode_2024/day15/part01/day15_part01.fs) - [Go](./AdventOfCode_2024_Go/day15/day15_1.go) | ✔️ [F#](./AdventOfCode_2024/day15/part02/day15_part02.fs) - [Go](./AdventOfCode_2024_Go/day15/day15_2.go) |
-| Day 16: Reindeer Maze				| ✔️ [F#](./AdventOfCode_2024/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day16/part02/day16_part02.fs) |
+| Day 16: Reindeer Maze				| ✔️ [F#](./AdventOfCode_2024/day16/part01/day16_part01.fs) - [Go](./AdventOfCode_2024_Go/day16/day16_1.go) | ✔️ [F#](./AdventOfCode_2024/day16/part02/day16_part02.fs) - [Go](./AdventOfCode_2024_Go/day16/day16_2.go) |
 | Day 17: Chronospatial Computer	| ✔️ [F#](./AdventOfCode_2024/day17/part01/day17_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day17/part02/day17_part02.fs) |
 | Day 18: RAM Run					| ✔️ [F#](./AdventOfCode_2024/day18/part01/day18_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day18/part02/day18_part02.fs) |
 | Day 19: Linen Layout				| ✔️ [F#](./AdventOfCode_2024/day19/part01/day19_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day19/part02/day19_part02.fs) |
