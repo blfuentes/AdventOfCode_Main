@@ -96,45 +96,54 @@ let tryToCheat(graph: Coord[,]) (wallpoints: Coord list) (start: Coord) (goal: C
     let maxRows = graph.GetLength(0)
     let maxCols = graph.GetLength(1)
     let touchedwalls = Dictionary<Coord, int>()
-    let (initialLength, visitedlengths, touchedwalls) = findShortestPath graph None (HashSet<Coord>())touchedwalls start goal
+    let (initialLength, visited, _) = findShortestPath graph None (HashSet<Coord>())touchedwalls start goal
     
-    let touched = touchedwalls.Keys |> Set.ofSeq
-
     let distances = Dictionary<(int*int), int>()
-    visitedlengths
+    visited
     |> Seq.iteri(fun idx c -> distances.Add((c.Row, c.Col), initialLength.Value - idx))
 
     let cheatLength (cStart: Coord) (cEnd: Coord) =
         abs(cStart.Row - cEnd.Row) + abs(cStart.Col - cEnd.Col)
 
-    let getCheatExits (c: Coord) =
-        let rangeofCheats=
-            [for cDistance in [0..5] do
-                for (dr, dc) in directions do
-                    let (cheatRow, cheatCol) = (c.Row + cDistance * dr, c.Col + cDistance * dc)
-                    if isInBoundaries cheatRow cheatCol maxRows maxCols then
-                        yield graph[cheatRow, cheatCol]
-            ] |> Set.ofList
-        //let connections = Set.intersect rangeofCheats touched
-        rangeofCheats
-        |> Seq.map(fun c' -> (c', cheatLength c c'))              
+    let buildSpatialRange (coords: seq<Coord>) =
+        let bucketSize = 20
+        
+        let getBucketKey (coord: Coord) = (coord.Row / bucketSize, coord.Col / bucketSize)
+
+        let spatialHash = Dictionary<(int*int), Coord list>()
+        for coord in coords do
+            let key = getBucketKey coord
+            if spatialHash.ContainsKey(key) then
+                spatialHash[key] <- coord :: spatialHash.[key]
+            else
+                spatialHash[key] <- [coord]
+
+        let result = ResizeArray<(Coord) * (Coord)>()
+        for kvp in spatialHash do
+            let (bucketX, bucketY), points = kvp.Key, kvp.Value
+            for dx in -1..1 do
+                for dy in -1..1 do
+                    let neighborKey = (bucketX + dx, bucketY + dy)
+                    if spatialHash.ContainsKey(neighborKey) then
+                        let neighbors = spatialHash[neighborKey]
+                        for p1 in points do
+                            for p2 in neighbors do
+                                if p1 <> p2 && cheatLength p1 p2 <= 20 then
+                                    result.Add((p1, p2))
+
+        result
+    
+    let combinations = buildSpatialRange visited
 
     let cheattimes =
-        [for tw in touchedwalls do
-            let cheatwall = tw.Key
-            //let cheatwall = { Row = 1; Col = 8; Kind = Empty}
-            //let cheatwall = { Row = 7; Col = 10; Kind = Empty}
-            //let cheatwall = { Row = 7; Col = 6; Kind = Empty}
-            let cheatways = getCheatExits cheatwall
-            for (cw, d) in cheatways do
-                let possibleexits = neighbous cw
-                for (nextRow, nextCol) in possibleexits do
-                    if isInBoundaries nextRow nextCol maxRows maxCols && 
-                        graph[nextRow, nextCol].Kind.IsEmpty || distances.ContainsKey((nextRow, nextCol)) then
-
-                        if distances.ContainsKey((nextRow, nextCol)) then
-                            yield 1 + d + tw.Value + distances[(nextRow, nextCol)]
+        [for (startcheat, endcheat) in combinations do
+            let cheatdistance = cheatLength startcheat endcheat
+            if cheatdistance <= 20 then
+                let startcheatdistance = distances[(startcheat.Row, startcheat.Col)]
+                let endcheatdistance = distances[(endcheat.Row, endcheat.Col)]
+                yield (initialLength.Value - startcheatdistance) + cheatdistance + endcheatdistance
         ]
+
     let groupOfSavings =
         cheattimes
         |> List.map(fun t -> initialLength.Value - t)
@@ -142,16 +151,13 @@ let tryToCheat(graph: Coord[,]) (wallpoints: Coord list) (start: Coord) (goal: C
         |> List.groupBy id
         |> List.sortBy fst
         |> List.map(fun (k, v) -> (k, v.Length))
-    groupOfSavings
-    |> List.iter(fun (k, v) -> printfn "%d cheats saving %d" v k)
 
     groupOfSavings
     |> List.filter(fun (k, v) -> k >= 100)
     |> List.sumBy snd
 
 let execute() =
-    //let path = "day20/day20_input.txt"
-    let path = "day20/test_input_20.txt"
+    let path = "day20/day20_input.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (map, wallpoints, startpoint, endpoint) = parseContent(content)
     tryToCheat map wallpoints startpoint endpoint
