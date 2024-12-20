@@ -42,8 +42,9 @@ let parseContent(lines: string array) =
             
     (map, wallspoints, startpoint, endpoint)
 
+let directions = [ (-1, 0); (1, 0); (0, 1); (0, -1) ]
+
 let neighbous (position: Coord) =
-    let directions = [ (-1, 0); (1, 0); (0, 1); (0, -1) ]
     [for (dRow, dCol) in directions do
         let nextRow = position.Row + dRow
         let nextCol = position.Col + dCol
@@ -54,7 +55,7 @@ let isInBoundaries (row: int) (col: int) (maxRows: int) (maxCols: int) =
     row >= 0 && col >= 0 && row < maxRows && col < maxCols
 
 
-let findShortestPath (graph: Coord[,]) (wallcheat: Coord option) (visited: HashSet<Coord>) (start: Coord) (goal: Coord) =
+let findShortestPath (graph: Coord[,]) (wallcheat: Coord option) (visited: HashSet<Coord>) (touchedWalls: Dictionary<Coord, int>) (start: Coord) (goal: Coord) =
     let maxRows = graph.GetLength(0)
     let maxCols = graph.GetLength(1)
 
@@ -62,14 +63,14 @@ let findShortestPath (graph: Coord[,]) (wallcheat: Coord option) (visited: HashS
     let startingpoint = graph[start.Row, start.Col]
     queue.Enqueue((startingpoint, 0))
 
-    let rec bfs () =
-        if queue.Count = 0 then (None, visited)
+    let rec bfs (counter: int) =
+        if queue.Count = 0 then (None, visited, touchedWalls)
         else
             let (current, path) = queue.Dequeue()
 
             if current.Row = goal.Row && current.Col = goal.Col then
                 let _ = visited.Add(goal)
-                (Some(path), visited)
+                (Some(path), visited, touchedWalls)
             else
                 if not (visited.Contains(current)) && (current.Kind.IsEmpty || (wallcheat.IsSome && current.Row = wallcheat.Value.Row && current.Col = wallcheat.Value.Col)) then
                     let _ = visited.Add(current)
@@ -80,43 +81,59 @@ let findShortestPath (graph: Coord[,]) (wallcheat: Coord option) (visited: HashS
                             let neighbor = graph[nextRow, nextCol]
                             if not (visited.Contains(neighbor)) then
                                 queue.Enqueue((neighbor, path+1))
-                bfs ()
+                            if neighbor.Kind.IsWall then
+                                if touchedWalls.ContainsKey(neighbor) then
+                                    if touchedWalls[neighbor] > visited.Count then
+                                        touchedWalls[neighbor] <- visited.Count
+                                else
+                                    let _ = touchedWalls.Add(neighbor, visited.Count)
+                                    ignore()
+                bfs (counter+1)
 
-    bfs ()
+    bfs 0
 
 let tryToCheat(graph: Coord[,]) (wallpoints: Coord list) (start: Coord) (goal: Coord) =
     let maxRows = graph.GetLength(0)
     let maxCols = graph.GetLength(1)
-
-    let (initialLength, visitedlengths) = findShortestPath graph None (HashSet<Coord>()) start goal
+    let touchedwalls = Dictionary<Coord, int>()
+    let (initialLength, visitedlengths, touchedwalls) = findShortestPath graph None (HashSet<Coord>())touchedwalls start goal
     
+    let touched = touchedwalls.Keys |> Set.ofSeq
+
     let distances = Dictionary<(int*int), int>()
     visitedlengths
     |> Seq.iteri(fun idx c -> distances.Add((c.Row, c.Col), initialLength.Value - idx))
 
+    let cheatLength (cStart: Coord) (cEnd: Coord) =
+        abs(cStart.Row - cEnd.Row) + abs(cStart.Col - cEnd.Col)
+
+    let getCheatExits (c: Coord) =
+        let rangeofCheats=
+            [for cDistance in [0..5] do
+                for (dr, dc) in directions do
+                    let (cheatRow, cheatCol) = (c.Row + cDistance * dr, c.Col + cDistance * dc)
+                    if isInBoundaries cheatRow cheatCol maxRows maxCols then
+                        yield graph[cheatRow, cheatCol]
+            ] |> Set.ofList
+        //let connections = Set.intersect rangeofCheats touched
+        rangeofCheats
+        |> Seq.map(fun c' -> (c', cheatLength c c'))              
+
     let cheattimes =
-        [for wall in wallpoints do
-            let cheatwall = wall
+        [for tw in touchedwalls do
+            let cheatwall = tw.Key
             //let cheatwall = { Row = 1; Col = 8; Kind = Empty}
             //let cheatwall = { Row = 7; Col = 10; Kind = Empty}
             //let cheatwall = { Row = 7; Col = 6; Kind = Empty}
-
-            let possibleexits = neighbous cheatwall
-            let visited = HashSet<Coord>()
-            let (firstpartlength, n1) = findShortestPath graph (Some(cheatwall)) visited start cheatwall
-            if firstpartlength.IsSome then
+            let cheatways = getCheatExits cheatwall
+            for (cw, d) in cheatways do
+                let possibleexits = neighbous cw
                 for (nextRow, nextCol) in possibleexits do
                     if isInBoundaries nextRow nextCol maxRows maxCols && 
                         graph[nextRow, nextCol].Kind.IsEmpty || distances.ContainsKey((nextRow, nextCol)) then
-                        //let visited = HashSet<Coord>()
-                        //let secondstart = graph[nextRow, nextCol]
-                        
-                        if distances.ContainsKey((nextRow, nextCol)) then
-                            yield 1 + firstpartlength.Value + distances[(nextRow, nextCol)]
 
-                        //let (secondpartlength, n2) = findShortestPath graph None visited secondstart goal
-                        //if secondpartlength.IsSome then
-                        //    yield (1 + firstpartlength.Value + secondpartlength.Value)
+                        if distances.ContainsKey((nextRow, nextCol)) then
+                            yield 1 + d + tw.Value + distances[(nextRow, nextCol)]
         ]
     let groupOfSavings =
         cheattimes
@@ -133,10 +150,8 @@ let tryToCheat(graph: Coord[,]) (wallpoints: Coord list) (start: Coord) (goal: C
     |> List.sumBy snd
 
 let execute() =
-    let path = "day20/day20_input.txt"
-    //let path = "day20/test_input_20.txt"
+    //let path = "day20/day20_input.txt"
+    let path = "day20/test_input_20.txt"
     let content = LocalHelper.GetLinesFromFile path
     let (map, wallpoints, startpoint, endpoint) = parseContent(content)
     tryToCheat map wallpoints startpoint endpoint
-    //let path = findShortestPath map wallpoints startpoint endpoint
-    //path.Value
