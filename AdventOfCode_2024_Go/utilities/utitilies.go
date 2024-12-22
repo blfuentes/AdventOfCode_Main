@@ -83,6 +83,29 @@ func ReverseCopy[T any](arr []T) []T {
 	return reversed
 }
 
+func Clone2DArray[T any](original [][]T) [][]T {
+	if len(original) == 0 {
+		return [][]T{}
+	}
+
+	cloned := make([][]T, len(original))
+	done := make(chan struct{}, len(original))
+
+	for i, row := range original {
+		go func(i int, row []T) {
+			cloned[i] = make([]T, len(row))
+			copy(cloned[i], row)
+			done <- struct{}{}
+		}(i, row)
+	}
+
+	for range original {
+		<-done
+	}
+
+	return cloned
+}
+
 func PrintMatrix[T any](matrix *[][]T) {
 	for rowIdx := 0; rowIdx < len(*matrix); rowIdx++ {
 		for colIdx := 0; colIdx < len((*matrix)[rowIdx]); colIdx++ {

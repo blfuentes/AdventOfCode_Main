@@ -13,8 +13,8 @@ type Coord ={
     Kind : KindType
 }
 
-let parseContent(lines: string array) =
-    let map = Array2D.init 71 71 (fun row col -> { X = col; Y = row; Kind = Empty })
+let parseContent(lines: string array) (size: int) =
+    let map = Array2D.init (size+1) (size+1) (fun row col -> { X = col; Y = row; Kind = Empty })
     let corrupted = 
         lines
         |> Array.map(fun l ->
@@ -81,10 +81,11 @@ let findCorrupted(map: Coord[,]) (corrupted: Coord list) (start: Coord) (goal: C
 
 let execute() =
     let path = "day18/day18_input.txt"
+    let (size, numOfBytes) = (70, 1024)
 
     let content = LocalHelper.GetLinesFromFile path
-    let (map, corrupted) = parseContent content
+    let (map, corrupted) = parseContent content size
     let start = { X = 0; Y = 0; Kind = Empty }
-    let endnode = { X = 70; Y = 70; Kind = Empty }
+    let endnode = { X = size; Y = size; Kind = Empty }
     let found = findCorrupted map corrupted start endnode
     sprintf "%d,%d" found.X found.Y

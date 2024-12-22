@@ -7,14 +7,14 @@ type KindType =
     | Empty
     | Corrupted
 
-type Coord ={
+type Coord = {
     X: int
     Y: int
     Kind : KindType
 }
 
-let parseContent(lines: string array) =
-    let map = Array2D.init 71 71 (fun row col -> { X = col; Y = row; Kind = Empty })
+let parseContent(lines: string array) (size: int) =
+    let map = Array2D.init (size+1) (size+1) (fun row col -> { X = col; Y = row; Kind = Empty })
     let corrupted = 
         lines
         |> Array.map(fun l ->
@@ -49,7 +49,6 @@ let findShortestPath (graph: Coord[,]) (start: Coord) (goal: Coord) =
         if queue.Count = 0 then None
         else
             let (current, path) = queue.Dequeue()
-
             if current = goal then
                 Some(path)
             else
@@ -76,11 +75,13 @@ let buildCorruptedMap(map: Coord[,])(corrupted: Coord[])(numOfBytes: int) =
 
 let execute() =
     let path = "day18/day18_input.txt"
+    let (size, numOfBytes) = (70, 1024)
 
     let content = LocalHelper.GetLinesFromFile path
-    let (map, corrupted) = parseContent content
+
+    let (map, corrupted) = parseContent content size
     let start = { Y = 0; X = 0; Kind = Empty }
-    let endnode = { Y = 70; X = 70; Kind = Empty }
-    buildCorruptedMap map corrupted 1024
+    let endnode = { Y = size; X = size; Kind = Empty }
+    buildCorruptedMap map corrupted numOfBytes
     let path = findShortestPath map start endnode
     path.Value

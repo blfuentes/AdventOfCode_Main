@@ -374,7 +374,7 @@ https://adventofcode.com/2024
 | Day 15: Warehouse Woes			| ✔️ [F#](./AdventOfCode_2024/day15/part01/day15_part01.fs) - [Go](./AdventOfCode_2024_Go/day15/day15_1.go) | ✔️ [F#](./AdventOfCode_2024/day15/part02/day15_part02.fs) - [Go](./AdventOfCode_2024_Go/day15/day15_2.go) |
 | Day 16: Reindeer Maze				| ✔️ [F#](./AdventOfCode_2024/day16/part01/day16_part01.fs) - [Go](./AdventOfCode_2024_Go/day16/day16_1.go) | ✔️ [F#](./AdventOfCode_2024/day16/part02/day16_part02.fs) - [Go](./AdventOfCode_2024_Go/day16/day16_2.go) |
 | Day 17: Chronospatial Computer	| ✔️ [F#](./AdventOfCode_2024/day17/part01/day17_part01.fs) - [Go](./AdventOfCode_2024_Go/day17/day17_1.go) | ✔️ [F#](./AdventOfCode_2024/day17/part02/day17_part02.fs) - [Go](./AdventOfCode_2024_Go/day17/day17_2.go) |
-| Day 18: RAM Run					| ✔️ [F#](./AdventOfCode_2024/day18/part01/day18_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day18/part02/day18_part02.fs) |
+| Day 18: RAM Run					| ✔️ [F#](./AdventOfCode_2024/day18/part01/day18_part01.fs) - [Go](./AdventOfCode_2024_Go/day18/day18_1.go) | ✔️ [F#](./AdventOfCode_2024/day18/part02/day18_part02.fs) |
 | Day 19: Linen Layout				| ✔️ [F#](./AdventOfCode_2024/day19/part01/day19_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day19/part02/day19_part02.fs) |
 | Day 20: Race Condition			| ✔️ [F#](./AdventOfCode_2024/day20/part01/day20_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day20/part02/day20_part02.fs) |
 | Day 21: Keypad Conundrum			| ✔️ [F#](./AdventOfCode_2024/day21/part01/day21_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day21/part02/day21_part02.fs) |
