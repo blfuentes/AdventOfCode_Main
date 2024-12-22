@@ -13,6 +13,9 @@ let ms ticks =
 
 [<EntryPoint>]
 let main argv =
+    let timer = new System.Diagnostics.Stopwatch()
+    timer.Start()
+
     // DAY 01
     let (resultday01Part1, time01_1) = Utilities.duration day01_part01.execute
     printfn "Final result Day 01 part 1: %A in %s" resultday01Part1 (ms time01_1)
@@ -160,6 +163,10 @@ let main argv =
     //// DAY 25
     //let (resultday25Part1, time25_1) = Utilities.duration day25_part01.execute
     //printfn "Final result Day 25 part 1: %A in %s" resultday25Part1 (ms time25_1)
+
+    timer.Stop()
+    let timespan = (TimeSpan.FromTicks timer.ElapsedTicks)
+    printfn "Total execution: %02i:%02i.%03i" timespan.Minutes timespan.Seconds timespan.Milliseconds
 
     //
     let endprogram = Console.ReadLine()
