@@ -6,41 +6,17 @@ open System.Collections.Generic
 let parseContent(lines: string array) =
     lines |> Array.map int64
 
-let mix (value: int64) (cSecret: int64) = value ^^^ cSecret
-let prune (value: int64) = value%16777216L  
-let mix_prune v s = (mix v s) |> prune
+let mix value cSecret = value ^^^ cSecret
+let prune value = value % 16777216L
+let mixPrune value secret = value |> mix secret |> prune
 
-let mul64 (value:int64) =
-    mix_prune (value * 64L) value
+let mul64 value = mixPrune (value * 64L) value
+let div32 value = mixPrune (int64 (floor (float (value / 32L)))) value
+let mul2048 value = mixPrune (value * 2048L) value
 
-let div32 (value: int64) =
-    let tofloor = (float)(value / 32L)
-    mix_prune ((int64)(floor tofloor)) value
+let secret = mul64 >> div32 >> mul2048
 
-let mul2048 (value: int64) =
-    mix_prune (value * 2048L) value
-
-let secret (value: int64) =
-    value |> mul64 |> div32 |> mul2048
-
-let calculateSecretNumber(number: int64) (th: int) (index: int) (mapOfBananaPrices: (int64*int64)[,])=
-    let mix (value: int64) (cSecret: int64) = value ^^^ cSecret
-    let prune (value: int64) = value%16777216L  
-    let mix_prune v s = (mix v s) |> prune
-
-    let mul64 (value:int64) =
-        mix_prune (value * 64L) value
-
-    let div32 (value: int64) =
-        let tofloor = (float)(value / 32L)
-        mix_prune ((int64)(floor tofloor)) value
-
-    let mul2048 (value: int64) =
-        mix_prune (value * 2048L) value
-
-    let secret (value: int64) =
-        value |> mul64 |> div32 |> mul2048
-    
+let calculateSecretNumber(number: int64) (th: int) (index: int) (mapOfBananaPrices: (int64*int64)[,])=   
     let rec getSecret(currentth: int) (prev: int64) (current: int64) =
         match currentth = th with
         | true -> 
