@@ -53,29 +53,29 @@ let calculateSecretNumber(number: int64) (th: int) (index: int) (mapOfBananaPric
     
     getSecret 0 0 number
 
-let getMostBananasOverall(mapOfBananaPrices: (int64*int64)[,]) =
-    let mapOfSeqs = Dictionary<(int64*int64*int64*int64), int64[]>()
+let getMostBananasOverall(mapOfBananaPrices: (int64 * int64)[,]) =
+    let mapOfSeqs = Dictionary<struct (int64 * int64 * int64 * int64), int64[]>()
     let (maxrows, maxcols) = (mapOfBananaPrices.GetLength(0), mapOfBananaPrices.GetLength(1))
-    for row in 0..(maxrows-1) do
-        let mutable (first, second, third) = 
-            (snd mapOfBananaPrices[row, 0], snd mapOfBananaPrices[row, 1], snd mapOfBananaPrices[row, 2])
-        for col in 3..(maxcols-1) do
+    
+    for row in 0..(maxrows - 1) do
+        let mutable seqBuffer = 
+            [| snd mapOfBananaPrices[row, 0]; snd mapOfBananaPrices[row, 1]; snd mapOfBananaPrices[row, 2] |]
+        
+        for col in 3..(maxcols - 1) do
             let fourth = snd mapOfBananaPrices[row, col]
-            let key = (first, second, third, fourth)
+            let key = struct (seqBuffer[0], seqBuffer[1], seqBuffer[2], fourth)
+            
             if not (mapOfSeqs.ContainsKey(key)) then
-                mapOfSeqs.Add(key, Array.create maxrows 0L)
-            if mapOfSeqs[key][row] = 0L then
-                mapOfSeqs[key][row] <- fst mapOfBananaPrices[row, col]
-            first <- second
-            second <- third
-            third <- fourth
+                mapOfSeqs.[key] <- Array.zeroCreate maxrows
+            
+            if mapOfSeqs.[key].[row] = 0L then
+                mapOfSeqs.[key].[row] <- fst mapOfBananaPrices[row, col]
 
-    let mutable maxNumber = 0L
-    for numbers in mapOfSeqs.Values do
-        let sumofSeq = numbers |> Array.sum
-        if sumofSeq > maxNumber then maxNumber <- sumofSeq
-
-    maxNumber
+            seqBuffer <- [| seqBuffer[1]; seqBuffer[2]; fourth |]
+    
+    mapOfSeqs.Values
+    |> Seq.map Array.sum
+    |> Seq.max
 
 let execute() =
     let path = "day22/day22_input.txt"

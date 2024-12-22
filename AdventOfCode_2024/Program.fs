@@ -141,9 +141,9 @@ let main argv =
 
     // DAY 22
     let (resultday22Part1, time22_1) = Utilities.duration day22_part01.execute
-    printfn "Final result Day 22 part 1: %A in %s" resultday22Part1 (ms time22_1)
+    printfn "Final result Day 22 part 1: %d in %s" resultday22Part1 (ms time22_1)
     let (resultday22Part2, timer22_2) = Utilities.duration day22_part02.execute
-    printfn "Final result Day 22 part 2: %A in %s" resultday22Part2 (ms timer22_2)
+    printfn "Final result Day 22 part 2: %d in %s" resultday22Part2 (ms timer22_2)
 
     //// DAY 23
     //let (resultday24Part1, time24_1) = Utilities.duration day24_part01.execute
