@@ -167,6 +167,6 @@ func main() {
 	fmt.Printf("Final result Day 18 part 1: %v", day18.Executepart1())
 	fmt.Printf(" in %v\n", time.Since(timer))
 	timer = time.Now()
-	fmt.Printf("Final result Day 18 part 2: %d", day18.Executepart2())
+	fmt.Printf("Final result Day 18 part 2: %v", day18.Executepart2())
 	fmt.Printf(" in %v\n", time.Since(timer))
 }
