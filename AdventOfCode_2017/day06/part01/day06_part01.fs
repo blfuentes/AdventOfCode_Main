@@ -29,7 +29,7 @@ let rec doCycle (banks: int[]) (cycles: int) (seen: int array list) =
         let newSeen = seen @ [newBanks]
         doCycle newBanks (cycles + 1) newSeen
 
-let execute =
+let execute() =
     let path = "day06/day06_input.txt"
     let inputBanks = (System.IO.File.ReadLines path|> Seq.toArray |> Array.head).Split('\t') |> Array.map int    
     doCycle inputBanks 0 []

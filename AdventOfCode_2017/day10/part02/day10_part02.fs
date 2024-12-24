@@ -20,7 +20,7 @@ let rec processLengths (roundsleft: int) (state: int array) (initiallengths: int
 
         processLengths roundsleft state  initiallengths rest (currentskip + 1) ((currentindex + totake + currentskip) % state.Length)
 
-let execute =
+let execute() =
     let path = "day10/day10_input.txt"
     let text = (LocalHelper.GetContentFromFile path)
     let extra = "17, 31, 73, 47, 23".Split(", ") |> Array.map int |> List.ofArray

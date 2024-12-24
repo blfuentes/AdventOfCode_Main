@@ -16,5 +16,5 @@ let calculateCaptcha (captcha: string) =
         }
     values |> Seq.sum
 
-let execute =
+let execute() =
     calculateCaptcha (GetContentFromFile(path))

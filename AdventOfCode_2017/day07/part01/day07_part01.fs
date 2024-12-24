@@ -34,7 +34,7 @@ let containsTower (name: string) (towers: Tower array): bool =
   towers |> Array.map _.Name |> Array.contains name 
 
 
-let execute =
+let execute() =
     let path = "day07/day07_input.txt"
     let input = LocalHelper.GetLinesFromFile path
     let towers = parseInput input

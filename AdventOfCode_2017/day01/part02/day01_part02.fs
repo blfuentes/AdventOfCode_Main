@@ -17,6 +17,6 @@ let calculateCaptcha (captcha: string) (offset: int)=
         }
     values |> Seq.sum
 
-let execute =
+let execute() =
     let value = GetContentFromFile(path)
     calculateCaptcha value (value.Length / 2)

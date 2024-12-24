@@ -56,7 +56,7 @@ let rec buildSpiral (mid: int) (input: int) (result: int[]) (ring: int) (spiral:
                     ()
         buildSpiral mid input result (ring + 1) spiral
 
-let execute =
+let execute() =
     let path = "day03/day03_input.txt"
     let input = GetContentFromFile path |> int
     let length = 1000

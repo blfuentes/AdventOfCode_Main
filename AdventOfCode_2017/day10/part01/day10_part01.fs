@@ -16,7 +16,7 @@ let rec processLengths (state: int array) (lengths: int list) (currentskip: int)
 
         processLengths state rest (currentskip + 1) ((currentindex + totake + currentskip) % state.Length)
 
-let execute =
+let execute() =
     let path = "day10/day10_input.txt"
     let content = (LocalHelper.GetContentFromFile path).Split(",") |> Array.map int |> List.ofArray
     let size = 256

@@ -61,7 +61,7 @@ let rec buildSpiral (mid: int) (input: int) (current: int) (currentPosition: int
                 valueToAdd <- valueToAdd - 1
         buildSpiral mid input maxValue currentPosition (ring + 1) spiral
 
-let execute =
+let execute() =
     let path = "day03/day03_input.txt"
     let input = GetContentFromFile path |> int
     let length = 1000

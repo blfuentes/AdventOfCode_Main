@@ -98,7 +98,7 @@ let rec runInstructions (instructions: Instruction list) (registry: (string*int)
             )
         runInstructions rest (newResult :: List.except ([tmpresult]) registry)
 
-let execute =
+let execute() =
     //let path = "day08/test_input_01.txt"
     let path = "day08/day08_input.txt"
     

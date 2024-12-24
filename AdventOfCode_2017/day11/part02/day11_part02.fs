@@ -34,7 +34,7 @@ let rec furthestPosition (movements: string list) (current: direction) (maxdista
         let newdistance = cubeDistance { X = 0; Y = 0; Z = 0 } newcurrent
         furthestPosition rest newcurrent (if newdistance > maxdistance then newdistance else maxdistance)
 
-let execute =
+let execute() =
     let path = "day11/day11_input.txt"
     let content = LocalHelper.GetContentFromFile path
     let parts = parseContent content

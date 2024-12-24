@@ -18,7 +18,7 @@ let step current nextChar =
 let folder = Seq.fold step { level=0; state=NotGarbage; score=0; garbage=0 }
 let solver = folder >> (fun state -> state.score)
 
-let execute =
+let execute() =
     let path = "day09/day09_input.txt"
     let input = LocalHelper.GetContentFromFile path
     solver input

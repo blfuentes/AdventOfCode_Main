@@ -13,7 +13,7 @@ let rec calculateJumps (input: int[]) (index: int) (steps: int) =
         input.[index] <- input.[index] + (if jump >= 3 then -1 else 1)
         calculateJumps input newIndex (steps + 1)
 
-let execute =
+let execute() =
     let path = "day05/day05_input.txt"
     let input = GetLinesFromFile path |> Array.map int
     calculateJumps input 0 0

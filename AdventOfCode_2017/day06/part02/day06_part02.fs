@@ -31,7 +31,7 @@ let rec doCycle (alreadySeen: bool) (banks: int[]) (cycles: int) (seen: int arra
         let newSeen = seen @ [newBanks]
         doCycle alreadySeen newBanks (cycles + 1) newSeen
 
-let execute =
+let execute() =
     let path = "day06/day06_input.txt"
     let inputBanks = (System.IO.File.ReadLines path|> Seq.toArray |> Array.head).Split('\t') |> Array.map int
     doCycle false inputBanks 0 []

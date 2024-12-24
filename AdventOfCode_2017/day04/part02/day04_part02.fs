@@ -18,7 +18,7 @@ let rec checkAnagram (values: string list) =
         | false -> checkAnagram tail
 
 
-let execute =
+let execute() =
     let path = "day04/day04_input.txt"
     let input = GetLinesFromFile path     
     input |> Array.map (fun l -> l.Split(' ') |> Array.toList) |> Array.filter(fun g -> checkAnagram g |> not) |> Array.length

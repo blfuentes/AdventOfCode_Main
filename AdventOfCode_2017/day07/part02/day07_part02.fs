@@ -53,7 +53,7 @@ let rec calculateTowerWeight (initTower: Tower) (towers: Tower array) (incorrect
         let childrenweights = parentAndChildrenWeights |> Array.map(fun e -> snd e)
         t.Weight + (Array.sum childrenweights)
 
-let execute =
+let execute() =
     let path = "day07/day07_input.txt"
     let input = LocalHelper.GetLinesFromFile path
     let towers = parseInput input

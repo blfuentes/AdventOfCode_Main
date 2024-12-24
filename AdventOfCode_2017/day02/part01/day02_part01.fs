@@ -20,6 +20,6 @@ let calculateCheckSumRow (line: string) =
     let parts = processLine line |> Array.map  int |> Array.sortDescending  
     parts.[0] - parts.[parts.Length - 1]
 
-let execute =
+let execute() =
     let inputLines = GetLinesFromFile(path)
     inputLines |> Array.sumBy calculateCheckSumRow

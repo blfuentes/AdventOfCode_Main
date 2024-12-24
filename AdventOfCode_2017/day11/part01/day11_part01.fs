@@ -41,7 +41,7 @@ let calculatePosition (instructions: (string * int) array) =
 let cubeDistance coord1 coord2 = 
     max (abs (coord1.X - coord2.X)) (max (abs (coord1.Y - coord2.Y)) (abs (coord1.Z - coord2.Z)))
 
-let execute =
+let execute() =
     let path = "day11/day11_input.txt"
     //let path = "day11/test_input_01.txt"
     let content = LocalHelper.GetContentFromFile path

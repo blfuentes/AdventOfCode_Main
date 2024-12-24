@@ -101,7 +101,7 @@ let rec runInstructions (instructions: Instruction list) (registry: (string*int)
         let newMaxValue = if cMaxValue > maxvalue then cMaxValue else maxvalue
         runInstructions rest newRegistry newMaxValue
 
-let execute =
+let execute() =
     //let path = "day08/test_input_01.txt"
     let path = "day08/day08_input.txt"
     

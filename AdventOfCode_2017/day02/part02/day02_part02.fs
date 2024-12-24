@@ -22,6 +22,6 @@ let calculateCheckSumRow (line: string) =
     let found = possible |> List.find(fun el -> int(el.Item(0)) % int(el.Item(1)) = 0 || int(el.Item(1)) % int(el.Item(0)) = 0)
     if int(found.Item(0)) % int(found.Item(1)) = 0 then int(found.Item(0)) / int(found.Item(1)) else int(found.Item(1)) / int(found.[0])
 
-let execute =
+let execute() =
     let inputLines = GetLinesFromFile(path)
     inputLines |> Array.sumBy calculateCheckSumRow
