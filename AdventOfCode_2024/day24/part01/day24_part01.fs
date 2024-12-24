@@ -83,8 +83,6 @@ let runProgram(program: TheProgram) =
 
 let execute() =
     let path = "day24/day24_input.txt"
-    //let path = "day24/test_input_24.txt"
-    //let path = "day24/test_input_24b.txt"
 
     let content = LocalHelper.GetContentFromFile path
     let theprogram = parseContent content

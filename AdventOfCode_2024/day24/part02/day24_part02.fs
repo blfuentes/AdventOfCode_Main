@@ -51,42 +51,81 @@ let parseContent(lines: string) =
 
     { Registers = registers; Operations = operations |> List.ofArray }
 
-let runProgram(program: TheProgram) =
-    let rec performOp(operations: Operation list) =
-        match operations with
-        | [] -> true
-        | current :: rest ->
-            if program.Registers.ContainsKey(current.Input1.Name) && program.Registers.ContainsKey(current.Input2.Name) then
-                let (op1, op2) = (program.Registers[current.Input1.Name], program.Registers[current.Input2.Name])
-                let result =
-                    match current.KindOp with
-                    | AND -> { Name = current.Output.Name; Value = op1 && op2 }
-                    | XOR -> { Name = current.Output.Name; Value = op1 <> op2 }
-                    | OR -> { Name = current.Output.Name; Value = op1 || op2 }
-                if program.Registers.ContainsKey(current.Output.Name) then
-                    program.Registers[current.Output.Name] <- result.Value
-                else
-                    program.Registers.Add(current.Output.Name, result.Value)
+let findWrongWires (program: TheProgram) =
+    let maxId = 45
 
-                performOp rest
-            else
-                performOp (rest @ [current])
+    let generateId id = id.ToString().PadLeft(2, '0')
 
-    if performOp program.Operations then
-        [for kvp in program.Registers do
-            if kvp.Key.StartsWith("z") then 
-                kvp
-        ] |> List.sortByDescending _.Key |> List.map (fun kvp -> if kvp.Value then "1" else "0")
-    else
-        []
+    let findOp predicate = program.Operations |> List.tryFind predicate
+
+    let incorrect =
+        [0..maxId - 1]
+        |> Seq.collect (fun id ->
+            let currentId = generateId id
+
+            let xorWire = findOp (fun op ->
+                (
+                    (op.Input1.Name = $"x{currentId}" && op.Input2.Name = $"y{currentId}") ||
+                    (op.Input1.Name = $"y{currentId}" && op.Input2.Name = $"x{currentId}")
+                ) &&
+                op.KindOp.IsXOR
+            )
+
+            let andWire = findOp (fun op ->
+                (
+                    (op.Input1.Name = $"x{currentId}" && op.Input2.Name = $"y{currentId}") ||
+                    (op.Input1.Name = $"y{currentId}" && op.Input2.Name = $"x{currentId}")
+                ) &&
+                op.KindOp.IsAND
+            )
+
+            let zWire = findOp (fun op -> op.Output.Name = $"z{currentId}")
+
+            seq {
+                match zWire with
+                | Some z when not z.KindOp.IsXOR -> yield z.Output.Name
+                | _ -> ()
+
+                match xorWire, andWire, zWire with
+                | Some xor, Some andOp, Some _ ->
+                    let orWire = findOp (fun op ->
+                        op.Input1.Name = andOp.Output.Name ||
+                        op.Input2.Name = andOp.Output.Name
+                    )
+
+                    if Option.isSome orWire && not orWire.Value.KindOp.IsOR && id > 0 then
+                        yield andOp.Output.Name
+
+                    let connectedWire = findOp (fun op ->
+                        op.Input1.Name = xor.Output.Name ||
+                        op.Input2.Name = xor.Output.Name
+                    )
+
+                    if Option.isSome connectedWire && connectedWire.Value.KindOp.IsOR then
+                        yield xor.Output.Name
+                | _ -> ()
+            }
+        )
+        |> Seq.toList
+
+    let wrong =
+        program.Operations
+        |> List.filter (fun op ->
+            not (op.Input1.Name.StartsWith("x") || op.Input1.Name.StartsWith("y")) &&
+            not (op.Input2.Name.StartsWith("x") || op.Input2.Name.StartsWith("y")) &&
+            not (op.Output.Name.StartsWith("z")) &&
+            op.KindOp.IsXOR)
+        |> List.map (fun op -> op.Output.Name)
+
+    incorrect @ wrong
+    |> Seq.distinct
+    |> Seq.sort
 
 
 let execute() =
     let path = "day24/day24_input.txt"
-    //let path = "day24/test_input_24.txt"
-    //let path = "day24/test_input_24b.txt"
 
     let content = LocalHelper.GetContentFromFile path
     let theprogram = parseContent content
-    let result = runProgram theprogram
-    System.Convert.ToInt64((String.concat "" result), 2)
+    let result = findWrongWires theprogram
+    String.concat "," result
