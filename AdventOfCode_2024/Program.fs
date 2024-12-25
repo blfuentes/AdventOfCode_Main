@@ -160,9 +160,9 @@ let main argv =
     let (resultday24Part2, timer24_2) = Utilities.duration day24_part02.execute
     printfn "Final result Day 24 part 2: %A in %s" resultday24Part2 (ms timer24_2)
 
-    //// DAY 25
-    //let (resultday25Part1, time25_1) = Utilities.duration day25_part01.execute
-    //printfn "Final result Day 25 part 1: %A in %s" resultday25Part1 (ms time25_1)
+    // DAY 25
+    let (resultday25Part1, time25_1) = Utilities.duration day25_part01.execute
+    printfn "Final result Day 25 part 1: %A in %s" resultday25Part1 (ms time25_1)
 
     timer.Stop()
     let timespan = (TimeSpan.FromTicks timer.ElapsedTicks)
