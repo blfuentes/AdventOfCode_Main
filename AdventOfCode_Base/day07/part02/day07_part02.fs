@@ -1,8 +1,8 @@
 ﻿module day07_part02
 
-
-
-let path = "day07/day07_input.txt"
+open AdventOfCode_BASE.Modules
 
 let execute() =
+    let path = "day07/day07_input.txt"
+    let content = LocalHelper.GetLinesFromFile path
     0
