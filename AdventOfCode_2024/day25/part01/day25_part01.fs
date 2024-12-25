@@ -14,21 +14,17 @@ let parseContent(lines: string) =
         let (maxrows, maxcols) = (lines.Length, lines[0].Length)
         let isLock = lines[0] = "#####" && lines[maxrows-1] = "....."
         let isKey = lines[0] = "....." && lines[maxrows-1] = "#####"
-        let currentHeightLock = Array.zeroCreate maxcols
-        let currentHeightKey = Array.create maxcols (maxrows - 1)
+        let currentHeight = Array.init maxcols (fun _ -> if isLock then 0 else maxrows - 1)
+
         for row in 0..maxrows-1 do
             for col in 0..maxcols-1 do
                 let value = lines[row][col]
-                if value = '#' then
-                    if isLock then
-                        currentHeightLock[col] <- currentHeightLock[col] + if row = 0 then 0 else 1
-                if value = '.' then
-                    if isKey then
-                        currentHeightKey[col] <- currentHeightKey[col] - 1
-        if isLock then
-            (isLock, currentHeightLock)
-        else
-            (isLock, currentHeightKey)
+                match value with
+                | '#' when isLock -> currentHeight[col] <- currentHeight[col] + if row = 0 then 0 else 1
+                | '.' when isKey  -> currentHeight[col] <- currentHeight[col] - 1
+                | _ -> ()
+
+        (isLock, currentHeight)
     )
     |> Array.groupBy fst
     |> Array.iter(fun (k, content) -> 
