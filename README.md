@@ -6,7 +6,7 @@ https://adventofcode.com/
 
 |Year						| Progress												| Total		|
 |---------------------------|-------------------------------------------------------|-----------|
-|[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (30/50)	|
+|[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
 |[2016](#2016-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (26/50)	|
 |[2017](#2017-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (24/50)	|
 |[2018](#2018-ftypescript)	| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
@@ -17,7 +17,7 @@ https://adventofcode.com/
 |[2023](#2023-fc)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2025](#2025-f)			| ❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️			| (0/0)		|
-|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ (66,6%) 			| (333/500) |
+|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ (67%) 			| (335/500) |
 
 ## Advent Of Code 2015
 
@@ -25,7 +25,7 @@ https://adventofcode.com/
 
 https://adventofcode.com/2015
 
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (15/25)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ (16/25)
 
 
 |Day											| Part 1 | Part 2 |
@@ -45,7 +45,7 @@ https://adventofcode.com/2015
 | [Day 13](https://adventofcode.com/2015/day/13): Knights of the Dinner Table			| ✔️ [F#](./AdventOfCode_2015/day13/part01/day13_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day13/part02/day13_part02.fs) |
 | [Day 14](https://adventofcode.com/2015/day/14): Reindeer Olympics						| ✔️ [F#](./AdventOfCode_2015/day14/part01/day14_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day14/part02/day14_part02.fs) |
 | [Day 15](https://adventofcode.com/2015/day/15): Science for Hungry People				| ✔️ [F#](./AdventOfCode_2015/day15/part01/day15_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day15/part02/day15_part02.fs) |
-| [Day 16](https://adventofcode.com/2015/day/16): Aunt Sue								| ❌ | ❌ |
+| [Day 16](https://adventofcode.com/2015/day/16): Aunt Sue								| ✔️ [F#](./AdventOfCode_2015/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day16/part02/day16_part02.fs) |
 | [Day 17](https://adventofcode.com/2015/day/17): No Such Thing as Too Much				| ❌ | ❌ |
 | [Day 18](https://adventofcode.com/2015/day/18): Like a GIF For Your Yard				| ❌ | ❌ |
 | [Day 19](https://adventofcode.com/2015/day/19): Medicine for Rudolph					| ❌ | ❌ |
