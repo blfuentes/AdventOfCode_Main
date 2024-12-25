@@ -2,7 +2,6 @@
 
 open AdventOfCode_2024.Modules
 open AdventOfCode_Utilities
-open System.Drawing
 open System
 open System.Text
 
