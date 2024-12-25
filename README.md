@@ -16,6 +16,7 @@ https://adventofcode.com/
 |[2022](#2022-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️🌟				| (29/50)	|
 |[2023](#2023-fc)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
+|[2025](#2025-f)			| ❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️			| (0/0)		|
 |Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ (65,8%) 			| (329/500) |
 
 ## Advent Of Code 2015
@@ -382,3 +383,39 @@ https://adventofcode.com/2024
 | [Day 23](https://adventofcode.com/2024/day/23): LAN Party					| ✔️ [F#](./AdventOfCode_2024/day23/part01/day23_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day23/part02/day23_part02.fs) |
 | [Day 24](https://adventofcode.com/2024/day/24): Crossed Wires				| ✔️ [F#](./AdventOfCode_2024/day24/part01/day24_part01.fs) | ✔️ [F#](./AdventOfCode_2024/day24/part02/day24_part02.fs) |
 | [Day 25](https://adventofcode.com/2024/day/25): Code Chronicle			| ✔️ [F#](./AdventOfCode_2024/day25/part01/day25_part01.fs) | ✔️ |
+
+## Advent Of Code 2025
+
+### 2025 F#
+
+https://adventofcode.com/2025
+
+(0/0)
+
+|Day								| Part 1 | Part 2 |
+|-----------------------------------|----|----|
+| [Day 1](https://adventofcode.com/2025/day/1):		| ❌ | ❌ |
+| [Day 2](https://adventofcode.com/2025/day/2):		| ❌ | ❌ |
+| [Day 3](https://adventofcode.com/2025/day/3):		| ❌ | ❌ |
+| [Day 4](https://adventofcode.com/2025/day/4):		| ❌ | ❌ |
+| [Day 5](https://adventofcode.com/2025/day/5):		| ❌ | ❌ |
+| [Day 6](https://adventofcode.com/2025/day/6):		| ❌ | ❌ |
+| [Day 7](https://adventofcode.com/2025/day/7):		| ❌ | ❌ |
+| [Day 8](https://adventofcode.com/2025/day/8):		| ❌ | ❌ |
+| [Day 9](https://adventofcode.com/2025/day/9):		| ❌ | ❌ |
+| [Day 10](https://adventofcode.com/2025/day/10):	| ❌ | ❌ |
+| [Day 11](https://adventofcode.com/2025/day/11):	| ❌ | ❌ |
+| [Day 12](https://adventofcode.com/2025/day/12):	| ❌ | ❌ |
+| [Day 13](https://adventofcode.com/2025/day/13):	| ❌ | ❌ |
+| [Day 14](https://adventofcode.com/2025/day/14):	| ❌ | ❌ |
+| [Day 15](https://adventofcode.com/2025/day/15):	| ❌ | ❌ |
+| [Day 16](https://adventofcode.com/2025/day/16):	| ❌ | ❌ |
+| [Day 17](https://adventofcode.com/2025/day/17):	| ❌ | ❌ |
+| [Day 18](https://adventofcode.com/2025/day/18):	| ❌ | ❌ |
+| [Day 19](https://adventofcode.com/2025/day/19):	| ❌ | ❌ |
+| [Day 20](https://adventofcode.com/2025/day/20):	| ❌ | ❌ |
+| [Day 21](https://adventofcode.com/2025/day/21):	| ❌ | ❌ |
+| [Day 22](https://adventofcode.com/2025/day/22):	| ❌ | ❌ |
+| [Day 23](https://adventofcode.com/2025/day/23):	| ❌ | ❌ |
+| [Day 24](https://adventofcode.com/2025/day/24):	| ❌ | ❌ |
+| [Day 25](https://adventofcode.com/2025/day/25):	| ❌ | ❌ |
