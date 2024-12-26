@@ -76,6 +76,7 @@
     <Content Include="day20\day20_input.txt" />
     <Compile Include="day20\part01\day20_part01.fs" />
     <Compile Include="day20\part02\day20_part02.fs" />
+    <Content Include="day21\day21_input.txt" />
     <Compile Include="day21\part01\day21_part01.fs" />
     <Compile Include="day21\part02\day21_part02.fs" />
     <Compile Include="day22\part01\day22_part01.fs" />
@@ -151,7 +152,7 @@
     <Content Include="day19\test_input_19.txt" />
     <Content Include="day19\test_input_19b.txt" />
     <Content Include="day20\test_input_20.txt" />
-    <Content Include="day21\test_input.txt" />
+    <Content Include="day21\test_input_21.txt" />
     <Content Include="day22\test_input.txt" />
   </ItemGroup>
   <ItemGroup>
