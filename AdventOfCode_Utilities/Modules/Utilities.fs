@@ -425,3 +425,36 @@ module Utilities =
         |> Seq.cast<'a> 
         |> Seq.toArray
     ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    // Returns all indexes of the ocurrence in a string
+    let findAllIndexes (text: string) (pattern: string) =
+        let patternLength = pattern.Length
+        let textLength = text.Length
+    
+        let rec loop startIndex indexes =
+            if startIndex > textLength - patternLength then
+                indexes
+            else
+                let index = text.IndexOf(pattern, startIndex)
+                if index = -1 then
+                    indexes
+                else
+                    loop (index + 1) (index :: indexes)
+        
+        loop 0 [] |> List.rev
+    
+    // Example usage:
+    let text = "the quick brown fox jumps over the lazy dog"
+    let pattern = "the"
+    let indexes = findAllIndexes text pattern
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    // Replaces the first ocurrence in a string
+    let replaceFirst (input: string) (oldValue: string) (newValue: string) =
+        let index = input.IndexOf(oldValue)
+        if index = -1 then input
+        else input.Substring(0, index) + newValue + input.Substring(index + oldValue.Length)
+    ///////////////////////////////////////////////////////////////////////////////////
+    

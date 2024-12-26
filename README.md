@@ -6,7 +6,7 @@ https://adventofcode.com/
 
 |Year						| Progress												| Total		|
 |---------------------------|-------------------------------------------------------|-----------|
-|[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️				| (36/50)	|
+|[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️				| (38/50)	|
 |[2016](#2016-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (26/50)	|
 |[2017](#2017-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (24/50)	|
 |[2018](#2018-ftypescript)	| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
@@ -17,7 +17,7 @@ https://adventofcode.com/
 |[2023](#2023-fc)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2025](#2025-f)			| ❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️			| (0/0)		|
-|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ (67,8%) 			| (339/500) |
+|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ (68,2%) 		| (341/500) |
 
 ## Advent Of Code 2015
 
@@ -25,7 +25,7 @@ https://adventofcode.com/
 
 https://adventofcode.com/2015
 
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐(18/25)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐(19/25)
 
 
 |Day											| Part 1 | Part 2 |
@@ -48,7 +48,7 @@ https://adventofcode.com/2015
 | [Day 16](https://adventofcode.com/2015/day/16): Aunt Sue								| ✔️ [F#](./AdventOfCode_2015/day16/part01/day16_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day16/part02/day16_part02.fs) |
 | [Day 17](https://adventofcode.com/2015/day/17): No Such Thing as Too Much				| ✔️ [F#](./AdventOfCode_2015/day17/part01/day17_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day17/part02/day17_part02.fs) |
 | [Day 18](https://adventofcode.com/2015/day/18): Like a GIF For Your Yard				| ✔️ [F#](./AdventOfCode_2015/day18/part01/day18_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day18/part02/day18_part02.fs) |
-| [Day 19](https://adventofcode.com/2015/day/19): Medicine for Rudolph					| ❌ | ❌ |
+| [Day 19](https://adventofcode.com/2015/day/19): Medicine for Rudolph					| ✔️ [F#](./AdventOfCode_2015/day19/part01/day19_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day19/part02/day19_part02.fs) |
 | [Day 20](https://adventofcode.com/2015/day/20): Infinite Elves and Infinite Houses	| ❌ | ❌ |
 | [Day 21](https://adventofcode.com/2015/day/21): RPG Simulator 20XX					| ❌ | ❌ |
 | [Day 22](https://adventofcode.com/2015/day/22): Wizard Simulator 20XX					| ❌ | ❌ |
