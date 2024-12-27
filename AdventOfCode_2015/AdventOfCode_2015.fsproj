@@ -79,6 +79,7 @@
     <Content Include="day21\day21_input.txt" />
     <Compile Include="day21\part01\day21_part01.fs" />
     <Compile Include="day21\part02\day21_part02.fs" />
+    <Content Include="day22\day22_input.txt" />
     <Compile Include="day22\part01\day22_part01.fs" />
     <Compile Include="day22\part02\day22_part02.fs" />
     <None Include="day00\part01\day00_part01.fsx" />
@@ -153,7 +154,7 @@
     <Content Include="day19\test_input_19b.txt" />
     <Content Include="day20\test_input_20.txt" />
     <Content Include="day21\test_input_21.txt" />
-    <Content Include="day22\test_input.txt" />
+    <Content Include="day22\test_input_22.txt" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FSharp.Data" Version="6.4.0" />
