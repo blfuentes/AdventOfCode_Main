@@ -130,10 +130,9 @@
     <None Include="day24\part01\day24_part01.fsx" />
     <None Include="day24\part02\day24_part02.fsx" />
     <Content Include="day24\test_input_24.txt" />
+    <Content Include="day25\day25_input.txt" />
     <Compile Include="day25\part01\day25_part01.fs" />
-    <Compile Include="day25\part02\day25_part02.fs" />
     <None Include="day25\part01\day25_part01.fsx" />
-    <None Include="day25\part02\day25_part02.fsx" />
     <Content Include="day25\test_input.txt" />
     <Compile Include="Program.fs" />
   </ItemGroup>
