@@ -6,7 +6,7 @@ https://adventofcode.com/
 
 |Year						| Progress												| Total		|
 |---------------------------|-------------------------------------------------------|-----------|
-|[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️					| (42/50)	|
+|[2015](#2015-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️					| (46/50)	|
 |[2016](#2016-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (26/50)	|
 |[2017](#2017-f)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (24/50)	|
 |[2018](#2018-ftypescript)	| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐❄️❄️❄️❄️❄️❄️❄️❄️❄️				| (32/50)	|
@@ -17,7 +17,7 @@ https://adventofcode.com/
 |[2023](#2023-fc)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2024](#2024-fgo)			| ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐💫					| (50/50)	|
 |[2025](#2025-f)			| ❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️			| (0/0)		|
-|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ (69%) 			| (345/500) |
+|Overall					| 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ (69,8%) 		| (349/500) |
 
 ## Advent Of Code 2015
 
@@ -25,7 +25,7 @@ https://adventofcode.com/
 
 https://adventofcode.com/2015
 
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐(20/25)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐(23/25)
 
 
 |Day											| Part 1 | Part 2 |
@@ -51,8 +51,8 @@ https://adventofcode.com/2015
 | [Day 19](https://adventofcode.com/2015/day/19): Medicine for Rudolph					| ✔️ [F#](./AdventOfCode_2015/day19/part01/day19_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day19/part02/day19_part02.fs) |
 | [Day 20](https://adventofcode.com/2015/day/20): Infinite Elves and Infinite Houses	| ✔️ [F#](./AdventOfCode_2015/day20/part01/day20_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day20/part02/day20_part02.fs) |
 | [Day 21](https://adventofcode.com/2015/day/21): RPG Simulator 20XX					| ✔️ [F#](./AdventOfCode_2015/day21/part01/day21_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day21/part02/day21_part02.fs) |
-| [Day 22](https://adventofcode.com/2015/day/22): Wizard Simulator 20XX					| ❌ | ❌ |
-| [Day 23](https://adventofcode.com/2015/day/23): Opening the Turing Lock				| ❌ | ❌ |
+| [Day 22](https://adventofcode.com/2015/day/22): Wizard Simulator 20XX					| ✔️ [F#](./AdventOfCode_2015/day22/part01/day22_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day22/part02/day22_part02.fs) |
+| [Day 23](https://adventofcode.com/2015/day/23): Opening the Turing Lock				| ✔️ [F#](./AdventOfCode_2015/day23/part01/day23_part01.fs) | ✔️ [F#](./AdventOfCode_2015/day23/part02/day23_part02.fs) |
 | [Day 24](https://adventofcode.com/2015/day/24): It Hangs in the Balance				| ❌ | ❌ |
 | [Day 25](https://adventofcode.com/2015/day/25): Let It Snow							| ❌ | ❌ |
 
