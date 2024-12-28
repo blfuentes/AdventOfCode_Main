@@ -1,6 +1,5 @@
 ﻿module day15_part01
 
-open AdventOfCode_Utilities
 open AdventOfCode_2015.Modules
 
 type Ingredient = {
