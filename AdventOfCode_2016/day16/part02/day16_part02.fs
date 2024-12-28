@@ -3,11 +3,11 @@
 open AdventOfCode_2016.Modules
 
 let dragonCurve(input: char array) =
-    let a = input
-    let b = a
-    let reversed = b |> Array.rev
-    let replaced = reversed |> Array.map(fun c -> if c = '1' then '0' else '1')
-    Array.concat [a; [|'0'|]; replaced]
+    let replaced =
+        input
+        |> Array.rev
+        |> Array.map(fun c -> if c = '1' then '0' else '1')
+    Array.concat [input; [|'0'|]; (replaced)]
 
 let checksum(input: char array) =
     let mutable repeat = true
