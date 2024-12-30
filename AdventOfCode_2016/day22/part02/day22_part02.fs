@@ -53,8 +53,8 @@ let buildFileMap(files: FileType array) =
     let maxRow = files |> Array.maxBy(fun f -> f.Pos.Row)
 
     let filemap = Array2D.create (maxRow.Pos.Row+1) (maxCol.Pos.Col+1) "."
-    let maxRows = filemap.GetLength(0)
-    let maxCols = filemap.GetLength(1)
+    //let maxRows = filemap.GetLength(0)
+    //let maxCols = filemap.GetLength(1)
 
     files
     |> Array.iter(fun f ->
@@ -75,8 +75,9 @@ let buildFileMap(files: FileType array) =
     let movestogoal = maxCol.Pos.Col - mostleftwall.Pos.Col
     // https://en.wikipedia.org/wiki/15_puzzle 
     // 6 movements to replace one position with another
-    // repeat 33 times. 34 - 1(empty)
-    33 * 5 + movesfromempty + movestotop + movestogoal + 1 // extra for empty
+    // repeat X times. where X = topright col - 1
+    let reps = maxCol.Pos.Col - 1 
+    reps * 5 + movesfromempty + movestotop + movestogoal + 1 // extra for (0,0)
 
 let execute =
     let path = "day22/day22_input.txt"
