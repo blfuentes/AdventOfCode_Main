@@ -7,6 +7,22 @@ open System.Diagnostics
 
 [<AutoOpen>]
 module Utilities = 
+    
+    ///////////////////////////////////////////////////////////////////////////////////
+    /// Calculates factorial with memoization
+    let factorialWithMemoization =
+        let memo = System.Collections.Generic.Dictionary<int, int>()
+        let rec factorial n =
+            if memo.ContainsKey(n) then
+                memo[n]
+            elif n <= 1 then
+                1
+            else
+                let result = n * factorial (n - 1)
+                memo[n] <- result
+                result
+        factorial
+    ///////////////////////////////////////////////////////////////////////////////////
 
     ///////////////////////////////////////////////////////////////////////////////////
     /// Calculates time of execution of fucntion
