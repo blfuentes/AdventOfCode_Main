@@ -64,7 +64,6 @@
     <Compile Include="day24\part01\day24_part01.fs" />
     <Compile Include="day24\part02\day24_part02.fs" />
     <Compile Include="day25\part01\day25_part01.fs" />
-    <Compile Include="day25\part02\day25_part02.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
@@ -113,7 +112,7 @@
     <Content Include="day24\day24_input.txt" />
     <Content Include="day24\test_input_24.txt" />
     <Content Include="day25\day25_input.txt" />
-    <Content Include="day25\test_input_01.txt" />
+    <Content Include="day25\test_input_25.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="day00\part01\day00_part01.fsx" />
@@ -167,7 +166,6 @@
     <None Include="day24\part01\day24_part01.fsx" />
     <None Include="day24\part02\day24_part02.fsx" />
     <None Include="day25\part01\day25_part01.fsx" />
-    <None Include="day25\part02\day25_part02.fsx" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
