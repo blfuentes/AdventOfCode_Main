@@ -72,6 +72,14 @@ let findShortestPath (graph: Cell[,]) (start: Cell) (goal: Cell) =
     bfs ()
 
 let findAllWays(map: Cell[,]) (checkpoints: CheckPoint list) =
+    let memoLengths = Dictionary<(CheckPoint*CheckPoint), int>()
+    combination 2 checkpoints
+    |> List.iter(fun c ->
+        let (start, goal) = (c.Item(0), c.Item(1))
+        let distance = findShortestPath map start.Pos goal.Pos
+        memoLengths.Add((start, goal), distance.Value)
+        memoLengths.Add((goal, start), distance.Value)
+    )
     let startzero = checkpoints |> List.find(fun c -> c.Name = 0)
     let possiblepaths = 
         permutations checkpoints
@@ -84,10 +92,9 @@ let findAllWays(map: Cell[,]) (checkpoints: CheckPoint list) =
 
         List.pairwise (p @ [startzero])
         |> List.map(fun (s, g) -> 
-            let steps = findShortestPath map s.Pos g.Pos
-            steps
+            memoLengths[(s, g)]
         )
-        |> List.sumBy(fun e -> if e.IsSome then e.Value else System.Int32.MaxValue)
+        |> List.sum
     )
     |> List.min
 
