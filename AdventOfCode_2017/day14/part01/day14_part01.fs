@@ -27,6 +27,6 @@ let buildRows(input: string) =
 
 let execute() =
     let path = "day14/day14_input.txt"
-    //let path = "day14/test_input_14.txt"
     let content = LocalHelper.GetContentFromFile path
+
     buildRows content
