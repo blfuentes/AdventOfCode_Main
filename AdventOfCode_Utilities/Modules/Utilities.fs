@@ -9,6 +9,17 @@ open System.Diagnostics
 module Utilities = 
     
     ///////////////////////////////////////////////////////////////////////////////////
+    /// Returns the zig zag position at specific point for a length
+    let zigzagPosition (at: int) (maxValue: int) =
+        let cycleLength = 2 * (maxValue: int)
+        let posInCycle = (at: int) % cycleLength
+        if posInCycle <= (maxValue: int) then
+            posInCycle
+        else
+            cycleLength - posInCycle
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
     /// Calculates factorial with memoization
     let factorialWithMemoization =
         let memo = System.Collections.Generic.Dictionary<int, int>()
