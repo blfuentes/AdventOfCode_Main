@@ -111,7 +111,7 @@
     <Content Include="day23\day23_input.txt" />
     <Content Include="day23\test_input_23.txt" />
     <Content Include="day24\day24_input.txt" />
-    <Content Include="day24\test_input_01.txt" />
+    <Content Include="day24\test_input_24.txt" />
     <Content Include="day25\day25_input.txt" />
     <Content Include="day25\test_input_01.txt" />
   </ItemGroup>
