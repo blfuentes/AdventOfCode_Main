@@ -9,6 +9,14 @@ open System.Diagnostics
 module Utilities = 
     
     ///////////////////////////////////////////////////////////////////////////////////
+    /// Returns if string is a number
+    let isNumeric (s: string) =
+        match Int32.TryParse(s) with
+        | true, _ -> true
+        | _ -> false
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////////////
     /// Returns the zig zag position at specific point for a length
     let zigzagPosition (at: int) (maxValue: int) =
         let cycleLength = 2 * (maxValue: int)

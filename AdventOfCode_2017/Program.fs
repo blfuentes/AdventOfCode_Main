@@ -105,16 +105,16 @@ let main argv =
     printfn "Final result Day 16 part 2: %A" resultday16Part2
 
     // DAY 17
-    //let resultday17Part1 = day17_part01.execute()
-    //printfn "Final result Day 17 part 1: %A" resultday17Part1
-    //let resultday17Part2 = day17_part02.execute()
-    //printfn "Final result Day 17 part 2: %A" resultday17Part2
+    let resultday17Part1 = day17_part01.execute()
+    printfn "Final result Day 17 part 1: %A" resultday17Part1
+    let resultday17Part2 = day17_part02.execute()
+    printfn "Final result Day 17 part 2: %A" resultday17Part2
 
     // DAY 18
-    //let resultday18Part1 = day18_part01.execute()
-    //printfn "Final result Day 18 part 1: %A" resultday18Part1
-    //let resultday18Part2 = day18_part02.execute()
-    //printfn "Final result Day 18 part 2: %A" resultday18Part2
+    let resultday18Part1 = day18_part01.execute()
+    printfn "Final result Day 18 part 1: %d" resultday18Part1
+    let resultday18Part2 = day18_part02.execute()
+    printfn "Final result Day 18 part 2: %A" resultday18Part2
 
     // DAY 19
     //let resultday19Part1 = day19_part01.execute()
